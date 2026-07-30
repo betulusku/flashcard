@@ -6,9 +6,10 @@ import {NotificationPermissionScreen} from '../screens/onboarding/NotificationPe
 import {PaywallScreen} from '../screens/onboarding/PaywallScreen';
 import {SurveyScreen} from '../screens/onboarding/SurveyScreen';
 import {WelcomeScreen} from '../screens/onboarding/WelcomeScreen';
+import {HomeScreen} from '../screens/home/HomeScreen';
 import {SurveyAnswers} from '../types/onboarding';
 
-export type OnboardingStackParamList = {Welcome: undefined; Survey: undefined; Notifications: undefined; Paywall: undefined};
+export type OnboardingStackParamList = {Welcome: undefined; Survey: undefined; Notifications: undefined; Paywall: undefined; Home: undefined};
 const Stack = createNativeStackNavigator<OnboardingStackParamList>();
 const emptyAnswers: SurveyAnswers = {level: null, goals: [], occupation: null, occupationText: null, daily: null, weekly: null};
 
@@ -21,6 +22,7 @@ export function OnboardingNavigator() {
         <Stack.Screen name="Survey">{props => <SurveyScreen {...props} answers={answers} onChange={setAnswers} />}</Stack.Screen>
         <Stack.Screen name="Notifications" component={NotificationPermissionScreen} />
         <Stack.Screen name="Paywall">{props => <PaywallScreen {...props} answers={answers} />}</Stack.Screen>
+        <Stack.Screen name="Home">{props => <HomeScreen {...props} answers={answers} />}</Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
