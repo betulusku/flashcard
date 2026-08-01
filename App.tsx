@@ -7,7 +7,7 @@ import {OnboardingNavigator} from './src/navigation/OnboardingNavigator';
 function App() {
   return (
     <SafeAreaProvider>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle="light-content" />
       <OnboardingNavigator />
     </SafeAreaProvider>
   );
