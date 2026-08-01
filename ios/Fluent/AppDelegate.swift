@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     reactNativeFactory = factory
 
     window = UIWindow(frame: UIScreen.main.bounds)
+    // Match LaunchScreen so the handoff from native splash → JS isn’t a blue flash.
+    window?.backgroundColor = .black
 
     factory.startReactNative(
       withModuleName: "Fluent",

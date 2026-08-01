@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="SplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Flt-Logo">
+                                <rect key="frame" x="116.5" y="326" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Flt-Logo-W"/>
+                                    <constraint firstAttribute="height" constant="160" id="Flt-Logo-H"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="SplashBadge" translatesAutoresizingMaskIntoConstraints="NO" id="Flt-Badge">
+                                <rect key="frame" x="96.5" y="700" width="200" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Flt-Badge-W"/>
+                                    <constraint firstAttribute="height" constant="56" id="Flt-Badge-H"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Flt-Track">
+                                <rect key="frame" x="96.5" y="772" width="200" height="3"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Flt-Fill">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="3"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Flt-Fill-W"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18" green="0.18" blue="0.18" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="Flt-Track-H"/>
+                                    <constraint firstAttribute="width" constant="200" id="Flt-Track-W"/>
+                                    <constraint firstItem="Flt-Fill" firstAttribute="leading" secondItem="Flt-Track" secondAttribute="leading" id="Flt-Fill-L"/>
+                                    <constraint firstItem="Flt-Fill" firstAttribute="top" secondItem="Flt-Track" secondAttribute="top" id="Flt-Fill-T"/>
+                                    <constraint firstItem="Flt-Fill" firstAttribute="bottom" secondItem="Flt-Track" secondAttribute="bottom" id="Flt-Fill-B"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Flt-Logo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Flt-Logo-X"/>
+                            <constraint firstItem="Flt-Logo" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-36" id="Flt-Logo-Y"/>
+                            <constraint firstItem="Flt-Badge" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Flt-Badge-X"/>
+                            <constraint firstItem="Flt-Track" firstAttribute="top" secondItem="Flt-Badge" secondAttribute="bottom" constant="16" id="Flt-Track-Top"/>
+                            <constraint firstItem="Flt-Track" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Flt-Track-X"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="Flt-Track" secondAttribute="bottom" constant="24" id="Flt-Track-Bottom"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SplashLogo" width="200" height="200"/>
+        <image name="SplashBadge" width="600" height="168"/>
+    </resources>
+</document>

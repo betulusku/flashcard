@@ -10,8 +10,11 @@
 		0C80B921A6F3F58F76C31292 /* libPods-Fluent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-Fluent.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		81AB9BB82411601600AC10FF /* FlashSplashV4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* FlashSplashV4.storyboard */; };
 		992B95865AFC2302BFAC9B38 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		A1B2C3D45E6F7081920ABC01 /* SplashLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D45E6F7081920ABC02 /* SplashLogo.png */; };
+		A1B2C3D45E6F7081920ABC03 /* SplashBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D45E6F7081920ABC04 /* SplashBadge.png */; };
+		A1B2C3D45E6F7081920ABC05 /* SplashMark.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D45E6F7081920ABC06 /* SplashMark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +26,10 @@
 		5709B34CF0A7D63546082F79 /* Pods-Fluent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fluent.release.xcconfig"; path = "Target Support Files/Pods-Fluent/Pods-Fluent.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-Fluent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fluent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Fluent/AppDelegate.swift; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Fluent/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* FlashSplashV4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FlashSplashV4.storyboard; path = Fluent/FlashSplashV4.storyboard; sourceTree = "<group>"; };
+		A1B2C3D45E6F7081920ABC02 /* SplashLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SplashLogo.png; path = Fluent/SplashLogo.png; sourceTree = "<group>"; };
+		A1B2C3D45E6F7081920ABC04 /* SplashBadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SplashBadge.png; path = Fluent/SplashBadge.png; sourceTree = "<group>"; };
+		A1B2C3D45E6F7081920ABC06 /* SplashMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SplashMark.png; path = Fluent/SplashMark.png; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -45,7 +51,10 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				81AB9BB72411601600AC10FF /* FlashSplashV4.storyboard */,
+				A1B2C3D45E6F7081920ABC02 /* SplashLogo.png */,
+				A1B2C3D45E6F7081920ABC04 /* SplashBadge.png */,
+				A1B2C3D45E6F7081920ABC06 /* SplashMark.png */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 			);
 			name = Fluent;
@@ -158,8 +167,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				81AB9BB82411601600AC10FF /* FlashSplashV4.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A1B2C3D45E6F7081920ABC01 /* SplashLogo.png in Resources */,
+				A1B2C3D45E6F7081920ABC03 /* SplashBadge.png in Resources */,
+				A1B2C3D45E6F7081920ABC05 /* SplashMark.png in Resources */,
 				992B95865AFC2302BFAC9B38 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
