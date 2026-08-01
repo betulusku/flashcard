@@ -11,6 +11,7 @@ import type {SurveyAnswers} from '../../types/onboarding';
 import {colors, spacing} from '../../theme';
 import {ScreenShell} from '../onboarding/ScreenShell';
 import {loadLearningState} from '../../logic/learningStorage';
+import {greetingName, loadProfile} from '../../logic/profile';
 import {AppBarButton} from '../../components/AppBar';
 import {Icon} from '../../components/Icon';
 import {dateKey, greeting, recentWeek} from '../../logic/dates';
@@ -27,6 +28,7 @@ const emptyStats: HomeStats = {today: 0, week: 0, learning: 0, memorized: 0, fav
 export function HomeScreen({answers, navigation}: Props) {
   const insets = useSafeAreaInsets();
   const [stats, setStats] = useState<HomeStats>(emptyStats);
+  const [nameLine, setNameLine] = useState('learner.');
   // Recomputed on every focus refresh so the greeting and the strip follow the
   // clock instead of freezing at whatever they were when the app launched.
   const [now, setNow] = useState(() => new Date());
@@ -39,20 +41,28 @@ export function HomeScreen({answers, navigation}: Props) {
 
   // Counted through the same collector the collection screens use, so a row's
   // number always matches the list it opens.
-  const refresh = () => loadLearningState().then(learning => {
-    const activity = learning.activity ?? {};
-    setNow(new Date());
-    const recentDays = Array.from({length: 7}, (_, index) => dateKey(index));
-    const size = (collection: CollectionId) => collectWords(collection, [], learning.progress).length;
-    setStats({
-      today: activity[dateKey()]?.learned ?? 0,
-      week: recentDays.reduce((total, day) => total + (activity[day]?.learned ?? 0), 0),
-      learning: size('learning'),
-      memorized: size('memorized'),
-      favorites: size('favorites'),
-      practiceDays: learning.practicedDays,
-    });
-  }).catch(() => undefined);
+  const refresh = () =>
+    Promise.all([loadLearningState(), loadProfile()])
+      .then(([learning, profile]) => {
+        const activity = learning.activity ?? {};
+        setNow(new Date());
+        setNameLine(greetingName(profile));
+        const recentDays = Array.from({length: 7}, (_, index) => dateKey(index));
+        const size = (collection: CollectionId) =>
+          collectWords(collection, [], learning.progress).length;
+        setStats({
+          today: activity[dateKey()]?.learned ?? 0,
+          week: recentDays.reduce(
+            (total, day) => total + (activity[day]?.learned ?? 0),
+            0,
+          ),
+          learning: size('learning'),
+          memorized: size('memorized'),
+          favorites: size('favorites'),
+          practiceDays: learning.practicedDays,
+        });
+      })
+      .catch(() => undefined);
 
   useEffect(() => {
     refresh();
@@ -86,7 +96,10 @@ export function HomeScreen({answers, navigation}: Props) {
 
       <View style={styles.greeting}>
         <Text style={styles.eyebrow}>YOUR DAILY PRACTICE</Text>
-        <Text style={styles.title}>{greeting(now)},{`\n`}<Text style={styles.titleAccent}>Betül.</Text></Text>
+        <Text style={styles.title}>
+          {greeting(now)},{`\n`}
+          <Text style={styles.titleAccent}>{nameLine}</Text>
+        </Text>
       </View>
 
       <View style={styles.progressCard}>

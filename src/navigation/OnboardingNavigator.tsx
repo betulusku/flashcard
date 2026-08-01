@@ -39,7 +39,7 @@ export type OnboardingStackParamList = {
   Welcome: undefined;
   Survey: undefined;
   Notifications: undefined;
-  Paywall: undefined;
+  Paywall: {source?: 'profile'} | undefined;
   Home: undefined;
   Study: PracticeParams;
   StudyComplete: {

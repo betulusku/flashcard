@@ -22,6 +22,7 @@ import { colors, radius, spacing, tabBarSpace } from '../../theme';
 import { ScreenShell } from '../onboarding/ScreenShell';
 import { haptic, speak } from '../../services/feedback';
 import { playSound, stopSound } from '../../services/sounds';
+import { loadProfile, saveProfile } from '../../logic/profile';
 import { useAutoSpeak } from '../../hooks/useAutoSpeak';
 import { AppBar, AppBarButton } from '../../components/AppBar';
 import { Icon } from '../../components/Icon';
@@ -1130,6 +1131,11 @@ export function AccountScreen({
   navigation,
 }: NativeStackScreenProps<OnboardingStackParamList, 'Account'>) {
   const [name, setName] = useState('');
+  useEffect(() => {
+    loadProfile()
+      .then(profile => setName(profile.name))
+      .catch(() => undefined);
+  }, []);
   return (
     <ScreenShell>
       <AppBar
@@ -1149,7 +1155,14 @@ export function AccountScreen({
           placeholderTextColor={colors.muted}
           style={styles.search}
         />
-        <Button title="Save" onPress={() => navigation.goBack()} />
+        <Button
+          title="Save"
+          onPress={async () => {
+            const current = await loadProfile();
+            await saveProfile({...current, name});
+            navigation.goBack();
+          }}
+        />
       </View>
     </ScreenShell>
   );

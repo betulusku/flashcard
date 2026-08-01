@@ -8,8 +8,10 @@ import {
   CheckCircle,
   ChevronLeft,
   ChevronRight,
+  Camera,
   CloudRain,
   Copy,
+  Edit2,
   FileText,
   Filter,
   Globe,
@@ -65,6 +67,8 @@ export const Icon = {
   Copy: (props: IconPropsLite) => <Copy {...defaults} {...props} />,
   User: (props: IconPropsLite) => <User {...defaults} {...props} />,
   Share2: (props: IconPropsLite) => <Share2 {...defaults} {...props} />,
+  Edit2: (props: IconPropsLite) => <Edit2 {...defaults} {...props} />,
+  Camera: (props: IconPropsLite) => <Camera {...defaults} {...props} />,
 };
 
 export type FeatherIconName = keyof typeof Icon;
