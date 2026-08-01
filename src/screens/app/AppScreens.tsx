@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
   Alert,
   Animated,
+  Clipboard,
   Easing,
   Modal,
   Pressable,
@@ -10,6 +11,7 @@ import {
   Text,
   TextInput,
   View,
+  type TextProps,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useFocusEffect} from '@react-navigation/native';
@@ -198,6 +200,34 @@ const SentenceSpeakButton = ({onPress}: {onPress: () => void}) => (
     <Icon.Type size={20} />
   </AppBarButton>
 );
+function copyText(value: string) {
+  const text = value.trim();
+  if (!text) return;
+  Clipboard.setString(text);
+  haptic('selection');
+}
+
+/** Long-press or the system select menu — for pasting into Translate. */
+const CopyableText = ({
+  children,
+  style,
+  copyValue,
+  ...rest
+}: TextProps & {copyValue?: string}) => {
+  const value =
+    copyValue ?? (typeof children === 'string' ? children : undefined);
+  return (
+    <Text
+      {...rest}
+      style={style}
+      selectable
+      onLongPress={value ? () => copyText(value) : undefined}
+    >
+      {children}
+    </Text>
+  );
+};
+
 const ExampleLine = ({
   text,
   onSpeak,
@@ -207,7 +237,9 @@ const ExampleLine = ({
 }) => (
   // Capture the touch so reading the sentence never flips the flashcard.
   <View style={styles.exampleRow} onStartShouldSetResponder={() => true}>
-    <Text style={[styles.example, styles.exampleText]}>“{text}”</Text>
+    <CopyableText style={[styles.example, styles.exampleText]} copyValue={text}>
+      “{text}”
+    </CopyableText>
     <SentenceSpeakButton onPress={onSpeak} />
   </View>
 );
@@ -383,67 +415,78 @@ export function StudyScreen({ navigation, route }: Props) {
         }
       />
       <ScrollView contentContainerStyle={styles.page}>
-        <Pressable onPress={flip}>
-          <Animated.View
-            style={[
-              styles.flashcard,
-              {
-                transform: [
-                  {
-                    translateX: transition.interpolate({
-                      inputRange: [-1, 0],
-                      outputRange: [-52, 0],
-                    }),
-                  },
-                ],
-                opacity: transition.interpolate({
-                  inputRange: [-1, -0.45, 0],
-                  outputRange: [0.15, 0.78, 1],
-                }),
-              },
-            ]}
-          >
-            <View style={styles.cardTop}>
-              <Text style={styles.pill}>
-                {revealed ? 'TURKISH' : word.track}
-              </Text>
-              <Text style={styles.cardMeta}>B1</Text>
-            </View>
-            {revealed ? (
-              <>
-                <Text style={[styles.word, headwordType(word.tr)]}>{word.tr}</Text>
-                <Text style={styles.partOfSpeech}>{word.en}</Text>
-                <Text style={[styles.definition, definitionType(word.definitionTr ?? word.definition)]}>
-                  {word.definitionTr ?? word.definition}
-                </Text>
-                <ExampleLine
-                  text={word.exampleTr ?? word.example}
-                  onSpeak={() => speak(word.example)}
-                />
+        <Animated.View
+          style={[
+            styles.flashcard,
+            {
+              transform: [
+                {
+                  translateX: transition.interpolate({
+                    inputRange: [-1, 0],
+                    outputRange: [-52, 0],
+                  }),
+                },
+              ],
+              opacity: transition.interpolate({
+                inputRange: [-1, -0.45, 0],
+                outputRange: [0.15, 0.78, 1],
+              }),
+            },
+          ]}
+        >
+          <Pressable onPress={flip} style={styles.cardTop}>
+            <Text style={styles.pill}>
+              {revealed ? 'TURKISH' : word.track}
+            </Text>
+            <Text style={styles.cardMeta}>B1</Text>
+          </Pressable>
+          {revealed ? (
+            <>
+              <CopyableText style={[styles.word, headwordType(word.tr)]}>
+                {word.tr}
+              </CopyableText>
+              <CopyableText style={styles.partOfSpeech}>{word.en}</CopyableText>
+              <CopyableText
+                style={[
+                  styles.definition,
+                  definitionType(word.definitionTr ?? word.definition),
+                ]}
+              >
+                {word.definitionTr ?? word.definition}
+              </CopyableText>
+              <ExampleLine
+                text={word.exampleTr ?? word.example}
+                onSpeak={() => speak(word.example)}
+              />
+              <Pressable onPress={flip}>
                 <Text style={styles.tapHint}>
-                  Tap again to return to English
+                  Tap here to return to English
                 </Text>
-              </>
-            ) : (
-              <>
-                <Text style={[styles.word, headwordType(word.en)]}>{word.en}</Text>
-                <Text style={styles.partOfSpeech}>{word.pos}</Text>
-                <Text style={[styles.definition, definitionType(word.definition)]}>
-                  {word.definition}
+              </Pressable>
+            </>
+          ) : (
+            <>
+              <CopyableText style={[styles.word, headwordType(word.en)]}>
+                {word.en}
+              </CopyableText>
+              <CopyableText style={styles.partOfSpeech}>{word.pos}</CopyableText>
+              <CopyableText
+                style={[styles.definition, definitionType(word.definition)]}
+              >
+                {word.definition}
+              </CopyableText>
+              {word.track === 'Interview' && (
+                <Text style={styles.interview}>
+                  SAY IT LIKE THIS IN AN INTERVIEW
                 </Text>
-                {word.track === 'Interview' && (
-                  <Text style={styles.interview}>
-                    SAY IT LIKE THIS IN AN INTERVIEW
-                  </Text>
-                )}
-                <ExampleLine text={word.example} onSpeak={() => speak(word.example)} />
-                <Text style={styles.tapHint}>
-                  Tap the card to reveal Turkish
-                </Text>
-              </>
-            )}
-          </Animated.View>
-        </Pressable>
+              )}
+              <ExampleLine text={word.example} onSpeak={() => speak(word.example)} />
+              <Pressable onPress={flip}>
+                <Text style={styles.tapHint}>Tap here to reveal Turkish</Text>
+              </Pressable>
+            </>
+          )}
+        </Animated.View>
         <View style={styles.segmentRow}>
           {activeWords.map((item, itemIndex) => (
             <View
@@ -519,7 +562,7 @@ export function StudyCompleteScreen({
   );
 }
 
-type TestOption = {id: string; label: string};
+type TestOption = {id: string; label: string; gloss: string};
 type TestKind = 'word' | 'turkish' | 'definition';
 type TestQuestion = {
   word: LibraryWord;
@@ -568,6 +611,9 @@ function createTestQuestions(
       : questionKinds.filter(item => item !== 'definition')[questionIndex % 2];
     const labelFor = (candidate: LibraryWord) =>
       kind === 'word' ? candidate.tr : candidate.en;
+    // Opposite language shown under every choice once the answer is revealed.
+    const glossFor = (candidate: LibraryWord) =>
+      kind === 'word' ? candidate.en : candidate.tr;
     // Different words can share a Turkish gloss or a definition. Such a
     // distractor would be a second right answer, so it never gets offered.
     const answer = labelFor(word);
@@ -579,12 +625,14 @@ function createTestQuestions(
           (kind !== 'definition' || candidate.definition !== word.definition),
       ),
     ).slice(0, 3);
+    const toOption = (candidate: LibraryWord): TestOption => ({
+      id: candidate.id,
+      label: labelFor(candidate),
+      gloss: glossFor(candidate),
+    });
     const options = shuffleTest([
-      {id: word.id, label: labelFor(word)},
-      ...distractors.map(candidate => ({
-        id: candidate.id,
-        label: labelFor(candidate),
-      })),
+      toOption(word),
+      ...distractors.map(toOption),
     ]);
     if (kind === 'word') {
       return {
@@ -641,6 +689,7 @@ export function TestScreen({
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [revealed, setRevealed] = useState(false);
+  const [paused, setPaused] = useState(false);
   const [score, setScore] = useState(0);
   const [checkpoint, setCheckpoint] = useState(false);
   const [showGuide, setShowGuide] = useState(true);
@@ -649,13 +698,19 @@ export function TestScreen({
   const reveal = useRef(new Animated.Value(0)).current;
   const timers = useRef<ReturnType<typeof setTimeout>[]>([]);
   const wrongIdsRef = useRef<string[]>([]);
+  const pendingScoreRef = useRef(0);
   const autoSpeak = useAutoSpeak();
   const {leaveNow} = useConfirmLeave(
     navigation,
     'Testten çıkmak istediğine emin misin? Bu tur kaybolur.',
   );
 
-  useEffect(() => () => timers.current.forEach(clearTimeout), []);
+  const clearTimers = () => {
+    timers.current.forEach(clearTimeout);
+    timers.current = [];
+  };
+
+  useEffect(() => () => clearTimers(), []);
   useEffect(() => {
     if (requestedIds?.length || requestedPool !== 'myWords') return;
     AsyncStorage.getItem(savedWordsKey)
@@ -696,11 +751,19 @@ export function TestScreen({
     timers.current.push(setTimeout(run, delay));
   };
 
+  const pauseAutoAdvance = () => {
+    if (!revealed || paused) return;
+    clearTimers();
+    setPaused(true);
+  };
+
   const advance = (nextScore: number) => {
+    clearTimers();
     shake.setValue(0);
     reveal.setValue(0);
     setRevealed(false);
     setSelected(null);
+    setPaused(false);
     setShowExample(false);
     const nextIndex = index + 1;
     if (nextIndex >= testWords.length) {
@@ -723,6 +786,7 @@ export function TestScreen({
     const learning = await loadLearningState();
     await saveLearningState(recordPractice(learning, current.id, correct));
     const nextScore = score + (correct ? 1 : 0);
+    pendingScoreRef.current = nextScore;
     if (correct) setScore(nextScore);
 
     const playReveal = () => {
@@ -805,17 +869,29 @@ export function TestScreen({
         contentContainerStyle={styles.page}
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
+        onTouchStart={pauseAutoAdvance}
       >
         <View style={styles.quizCard}>
           <Pressable
-            onPress={() => setShowExample(value => !value)}
+            onPress={() => {
+              pauseAutoAdvance();
+              setShowExample(value => !value);
+            }}
             accessibilityRole="button"
             accessibilityLabel="Show example sentence"
           >
             <Text style={styles.cardMeta}>
               {word.level ?? 'B1'} · {word.track}
             </Text>
-            <Text style={[styles.testPrompt, promptType(currentQuestion.prompt)]}>
+            <Text
+              style={[styles.testPrompt, promptType(currentQuestion.prompt)]}
+              selectable={revealed}
+              onLongPress={
+                revealed
+                  ? () => copyText(currentQuestion.prompt)
+                  : undefined
+              }
+            >
               {currentQuestion.prompt}
             </Text>
             <Text style={styles.history}>{currentQuestion.instruction}</Text>
@@ -825,7 +901,12 @@ export function TestScreen({
           </Pressable>
           {showExample && (
             <View style={styles.exampleRow}>
-              <Text style={[styles.testTapHint, styles.exampleText]}>“{word.example}”</Text>
+              <CopyableText
+                style={[styles.testTapHint, styles.exampleText]}
+                copyValue={word.example}
+              >
+                “{word.example}”
+              </CopyableText>
               <SentenceSpeakButton onPress={() => speak(word.example)} />
             </View>
           )}
@@ -867,13 +948,36 @@ export function TestScreen({
                   showWrong && styles.answerWrong,
                   showCorrect && styles.answerCorrect,
                 ]}
-                disabled={Boolean(selected)}
-                onPress={() => select(answer)}
+                // selectable Text inside answers steals taps — copy via long-press after reveal.
+                disabled={Boolean(selected) && !revealed}
+                onPress={() => {
+                  if (selected) {
+                    pauseAutoAdvance();
+                    return;
+                  }
+                  select(answer);
+                }}
+                onLongPress={
+                  revealed
+                    ? () =>
+                        copyText(
+                          answer.gloss
+                            ? `${answer.label} — ${answer.gloss}`
+                            : answer.label,
+                        )
+                    : undefined
+                }
+                delayLongPress={350}
               >
                 <Text style={styles.answerLabel}>
                   {String.fromCharCode(65 + answerIndex)}
                 </Text>
-                <Text style={styles.answerText}>{answer.label}</Text>
+                <View style={styles.answerCopy} pointerEvents="none">
+                  <Text style={styles.answerText}>{answer.label}</Text>
+                  {revealed && Boolean(answer.gloss) && (
+                    <Text style={styles.answerGloss}>{answer.gloss}</Text>
+                  )}
+                </View>
                 {showCorrect && (
                   <Animated.View style={[styles.answerMark, {opacity: reveal}]}>
                     <Icon.Check size={20} color={colors.mint} />
@@ -892,6 +996,19 @@ export function TestScreen({
           <Animated.Text style={[styles.feedback, {opacity: reveal}]}>
             Correct answer: {correctLabel}
           </Animated.Text>
+        )}
+        {paused && (
+          <View style={styles.listActions}>
+            <Button
+              title="Devam"
+              onPress={() => advance(pendingScoreRef.current)}
+            />
+          </View>
+        )}
+        {revealed && !paused && (
+          <Text style={styles.testTapHint}>
+            Kelimelere bakmak için ekrana dokun — otomatik geçiş durur
+          </Text>
         )}
       </ScrollView>
       {checkpoint && (
@@ -1430,14 +1547,15 @@ const styles = StyleSheet.create({
     marginTop: spacing.sm,
   },
   answer: {
-    minHeight: 58,
+    minHeight: 64,
     borderRadius: radius.md,
     borderWidth: 0,
     flexDirection: 'row',
     gap: spacing.sm,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     paddingHorizontal: spacing.md,
+    paddingVertical: 14,
     backgroundColor: '#171B21',
   },
   answerCorrect: {
@@ -1454,7 +1572,9 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     letterSpacing: 1.2,
   },
-  answerText: { color: colors.text, fontSize: 16, flex: 1 },
+  answerCopy: {flex: 1, gap: 3, paddingRight: 4},
+  answerText: { color: colors.text, fontSize: 16 },
+  answerGloss: { color: colors.muted, fontSize: 13, lineHeight: 18 },
   answerMark: { marginLeft: 4 },
   answerMarkWrong: { marginLeft: 4 },
   feedback: {

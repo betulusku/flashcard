@@ -122,7 +122,7 @@ export function HomeScreen({answers, navigation}: Props) {
 
       <Pressable style={styles.practiceButton} onPress={() => navigation.navigate('Study')}><LinearGradient pointerEvents="none" colors={['#C8FFFB', '#AEEEFF']} start={{x: 0, y: 0}} end={{x: 1, y: 1}} style={StyleSheet.absoluteFill} /><Text style={styles.practiceText}>Start today’s practice</Text></Pressable>
 
-      <SectionHeading title="Keep going" action="See all" />
+      <SectionHeading title="Keep going" />
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -135,17 +135,25 @@ export function HomeScreen({answers, navigation}: Props) {
       </ScrollView>
 
       {/* The saved list is deliberately absent: it belongs to the My words tab. */}
-      <SectionHeading title="Your progress" action="Library" />
-      <CollectionRow collection="learning" count={stats.learning} onPress={openCollection} />
-      <CollectionRow collection="memorized" count={stats.memorized} onPress={openCollection} />
-      {stats.favorites > 0 && <CollectionRow collection="favorites" count={stats.favorites} onPress={openCollection} />}
+      <SectionHeading title="Your progress" />
+      <View style={styles.progressList}>
+        <CollectionRow collection="learning" count={stats.learning} onPress={openCollection} />
+        <CollectionRow collection="memorized" count={stats.memorized} onPress={openCollection} />
+        {stats.favorites > 0 && (
+          <CollectionRow collection="favorites" count={stats.favorites} onPress={openCollection} />
+        )}
+      </View>
     </ScrollView>
     </View>
   </ScreenShell>;
 }
 
-function SectionHeading({title, action}: {title: string; action: string}) {
-  return <View style={styles.sectionHeading}><Text style={styles.sectionTitle}>{title}</Text><Text style={styles.sectionAction}>{action}</Text></View>;
+function SectionHeading({title}: {title: string}) {
+  return (
+    <View style={styles.sectionHeading}>
+      <Text style={styles.sectionTitle}>{title}</Text>
+    </View>
+  );
 }
 
 function LessonCard({title, progress, fill, onPress}: {title: string; progress: string; fill: number; onPress: () => void}) {
@@ -165,8 +173,14 @@ function LessonCard({title, progress, fill, onPress}: {title: string; progress: 
         reducedTransparencyFallbackColor="#0E2358"
         style={styles.glassBlur}
       />
-      <Text style={styles.lessonTitle}>{title}</Text>
-      <Text style={styles.lessonSub}>{progress}</Text>
+      <View style={styles.lessonBody}>
+        <Text style={styles.lessonTitle} numberOfLines={2}>
+          {title}
+        </Text>
+        <Text style={styles.lessonSub} numberOfLines={1}>
+          {progress}
+        </Text>
+      </View>
       <View style={styles.track}>
         <View style={[styles.fill, {width: `${Math.max(0, Math.min(100, fill * 100))}%`}]} />
       </View>
@@ -174,14 +188,33 @@ function LessonCard({title, progress, fill, onPress}: {title: string; progress: 
   );
 }
 
-function CollectionRow({collection, count, onPress}: {collection: CollectionId; count: number; onPress: (collection: CollectionId) => void}) {
+const collectionAccent: Record<
+  CollectionId,
+  {icon: string; wash: [string, string]}
+> = {
+  saved: {icon: colors.mint, wash: ['rgba(65,88,209,.36)', 'rgba(12,43,124,.42)']},
+  learning: {icon: '#9BE7FF', wash: ['rgba(56,120,220,.40)', 'rgba(14,48,140,.46)']},
+  memorized: {icon: colors.mint, wash: ['rgba(48,150,160,.34)', 'rgba(14,55,130,.46)']},
+  favorites: {icon: '#FFE08A', wash: ['rgba(120,100,60,.30)', 'rgba(30,50,130,.46)']},
+};
+
+function CollectionRow({
+  collection,
+  count,
+  onPress,
+}: {
+  collection: CollectionId;
+  count: number;
+  onPress: (collection: CollectionId) => void;
+}) {
   const meta = collectionMeta[collection];
+  const accent = collectionAccent[collection];
   const Glyph = Icon[meta.icon];
   return (
     <Pressable style={styles.wordRow} onPress={() => onPress(collection)}>
       <LinearGradient
         pointerEvents="none"
-        colors={['rgba(65,88,209,.33)', 'rgba(12,43,124,.42)']}
+        colors={accent.wash}
         start={{x: 0, y: 0}}
         end={{x: 1, y: 1}}
         style={styles.wordRowGradient}
@@ -194,7 +227,7 @@ function CollectionRow({collection, count, onPress}: {collection: CollectionId; 
         style={styles.wordRowBlur}
       />
       <View style={styles.wordIcon}>
-        <Glyph size={20} color={colors.mint} />
+        <Glyph size={22} color={accent.icon} />
       </View>
       <View style={styles.wordCopy}>
         <Text style={styles.wordTitle}>{meta.title}</Text>
@@ -292,53 +325,69 @@ const styles = StyleSheet.create({
   sectionHeading: {
     marginTop: spacing.sm,
     marginHorizontal: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
   },
   sectionTitle: {fontSize: 18, fontWeight: '600', letterSpacing: -0.4, color: colors.text},
-  sectionAction: {fontSize: 12, fontWeight: '500', color: 'rgba(223,240,255,.62)'},
   lessonScroller: {marginHorizontal: -spacing.md},
   lessonRail: {gap: spacing.sm, paddingHorizontal: spacing.md},
   lessonCard: {
     overflow: 'hidden',
-    width: 193,
-    height: 118,
-    padding: 15,
+    width: 200,
+    height: 128,
+    paddingTop: 18,
+    paddingHorizontal: 18,
+    paddingBottom: 16,
     borderRadius: 22,
     borderWidth: 1,
     borderColor: 'rgba(221,246,255,.20)',
     backgroundColor: 'rgba(9,27,88,.22)',
-    justifyContent: 'space-between',
   },
-  lessonTitle: {fontSize: 16, lineHeight: 18, fontWeight: '700', letterSpacing: -0.5, color: colors.text},
-  lessonSub: {fontSize: 12, color: 'rgba(233,246,255,.67)'},
-  track: {height: 5, borderRadius: 8, overflow: 'hidden', backgroundColor: 'rgba(255,255,255,.16)'},
+  // Title + subtitle sit tight; progress bar locks to the bottom edge padding.
+  lessonBody: {flex: 1, gap: 6},
+  lessonTitle: {
+    fontSize: 17,
+    lineHeight: 21,
+    fontWeight: '700',
+    letterSpacing: -0.45,
+    color: colors.text,
+  },
+  lessonSub: {
+    fontSize: 13,
+    lineHeight: 16,
+    color: 'rgba(233,246,255,.68)',
+  },
+  track: {
+    height: 5,
+    borderRadius: 8,
+    overflow: 'hidden',
+    backgroundColor: 'rgba(255,255,255,.16)',
+  },
   fill: {height: '100%', borderRadius: 8, backgroundColor: colors.mint},
+  progressList: {gap: 8},
   wordRow: {
     overflow: 'hidden',
-    minHeight: 62,
-    paddingHorizontal: 12,
-    borderRadius: 19,
+    minHeight: 76,
+    paddingVertical: 16,
+    paddingHorizontal: 16,
+    borderRadius: 22,
     borderWidth: 1,
-    borderColor: 'rgba(193,240,255,.20)',
+    borderColor: 'rgba(193,240,255,.22)',
     backgroundColor: 'rgba(9,27,88,.22)',
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 12,
+    gap: 14,
   },
-  wordRowGradient: {...StyleSheet.absoluteFill, borderRadius: 19},
-  wordRowBlur: {...StyleSheet.absoluteFill, borderRadius: 19},
+  wordRowGradient: {...StyleSheet.absoluteFill, borderRadius: 22},
+  wordRowBlur: {...StyleSheet.absoluteFill, borderRadius: 22},
   wordIcon: {
-    width: 37,
-    height: 37,
-    borderRadius: 13,
+    width: 48,
+    height: 48,
+    borderRadius: 16,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(185,255,250,.16)',
+    backgroundColor: 'rgba(185,255,250,.14)',
   },
-  wordCopy: {flex: 1},
-  wordTitle: {fontSize: 15, fontWeight: '700', letterSpacing: -0.25, color: colors.text},
-  wordSub: {fontSize: 12, marginTop: 3, color: 'rgba(226,241,255,.63)'},
-  wordCount: {fontSize: 21, fontWeight: '700', letterSpacing: -0.8, color: '#D3FFFB'},
+  wordCopy: {flex: 1, gap: 4},
+  wordTitle: {fontSize: 17, fontWeight: '700', letterSpacing: -0.35, color: colors.text},
+  wordSub: {fontSize: 13, lineHeight: 17, color: 'rgba(226,241,255,.66)'},
+  wordCount: {fontSize: 28, fontWeight: '700', letterSpacing: -1.2, color: '#D3FFFB'},
 });
