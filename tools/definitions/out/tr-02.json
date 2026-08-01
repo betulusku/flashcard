@@ -1,0 +1,962 @@
+[
+ {
+  "id": "193",
+  "definitionTr": "Bir takımın kısa bir çalışma döngüsünde tamamlamayı taahhüt ettiği görevler.",
+  "exampleTr": "Mühendislik ekibi sprint iş listesinde 12 kullanıcı hikayesini taahhüt etti."
+ },
+ {
+  "id": "194",
+  "definitionTr": "Bir takımın her kısa döngüde tamamladığı iş miktarı.",
+  "exampleTr": "Takım sprint koşu hızı, arka arkaya üç sprint iterasyonundan sonra stabilize oldu."
+ },
+ {
+  "id": "195",
+  "definitionTr": "Bir görevin tamamlanmış sayılması için karşılaması gereken mutabık kalınan koşullar.",
+  "exampleTr": "Otomasyon testleri tamamlanma kriterlerimizde zorunlu bir gerekliliktir."
+ },
+ {
+  "id": "196",
+  "definitionTr": "Bir takımın bir göreve başlamadan önce karşılanması gereken mutabık kalınan koşullar.",
+  "exampleTr": "Kullanıcı hikayeleri sprint planlamasına girmeden önce hazır olma kriterlerini karşılamalıdır."
+ },
+ {
+  "id": "197",
+  "definitionTr": "İlk anlaşmanın ötesinde ek işlerin yavaş yavaş büyümesi.",
+  "exampleTr": "Sıkı iş listesi netleştirme, aktif sprintler sırasında kapsam kaymasını önler."
+ },
+ {
+  "id": "198",
+  "definitionTr": "İşin ilerlemesini durduran bir sorun.",
+  "exampleTr": "Yanıt vermeyen harici API'ler şu anda sürüm için en büyük engelleyici unsurdur."
+ },
+ {
+  "id": "199",
+  "definitionTr": "Bugün hızlı kod düzeltmeleri seçilerek yarattığı gelecekteki iş.",
+  "exampleTr": "Her sprint kapasitesinin %20'sini teknik borcu azaltmaya ayırıyoruz."
+ },
+ {
+  "id": "200",
+  "definitionTr": "Mevcut kodun yaptığı işi değiştirmeden yapısını iyileştirmek.",
+  "exampleTr": "Yetkilendirme modülünün yeniden yapılandırılması hata oranlarını yarıya indirdi."
+ },
+ {
+  "id": "201",
+  "definitionTr": "Yazılımın anında yayınlanmaya hazır tutulduğu bir uygulama.",
+  "exampleTr": "Sürekli teslimat hattımız günde birkaç kez production deploy yapılmasına olanak tanır."
+ },
+ {
+  "id": "202",
+  "definitionTr": "Bir özelliğin onaylanması için karşılaması gereken koşullar.",
+  "exampleTr": "Her kullanıcı hikayesi net ve doğrulanabilir kabul kriterlerini ayrıntılı biçimde belirtmelidir."
+ },
+ {
+  "id": "203",
+  "definitionTr": "Daha küçük görevlere bölünmüş büyük bir iş paketi.",
+  "exampleTr": "Çoklu para birimi desteği girişimi, birden fazla sprint kapsayan bir epiğe bölündü."
+ },
+ {
+  "id": "204",
+  "definitionTr": "Bir takımın her döngüde gerçekçi olarak ne kadar iş üstlenebileceğini hesaplamak.",
+  "exampleTr": "Kapasite planlaması tatil takvimlerini ve hata görevlerini dikkate alır."
+ },
+ {
+  "id": "205",
+  "definitionTr": "Son çalışma döngüsünün nasıl geçtiğini değerlendiren takım toplantısı.",
+  "exampleTr": "Sprint değerlendirme toplantısında PR incelemelerini sadeleştirmenin yollarını tartıştık."
+ },
+ {
+  "id": "206",
+  "definitionTr": "Yaklaşan görevleri gözden geçirip netleştirerek başlamaya hazır hale getirmek.",
+  "exampleTr": "İş listesi netleştirme oturumları biletlerin iyi tahmin edilmesini sağlar."
+ },
+ {
+  "id": "207",
+  "definitionTr": "Bir sprintte ne kadar iş kaldığını gösteren grafik.",
+  "exampleTr": "Kalan iş grafiği, tüm sprint görevlerini tamamlama yolunda olduğumuzu gösteriyor."
+ },
+ {
+  "id": "208",
+  "definitionTr": "Farklı yetkinliklerden üyelerin birlikte çalıştığı takım.",
+  "exampleTr": "Her farklı disiplinli takımda PM, UI/UX, QA ve geliştiriciler bulunur."
+ },
+ {
+  "id": "209",
+  "definitionTr": "Bir şirketin ürününün yeni sürümlerini ne sıklıkla yayınladığı.",
+  "exampleTr": "Mobil ekibimiz iki haftada bir uygulama yayınlama ritmini sürdürüyor."
+ },
+ {
+  "id": "210",
+  "definitionTr": "Hangi görevlerin diğer görevlere veya ekiplere bağlı olduğunu göstermek.",
+  "exampleTr": "Bağımlılık haritalama, altyapı ekibiyle bir darboğazı ortaya çıkardı."
+ },
+ {
+  "id": "211",
+  "definitionTr": "Teknik bir soruyu yanıtlamak için yapılan kısa araştırma.",
+  "exampleTr": "Üçüncü taraf analitik SDK'larını değerlendirmek için iki günlük bir spike planladık."
+ },
+ {
+  "id": "212",
+  "definitionTr": "Gerçek ilgiyi test etmek için piyasaya sürülebilecek en basit sürüm.",
+  "exampleTr": "MVP'yi piyasaya sürmek, aşırı geliştirme yapmadan kullanıcı ilgisini test etmemizi sağladı."
+ },
+ {
+  "id": "213",
+  "definitionTr": "Mevcut bir şeye adım adım yapılan küçük iyileştirmeler.",
+  "exampleTr": "Artımlı yenilik, mevcut ürünleri zamanla rekabetçi tutar."
+ },
+ {
+  "id": "214",
+  "definitionTr": "Tüm bir pazarın işleyişini aniden değiştiren yeni araçlar.",
+  "exampleTr": "Yıkıcı teknoloji, yerleşik pazarlarda kullanıcı beklentilerini hızla değiştirir."
+ },
+ {
+  "id": "215",
+  "definitionTr": "Daha önce hiçbir şey olmayan yerde sıfırdan inşa edilen ürün.",
+  "exampleTr": "Sıfırdan bire ürün geliştirmek derin empati ve belirsizlikle rahat olmayı gerektirir."
+ },
+ {
+  "id": "216",
+  "definitionTr": "Yazılımı kullanımı zorlaştıran fazla ek işlevler.",
+  "exampleTr": "Özellik şişkinliğinden kaçınmak için kullanılmayan ayarları her yıl titizlikle denetliyoruz."
+ },
+ {
+  "id": "217",
+  "definitionTr": "Uygulamanın kendisinin müşteri çektiği ve tuttuğu strateji.",
+  "exampleTr": "PLG şirketleri, kullanıcı ediniminde birincil güç olarak ürün deneyimine güvenir."
+ },
+ {
+  "id": "218",
+  "definitionTr": "Özel bir ekibin doğrudan iletişimle müşteri kazandığı strateji.",
+  "exampleTr": "SLG modelleri, kurumsal anlaşmaları kapatmak için özel hesap yöneticisi ekiplerine güvenir."
+ },
+ {
+  "id": "219",
+  "definitionTr": "Zaten sizden alışveriş yapan müşterilerden elde edilen ek gelir.",
+  "exampleTr": "Mevcut müşterilere üst segment satış, yüksek marjlı genişleme geliri sağlar."
+ },
+ {
+  "id": "220",
+  "definitionTr": "Mevcut hesapların yıl yıl ne kadar ödediğini ölçen gösterge.",
+  "exampleTr": "%120'nin üzerinde NRR, B2B SaaS'ta sağlıklı hesap genişlemesine işaret eder."
+ },
+ {
+  "id": "221",
+  "definitionTr": "Satışın doğrudan maliyetleri ödendikten sonra kalan kar.",
+  "exampleTr": "Yüksek brüt kar marjları, SaaS şirketlerinin Ar-Ge'ye yoğun yatırım yapmasına olanak tanır."
+ },
+ {
+  "id": "222",
+  "definitionTr": "Nakit tükenmeden önce bir şirketin ne kadar süre faaliyet gösterebileceği.",
+  "exampleTr": "Series A fonlamasını güvence altına almak, operasyonel nakit ömrümüzü 24 ay uzattı."
+ },
+ {
+  "id": "223",
+  "definitionTr": "Bir şirketin her ay nakit harcadığı hız.",
+  "exampleTr": "Aylık nakit tüketim hızını izlemek, şirketin finansal sürdürülebilirliğini sağlar."
+ },
+ {
+  "id": "224",
+  "definitionTr": "Bir fikrin müşterilere ulaşmasının ne kadar sürdüğü.",
+  "exampleTr": "Pazara sunum süresini kısaltmak, eski kurumsal rakiplere karşı bize avantaj sağlar."
+ },
+ {
+  "id": "225",
+  "definitionTr": "Bir takımın önümüzdeki aylarda ne inşa edeceğini gösteren plan.",
+  "exampleTr": "Ürün yol haritası, önümüzdeki çeyrekler için temel stratejik bahislerimizi özetliyor."
+ },
+ {
+  "id": "226",
+  "definitionTr": "Bekleyen görevlerden hangilerinin en önemli olduğuna karar vermek.",
+  "exampleTr": "RICE gibi iş listesi önceliklendirme çerçeveleri yüksek etkili teslimatı sağlar."
+ },
+ {
+  "id": "227",
+  "definitionTr": "Fikirleri erişim, etki, güven ve efora göre sıralayan yöntem.",
+  "exampleTr": "RICE puanlama, Erişim, Etki, Güven ve Eforu sayısallaştırmaya yardımcı olur."
+ },
+ {
+  "id": "228",
+  "definitionTr": "Özellikleri olmazsa olmaz, olmalı, olabilir ve olmayacak diye ayıran yöntem.",
+  "exampleTr": "MoSCoW yöntemi özellikleri Olmazsa Olmaz, Olmalı, Olabilir ve Olmayacak olarak sınıflandırır."
+ },
+ {
+  "id": "229",
+  "definitionTr": "Özellikleri temel ihtiyaçlar ve hoş sürprizler olarak ayıran çerçeve.",
+  "exampleTr": "Kano modeli özellikleri temel beklentiler ve beklenmedik keyifler olarak kategorize eder."
+ },
+ {
+  "id": "230",
+  "definitionTr": "Bir fikri günler içinde oluşturup test etmek için kısa atölye.",
+  "exampleTr": "5 günlük tasarım sprinti, yeni fikirleri hızla prototiplememize ve test etmemize olanak tanıdı."
+ },
+ {
+  "id": "231",
+  "definitionTr": "Gerçek bir kişiyle ihtiyaçları hakkında bire bir görüşme.",
+  "exampleTr": "Kullanıcı görüşmesi yapmak, altta yatan sorun noktalarını ortaya çıkarmaya yardımcı olur."
+ },
+ {
+  "id": "232",
+  "definitionTr": "Bir şey yapmaya çalışırken yaşanan belirli bir sıkıntı.",
+  "exampleTr": "Kullanıcı sorun noktalarını çözmek, ürün-pazar uyumuna giden en hızlı yoldur."
+ },
+ {
+  "id": "233",
+  "definitionTr": "Bir kişinin bir hizmeti kullanırken izlediği tüm yol.",
+  "exampleTr": "Müşteri yolculuğunu haritalamak, gizli kayıp sürtünme noktalarını ortaya çıkarır."
+ },
+ {
+  "id": "234",
+  "definitionTr": "Bir kişinin bir markayla etkileşime girdiği her an.",
+  "exampleTr": "Her müşteri etkileşim noktası, genel marka algısını ve sadakati şekillendirir."
+ },
+ {
+  "id": "235",
+  "definitionTr": "Müşterilerin hizmeti terk etmesini durdurmak için alınan önlemler.",
+  "exampleTr": "Hedefli onboarding eğitimleri, ayrılma azaltmada etkili oldu."
+ },
+ {
+  "id": "236",
+  "definitionTr": "Bir kişinin ayrılmadan önce bir hizmeti ne kadar süre kullandığı.",
+  "exampleTr": "Kullanıcı ömrünü uzatmak, kullanıcı başına ortalama geliri en üst düzeye çıkarır."
+ },
+ {
+  "id": "237",
+  "definitionTr": "Her hesaptan elde edilen tipik geliri ölçen gösterge.",
+  "exampleTr": "Abonelik kademelerini sunmak, genel ARPU'muzu %15 artırdı."
+ },
+ {
+  "id": "238",
+  "definitionTr": "Gerçekten ödeme yapan her müşteriden elde edilen tipik gelir.",
+  "exampleTr": "Hedefli uygulama içi mikro işlemlerin lansmanından sonra ARPPU yükseldi."
+ },
+ {
+  "id": "239",
+  "definitionTr": "İstenen eylemi tamamlayan ziyaretçilerin oranı.",
+  "exampleTr": "Landing sayfası hızını artırmak, genel dönüşüm oranını doğrudan yükseltir."
+ },
+ {
+  "id": "240",
+  "definitionTr": "Bir reklamı gördükten sonra tıklayan kişilerin oranı.",
+  "exampleTr": "Etkileyici bir başlık, banner tıklama oranını %30 artırdı."
+ },
+ {
+  "id": "241",
+  "definitionTr": "Bir yeni müşteri kazanmak için harcanan para miktarı.",
+  "exampleTr": "Hedefleme parametrelerini optimize etmek, sosyal medya reklam CPA'mızı düşürdü."
+ },
+ {
+  "id": "242",
+  "definitionTr": "Bir reklamverenin birisi reklama her tıkladığında ödediği tutar.",
+  "exampleTr": "Uzun kuyruklu anahtar kelimelere teklif vermek, arama kampanyası CPC'sini düşürdü."
+ },
+ {
+  "id": "243",
+  "definitionTr": "Bir reklamın bin görüntülenmesi için ödenen fiyat.",
+  "exampleTr": "Marka bilinirliği video kampanyaları başarıyı CPM'e göre değerlendirdi."
+ },
+ {
+  "id": "244",
+  "definitionTr": "Ücretli tanıtım olmadan içeriği gören kişi sayısı.",
+  "exampleTr": "Güçlü SEO uygulamaları, reklam harcaması olmadan uzun vadeli organik erişimi artırır."
+ },
+ {
+  "id": "245",
+  "definitionTr": "Bir web sitesini Google'ın bulup üst sıralara taşımasını kolaylaştırmak.",
+  "exampleTr": "Teknik SEO iyileştirmeleri organik arama trafiğimizi artırdı."
+ },
+ {
+  "id": "246",
+  "definitionTr": "İnsanları istemedikleri seçimlere iten bir tasarım hilesi.",
+  "exampleTr": "Abonelik iptal akışlarımızda kullanıcıyı yanıltan tasarımlardan kesinlikle kaçınıyoruz."
+ },
+ {
+  "id": "247",
+  "definitionTr": "Parçalar arızalandığında temel işlevlerini sürdüren sistem.",
+  "exampleTr": "Sistem mimarisi, bulut kesintileri sırasında kademeli işlev azaltımını destekler."
+ },
+ {
+  "id": "248",
+  "definitionTr": "Bir sistemin hatalara rağmen çalışmaya devam etme yeteneği.",
+  "exampleTr": "Yüksek hata toleransı, sunucu arızaları sırasında kesintisiz çalışmayı garanti eder."
+ },
+ {
+  "id": "249",
+  "definitionTr": "Neredeyse her zaman çevrimiçi kalacak şekilde tasarlanmış sistem.",
+  "exampleTr": "Çok bölgeli sunucuların devreye alınması %99,99 yüksek erişilebilirlik sağlar."
+ },
+ {
+  "id": "250",
+  "definitionTr": "Ciddi bir arızadan sonra sistemleri geri yükleme planı.",
+  "exampleTr": "Felaket kurtarma planımız sürekli veritabanı anlık görüntü yedeklemelerini içerir."
+ },
+ {
+  "id": "251",
+  "definitionTr": "Bir istek ile sistem yanıtı arasındaki gecikme.",
+  "exampleTr": "API gecikme süresini 200 ms'den 40 ms'ye düşürmek UX'i önemli ölçüde iyileştirdi."
+ },
+ {
+  "id": "252",
+  "definitionTr": "Bir sistemin belirli bir sürede ne kadar iş kaldırabileceği.",
+  "exampleTr": "İşlem kapasitesi testleri, sunucuların Black Friday trafiğini kaldırabileceğini doğruladı."
+ },
+ {
+  "id": "253",
+  "definitionTr": "Birbirleriyle iletişim kuran birçok küçük bağımsız program olarak inşa edilen yazılım.",
+  "exampleTr": "Mikroservis mimarisine geçiş, ekiplerin bağımsız deploy yapmasını sağladı."
+ },
+ {
+  "id": "254",
+  "definitionTr": "Tek büyük kod bloğu olarak inşa edilmiş yazılım.",
+  "exampleTr": "İlk monolitik sistemimiz 100 bin kullanıcının ötesinde ölçeklenmekte zorlandı."
+ },
+ {
+  "id": "255",
+  "definitionTr": "Yazılımın veri gönderip aldığı belirli bir web adresi.",
+  "exampleTr": "Her API uç noktasını güvence altına almak, yetkisiz kullanıcı verisi ifşasını önler."
+ },
+ {
+  "id": "256",
+  "definitionTr": "Bir sunucunun belirli bir sürede kabul ettiği istek sayısını sınırlamak.",
+  "exampleTr": "İstek sınırlama, kimlik doğrulama uç noktalarımızı kaba kuvvet saldırılarından korur."
+ },
+ {
+  "id": "257",
+  "definitionTr": "Tekrarlanan verileri hızlı erişim için tutan geçici hızlı depolama.",
+  "exampleTr": "Redis önbellek katmanı eklemek, veritabanı sorgu yükünü %60 azalttı."
+ },
+ {
+  "id": "258",
+  "definitionTr": "Gelen trafiği birkaç sunucuya dağıtan araç.",
+  "exampleTr": "Yük dengeleyici, gelen trafiği instance'lar arasında eşit biçimde dağıtır."
+ },
+ {
+  "id": "259",
+  "definitionTr": "Aramaların daha hızlı çalışması için kayıtlara kısayollar eklemek.",
+  "exampleTr": "Doğru veri tabanı indeksleme, ağır rapor panosu yüklenme sürelerini kısalttı."
+ },
+ {
+  "id": "260",
+  "definitionTr": "Bir şirketin saklanan bilgileri ne kadar süre tutacağına dair kurallar.",
+  "exampleTr": "Uyumluluk düzenlemeleri katı 7 yıllık veri saklama politikasını zorunlu kılar."
+ },
+ {
+  "id": "261",
+  "definitionTr": "Kişisel bilgileri koruyan Avrupa kurallarına uymak.",
+  "exampleTr": "GDPR uyumluluğu, veri işleme için açık kullanıcı rızası gerektirir."
+ },
+ {
+  "id": "262",
+  "definitionTr": "Kişisel bilgileri güvende ve istenmeyen gözlerden uzak tutmak.",
+  "exampleTr": "Kullanıcı veri gizliliğini sağlamak, yazılım geliştirme yaşam döngümüze entegre edilmiştir."
+ },
+ {
+  "id": "263",
+  "definitionTr": "Mesajları yalnızca gönderen ve alıcının okuyabileceği şekilde şifrelemek.",
+  "exampleTr": "Uçtan uca şifreleme, aktarım sırasındaki hassas kullanıcı mesajlarını korur."
+ },
+ {
+  "id": "264",
+  "definitionTr": "Birçok farklı sisteme erişim sağlayan tek oturum açma.",
+  "exampleTr": "Kurumsal SSO uygulaması, kurumsal müşteriler için IT onboarding sürecini sadeleştirdi."
+ },
+ {
+  "id": "265",
+  "definitionTr": "Parola artı ikinci bir kimlik kanıtıyla oturum açmak.",
+  "exampleTr": "MFA zorunluluğu, hesap ele geçirme olaylarını büyük ölçüde azalttı."
+ },
+ {
+  "id": "266",
+  "definitionTr": "İnsanlara şirketteki görevlerine göre izin vermek.",
+  "exampleTr": "RBAC, ekip üyelerinin yalnızca yetkili admin panellerine erişmesini sağlar."
+ },
+ {
+  "id": "267",
+  "definitionTr": "Kodu derleyip dağıtan otomatik adım zinciri.",
+  "exampleTr": "Otomatik DevOps süreç hattı, sürüm kararlılığını ve hızını artırır."
+ },
+ {
+  "id": "268",
+  "definitionTr": "Kodu sık birleştirip her seferinde otomatik test etmek.",
+  "exampleTr": "CI araçları, her kod commit pull request'inde otomatik testler çalıştırır."
+ },
+ {
+  "id": "269",
+  "definitionTr": "Birleştirilmeden önce diğer mühendislerin işinizi kontrol etmesi.",
+  "exampleTr": "Titiz kod incelemesi uygulamaları, yazılım mimarisi standartlarını korur."
+ },
+ {
+  "id": "270",
+  "definitionTr": "Bir sistemin tam olarak nasıl inşa edileceğini anlatan belge.",
+  "exampleTr": "Mühendislik, geliştirmeye başlamadan önce bir teknik şartname hazırladı."
+ },
+ {
+  "id": "271",
+  "definitionTr": "Bir fikrin işe yarayabileceğini göstermek için yapılan küçük test.",
+  "exampleTr": "Gerçek zamanlı video senkronizasyonunu doğrulamak için hızlı bir kavram kanıtı oluşturduk."
+ },
+ {
+  "id": "272",
+  "definitionTr": "Sorunları bulmak için erken modeli gerçek kişilerle denemek.",
+  "exampleTr": "Prototip testi, mühendislik öncesinde büyük kullanılabilirlik kusurlarını tespit etti."
+ },
+ {
+  "id": "273",
+  "definitionTr": "Bir ürünün ne kadar kolay kullanıldığının yapılandırılmış denetimi.",
+  "exampleTr": "UX denetimimiz, platformlar arası buton stillerindeki tutarsızlığı ortaya çıkardı."
+ },
+ {
+  "id": "274",
+  "definitionTr": "Engelli kişilerin de bir şeyi kullanabilmesini sağlayan kurallar.",
+  "exampleTr": "Erişilebilirlik standartlarına uymak, web uygulamamızı herkes için kullanılabilir kılar."
+ },
+ {
+  "id": "275",
+  "definitionTr": "Arayüz genelinde paylaşılan renk ve boşluk için adlandırılmış değerler.",
+  "exampleTr": "Tasarım değişkenleri, platformlar arasında tutarlı padding, font ve renkleri korur."
+ },
+ {
+  "id": "276",
+  "definitionTr": "Geliştiriciler için yeniden kullanılabilir arayüz parçalarının paylaşılan koleksiyonu.",
+  "exampleTr": "Standart bir bileşen kütüphanesi kullanmak, UI uygulamasını hızlandırır."
+ },
+ {
+  "id": "277",
+  "definitionTr": "Tüm ürün boyunca aynı görünüm ve davranışı korumak.",
+  "exampleTr": "Tasarım tutarlılığını korumak, marka güvenini ve kullanım kolaylığını pekiştirir."
+ },
+ {
+  "id": "278",
+  "definitionTr": "Gözün en önemli olanı önce fark etmesi için öğeleri düzenlemek.",
+  "exampleTr": "Net görsel hiyerarşi, kullanıcı odağını doğrudan birincil eylem butonlarına çeker."
+ },
+ {
+  "id": "279",
+  "definitionTr": "İnsanların bulabilmesi için içeriğin nasıl düzenlendiği ve etiketlendiği.",
+  "exampleTr": "Bilgi mimarisi yeniden yapılandırması, geçmiş sipariş aramayı çok daha sezgisel hale getirdi."
+ },
+ {
+  "id": "280",
+  "definitionTr": "Bir şirketin neyi ve neden yayınlayacağına dair plan.",
+  "exampleTr": "Tutarlı bir içerik stratejisi, uygulama içi mesajlaşmayı pazarlama tonuyla uyumlu hale getirir."
+ },
+ {
+  "id": "281",
+  "definitionTr": "Butonlar ve hata mesajlarındaki küçük metin parçaları.",
+  "exampleTr": "Net ve samimi mikro metinler, ödeme süreçlerinde kullanıcı kaygısını azaltır."
+ },
+ {
+  "id": "282",
+  "definitionTr": "Bir markanın yazıda tutarlı üslubu ve kişiliği.",
+  "exampleTr": "Marka iletişim tonumuz, profesyonel netliği ulaşılabilir sıcaklıkla dengeler."
+ },
+ {
+  "id": "283",
+  "definitionTr": "İnsanları zaman içinde bir ürüne geri döndürmek.",
+  "exampleTr": "Sağlıklı kullanıcı tutundurma olmadan sürdürülebilir uzun vadeli büyüme mümkün değildir."
+ },
+ {
+  "id": "284",
+  "definitionTr": "İnsanların ödemeyi bırakıp ayrılma hızı.",
+  "exampleTr": "Erken ayrılma göstergelerini tespit etmek, müşteri başarı ekiplerinin müdahale etmesine yardımcı olur."
+ },
+ {
+  "id": "285",
+  "definitionTr": "Görüş toplama ve bunlara göre hareket etmenin tekrarlayan döngüsü.",
+  "exampleTr": "Sıkı bir müşteri geri bildirim döngüsü, ürün geliştirmenin kullanıcı odaklı kalmasını sağlar."
+ },
+ {
+  "id": "286",
+  "definitionTr": "İnsanların sizi tavsiye etme olasılığını ölçen anket.",
+  "exampleTr": "NPS'yi zaman içinde izlemek, genel kullanıcı sadakati ve memnuniyetini ölçer."
+ },
+ {
+  "id": "287",
+  "definitionTr": "İnsanların bir hizmetten ne kadar memnun olduğunu gösteren puan.",
+  "exampleTr": "Destek sonrası CSAT skorumuz tüm zamanların en yüksek seviyesi olan %94'e ulaştı."
+ },
+ {
+  "id": "288",
+  "definitionTr": "Bir görevi tamamlamanın ne kadar zor hissettirdiğine dair puan.",
+  "exampleTr": "CES'i düşürmek, görev tamamlamayı son kullanıcılar için zahmetsiz hissettirir."
+ },
+ {
+  "id": "289",
+  "definitionTr": "Kullanıcının yeni bir işlev eklenmesini istemesi.",
+  "exampleTr": "Geri bildirim portalımızdaki her gelen özellik talebini etiketleyip kategorize ediyoruz."
+ },
+ {
+  "id": "290",
+  "definitionTr": "İnşa edilmeyi bekleyen tüm gelecek işlerin listesi.",
+  "exampleTr": "PM, ürün iş listesindeki maddelerin sahibi olup bunları sürekli önceliklendirir."
+ },
+ {
+  "id": "291",
+  "definitionTr": "Bir takımın sonraki döngü için iş seçtiği toplantı.",
+  "exampleTr": "Sprint planlamasında mühendislik, eforu hikaye puanlarıyla tahmin eder."
+ },
+ {
+  "id": "292",
+  "definitionTr": "Bir görevin saat değil zorluğunu ölçen birim.",
+  "exampleTr": "Hikaye puanları, tam saat yerine görev karmaşıklığını ölçer."
+ },
+ {
+  "id": "293",
+  "definitionTr": "Ekiplerin eforu birlikte tahmin etmek için kullandığı kart oyunu.",
+  "exampleTr": "Planning poker, geliştirme ekiplerinin efor konusunda uzlaşmasına yardımcı olur."
+ },
+ {
+  "id": "294",
+  "definitionTr": "Bir takımın aylar boyunca her döngüde ne kadar iş bitirdiğini ölçmek.",
+  "exampleTr": "Hız takibi, sürüm döngüsü başına kaç özellik çıkacağını tahmin etmeye yardımcı olur."
+ },
+ {
+  "id": "295",
+  "definitionTr": "Çevik törenleri yöneten ve takım engellerini kaldıran kişi.",
+  "exampleTr": "Scrum yöneticisi günlük ayakta toplantıları kolaylaştırır ve takım engellerini kaldırır."
+ },
+ {
+  "id": "296",
+  "definitionTr": "Esnek yazılım geliştirmenin değerlerini listeleyen kurucu metin.",
+  "exampleTr": "Agile manifestosu, kapsamlı dokümantasyon yerine çalışan yazılımı önceliklendirir."
+ },
+ {
+  "id": "297",
+  "definitionTr": "İşin aşamalardan geçişini gösteren kart duvarı.",
+  "exampleTr": "Kanban panosu iş maddelerini Yapılacak, Devam Ediyor ve Tamamlandı sütunlarında görselleştirir."
+ },
+ {
+  "id": "298",
+  "definitionTr": "Bir takımın aynı anda kaç görev üstlendiğine dair üst sınır.",
+  "exampleTr": "Eşzamanlı iş sınırı belirlemek, takım bağlam değiştirmesini önler ve darboğazları giderir."
+ },
+ {
+  "id": "299",
+  "definitionTr": "Müşteri talebinden nihai teslimata kadar geçen toplam süre.",
+  "exampleTr": "Teslim süresini kısaltmak, kullanıcı fikirlerinin production'a ulaşmasını hızlandırır."
+ },
+ {
+  "id": "300",
+  "definitionTr": "Geliştirmenin ilk adımdan sürüme kadar gerçekte ne kadar sürdüğü.",
+  "exampleTr": "Döngü süresini kısaltmak, genel mühendislik tepkiselliliğini artırır."
+ },
+ {
+  "id": "301",
+  "definitionTr": "Bir takımın son zamanlarda nelerin iyi gittiğini tartıştığı oturum.",
+  "exampleTr": "Retrospektif toplantısı, takım süreç başarılarını tartışmak için alan açtı."
+ },
+ {
+  "id": "302",
+  "definitionTr": "Her üyenin ilerlemesini paylaştığı kısa sabah toplantısı.",
+  "exampleTr": "Günlük ayakta toplantılar, squad üyelerini acil sprint hedeflerinde hizalı tutar."
+ },
+ {
+  "id": "303",
+  "definitionTr": "Her döngüde paydaşlara gösterilen tamamlanan iş demosu.",
+  "exampleTr": "Sprint inceleme sunumunda yeni çıkan yetenekleri paydaşlara demo ettik."
+ },
+ {
+  "id": "304",
+  "definitionTr": "Bir takımın ne inşa ettiğinden ve nedeninden sorumlu kişi.",
+  "exampleTr": "Ürün sahibi, kullanıcı hikayelerini netleştirmek için geliştirme ekipleriyle yakın çalışır."
+ },
+ {
+  "id": "305",
+  "definitionTr": "Yeni bir sürümde nelerin değiştiğine dair kısa özet.",
+  "exampleTr": "İlgi çekici sürüm notları yeni yetenekleri ve önemli hata düzeltmelerini vurgular."
+ },
+ {
+  "id": "306",
+  "definitionTr": "Yeni kodu uzaktan açıp kapatan bir anahtar.",
+  "exampleTr": "Özellik bayrakları kullanmak, yeni kodu production'da güvenle test etmemizi sağlar."
+ },
+ {
+  "id": "307",
+  "definitionTr": "Güncellemeyi herkesten önce küçük bir gruba sunmak.",
+  "exampleTr": "Kanarya dağıtımı, uç durum hatalarını yakalamak için güncellemeleri kullanıcıların %1'ine sunar."
+ },
+ {
+  "id": "308",
+  "definitionTr": "Kesinti yaşanmaması için trafiği iki özdeş sunucu arasında değiştirmek.",
+  "exampleTr": "Mavi-yeşil dağıtım, güncellemeler sırasında sıfır kesintili sürümler sağlar."
+ },
+ {
+  "id": "309",
+  "definitionTr": "Ters giden bir güncellemeyi geri almak için hazırlanmış yol.",
+  "exampleTr": "Her deploy, kritik hatalara karşı doğrulanmış bir geri alma planı gerektirir."
+ },
+ {
+  "id": "310",
+  "definitionTr": "Bir sorunun gerçek nedenini bulana kadar derinlemesine incelemek.",
+  "exampleTr": "Kök neden analizi raporu, kesinti nedeninin eksik bir veritabanı indeksi olduğunu tespit etti."
+ },
+ {
+  "id": "311",
+  "definitionTr": "Bir olaydan sonra neyin yanlış gittiğini incelemek için yapılan toplantı.",
+  "exampleTr": "Dünkü API kesintisinden ders çıkarmak için suçlayıcı olmayan bir olay sonrası değerlendirme yaptık."
+ },
+ {
+  "id": "312",
+  "definitionTr": "Müşteriye belirli performans ve destek vaat eden sözleşme.",
+  "exampleTr": "Kurumsal SLA'mız %99,9 uptime ve 1 saatlik kritik yanıt süresi garanti eder."
+ },
+ {
+  "id": "313",
+  "definitionTr": "Mühendislerin ulaşmayı hedeflediği dahili güvenilirlik hedefi.",
+  "exampleTr": "Mühendislik, SLA ihlali olaylarını önlemek için SLO performansını izler."
+ },
+ {
+  "id": "314",
+  "definitionTr": "Güvenilirliği kontrol etmek için kullanılan gerçek ölçüm, örneğin yanıt hızı.",
+  "exampleTr": "API yanıt gecikmesi, bulut hizmetlerimiz için temel performans SLI'mızdır."
+ },
+ {
+  "id": "315",
+  "definitionTr": "Bir takımın bir şeyin ters gittiğini ne kadar hızlı fark ettiği.",
+  "exampleTr": "Otomatik izleme, sistem anomalileri için MTTD'mizi 2 dakikaya düşürdü."
+ },
+ {
+  "id": "316",
+  "definitionTr": "Bir sorun ortaya çıktıktan sonra takımın ne kadar hızlı düzelttiği.",
+  "exampleTr": "Olay el kitaplarını iyileştirmek, büyük kesintiler sırasında genel MTTR'yi düşürdü."
+ },
+ {
+  "id": "317",
+  "definitionTr": "Arızalandığında tüm sistemi durduracak parça.",
+  "exampleTr": "Yedekli bulut veritabanı instance'ları tekil başarısızlık noktalarını ortadan kaldırır."
+ },
+ {
+  "id": "318",
+  "definitionTr": "Bir sistemin beklenen yoğun trafiği kaldırıp kaldıramadığını kontrol etmek.",
+  "exampleTr": "Yük testi, sistemlerin beklenen tatil trafiği artışlarına dayanmasını sağlar."
+ },
+ {
+  "id": "319",
+  "definitionTr": "Sistemin nerede kırıldığını görmek için sınırlarının ötesine itmek.",
+  "exampleTr": "Stres testi, aşırı yük altında sistem arıza eşiklerini belirler."
+ },
+ {
+  "id": "320",
+  "definitionTr": "Güvenlik açıklarını bulmak için sisteme yapılan dostane saldırı.",
+  "exampleTr": "Yıllık sızma testi, potansiyel güvenlik zafiyetlerini ortaya çıkarır."
+ },
+ {
+  "id": "321",
+  "definitionTr": "Saldırganların istismar edebileceği zayıflıklar için yapılandırılmış kontrol.",
+  "exampleTr": "Zafiyet değerlendirmesi, güncelliğini yitirmiş açık kaynak paketleri tespit etti."
+ },
+ {
+  "id": "322",
+  "definitionTr": "Bir şirketin yasal olarak karşılaması gereken resmi standartlar bütünü.",
+  "exampleTr": "B2B anlaşmaları için SOC2 uyumluluk çerçevelerine uyum zorunludur."
+ },
+ {
+  "id": "323",
+  "definitionTr": "Olası tehlikeleri erken fark edip etkilerini azaltmak.",
+  "exampleTr": "Proaktif risk yönetimi, yol haritası uygulamasındaki öngörülemeyen gecikmeleri en aza indirir."
+ },
+ {
+  "id": "324",
+  "definitionTr": "Dış tedarikçilerle ilişkileri ve sözleşmelerini yönetmek.",
+  "exampleTr": "Tedarikçi yönetimi, üçüncü taraf yazılım lisanslarını ve SLA'ları müzakere eder."
+ },
+ {
+  "id": "325",
+  "definitionTr": "Her iki taraf anlaşana kadar başka bir şirketle şartları görüşmek.",
+  "exampleTr": "Sözleşme müzakeresi, bulut barındırma için kurumsal hacim indirimleri sağladı."
+ },
+ {
+  "id": "326",
+  "definitionTr": "Harcanan paraya kıyasla ne kadar kar elde edildiği.",
+  "exampleTr": "Net yatırım getirisini göstermek, süregelen ürün mühendisliği yatırımını haklı kılar."
+ },
+ {
+  "id": "327",
+  "definitionTr": "Karar vermeden önce bir şeyin maliyetini sağladıklarıyla karşılaştırmak.",
+  "exampleTr": "Maliyet-fayda analizi, özel analitik geliştirmenin ekonomik olduğunu kanıtladı."
+ },
+ {
+  "id": "328",
+  "definitionTr": "Bina veya donanım gibi uzun ömürlü varlıklara harcanan para.",
+  "exampleTr": "Sunucu donanım alımları finansal raporlarda sermaye harcaması olarak sınıflandırılır."
+ },
+ {
+  "id": "329",
+  "definitionTr": "Bir işletmeyi ayakta tutmak için gereken düzenli günlük harcama.",
+  "exampleTr": "Bulut barındırma abonelikleri, devam eden aylık operasyonel harcama kalemlerine girer."
+ },
+ {
+  "id": "330",
+  "definitionTr": "Bir şirketin sunduğu ürünü üretmenin doğrudan maliyeti.",
+  "exampleTr": "Sunucu maliyetlerini optimize etmek COGS'i düşürdü ve brüt kar marjını iyileştirdi."
+ },
+ {
+  "id": "331",
+  "definitionTr": "Gelirin nihayet toplam harcamayla eşleştiği an.",
+  "exampleTr": "Başa baş noktasına ulaşmak, girişimler için hayati bir kilometre taşıdır."
+ },
+ {
+  "id": "332",
+  "definitionTr": "Tek bir müşteri veya satış için ölçülen kar ve zarar.",
+  "exampleTr": "Güçlü birim ekonomisi, her müşterinin pozitif net marj üretmesini sağlar."
+ },
+ {
+  "id": "333",
+  "definitionTr": "Zaman içinde her satıştan elde edilen kar payını büyütmek.",
+  "exampleTr": "Otomasyon ve self-serve yetenekleri ölçeklenebilir marj genişlemesini tetikler."
+ },
+ {
+  "id": "334",
+  "definitionTr": "Yakında iptal edecek müşterileri işaretleyen araç.",
+  "exampleTr": "Ayrılma tahmin modeli, etkileşim düşüşüne göre risk altındaki hesapları işaretler."
+ },
+ {
+  "id": "335",
+  "definitionTr": "Müşterileri daha pahalı bir pakete taşıma planı.",
+  "exampleTr": "Üst segment satış stratejisi, temel kademe abonelerini pro kademeye dönüştürür."
+ },
+ {
+  "id": "336",
+  "definitionTr": "Zaten alışveriş yapan birine ek ilgili ürünler sunmak.",
+  "exampleTr": "İlgili modüllerin çapraz satışı, kurumsal B2B için ortalama sipariş değerini artırır."
+ },
+ {
+  "id": "337",
+  "definitionTr": "Farklı maliyetli planlar aralığındaki bir seviye.",
+  "exampleTr": "Kurumsal fiyatlandırma kademesi eklemek, kurumsal ödeme isteğini yakaladı."
+ },
+ {
+  "id": "338",
+  "definitionTr": "Ziyaretçilerden abone olmalarını isteyen ekranı iyileştirmek.",
+  "exampleTr": "Ödeme duvarı optimizasyonu deneme dönüşüm oranlarını %8 artırdı."
+ },
+ {
+  "id": "339",
+  "definitionTr": "Ücretsiz plan kullanıcılarını ödeyen müşterilere dönüştürmek.",
+  "exampleTr": "Uygulama içi özellik sınırları, organik freemium dönüşümünü ücretli planlara yönlendirir."
+ },
+ {
+  "id": "340",
+  "definitionTr": "Bir şirketin aboneliklerden elde ettiği öngörülebilir yıllık gelir.",
+  "exampleTr": "10 milyon dolar ARR sınırını aşmak, şirketi Series B fonlaması için uygun hale getirdi."
+ },
+ {
+  "id": "341",
+  "definitionTr": "Bir şirketin her otuz günde saydığı düzenli abonelik geliri.",
+  "exampleTr": "İstikrarlı MRR büyümesini izlemek, öngörülebilir nakit akışı tahmini sağlar."
+ },
+ {
+  "id": "342",
+  "definitionTr": "Henüz sunulmamış bir hizmet için önceden alınan para.",
+  "exampleTr": "Peşin yıllık plan ödemeleri bilançoda ertelenmiş gelir olarak kaydedilir."
+ },
+ {
+  "id": "343",
+  "definitionTr": "Bir işletmenin her ay harcadığından daha fazla para kazanması.",
+  "exampleTr": "Pozitif nakit akışına geçmek, şirkete kaderi üzerinde kontrol sağlar."
+ },
+ {
+  "id": "344",
+  "definitionTr": "Fon toplamak için kullanılan kısa slayt sunumu.",
+  "exampleTr": "Kurucu, yaklaşan fonlama turları için yatırımcı sunumunu güncelledi."
+ },
+ {
+  "id": "345",
+  "definitionTr": "Anlaşma kapanmadan önce bir şirketin dikkatli incelenmesi.",
+  "exampleTr": "Yatırımcılar, kod tabanı mimarimiz üzerinde teknik ön inceleme yaptı."
+ },
+ {
+  "id": "346",
+  "definitionTr": "Fonlama teklifinin ana noktalarını özetleyen erken dönem belge.",
+  "exampleTr": "Ön anlaşma belgesi almak, pazar çekişimimizi ve büyüme metriklerimizi doğruladı."
+ },
+ {
+  "id": "347",
+  "definitionTr": "Bir şirketin parasal olarak tahmin edilen değeri.",
+  "exampleTr": "Güçlü gelir büyümesi, fonlama sırasında daha yüksek bir değerlemeye yol açtı."
+ },
+ {
+  "id": "348",
+  "definitionTr": "Kurucuların şirketlerini satma veya halka arz etme planı.",
+  "exampleTr": "Halka arz veya stratejik satın alma, uzun vadeli bir çıkış stratejisi olarak hizmet eder."
+ },
+ {
+  "id": "349",
+  "definitionTr": "Şirketlerin birleştiği veya birinin diğerini satın aldığı anlaşmalar.",
+  "exampleTr": "M&A anlaşması, ürün portföyümüzü bitişik pazar sektörlerine genişletti."
+ },
+ {
+  "id": "350",
+  "definitionTr": "Daha iyi performans için aşamalar zincirini iyileştirmek.",
+  "exampleTr": "Q3'te dönüşümü artırmak için pipeline'ı optimize etmeye karar verdik."
+ },
+ {
+  "id": "351",
+  "definitionTr": "Aşamalar zincirini sadeleştirip gereksiz eforu ortadan kaldırmak.",
+  "exampleTr": "Q3'te farklı disiplinli takımlar arasında pipeline'ı sadeleştirmeye karar verdik."
+ },
+ {
+  "id": "352",
+  "definitionTr": "Satın alma yolculuğunu en acil odak olarak ele almak.",
+  "exampleTr": "Q3'te ayrılma riskini azaltmak için funnel'ı önceliklendirmeye karar verdik."
+ },
+ {
+  "id": "353",
+  "definitionTr": "Satın alma yolculuğunun her aşamada ne kadar iyi performans gösterdiğini incelemek.",
+  "exampleTr": "Q3'te ölçeklenebilir mimari için funnel'ı değerlendirmeye karar verdik."
+ },
+ {
+  "id": "354",
+  "definitionTr": "Görevlerin kişiler arasında akışındaki sorunları azaltmak.",
+  "exampleTr": "Q3'teki yönetici hizalanma toplantısında workflow'u iyileştirmeye karar verdik."
+ },
+ {
+  "id": "355",
+  "definitionTr": "Görevlerin bir takımdan ne kadar hızlı geçtiğini artırmak.",
+  "exampleTr": "Q3'te istatistiksel geçerliliği sağlamak için workflow'u hızlandırmaya karar verdik."
+ },
+ {
+  "id": "356",
+  "definitionTr": "Sistem tasarımını ortak hedeflerle uyumlu hale getirmek.",
+  "exampleTr": "Q3'te sorunsuz onboarding için mimariyi hizalamaya karar verdik."
+ },
+ {
+  "id": "357",
+  "definitionTr": "Dağınık sistem parçalarını daha basit bir yapıda birleştirmek.",
+  "exampleTr": "Q3'te değer yaratma süresini optimize etmek için mimariyi birleştirmeye karar verdik."
+ },
+ {
+  "id": "358",
+  "definitionTr": "Seçilen planın gerçekten işe yaradığını kanıtlarla doğrulamak.",
+  "exampleTr": "Q3'te küresel kullanıcı segmentleri genelinde stratejiyi doğrulamaya karar verdik."
+ },
+ {
+  "id": "359",
+  "definitionTr": "Mevcut planı daha büyük kazançlar için araç olarak kullanmak.",
+  "exampleTr": "Q3'te uzun vadeli tutundurmayı en üst düzeye çıkarmak için stratejiden yararlanmaya karar verdik."
+ },
+ {
+  "id": "360",
+  "definitionTr": "Daha iyi sonuçlar için gelecek özelliklerin takvimini iyileştirmek.",
+  "exampleTr": "Q3'te dönüşümü artırmak için yol haritasını optimize etmeye karar verdik."
+ },
+ {
+  "id": "361",
+  "definitionTr": "Daha az madde teslimatı engellesin diye gelecek planları sadeleştirmek.",
+  "exampleTr": "Q3'te farklı disiplinli takımlar arasında yol haritasını sadeleştirmeye karar verdik."
+ },
+ {
+  "id": "362",
+  "definitionTr": "Karar verirken bir ölçümü diğerlerinin üzerinde tutmak.",
+  "exampleTr": "Q3'te ayrılma riskini azaltmak için metriği önceliklendirmeye karar verdik."
+ },
+ {
+  "id": "363",
+  "definitionTr": "Bir ölçümün gerçekten faydalı ilerleme gösterip göstermediğini değerlendirmek.",
+  "exampleTr": "Q3'te ölçeklenebilir mimari için metriği değerlendirmeye karar verdik."
+ },
+ {
+  "id": "364",
+  "definitionTr": "Seçilen çalışma yönteminin yarattığı riskleri azaltmak.",
+  "exampleTr": "Q3'teki yönetici hizalanma toplantısında çerçeve risklerini azaltmaya karar verdik."
+ },
+ {
+  "id": "365",
+  "definitionTr": "Yapılandırılmış bir çalışma yönteminin benimsenmesini hızlandırmak.",
+  "exampleTr": "Q3'te istatistiksel geçerliliği sağlamak için çerçevenin benimsenmesini hızlandırmaya karar verdik."
+ },
+ {
+  "id": "366",
+  "definitionTr": "Benzer kullanıcılardan oluşan bir grubun tutarlı davranmasını sağlamak.",
+  "exampleTr": "Q3'te sorunsuz onboarding için kohortu hizalamaya karar verdik."
+ },
+ {
+  "id": "367",
+  "definitionTr": "Birkaç benzer kullanıcı grubunu tek bir grupta birleştirmek.",
+  "exampleTr": "Q3'te değer yaratma süresini optimize etmek için kohortu birleştirmeye karar verdik."
+ },
+ {
+  "id": "368",
+  "definitionTr": "Ortaklar ve araçlardan oluşan ağın işlediğini doğrulamak.",
+  "exampleTr": "Q3'te küresel kullanıcı segmentleri genelinde ekosistemi doğrulamaya karar verdik."
+ },
+ {
+  "id": "369",
+  "definitionTr": "Ortaklar ve araçlardan oluşan geniş ağdan yararlanmak.",
+  "exampleTr": "Q3'te uzun vadeli tutundurmayı en üst düzeye çıkarmak için ekosistemden yararlanmaya karar verdik."
+ },
+ {
+  "id": "370",
+  "definitionTr": "Bir işletmenin hayatta kalmak için yeterli para kazanıp kazanamayacağı.",
+  "exampleTr": "Ticari sürdürülebilirlik, ön sipariş landing sayfası testiyle denendi."
+ },
+ {
+  "id": "371",
+  "definitionTr": "İnsanların bir şeyin var olmasını ne kadar istediği.",
+  "exampleTr": "Nitel görüşmeler, otomatik raporlamanın arzu edilirliğini doğrulamaya yardımcı oldu."
+ },
+ {
+  "id": "372",
+  "definitionTr": "Bir projenin şirketin geniş hedeflerine ne kadar uyduğu.",
+  "exampleTr": "Her OKR, şirketin üst düzey hedefleriyle net stratejik hizalanma göstermelidir."
+ },
+ {
+  "id": "373",
+  "definitionTr": "Bir şirketin ürünüyle benimsediği genel duruş.",
+  "exampleTr": "Savunmacı ürün duruşumuz, mevcut kullanıcı tutundurmayı korumaya odaklandı."
+ },
+ {
+  "id": "374",
+  "definitionTr": "Müşterilerin birbirine bağlı hizmetler bütününden ayrılmasının zor olması.",
+  "exampleTr": "Çoklu cihaz senkronizasyonu, güç kullanıcılar için uzun vadeli ekosistem bağımlılığı oluşturur."
+ },
+ {
+  "id": "375",
+  "definitionTr": "Bir şirketin istediği geleceği anlatan kısa cümle.",
+  "exampleTr": "Net bir vizyon bildirimi, farklı disiplinli takımı uzun vadeli hedeflere ilham verir."
+ },
+ {
+  "id": "376",
+  "definitionTr": "Bir şirketin değer yarattığını en iyi gösteren tek sayı.",
+  "exampleTr": "Temel bir işlemi tamamlayan haftalık aktif kullanıcılar kuzey yıldızı metriğimizdir."
+ },
+ {
+  "id": "377",
+  "definitionTr": "Henüz kimsenin çözmediği bir müşteri sorunu.",
+  "exampleTr": "Envanter yönetiminde karşılanmamış bir ihtiyacın tespiti, yeni SaaS ürünümüze yol açtı."
+ },
+ {
+  "id": "378",
+  "definitionTr": "Bir sektörün işleyişini alt üst eden yeni yaklaşım.",
+  "exampleTr": "Mobil öncelikli rezervasyon platformları, seyahat sektöründe yıkıcı yeniliği temsil etti."
+ },
+ {
+  "id": "379",
+  "definitionTr": "Görevlerin zorluğunu tahmin etmek için kullanılan göreceli sayılar.",
+  "exampleTr": "Hikaye puanlarını tahmin etmek için Fibonacci dizisi sayılarını kullanıyoruz."
+ },
+ {
+  "id": "380",
+  "definitionTr": "Takım ilerlemesinin önüne geçen her türlü engel.",
+  "exampleTr": "Scrum yöneticisi, deploy altyapı engelini hızla kaldırdı."
+ },
+ {
+  "id": "381",
+  "definitionTr": "Teknik belirsizliği azaltmak için süre sınırlı araştırma.",
+  "exampleTr": "Üçüncü taraf analitik SDK'larını değerlendirmek için 2 günlük bir spike planladık."
+ },
+ {
+  "id": "382",
+  "definitionTr": "Daha küçük hikayelere bölünmüş büyük iş paketleri.",
+  "exampleTr": "Mobil ödeme yenilemesi üç ayrı epik olarak parçalandı."
+ },
+ {
+  "id": "383",
+  "definitionTr": "Çözülene kadar ilerlemeyi tamamen durduran sorun.",
+  "exampleTr": "Eksik bir API uç noktası, frontend mühendislik ekibi için engelleyici bir sorun yarattı."
+ },
+ {
+  "id": "384",
+  "definitionTr": "Takımın hızla senkronize olduğu kısa günlük toplantı.",
+  "exampleTr": "Günlük ayakta toplantı, günlük hedefler ve engeller konusunda hızlı hizalanma sağlar."
+ }
+]

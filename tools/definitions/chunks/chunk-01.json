@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "1",
+  "en": "migrate",
+  "tr": "göç ettirmek / taşımak (veri, sistem)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We need to migrate our database architecture from MySQL to PostgreSQL next sprint.",
+  "definition": "To move data or a system from one place to another."
+ },
+ {
+  "id": "2",
+  "en": "transition",
+  "tr": "geçiş yapmak / dönüştürmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The organization will transition from a waterfall framework to an agile product delivery model.",
+  "definition": "To change from one way of working to a new one."
+ },
+ {
+  "id": "3",
+  "en": "deprecate",
+  "tr": "kullanımdan kaldırmak / sonlandırmak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "We plan to deprecate version 1 of our REST API by the end of Q3.",
+  "definition": "To officially stop supporting an old version of something."
+ },
+ {
+  "id": "4",
+  "en": "phase out",
+  "tr": "kademeli olarak kaldırmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We are phasing out support for legacy browser versions next month.",
+  "definition": "To gradually stop offering something over a period of time."
+ },
+ {
+  "id": "5",
+  "en": "roll out",
+  "tr": "piyasaya sürmek / kademeli sunmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The squad will roll out the new checkout layout to 10% of users first.",
+  "definition": "To release a new feature to users, often step by step."
+ },
+ {
+  "id": "6",
+  "en": "standardize",
+  "tr": "standartlaştırmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Standardizing our API design principles improved backend integration speed across squads.",
+  "definition": "To make everything follow the same rules or format."
+ },
+ {
+  "id": "7",
+  "en": "orchestrate",
+  "tr": "koordine etmek / organize etmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "The product manager orchestrated the cross-functional release across design, dev, and marketing.",
+  "definition": "To plan and coordinate many parts of a complex effort."
+ },
+ {
+  "id": "8",
+  "en": "restructure",
+  "tr": "yeniden yapılandırmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We restructured the subscription options to make pricing plans clearer for end users.",
+  "definition": "To organize something again in a different way."
+ },
+ {
+  "id": "9",
+  "en": "adapt",
+  "tr": "uyarlamak / uyum sağlamak",
+  "pos": "Teknik / PM",
+  "level": "B1",
+  "example": "The mobile web interface automatically adapts to different screen sizes.",
+  "definition": "To change in order to fit a new situation."
+ },
+ {
+  "id": "10",
+  "en": "align",
+  "tr": "hizalamak / aynı çizgiye getirmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We held a alignment workshop to ensure product goals align with business objectives.",
+  "definition": "To bring two things into agreement or the same direction."
+ },
+ {
+  "id": "11",
+  "en": "allocate",
+  "tr": "tahsis etmek / kaynak ayırmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Engineering managers allocate sprint capacity based on prioritized backlog items.",
+  "definition": "To give a set amount of resources to a task."
+ },
+ {
+  "id": "12",
+  "en": "automate",
+  "tr": "otomatikleştirmek",
+  "pos": "Teknik / PM",
+  "level": "B1",
+  "example": "Automating user onboarding emails increased trial-to-paid conversions.",
+  "definition": "To make a task run by machine without human work."
+ },
+ {
+  "id": "13",
+  "en": "consolidate",
+  "tr": "birleştirmek / pekiştirmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "We consolidated three separate micro-apps into a single unified mobile solution.",
+  "definition": "To combine several separate things into one stronger whole."
+ },
+ {
+  "id": "14",
+  "en": "decentralize",
+  "tr": "merkezisizleştirmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Decentralizing decision-making empowers autonomous product squads to move faster.",
+  "definition": "To move power or control away from one single point."
+ },
+ {
+  "id": "15",
+  "en": "diversify",
+  "tr": "çeşitlendirmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Diversifying our acquisition channels reduced dependence on paid ad campaigns.",
+  "definition": "To add more variety or different types to something."
+ },
+ {
+  "id": "16",
+  "en": "expedite",
+  "tr": "hızlandırmak / çabuklaştırmak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Automated QA pipelines expedite the deployment process to production.",
+  "definition": "To make a process happen faster than usual."
+ },
+ {
+  "id": "17",
+  "en": "govern",
+  "tr": "yönetmek / denetlemek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Clear internal governance policies regulate how customer data is processed.",
+  "definition": "To control and direct how something is run."
+ },
+ {
+  "id": "18",
+  "en": "harmonize",
+  "tr": "uyumlu hale getirmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "The product redesign harmonized the visual brand identity across web and mobile.",
+  "definition": "To make different parts match and work well together."
+ },
+ {
+  "id": "19",
+  "en": "implement",
+  "tr": "devreye almak / hayata geçirmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We successfully implemented multi-language localization for European markets.",
+  "definition": "To put a plan or feature into real use."
+ },
+ {
+  "id": "20",
+  "en": "overhaul",
+  "tr": "baştan aşağı yenilemek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "The engineering team planned a complete overhaul of the legacy authentication service.",
+  "definition": "A complete rebuilding or repair of an old system."
+ },
+ {
+  "id": "21",
+  "en": "reconfigure",
+  "tr": "yeniden yapılandırmak / ayarlarını değiştirmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "We reconfigured server limits to prevent outages during peak campaign hours.",
+  "definition": "To change the settings of a system again."
+ },
+ {
+  "id": "22",
+  "en": "relocate",
+  "tr": "yerini değiştirmek / taşımak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The setting tab was relocated to the main user profile menu for better discoverability.",
+  "definition": "To move something to a different place."
+ },
+ {
+  "id": "23",
+  "en": "scale",
+  "tr": "ölçeklendirmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our cloud infrastructure can automatically scale to support millions of concurrent connections.",
+  "definition": "To grow a system so it handles much more work."
+ },
+ {
+  "id": "24",
+  "en": "substitute",
+  "tr": "yerini almak / ikame etmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We substituted native push notifications for third-party messaging services.",
+  "definition": "To use one thing in place of another."
+ },
+ {
+  "id": "25",
+  "en": "supersede",
+  "tr": "yerini almak / geçersiz kılmak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "The new privacy regulation supersedes all previous internal data storage rules.",
+  "definition": "To take the place of something older and make it invalid."
+ },
+ {
+  "id": "26",
+  "en": "synthesize",
+  "tr": "sentezlemek / bir araya getirmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "We synthesized user feedback from fifty user interviews into three core product pillars.",
+  "definition": "To combine many pieces of information into one clear whole."
+ },
+ {
+  "id": "27",
+  "en": "transform",
+  "tr": "dönüştürmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Digital transformation initiative completely revamped the legacy banking portal.",
+  "definition": "To change something completely into something new."
+ },
+ {
+  "id": "28",
+  "en": "unify",
+  "tr": "birleştirmek / tek çatı altında toplamak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The project aims to unify the design system across all company platforms.",
+  "definition": "To bring separate parts together as one."
+ },
+ {
+  "id": "29",
+  "en": "validate",
+  "tr": "doğrulamak / test etmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We created a quick prototype to validate user interest before building full features.",
+  "definition": "To check with evidence that an idea really works."
+ },
+ {
+  "id": "30",
+  "en": "centralize",
+  "tr": "merkezileştirmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Centralizing user activity logs helped security teams audit platform access easily.",
+  "definition": "To bring everything together under one point of control."
+ },
+ {
+  "id": "31",
+  "en": "configure",
+  "tr": "yapılandırmak / ayarlamak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Users can configure their dashboard widgets based on personal preferences.",
+  "definition": "To set up options so a system works as wanted."
+ },
+ {
+  "id": "32",
+  "en": "delineate",
+  "tr": "ana hatlarıyla tanımlamak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "The product spec clearly delineates ownership between frontend and backend teams.",
+  "definition": "To describe clearly where the limits of something are."
+ },
+ {
+  "id": "33",
+  "en": "disrupt",
+  "tr": "düzenini bozmak / devrim yaratmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Innovative subscription models disrupted traditional software licensing in our industry.",
+  "definition": "To break the normal order of a market or industry."
+ },
+ {
+  "id": "34",
+  "en": "expand",
+  "tr": "genişletmek / büyütmek",
+  "pos": "Teknik / PM",
+  "level": "B1",
+  "example": "We plan to expand our market reach to Southeast Asia in Q4.",
+  "definition": "To make something larger or reach more places."
+ },
+ {
+  "id": "35",
+  "en": "institutionalize",
+  "tr": "kurumsallaştırmak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "The team works to institutionalize continuous user testing practices across the enterprise.",
+  "definition": "To make a practice a permanent part of a company."
+ },
+ {
+  "id": "36",
+  "en": "interconnect",
+  "tr": "birbirine bağlamak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our webhooks interconnect third-party CRM tools directly with user accounts.",
+  "definition": "To link separate systems so they work with each other."
+ },
+ {
+  "id": "37",
+  "en": "modernize",
+  "tr": "modernize etmek / çağdaşlaştırmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Modernizing our tech stack reduced deployment downtime by 80%.",
+  "definition": "To update something old with current technology."
+ },
+ {
+  "id": "38",
+  "en": "optimize",
+  "tr": "en uygun hale getirmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Optimizing backend SQL queries cut main feed loading speed in half.",
+  "definition": "To improve something so it works as well as possible."
+ },
+ {
+  "id": "39",
+  "en": "pioneer",
+  "tr": "öncülük etmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Our startup pioneered early AI-driven customer support automation in Turkey.",
+  "definition": "To be the first to develop a new method."
+ },
+ {
+  "id": "40",
+  "en": "reengineer",
+  "tr": "yeniden tasarlamak (süreç/sistem)",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "We reengineered our checkout pipeline to minimize step count and reduce churn.",
+  "definition": "To redesign a process or system completely from the beginning."
+ },
+ {
+  "id": "41",
+  "en": "revamp",
+  "tr": "yenilemek / revize etmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Marketing revamps landing pages quarterly to optimize organic traffic conversion.",
+  "definition": "To improve something and give it a fresh new look."
+ },
+ {
+  "id": "42",
+  "en": "synchronize",
+  "tr": "senkronize etmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "User preferences synchronize instantly across mobile app and desktop web.",
+  "definition": "To make two systems show the same data at once."
+ },
+ {
+  "id": "43",
+  "en": "upgrade",
+  "tr": "yükseltmek / güncellemektir",
+  "pos": "Teknik / PM",
+  "level": "B1",
+  "example": "We recommend users upgrade to the latest app version for improved security.",
+  "definition": "To move to a newer and better version."
+ },
+ {
+  "id": "44",
+  "en": "consist of",
+  "tr": "oluşmak (-den/dan)",
+  "pos": "Teknik / PM",
+  "level": "B1",
+  "example": "The product team consists of five software engineers, two designers, and one PM.",
+  "definition": "To be made up of certain parts or people."
+ },
+ {
+  "id": "45",
+  "en": "obtain",
+  "tr": "elde etmek / edinmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We need to obtain explicit user consent before storing location tracking data.",
+  "definition": "To get or receive something that you need."
+ },
+ {
+  "id": "46",
+  "en": "derive from",
+  "tr": "türetmek / -den elde etmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The core metrics are derived from real-time database action logs.",
+  "definition": "To be produced by an earlier source or input."
+ },
+ {
+  "id": "47",
+  "en": "facilitate",
+  "tr": "kolaylaştırmak / olanak sağlamak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Automated workflows facilitate smooth collaboration between cross-functional teams.",
+  "definition": "To make an activity easier for other people."
+ },
+ {
+  "id": "48",
+  "en": "evaluate",
+  "tr": "değerlendirmek / ölçümlemek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The squad will evaluate user survey results to refine the feature roadmap.",
+  "definition": "To judge the value or quality of something carefully."
+ },
+ {
+  "id": "49",
+  "en": "determine",
+  "tr": "belirlemek / kararlaştırmak",
+  "pos": "Teknik / PM",
+  "level": "B1",
+  "example": "A/B testing helped us determine the optimal call-to-action button position.",
+  "definition": "To find out or decide something with certainty."
+ },
+ {
+  "id": "50",
+  "en": "enhance",
+  "tr": "geliştirmek / artırmak (kalite vb.)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Adding micro-interactions enhances the overall mobile user experience.",
+  "definition": "To improve the quality or value of something."
+ },
+ {
+  "id": "51",
+  "en": "leverage",
+  "tr": "kaldıraç olarak kullanmak / faydalanmak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "We can leverage existing backend architecture to launch the new web app faster.",
+  "definition": "To use an existing resource to gain an advantage."
+ },
+ {
+  "id": "52",
+  "en": "advocate",
+  "tr": "savunmak / desteklemek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Product managers must advocate for the user's needs during technical design reviews.",
+  "definition": "To publicly support and speak in favor of something."
+ },
+ {
+  "id": "53",
+  "en": "substantiate",
+  "tr": "somutlaştırmak / verilerle kanıtlamak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Please substantiate your hypothesis with data from recent cohort retention reports.",
+  "definition": "To prove that a claim is true with evidence."
+ },
+ {
+  "id": "54",
+  "en": "mitigate",
+  "tr": "hafifletmek / etkisini azaltmak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Staged feature rollouts help mitigate the risk of severe production outages.",
+  "definition": "To make something bad less serious or harmful."
+ },
+ {
+  "id": "55",
+  "en": "streamline",
+  "tr": "yalınlaştırmak / verimli hale getirmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Streamlining the onboarding steps reduced registration drop-offs significantly.",
+  "definition": "To simplify a process so it becomes more efficient."
+ },
+ {
+  "id": "56",
+  "en": "accelerate",
+  "tr": "hızlandırmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Clear API documentation accelerates third-party integration time.",
+  "definition": "To make something happen more quickly."
+ },
+ {
+  "id": "57",
+  "en": "ascertain",
+  "tr": "aslını öğrenmek / tespit etmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "User interviews helped us ascertain why retention dropped after the third session.",
+  "definition": "To find out the truth about something for sure."
+ },
+ {
+  "id": "58",
+  "en": "benchmark",
+  "tr": "kıyaslamak / referans almak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We benchmarked our application load time against our top three competitors.",
+  "definition": "To compare your performance against a known standard."
+ },
+ {
+  "id": "59",
+  "en": "comply with",
+  "tr": "uyumlu olmak / kurallara uymak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The checkout service must comply with international security regulations.",
+  "definition": "To act according to rules or official requirements."
+ },
+ {
+  "id": "60",
+  "en": "comprise",
+  "tr": "kapsamak / içermek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "The design system comprises over fifty reusable UI components.",
+  "definition": "To be formed of a number of parts."
+ },
+ {
+  "id": "61",
+  "en": "convey",
+  "tr": "aktarmak / iletmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The dashboard must convey complex analytics data clearly to non-technical users.",
+  "definition": "To pass information or a message to someone."
+ },
+ {
+  "id": "62",
+  "en": "differentiate",
+  "tr": "farklılaştırmak / ayırt etmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Unique personalization capabilities differentiate our SaaS product from competitors.",
+  "definition": "To make one thing clearly separate from similar things."
+ },
+ {
+  "id": "63",
+  "en": "disseminate",
+  "tr": "yaymak / dağıtmak (bilgi vb.)",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Weekly newsletters disseminate product release notes across the entire company.",
+  "definition": "To spread information widely to many people."
+ },
+ {
+  "id": "64",
+  "en": "elucidate",
+  "tr": "açıklığa kavuşturmak / aydınlatmak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "The lead architect elucidated how the system handles database failovers.",
+  "definition": "To explain something difficult so it becomes clear."
+ },
+ {
+  "id": "65",
+  "en": "emphasize",
+  "tr": "vurgulamak / üzerinde durmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our product pitch should emphasize time savings rather than technical specs.",
+  "definition": "To give special importance to one particular point."
+ },
+ {
+  "id": "66",
+  "en": "encounter",
+  "tr": "karşılaşmak (zorluk vb.)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Users encounter minimal friction during the simplified account setup process.",
+  "definition": "To meet or experience something, often a problem."
+ },
+ {
+  "id": "67",
+  "en": "endeavor",
+  "tr": "çabalamak / girişimde bulunmak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "We constantly endeavor to deliver high performance despite network constraints.",
+  "definition": "To try hard to achieve something difficult."
+ },
+ {
+  "id": "68",
+  "en": "enforce",
+  "tr": "zorunlu kılmak / uygulamak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The backend server enforces strict authentication rate limits.",
+  "definition": "To make people obey a rule strictly."
+ },
+ {
+  "id": "69",
+  "en": "establish",
+  "tr": "kurmak / tesis etmek",
+  "pos": "Teknik / PM",
+  "level": "B1",
+  "example": "We must establish clear feedback loops with customer support teams.",
+  "definition": "To set up something new that will last."
+ },
+ {
+  "id": "70",
+  "en": "exceed",
+  "tr": "aşmak / üstüne çıkmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Monthly recurring revenue exceeded our forecast by fifteen percent.",
+  "definition": "To go beyond a limit or expected amount."
+ },
+ {
+  "id": "71",
+  "en": "exert",
+  "tr": "göstermek / uygulamak (çaba, etki)",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "The core algorithm exerts a strong influence on recommendation relevance.",
+  "definition": "To apply effort, power, or influence on something."
+ },
+ {
+  "id": "72",
+  "en": "foster",
+  "tr": "teşvik etmek / beslemek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Regular retrospective meetings foster continuous team improvement.",
+  "definition": "To encourage something good to develop and grow."
+ },
+ {
+  "id": "73",
+  "en": "gauge",
+  "tr": "ölçmek / tahmin etmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We used micro-surveys to gauge customer satisfaction after the design update.",
+  "definition": "To measure or judge the level of something."
+ },
+ {
+  "id": "74",
+  "en": "generate",
+  "tr": "üretmek / oluşturmak",
+  "pos": "Teknik / PM",
+  "level": "B1",
+  "example": "The automated campaign generated thousands of qualified sales leads.",
+  "definition": "To produce or create something new."
+ },
+ {
+  "id": "75",
+  "en": "incorporate",
+  "tr": "bünyesine katmak / dahil etmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We plan to incorporate customer suggestions into the next release cycle.",
+  "definition": "To include something as part of a larger whole."
+ },
+ {
+  "id": "76",
+  "en": "indicate",
+  "tr": "göstermek / işaret etmek",
+  "pos": "Teknik / PM",
+  "level": "B1",
+  "example": "Early analytics data indicate strong user preference for the mobile app layout.",
+  "definition": "To show or point to a fact clearly."
+ },
+ {
+  "id": "77",
+  "en": "induce",
+  "tr": "neden olmak / teşvik etmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Simplified interfaces induce users to complete tasks with fewer errors.",
+  "definition": "To cause someone to behave in a certain way."
+ },
+ {
+  "id": "78",
+  "en": "inhibit",
+  "tr": "engellemek / kısıtlamak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Slow load times severely inhibit mobile user engagement and conversion.",
+  "definition": "To slow down or prevent something from happening freely."
+ },
+ {
+  "id": "79",
+  "en": "initiate",
+  "tr": "başlatmak / adım atmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The squad initiated a comprehensive code refactoring process.",
+  "definition": "To start a process or activity."
+ },
+ {
+  "id": "80",
+  "en": "integrate",
+  "tr": "entegre etmek / birleştirmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "It takes only ten minutes to integrate our SDK into existing iOS apps.",
+  "definition": "To join a new part into an existing system."
+ },
+ {
+  "id": "81",
+  "en": "intervene",
+  "tr": "müdahale etmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Customer success managers intervene when high-value accounts show churn signs.",
+  "definition": "To step in and act to change a situation."
+ },
+ {
+  "id": "82",
+  "en": "justify",
+  "tr": "haklı çıkarmak / gerekçelendirmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The expected ROI justifies the development cost of this custom analytics tool.",
+  "definition": "To show good reasons why something is right."
+ },
+ {
+  "id": "83",
+  "en": "manifest",
+  "tr": "belirtmek / açığa çıkmak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Technical debt often manifests as decreased feature delivery speed over time.",
+  "definition": "To appear or become visible in a clear way."
+ },
+ {
+  "id": "84",
+  "en": "minimize",
+  "tr": "en aza indirmek",
+  "pos": "Teknik / PM",
+  "level": "B1",
+  "example": "Our goal is to minimize user effort when executing complex multi-step forms.",
+  "definition": "To reduce something to the smallest possible amount."
+ },
+ {
+  "id": "85",
+  "en": "modify",
+  "tr": "değiştirmek / günellemek",
+  "pos": "Teknik / PM",
+  "level": "B1",
+  "example": "Users can modify their notification settings directly from the account panel.",
+  "definition": "To make small changes to something."
+ },
+ {
+  "id": "86",
+  "en": "navigate",
+  "tr": "yolunu bulmak / gezinmek",
+  "pos": "Teknik / PM",
+  "level": "B1",
+  "example": "Clear labels help users navigate the settings dashboard effortlessly.",
+  "definition": "To find your way around a place or interface."
+ },
+ {
+  "id": "87",
+  "en": "negate",
+  "tr": "etkisiz kılmak / çürütmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Poor server latency negates the benefits of a sleek user interface design.",
+  "definition": "To cancel the good effect of something else."
+ },
+ {
+  "id": "88",
+  "en": "perceive",
+  "tr": "algılamak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Users perceive quick visual feedback as higher overall system quality.",
+  "definition": "To notice or understand something in a certain way."
+ },
+ {
+  "id": "89",
+  "en": "persist",
+  "tr": "devam etmek / kalıcı olmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "If connection errors persist, the app automatically switches to offline mode.",
+  "definition": "To continue to exist or keep happening."
+ },
+ {
+  "id": "90",
+  "en": "preclude",
+  "tr": "engel olmak / önüne geçmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Comprehensive input validation precludes invalid data submissions.",
+  "definition": "To prevent something from being possible."
+ },
+ {
+  "id": "91",
+  "en": "prioritize",
+  "tr": "önceliklendirmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We must prioritize critical security fixes before introducing new features.",
+  "definition": "To decide which tasks must be done first."
+ },
+ {
+  "id": "92",
+  "en": "propose",
+  "tr": "öngörmek / teklif etmek",
+  "pos": "Teknik / PM",
+  "level": "B1",
+  "example": "The design team proposed three layout variations for stakeholder testing.",
+  "definition": "To suggest an idea for others to consider."
+ },
+ {
+  "id": "93",
+  "en": "reconcile",
+  "tr": "uzlaştırmak / tutarlı kılmak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "We must reconcile discrepancies between our Google Analytics data and SQL logs.",
+  "definition": "To make two different sets of numbers agree."
+ },
+ {
+  "id": "94",
+  "en": "rectify",
+  "tr": "düzeltmek / gidermek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Engineering released a hotfix to rectify the payment gateway error.",
+  "definition": "To correct a mistake or fix a problem."
+ },
+ {
+  "id": "95",
+  "en": "refine",
+  "tr": "iyileştirmek / cilalamak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We iteratively refine customer personas based on actual usage behaviors.",
+  "definition": "To improve something by making small careful changes."
+ },
+ {
+  "id": "96",
+  "en": "regulate",
+  "tr": "düzenlemek / denetlemek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Strict protocols regulate how sensitive user personal data is stored.",
+  "definition": "To control an activity with official rules."
+ },
+ {
+  "id": "97",
+  "en": "reinforce",
+  "tr": "güçlendirmek / pekiştirmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Positive onboarding feedback reinforces brand trust among early adopters.",
+  "definition": "To make something stronger or more firmly held."
+ },
+ {
+  "id": "98",
+  "en": "relinquish",
+  "tr": "bırakmak / vazgeçmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "The product lead had to relinquish control of smaller UX details to focus on strategy.",
+  "definition": "To give up control or ownership of something."
+ },
+ {
+  "id": "99",
+  "en": "render",
+  "tr": "hale getirmek / sunmak (görsel/veri)",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "The browser renders complex vector icons within milliseconds.",
+  "definition": "To draw and display images on a screen."
+ },
+ {
+  "id": "100",
+  "en": "reassess",
+  "tr": "yeniden değerlendirmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We should reassess our Q4 strategic targets after analyzing market shifts.",
+  "definition": "To look at something again and judge it differently."
+ },
+ {
+  "id": "101",
+  "en": "scrutinize",
+  "tr": "titizlikle incelemek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Stakeholders will scrutinize our conversion numbers during the board review.",
+  "definition": "To examine something very carefully and critically."
+ },
+ {
+  "id": "102",
+  "en": "stimulate",
+  "tr": "canlandırmak / tetiklemek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Gamification elements stimulate user activity during low-traffic periods.",
+  "definition": "To encourage more activity or interest."
+ },
+ {
+  "id": "103",
+  "en": "stipulate",
+  "tr": "şart koşmak / belirtmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "The SLA stipulates a maximum allowable API downtime of five minutes per month.",
+  "definition": "To state a condition clearly in an agreement."
+ },
+ {
+  "id": "104",
+  "en": "surpass",
+  "tr": "geride bırakmak / aşmak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "App Store downloads surpassed our initial quarterly expectations by 40%.",
+  "definition": "To do better than a set target or limit."
+ },
+ {
+  "id": "105",
+  "en": "sustain",
+  "tr": "sürdürmek / korumak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Strong retention strategies help sustain high organic growth over time.",
+  "definition": "To keep something going at the same level."
+ },
+ {
+  "id": "106",
+  "en": "terminate",
+  "tr": "sonlandırmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Users have the right to terminate their subscription plan at any time.",
+  "definition": "To bring an agreement or service to an end."
+ },
+ {
+  "id": "107",
+  "en": "transcend",
+  "tr": "aşmak / ötesine geçmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Great product experience transcends language barriers and regional preferences.",
+  "definition": "To rise above normal limits or boundaries."
+ },
+ {
+  "id": "108",
+  "en": "trigger",
+  "tr": "tetiklemek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Reaching a spending limit triggers an automated email warning notification.",
+  "definition": "To cause an automatic action to start."
+ },
+ {
+  "id": "109",
+  "en": "undergo",
+  "tr": "geçirmek / maruz kalmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The checkout architecture underwent complete refactoring last month.",
+  "definition": "To experience a process or change."
+ },
+ {
+  "id": "110",
+  "en": "underlie",
+  "tr": "temelinde yatmak / zemin oluşturmak",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Deep customer empathy underlines every decision made by successful PMs.",
+  "definition": "To form the hidden basis of something else."
+ },
+ {
+  "id": "111",
+  "en": "undertake",
+  "tr": "üstlenmek / girişmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The squad will undertake a multi-week audit of our cloud infrastructure.",
+  "definition": "To accept responsibility for a large piece of work."
+ },
+ {
+  "id": "112",
+  "en": "utilize",
+  "tr": "yararlanmak / kullanmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We utilize machine learning algorithms to predict customer churn probability.",
+  "definition": "To put a resource into practical service for a purpose."
+ },
+ {
+  "id": "113",
+  "en": "verify",
+  "tr": "teyit etmek / kontrol etmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Two-factor authentication is required to verify the user's identity.",
+  "definition": "To check that something is true or correct."
+ },
+ {
+  "id": "114",
+  "en": "yield",
+  "tr": "sağlamak / ürün/sonuç vermek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Optimizing image compression yielded a 30% reduction in average load time.",
+  "definition": "To produce a result or amount as an outcome."
+ },
+ {
+  "id": "115",
+  "en": "scalability",
+  "tr": "ölçeklenebilirlik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The new backend architecture ensures seamless scalability during peak traffic.",
+  "definition": "The ability of a system to handle much more work."
+ },
+ {
+  "id": "116",
+  "en": "feasibility",
+  "tr": "uygulanabilirlik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Engineering conducted a feasibility study before committing to the feature.",
+  "definition": "How possible or practical a plan is to do."
+ },
+ {
+  "id": "117",
+  "en": "roadmap prioritization",
+  "tr": "yol haritası önceliklendirmesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Roadmap prioritization requires balancing tech debt with business requests.",
+  "definition": "The act of deciding which planned work matters most and when."
+ },
+ {
+  "id": "118",
+  "en": "value proposition",
+  "tr": "değer önermesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A clear value proposition reduces landing page drop-off.",
+  "definition": "The clear reason a customer should choose your product."
+ },
+ {
+  "id": "119",
+  "en": "market validation",
+  "tr": "pazar doğrulaması",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We ran a landing page experiment for quick market validation.",
+  "definition": "Proof that real customers want a product before heavy building."
+ },
+ {
+  "id": "120",
+  "en": "feature adoption",
+  "tr": "özellik benimsenmesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "In-app popups boosted feature adoption by 25% in week one.",
+  "definition": "How widely users start using a new part of a product."
+ },
+ {
+  "id": "121",
+  "en": "trade-off",
+  "tr": "ödünleşme / takas",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Choosing speed over feature completeness was a deliberate trade-off.",
+  "definition": "A choice where gaining one benefit means losing another."
+ },
+ {
+  "id": "122",
+  "en": "sunset / deprecation",
+  "tr": "yayından kaldırma",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "We scheduled the deprecation of legacy v1 APIs for Q4.",
+  "definition": "The planned removal of an old service or version."
+ },
+ {
+  "id": "123",
+  "en": "value realization",
+  "tr": "değer elde etme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Shortening time-to-value accelerates overall value realization for users.",
+  "definition": "The moment customers actually gain the benefit they paid for."
+ },
+ {
+  "id": "124",
+  "en": "platform strategy",
+  "tr": "platform stratejisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our platform strategy enables third-party developers to build integrations.",
+  "definition": "A plan to build a base that others can build upon."
+ },
+ {
+  "id": "125",
+  "en": "competitive parity",
+  "tr": "rekabetçi eşitlik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Adding dark mode was necessary to achieve competitive parity with rivals.",
+  "definition": "Matching the standard features that rival products already offer."
+ },
+ {
+  "id": "126",
+  "en": "vision alignment",
+  "tr": "vizyon hizalanması",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Regular town halls maintain vision alignment across distributed squads.",
+  "definition": "Shared agreement across teams about the long-term goal."
+ },
+ {
+  "id": "127",
+  "en": "sustainable growth",
+  "tr": "sürdürülebilir büyüme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Retention-led acquisition ensures long-term sustainable growth.",
+  "definition": "Expansion that a company can keep up for a long time."
+ },
+ {
+  "id": "128",
+  "en": "opportunity cost",
+  "tr": "fırsat maliyeti",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Delaying the mobile redesign has a high opportunity cost in market share.",
+  "definition": "The benefit lost by choosing one option over another."
+ },
+ {
+  "id": "129",
+  "en": "strategic roadmap",
+  "tr": "stratejik yol haritası",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The strategic roadmap focuses on enterprise compliance features for H2.",
+  "definition": "A high-level plan showing key goals over future time periods."
+ },
+ {
+  "id": "130",
+  "en": "product differentiation",
+  "tr": "ürün farklılaşması",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "AI-driven automation is our key product differentiation point.",
+  "definition": "What makes one offering stand apart from rival ones."
+ },
+ {
+  "id": "131",
+  "en": "buy vs build",
+  "tr": "satın alma ya da geliştirme kararı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We evaluated a buy vs build decision for our chat infrastructure.",
+  "definition": "The choice between purchasing a tool and creating it yourself."
+ },
+ {
+  "id": "132",
+  "en": "market saturation",
+  "tr": "pazar doygunluğu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Market saturation in domestic markets pushed our international expansion.",
+  "definition": "A point where nearly everyone who wants something already has it."
+ },
+ {
+  "id": "133",
+  "en": "cannibalization",
+  "tr": "kendi ürününü baltalama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Launching a cheaper tier carries a slight risk of plan cannibalization.",
+  "definition": "When a new offer steals sales from your own older one."
+ },
+ {
+  "id": "134",
+  "en": "expansion strategy",
+  "tr": "genişleme stratejisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our expansion strategy targets enterprise clients in Western Europe.",
+  "definition": "A plan for entering new regions or customer groups."
+ },
+ {
+  "id": "135",
+  "en": "anomaly detection",
+  "tr": "anomali tespiti",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Automated anomaly detection alerts us to unexpected drop-offs in payment.",
+  "definition": "Automatic spotting of unusual patterns in tracked numbers."
+ },
+ {
+  "id": "136",
+  "en": "discrepancy",
+  "tr": "tutarsızlık",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "There is a slight discrepancy between Google Analytics and our SQL logs.",
+  "definition": "A difference between two sets of information that should match."
+ },
+ {
+  "id": "137",
+  "en": "statistical significance",
+  "tr": "istatistiksel anlamlılık",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The A/B test reached 95% statistical significance after 10 days.",
+  "definition": "Proof that a test result is unlikely to be chance."
+ },
+ {
+  "id": "138",
+  "en": "confidence interval",
+  "tr": "güven aralığı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The confidence interval indicates a conversion lift between 3% and 7%.",
+  "definition": "A likely range where the true number probably sits."
+ },
+ {
+  "id": "139",
+  "en": "cohort retention",
+  "tr": "kohort tutundurma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our July cohort retention flattens out nicely at Day 30.",
+  "definition": "How many users from one signup group stay active over time."
+ },
+ {
+  "id": "140",
+  "en": "attribution model",
+  "tr": "ilişkilendirme modeli",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We shifted from last-touch to a multi-touch attribution model.",
+  "definition": "A rule for deciding which channel earned a sale."
+ },
+ {
+  "id": "141",
+  "en": "funnel leakage",
+  "tr": "huni sızıntısı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Adding progress bars helped reduce funnel leakage on registration.",
+  "definition": "Users lost at each step before finishing a journey."
+ },
+ {
+  "id": "142",
+  "en": "outlier detection",
+  "tr": "aykırı değer tespiti",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Outlier detection removed bot traffic from our primary engagement metrics.",
+  "definition": "Finding extreme values that wrongly distort an average."
+ },
+ {
+  "id": "143",
+  "en": "causation vs correlation",
+  "tr": "nedensellik vs korelasyon",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "We conducted an experiment to prove causation rather than simple correlation.",
+  "definition": "One event truly causing another, versus two things simply moving together."
+ },
+ {
+  "id": "144",
+  "en": "sample bias",
+  "tr": "örneklem yanlılığı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Running the survey only on active users introduced clear sample bias.",
+  "definition": "Error caused when a studied group does not represent everyone."
+ },
+ {
+  "id": "145",
+  "en": "variance analysis",
+  "tr": "varyans / sapma analizi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Variance analysis revealed seasonal dips in weekend user engagement.",
+  "definition": "A study of why actual numbers differ from expected ones."
+ },
+ {
+  "id": "146",
+  "en": "guardrail metric",
+  "tr": "koruyucu metrik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Page load latency served as our primary guardrail metric during rollout.",
+  "definition": "A number watched to make sure nothing else gets worse."
+ },
+ {
+  "id": "147",
+  "en": "data instrumentation",
+  "tr": "veri izleme kurulumu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Proper data instrumentation is required before shipping any new component.",
+  "definition": "The setup of tracking code that records user events."
+ },
+ {
+  "id": "148",
+  "en": "event taxonomy",
+  "tr": "olay sınıflandırması",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Standardizing our event taxonomy improved cross-team reporting accuracy.",
+  "definition": "An agreed naming system for what gets tracked in an app."
+ },
+ {
+  "id": "149",
+  "en": "drop-off rate",
+  "tr": "terk etme oranı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Simplifying form fields reduced the drop-off rate by 14%.",
+  "definition": "The percentage of people who quit before finishing a process."
+ },
+ {
+  "id": "150",
+  "en": "incremental lift",
+  "tr": "artımlı artış / etki",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The push notification campaign generated a 5% incremental lift in DAU.",
+  "definition": "The extra gain caused only by one specific change."
+ },
+ {
+  "id": "151",
+  "en": "sample size calculation",
+  "tr": "örneklem büyüklüğü hesabı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We performed sample size calculation to determine test duration.",
+  "definition": "Working out how many people a test needs for reliable results."
+ },
+ {
+  "id": "152",
+  "en": "statistical noise",
+  "tr": "istatistiki gürültü",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Daily conversion spikes were determined to be purely statistical noise.",
+  "definition": "Random movement in numbers that means nothing real."
+ },
+ {
+  "id": "153",
+  "en": "control group",
+  "tr": "kontrol grubu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The control group maintained the legacy layout during the experiment.",
+  "definition": "The set of users kept on the old experience during a test."
+ },
+ {
+  "id": "154",
+  "en": "data-driven decision",
+  "tr": "veri odaklı karar",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our decision to deprecate the sidebar was fully data-driven.",
+  "definition": "A choice based on measured evidence rather than opinion."
+ },
+ {
+  "id": "155",
+  "en": "convince (to)",
+  "tr": "ikna etmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We need to convince leadership to fund the platform refactoring.",
+  "definition": "To make someone believe or agree with your idea."
+ },
+ {
+  "id": "156",
+  "en": "persuade",
+  "tr": "inandırmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The user research report persuaded stakeholders to back the new UI.",
+  "definition": "To get someone to act by giving good reasons."
+ },
+ {
+  "id": "157",
+  "en": "align with",
+  "tr": "ile aynı doğrultuya gelmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "This initiative directly aligns with our annual revenue goals.",
+  "definition": "To be in agreement with a goal or direction."
+ },
+ {
+  "id": "158",
+  "en": "advocate for",
+  "tr": "bir konuyu savunmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "As PMs, we must constantly advocate for smooth user experience.",
+  "definition": "To argue in favor of a cause or need."
+ },
+ {
+  "id": "159",
+  "en": "pitch",
+  "tr": "ikna sunumu yapmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "I will pitch the new feature proposal to the executive board tomorrow.",
+  "definition": "To present an idea in order to win support."
+ },
+ {
+  "id": "160",
+  "en": "mitigate risk",
+  "tr": "riski azaltmak / hafifletmek",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Staged rollouts help mitigate risk during major backend changes.",
+  "definition": "To reduce the chance or impact of something going wrong."
+ },
+ {
+  "id": "161",
+  "en": "reach a consensus",
+  "tr": "uzlaşmaya varmak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "After lengthy debates, the team reached a consensus on release scope.",
+  "definition": "To arrive at an agreement that a whole group accepts."
+ },
+ {
+  "id": "162",
+  "en": "compelling narrative",
+  "tr": "etkileyici / ikna edici anlatı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A compelling narrative is key to securing executive buy-in for roadmaps.",
+  "definition": "A convincing story that makes people care about your idea."
+ },
+ {
+  "id": "163",
+  "en": "executive buy-in",
+  "tr": "üst yönetim onayı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Securing executive buy-in accelerated our cross-team resource allocation.",
+  "definition": "Formal support from senior leaders for a plan."
+ },
+ {
+  "id": "164",
+  "en": "actionable insight",
+  "tr": "eyleme dönüştürülebilir içgörü",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "User interviews provided actionable insights for optimizing the funnel.",
+  "definition": "A finding clear enough to change what you do next."
+ },
+ {
+  "id": "165",
+  "en": "stakeholder alignment",
+  "tr": "paydaş uyumu / hizalanması",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Weekly syncs maintain stakeholder alignment across design and tech.",
+  "definition": "Agreement among all involved parties on goals and plans."
+ },
+ {
+  "id": "166",
+  "en": "manage expectations",
+  "tr": "beklentileri yönetmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "It is critical to manage expectations regarding early MVP delivery dates.",
+  "definition": "To keep people realistic about what will be delivered."
+ },
+ {
+  "id": "167",
+  "en": "pushback",
+  "tr": "itiraz / direnç",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We received some pushback from sales on removing legacy export tools.",
+  "definition": "Resistance or disagreement from other people about a plan."
+ },
+ {
+  "id": "168",
+  "en": "sign-off",
+  "tr": "resmi onay",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We are awaiting final legal sign-off before global deployment.",
+  "definition": "Final approval that allows work to move ahead."
+ },
+ {
+  "id": "169",
+  "en": "drill down",
+  "tr": "detaylara inmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Let's drill down into regional conversion numbers to isolate the drop.",
+  "definition": "To look at figures in finer and finer detail."
+ },
+ {
+  "id": "170",
+  "en": "touch upon",
+  "tr": "değinmek / kısaca geçmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "I want to touch upon our competitive landscape before presenting numbers.",
+  "definition": "To mention a subject briefly without full discussion."
+ },
+ {
+  "id": "171",
+  "en": "circle back",
+  "tr": "konuya sonradan dönmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Let's circle back to pricing options after reviewing user feedback.",
+  "definition": "To return to a topic later in a discussion."
+ },
+ {
+  "id": "172",
+  "en": "take offline",
+  "tr": "toplantı dışına taşımak",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "That technical discussion is deep; let's take it offline with lead devs.",
+  "definition": "To move a discussion into a smaller separate conversation."
+ },
+ {
+  "id": "173",
+  "en": "activation rate",
+  "tr": "aktivasyon oranı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Streamlining onboarding increased our 1-day activation rate by 18%.",
+  "definition": "The share of new users who complete the first key step."
+ },
+ {
+  "id": "174",
+  "en": "churn rate",
+  "tr": "kayıp / ayrılma oranı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Proactive customer support interventions helped lower monthly churn rate.",
+  "definition": "The percentage of customers who leave within a period."
+ },
+ {
+  "id": "175",
+  "en": "time-to-value (TTV)",
+  "tr": "değere ulaşma süresi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Reducing TTV ensures new users experience core product value immediately.",
+  "definition": "How long before a new user feels the first real benefit."
+ },
+ {
+  "id": "176",
+  "en": "product stickiness",
+  "tr": "ürün bağlılığı (DAU/MAU)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Daily habit triggers drive our overall product stickiness metrics higher.",
+  "definition": "How often people come back and keep opening an app."
+ },
+ {
+  "id": "177",
+  "en": "viral coefficient (K-factor)",
+  "tr": "virallik katsayısı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A viral coefficient above 1.0 indicates organic exponential growth.",
+  "definition": "The average number of new users each existing user brings."
+ },
+ {
+  "id": "178",
+  "en": "organic keyword ranking",
+  "tr": "organik anahtar kelime sıralaması",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "ASO optimizations improved our organic keyword ranking for top app search terms.",
+  "definition": "Where a page appears in unpaid search results for a term."
+ },
+ {
+  "id": "179",
+  "en": "app store optimization (ASO)",
+  "tr": "uygulama mağazası optimizasyonu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Updating screenshots and subtitles is core to our seasonal ASO strategy.",
+  "definition": "Improving a listing so more people find and install it."
+ },
+ {
+  "id": "180",
+  "en": "conversion rate optimization (CRO)",
+  "tr": "dönüşüm oranı optimizasyonu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "CRO tests on the checkout CTA produced a 9% bump in trial starts.",
+  "definition": "The practice of improving how many visitors become buyers."
+ },
+ {
+  "id": "181",
+  "en": "customer acquisition cost (CAC)",
+  "tr": "müşteri edinme maliyeti",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Lowering CAC through organic content increases our long-term margin.",
+  "definition": "The average money spent to win one new buyer."
+ },
+ {
+  "id": "182",
+  "en": "lifetime value (LTV)",
+  "tr": "müşteri yaşam boyu değeri",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Improving year-1 retention directly boosts our estimated LTV.",
+  "definition": "The total money one buyer brings during the whole relationship."
+ },
+ {
+  "id": "183",
+  "en": "LTV/CAC ratio",
+  "tr": "LTV/CAC oranı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A healthy SaaS business maintains an LTV/CAC ratio above 3.0.",
+  "definition": "A comparison of buyer worth against the money spent winning them."
+ },
+ {
+  "id": "184",
+  "en": "payback period",
+  "tr": "amorti süresi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our target acquisition payback period is strictly under 8 months.",
+  "definition": "The months needed to recover the money first spent."
+ },
+ {
+  "id": "185",
+  "en": "user acquisition funnel",
+  "tr": "kullanıcı edinme hunisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We analyzed every stage of the user acquisition funnel for drop-offs.",
+  "definition": "The steps people move through from first hearing to signing up."
+ },
+ {
+  "id": "186",
+  "en": "organic vs paid traffic",
+  "tr": "organik vs paralı trafik",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Tracking organic vs paid traffic helps evaluate brand awareness campaigns.",
+  "definition": "Visitors who arrive naturally compared with those from ads."
+ },
+ {
+  "id": "187",
+  "en": "referral program",
+  "tr": "referans / davet programı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "In-app rewards powered our most successful customer referral program.",
+  "definition": "A scheme rewarding customers who bring in their friends."
+ },
+ {
+  "id": "188",
+  "en": "re-engagement campaign",
+  "tr": "yeniden etkileşim kampanyası",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Push notifications were deployed for a win-back re-engagement campaign.",
+  "definition": "An effort to bring inactive users back to a product."
+ },
+ {
+  "id": "189",
+  "en": "app indexability",
+  "tr": "uygulama dizine eklenebilirliği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Deep linking improves app indexability across web search engines.",
+  "definition": "How easily search engines can list a mobile program's content."
+ },
+ {
+  "id": "190",
+  "en": "keyword density",
+  "tr": "anahtar kelime yoğunluğu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We optimized keyword density in our App Store metadata descriptions.",
+  "definition": "How often a search term appears in a piece of text."
+ },
+ {
+  "id": "191",
+  "en": "impression-to-install rate",
+  "tr": "görüntülenmeden indirmeye dönüşüm",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Optimizing app preview videos boosted our impression-to-install rate.",
+  "definition": "The share of viewers who download after seeing a listing."
+ },
+ {
+  "id": "192",
+  "en": "feature adoption rate",
+  "tr": "özellik benimseme oranı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The new onboarding checklist improved feature adoption rate significantly.",
+  "definition": "The percentage of users who begin using a new capability."
+ }
+]

@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "1921",
+  "en": "decline",
+  "tr": "Reddetmek, geri çevirmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I declined the offer because the scope wasn't realistic.",
+  "definition": "To say no to an offer or invitation."
+ },
+ {
+  "id": "1922",
+  "en": "accept",
+  "tr": "Kabul etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I accepted the feedback even though it was hard to hear.",
+  "definition": "To say yes to something that is offered."
+ },
+ {
+  "id": "1923",
+  "en": "agree",
+  "tr": "Katılmak, hemfikir olmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I agreed with the direction but pushed back on the timeline.",
+  "definition": "To have the same opinion as someone else."
+ },
+ {
+  "id": "1924",
+  "en": "disagree",
+  "tr": "Katılmamak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I disagreed respectfully and explained why.",
+  "definition": "To hold a different opinion from another person."
+ },
+ {
+  "id": "1925",
+  "en": "hesitate",
+  "tr": "Tereddüt etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I didn't hesitate once I saw the data.",
+  "definition": "To pause before acting because you feel unsure."
+ },
+ {
+  "id": "1926",
+  "en": "doubt",
+  "tr": "Şüphe duymak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I doubted the estimate, so I asked for a second opinion.",
+  "definition": "To feel unsure whether something is true or right."
+ },
+ {
+  "id": "1927",
+  "en": "assume",
+  "tr": "Varsaymak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I assumed too much at first and learned to ask instead.",
+  "definition": "To treat something as true without checking it."
+ },
+ {
+  "id": "1928",
+  "en": "suppose",
+  "tr": "Sanmak, varsaymak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I suppose the delay was avoidable in hindsight.",
+  "definition": "To think something is probably true, without being certain."
+ },
+ {
+  "id": "1929",
+  "en": "believe",
+  "tr": "İnanmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I believe in shipping small and learning fast.",
+  "definition": "To feel sure that something is true or worthwhile."
+ },
+ {
+  "id": "1930",
+  "en": "recognize",
+  "tr": "Tanımak, fark etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I recognized the pattern from a previous project.",
+  "definition": "To know something because you have met it before."
+ },
+ {
+  "id": "1931",
+  "en": "notice",
+  "tr": "Fark etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I noticed the drop in the data before anyone flagged it.",
+  "definition": "To see or become aware of something."
+ },
+ {
+  "id": "1932",
+  "en": "observe",
+  "tr": "Gözlemlemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I observed the users directly instead of relying on surveys.",
+  "definition": "To watch people or things carefully in order to learn."
+ },
+ {
+  "id": "1933",
+  "en": "detect",
+  "tr": "Tespit etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I detected the issue before it reached production.",
+  "definition": "To find something hidden or hard to see."
+ },
+ {
+  "id": "1934",
+  "en": "discover",
+  "tr": "Keşfetmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I discovered the root cause almost by accident.",
+  "definition": "To find something for the first time."
+ },
+ {
+  "id": "1935",
+  "en": "reveal",
+  "tr": "Ortaya çıkarmak, göstermek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The data revealed something we hadn't expected.",
+  "definition": "To show or tell something that was hidden before."
+ },
+ {
+  "id": "1936",
+  "en": "demonstrate",
+  "tr": "Göstermek, kanıtlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I demonstrated the prototype live instead of just describing it.",
+  "definition": "To show clearly how something works or why it is true."
+ },
+ {
+  "id": "1937",
+  "en": "illustrate",
+  "tr": "Örneklendirmek, göstermek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I used a real example to illustrate the point.",
+  "definition": "To make an idea clearer by giving an example."
+ },
+ {
+  "id": "1938",
+  "en": "imply",
+  "tr": "İma etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I didn't want to imply blame, so I focused on the fix.",
+  "definition": "To suggest something without saying it directly."
+ },
+ {
+  "id": "1939",
+  "en": "infer",
+  "tr": "Çıkarım yapmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I inferred the cause from the pattern in the logs.",
+  "definition": "To reach an idea from clues rather than direct facts."
+ },
+ {
+  "id": "1940",
+  "en": "conclude",
+  "tr": "Sonuca varmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I concluded that the feature wasn't worth the complexity.",
+  "definition": "To decide something final after thinking about the facts."
+ },
+ {
+  "id": "1941",
+  "en": "simplify",
+  "tr": "Basitleştirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I simplified the process from six steps to two.",
+  "definition": "To make something easier and less complicated."
+ },
+ {
+  "id": "1942",
+  "en": "specify",
+  "tr": "Belirtmek, açıkça tanımlamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I specified the exact requirements before development started.",
+  "definition": "To state something exactly and in clear detail."
+ },
+ {
+  "id": "1943",
+  "en": "define",
+  "tr": "Tanımlamak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I defined success clearly before we started building.",
+  "definition": "To explain exactly what a word or goal means."
+ },
+ {
+  "id": "1944",
+  "en": "distinguish",
+  "tr": "Ayırt etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I distinguish between urgent and important before I prioritize.",
+  "definition": "To see the difference between two similar things."
+ },
+ {
+  "id": "1945",
+  "en": "compare",
+  "tr": "Karşılaştırmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I compared both approaches before choosing one.",
+  "definition": "To look at two things and see how they differ."
+ },
+ {
+  "id": "1946",
+  "en": "combine",
+  "tr": "Birleştirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I combined two smaller features into one coherent release.",
+  "definition": "To join two or more things into one."
+ },
+ {
+  "id": "1947",
+  "en": "separate",
+  "tr": "Ayırmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I separated the technical debt work from new feature work.",
+  "definition": "To keep two things apart from each other."
+ },
+ {
+  "id": "1948",
+  "en": "divide",
+  "tr": "Bölmek, ayırmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I divided the project into three manageable phases.",
+  "definition": "To split something into smaller parts."
+ },
+ {
+  "id": "1949",
+  "en": "extend",
+  "tr": "Uzatmak, genişletmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I extended the deadline by a few days rather than cut quality.",
+  "definition": "To make something longer or larger than before."
+ },
+ {
+  "id": "1950",
+  "en": "limit",
+  "tr": "Sınırlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I limited the scope on purpose to protect the deadline.",
+  "definition": "To stop something from growing beyond a set point."
+ },
+ {
+  "id": "1951",
+  "en": "restrict",
+  "tr": "Kısıtlamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We restricted access until the security review was complete.",
+  "definition": "To control something by keeping it within strict rules."
+ },
+ {
+  "id": "1952",
+  "en": "fulfill",
+  "tr": "Yerine getirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I fulfilled the commitment even after the scope grew.",
+  "definition": "To do what you promised or were asked to do."
+ },
+ {
+  "id": "1953",
+  "en": "satisfy",
+  "tr": "Tatmin etmek, karşılamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I made sure the solution satisfied both teams' needs.",
+  "definition": "To be good enough to meet someone's needs."
+ },
+ {
+  "id": "1954",
+  "en": "disappoint",
+  "tr": "Hayal kırıklığına uğratmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I hate disappointing people, so I flag risk early instead.",
+  "definition": "To make someone sad by failing their hopes."
+ },
+ {
+  "id": "1955",
+  "en": "influence",
+  "tr": "Etkilemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I influenced the outcome without having formal authority.",
+  "definition": "To change the way someone thinks or acts."
+ },
+ {
+  "id": "1956",
+  "en": "affect",
+  "tr": "Etkilemek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The delay affected two other teams downstream.",
+  "definition": "To cause a change in someone or something."
+ },
+ {
+  "id": "1957",
+  "en": "benefit",
+  "tr": "Fayda sağlamak, yararlanmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The whole company benefited from that one small change.",
+  "definition": "To get something useful or helpful from a situation."
+ },
+ {
+  "id": "1958",
+  "en": "worsen",
+  "tr": "Kötüleştirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Ignoring the issue would have only worsened it.",
+  "definition": "To make a bad situation become even more serious."
+ },
+ {
+  "id": "1959",
+  "en": "deteriorate",
+  "tr": "Kötüleşmek, bozulmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Performance deteriorated slowly until we finally investigated.",
+  "definition": "To slowly become worse in quality or condition."
+ },
+ {
+  "id": "1960",
+  "en": "stabilize",
+  "tr": "İstikrara kavuşturmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We stabilized the system before adding any new features.",
+  "definition": "To make something steady and stop it from changing."
+ },
+ {
+  "id": "1961",
+  "en": "alter",
+  "tr": "Değiştirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We altered the approach without changing the goal.",
+  "definition": "To make a change to something."
+ },
+ {
+  "id": "1962",
+  "en": "convert",
+  "tr": "Dönüştürmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I converted the raw data into something the team could act on.",
+  "definition": "To turn something into a different form."
+ },
+ {
+  "id": "1963",
+  "en": "customize",
+  "tr": "Özelleştirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We customized the onboarding flow for each user segment.",
+  "definition": "To change something so it fits a person's needs."
+ },
+ {
+  "id": "1964",
+  "en": "supervise",
+  "tr": "Denetlemek, gözetmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I supervised two junior designers on that project.",
+  "definition": "To watch over people and guide their work."
+ },
+ {
+  "id": "1965",
+  "en": "oversee",
+  "tr": "Gözetmek, denetlemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I oversee the entire product lifecycle, not just the launch.",
+  "definition": "To be in charge of a whole activity or process."
+ },
+ {
+  "id": "1966",
+  "en": "inspect",
+  "tr": "İncelemek, denetlemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I inspected the output personally before it shipped.",
+  "definition": "To look at something closely to check its quality."
+ },
+ {
+  "id": "1967",
+  "en": "audit",
+  "tr": "Denetlemek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We audited the process and found three easy wins.",
+  "definition": "To examine records or a process officially and in depth."
+ },
+ {
+  "id": "1968",
+  "en": "authorize",
+  "tr": "Yetki vermek, onaylamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I authorized the extra spend once I saw the return.",
+  "definition": "To give official permission for something to happen."
+ },
+ {
+  "id": "1969",
+  "en": "permit",
+  "tr": "İzin vermek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The budget didn't permit a full redesign, so we scoped it down.",
+  "definition": "To let something happen or be done."
+ },
+ {
+  "id": "1970",
+  "en": "prohibit",
+  "tr": "Yasaklamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Company policy prohibits sharing that data externally.",
+  "definition": "To officially say that something must not be done."
+ },
+ {
+  "id": "1971",
+  "en": "allow",
+  "tr": "İzin vermek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I allow my team to make small mistakes without fear.",
+  "definition": "To let someone do something without stopping them."
+ },
+ {
+  "id": "1972",
+  "en": "enable",
+  "tr": "Mümkün kılmak, sağlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That change enabled us to ship twice as often.",
+  "definition": "To make it possible for someone to do something."
+ },
+ {
+  "id": "1973",
+  "en": "equip",
+  "tr": "Donatmak, hazırlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I equip new hires with everything they need in week one.",
+  "definition": "To give someone the tools they need."
+ },
+ {
+  "id": "1974",
+  "en": "prepare",
+  "tr": "Hazırlamak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I prepared three scenarios before the client meeting.",
+  "definition": "To get something ready before it is needed."
+ },
+ {
+  "id": "1975",
+  "en": "arrange",
+  "tr": "Düzenlemek, ayarlamak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I arranged the calls around the client's time zone.",
+  "definition": "To plan and organize the details of something."
+ },
+ {
+  "id": "1976",
+  "en": "schedule",
+  "tr": "Planlamak, programlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I scheduled a buffer week before the launch.",
+  "definition": "To fix a time for something to happen."
+ },
+ {
+  "id": "1977",
+  "en": "distribute",
+  "tr": "Dağıtmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I distributed the workload evenly across the team.",
+  "definition": "To share things out among several people."
+ },
+ {
+  "id": "1978",
+  "en": "assign",
+  "tr": "Atamak, görevlendirmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I assigned owners to every open task.",
+  "definition": "To give a task or duty to someone."
+ },
+ {
+  "id": "1979",
+  "en": "entrust",
+  "tr": "Emanet etmek, güvenmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I entrusted the launch to a junior PM, and she nailed it.",
+  "definition": "To put something important into someone's care."
+ },
+ {
+  "id": "1980",
+  "en": "appoint",
+  "tr": "Atamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I was appointed to lead the migration project.",
+  "definition": "To officially choose someone for a job or role."
+ },
+ {
+  "id": "1981",
+  "en": "nominate",
+  "tr": "Aday göstermek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I nominated a teammate for the award because she earned it.",
+  "definition": "To suggest someone officially for a prize or position."
+ },
+ {
+  "id": "1982",
+  "en": "select",
+  "tr": "Seçmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I selected the option that balanced speed and quality best.",
+  "definition": "To pick one thing from several options."
+ },
+ {
+  "id": "1983",
+  "en": "choose",
+  "tr": "Seçmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I chose to be transparent, even when the news was bad.",
+  "definition": "To decide which one you want from several."
+ },
+ {
+  "id": "1984",
+  "en": "prefer",
+  "tr": "Tercih etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I prefer async updates over another status meeting.",
+  "definition": "To like one thing better than another."
+ },
+ {
+  "id": "1985",
+  "en": "favor",
+  "tr": "Tercih etmek, kayırmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I favor simple solutions over clever ones.",
+  "definition": "To support or pick one option over another."
+ },
+ {
+  "id": "1986",
+  "en": "advise",
+  "tr": "Tavsiye etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I advised against launching before the holiday season.",
+  "definition": "To tell someone what you think they should do."
+ },
+ {
+  "id": "1987",
+  "en": "warn",
+  "tr": "Uyarmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I warned the team early so no one was blindsided.",
+  "definition": "To tell someone about a possible danger or problem."
+ },
+ {
+  "id": "1988",
+  "en": "alert",
+  "tr": "Uyarmak, haber vermek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I alerted the team the moment I saw the anomaly.",
+  "definition": "To quickly tell people about a problem so they react."
+ },
+ {
+  "id": "1989",
+  "en": "notify",
+  "tr": "Bildirmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I notified stakeholders before the news became public.",
+  "definition": "To officially tell someone about news or information."
+ },
+ {
+  "id": "1990",
+  "en": "report",
+  "tr": "Raporlamak, bildirmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I report progress every Friday, no exceptions.",
+  "definition": "To give people regular information about progress or events."
+ },
+ {
+  "id": "1991",
+  "en": "document",
+  "tr": "Belgelemek, kayıt altına almak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I document every decision so we don't repeat old debates.",
+  "definition": "To write things down so a permanent record exists."
+ },
+ {
+  "id": "1992",
+  "en": "record",
+  "tr": "Kaydetmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I recorded the meeting so absent teammates could catch up.",
+  "definition": "To save sound, pictures, or facts for later use."
+ },
+ {
+  "id": "1993",
+  "en": "register",
+  "tr": "Kaydetmek, kayıt olmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I registered the issue in our tracker the same day.",
+  "definition": "To put a name or item on an official list."
+ },
+ {
+  "id": "1994",
+  "en": "submit",
+  "tr": "Sunmak, göndermek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I submitted the proposal a full week early.",
+  "definition": "To send work to someone for review or approval."
+ },
+ {
+  "id": "1995",
+  "en": "archive",
+  "tr": "Arşivlemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I archive closed projects so the workspace stays clean.",
+  "definition": "To store old files where they are kept but unused."
+ },
+ {
+  "id": "1996",
+  "en": "retrieve",
+  "tr": "Geri almak, bulmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I retrieved the old data to compare it with this year's.",
+  "definition": "To get something back from where it was stored."
+ },
+ {
+  "id": "1997",
+  "en": "access",
+  "tr": "Erişmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I gave the whole team access to the dashboard.",
+  "definition": "To reach or use information, a place, or a system."
+ },
+ {
+  "id": "1998",
+  "en": "acquire",
+  "tr": "Edinmek, kazanmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I acquired most of my leadership skills on the job, not in a course.",
+  "definition": "To come to own or have something, often over time."
+ },
+ {
+  "id": "1999",
+  "en": "gain",
+  "tr": "Kazanmak, elde etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I gained the team's trust by following through on small things.",
+  "definition": "To get more of something useful, such as trust."
+ },
+ {
+  "id": "2000",
+  "en": "earn",
+  "tr": "Kazanmak, hak etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I earned that promotion over two years of consistent delivery.",
+  "definition": "To get money or respect through your own work."
+ },
+ {
+  "id": "2001",
+  "en": "deserve",
+  "tr": "Hak etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The team deserved credit, so I made sure leadership knew.",
+  "definition": "To have done enough to be worth a reward."
+ },
+ {
+  "id": "2002",
+  "en": "merit",
+  "tr": "Hak etmek, layık olmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "The idea merited a real pilot, not just a quick dismissal.",
+  "definition": "To be worthy of praise, attention, or serious effort."
+ },
+ {
+  "id": "2003",
+  "en": "qualify",
+  "tr": "Nitelik kazanmak, hak kazanmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I qualified for the role based on results, not just tenure.",
+  "definition": "To reach the standard needed for a job or right."
+ },
+ {
+  "id": "2004",
+  "en": "exclude",
+  "tr": "Hariç tutmak, dışlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I excluded that option early because it didn't scale.",
+  "definition": "To leave someone or something out on purpose."
+ },
+ {
+  "id": "2005",
+  "en": "include",
+  "tr": "Dahil etmek, içermek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I include engineering in every planning conversation.",
+  "definition": "To have something as part of a group or whole."
+ },
+ {
+  "id": "2006",
+  "en": "involve",
+  "tr": "Dahil etmek, içermek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I involve the whole team in decisions that affect them.",
+  "definition": "To bring someone into an activity or decision."
+ },
+ {
+  "id": "2007",
+  "en": "engage",
+  "tr": "Katılım sağlamak, ilgilendirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I engage stakeholders early instead of surprising them later.",
+  "definition": "To get people interested and actively taking part."
+ },
+ {
+  "id": "2008",
+  "en": "participate",
+  "tr": "Katılmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I participate in every retro, even when the news is good.",
+  "definition": "To take part in an activity with other people."
+ },
+ {
+  "id": "2009",
+  "en": "cooperate",
+  "tr": "İşbirliği yapmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Both teams cooperated well once the goal was shared.",
+  "definition": "To work together with others toward a shared goal."
+ },
+ {
+  "id": "2010",
+  "en": "settle",
+  "tr": "Karara bağlamak, çözmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We settled the disagreement in a single short conversation.",
+  "definition": "To end an argument by reaching a final decision."
+ },
+ {
+  "id": "2011",
+  "en": "dispute",
+  "tr": "İtiraz etmek, tartışmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I disputed the assumption respectfully, with data.",
+  "definition": "To argue that something is wrong or not true."
+ },
+ {
+  "id": "2012",
+  "en": "question",
+  "tr": "Sorgulamak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I questioned the assumption before we built anything.",
+  "definition": "To express doubt about whether something is correct."
+ },
+ {
+  "id": "2013",
+  "en": "guarantee",
+  "tr": "Garanti etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I can't guarantee the date, but I can guarantee transparency.",
+  "definition": "To promise firmly that something will certainly happen."
+ },
+ {
+  "id": "2014",
+  "en": "assure",
+  "tr": "Temin etmek, güvence vermek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I assured the client we'd hit the revised date.",
+  "definition": "To tell someone confidently so they stop worrying."
+ },
+ {
+  "id": "2015",
+  "en": "promise",
+  "tr": "Söz vermek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I promise less and deliver more, on purpose.",
+  "definition": "To tell someone you will certainly do something."
+ },
+ {
+  "id": "2016",
+  "en": "pledge",
+  "tr": "Söz vermek, taahhüt etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I pledged to fix it within the sprint, and I did.",
+  "definition": "To make a serious public commitment to do something."
+ },
+ {
+  "id": "2017",
+  "en": "dedicate",
+  "tr": "Adamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I dedicated an entire week to just talking to users.",
+  "definition": "To give all your time or effort to one thing."
+ },
+ {
+  "id": "2018",
+  "en": "devote",
+  "tr": "Adamak, ayırmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I devote the first hour of my day to deep work.",
+  "definition": "To set aside your time or energy for one purpose."
+ },
+ {
+  "id": "2019",
+  "en": "invest",
+  "tr": "Yatırım yapmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I invest time upfront so I don't waste it later.",
+  "definition": "To put money or time into something for future value."
+ },
+ {
+  "id": "2020",
+  "en": "spend",
+  "tr": "Harcamak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I spend most of my time on the highest-impact problem.",
+  "definition": "To use money or time for a purpose."
+ },
+ {
+  "id": "2021",
+  "en": "save",
+  "tr": "Tasarruf etmek, kaydetmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That automation saved the team ten hours a week.",
+  "definition": "To keep money or time instead of using it."
+ },
+ {
+  "id": "2022",
+  "en": "budget",
+  "tr": "Bütçelemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I budgeted extra time for the parts I was least sure about.",
+  "definition": "To plan how much money or time to use."
+ },
+ {
+  "id": "2023",
+  "en": "fund",
+  "tr": "Fonlamak, finanse etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We funded the experiment out of a small innovation budget.",
+  "definition": "To provide the money needed for a project."
+ },
+ {
+  "id": "2024",
+  "en": "sponsor",
+  "tr": "Destek olmak, sponsor olmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "A VP sponsored the initiative, which made adoption much easier.",
+  "definition": "To back a project with money or your name."
+ },
+ {
+  "id": "2025",
+  "en": "subsidize",
+  "tr": "Sübvanse etmek, desteklemek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "The company subsidized the certification, so I took it.",
+  "definition": "To pay part of a cost so others pay less."
+ },
+ {
+  "id": "2026",
+  "en": "compensate",
+  "tr": "Telafi etmek, tazmin etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I compensated for the delay by cutting scope, not quality.",
+  "definition": "To make up for a loss or a problem."
+ },
+ {
+  "id": "2027",
+  "en": "reimburse",
+  "tr": "Geri ödemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The company reimburses any course related to the role.",
+  "definition": "To pay someone back for money they spent."
+ },
+ {
+  "id": "2028",
+  "en": "deduct",
+  "tr": "Düşmek, çıkarmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We deducted the returns before reporting final revenue.",
+  "definition": "To take an amount away from a total."
+ },
+ {
+  "id": "2029",
+  "en": "add",
+  "tr": "Eklemek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I added a buffer once I saw how tight the timeline was.",
+  "definition": "To put something extra with what is already there."
+ },
+ {
+  "id": "2030",
+  "en": "multiply",
+  "tr": "Çarpmak, katlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Small process fixes multiply into big time savings.",
+  "definition": "To grow much bigger in number or amount."
+ },
+ {
+  "id": "2031",
+  "en": "compute",
+  "tr": "Hesaplamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I computed the impact before pitching the idea.",
+  "definition": "To work out an amount using numbers."
+ },
+ {
+  "id": "2032",
+  "en": "approximate",
+  "tr": "Yaklaşık hesaplamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I approximated the cost since exact numbers weren't ready yet.",
+  "definition": "To give a rough number close to the real one."
+ },
+ {
+  "id": "2033",
+  "en": "quantify",
+  "tr": "Sayısallaştırmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I quantify impact wherever possible, not just describe it.",
+  "definition": "To measure something and express it in numbers."
+ },
+ {
+  "id": "2034",
+  "en": "effective",
+  "tr": "Etkili",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I look for effective solutions, not just fast ones.",
+  "definition": "Working well and producing the result you want."
+ },
+ {
+  "id": "2035",
+  "en": "accurate",
+  "tr": "Doğru, hassas",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I double-check my numbers because accurate data matters more than speed.",
+  "definition": "Correct in every detail and free from mistakes."
+ },
+ {
+  "id": "2036",
+  "en": "precise",
+  "tr": "Kesin, hassas",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I try to be precise about what I mean, not just polite.",
+  "definition": "Exact and clear, with no room for confusion."
+ },
+ {
+  "id": "2037",
+  "en": "clear",
+  "tr": "Net, açık",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I keep my updates clear enough that nobody has to ask twice.",
+  "definition": "Easy to understand, with nothing confusing in it."
+ },
+ {
+  "id": "2038",
+  "en": "obvious",
+  "tr": "Bariz, aşikar",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "It wasn't obvious at first, but the data made it clear.",
+  "definition": "Very easy to see or understand right away."
+ },
+ {
+  "id": "2039",
+  "en": "apparent",
+  "tr": "Görünen, aşikar",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "It became apparent within a week that the plan needed to change.",
+  "definition": "Clear enough for anyone to see or realize."
+ },
+ {
+  "id": "2040",
+  "en": "reasonable",
+  "tr": "Makul",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I think that's a reasonable ask given the timeline.",
+  "definition": "Fair and sensible in what it asks for."
+ },
+ {
+  "id": "2041",
+  "en": "realistic",
+  "tr": "Gerçekçi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I always push for a realistic deadline, not an optimistic one.",
+  "definition": "Sensible and based on what can actually happen."
+ },
+ {
+  "id": "2042",
+  "en": "feasible",
+  "tr": "Uygulanabilir, mümkün",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I checked with engineering to make sure it was feasible first.",
+  "definition": "Possible to do with the time and resources available."
+ },
+ {
+  "id": "2043",
+  "en": "valid",
+  "tr": "Geçerli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That's a valid concern, and I addressed it before moving forward.",
+  "definition": "Based on good reasons and therefore acceptable."
+ },
+ {
+  "id": "2044",
+  "en": "relevant",
+  "tr": "İlgili, alakalı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I keep updates relevant, not just comprehensive.",
+  "definition": "Closely connected to the subject being discussed."
+ },
+ {
+  "id": "2045",
+  "en": "significant",
+  "tr": "Önemli, belirgin",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We saw a significant improvement within the first month.",
+  "definition": "Large or important enough to be worth noticing."
+ },
+ {
+  "id": "2046",
+  "en": "substantial",
+  "tr": "Önemli, hatırı sayılır",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That represents a substantial change in how the team works.",
+  "definition": "Large in amount, size, or importance."
+ },
+ {
+  "id": "2047",
+  "en": "considerable",
+  "tr": "Hatırı sayılır, önemli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "It took considerable effort, but it was worth it.",
+  "definition": "Fairly large in amount, size, or effort."
+ },
+ {
+  "id": "2048",
+  "en": "minor",
+  "tr": "Küçük, önemsiz",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "It was a minor fix, but it removed a major source of confusion.",
+  "definition": "Small and not very serious or important."
+ },
+ {
+  "id": "2049",
+  "en": "major",
+  "tr": "Büyük, önemli",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That was a major turning point for the project.",
+  "definition": "Very large or important compared with others."
+ },
+ {
+  "id": "2050",
+  "en": "critical",
+  "tr": "Kritik, çok önemli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Getting that detail right was critical to the whole launch.",
+  "definition": "So important that success depends on it."
+ },
+ {
+  "id": "2051",
+  "en": "essential",
+  "tr": "Gerekli, temel",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Trust is essential before you can move fast as a team.",
+  "definition": "Completely needed and impossible to leave out."
+ },
+ {
+  "id": "2052",
+  "en": "necessary",
+  "tr": "Gerekli",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I only ask for meetings when they're truly necessary.",
+  "definition": "Required, because things will not work without it."
+ },
+ {
+  "id": "2053",
+  "en": "crucial",
+  "tr": "Çok önemli, hayati",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Early feedback was crucial to catching the issue in time.",
+  "definition": "Deciding whether something will succeed or fail."
+ },
+ {
+  "id": "2054",
+  "en": "vital",
+  "tr": "Hayati, çok önemli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Clear communication is vital, especially during a crisis.",
+  "definition": "Absolutely needed for survival or success."
+ },
+ {
+  "id": "2055",
+  "en": "urgent",
+  "tr": "Acil",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I treat few things as urgent so the real emergencies stand out.",
+  "definition": "Needing attention immediately, with no delay."
+ },
+ {
+  "id": "2056",
+  "en": "immediate",
+  "tr": "Anında, acil",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I gave an immediate response so the team wasn't left waiting.",
+  "definition": "Happening at once, with no waiting."
+ },
+ {
+  "id": "2057",
+  "en": "gradual",
+  "tr": "Kademeli, yavaş yavaş",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We took a gradual approach instead of a risky big-bang launch.",
+  "definition": "Happening slowly, in small steps over time."
+ },
+ {
+  "id": "2058",
+  "en": "sustainable",
+  "tr": "Sürdürülebilir",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I look for sustainable pace, not just short bursts of speed.",
+  "definition": "Able to continue for a long time without harm."
+ },
+ {
+  "id": "2059",
+  "en": "stable",
+  "tr": "İstikrarlı, dengeli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We kept the system stable through the entire migration.",
+  "definition": "Firmly steady and unlikely to change or fail."
+ },
+ {
+  "id": "2060",
+  "en": "steady",
+  "tr": "İstikrarlı, düzenli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I aim for steady progress, not dramatic swings.",
+  "definition": "Continuing at a regular rate without sudden change."
+ },
+ {
+  "id": "2061",
+  "en": "robust",
+  "tr": "Sağlam, dayanıklı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We built a more robust process after that failure.",
+  "definition": "Strong and able to handle pressure or problems."
+ },
+ {
+  "id": "2062",
+  "en": "solid",
+  "tr": "Sağlam",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We had a solid plan, so the pushback didn't shake it.",
+  "definition": "Firm, dependable, and unlikely to fall apart."
+ },
+ {
+  "id": "2063",
+  "en": "successful",
+  "tr": "Başarılı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The launch was successful mostly because we tested early.",
+  "definition": "Achieving the result you hoped for."
+ },
+ {
+  "id": "2064",
+  "en": "productive",
+  "tr": "Verimli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I protect my mornings so they stay productive.",
+  "definition": "Getting a lot of useful work done."
+ },
+ {
+  "id": "2065",
+  "en": "competitive",
+  "tr": "Rekabetçi",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We stayed competitive by shipping faster, not by copying features.",
+  "definition": "Able to do as well as rival companies."
+ },
+ {
+  "id": "2066",
+  "en": "tactical",
+  "tr": "Taktiksel",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We made a tactical call to delay the smaller feature.",
+  "definition": "Relating to short-term moves that give a practical advantage."
+ },
+ {
+  "id": "2067",
+  "en": "comprehensive",
+  "tr": "Kapsamlı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I gave a comprehensive answer instead of a quick guess.",
+  "definition": "Covering everything, with nothing left out."
+ },
+ {
+  "id": "2068",
+  "en": "detailed",
+  "tr": "Detaylı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I wrote a detailed plan so nothing was left ambiguous.",
+  "definition": "Containing many small facts and full information."
+ },
+ {
+  "id": "2069",
+  "en": "specific",
+  "tr": "Belirli, spesifik",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I asked for specific examples instead of general feedback.",
+  "definition": "Clearly stated and about one exact thing."
+ },
+ {
+  "id": "2070",
+  "en": "general",
+  "tr": "Genel",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "In general, simpler solutions age better.",
+  "definition": "Broad and true in most cases, not exact."
+ },
+ {
+  "id": "2071",
+  "en": "common",
+  "tr": "Yaygın, ortak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That's a common mistake, so I built a checklist to avoid it.",
+  "definition": "Happening often and found in many places."
+ },
+ {
+  "id": "2072",
+  "en": "rare",
+  "tr": "Nadir",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "A perfect launch is rare, so I plan for small issues.",
+  "definition": "Happening very seldom and hard to find."
+ },
+ {
+  "id": "2073",
+  "en": "typical",
+  "tr": "Tipik, olağan",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "A typical week for me includes at least one user call.",
+  "definition": "Showing the usual qualities of its kind."
+ },
+ {
+  "id": "2074",
+  "en": "unusual",
+  "tr": "Alışılmadık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "It was an unusual request, so I asked more questions first.",
+  "definition": "Different from what normally happens or is expected."
+ },
+ {
+  "id": "2075",
+  "en": "normal",
+  "tr": "Normal, olağan",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "It's normal for priorities to shift mid-quarter.",
+  "definition": "Ordinary and expected, not surprising at all."
+ },
+ {
+  "id": "2076",
+  "en": "exceptional",
+  "tr": "Olağanüstü",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "She delivered exceptional work under a very tight deadline.",
+  "definition": "Much better than the usual standard."
+ },
+ {
+  "id": "2077",
+  "en": "outstanding",
+  "tr": "Üstün, mükemmel",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The team's response to the crisis was outstanding.",
+  "definition": "Extremely good and clearly better than the rest."
+ },
+ {
+  "id": "2078",
+  "en": "remarkable",
+  "tr": "Dikkate değer, olağanüstü",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We saw a remarkable jump in engagement after that change.",
+  "definition": "So unusual that people notice and talk about it."
+ },
+ {
+  "id": "2079",
+  "en": "impressive",
+  "tr": "Etkileyici",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The results were impressive given how little time we had.",
+  "definition": "Good enough to make people admire it."
+ },
+ {
+  "id": "2080",
+  "en": "noticeable",
+  "tr": "Fark edilir",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "There was a noticeable difference within the first week.",
+  "definition": "Big or clear enough to be easily seen."
+ },
+ {
+  "id": "2081",
+  "en": "evident",
+  "tr": "Belirgin, açık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "It was evident from the data that users wanted something simpler.",
+  "definition": "Clearly true from what you can see."
+ },
+ {
+  "id": "2082",
+  "en": "legitimate",
+  "tr": "Meşru, haklı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "That's a legitimate worry, and I took it seriously.",
+  "definition": "Justified by good reasons, so worth taking seriously."
+ },
+ {
+  "id": "2083",
+  "en": "credible",
+  "tr": "İnandırıcı, güvenilir",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I made sure the source was credible before citing it.",
+  "definition": "Believable enough that people can rely on it."
+ },
+ {
+  "id": "2084",
+  "en": "genuine",
+  "tr": "Gerçek, samimi",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I gave genuine feedback instead of just being polite.",
+  "definition": "Real and honest, not pretended."
+ },
+ {
+  "id": "2085",
+  "en": "fair",
+  "tr": "Adil",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I tried to be fair to both teams in that decision.",
+  "definition": "Treating everyone equally and without favoritism."
+ },
+ {
+  "id": "2086",
+  "en": "subjective",
+  "tr": "Öznel",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I flagged that the decision was partly subjective, not purely data-driven.",
+  "definition": "Based on personal opinion rather than facts."
+ },
+ {
+  "id": "2087",
+  "en": "biased",
+  "tr": "Önyargılı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I know I can be biased toward my own ideas, so I ask for outside opinions.",
+  "definition": "Unfairly favoring one side or one idea."
+ },
+ {
+  "id": "2088",
+  "en": "neutral",
+  "tr": "Tarafsız",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I stayed neutral so both sides felt heard.",
+  "definition": "Not supporting either side in an argument."
+ },
+ {
+  "id": "2089",
+  "en": "dependent",
+  "tr": "Bağımlı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That milestone was dependent on a decision from another team.",
+  "definition": "Needing something else before it can happen."
+ },
+ {
+  "id": "2090",
+  "en": "complex",
+  "tr": "Karmaşık",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The problem was more complex than it first looked.",
+  "definition": "Having many parts that connect in difficult ways."
+ },
+ {
+  "id": "2091",
+  "en": "complicated",
+  "tr": "Karmaşık, çetrefilli",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I simplified a complicated process into three clear steps.",
+  "definition": "Hard to understand or do because of many steps."
+ },
+ {
+  "id": "2092",
+  "en": "simple",
+  "tr": "Basit",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I always try the simple solution before the clever one.",
+  "definition": "Easy to understand or do, with nothing extra."
+ },
+ {
+  "id": "2093",
+  "en": "difficult",
+  "tr": "Zor",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "It was a difficult decision, but the right one.",
+  "definition": "Needing a lot of effort or skill."
+ },
+ {
+  "id": "2094",
+  "en": "challenging",
+  "tr": "Zorlayıcı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That was the most challenging project of my career so far.",
+  "definition": "Hard in a way that tests your ability."
+ },
+ {
+  "id": "2095",
+  "en": "demanding",
+  "tr": "Zorlu, talepkar",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "It's a demanding role, but I like the pace.",
+  "definition": "Needing a lot of time, energy, and attention."
+ },
+ {
+  "id": "2096",
+  "en": "manageable",
+  "tr": "Yönetilebilir",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I broke it into manageable pieces instead of tackling it all at once.",
+  "definition": "Small or easy enough to handle without trouble."
+ },
+ {
+  "id": "2097",
+  "en": "overwhelming",
+  "tr": "Bunaltıcı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The backlog felt overwhelming until we prioritized ruthlessly.",
+  "definition": "So big or intense that you cannot cope."
+ },
+ {
+  "id": "2098",
+  "en": "structured",
+  "tr": "Yapılandırılmış, düzenli",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I prefer a structured approach, even to creative problems.",
+  "definition": "Organized in a clear and planned order."
+ },
+ {
+  "id": "2099",
+  "en": "systematic",
+  "tr": "Sistematik",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I take a systematic approach to debugging, not a random one.",
+  "definition": "Done step by step, following a fixed plan."
+ },
+ {
+  "id": "2100",
+  "en": "methodical",
+  "tr": "Metodik, sistemli",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "She's methodical, which makes her great at root-causing issues.",
+  "definition": "Careful and orderly in the way you work."
+ },
+ {
+  "id": "2101",
+  "en": "cautious",
+  "tr": "Temkinli, dikkatli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm cautious with irreversible decisions, less so with reversible ones.",
+  "definition": "Careful to avoid risks or mistakes."
+ },
+ {
+  "id": "2102",
+  "en": "prudent",
+  "tr": "İhtiyatlı, sağduyulu",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "It was prudent to test with a small group before a full rollout.",
+  "definition": "Wise and careful about possible future risks."
+ },
+ {
+  "id": "2103",
+  "en": "bold",
+  "tr": "Cesur",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "It was a bold call, but the data supported it.",
+  "definition": "Brave and willing to take a risk."
+ },
+ {
+  "id": "2104",
+  "en": "modest",
+  "tr": "Mütevazı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I stayed modest about the win and gave credit to the team.",
+  "definition": "Not boasting about your own achievements."
+ },
+ {
+  "id": "2105",
+  "en": "arrogant",
+  "tr": "Kibirli",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I avoid sounding arrogant, even when I'm confident in the plan.",
+  "definition": "Thinking you are better than other people."
+ },
+ {
+  "id": "2106",
+  "en": "stubborn",
+  "tr": "İnatçı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I can be stubborn about quality, less so about the details.",
+  "definition": "Refusing to change your mind about something."
+ },
+ {
+  "id": "2107",
+  "en": "persistent",
+  "tr": "Azimli, sebatkar",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I was persistent because I believed the idea was right.",
+  "definition": "Continuing to try even when it is hard."
+ },
+ {
+  "id": "2108",
+  "en": "punctual",
+  "tr": "Dakik, vaktinde",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I'm punctual, which matters a lot when clients are involved.",
+  "definition": "Always arriving or finishing exactly on time."
+ },
+ {
+  "id": "2109",
+  "en": "disciplined",
+  "tr": "Disiplinli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm disciplined about protecting focus time.",
+  "definition": "Able to control yourself and keep good habits."
+ },
+ {
+  "id": "2110",
+  "en": "polite",
+  "tr": "Kibar",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I stay polite even in a tense negotiation.",
+  "definition": "Speaking and behaving in a respectful way."
+ },
+ {
+  "id": "2111",
+  "en": "cooperative",
+  "tr": "İşbirlikçi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The other team was cooperative once they understood the reasoning.",
+  "definition": "Willing to work together and help others."
+ },
+ {
+  "id": "2112",
+  "en": "autonomous",
+  "tr": "Özerk, bağımsız",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I give the team autonomous ownership over how, not just what.",
+  "definition": "Able to work independently without being told what to do."
+ }
+]

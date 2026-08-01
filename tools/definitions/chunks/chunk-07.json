@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "1153",
+  "en": "Raise the bar",
+  "tr": "Standardı yükseltmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Our new design lead really raised the bar for quality.",
+  "definition": "To set a higher standard that others must now meet."
+ },
+ {
+  "id": "1154",
+  "en": "In a nutshell",
+  "tr": "Kısaca, özetle",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "In a nutshell, we reduced churn by improving onboarding.",
+  "definition": "Said when giving a very quick summary of something."
+ },
+ {
+  "id": "1155",
+  "en": "Bite the bullet",
+  "tr": "Zor kararı almak, dişini sıkmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We bit the bullet and rebuilt the onboarding from scratch.",
+  "definition": "To accept something painful and finally do it."
+ },
+ {
+  "id": "1156",
+  "en": "Under the radar",
+  "tr": "Göz önünde olmadan, fark edilmeden",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The bug went under the radar for almost two weeks.",
+  "definition": "Without being noticed or attracting any attention."
+ },
+ {
+  "id": "1157",
+  "en": "Take the reins",
+  "tr": "Dizginleri ele almak, yönetimi almak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I took the reins on the project after the previous PM left.",
+  "definition": "To start leading and controlling a project or group."
+ },
+ {
+  "id": "1158",
+  "en": "Jump on the bandwagon",
+  "tr": "Trende katılmak, akıma uymak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We didn't want to just jump on the bandwagon without data.",
+  "definition": "To copy a popular trend just because others are doing it."
+ },
+ {
+  "id": "1159",
+  "en": "Get up to speed",
+  "tr": "Duruma hakim olmak, güncellenmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "It took me a week to get up to speed on the project.",
+  "definition": "To learn enough about something to work on it confidently."
+ },
+ {
+  "id": "1160",
+  "en": "Make ends meet",
+  "tr": "Bütçeyi denk getirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We had to make ends meet with a smaller team this quarter.",
+  "definition": "To have just enough money for what you need."
+ },
+ {
+  "id": "1161",
+  "en": "See eye to eye",
+  "tr": "Aynı görüşte olmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We didn't see eye to eye on the pricing strategy at first.",
+  "definition": "To agree completely with another person."
+ },
+ {
+  "id": "1162",
+  "en": "Take it with a grain of salt",
+  "tr": "İhtiyatla yaklaşmak, temkinli olmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I took the early feedback with a grain of salt.",
+  "definition": "To not fully believe something and stay careful about it."
+ },
+ {
+  "id": "1163",
+  "en": "Get the hang of it",
+  "tr": "Alışmak, öğrenmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "It took a few weeks to get the hang of the new tool.",
+  "definition": "To become comfortable using something after some practice."
+ },
+ {
+  "id": "1164",
+  "en": "Put out fires",
+  "tr": "Acil sorunları çözmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I spent most of the week putting out fires after the outage.",
+  "definition": "To deal with urgent problems as they suddenly appear."
+ },
+ {
+  "id": "1165",
+  "en": "On the fence",
+  "tr": "Kararsız, iki arada bir derede",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I was on the fence about launching before we had enough data.",
+  "definition": "Unable to decide between two options."
+ },
+ {
+  "id": "1166",
+  "en": "In the long run",
+  "tr": "Uzun vadede",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "In the long run, retention matters more than downloads.",
+  "definition": "After a lot of time has passed."
+ },
+ {
+  "id": "1167",
+  "en": "Go the extra mile",
+  "tr": "Fazladan çaba göstermek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "She always goes the extra mile for our users.",
+  "definition": "To do more than people expect of you."
+ },
+ {
+  "id": "1168",
+  "en": "Call the shots",
+  "tr": "Kararları vermek, söz sahibi olmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "As the PM, I call the shots on prioritization.",
+  "definition": "To be the person who makes the decisions."
+ },
+ {
+  "id": "1169",
+  "en": "Take it step by step",
+  "tr": "Adım adım ilerlemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We took it step by step instead of rushing the launch.",
+  "definition": "To move forward slowly, in small stages."
+ },
+ {
+  "id": "1170",
+  "en": "Cross that bridge when we come to it",
+  "tr": "Sırası gelince düşünmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We'll cross that bridge when we come to it.",
+  "definition": "To handle a difficulty later, once it actually arises."
+ },
+ {
+  "id": "1171",
+  "en": "At the end of the day",
+  "tr": "Sonuçta, nihayetinde",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "At the end of the day, user trust matters most.",
+  "definition": "Said before the point that finally matters most."
+ },
+ {
+  "id": "1172",
+  "en": "Off the top of my head",
+  "tr": "Aklıma ilk gelen, ezbere",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Off the top of my head, retention improved by about 15%.",
+  "definition": "Said when answering quickly from memory, without checking."
+ },
+ {
+  "id": "1173",
+  "en": "Play devil's advocate",
+  "tr": "Şeytanın avukatlığını yapmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I played devil's advocate to stress-test the idea.",
+  "definition": "To argue against an idea on purpose, to test it."
+ },
+ {
+  "id": "1174",
+  "en": "Learn the ropes",
+  "tr": "İşin inceliklerini öğrenmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "It took about a month to learn the ropes in this role.",
+  "definition": "To pick up the basic skills of a new job."
+ },
+ {
+  "id": "1175",
+  "en": "Keep up with",
+  "tr": "Takip etmek, ayak uydurmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "It's hard to keep up with every competitor's update.",
+  "definition": "To stay at the same level or speed as something."
+ },
+ {
+  "id": "1176",
+  "en": "Take something with a pinch of salt",
+  "tr": "Şüpheyle yaklaşmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We took the survey result with a pinch of salt.",
+  "definition": "To doubt a claim slightly and not fully accept it."
+ },
+ {
+  "id": "1177",
+  "en": "In hindsight",
+  "tr": "Geriye dönüp bakınca",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "In hindsight, we should have tested with more users first.",
+  "definition": "Looking back now, after knowing how things turned out."
+ },
+ {
+  "id": "1178",
+  "en": "Get the picture",
+  "tr": "Durumu anlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I think you get the picture from these numbers.",
+  "definition": "To understand a situation from the information given."
+ },
+ {
+  "id": "1179",
+  "en": "Tip of the iceberg",
+  "tr": "Buzdağının görünen ucu",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "The bug report was just the tip of the iceberg.",
+  "definition": "A small visible part of a much bigger problem."
+ },
+ {
+  "id": "1180",
+  "en": "Break the ice",
+  "tr": "Buzları eritmek, samimiyet kurmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I always try to break the ice at the start of a meeting.",
+  "definition": "To make people feel relaxed when a meeting starts."
+ },
+ {
+  "id": "1181",
+  "en": "Get down to business",
+  "tr": "İşe koyulmak, konuya girmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Let's get down to business and review the roadmap.",
+  "definition": "To stop chatting and start the real work."
+ },
+ {
+  "id": "1182",
+  "en": "Blessing in disguise",
+  "tr": "Gizli bir nimet, aslında iyi olan kötü durum",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Losing that client was a blessing in disguise.",
+  "definition": "Something bad that later turns out to be good."
+ },
+ {
+  "id": "1183",
+  "en": "On the right track",
+  "tr": "Doğru yolda",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I think we're on the right track with this strategy.",
+  "definition": "Moving in a direction that will probably succeed."
+ },
+ {
+  "id": "1184",
+  "en": "Make the most of",
+  "tr": "En iyi şekilde değerlendirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We made the most of the limited engineering time.",
+  "definition": "To use something as well as you possibly can."
+ },
+ {
+  "id": "1185",
+  "en": "A double-edged sword",
+  "tr": "İki ucu keskin kılıç",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Rapid growth was a double-edged sword for our support team.",
+  "definition": "Something with clear benefits and serious problems at once."
+ },
+ {
+  "id": "1186",
+  "en": "Once in a blue moon",
+  "tr": "Nadiren, çok seyrek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We change the pricing once in a blue moon.",
+  "definition": "Very rarely, and only every now and then."
+ },
+ {
+  "id": "1187",
+  "en": "Follow up",
+  "tr": "Takip etmek, geri dönmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'll follow up with the team by end of day.",
+  "definition": "To contact someone again about something discussed earlier."
+ },
+ {
+  "id": "1188",
+  "en": "Look into",
+  "tr": "İncelemek, araştırmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I looked into the drop in retention right away.",
+  "definition": "To examine a problem in order to understand it."
+ },
+ {
+  "id": "1189",
+  "en": "Come up with",
+  "tr": "Bulmak, tasarlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We came up with three possible solutions.",
+  "definition": "To think of a new idea or solution."
+ },
+ {
+  "id": "1190",
+  "en": "Figure out",
+  "tr": "Çözmek, anlamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I figured out why the metric had dropped.",
+  "definition": "To finally understand or solve something after thinking."
+ },
+ {
+  "id": "1191",
+  "en": "Set up",
+  "tr": "Kurmak, ayarlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I set up a meeting with the whole team.",
+  "definition": "To arrange or organize something so it is ready."
+ },
+ {
+  "id": "1192",
+  "en": "Sort out",
+  "tr": "Halletmek, çözmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We sorted out the miscommunication in one call.",
+  "definition": "To fix a problem or confusion successfully."
+ },
+ {
+  "id": "1193",
+  "en": "Point out",
+  "tr": "Belirtmek, işaret etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I pointed out a risk in the plan early on.",
+  "definition": "To draw attention to a fact or detail."
+ },
+ {
+  "id": "1194",
+  "en": "Take over",
+  "tr": "Devralmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I took over the project when the previous PM left.",
+  "definition": "To start controlling something that another person had."
+ },
+ {
+  "id": "1195",
+  "en": "Back up",
+  "tr": "Desteklemek, yedeklemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I backed up my decision with clear data.",
+  "definition": "To support a claim with evidence or proof."
+ },
+ {
+  "id": "1196",
+  "en": "Break down",
+  "tr": "Ayrıştırmak, parçalara bölmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I broke down the project into smaller milestones.",
+  "definition": "To divide something big into smaller parts."
+ },
+ {
+  "id": "1197",
+  "en": "Bring up",
+  "tr": "Gündeme getirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I brought up the risk during the planning meeting.",
+  "definition": "To mention a topic in a conversation or meeting."
+ },
+ {
+  "id": "1198",
+  "en": "Work out",
+  "tr": "Çözmek, sonuçlanmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We worked out a plan that satisfied both teams.",
+  "definition": "To find a solution after some effort."
+ },
+ {
+  "id": "1199",
+  "en": "Come across",
+  "tr": "Karşılaşmak, rastlamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I came across this issue during user testing.",
+  "definition": "To meet or find something by chance."
+ },
+ {
+  "id": "1200",
+  "en": "Rely on",
+  "tr": "Güvenmek, dayanmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I rely on data more than intuition for big decisions.",
+  "definition": "To depend on someone or something for support."
+ },
+ {
+  "id": "1201",
+  "en": "Come up against",
+  "tr": "Karşılaşmak, karşı karşıya gelmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We came up against a tight deadline and limited resources.",
+  "definition": "To face a difficulty or obstacle unexpectedly."
+ },
+ {
+  "id": "1202",
+  "en": "Cut down on",
+  "tr": "Azaltmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We cut down on unnecessary meetings this quarter.",
+  "definition": "To reduce the amount of something you use or do."
+ },
+ {
+  "id": "1203",
+  "en": "Follow through on",
+  "tr": "Sonuna kadar takip etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I always follow through on commitments I make.",
+  "definition": "To finish what you promised someone you would do."
+ },
+ {
+  "id": "1204",
+  "en": "Take on",
+  "tr": "Üstlenmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I took on the redesign project alongside my regular work.",
+  "definition": "To accept a new task or responsibility."
+ },
+ {
+  "id": "1205",
+  "en": "Hold off on",
+  "tr": "Ertelemek, beklemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We held off on the launch until QA was complete.",
+  "definition": "To delay doing something until a better moment."
+ },
+ {
+  "id": "1206",
+  "en": "Catch up on",
+  "tr": "Yetişmek, güncellenmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I caught up on the backlog over the weekend.",
+  "definition": "To finish work that you did not do earlier."
+ },
+ {
+  "id": "1207",
+  "en": "Weigh up",
+  "tr": "Tartmak, kıyaslamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I weighed up the risks before making the call.",
+  "definition": "To compare good and bad points before deciding."
+ },
+ {
+  "id": "1208",
+  "en": "Go over",
+  "tr": "Gözden geçirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Let's go over the plan one more time before we ship.",
+  "definition": "To review something carefully from start to finish."
+ },
+ {
+  "id": "1209",
+  "en": "Bring about",
+  "tr": "Meydana getirmek, yol açmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The redesign brought about a big jump in retention.",
+  "definition": "To cause something to happen."
+ },
+ {
+  "id": "1210",
+  "en": "Get through",
+  "tr": "Atlatmak, tamamlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We got through the launch without major issues.",
+  "definition": "To finish or survive a difficult period."
+ },
+ {
+  "id": "1211",
+  "en": "Put off",
+  "tr": "Ertelemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We put off the redesign until after the busy season.",
+  "definition": "To move something to a later date."
+ },
+ {
+  "id": "1212",
+  "en": "Sign off on",
+  "tr": "Onaylamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Legal signed off on the new terms yesterday.",
+  "definition": "To officially approve something before it goes ahead."
+ },
+ {
+  "id": "1213",
+  "en": "Iron out",
+  "tr": "Halletmek, çözüme kavuşturmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We ironed out the details in a quick sync.",
+  "definition": "To solve small problems and settle the final details."
+ },
+ {
+  "id": "1214",
+  "en": "Fill in",
+  "tr": "Bilgi vermek, tamamlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I filled the team in on what happened during the call.",
+  "definition": "To give someone the information they missed."
+ },
+ {
+  "id": "1215",
+  "en": "Zero in on",
+  "tr": "Odaklanmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We zeroed in on the onboarding flow as the biggest issue.",
+  "definition": "To focus closely on one specific thing."
+ },
+ {
+  "id": "1216",
+  "en": "Take into account",
+  "tr": "Göz önünde bulundurmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I took the user feedback into account before deciding.",
+  "definition": "To consider something when making a decision."
+ },
+ {
+  "id": "1217",
+  "en": "Hold up",
+  "tr": "Geciktirmek, engel olmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The legal review held up the launch by a week.",
+  "definition": "To delay something or stop it moving forward."
+ },
+ {
+  "id": "1218",
+  "en": "Go through",
+  "tr": "İncelemek, gözden geçirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I went through the feedback line by line.",
+  "definition": "To examine every part of something carefully."
+ },
+ {
+  "id": "1219",
+  "en": "Line up",
+  "tr": "Ayarlamak, planlamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I lined up interviews with five users for next week.",
+  "definition": "To arrange meetings or people for a future date."
+ },
+ {
+  "id": "1220",
+  "en": "Move on",
+  "tr": "Devam etmek, ilerlemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Once the decision was made, we moved on quickly.",
+  "definition": "To leave one thing behind and continue to the next."
+ },
+ {
+  "id": "1221",
+  "en": "Stem from",
+  "tr": "Kaynaklanmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The issue stemmed from a miscommunication about scope.",
+  "definition": "To be caused by something earlier."
+ },
+ {
+  "id": "1222",
+  "en": "Step in",
+  "tr": "Araya girmek, müdahale etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I stepped in when the discussion got too heated.",
+  "definition": "To become involved in order to help or stop trouble."
+ },
+ {
+  "id": "1223",
+  "en": "Take stock of",
+  "tr": "Durumu değerlendirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We took stock of the quarter before planning the next one.",
+  "definition": "To pause and judge a situation carefully."
+ },
+ {
+  "id": "1224",
+  "en": "Wrap up",
+  "tr": "Bitirmek, sonlandırmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We wrapped up the sprint two days early.",
+  "definition": "To bring an activity to a close."
+ },
+ {
+  "id": "1225",
+  "en": "Drill down into",
+  "tr": "Ayrıntılara inmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We drilled down into the data to find the root cause.",
+  "definition": "To look at data in much greater detail."
+ },
+ {
+  "id": "1226",
+  "en": "Keep track of",
+  "tr": "Takip etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I keep track of every metric in a single dashboard.",
+  "definition": "To record and follow how something changes."
+ },
+ {
+  "id": "1227",
+  "en": "Home in on",
+  "tr": "Odaklanmak, üzerine yoğunlaşmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We homed in on the checkout flow as the main issue.",
+  "definition": "To direct attention straight at the main issue."
+ },
+ {
+  "id": "1228",
+  "en": "Put together",
+  "tr": "Bir araya getirmek, hazırlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I put together a quick proposal for the new feature.",
+  "definition": "To create something by combining separate parts."
+ },
+ {
+  "id": "1229",
+  "en": "Play out",
+  "tr": "Gelişmek, sonuçlanmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We wanted to see how the test would play out first.",
+  "definition": "To develop and reach a result over time."
+ },
+ {
+  "id": "1230",
+  "en": "Sum up",
+  "tr": "Özetlemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "To sum up, we improved retention by 15% this quarter.",
+  "definition": "To state the main points briefly at the end."
+ },
+ {
+  "id": "1231",
+  "en": "Level with",
+  "tr": "Açık konuşmak, dürüst olmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I leveled with the team about the tight timeline.",
+  "definition": "To speak honestly to someone about a difficult truth."
+ },
+ {
+  "id": "1232",
+  "en": "Speak up",
+  "tr": "Fikrini söylemek, sesini yükseltmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I always encourage my team to speak up early.",
+  "definition": "To say your opinion openly instead of staying quiet."
+ },
+ {
+  "id": "1233",
+  "en": "Touch base",
+  "tr": "Kısa bir görüşme yapmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Let's touch base after the user interviews.",
+  "definition": "To have a short talk to share news."
+ },
+ {
+  "id": "1234",
+  "en": "Detail-oriented",
+  "tr": "Detaylara önem veren",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm detail-oriented, especially when reviewing metrics.",
+  "definition": "Careful about small things that other people might miss."
+ },
+ {
+  "id": "1235",
+  "en": "Organized",
+  "tr": "Düzenli, organize",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm organized enough to juggle several projects at once.",
+  "definition": "Keeping work and plans in good order."
+ },
+ {
+  "id": "1236",
+  "en": "Resilient",
+  "tr": "Dirençli, dayanıklı",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I'm resilient when a launch doesn't go as planned.",
+  "definition": "Able to recover quickly after difficulty or failure."
+ },
+ {
+  "id": "1237",
+  "en": "Curious",
+  "tr": "Meraklı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm naturally curious about why users behave the way they do.",
+  "definition": "Wanting to know more about how things work."
+ },
+ {
+  "id": "1238",
+  "en": "Analytical",
+  "tr": "Analitik",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm analytical, but I also trust user research.",
+  "definition": "Good at studying data carefully to find patterns."
+ },
+ {
+  "id": "1239",
+  "en": "Pragmatic",
+  "tr": "Pragmatik, gerçekçi",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I'm pragmatic about trade-offs between speed and polish.",
+  "definition": "Dealing with things in a sensible, realistic way."
+ },
+ {
+  "id": "1240",
+  "en": "Collaborative",
+  "tr": "İşbirliğine açık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm collaborative and enjoy working across teams.",
+  "definition": "Happy to work closely together with other people."
+ },
+ {
+  "id": "1241",
+  "en": "Level-headed",
+  "tr": "Soğukkanlı, sağduyulu",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I stay level-headed even during a production incident.",
+  "definition": "Staying calm and sensible in a stressful moment."
+ },
+ {
+  "id": "1242",
+  "en": "Empathetic",
+  "tr": "Empatik",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm empathetic toward both users and my teammates.",
+  "definition": "Able to understand how other people feel."
+ },
+ {
+  "id": "1243",
+  "en": "Decisive",
+  "tr": "Kararlı, çabuk karar veren",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm decisive, especially when time is limited.",
+  "definition": "Able to make firm choices quickly."
+ },
+ {
+  "id": "1244",
+  "en": "Hardworking",
+  "tr": "Çalışkan",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm hardworking and always meet my commitments.",
+  "definition": "Putting a lot of effort into your job."
+ },
+ {
+  "id": "1245",
+  "en": "Self-motivated",
+  "tr": "Kendi kendini motive eden",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm self-motivated and don't need constant supervision.",
+  "definition": "Able to start and continue tasks without being pushed."
+ },
+ {
+  "id": "1246",
+  "en": "Honest",
+  "tr": "Dürüst",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm honest with stakeholders, even when the news isn't great.",
+  "definition": "Always telling the truth, even when it is uncomfortable."
+ },
+ {
+  "id": "1247",
+  "en": "Diplomatic",
+  "tr": "Diplomatik",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I'm diplomatic when navigating conflicting stakeholder interests.",
+  "definition": "Skilled at handling sensitive situations without upsetting anyone."
+ },
+ {
+  "id": "1248",
+  "en": "Creative",
+  "tr": "Yaratıcı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm creative when the obvious solution isn't feasible.",
+  "definition": "Able to think of new and original ideas."
+ },
+ {
+  "id": "1249",
+  "en": "Driven",
+  "tr": "Hırslı, motive, azimli",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm driven by measurable impact, not just activity.",
+  "definition": "Strongly motivated to achieve big results."
+ },
+ {
+  "id": "1250",
+  "en": "Calm",
+  "tr": "Sakin",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I stay calm when things go wrong during a launch.",
+  "definition": "Relaxed and in control, even under pressure."
+ },
+ {
+  "id": "1251",
+  "en": "Tenacious",
+  "tr": "Azimli, yılmayan",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I'm tenacious when a problem takes longer than expected.",
+  "definition": "Refusing to give up until the job is finished."
+ },
+ {
+  "id": "1252",
+  "en": "Open-minded",
+  "tr": "Açık fikirli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm open-minded about ideas that challenge my own.",
+  "definition": "Willing to accept ideas different from your own."
+ },
+ {
+  "id": "1253",
+  "en": "Focused",
+  "tr": "Odaklı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I stay focused on one clear goal per quarter.",
+  "definition": "Giving full attention to one thing."
+ },
+ {
+  "id": "1254",
+  "en": "Supportive",
+  "tr": "Destekleyici",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm supportive of my team, especially during setbacks.",
+  "definition": "Ready to help and encourage other people."
+ },
+ {
+  "id": "1255",
+  "en": "Rigorous",
+  "tr": "Titiz, sıkı kurallara bağlı",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I'm rigorous about validating assumptions before committing resources.",
+  "definition": "Very careful, thorough, and strict about quality."
+ },
+ {
+  "id": "1256",
+  "en": "Strategic",
+  "tr": "Stratejik düşünen",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm strategic about which battles are worth fighting.",
+  "definition": "Planning with long-term goals clearly in mind."
+ },
+ {
+  "id": "1257",
+  "en": "Practical",
+  "tr": "Pratik, uygulamaya yönelik",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm practical when choosing between a perfect and a good-enough solution.",
+  "definition": "Useful and suited to real situations rather than theory."
+ },
+ {
+  "id": "1258",
+  "en": "Composed",
+  "tr": "Sakin, kendine hakim",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I stay composed during high-pressure stakeholder meetings.",
+  "definition": "Calm and controlled in a difficult moment."
+ },
+ {
+  "id": "1259",
+  "en": "Ambitious",
+  "tr": "Hırslı, iddialı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm ambitious about the goals I set for my team.",
+  "definition": "Having strong goals and wanting to achieve a lot."
+ },
+ {
+  "id": "1260",
+  "en": "Transparent",
+  "tr": "Şeffaf",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm transparent about trade-offs, even the uncomfortable ones.",
+  "definition": "Open and clear about information, hiding nothing."
+ },
+ {
+  "id": "1261",
+  "en": "Unflappable",
+  "tr": "Soğukkanlılığını hiç kaybetmeyen",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "She's unflappable, even when the production system goes down.",
+  "definition": "Never losing calm, no matter how bad things get."
+ },
+ {
+  "id": "1262",
+  "en": "Energetic",
+  "tr": "Enerjik",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I bring energetic focus to every new project.",
+  "definition": "Very lively and active in everything you do."
+ },
+ {
+  "id": "1263",
+  "en": "Perceptive",
+  "tr": "Sezgisi güçlü, çabuk kavrayan",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm perceptive about tension building up between teams.",
+  "definition": "Quick to notice things that other people miss."
+ },
+ {
+  "id": "1264",
+  "en": "Humble",
+  "tr": "Alçakgönüllü",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I try to stay humble, especially after a big win.",
+  "definition": "Modest about your own success and abilities."
+ },
+ {
+  "id": "1265",
+  "en": "Astute",
+  "tr": "Zeki, keskin gözlemci",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "She's astute at reading what stakeholders really need.",
+  "definition": "Clever at understanding situations and people quickly."
+ },
+ {
+  "id": "1266",
+  "en": "Efficient",
+  "tr": "Verimli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm efficient with my time, even during busy weeks.",
+  "definition": "Doing a job well without wasting time."
+ },
+ {
+  "id": "1267",
+  "en": "Independent",
+  "tr": "Bağımsız çalışabilen",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm independent, but I know when to ask for help.",
+  "definition": "Able to work alone without needing much help."
+ },
+ {
+  "id": "1268",
+  "en": "For example",
+  "tr": "Örneğin",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "For example, we reduced churn by improving onboarding.",
+  "definition": "Said before giving one case that supports your point."
+ },
+ {
+  "id": "1269",
+  "en": "As a result",
+  "tr": "Sonuç olarak, bunun sonucunda",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "As a result, retention improved by 12%.",
+  "definition": "Because of that, this is what happened."
+ },
+ {
+  "id": "1270",
+  "en": "On the other hand",
+  "tr": "Öte yandan",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "On the other hand, the feature added complexity for new users.",
+  "definition": "Said when adding a contrasting or opposite point."
+ },
+ {
+  "id": "1271",
+  "en": "To be honest",
+  "tr": "Açıkçası, dürüst olmak gerekirse",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "To be honest, the first version didn't work as expected.",
+  "definition": "Said when admitting something openly and frankly."
+ },
+ {
+  "id": "1272",
+  "en": "In other words",
+  "tr": "Başka bir deyişle",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "In other words, we prioritized retention over new features.",
+  "definition": "Said before explaining the same idea more simply."
+ },
+ {
+  "id": "1273",
+  "en": "That being said",
+  "tr": "Bununla birlikte, yine de",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "That being said, we still had a lot to learn.",
+  "definition": "Even so, despite what was just mentioned."
+ },
+ {
+  "id": "1274",
+  "en": "With that in mind",
+  "tr": "Bunu göz önünde bulundurarak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "With that in mind, we redesigned the entire onboarding flow.",
+  "definition": "Considering this point, here is what we did."
+ },
+ {
+  "id": "1275",
+  "en": "To sum up",
+  "tr": "Özetlemek gerekirse",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "To sum up, the project improved both retention and revenue.",
+  "definition": "Said just before giving a brief final summary."
+ },
+ {
+  "id": "1276",
+  "en": "For instance",
+  "tr": "Örneğin",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "For instance, we tested three different onboarding flows.",
+  "definition": "Used when naming a particular case to illustrate something."
+ },
+ {
+  "id": "1277",
+  "en": "In my experience",
+  "tr": "Deneyimlerime göre",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "In my experience, small experiments beat big redesigns.",
+  "definition": "Based on what has personally happened to me before."
+ },
+ {
+  "id": "1278",
+  "en": "Looking back",
+  "tr": "Geriye dönüp baktığımda",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Looking back, I would have tested with more users first.",
+  "definition": "Thinking again about the past from today."
+ },
+ {
+  "id": "1279",
+  "en": "To put it simply",
+  "tr": "Basitçe söylemek gerekirse",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "To put it simply, users wanted a faster checkout.",
+  "definition": "Said before explaining something in the easiest way."
+ },
+ {
+  "id": "1280",
+  "en": "What I mean is",
+  "tr": "Demek istediğim",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "What I mean is, we focused on quality over speed.",
+  "definition": "Said when you want to clarify your own statement."
+ },
+ {
+  "id": "1281",
+  "en": "As far as I'm concerned",
+  "tr": "Bana kalırsa",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "As far as I'm concerned, user trust matters most.",
+  "definition": "In my opinion, speaking only for myself."
+ },
+ {
+  "id": "1282",
+  "en": "The way I see it",
+  "tr": "Bence, benim görüşüme göre",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The way I see it, this feature solves a real pain point.",
+  "definition": "From my personal point of view about something."
+ },
+ {
+  "id": "1283",
+  "en": "One thing I've learned",
+  "tr": "Öğrendiğim bir şey",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "One thing I've learned is to test assumptions early.",
+  "definition": "Said before sharing a lesson from your own past."
+ },
+ {
+  "id": "1284",
+  "en": "It's worth noting",
+  "tr": "Belirtmekte fayda var",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "It's worth noting that this result came from a small sample.",
+  "definition": "Said before adding an important detail people should know."
+ },
+ {
+  "id": "1285",
+  "en": "At first",
+  "tr": "Başta, ilk başta",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "At first, the metric didn't move at all.",
+  "definition": "In the beginning, before things changed."
+ },
+ {
+  "id": "1286",
+  "en": "Over time",
+  "tr": "Zamanla",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Over time, the feature became one of our most used.",
+  "definition": "Slowly, as weeks or months pass."
+ },
+ {
+  "id": "1287",
+  "en": "In general",
+  "tr": "Genel olarak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "In general, users respond well to simpler flows.",
+  "definition": "Usually, considering most cases rather than exceptions."
+ },
+ {
+  "id": "1288",
+  "en": "More specifically",
+  "tr": "Daha spesifik olarak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "More specifically, drop-off happened at the payment step.",
+  "definition": "Said when giving an exact detail after a broad statement."
+ },
+ {
+  "id": "1289",
+  "en": "By and large",
+  "tr": "Genel olarak, çoğunlukla",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "By and large, the launch went smoothly.",
+  "definition": "Mostly true, when you consider everything."
+ },
+ {
+  "id": "1290",
+  "en": "Right away",
+  "tr": "Hemen",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I flagged the issue right away when I saw it.",
+  "definition": "Immediately, without any delay at all."
+ },
+ {
+  "id": "1291",
+  "en": "Needless to say",
+  "tr": "Söylemeye gerek yok",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Needless to say, the deadline pressure was intense.",
+  "definition": "Said about something so obvious it barely requires mention."
+ },
+ {
+  "id": "1292",
+  "en": "At the same time",
+  "tr": "Aynı zamanda",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "At the same time, we kept the design simple.",
+  "definition": "Also, while that other thing was happening."
+ },
+ {
+  "id": "1293",
+  "en": "As it turns out",
+  "tr": "Görüldüğü üzere, meğerse",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "As it turns out, users wanted fewer steps, not more features.",
+  "definition": "Said when reality proves different from what was expected."
+ },
+ {
+  "id": "1294",
+  "en": "All things considered",
+  "tr": "Her şey göz önüne alındığında",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "All things considered, the launch was a success.",
+  "definition": "After thinking about every part of the situation."
+ },
+ {
+  "id": "1295",
+  "en": "To be fair",
+  "tr": "Adil olmak gerekirse",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "To be fair, the first plan wasn't realistic.",
+  "definition": "Said when admitting a reasonable point against your own."
+ },
+ {
+  "id": "1296",
+  "en": "As a rule of thumb",
+  "tr": "Genel kural olarak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "As a rule of thumb, I test with five users before shipping.",
+  "definition": "A rough guide that usually works well enough."
+ },
+ {
+  "id": "1297",
+  "en": "First and foremost",
+  "tr": "Her şeyden önce",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "First and foremost, we focused on the user's core problem.",
+  "definition": "Most importantly, before any other point."
+ },
+ {
+  "id": "1298",
+  "en": "Above all",
+  "tr": "Her şeyden önemlisi",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Above all, I value honesty over comfortable answers.",
+  "definition": "More than anything else in importance."
+ },
+ {
+  "id": "1299",
+  "en": "Broadly speaking",
+  "tr": "Genel hatlarıyla",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Broadly speaking, our strategy shifted from growth to retention.",
+  "definition": "In a general way, without exact detail."
+ },
+ {
+  "id": "1300",
+  "en": "So far",
+  "tr": "Şimdiye kadar",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "So far, the results have been better than expected.",
+  "definition": "Up to now, at this point in time."
+ },
+ {
+  "id": "1301",
+  "en": "Going forward",
+  "tr": "Bundan sonra, ileriye dönük",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Going forward, we'll test smaller changes more often.",
+  "definition": "From now on, in the future."
+ },
+ {
+  "id": "1302",
+  "en": "In short",
+  "tr": "Kısacası",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "In short, we prioritized retention over acquisition.",
+  "definition": "Briefly, in only a few words."
+ },
+ {
+  "id": "1303",
+  "en": "To give you some context",
+  "tr": "Sana biraz bağlam vermek gerekirse",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "To give you some context, our team had just doubled in size.",
+  "definition": "Said before explaining the background of a story."
+ },
+ {
+  "id": "1304",
+  "en": "Manage time",
+  "tr": "Zamanı yönetmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I manage my time by blocking focus hours every morning.",
+  "definition": "To organize your hours so the job gets done."
+ },
+ {
+  "id": "1305",
+  "en": "Prioritize tasks",
+  "tr": "Görevleri önceliklendirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I prioritize tasks based on impact and urgency.",
+  "definition": "To decide which jobs matter most and start there."
+ },
+ {
+  "id": "1306",
+  "en": "Time-boxed",
+  "tr": "Zaman sınırlı, süresi belirli",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We kept the discovery phase time-boxed to two weeks.",
+  "definition": "Limited to a fixed period that cannot be extended."
+ },
+ {
+  "id": "1307",
+  "en": "Meet a deadline",
+  "tr": "Son tarihe yetişmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I always try to meet a deadline without cutting corners.",
+  "definition": "To finish work by the agreed final date."
+ },
+ {
+  "id": "1308",
+  "en": "Multitask",
+  "tr": "Aynı anda birden fazla iş yapmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I can multitask, but I prefer deep focus when possible.",
+  "definition": "To handle several jobs at the same moment."
+ },
+ {
+  "id": "1309",
+  "en": "Stay on schedule",
+  "tr": "Programa bağlı kalmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We stayed on schedule despite two unexpected blockers.",
+  "definition": "To keep to the planned dates without falling behind."
+ },
+ {
+  "id": "1310",
+  "en": "Efficient use of time",
+  "tr": "Zamanı verimli kullanma",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Efficient use of time is something I take seriously.",
+  "definition": "Getting a lot done in few working hours."
+ },
+ {
+  "id": "1311",
+  "en": "Time management skills",
+  "tr": "Zaman yönetimi becerileri",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "My time management skills improved a lot in this role.",
+  "definition": "The ability to use your available hours wisely."
+ },
+ {
+  "id": "1312",
+  "en": "Block off time",
+  "tr": "Zaman ayırmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I block off time every week for deep work.",
+  "definition": "To reserve part of your calendar for one activity."
+ },
+ {
+  "id": "1313",
+  "en": "Juggle priorities",
+  "tr": "Öncelikleri dengelemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I juggle priorities between three projects at once.",
+  "definition": "To handle several urgent demands at once."
+ },
+ {
+  "id": "1314",
+  "en": "Run out of time",
+  "tr": "Zaman yetmemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We ran out of time to test every edge case.",
+  "definition": "To have no minutes left before the deadline."
+ },
+ {
+  "id": "1315",
+  "en": "Free up time",
+  "tr": "Zaman kazanmak, zaman boşaltmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Automating the report freed up several hours a week.",
+  "definition": "To create extra hours by removing other duties."
+ },
+ {
+  "id": "1316",
+  "en": "Time-sensitive",
+  "tr": "Zamana duyarlı, aciliyeti olan",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "This was a time-sensitive issue affecting revenue.",
+  "definition": "Needing quick action before a chance is lost."
+ },
+ {
+  "id": "1317",
+  "en": "Ahead of schedule",
+  "tr": "Programın önünde",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We finished the feature ahead of schedule.",
+  "definition": "Finished earlier than the plan required."
+ },
+ {
+  "id": "1318",
+  "en": "Behind on",
+  "tr": "Gerisinde kalmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We were behind on the redesign due to staffing issues.",
+  "definition": "Late with work that should already be finished."
+ },
+ {
+  "id": "1319",
+  "en": "Make time for",
+  "tr": "Zaman ayırmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I always make time for user interviews, even when busy.",
+  "definition": "To deliberately keep hours free for something important."
+ },
+ {
+  "id": "1320",
+  "en": "Optimize workflow",
+  "tr": "İş akışını optimize etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We optimized our workflow to cut meeting time in half.",
+  "definition": "To improve how tasks move through a team."
+ },
+ {
+  "id": "1321",
+  "en": "Buffer time",
+  "tr": "Tampon süre, ekstra zaman",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I always add buffer time for unexpected blockers.",
+  "definition": "Extra spare hours added in case of delays."
+ },
+ {
+  "id": "1322",
+  "en": "Set a deadline",
+  "tr": "Son tarih belirlemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I set a clear deadline to keep the project moving.",
+  "definition": "To fix the date by which something must finish."
+ },
+ {
+  "id": "1323",
+  "en": "Time constraint",
+  "tr": "Zaman kısıtı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We worked within a tight time constraint before the conference.",
+  "definition": "A limit on how many hours are available."
+ },
+ {
+  "id": "1324",
+  "en": "Work efficiently",
+  "tr": "Verimli çalışmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I work efficiently by focusing on one task at a time.",
+  "definition": "To produce good results quickly and without waste."
+ },
+ {
+  "id": "1325",
+  "en": "Fit into schedule",
+  "tr": "Programa sığdırmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I fit the user interviews into a tight weekly schedule.",
+  "definition": "To find room for something in a busy plan."
+ },
+ {
+  "id": "1326",
+  "en": "Time-consuming",
+  "tr": "Zaman alıcı",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Manual reporting was time-consuming, so we automated it.",
+  "definition": "Taking many hours to complete."
+ },
+ {
+  "id": "1327",
+  "en": "Plan the week",
+  "tr": "Haftayı planlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I plan my week every Monday morning.",
+  "definition": "To decide in advance what each day will hold."
+ },
+ {
+  "id": "1328",
+  "en": "Batch tasks",
+  "tr": "Görevleri gruplamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I batch similar tasks together to stay focused.",
+  "definition": "To group similar jobs and do them together."
+ },
+ {
+  "id": "1329",
+  "en": "Get things done",
+  "tr": "İşleri halletmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I focus on getting things done, not just staying busy.",
+  "definition": "To actually complete work rather than just look busy."
+ },
+ {
+  "id": "1330",
+  "en": "Streamline a process",
+  "tr": "Bir süreci sadeleştirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We streamlined the release process to save two days per sprint.",
+  "definition": "To simplify the steps so something runs faster."
+ },
+ {
+  "id": "1331",
+  "en": "Realistic deadline",
+  "tr": "Gerçekçi son tarih",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I always push for a realistic deadline with engineering.",
+  "definition": "A final date that can actually be achieved."
+ },
+ {
+  "id": "1332",
+  "en": "Stay focused",
+  "tr": "Odaklı kalmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I stay focused by turning off notifications during deep work.",
+  "definition": "To keep concentrating without letting your attention drift."
+ },
+ {
+  "id": "1333",
+  "en": "Avoid distractions",
+  "tr": "Dikkat dağınıklığından kaçınmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I avoid distractions by blocking my calendar for focus time.",
+  "definition": "To keep away from things that break concentration."
+ },
+ {
+  "id": "1334",
+  "en": "Career goal",
+  "tr": "Kariyer hedefi",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My career goal is to lead a full product team.",
+  "definition": "What you hope to achieve in your working life."
+ },
+ {
+  "id": "1335",
+  "en": "Grow professionally",
+  "tr": "Profesyonel olarak gelişmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I want to grow professionally in a fast-paced environment.",
+  "definition": "To develop your skills and ability at work."
+ },
+ {
+  "id": "1336",
+  "en": "Learn new skills",
+  "tr": "Yeni beceriler öğrenmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm always looking to learn new skills, especially in data.",
+  "definition": "To gain abilities you did not have before."
+ },
+ {
+  "id": "1337",
+  "en": "Take on more responsibility",
+  "tr": "Daha fazla sorumluluk almak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm ready to take on more responsibility.",
+  "definition": "To accept a bigger role with greater duties."
+ },
+ {
+  "id": "1338",
+  "en": "Long-term aspiration",
+  "tr": "Uzun vadeli hedef, arzu",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "My long-term aspiration is to run my own product organization.",
+  "definition": "A big hope for many years into the future."
+ },
+ {
+  "id": "1339",
+  "en": "Next step",
+  "tr": "Bir sonraki adım",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "This role feels like the right next step for me.",
+  "definition": "The action that logically comes after this one."
+ },
+ {
+  "id": "1340",
+  "en": "Push myself",
+  "tr": "Kendimi zorlamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I push myself to take on projects outside my comfort zone.",
+  "definition": "To make extra effort beyond what feels comfortable."
+ },
+ {
+  "id": "1341",
+  "en": "Reach a goal",
+  "tr": "Bir hedefe ulaşmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I reached my goal of leading a cross-functional launch.",
+  "definition": "To finally achieve what you were aiming for."
+ },
+ {
+  "id": "1342",
+  "en": "Career growth",
+  "tr": "Kariyer gelişimi",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Career growth matters to me as much as compensation.",
+  "definition": "Steady progress to bigger roles over the years."
+ },
+ {
+  "id": "1343",
+  "en": "Professional development",
+  "tr": "Mesleki gelişim",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I invest in professional development every quarter.",
+  "definition": "Ongoing training that improves your abilities at work."
+ },
+ {
+  "id": "1344",
+  "en": "New challenge",
+  "tr": "Yeni bir meydan okuma, yeni zorluk",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm looking for a new challenge after three years in my role.",
+  "definition": "A fresh task that will test your abilities."
+ }
+]

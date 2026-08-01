@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "193",
+  "en": "sprint backlog",
+  "tr": "sprint iş listesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The engineering team committed to 12 user stories in the sprint backlog.",
+  "definition": "Tasks a team commits to finishing during one short work cycle."
+ },
+ {
+  "id": "194",
+  "en": "velocity",
+  "tr": "sprint koşu hızı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Team velocity stabilized after three consecutive sprint iterations.",
+  "definition": "The amount of work a team completes in each short cycle."
+ },
+ {
+  "id": "195",
+  "en": "definition of done (DoD)",
+  "tr": "tamamlanma kriteri",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Automation tests are a mandatory requirement in our definition of done.",
+  "definition": "Agreed conditions a task must meet before it counts as finished."
+ },
+ {
+  "id": "196",
+  "en": "definition of ready (DoR)",
+  "tr": "hazır olma kriteri",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "User stories must meet DoR standards before entering sprint planning.",
+  "definition": "Agreed conditions a task must meet before a team starts it."
+ },
+ {
+  "id": "197",
+  "en": "scope creep",
+  "tr": "kapsam kayması / genişlemesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Strict backlog grooming prevents scope creep during active sprints.",
+  "definition": "The slow growth of extra work beyond what was first agreed."
+ },
+ {
+  "id": "198",
+  "en": "blocker / impediment",
+  "tr": "engelleyici unsur",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Unresponsive external APIs are currently the biggest blocker for release.",
+  "definition": "A problem that stops work from moving forward."
+ },
+ {
+  "id": "199",
+  "en": "technical debt",
+  "tr": "teknik borç",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We dedicate 20% of every sprint capacity to reducing technical debt.",
+  "definition": "Future work created by choosing quick code fixes today."
+ },
+ {
+  "id": "200",
+  "en": "refactoring",
+  "tr": "kod iyileştirme / yeniden yapılandırma",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Refactoring the authorization module cut error rates in half.",
+  "definition": "Improving the structure of existing code without changing what it does."
+ },
+ {
+  "id": "201",
+  "en": "continuous delivery (CD)",
+  "tr": "sürekli teslimat",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our continuous delivery pipeline allows multi-daily production deployments.",
+  "definition": "A practice where software is always kept ready for immediate release."
+ },
+ {
+  "id": "202",
+  "en": "acceptance criteria",
+  "tr": "kabul kriterleri",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Each user story must detail clear, verifiable acceptance criteria.",
+  "definition": "The conditions a feature must meet to be approved."
+ },
+ {
+  "id": "203",
+  "en": "epic",
+  "tr": "büyük iş paketi / epik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The multi-currency support initiative was broken down into a multi-sprint epic.",
+  "definition": "A large piece of work split into many smaller tasks."
+ },
+ {
+  "id": "204",
+  "en": "capacity planning",
+  "tr": "kapasite planlaması",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Team capacity planning accounts for holiday schedules and bug duty.",
+  "definition": "Working out how much a team can realistically handle each cycle."
+ },
+ {
+  "id": "205",
+  "en": "retrospective",
+  "tr": "sprint değerlendirme toplantısı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "During the retrospective, we discussed ways to streamline PR reviews.",
+  "definition": "A team meeting to review how the last work cycle went."
+ },
+ {
+  "id": "206",
+  "en": "grooming / refinement",
+  "tr": "iş listesi netleştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Backlog refinement sessions ensure tickets are well-estimated.",
+  "definition": "Reviewing and clarifying upcoming tasks so they are ready to start."
+ },
+ {
+  "id": "207",
+  "en": "burndown chart",
+  "tr": "kalan iş grafiği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The burndown chart shows we are on track to complete all sprint tasks.",
+  "definition": "A graph showing how much work remains in a sprint."
+ },
+ {
+  "id": "208",
+  "en": "cross-functional squad",
+  "tr": "farklı disiplinli takım",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Each cross-functional squad includes PM, UI/UX, QA, and developers.",
+  "definition": "A team with members from different skills working together."
+ },
+ {
+  "id": "209",
+  "en": "release cadence",
+  "tr": "yayınlama sıklığı / ritmi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our mobile team maintains a bi-weekly app release cadence.",
+  "definition": "How often a company ships new versions of its product."
+ },
+ {
+  "id": "210",
+  "en": "dependency mapping",
+  "tr": "bağımlılık haritalama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Dependency mapping highlighted a bottleneck with the infrastructure team.",
+  "definition": "Showing which tasks rely on other tasks or teams."
+ },
+ {
+  "id": "211",
+  "en": "spike (R&D task)",
+  "tr": "araştırma görevi / spike",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We scheduled a two-day spike to evaluate third-party analytics SDKs.",
+  "definition": "A short piece of research to answer a technical question."
+ },
+ {
+  "id": "212",
+  "en": "minimum viable product (MVP)",
+  "tr": "asgari uygulanabilir ürün",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Launching an MVP helped us test user interest without over-building.",
+  "definition": "The simplest version you can launch to test real interest."
+ },
+ {
+  "id": "213",
+  "en": "incremental innovation",
+  "tr": "artımlı yenilik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Incremental innovation keeps existing products competitive over time.",
+  "definition": "Small step-by-step improvements to something that already exists."
+ },
+ {
+  "id": "214",
+  "en": "disruptive tech",
+  "tr": "yıkıcı teknoloji",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Disruptive tech quickly shifts user expectations in established markets.",
+  "definition": "New tools that suddenly change how a whole market works."
+ },
+ {
+  "id": "215",
+  "en": "zero-to-one product",
+  "tr": "sıfırdan bire ürün",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Building a zero-to-one product requires deep empathy and comfort with ambiguity.",
+  "definition": "Something built completely from scratch where nothing existed before."
+ },
+ {
+  "id": "216",
+  "en": "feature bloat",
+  "tr": "özellik şişkinliği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "To avoid feature bloat, we strictly audit unused settings every year.",
+  "definition": "Too many extra functions that make software confusing to use."
+ },
+ {
+  "id": "217",
+  "en": "product-led growth (PLG)",
+  "tr": "ürün odaklı büyüme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "PLG companies rely on product experience as the primary driver of acquisition.",
+  "definition": "A strategy where the app itself attracts and keeps customers."
+ },
+ {
+  "id": "218",
+  "en": "sales-led growth (SLG)",
+  "tr": "satış odaklı büyüme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "SLG models rely on dedicated account executive teams to close enterprise deals.",
+  "definition": "A strategy where a dedicated team wins customers through direct contact."
+ },
+ {
+  "id": "219",
+  "en": "expansion revenue",
+  "tr": "genişleme geliri",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Upselling existing clients generates high-margin expansion revenue.",
+  "definition": "Extra money earned from customers who already buy from you."
+ },
+ {
+  "id": "220",
+  "en": "net revenue retention (NRR)",
+  "tr": "net gelir tutundurma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "An NRR above 120% indicates healthy account expansion in B2B SaaS.",
+  "definition": "A measure of how much existing accounts pay year after year."
+ },
+ {
+  "id": "221",
+  "en": "gross margin",
+  "tr": "brüt kar marjı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "High gross margins allow SaaS companies to reinvest heavily in R&D.",
+  "definition": "The profit left after paying the direct costs of a sale."
+ },
+ {
+  "id": "222",
+  "en": "runway",
+  "tr": "nakit ömrü / nakit süresi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Securing Series A funding extended our operational runway by 24 months.",
+  "definition": "How long a company can operate before its cash ends."
+ },
+ {
+  "id": "223",
+  "en": "burn rate",
+  "tr": "nakit tüketim hızı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Monitoring monthly burn rate ensures company financial sustainability.",
+  "definition": "The speed at which a company spends its cash each month."
+ },
+ {
+  "id": "224",
+  "en": "time-to-market",
+  "tr": "pazara sunum süresi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Reducing time-to-market gives us an edge over legacy enterprise competitors.",
+  "definition": "How long it takes for an idea to reach customers."
+ },
+ {
+  "id": "225",
+  "en": "product roadmap",
+  "tr": "ürün yol haritası",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The product roadmap outlines our key strategic bets for the upcoming quarters.",
+  "definition": "A plan showing what a team will build over coming months."
+ },
+ {
+  "id": "226",
+  "en": "backlog prioritization",
+  "tr": "iş listesi önceliklendirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Backlog prioritization frameworks like RICE ensure high-impact delivery.",
+  "definition": "Deciding which waiting tasks matter most and should come first."
+ },
+ {
+  "id": "227",
+  "en": "RICE scoring",
+  "tr": "RICE puanlama yöntemi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "RICE scoring helps quantify Reach, Impact, Confidence, and Effort.",
+  "definition": "A method ranking ideas by reach, impact, confidence, and effort."
+ },
+ {
+  "id": "228",
+  "en": "MoSCoW method",
+  "tr": "MoSCoW önceliklendirme tekniği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Using MoSCoW method classifies features into Must, Should, Could, and Won't.",
+  "definition": "A way of sorting features into must, should, could, and will not."
+ },
+ {
+  "id": "229",
+  "en": "Kano model",
+  "tr": "Kano modeli",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The Kano model categorizes features into basic expectations and unexpected delights.",
+  "definition": "A framework sorting features into basic needs and pleasant surprises."
+ },
+ {
+  "id": "230",
+  "en": "design sprint",
+  "tr": "tasarım sprinti",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A 5-day design sprint allowed us to prototype and test new ideas rapidly.",
+  "definition": "A short workshop to build and test an idea in days."
+ },
+ {
+  "id": "231",
+  "en": "user interview",
+  "tr": "kullanıcı görüşmesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Conducting a user interview helps uncover underlying pain points.",
+  "definition": "A one-to-one talk with a real person about their needs."
+ },
+ {
+  "id": "232",
+  "en": "pain point",
+  "tr": "sorun noktası / sıkıntı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Solving user pain points is the fastest path to product-market fit.",
+  "definition": "A specific frustration someone feels while trying to do something."
+ },
+ {
+  "id": "233",
+  "en": "customer journey",
+  "tr": "müşteri yolculuğu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Mapping the customer journey uncovers hidden drop-off friction points.",
+  "definition": "The whole path a person takes while using a service."
+ },
+ {
+  "id": "234",
+  "en": "touchpoint",
+  "tr": "etkileşim noktası",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Every customer touchpoint shapes overall brand perception and loyalty.",
+  "definition": "Any moment when a person interacts with a brand."
+ },
+ {
+  "id": "235",
+  "en": "churn reduction",
+  "tr": "ayrılma azaltma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Targeted onboarding tutorials proved effective for churn reduction.",
+  "definition": "Actions taken to stop customers from leaving a service."
+ },
+ {
+  "id": "236",
+  "en": "user lifetime",
+  "tr": "kullanıcı ömrü",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Extending user lifetime maximizes average revenue per user.",
+  "definition": "How long a person keeps using a service before leaving."
+ },
+ {
+  "id": "237",
+  "en": "ARPU (Average Revenue Per User)",
+  "tr": "kullanıcı başına ortalama gelir",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Introducing subscription tiers lifted our overall ARPU by 15%.",
+  "definition": "A measure of the typical income earned from each account."
+ },
+ {
+  "id": "238",
+  "en": "ARPPU (Average Revenue Per Paying User)",
+  "tr": "ödeyen kullanıcı başı gelir",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "ARPPU spiked after launching targeted in-app micro-transactions.",
+  "definition": "The typical income earned from each customer who actually pays."
+ },
+ {
+  "id": "239",
+  "en": "conversion rate",
+  "tr": "dönüşüm oranı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Improving landing page speed directly boosts overall conversion rate.",
+  "definition": "The share of visitors who complete a desired action."
+ },
+ {
+  "id": "240",
+  "en": "click-through rate (CTR)",
+  "tr": "tıklama oranı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A compelling headline improved banner click-through rate by 30%.",
+  "definition": "The share of people who tap an advert after seeing it."
+ },
+ {
+  "id": "241",
+  "en": "cost per acquisition (CPA)",
+  "tr": "edinme başı maliyet",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Optimizing targeting parameters lowered our social ad CPA.",
+  "definition": "How much money is spent to gain one new customer."
+ },
+ {
+  "id": "242",
+  "en": "cost per click (CPC)",
+  "tr": "tıklama başı maliyet",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Bidding on long-tail keywords reduced search campaign CPC.",
+  "definition": "The amount an advertiser pays each time someone taps an ad."
+ },
+ {
+  "id": "243",
+  "en": "cost per mille (CPM)",
+  "tr": "bin gösterim başı maliyet",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Brand awareness video campaigns evaluated success based on CPM.",
+  "definition": "The price paid for one thousand views of an advert."
+ },
+ {
+  "id": "244",
+  "en": "organic reach",
+  "tr": "organik erişim",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Strong SEO practices increase long-term organic reach without ad spend.",
+  "definition": "The number of people who see content without paid promotion."
+ },
+ {
+  "id": "245",
+  "en": "search engine optimization (SEO)",
+  "tr": "arama motoru optimizasyonu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Technical SEO improvements boosted our organic search traffic.",
+  "definition": "Making a website easier for Google to find and rank highly."
+ },
+ {
+  "id": "246",
+  "en": "dark pattern",
+  "tr": "kullanıcıyı yanıltan tasarım",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We strictly avoid dark patterns in our subscription cancellation flows.",
+  "definition": "A design trick that pushes people into unwanted choices."
+ },
+ {
+  "id": "247",
+  "en": "graceful degradation",
+  "tr": "kademeli işlev azaltımı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "System architecture supports graceful degradation during cloud outages.",
+  "definition": "A system keeping its basic functions working when parts fail."
+ },
+ {
+  "id": "248",
+  "en": "fault tolerance",
+  "tr": "hata toleransı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "High fault tolerance guarantees continuous operation during server failures.",
+  "definition": "The ability of a system to keep running despite errors."
+ },
+ {
+  "id": "249",
+  "en": "high availability",
+  "tr": "yüksek erişilebilirlik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Deploying multi-region servers ensures 99.99% high availability.",
+  "definition": "A system designed to stay online almost all the time."
+ },
+ {
+  "id": "250",
+  "en": "disaster recovery",
+  "tr": "felaket kurtarma planı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our disaster recovery plan involves continuous database snapshot backups.",
+  "definition": "A plan for restoring systems after a serious failure."
+ },
+ {
+  "id": "251",
+  "en": "slowness / latency",
+  "tr": "gecikme süresi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Reducing API latency from 200ms to 40ms dramatically improved UX.",
+  "definition": "The delay between a request and the system response."
+ },
+ {
+  "id": "252",
+  "en": "throughput capacity",
+  "tr": "işlem kapasitesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Throughput capacity tests confirmed servers can handle Black Friday traffic.",
+  "definition": "How much work a system can handle in a given period."
+ },
+ {
+  "id": "253",
+  "en": "microservices architecture",
+  "tr": "mikroservis mimarisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Migrating to microservices architecture freed teams to deploy independently.",
+  "definition": "Software built as many small independent programs that talk together."
+ },
+ {
+  "id": "254",
+  "en": "monolithic system",
+  "tr": "monolitik (tek parça) sistem",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our initial monolithic system became hard to scale beyond 100k users.",
+  "definition": "Software built as one single large block of code."
+ },
+ {
+  "id": "255",
+  "en": "API endpoint",
+  "tr": "API uç noktası",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Securing every API endpoint prevents unauthorized user data exposure.",
+  "definition": "A specific web address where software sends and receives data."
+ },
+ {
+  "id": "256",
+  "en": "rate limiting",
+  "tr": "istek sınırlama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Rate limiting protects our authentication endpoints from brute-force attacks.",
+  "definition": "Capping how many requests a server accepts in a period."
+ },
+ {
+  "id": "257",
+  "en": "caching layer",
+  "tr": "önbellek katmanı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Adding a Redis caching layer dropped database query load by 60%.",
+  "definition": "Temporary fast storage that keeps repeated data for quick access."
+ },
+ {
+  "id": "258",
+  "en": "load balancer",
+  "tr": "yük dengeleyici",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The load balancer distributes incoming traffic evenly across instances.",
+  "definition": "A tool that spreads incoming traffic across several servers."
+ },
+ {
+  "id": "259",
+  "en": "database indexing",
+  "tr": "veri tabanı indeksleme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Proper database indexing reduced heavy report dashboard load times.",
+  "definition": "Adding shortcuts to stored records so searches run faster."
+ },
+ {
+  "id": "260",
+  "en": "data retention policy",
+  "tr": "veri saklama politikası",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Compliance regulations mandate a strict 7-year data retention policy.",
+  "definition": "Rules for how long a company keeps stored information."
+ },
+ {
+  "id": "261",
+  "en": "GDPR compliance",
+  "tr": "GDPR (KVKK) uyumluluğu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "GDPR compliance requires explicit user consent for data processing.",
+  "definition": "Following European rules that protect personal information."
+ },
+ {
+  "id": "262",
+  "en": "data privacy",
+  "tr": "veri gizliliği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Ensuring user data privacy is built into our software development lifecycle.",
+  "definition": "Keeping personal information safe and away from unwanted eyes."
+ },
+ {
+  "id": "263",
+  "en": "end-to-end encryption",
+  "tr": "uçtan uca şifreleme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "End-to-end encryption protects sensitive user messages in transit.",
+  "definition": "Scrambling messages so only the sender and receiver can read them."
+ },
+ {
+  "id": "264",
+  "en": "single sign-on (SSO)",
+  "tr": "tek tıkla oturum açma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Implementing enterprise SSO simplified IT onboarding for corporate clients.",
+  "definition": "One login that gives access to many different systems."
+ },
+ {
+  "id": "265",
+  "en": "multi-factor authentication (MFA)",
+  "tr": "çok faktörlü kimlik doğrulama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Enforcing MFA drastically reduced account compromise incidents.",
+  "definition": "Logging in with a password plus a second proof of identity."
+ },
+ {
+  "id": "266",
+  "en": "role-based access control (RBAC)",
+  "tr": "rol tabanlı erişim kontrolü",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "RBAC ensures team members access only authorized admin panels.",
+  "definition": "Giving people permissions according to their job in a company."
+ },
+ {
+  "id": "267",
+  "en": "devops pipeline",
+  "tr": "devops süreç hattı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "An automated DevOps pipeline accelerates release stability and speed.",
+  "definition": "The automated chain of steps that builds and ships code."
+ },
+ {
+  "id": "268",
+  "en": "continuous integration (CI)",
+  "tr": "sürekli entegrasyon",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "CI tools run automated tests on every code commit pull request.",
+  "definition": "Merging code often and testing it automatically each time."
+ },
+ {
+  "id": "269",
+  "en": "code review",
+  "tr": "kod incelemesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Rigorous code review practices maintain software architecture standards.",
+  "definition": "When other engineers check your work before it is merged."
+ },
+ {
+  "id": "270",
+  "en": "technical specification",
+  "tr": "teknik şartname / doküman",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Engineering authored a technical specification before starting development.",
+  "definition": "A document describing exactly how a system will be built."
+ },
+ {
+  "id": "271",
+  "en": "proof of concept (PoC)",
+  "tr": "kavram kanıtı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We built a quick proof of concept to validate real-time video sync.",
+  "definition": "A small test built to show an idea can work."
+ },
+ {
+  "id": "272",
+  "en": "prototype testing",
+  "tr": "prototip testi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Prototype testing identified major usability flaws before engineering.",
+  "definition": "Trying an early model with real people to find problems."
+ },
+ {
+  "id": "273",
+  "en": "usability audit",
+  "tr": "kullanılabilirlik denetimi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our UX audit exposed inconsistency in button styles across platforms.",
+  "definition": "A structured check of how easy a product is to operate."
+ },
+ {
+  "id": "274",
+  "en": "accessibility standards",
+  "tr": "erişilebilirlik standartları",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Adhering to accessibility standards makes our web app usable for everyone.",
+  "definition": "Rules making sure people with disabilities can also use something."
+ },
+ {
+  "id": "275",
+  "en": "design tokens",
+  "tr": "tasarım değişkenleri",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Design tokens maintain consistent padding, fonts, and colors across platforms.",
+  "definition": "Named values for colours and spacing shared across an interface."
+ },
+ {
+  "id": "276",
+  "en": "component library",
+  "tr": "bileşen kütüphanesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Using a standardized component library speeds up UI implementation.",
+  "definition": "A shared collection of reusable interface pieces for developers."
+ },
+ {
+  "id": "277",
+  "en": "design consistency",
+  "tr": "tasarım tutarlılığı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Maintaining design consistency reinforces brand trust and ease of use.",
+  "definition": "Keeping the same look and behaviour across a whole product."
+ },
+ {
+  "id": "278",
+  "en": "visual hierarchy",
+  "tr": "görsel hiyerarşi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Clear visual hierarchy draws user focus directly to primary action buttons.",
+  "definition": "Arranging elements so the eye notices the most important first."
+ },
+ {
+  "id": "279",
+  "en": "information architecture (IA)",
+  "tr": "bilgi mimarisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "IA refactoring made searching for past orders much more intuitive.",
+  "definition": "How content is organised and labelled so people can find it."
+ },
+ {
+  "id": "280",
+  "en": "content strategy",
+  "tr": "içerik stratejisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A cohesive content strategy aligns in-app messaging with marketing voice.",
+  "definition": "A plan for what a company publishes and why."
+ },
+ {
+  "id": "281",
+  "en": "microcopy",
+  "tr": "mikro metin (arayüz metni)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Clear, friendly microcopy reduces user anxiety during checkout processes.",
+  "definition": "The tiny bits of text on buttons and error messages."
+ },
+ {
+  "id": "282",
+  "en": "tone of voice",
+  "tr": "iletişim tonu / üslup",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our brand tone of voice balances professional clarity with approachable warmth.",
+  "definition": "The consistent style and personality of a brand in writing."
+ },
+ {
+  "id": "283",
+  "en": "user retention",
+  "tr": "kullanıcı tutundurma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Sustained long-term growth is impossible without healthy user retention.",
+  "definition": "Keeping people coming back to a product over time."
+ },
+ {
+  "id": "284",
+  "en": "user churn",
+  "tr": "kullanıcı ayrılması",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Identifying early churn indicators helps customer success teams intervene.",
+  "definition": "The rate at which people stop paying and leave."
+ },
+ {
+  "id": "285",
+  "en": "customer feedback loop",
+  "tr": "müşteri geri bildirim döngüsü",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A tight customer feedback loop ensures product development stays user-centric.",
+  "definition": "A repeating cycle of collecting opinions and acting on them."
+ },
+ {
+  "id": "286",
+  "en": "net promoter score (NPS)",
+  "tr": "net tavsiye skoru",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Tracking NPS over time gauges overall user loyalty and satisfaction.",
+  "definition": "A survey measuring how likely people are to recommend you."
+ },
+ {
+  "id": "287",
+  "en": "customer satisfaction (CSAT)",
+  "tr": "müşteri memnuniyet skoru",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our post-support CSAT score reached an all-time high of 94%.",
+  "definition": "A rating showing how happy people are with a service."
+ },
+ {
+  "id": "288",
+  "en": "customer effort score (CES)",
+  "tr": "müşteri çaba skoru",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Reducing CES makes task completion feel effortless for end users.",
+  "definition": "A rating of how hard it feels to finish a task."
+ },
+ {
+  "id": "289",
+  "en": "feature request",
+  "tr": "özellik talebi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We tag and categorize every incoming feature request in our feedback portal.",
+  "definition": "A user asking for a new function to be added."
+ },
+ {
+  "id": "290",
+  "en": "product backlog",
+  "tr": "ürün iş listesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The PM owns and continually prioritizes items in the product backlog.",
+  "definition": "The full list of future work waiting to be built."
+ },
+ {
+  "id": "291",
+  "en": "sprint planning",
+  "tr": "sprint planlama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "During sprint planning, engineering estimates effort using story points.",
+  "definition": "The meeting where a team chooses work for the next cycle."
+ },
+ {
+  "id": "292",
+  "en": "story point",
+  "tr": "hikaye puanı / karmaşıklık puanı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Story points measure task complexity rather than exact hours.",
+  "definition": "A unit measuring how difficult a task is, not its hours."
+ },
+ {
+  "id": "293",
+  "en": "planning poker",
+  "tr": "tahminleme oyunu / efor tahmini",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Planning poker helps development teams reach consensus on effort.",
+  "definition": "A card game teams use to estimate effort together."
+ },
+ {
+  "id": "294",
+  "en": "velocity tracking",
+  "tr": "hız takibi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Velocity tracking helps predict how many features ship per release cycle.",
+  "definition": "Measuring how much a team finishes each cycle over months."
+ },
+ {
+  "id": "295",
+  "en": "scrum master",
+  "tr": "scrum yöneticisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The Scrum Master facilitates daily standups and removes team blockers.",
+  "definition": "The person who runs agile ceremonies and removes team obstacles."
+ },
+ {
+  "id": "296",
+  "en": "agile manifesto",
+  "tr": "agile manifestosu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The Agile Manifesto prioritizes working software over comprehensive docs.",
+  "definition": "The founding text listing values of flexible software development."
+ },
+ {
+  "id": "297",
+  "en": "kanban board",
+  "tr": "kanban panosu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The Kanban board visualizes work items across To Do, In Progress, and Done.",
+  "definition": "A visual wall of cards showing work moving through stages."
+ },
+ {
+  "id": "298",
+  "en": "work in progress (WIP) limit",
+  "tr": "eşzamanlı iş sınırı",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Setting WIP limits prevents team context switching and removes bottlenecks.",
+  "definition": "A cap on how many tasks a team handles at once."
+ },
+ {
+  "id": "299",
+  "en": "lead time",
+  "tr": "teslim süresi (talep-teslim)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Reducing lead time accelerates how quickly user ideas reach production.",
+  "definition": "The total wait from a customer request until final delivery."
+ },
+ {
+  "id": "300",
+  "en": "cycle time",
+  "tr": "döngü süresi (geliştirme-teslim)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Shortening cycle time improves overall engineering responsiveness.",
+  "definition": "How long development actually takes from first step to release."
+ },
+ {
+  "id": "301",
+  "en": "retrospective meeting",
+  "tr": "retrospektif toplantısı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The retrospective meeting created space to discuss team process wins.",
+  "definition": "A session where a team discusses what went well recently."
+ },
+ {
+  "id": "302",
+  "en": "daily standup",
+  "tr": "günlük ayakta toplantı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Daily standups keep squad members aligned on immediate sprint goals.",
+  "definition": "A short morning gathering where each member shares progress."
+ },
+ {
+  "id": "303",
+  "en": "sprint review",
+  "tr": "sprint inceleme sunumu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "In the sprint review, we demoed newly shipped capabilities to stakeholders.",
+  "definition": "A demo of finished work shown to stakeholders each cycle."
+ },
+ {
+  "id": "304",
+  "en": "product owner",
+  "tr": "ürün sahibi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The Product Owner works closely with dev teams to clarify user stories.",
+  "definition": "The person responsible for what a team builds and why."
+ },
+ {
+  "id": "305",
+  "en": "release notes",
+  "tr": "sürüm notları",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Engaging release notes highlight new capabilities and key bug fixes.",
+  "definition": "A short summary of what changed in a new version."
+ },
+ {
+  "id": "306",
+  "en": "feature toggle / flag",
+  "tr": "özellik bayrağı",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Using feature flags allows us to test new code safely in production.",
+  "definition": "A switch that turns new code on or off remotely."
+ },
+ {
+  "id": "307",
+  "en": "canary deployment",
+  "tr": "kanarya dağıtımı (kademeli yayın)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Canary deployment releases updates to 1% of users to catch edge-case bugs.",
+  "definition": "Releasing an update to a tiny group before everyone else."
+ },
+ {
+  "id": "308",
+  "en": "blue-green deployment",
+  "tr": "mavi-yeşil dağıtım",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Blue-green deployment ensures zero-downtime releases during updates.",
+  "definition": "Switching traffic between two identical servers to avoid downtime."
+ },
+ {
+  "id": "309",
+  "en": "rollback plan",
+  "tr": "geri alma planı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Every deployment requires a verified rollback plan in case of critical bugs.",
+  "definition": "A prepared way to undo an update that goes wrong."
+ },
+ {
+  "id": "310",
+  "en": "root cause analysis (RCA)",
+  "tr": "kök neden analizi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "An RCA report identified a missing database index as the outage cause.",
+  "definition": "Digging until you find the real reason a problem happened."
+ },
+ {
+  "id": "311",
+  "en": "post-mortem",
+  "tr": "olay sonrası değerlendirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We held a blameless post-mortem to learn from yesterday's API downtime.",
+  "definition": "A meeting to study what went wrong after an incident."
+ },
+ {
+  "id": "312",
+  "en": "service level agreement (SLA)",
+  "tr": "hizmet seviyesi sözleşmesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our enterprise SLA guarantees 99.9% uptime with 1-hour critical response.",
+  "definition": "A contract promising a customer certain performance and support."
+ },
+ {
+  "id": "313",
+  "en": "service level objective (SLO)",
+  "tr": "hizmet seviyesi hedefi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Engineering monitors SLO performance to prevent SLA breach incidents.",
+  "definition": "An internal target for reliability that engineers aim to hit."
+ },
+ {
+  "id": "314",
+  "en": "service level indicator (SLI)",
+  "tr": "hizmet seviyesi göstergesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "API response latency is our key performance SLI for cloud services.",
+  "definition": "The actual measurement used to check reliability, like response speed."
+ },
+ {
+  "id": "315",
+  "en": "mean time to detect (MTTD)",
+  "tr": "ortalama tespit süresi",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Automated monitoring lowered our MTTD for system anomalies to 2 minutes.",
+  "definition": "How quickly a team notices that something has gone wrong."
+ },
+ {
+  "id": "316",
+  "en": "mean time to resolve (MTTR)",
+  "tr": "ortalama çözüm süresi",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Improving incident runbooks reduced overall MTTR during major outages.",
+  "definition": "How quickly a team fixes a problem after it appears."
+ },
+ {
+  "id": "317",
+  "en": "single point of failure",
+  "tr": "tekil başarısızlık noktası",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Redundant cloud database instances eliminate single points of failure.",
+  "definition": "A part whose breakdown would stop the entire system."
+ },
+ {
+  "id": "318",
+  "en": "load testing",
+  "tr": "yük testi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Load testing ensures systems withstand expected holiday traffic spikes.",
+  "definition": "Checking whether a system copes with heavy expected traffic."
+ },
+ {
+  "id": "319",
+  "en": "stress testing",
+  "tr": "stres testi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Stress testing determines system failure thresholds under extreme load.",
+  "definition": "Pushing a system beyond its limits to see where it breaks."
+ },
+ {
+  "id": "320",
+  "en": "penetration testing",
+  "tr": "sızma / güvenlik testi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Annual penetration testing uncovers potential security vulnerabilities.",
+  "definition": "A friendly attack on a system to find security holes."
+ },
+ {
+  "id": "321",
+  "en": "vulnerability assessment",
+  "tr": "zafiyet değerlendirmesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A vulnerability assessment identified outdated open-source packages.",
+  "definition": "A structured check for weaknesses that attackers could exploit."
+ },
+ {
+  "id": "322",
+  "en": "compliance framework",
+  "tr": "uyumluluk çerçevesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Adhering to SOC2 compliance frameworks is required for B2B deals.",
+  "definition": "An official set of standards a company must legally meet."
+ },
+ {
+  "id": "323",
+  "en": "risk management",
+  "tr": "risk yönetimi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Proactive risk management minimizes unforeseen delays in roadmap execution.",
+  "definition": "Spotting possible dangers early and reducing their impact."
+ },
+ {
+  "id": "324",
+  "en": "vendor management",
+  "tr": "tedarikçi yönetimi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Vendor management negotiates third-party software licenses and SLAs.",
+  "definition": "Handling relationships with outside suppliers and their contracts."
+ },
+ {
+  "id": "325",
+  "en": "contract negotiation",
+  "tr": "sözleşme müzakeresi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Contract negotiation secured enterprise volume discounts for cloud hosting.",
+  "definition": "Discussing terms with another company until both sides agree."
+ },
+ {
+  "id": "326",
+  "en": "return on investment (ROI)",
+  "tr": "yatırım getirisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Demonstrating clear ROI justifies ongoing product engineering investment.",
+  "definition": "How much profit you gain compared with the money spent."
+ },
+ {
+  "id": "327",
+  "en": "cost-benefit analysis",
+  "tr": "maliyet-fayda analizi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A cost-benefit analysis proved building custom analytics was economical.",
+  "definition": "Comparing what something takes against what it gives before deciding."
+ },
+ {
+  "id": "328",
+  "en": "capital expenditure (CapEx)",
+  "tr": "sermaye harcaması",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Server hardware purchases are classified as CapEx in financial reports.",
+  "definition": "Money spent on long-lasting assets like buildings or hardware."
+ },
+ {
+  "id": "329",
+  "en": "operational expenditure (OpEx)",
+  "tr": "operasyonel harcama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Cloud hosting subscriptions fall under ongoing monthly OpEx costs.",
+  "definition": "Regular day-to-day spending needed to keep a business running."
+ },
+ {
+  "id": "330",
+  "en": "cost of goods sold (COGS)",
+  "tr": "satılan malın maliyeti",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Optimizing server costs reduced COGS, improving gross profit margin.",
+  "definition": "The direct expense of producing what a company delivers."
+ },
+ {
+  "id": "331",
+  "en": "break-even point",
+  "tr": "başa baş noktası",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Achieving the break-even point marks a vital milestone for startups.",
+  "definition": "The moment when income finally matches total spending."
+ },
+ {
+  "id": "332",
+  "en": "unit economics",
+  "tr": "birim ekonomisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Strong unit economics ensure each customer generates positive net margin.",
+  "definition": "Profit and loss measured for a single customer or sale."
+ },
+ {
+  "id": "333",
+  "en": "margin expansion",
+  "tr": "marj genişlemesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Automation and self-serve capabilities drive scalable margin expansion.",
+  "definition": "Growing the profit share earned on each sale over time."
+ },
+ {
+  "id": "334",
+  "en": "churn prediction model",
+  "tr": "ayrılma tahmin modeli",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A churn prediction model flags at-risk accounts based on engagement drop.",
+  "definition": "A tool that flags customers likely to cancel soon."
+ },
+ {
+  "id": "335",
+  "en": "upselling strategy",
+  "tr": "üst segment satış stratejisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "An upselling strategy converts basic tier subscribers into pro tiers.",
+  "definition": "A plan to move customers onto a more expensive package."
+ },
+ {
+  "id": "336",
+  "en": "cross-selling",
+  "tr": "çapraz satış",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Cross-selling related modules boosts average order value for enterprise B2B.",
+  "definition": "Offering extra related products to someone already buying."
+ },
+ {
+  "id": "337",
+  "en": "pricing tier",
+  "tr": "fiyatlandırma kademesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Adding an enterprise pricing tier captured enterprise willingness-to-pay.",
+  "definition": "One level in a range of plans with different costs."
+ },
+ {
+  "id": "338",
+  "en": "paywall optimization",
+  "tr": "ödeme duvarı optimizasyonu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Paywall optimization increased trial conversion rates by 8%.",
+  "definition": "Improving the screen that asks visitors to subscribe."
+ },
+ {
+  "id": "339",
+  "en": "freemium conversion",
+  "tr": "ücretsizden ücretliye dönüşüm",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "In-app feature limits drive organic freemium conversion to paid plans.",
+  "definition": "Turning users of a no-cost plan into paying customers."
+ },
+ {
+  "id": "340",
+  "en": "annual recurring revenue (ARR)",
+  "tr": "yıllık tekrarlayan gelir",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Crossing $10 million in ARR qualified the company for Series B funding.",
+  "definition": "The predictable yearly income a company earns from subscriptions."
+ },
+ {
+  "id": "341",
+  "en": "monthly recurring revenue (MRR)",
+  "tr": "aylık tekrarlayan gelir",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Tracking steady MRR growth provides predictable cash flow forecasting.",
+  "definition": "The regular subscription income a company counts every thirty days."
+ },
+ {
+  "id": "342",
+  "en": "deferred revenue",
+  "tr": "ertelenmiş gelir",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Upfront annual plan payments are recorded on the balance sheet as deferred revenue.",
+  "definition": "Money already received for a service not yet provided."
+ },
+ {
+  "id": "343",
+  "en": "cash flow positive",
+  "tr": "pozitif nakit akışı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Becoming cash flow positive gives the company control over its destiny.",
+  "definition": "Earning more money than a business spends each month."
+ },
+ {
+  "id": "344",
+  "en": "investor pitch deck",
+  "tr": "yatırımcı sunumu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The founder updated the investor pitch deck for upcoming funding rounds.",
+  "definition": "A short slide presentation used to raise funding."
+ },
+ {
+  "id": "345",
+  "en": "due diligence",
+  "tr": "ön inceleme / detaylı araştırma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Investors conducted technical due diligence on our codebase architecture.",
+  "definition": "A careful investigation of a company before a deal closes."
+ },
+ {
+  "id": "346",
+  "en": "term sheet",
+  "tr": "ön anlaşma belgesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Receiving a term sheet validated our market traction and growth metrics.",
+  "definition": "An early paper outlining the main points of a funding offer."
+ },
+ {
+  "id": "347",
+  "en": "valuation",
+  "tr": "şirket değerlemesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Strong revenue growth resulted in a higher valuation during fundraising.",
+  "definition": "The estimated worth of a company in money."
+ },
+ {
+  "id": "348",
+  "en": "exit strategy",
+  "tr": "çıkış stratejisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "An IPO or strategic acquisition serves as a long-term exit strategy.",
+  "definition": "A plan for founders to sell or float their company."
+ },
+ {
+  "id": "349",
+  "en": "mergers and acquisitions (M&A)",
+  "tr": "birleşme ve satın almalar",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The M&A deal expanded our product portfolio into adjacent market sectors.",
+  "definition": "Deals where companies join together or one buys another."
+ },
+ {
+  "id": "350",
+  "en": "optimize pipeline",
+  "tr": "pipeline optimize etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to optimize pipeline for improved conversion in Q3.",
+  "definition": "To improve a chain of stages so it performs better."
+ },
+ {
+  "id": "351",
+  "en": "streamline pipeline",
+  "tr": "pipeline streamline etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to streamline pipeline across cross-functional squads in Q3.",
+  "definition": "To simplify a chain of stages and remove wasted effort."
+ },
+ {
+  "id": "352",
+  "en": "prioritize funnel",
+  "tr": "funnel prioritize etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to prioritize funnel to mitigate churn risk in Q3.",
+  "definition": "To treat the buying journey as the most urgent focus."
+ },
+ {
+  "id": "353",
+  "en": "evaluate funnel",
+  "tr": "funnel evaluate etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to evaluate funnel for scalable architecture in Q3.",
+  "definition": "To examine how well the buying journey performs at each stage."
+ },
+ {
+  "id": "354",
+  "en": "mitigate workflow",
+  "tr": "workflow mitigate etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "We decided to mitigate workflow during executive alignment sync in Q3.",
+  "definition": "To reduce problems in the way tasks move between people."
+ },
+ {
+  "id": "355",
+  "en": "accelerate workflow",
+  "tr": "workflow accelerate etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to accelerate workflow to ensure statistical validity in Q3.",
+  "definition": "To speed up how tasks move through a team."
+ },
+ {
+  "id": "356",
+  "en": "align architecture",
+  "tr": "architecture align etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to align architecture for seamless onboarding in Q3.",
+  "definition": "To bring a system design into agreement with shared goals."
+ },
+ {
+  "id": "357",
+  "en": "consolidate architecture",
+  "tr": "architecture consolidate etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to consolidate architecture to optimize time-to-value in Q3.",
+  "definition": "To merge scattered system parts into one simpler structure."
+ },
+ {
+  "id": "358",
+  "en": "validate strategy",
+  "tr": "strategy validate etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to validate strategy across global user segments in Q3.",
+  "definition": "To check with evidence that a chosen plan really works."
+ },
+ {
+  "id": "359",
+  "en": "leverage strategy",
+  "tr": "strategy leverage etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to leverage strategy to maximize long-term retention in Q3.",
+  "definition": "To use an existing plan as a tool for bigger gains."
+ },
+ {
+  "id": "360",
+  "en": "optimize roadmap",
+  "tr": "roadmap optimize etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to optimize roadmap for improved conversion in Q3.",
+  "definition": "To improve the schedule of future features for better results."
+ },
+ {
+  "id": "361",
+  "en": "streamline roadmap",
+  "tr": "roadmap streamline etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to streamline roadmap across cross-functional squads in Q3.",
+  "definition": "To simplify future plans so fewer items block delivery."
+ },
+ {
+  "id": "362",
+  "en": "prioritize metric",
+  "tr": "metric prioritize etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to prioritize metric to mitigate churn risk in Q3.",
+  "definition": "To put one measurement above all others when deciding."
+ },
+ {
+  "id": "363",
+  "en": "evaluate metric",
+  "tr": "metric evaluate etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to evaluate metric for scalable architecture in Q3.",
+  "definition": "To judge whether a measurement really shows useful progress."
+ },
+ {
+  "id": "364",
+  "en": "mitigate framework",
+  "tr": "framework mitigate etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "We decided to mitigate framework during executive alignment sync in Q3.",
+  "definition": "To lessen the risks created by a chosen working method."
+ },
+ {
+  "id": "365",
+  "en": "accelerate framework",
+  "tr": "framework accelerate etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to accelerate framework to ensure statistical validity in Q3.",
+  "definition": "To speed up adoption of a structured working method."
+ },
+ {
+  "id": "366",
+  "en": "align cohort",
+  "tr": "cohort align etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to align cohort for seamless onboarding in Q3.",
+  "definition": "To make one group of similar users behave consistently."
+ },
+ {
+  "id": "367",
+  "en": "consolidate cohort",
+  "tr": "cohort consolidate etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to consolidate cohort to optimize time-to-value in Q3.",
+  "definition": "To combine several similar user groups into a single one."
+ },
+ {
+  "id": "368",
+  "en": "validate ecosystem",
+  "tr": "ecosystem validate etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to validate ecosystem across global user segments in Q3.",
+  "definition": "To confirm that a network of partners and tools works."
+ },
+ {
+  "id": "369",
+  "en": "leverage ecosystem",
+  "tr": "ecosystem leverage etme / iyileştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We decided to leverage ecosystem to maximize long-term retention in Q3.",
+  "definition": "To take advantage of a wider network of partners and tools."
+ },
+ {
+  "id": "370",
+  "en": "viability",
+  "tr": "finansal sürdürülebilirlik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Commercial viability was tested through a pre-order landing page test.",
+  "definition": "Whether a business can earn enough money to survive."
+ },
+ {
+  "id": "371",
+  "en": "desirability",
+  "tr": "kullanıcı arzulama düzeyi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Qualitative interviews helped confirm the desirability of automated reporting.",
+  "definition": "How much people actually want a thing to exist."
+ },
+ {
+  "id": "372",
+  "en": "strategic alignment",
+  "tr": "stratejik hizalanma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Every OKR must show clear strategic alignment with company top-line targets.",
+  "definition": "How well a project fits the wider goals of a company."
+ },
+ {
+  "id": "373",
+  "en": "product posture",
+  "tr": "ürün duruşu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our defensive product posture focused on preserving existing user retention.",
+  "definition": "The overall stance a company takes with its offering."
+ },
+ {
+  "id": "374",
+  "en": "ecosystem lock-in",
+  "tr": "ekosistem bağımlılığı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Multi-device syncing builds long-term ecosystem lock-in for power users.",
+  "definition": "When customers find it hard to leave a connected set of services."
+ },
+ {
+  "id": "375",
+  "en": "vision statement",
+  "tr": "vizyon bildirimi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A clear vision statement inspires the cross-functional squad towards long-term goals.",
+  "definition": "A short sentence describing the future a company wants."
+ },
+ {
+  "id": "376",
+  "en": "north star metric",
+  "tr": "kuzey yıldızı metriği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Weekly active users completing a core transaction is our North Star metric.",
+  "definition": "The one number that best shows a company creating value."
+ },
+ {
+  "id": "377",
+  "en": "unmet need",
+  "tr": "karşılanmamış ihtiyaç",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Identifying an unmet need in inventory management led to our new SaaS product.",
+  "definition": "A customer problem that nobody has solved yet."
+ },
+ {
+  "id": "378",
+  "en": "disruptive innovation",
+  "tr": "yıkıcı yenilik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Mobile-first booking platforms represented disruptive innovation in travel.",
+  "definition": "A new approach that overturns how an industry works."
+ },
+ {
+  "id": "379",
+  "en": "story points",
+  "tr": "hikaye puanı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We use Fibonacci sequence numbers for estimating story points.",
+  "definition": "Relative numbers used to estimate the difficulty of tasks."
+ },
+ {
+  "id": "380",
+  "en": "impediment",
+  "tr": "engel / blokör",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The Scrum Master removed the deployment infrastructure impediment quickly.",
+  "definition": "Anything that gets in the way of team progress."
+ },
+ {
+  "id": "381",
+  "en": "spike",
+  "tr": "teknik araştırma görevi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "We scheduled a 2-day spike to evaluate third-party analytics SDKs.",
+  "definition": "A time-boxed investigation to reduce technical uncertainty."
+ },
+ {
+  "id": "382",
+  "en": "epics",
+  "tr": "epik / büyük iş paketi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The mobile payment revamp was broken down into three distinct epics.",
+  "definition": "Large bodies of work divided into several smaller stories."
+ },
+ {
+  "id": "383",
+  "en": "blocker",
+  "tr": "engelleyici sorun",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A missing API endpoint created a blocker for the frontend engineering team.",
+  "definition": "An issue that completely halts progress until it is solved."
+ },
+ {
+  "id": "384",
+  "en": "standup",
+  "tr": "günlük ayakta toplantı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Daily standup provides quick alignment on daily goals and blockers.",
+  "definition": "A brief daily meeting where the team syncs quickly."
+ }
+]

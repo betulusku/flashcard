@@ -3,13 +3,15 @@ import {createNativeBottomTabNavigator} from '@react-navigation/bottom-tabs/unst
 
 import type {SurveyAnswers} from '../types/onboarding';
 import {HomeScreen} from '../screens/home/HomeScreen';
-import {ProfileScreen, SearchScreen} from '../screens/app/AppScreens';
+import {SearchScreen} from '../screens/app/AppScreens';
 import {MyWordListScreen} from '../screens/app/MyWordListScreen';
+import {ProfileScreen} from '../screens/app/ProfileScreen';
+import {colors} from '../theme';
 
 export type AppTabParamList = {
   HomeTab: undefined;
   SearchTab: undefined;
-  WordsTab: {filter?: 'all' | 'learning' | 'memorized' | 'favorites'} | undefined;
+  WordsTab: undefined;
   ProfileTab: undefined;
 };
 
@@ -30,8 +32,9 @@ export function AppTabs({answers}: {answers: SurveyAnswers}) {
       headerShown: false,
       tabBarControllerMode: 'tabBar',
       tabBarMinimizeBehavior: 'none',
-      tabBarActiveTintColor: '#C8FFFB',
-      tabBarStyle: {backgroundColor: 'rgba(12, 32, 99, .28)', shadowColor: 'transparent'},
+      tabBarActiveTintColor: colors.mint,
+      tabBarInactiveTintColor: 'rgba(210, 228, 255, 0.78)',
+      // Don’t set backgroundColor — on iOS 26 it fights Liquid Glass and flashes.
     }}>
     <Tab.Screen
       name="HomeTab"

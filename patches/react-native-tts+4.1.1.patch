@@ -1,0 +1,74 @@
+diff --git a/node_modules/react-native-tts/index.js b/node_modules/react-native-tts/index.js
+index 6da7573..76ddfce 100644
+--- a/node_modules/react-native-tts/index.js
++++ b/node_modules/react-native-tts/index.js
+@@ -93,17 +93,14 @@ class Tts extends NativeEventEmitter {
+     }
+   }
+ 
+-  stop(onWordBoundary) {
+-    if (Platform.OS === 'ios') {
+-      return TextToSpeech.stop(onWordBoundary);
+-    } else {
+-      return TextToSpeech.stop();
+-    }
++  stop() {
++    // iOS native stop no longer accepts a BOOL (New Architecture bridge).
++    return TextToSpeech.stop();
+   }
+ 
+-  pause(onWordBoundary) {
++  pause() {
+     if (Platform.OS === 'ios') {
+-      return TextToSpeech.pause(onWordBoundary);
++      return TextToSpeech.pause();
+     }
+     return Promise.resolve(false);
+   }
+diff --git a/node_modules/react-native-tts/ios/TextToSpeech/TextToSpeech.m b/node_modules/react-native-tts/ios/TextToSpeech/TextToSpeech.m
+index 1e769cc..995bfe5 100644
+--- a/node_modules/react-native-tts/ios/TextToSpeech/TextToSpeech.m
++++ b/node_modules/react-native-tts/ios/TextToSpeech/TextToSpeech.m
+@@ -94,34 +94,18 @@ + (BOOL)requiresMainQueueSetup
+     resolve([NSNumber numberWithUnsignedLong:utterance.hash]);
+ }
+ 
+-RCT_EXPORT_METHOD(stop:(BOOL *)onWordBoundary resolve:(RCTPromiseResolveBlock)resolve reject:(__unused RCTPromiseRejectBlock)reject)
++// New Architecture cannot bridge JS booleans into Objective-C BOOL (or BOOL *),
++// so stop/pause take no boundary argument and always cut speech immediately.
++RCT_EXPORT_METHOD(stop:(RCTPromiseResolveBlock)resolve reject:(__unused RCTPromiseRejectBlock)reject)
+ {
+-    AVSpeechBoundary boundary;
+-
+-    if(onWordBoundary != NULL && onWordBoundary) {
+-        boundary = AVSpeechBoundaryWord;
+-    } else {
+-        boundary = AVSpeechBoundaryImmediate;
+-    }
+-
+-    BOOL stopped = [self.synthesizer stopSpeakingAtBoundary:boundary];
+-
+-    resolve([NSNumber numberWithBool:stopped]);
++    BOOL stopped = [self.synthesizer stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
++    resolve(@(stopped));
+ }
+ 
+-RCT_EXPORT_METHOD(pause:(BOOL *)onWordBoundary resolve:(RCTPromiseResolveBlock)resolve reject:(__unused RCTPromiseRejectBlock)reject)
++RCT_EXPORT_METHOD(pause:(RCTPromiseResolveBlock)resolve reject:(__unused RCTPromiseRejectBlock)reject)
+ {
+-    AVSpeechBoundary boundary;
+-
+-    if(onWordBoundary != NULL && onWordBoundary) {
+-        boundary = AVSpeechBoundaryWord;
+-    } else {
+-        boundary = AVSpeechBoundaryImmediate;
+-    }
+-
+-    BOOL paused = [self.synthesizer pauseSpeakingAtBoundary:boundary];
+-
+-    resolve([NSNumber numberWithBool:paused]);
++    BOOL paused = [self.synthesizer pauseSpeakingAtBoundary:AVSpeechBoundaryImmediate];
++    resolve(@(paused));
+ }
+ 
+ RCT_EXPORT_METHOD(resume:(RCTPromiseResolveBlock)resolve reject:(__unused RCTPromiseRejectBlock)reject)

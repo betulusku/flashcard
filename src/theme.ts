@@ -1,8 +1,9 @@
 export const colors = {
   background: '#0C0F11',
   backgroundRaised: '#14181D',
-  surface: 'rgba(255, 255, 255, 0.055)',
-  surfaceStrong: 'rgba(54, 89, 181, 0.20)',
+  // Solid fills — prefer these over hairline strokes for grouping.
+  surface: '#171B21',
+  surfaceStrong: '#1E2530',
   text: '#F2F8FF',
   muted: '#B8C8E5',
   border: 'rgba(202, 239, 255, 0.26)',
@@ -17,6 +18,10 @@ export const colors = {
 };
 
 export const spacing = {xxs: 4, xs: 8, sm: 12, md: 16, lg: 24, xl: 32, xxl: 40};
+
+// The iOS tab bar is a native overlay, so screens inside the tab navigator get
+// no automatic inset and have to reserve this much room above the safe area.
+export const tabBarSpace = 68;
 
 export const typography = {display: 46, title: 32, heading: 22, body: 16, caption: 13, micro: 11};
 

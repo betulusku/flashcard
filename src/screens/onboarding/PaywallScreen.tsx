@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {Alert, Pressable, StyleSheet, Text, View} from 'react-native';
 
+import {Icon} from '../../components/Icon';
 import type {OnboardingStackParamList} from '../../navigation/OnboardingNavigator';
 import type {SurveyAnswers} from '../../types/onboarding';
 import {colors, radius, spacing} from '../../theme';
@@ -12,7 +13,8 @@ type Plan = 'yearly' | 'weekly';
 
 export function PaywallScreen({navigation}: Props) {
   const [plan, setPlan] = useState<Plan>('yearly');
-  const start = () => navigation.replace('Home');
+  const start = () =>
+    navigation.reset({index: 0, routes: [{name: 'Home'}]});
 
   return <ScreenShell>
     <View style={styles.container}>
@@ -24,7 +26,7 @@ export function PaywallScreen({navigation}: Props) {
 
       <View style={styles.plans}>
         <Pressable accessibilityRole="radio" accessibilityState={{selected: plan === 'yearly'}} onPress={() => setPlan('yearly')} style={[styles.yearlyCard, plan === 'yearly' && styles.planSelected]}>
-          <View style={styles.planHeader}><Text style={styles.planEyebrow}>YEARLY · 7 DAYS FREE</Text>{plan === 'yearly' && <Text style={styles.selectedMark}>✓</Text>}</View>
+          <View style={styles.planHeader}><Text style={styles.planEyebrow}>YEARLY · 7 DAYS FREE</Text>{plan === 'yearly' && <Icon.Check size={18} />}</View>
           <Text style={styles.yearlyPrice}>$39.99</Text>
           <Text style={styles.planDetail}>$3.33/month · Cancel anytime</Text>
         </Pressable>
@@ -54,7 +56,6 @@ const styles = StyleSheet.create({
   planSelected: {borderColor: 'rgba(200,255,251,.44)'},
   planHeader: {flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'},
   planEyebrow: {fontSize: 12, letterSpacing: 2.2, color: colors.muted, fontWeight: '700'},
-  selectedMark: {color: colors.mint, fontSize: 18, fontWeight: '700'},
   yearlyPrice: {fontFamily: 'Georgia', fontSize: 62, letterSpacing: -3, lineHeight: 68, color: colors.text, marginTop: 5},
   planDetail: {fontSize: 16, color: colors.muted, marginTop: -2},
   weeklyCard: {minHeight: 82, paddingHorizontal: spacing.lg, borderRadius: radius.md, borderWidth: 1, borderColor: 'rgba(255,255,255,.12)', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'},

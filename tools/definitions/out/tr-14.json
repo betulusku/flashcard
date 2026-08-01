@@ -1,0 +1,962 @@
+[
+ {
+  "id": "2497",
+  "definitionTr": "Bir şey hakkında daha fazla bilgi edinme isteği duymak.",
+  "exampleTr": "Onların ihtiyaç duyduklarına gerçekten ilgi gösterdim."
+ },
+ {
+  "id": "2498",
+  "definitionTr": "Bir şeyin ters gidebileceğine dair hissetmek.",
+  "exampleTr": "Gerçek bir sorun haline gelmeden önce endişeyi dile getirdim."
+ },
+ {
+  "id": "2499",
+  "definitionTr": "Olası bir sorun hakkında huzursuz hissetmek.",
+  "exampleTr": "Asıl endişem kapsam değil, sıkı zaman planıydı."
+ },
+ {
+  "id": "2500",
+  "definitionTr": "Bir şey seni korkuttuğunda hissettiğin olumsuz duygu.",
+  "exampleTr": "Korkumu yüksek sesle söyledim ve biraz gücünü kaybetti."
+ },
+ {
+  "id": "2501",
+  "definitionTr": "İyi bir şeyin olabileceğine dair hissetmek.",
+  "exampleTr": "Planın işe yarayacağına gerçekten umutla baktım ve öyle oldu."
+ },
+ {
+  "id": "2502",
+  "definitionTr": "Geleceğin için hayal ettiğin harika bir şey.",
+  "exampleTr": "Resmi bir plan değil, küçük bir hayalle başladı."
+ },
+ {
+  "id": "2503",
+  "definitionTr": "Gerçekleşmesi zor olsa bile olmasını istediğin bir şey.",
+  "exampleTr": "Tek dileğim daha fazla zamandı, ki kimsenin yeterli zamanı yok."
+ },
+ {
+  "id": "2504",
+  "definitionTr": "Sağlanması veya yapılması gereken zorunlu bir şey.",
+  "exampleTr": "Sadece talebi değil, gerçek ihtiyacı ele aldım."
+ },
+ {
+  "id": "2505",
+  "definitionTr": "Bir şeyi isteme konusunda güçlü bir duygu.",
+  "exampleTr": "Daha basit bir şeye yönelik net bir istek vardı."
+ },
+ {
+  "id": "2506",
+  "definitionTr": "Doğru olduğu için yapman gereken bir şey.",
+  "exampleTr": "Bu sadece bir görev değil, bir vazifeymiş gibi hissettirdi."
+ },
+ {
+  "id": "2507",
+  "definitionTr": "Birinin dürüst ve güvenilir olduğuna inanmak.",
+  "exampleTr": "Güven inşa etmek aylar sürdü, sarsmak ise tek bir hataya kaldı."
+ },
+ {
+  "id": "2508",
+  "definitionTr": "Değer verdiğin birine duyulan hayranlık hissi.",
+  "exampleTr": "Önce dinleyerek saygı kazandım."
+ },
+ {
+  "id": "2509",
+  "definitionTr": "Zamanla bir kişiye veya gruba güçlü destek göstermek.",
+  "exampleTr": "Sadakat karşılıklıdır ve ben bunu her gün kazanmaya çalışırım."
+ },
+ {
+  "id": "2510",
+  "definitionTr": "Bir şeyi beklerken sakin kalabilme yeteneği.",
+  "exampleTr": "O müzakerede hızdan çok sabır önemliydi."
+ },
+ {
+  "id": "2511",
+  "definitionTr": "Korkmana rağmen bir şeyi yapmaya gücü olmak.",
+  "exampleTr": "O talebe hayır demek cesaret gerektirdi."
+ },
+ {
+  "id": "2512",
+  "definitionTr": "İnsanları gergin hissettiren ağır bir talep.",
+  "exampleTr": "Kesinti sırasında baskı altında sakin kaldım."
+ },
+ {
+  "id": "2513",
+  "definitionTr": "Zor iş veya endişeden kaynaklanan zihinsel gerilim.",
+  "exampleTr": "Stresi kontrol edebileceğim şeylere odaklanarak yönetiyorum."
+ },
+ {
+  "id": "2514",
+  "definitionTr": "Rahat ve zorluktan uzak bir durum.",
+  "exampleTr": "Zamanla belirsizlikle uyum sağladım."
+ },
+ {
+  "id": "2515",
+  "definitionTr": "Daha deneyimli birinden gelen yararlı tavsiye.",
+  "exampleTr": "Tahmin etmek yerine rehberlik istedim."
+ },
+ {
+  "id": "2516",
+  "definitionTr": "Ne yapılacağı veya nereye gidileceği hakkında net talimatlar.",
+  "exampleTr": "Net yön verdim, sonra geri çekildim."
+ },
+ {
+  "id": "2517",
+  "definitionTr": "İnsanlara önemli bilgi veren kamuya açık bir açıklama.",
+  "exampleTr": "Her şey doğrulandıktan sonra duyuruyu yaptık."
+ },
+ {
+  "id": "2518",
+  "definitionTr": "Az önce olan bir şey hakkında bilgi.",
+  "exampleTr": "Kötü haberi geciktirmek yerine erkenden paylaştım."
+ },
+ {
+  "id": "2519",
+  "definitionTr": "Bir görüş oluşturmak için aklını kullanmak.",
+  "exampleTr": "Daha fazla zaman ayırmadan önce bunu test etmeliyiz diye düşünüyorum."
+ },
+ {
+  "id": "2520",
+  "definitionTr": "Bir şey hakkında bilgiye sahip olmak veya emin olmak.",
+  "exampleTr": "Baştan riski biliyordum ve buna göre plan yaptım."
+ },
+ {
+  "id": "2521",
+  "definitionTr": "Bir şeyi istediğini hissetmek.",
+  "exampleTr": "En zekice çözümü değil, en basit olanı istedim."
+ },
+ {
+  "id": "2522",
+  "definitionTr": "Bir amaç için bir şeyi harekete geçirmek.",
+  "exampleTr": "Aynı süreci üç projede kullandım."
+ },
+ {
+  "id": "2523",
+  "definitionTr": "Bir faaliyetin ilk kısmını yapmak.",
+  "exampleTr": "Mümkün olan en küçük sürümle başladım."
+ },
+ {
+  "id": "2524",
+  "definitionTr": "Yeni bir şeyin ilk adımını atmak.",
+  "exampleTr": "Tasarım henüz kesinleşmeden test etmeye başladık."
+ },
+ {
+  "id": "2525",
+  "definitionTr": "Bir şeyin sona ermesini veya devam etmemesini sağlamak.",
+  "exampleTr": "Sorunu gördüğüm anda yayını durdurdum."
+ },
+ {
+  "id": "2526",
+  "definitionTr": "Ara vermeden bir şeyi yapmaya devam etmek.",
+  "exampleTr": "İlk aksilikten sonra bile projeye devam ettim."
+ },
+ {
+  "id": "2527",
+  "definitionTr": "Bir görevi tamamen sona erdirmek.",
+  "exampleTr": "Planlanandan iki gün önce bitirdim."
+ },
+ {
+  "id": "2528",
+  "definitionTr": "Bir şeyi yapmak için çaba göstermek.",
+  "exampleTr": "İlk yaklaşım tıkandığında farklı bir yol denedim."
+ },
+ {
+  "id": "2529",
+  "definitionTr": "Zor bir şeyi başarmak için çaba göstermek.",
+  "exampleTr": "Üst kata iletmeden önce kendim düzeltmeyi denedim."
+ },
+ {
+  "id": "2530",
+  "definitionTr": "Birinin işini kolaylaştırmak.",
+  "exampleTr": "Yeni çalışanın bir haftada işe alışmasına yardım ettim."
+ },
+ {
+  "id": "2531",
+  "definitionTr": "Birine soru yöneltmek.",
+  "exampleTr": "Kabul etmeden önce bir soru daha sordum."
+ },
+ {
+  "id": "2532",
+  "definitionTr": "Birine konuşarak bilgi vermek.",
+  "exampleTr": "Ekibe olay olduktan sonra değil, erkenden söyledim."
+ },
+ {
+  "id": "2533",
+  "definitionTr": "Bir şeyi yüksek sesle kelimelerle ifade etmek.",
+  "exampleTr": "Hayır dedim ve tam olarak nedenini açıkladım."
+ },
+ {
+  "id": "2534",
+  "definitionTr": "Biriyle sözlü bir sohbet etmek.",
+  "exampleTr": "Tek bir spesifikasyon yazmadan önce beş kullanıcıyla konuştum."
+ },
+ {
+  "id": "2535",
+  "definitionTr": "Kelimeleri ifade etmek için sesini kullanmak.",
+  "exampleTr": "Plana katılmadığımda sesimi yükselttim."
+ },
+ {
+  "id": "2536",
+  "definitionTr": "Bir sese veya bir kişiye dikkatle kulak vermek.",
+  "exampleTr": "O toplantıda konuşmaktan çok dinledim."
+ },
+ {
+  "id": "2537",
+  "definitionTr": "Kulaklarınla bir sesi fark etmek.",
+  "exampleTr": "Endişeyi duydum ve ciddiye aldım."
+ },
+ {
+  "id": "2538",
+  "definitionTr": "Gözlerinle bir şeyi fark etmek.",
+  "exampleTr": "Kimse işaret etmeden önce riski gördüm."
+ },
+ {
+  "id": "2539",
+  "definitionTr": "Bilerek gözlerini bir şeye çevirmek.",
+  "exampleTr": "Bildirildiği gün konuyu inceledim."
+ },
+ {
+  "id": "2540",
+  "definitionTr": "Bir süre boyunca gözlerini bir şeyin üzerinde tutmak.",
+  "exampleTr": "İlk hafta metrikleri yakından izledim."
+ },
+ {
+  "id": "2541",
+  "definitionTr": "Birinin bir şeyi net biçimde görmesini sağlamak.",
+  "exampleTr": "Sadece anlatmak yerine veriyi gösterdim."
+ },
+ {
+  "id": "2542",
+  "definitionTr": "Bir şeyi başka birine uzatmak.",
+  "exampleTr": "Zor olsa bile doğrudan geri bildirim verdim."
+ },
+ {
+  "id": "2543",
+  "definitionTr": "Bir şeyi eline almak veya kontrolüne geçirmek.",
+  "exampleTr": "Başka kimse öne çıkmadığında liderliği üstlendim."
+ },
+ {
+  "id": "2544",
+  "definitionTr": "Bir şeyi yanınla bir yere taşımak.",
+  "exampleTr": "Tüm ekibi karara erkenden dahil ettim."
+ },
+ {
+  "id": "2545",
+  "definitionTr": "Bir şeyin başka bir kişiye veya yere gitmesini sağlamak.",
+  "exampleTr": "Kimse sormadan önce bir güncelleme gönderdim."
+ },
+ {
+  "id": "2546",
+  "definitionTr": "Birinin sana verdiği bir şeyi almak.",
+  "exampleTr": "Sert kısımları da dahil olmak üzere geri bildirimi iyi karşıladım."
+ },
+ {
+  "id": "2547",
+  "definitionTr": "Bir şeye sahip olmaya devam etmek ve kaybetmemek.",
+  "exampleTr": "Güncellemeyi bilerek kısa tuttum."
+ },
+ {
+  "id": "2548",
+  "definitionTr": "Toplantı gibi bir etkinlik düzenlemek.",
+  "exampleTr": "Son tarihten önce kısa bir sync toplantısı düzenledim."
+ },
+ {
+  "id": "2549",
+  "definitionTr": "Bir şeyi belirli bir konuma yerleştirmek.",
+  "exampleTr": "En riskli görevi sona değil, başa koydum."
+ },
+ {
+  "id": "2550",
+  "definitionTr": "Bir hedef, zaman veya kural belirlemek ve sabitlemek.",
+  "exampleTr": "Geliştirmeye başlamadan önce net bir hedef belirledim."
+ },
+ {
+  "id": "2551",
+  "definitionTr": "Birinin istediğini yapmasına izin vermek.",
+  "exampleTr": "Ekibin kendilerine uygun aracı seçmesine izin verdim."
+ },
+ {
+  "id": "2552",
+  "definitionTr": "Kendi çabanla bir şey yaratmak veya üretmek.",
+  "exampleTr": "Kararı kendim verdim ve sonucun sorumluluğunu üstlendim."
+ },
+ {
+  "id": "2553",
+  "definitionTr": "Bir eylemi gerçekleştirmek veya bir görevi yerine getirmek.",
+  "exampleTr": "Karar istemeden önce araştırmayı kendim yaptım."
+ },
+ {
+  "id": "2554",
+  "definitionTr": "Bir şeyi elde etmek veya sahip olmaya başlamak.",
+  "exampleTr": "Değişikliği duyurmadan önce onay aldım."
+ },
+ {
+  "id": "2555",
+  "definitionTr": "Buradan başka bir yere doğru hareket etmek.",
+  "exampleTr": "Tahmin etmek yerine doğrudan kaynağa gittim."
+ },
+ {
+  "id": "2556",
+  "definitionTr": "Konuşmacıya doğru hareket etmek veya bir yere ulaşmak.",
+  "exampleTr": "Fikir bir beyin fırtınasından değil, bir destek talebinden geldi."
+ },
+ {
+  "id": "2557",
+  "definitionTr": "Bir yerden veya bir kişiden uzaklaşmak.",
+  "exampleTr": "Daha fazla geri bildirime açık bıraktım."
+ },
+ {
+  "id": "2558",
+  "definitionTr": "Gitmekte olduğun yere ulaşmak.",
+  "exampleTr": "Tek bir toplantıda karara vardık."
+ },
+ {
+  "id": "2559",
+  "definitionTr": "Bir yerden ayrılmadan orada kalmak.",
+  "exampleTr": "Tarihe yetişmek için bir kez bilerek geç kaldım."
+ },
+ {
+  "id": "2560",
+  "definitionTr": "Beklediğin bir şey olana kadar zaman geçirmek.",
+  "exampleTr": "İçgüdüyle hareket etmek yerine gerçek veriyi bekledim."
+ },
+ {
+  "id": "2561",
+  "definitionTr": "Bir yerde biriyle bir araya gelmek.",
+  "exampleTr": "Önce her paydaşla ayrı ayrı görüştüm."
+ },
+ {
+  "id": "2562",
+  "definitionTr": "Bir grubun veya faaliyetin parçası olmak.",
+  "exampleTr": "Hazırlık yapmak için görüşmeye beş dakika erken katıldım."
+ },
+ {
+  "id": "2563",
+  "definitionTr": "Birinin peşinden gitmek veya bir şeyi izlemek.",
+  "exampleTr": "Aynı gün takip ettim, gelecek hafta değil."
+ },
+ {
+  "id": "2564",
+  "definitionTr": "Bir ekibin veya projenin başında olmak.",
+  "exampleTr": "Henüz unvanım olmadan projeye liderlik ettim."
+ },
+ {
+  "id": "2565",
+  "definitionTr": "Birini zor bir şeyden geçirirken yol göstermek.",
+  "exampleTr": "Ekibe belirsiz kısımlarda rehberlik ettim."
+ },
+ {
+  "id": "2566",
+  "definitionTr": "Açıklayarak birine bilgi veya beceri vermek.",
+  "exampleTr": "Temelleri tek bir hafta sonunda kendim öğrendim."
+ },
+ {
+  "id": "2567",
+  "definitionTr": "Pratik yoluyla yeni bilgi veya beceri kazanmak.",
+  "exampleTr": "O başarısızlıktan herhangi bir kazançtan daha çok şey öğrendim."
+ },
+ {
+  "id": "2568",
+  "definitionTr": "Anlamak için bir şeyi dikkatle incelemek.",
+  "exampleTr": "Görüş oluşturmadan önce veriyi inceledim."
+ },
+ {
+  "id": "2569",
+  "definitionTr": "Geçmişten bir şeyi aklına getirmek.",
+  "exampleTr": "Önceki hatayı hatırlayıp tekrarlamaktan kaçındım."
+ },
+ {
+  "id": "2570",
+  "definitionTr": "Bir şeyi hafızanda tutamamak.",
+  "exampleTr": "Küçük şeylerde bile takip etmeyi asla unutmam."
+ },
+ {
+  "id": "2571",
+  "definitionTr": "Bir şeyin ne anlama geldiğini veya nasıl çalıştığını net görmek.",
+  "exampleTr": "Bir çözüm önermeden önce sorunu anladığımdan emin oldum."
+ },
+ {
+  "id": "2572",
+  "definitionTr": "Kelimelerle belirli bir fikir veya niyet ifade etmek.",
+  "exampleTr": "Kastettiğim şey, önce bunu test etmemiz gerektiği."
+ },
+ {
+  "id": "2573",
+  "definitionTr": "Belirli bir şekilde izlenim vermek.",
+  "exampleTr": "İlk başta basit göründü ama değildi."
+ },
+ {
+  "id": "2574",
+  "definitionTr": "Görünür hale gelmek veya fark edilmeye başlamak.",
+  "exampleTr": "Sorun yalnızca yoğun yük altında ortaya çıktı."
+ },
+ {
+  "id": "2575",
+  "definitionTr": "Zamanla farklı bir şeye dönüşmek.",
+  "exampleTr": "O yan proje tam zamanlı odak noktam oldu."
+ },
+ {
+  "id": "2576",
+  "definitionTr": "Değişmeden aynı durumda devam etmek.",
+  "exampleTr": "Plan iki kez değişse bile sakin kaldım."
+ },
+ {
+  "id": "2577",
+  "definitionTr": "Konum değiştirmek veya bir yerden başka yere gitmek.",
+  "exampleTr": "Geri alınabilir kararlarda hızlı hareket ettim."
+ },
+ {
+  "id": "2578",
+  "definitionTr": "Yön değiştirmek veya bir şeyi başka bir şeye dönüştürmek.",
+  "exampleTr": "Bir şikayeti en iyi özelliğimize dönüştürdüm."
+ },
+ {
+  "id": "2579",
+  "definitionTr": "Bir yere veya bir fikre yeniden dönmek.",
+  "exampleTr": "Bir yıl sonra fikre geri döndüm ve işe yaradı."
+ },
+ {
+  "id": "2580",
+  "definitionTr": "Genellikle planlanmadan gerçekleşmek.",
+  "exampleTr": "İyi anlamda beklediğimizden daha hızlı oldu."
+ },
+ {
+  "id": "2581",
+  "definitionTr": "Özellikle bir sorunun veya olayın ortaya çıkması.",
+  "exampleTr": "Sorun yalnızca belirli bir durumda meydana geldi."
+ },
+ {
+  "id": "2582",
+  "definitionTr": "Dünyada veya gerçekte bulunmak.",
+  "exampleTr": "Ben kurmadan önce o süreç hiç yoktu."
+ },
+ {
+  "id": "2583",
+  "definitionTr": "Bir insan olarak var olmak ve bir yerde yaşamak.",
+  "exampleTr": "Tek bir kurala göre yaşıyorum: paydaşlara sürpriz yok."
+ },
+ {
+  "id": "2584",
+  "definitionTr": "Bir oyuna katılmak veya bir rol üstlenmek.",
+  "exampleTr": "Taahhüt etmeden önce karşıt görüşü temsil ettim."
+ },
+ {
+  "id": "2585",
+  "definitionTr": "Bir duruma yanıt olarak bir şey yapmak.",
+  "exampleTr": "Ertesi hafta değil, aynı gün harekete geçtim."
+ },
+ {
+  "id": "2586",
+  "definitionTr": "Belirli bir biçimde çalışmak veya davranmak.",
+  "exampleTr": "Sistem gerçek trafik altında farklı davrandı."
+ },
+ {
+  "id": "2587",
+  "definitionTr": "Bir olay yüzünden bir şey hissetmek veya yapmak.",
+  "exampleTr": "Sakin tepki verdim, sonra sistematik biçimde düzelttim."
+ },
+ {
+  "id": "2588",
+  "definitionTr": "Birine cevap veya yanıt vermek.",
+  "exampleTr": "Kısa bir güncelleme olsa bile bir saat içinde yanıt verdim."
+ },
+ {
+  "id": "2589",
+  "definitionTr": "Parçaları bir araya getirerek bir şey yapmak.",
+  "exampleTr": "Ölçekte ihtiyaç duymadan önce süreci kurdum."
+ },
+ {
+  "id": "2590",
+  "definitionTr": "Yeni bir şeyi var etmek.",
+  "exampleTr": "Tüm ekibin hâlâ kullandığı basit bir şablon oluşturdum."
+ },
+ {
+  "id": "2591",
+  "definitionTr": "Büyük miktarlarda mal veya sonuç üretmek.",
+  "exampleTr": "Aynı ekip büyüklüğüyle iki kat çıktı ürettik."
+ },
+ {
+  "id": "2592",
+  "definitionTr": "Bir şeyin nasıl görüneceğini ve çalışacağını planlamak.",
+  "exampleTr": "Akışı tek bir net kullanıcı hedefi etrafında tasarladım."
+ },
+ {
+  "id": "2593",
+  "definitionTr": "Bir fikri büyütmek veya zamanla daha iyi hale getirmek.",
+  "exampleTr": "Planı tek bir hafta sonunda geliştirdim."
+ },
+ {
+  "id": "2594",
+  "definitionTr": "Bir miktarı daha büyük hale getirmek.",
+  "exampleTr": "Formu sadeleştirerek dönüşümü artırdık."
+ },
+ {
+  "id": "2595",
+  "definitionTr": "Bir miktarı daha küçük hale getirmek.",
+  "exampleTr": "Yükleme süresini yarıya indirdik."
+ },
+ {
+  "id": "2596",
+  "definitionTr": "İnsanların tartışması için bir konuyu gündeme getirmek.",
+  "exampleTr": "Acil hale gelmeden önce sorunu gündeme getirdim."
+ },
+ {
+  "id": "2597",
+  "definitionTr": "Bir seviyeyi veya fiyatı aşağı çekmek.",
+  "exampleTr": "Talebi test etmek için bir segmentte fiyatı düşürdük."
+ },
+ {
+  "id": "2598",
+  "definitionTr": "Bir şeyin boyutunu veya sayısını azaltmak.",
+  "exampleTr": "Süreci beş adımdan ikiye indirdik."
+ },
+ {
+  "id": "2599",
+  "definitionTr": "Bir şeyi bulunduğu yerden uzaklaştırmak.",
+  "exampleTr": "Hiçbir değer katmayan bir adımı kaldırdım."
+ },
+ {
+  "id": "2600",
+  "definitionTr": "Başka bir şeyin yerine yeni bir şey koymak.",
+  "exampleTr": "Manuel adımı basit bir script ile değiştirdik."
+ },
+ {
+  "id": "2601",
+  "definitionTr": "Bozuk veya hatalı bir şeyi onarmak.",
+  "exampleTr": "Talep beklemek yerine kendim düzelttim."
+ },
+ {
+  "id": "2602",
+  "definitionTr": "Bir sorunun cevabını bulmak.",
+  "exampleTr": "Farklı bir soru sorarak çözdüm."
+ },
+ {
+  "id": "2603",
+  "definitionTr": "Doğru olduğundan emin olmak için bir şeye bakmak.",
+  "exampleTr": "Paylaşmadan önce rakamları iki kez kontrol ettim."
+ },
+ {
+  "id": "2604",
+  "definitionTr": "İşe yarayıp yaramadığını görmek için pratikte incelemek.",
+  "exampleTr": "Daha fazlasını geliştirmeden önce beş gerçek kullanıcıyla test ettim."
+ },
+ {
+  "id": "2605",
+  "definitionTr": "Beğenip beğenmediğini görmek için kısa süre kullanmak.",
+  "exampleTr": "Birini seçmeden önce iki sürümü denedik."
+ },
+ {
+  "id": "2606",
+  "definitionTr": "Toplamda kaç şey olduğunu bulmak.",
+  "exampleTr": "Sadece yüksek sesli şikayetleri değil, her talebi saydık."
+ },
+ {
+  "id": "2607",
+  "definitionTr": "Olmadan önce ne olacağını söylemek.",
+  "exampleTr": "Darboğazı iki sprint önceden öngördüm."
+ },
+ {
+  "id": "2608",
+  "definitionTr": "Bir şeyin muhtemelen olacağına inanmak.",
+  "exampleTr": "Tepki geleceğini bekliyordum, bu yüzden hazırlık yaptım."
+ },
+ {
+  "id": "2609",
+  "definitionTr": "İnsanları veya dikkatlerini bir şeye yöneltmek.",
+  "exampleTr": "Ekibin odağını en yüksek etkili göreve yönelttim."
+ },
+ {
+  "id": "2610",
+  "definitionTr": "Bir işletmeyi veya makineyi günlük olarak yürütmek.",
+  "exampleTr": "Küçük ve odaklı bir ekiple çalışıyoruz."
+ },
+ {
+  "id": "2611",
+  "definitionTr": "Belirli bir düzeyde çalışmak veya bir işi yapmak.",
+  "exampleTr": "Özellik beklediğimizden daha iyi performans gösterdi."
+ },
+ {
+  "id": "2612",
+  "definitionTr": "Düzgün çalışmak ve amaçlanan işi yapmak.",
+  "exampleTr": "Süreç baskı altında bile iyi işlev görüyor."
+ },
+ {
+  "id": "2613",
+  "definitionTr": "Bir grup insana yararlı bir şey sağlamak.",
+  "exampleTr": "Oldukça teknik bir kitleye hizmet veriyoruz."
+ },
+ {
+  "id": "2614",
+  "definitionTr": "İnsanlara ihtiyaç duydukları veya istedikleri şeyi vermek.",
+  "exampleTr": "İstenmeden düzenli güncellemeler sağladım."
+ },
+ {
+  "id": "2615",
+  "definitionTr": "Birinin ihtiyaç duyduğu mal veya malzemeyi temin etmek.",
+  "exampleTr": "Toplantıdan önce eksik bağlamı sağladık."
+ },
+ {
+  "id": "2616",
+  "definitionTr": "Geriye bir şey kalmadan bir görevi tamamen bitirmek.",
+  "exampleTr": "Denetimi tam bir hafta erken tamamladım."
+ },
+ {
+  "id": "2617",
+  "definitionTr": "Hedeflediğin sonuca ulaşmak.",
+  "exampleTr": "Erken ve sık test ettiğimiz için başarılı olduk."
+ },
+ {
+  "id": "2618",
+  "definitionTr": "Bir oyunda veya yarışmada birinci olmak.",
+  "exampleTr": "Tek bir dürüst konuşmayla müşteriyi geri kazandık."
+ },
+ {
+  "id": "2619",
+  "definitionTr": "Bir zamanlar sahip olduğun bir şeyi artık sahip olmamak.",
+  "exampleTr": "Birkaç kullanıcı kaybettik ama tam olarak nedenini öğrendik."
+ },
+ {
+  "id": "2620",
+  "definitionTr": "Yararlı bir sonuç olmadan zaman veya para harcamak.",
+  "exampleTr": "Yanlış metriğin peşinde bir hafta boşa harcadık."
+ },
+ {
+  "id": "2621",
+  "definitionTr": "Kötü bir şeyin olmasını engellemek.",
+  "exampleTr": "Sorunun production ortamına ulaşmasını engelledik."
+ },
+ {
+  "id": "2622",
+  "definitionTr": "Birini veya bir şeyi zarardan güvende tutmak.",
+  "exampleTr": "Ekibin odaklanma zamanını sıkı biçimde korudum."
+ },
+ {
+  "id": "2623",
+  "definitionTr": "Düzgün çalışması için bir şeye ihtiyaç duymak.",
+  "exampleTr": "Proje planladığımızdan daha fazla test gerektirdi."
+ },
+ {
+  "id": "2624",
+  "definitionTr": "Başka bir şeye veya koşula bağlı olmak.",
+  "exampleTr": "Zamanında onay alıp almayacağımıza bağlı."
+ },
+ {
+  "id": "2625",
+  "definitionTr": "Destek olması için birine veya bir şeye güvenmek.",
+  "exampleTr": "Büyük kararlarda içgüdüden çok veriye güvenirim."
+ },
+ {
+  "id": "2626",
+  "definitionTr": "Zihninde bir şeyin resmini oluşturmak.",
+  "exampleTr": "Kaynak ayırmadan önce en kötü senaryoyu hayal ettim."
+ },
+ {
+  "id": "2627",
+  "definitionTr": "Karar vermeden önce bir şeyi dikkatle düşünmek.",
+  "exampleTr": "En basit olanı seçmeden önce üç seçeneği değerlendirdim."
+ },
+ {
+  "id": "2628",
+  "definitionTr": "Yüksek standartta veya hoşa giden kalitede.",
+  "exampleTr": "Riskli hissettirse de iyi bir karar oldu."
+ },
+ {
+  "id": "2629",
+  "definitionTr": "Düşük kalitede veya zarar ve sıkıntıya yol açan.",
+  "exampleTr": "Kötü bir haftaydı ama hızla toparlandık."
+ },
+ {
+  "id": "2630",
+  "definitionTr": "Çok etkileyici veya olağanüstü derecede iyi.",
+  "exampleTr": "Ekip gerçek baskı altında harika bir iş çıkardı."
+ },
+ {
+  "id": "2631",
+  "definitionTr": "Mümkün olan en yüksek kalitede.",
+  "exampleTr": "O projedeki çalışması mükemmeldi."
+ },
+ {
+  "id": "2632",
+  "definitionTr": "Nazik ve yumuşak bir şekilde keyifli.",
+  "exampleTr": "Kullanıcıların ne kadar hızlı benimsediği güzel bir sürpriz oldu."
+ },
+ {
+  "id": "2633",
+  "definitionTr": "Boyut, miktar veya önem bakımından büyük.",
+  "exampleTr": "O zamanlar büyük bir risk gibi hissettirdi."
+ },
+ {
+  "id": "2634",
+  "definitionTr": "Boyut, miktar veya önem bakımından az.",
+  "exampleTr": "Küçük ve tutarlı değişiklikler hızla birikti."
+ },
+ {
+  "id": "2635",
+  "definitionTr": "Ortalamadan daha fazla, kayda değer boyut veya miktarda.",
+  "exampleTr": "Yayına almadan önce oldukça büyük bir test yaptık."
+ },
+ {
+  "id": "2636",
+  "definitionTr": "Boyut, miktar veya etki bakımından muazzam.",
+  "exampleTr": "Elde tutma oranı üzerinde devasa bir etkisi oldu."
+ },
+ {
+  "id": "2637",
+  "definitionTr": "Boyut veya miktar bakımından son derece küçük.",
+  "exampleTr": "Tek bir sayfada minik bir deney olarak başladı."
+ },
+ {
+  "id": "2638",
+  "definitionTr": "Kısa süre önce yapılmış veya başlatılmış.",
+  "exampleTr": "İlk yaklaşım başarısız olduktan sonra yeni bir yöntem önerdim."
+ },
+ {
+  "id": "2639",
+  "definitionTr": "Uzun süredir var olan.",
+  "exampleTr": "Eski süreci kimseyi aksatmadan değiştirdik."
+ },
+ {
+  "id": "2640",
+  "definitionTr": "Kısa bir süre önce olan veya yapılmış.",
+  "exampleTr": "En son sürümümüz tam o sorunu düzeltti."
+ },
+ {
+  "id": "2641",
+  "definitionTr": "Şu anda var olan veya gerçekleşen.",
+  "exampleTr": "Mevcut sürecimiz eskisinden çok daha basit."
+ },
+ {
+  "id": "2642",
+  "definitionTr": "Yapması basit ve az çaba gerektiren.",
+  "exampleTr": "Kolay değildi ama buna değdi."
+ },
+ {
+  "id": "2643",
+  "definitionTr": "Yapması güç ve çok çaba gerektiren.",
+  "exampleTr": "İlk başta zordu ama hızla kolaylaştı."
+ },
+ {
+  "id": "2644",
+  "definitionTr": "Yüksek hızda hareket eden veya gerçekleşen.",
+  "exampleTr": "Köşeleri kesmeden hızlı hareket ettik."
+ },
+ {
+  "id": "2645",
+  "definitionTr": "Az hızla hareket eden veya gerçekleşen.",
+  "exampleTr": "İlerleme başta yavaştı, sonra hızlandı."
+ },
+ {
+  "id": "2646",
+  "definitionTr": "Yalnızca çok kısa süre alan.",
+  "exampleTr": "Ekip bloklanmasın diye hızlı bir yanıt verdim."
+ },
+ {
+  "id": "2647",
+  "definitionTr": "Alışılmış veya beklenen zamandan önce.",
+  "exampleTr": "Riski olay olduktan sonra değil, erkenden dile getirdim."
+ },
+ {
+  "id": "2648",
+  "definitionTr": "Olması gereken zamandan sonra.",
+  "exampleTr": "Bir kez geç kaldık ve bir daha olmamasını sağladım."
+ },
+ {
+  "id": "2649",
+  "definitionTr": "Tamamen hazır olmak ve başlayabilir durumda olmak.",
+  "exampleTr": "Yayına almadan önce ekibin hazır olduğundan emin oldum."
+ },
+ {
+  "id": "2650",
+  "definitionTr": "Bir şeyin doğru olacağına veya olacağına güvenmek.",
+  "exampleTr": "İlk başta emin değildim, bu yüzden daha fazla soru sordum."
+ },
+ {
+  "id": "2651",
+  "definitionTr": "Bir şey hakkında hiç şüphe duymamak.",
+  "exampleTr": "Daha fazla test etmeden ilerlemek için yeterince emindim."
+ },
+ {
+  "id": "2652",
+  "definitionTr": "Yapılabilir veya gerçekleşebilir olmak.",
+  "exampleTr": "İmkansız görünüyordu ama daha küçük bir kapsamla aslında mümkündü."
+ },
+ {
+  "id": "2653",
+  "definitionTr": "Hiçbir şekilde yapılamaz olmak.",
+  "exampleTr": "Parçalara ayırdığımızda hiçbir şey imkansız hissettirmedi."
+ },
+ {
+  "id": "2654",
+  "definitionTr": "Muhtemelen olacak veya doğru olacak.",
+  "exampleTr": "Test için bir hafta daha gerekebilir."
+ },
+ {
+  "id": "2655",
+  "definitionTr": "Muhtemelen olmayacak.",
+  "exampleTr": "Kusursuz bir lansman olası değildi, bu yüzden küçük sorunlar için plan yaptık."
+ },
+ {
+  "id": "2656",
+  "definitionTr": "Gerçeklerle uyumlu ve uydurma olmayan.",
+  "exampleTr": "Söylemesi rahatsız edici olsa da doğruydu."
+ },
+ {
+  "id": "2657",
+  "definitionTr": "Doğru olmayan veya iddia ettiği şey olmayan.",
+  "exampleTr": "Varsayımın yanlış çıktığı ortaya çıktı."
+ },
+ {
+  "id": "2658",
+  "definitionTr": "Gerçekten var olan ve hayal edilmeyen.",
+  "exampleTr": "Küçük bir rahatsızlık değil, gerçek bir sorundu."
+ },
+ {
+  "id": "2659",
+  "definitionTr": "Tahmin yerine gerçek olarak var olan.",
+  "exampleTr": "Gerçek neden varsaydığımızdan farklıydı."
+ },
+ {
+  "id": "2660",
+  "definitionTr": "Sondan gelen ve ardından bir şey kalmayan.",
+  "exampleTr": "Bu, lansmandan önceki nihai sürümdü."
+ },
+ {
+  "id": "2661",
+  "definitionTr": "Hiçbir parça eksik olmadan tam.",
+  "exampleTr": "Tüm ekip son tarih etrafında bir araya geldi."
+ },
+ {
+  "id": "2662",
+  "definitionTr": "Bir şeyin her bir parçasını içeren.",
+  "exampleTr": "Tüm teklifi satır satır inceledim."
+ },
+ {
+  "id": "2663",
+  "definitionTr": "Mümkün olduğunca dolu veya miktarda tam.",
+  "exampleTr": "İki gün boyunca tam dikkatimi verdim."
+ },
+ {
+  "id": "2664",
+  "definitionTr": "İçinde hiçbir şey bulunmayan.",
+  "exampleTr": "Çeyreğin sonunda backlog neredeyse boştu."
+ },
+ {
+  "id": "2665",
+  "definitionTr": "Hiçbir şeye mal olmayan veya istediğin gibi hareket edebilen.",
+  "exampleTr": "Mantıklı gelen yaklaşımı seçmekte özgürdüm."
+ },
+ {
+  "id": "2666",
+  "definitionTr": "Yapılacak çok işi olan.",
+  "exampleTr": "Herkes meşgul olduğu için talebi küçük tuttum."
+ },
+ {
+  "id": "2667",
+  "definitionTr": "İhtiyaç duyulduğunda elde edilebilir veya kullanılabilir.",
+  "exampleTr": "Tüm hafta sorular için kendimi müsait tuttum."
+ },
+ {
+  "id": "2668",
+  "definitionTr": "Kapalı olmayan veya yeni fikirlere açık.",
+  "exampleTr": "Sert olanlar da dahil geri bildirime açık kaldım."
+ },
+ {
+  "id": "2669",
+  "definitionTr": "Kapalı olup içeri veya dışarı geçişe izin vermeyen.",
+  "exampleTr": "Veri o seçeneği dışladığında o yolu kapattık."
+ },
+ {
+  "id": "2670",
+  "definitionTr": "Sadece izlemek yerine bir şeyler yapan ve katılan.",
+  "exampleTr": "Tartışmada sadece orada olmakla kalmayıp aktif kaldım."
+ },
+ {
+  "id": "2671",
+  "definitionTr": "Hata yapmamak için yakından dikkat etmek.",
+  "exampleTr": "Fazla vaat etmemeye dikkat ettim."
+ },
+ {
+  "id": "2672",
+  "definitionTr": "Yeterince dikkat etmemek ve hatalara yol açmak.",
+  "exampleTr": "Tek bir dikkatsiz varsayım bize tam bir haftaya mal oldu."
+ },
+ {
+  "id": "2673",
+  "definitionTr": "Gerçek ilgi gerektirecek kadar önemli.",
+  "exampleTr": "Küçük yorumlar da dahil geri bildirimi ciddiye aldım."
+ },
+ {
+  "id": "2674",
+  "definitionTr": "Büyük güce veya sağlam bir temele sahip olmak.",
+  "exampleTr": "Gerçek verilerle desteklenen güçlü bir argümanımız vardı."
+ },
+ {
+  "id": "2675",
+  "definitionTr": "Güç, etki veya iyi destekten yoksun olmak.",
+  "exampleTr": "Rakamlar olmadan orijinal argüman zayıftı."
+ },
+ {
+  "id": "2676",
+  "definitionTr": "Başa çıkması güç veya çok dayanıklı.",
+  "exampleTr": "Zor bir karar oldu ama doğru olanıydı."
+ },
+ {
+  "id": "2677",
+  "definitionTr": "Tavırda nazik veya bastırmaya ve bükmeye kolay.",
+  "exampleTr": "Ekip çok yeni olduğu için daha yumuşak bir yaklaşım benimsedim."
+ },
+ {
+  "id": "2678",
+  "definitionTr": "Çok ağırlığı olmayan ve az çaba gerektiren.",
+  "exampleTr": "Süreci bilerek hafif tuttuk."
+ },
+ {
+  "id": "2679",
+  "definitionTr": "Çok ağırlığı olan veya çok zorlayıcı.",
+  "exampleTr": "İş yükü ağırlaştı, bu yüzden yardım istedim."
+ },
+ {
+  "id": "2680",
+  "definitionTr": "Aşağıya doğru uzanan veya çok kapsamlı.",
+  "exampleTr": "Kararı vermeden önce derinlemesine inceledik."
+ },
+ {
+  "id": "2681",
+  "definitionTr": "Bir uçtan diğerine çok mesafe olan.",
+  "exampleTr": "Daraltmadan önce geniş bir bakış açısı aldık."
+ },
+ {
+  "id": "2682",
+  "definitionTr": "Bir uçtan diğerine az mesafe olan.",
+  "exampleTr": "Son tarihe yetişmek için kapsamı daralttık."
+ },
+ {
+  "id": "2683",
+  "definitionTr": "Ayrıntıya girmeden birçok konuyu kapsayan.",
+  "exampleTr": "Genel bir yanıt verdim, sonra istek üzerine ayrıntıya girdim."
+ },
+ {
+  "id": "2684",
+  "definitionTr": "Doğrudan veya açık bir şekilde yapılmayan.",
+  "exampleTr": "Etki dolaylıydı ama yine de önemliydi."
+ },
+ {
+  "id": "2685",
+  "definitionTr": "Yakındaki küçük bir alana veya yere ait.",
+  "exampleTr": "Küresel olarak yayına almadan önce yerelde test ettik."
+ },
+ {
+  "id": "2686",
+  "definitionTr": "Tüm dünyayı veya bütün bir sistemi kapsayan.",
+  "exampleTr": "Tek bir pazar kararı vermeden önce küresel bir bakış açısı aldık."
+ },
+ {
+  "id": "2687",
+  "definitionTr": "Tek bir bireye ait ve ona özel.",
+  "exampleTr": "O süreci düzeltmeyi kişisel bir hedef haline getirdim."
+ },
+ {
+  "id": "2688",
+  "definitionTr": "İşte beklenen beceri ve davranışları göstermek.",
+  "exampleTr": "Gerilse bile durumu profesyonel tuttum."
+ }
+]

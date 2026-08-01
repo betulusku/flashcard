@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "2689",
+  "en": "official",
+  "tr": "Resmi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We made it official once leadership signed off.",
+  "definition": "Approved or issued by someone in authority."
+ },
+ {
+  "id": "2690",
+  "en": "formal",
+  "tr": "Resmi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I kept the update formal since executives were reading it.",
+  "definition": "Serious and correct in style, suitable for business."
+ },
+ {
+  "id": "2691",
+  "en": "informal",
+  "tr": "Gayriresmi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We had an informal chat before the official proposal.",
+  "definition": "Relaxed and casual, not following strict rules."
+ },
+ {
+  "id": "2692",
+  "en": "private",
+  "tr": "Özel",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I raised it privately before bringing it to the group.",
+  "definition": "Meant for one person or a small group only."
+ },
+ {
+  "id": "2693",
+  "en": "public",
+  "tr": "Herkese açık, kamusal",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We made the roadmap public to build trust.",
+  "definition": "Open to everyone and not kept secret."
+ },
+ {
+  "id": "2694",
+  "en": "equal",
+  "tr": "Eşit",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I gave every option equal consideration.",
+  "definition": "The same in size, amount, or importance."
+ },
+ {
+  "id": "2695",
+  "en": "similar",
+  "tr": "Benzer",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We'd faced a similar problem the year before.",
+  "definition": "Almost the same as something else but not identical."
+ },
+ {
+  "id": "2696",
+  "en": "different",
+  "tr": "Farklı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "This role is different in a good way.",
+  "definition": "Not the same as something else."
+ },
+ {
+  "id": "2697",
+  "en": "single",
+  "tr": "Tek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "One single conversation solved most of the confusion.",
+  "definition": "Only one, with no others."
+ },
+ {
+  "id": "2698",
+  "en": "double",
+  "tr": "İki katı, çift",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We doubled the team without doubling the chaos.",
+  "definition": "Twice as much or twice as many."
+ },
+ {
+  "id": "2699",
+  "en": "extra",
+  "tr": "Ekstra, fazladan",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I built in extra time for the parts I was least sure about.",
+  "definition": "More than what is usual or needed."
+ },
+ {
+  "id": "2700",
+  "en": "additional",
+  "tr": "Ek, ilave",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We needed additional testing before we felt confident.",
+  "definition": "More of something beyond what you already have."
+ },
+ {
+  "id": "2701",
+  "en": "enough",
+  "tr": "Yeterli",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We didn't have enough data yet, so we waited.",
+  "definition": "As much as you need, and no less."
+ },
+ {
+  "id": "2702",
+  "en": "valuable",
+  "tr": "Değerli",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That feedback was more valuable than any metric.",
+  "definition": "Worth a lot of money or very important."
+ },
+ {
+  "id": "2703",
+  "en": "useful",
+  "tr": "Yararlı, kullanışlı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "It turned out to be a genuinely useful tool.",
+  "definition": "Practical and good for a particular purpose."
+ },
+ {
+  "id": "2704",
+  "en": "helpful",
+  "tr": "Yardımcı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "She was incredibly helpful during my first month.",
+  "definition": "Giving support or making a task easier for someone."
+ },
+ {
+  "id": "2705",
+  "en": "harmful",
+  "tr": "Zararlı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That shortcut turned out to be harmful long-term.",
+  "definition": "Causing damage or bad effects to someone."
+ },
+ {
+  "id": "2706",
+  "en": "area",
+  "tr": "Alan, bölge",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I focused on the area that mattered most to users.",
+  "definition": "A part of a place or a field of activity."
+ },
+ {
+  "id": "2707",
+  "en": "subject",
+  "tr": "Konu, ders",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That's a subject I know really well.",
+  "definition": "A topic studied at school or discussed by people."
+ },
+ {
+  "id": "2708",
+  "en": "topic",
+  "tr": "Konu, başlık",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We covered three topics in that one call.",
+  "definition": "The main thing that people talk or write about."
+ },
+ {
+  "id": "2709",
+  "en": "content",
+  "tr": "İçerik",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I reviewed the content before it went out.",
+  "definition": "The information or ideas inside a text or video."
+ },
+ {
+  "id": "2710",
+  "en": "material",
+  "tr": "Materyal, malzeme",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I prepared the training material myself.",
+  "definition": "Items or documents needed to make or teach something."
+ },
+ {
+  "id": "2711",
+  "en": "file",
+  "tr": "Dosya",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I organized the files so anyone could find them.",
+  "definition": "A single document stored on a computer."
+ },
+ {
+  "id": "2712",
+  "en": "form",
+  "tr": "Form, biçim",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We simplified the form from ten fields to three.",
+  "definition": "A printed or online sheet with blanks to fill in."
+ },
+ {
+  "id": "2713",
+  "en": "copy",
+  "tr": "Kopya",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I kept a copy of every version, just in case.",
+  "definition": "Something made to be exactly like the original."
+ },
+ {
+  "id": "2714",
+  "en": "version",
+  "tr": "Sürüm, versiyon",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We tested the earlier version alongside the new one.",
+  "definition": "One particular stage of something that keeps changing."
+ },
+ {
+  "id": "2715",
+  "en": "draft",
+  "tr": "Taslak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I shared a rough draft to get early feedback.",
+  "definition": "An early rough piece of writing before the final one."
+ },
+ {
+  "id": "2716",
+  "en": "edition",
+  "tr": "Baskı, sürüm",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "This was the third edition of that report.",
+  "definition": "One printing of a book or report at a particular time."
+ },
+ {
+  "id": "2717",
+  "en": "sample",
+  "tr": "Örnek, numune",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I showed a sample before building the full thing.",
+  "definition": "A small part shown to represent the whole thing."
+ },
+ {
+  "id": "2718",
+  "en": "model",
+  "tr": "Model",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We built a simple model to estimate the impact.",
+  "definition": "A simple representation used to explain or predict something."
+ },
+ {
+  "id": "2719",
+  "en": "pattern",
+  "tr": "Desen, örüntü",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I noticed a pattern in the complaints.",
+  "definition": "A regular way things repeat that you can notice."
+ },
+ {
+  "id": "2720",
+  "en": "trend",
+  "tr": "Eğilim, trend",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We spotted the trend before it showed up in the report.",
+  "definition": "A general direction in which things are changing."
+ },
+ {
+  "id": "2721",
+  "en": "route",
+  "tr": "Yol, güzergah",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We took a longer route to avoid a bigger risk.",
+  "definition": "The line you travel along from one place to another."
+ },
+ {
+  "id": "2722",
+  "en": "path",
+  "tr": "Yol, patika",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "There wasn't a clear path, so I made one.",
+  "definition": "A narrow track to walk on, or a course to follow."
+ },
+ {
+  "id": "2723",
+  "en": "way",
+  "tr": "Yol, yöntem",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "There's always more than one way to solve it.",
+  "definition": "A method or manner of doing something."
+ },
+ {
+  "id": "2724",
+  "en": "means",
+  "tr": "Araç, yol, imkan",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We didn't have the means to test everything at once.",
+  "definition": "The money, tools, or resources needed to do something."
+ },
+ {
+  "id": "2725",
+  "en": "option",
+  "tr": "Seçenek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I gave leadership three clear options.",
+  "definition": "One of the choices you can pick from."
+ },
+ {
+  "id": "2726",
+  "en": "alternative",
+  "tr": "Alternatif",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We found a cheaper alternative that worked just as well.",
+  "definition": "Another choice you can take instead of the first."
+ },
+ {
+  "id": "2727",
+  "en": "scenario",
+  "tr": "Senaryo",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I planned for the worst-case scenario, just in case.",
+  "definition": "A possible situation that might happen in the future."
+ },
+ {
+  "id": "2728",
+  "en": "case",
+  "tr": "Durum, vaka",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "In this case, speed mattered more than polish.",
+  "definition": "A particular situation or example being discussed."
+ },
+ {
+  "id": "2729",
+  "en": "instance",
+  "tr": "Örnek, durum",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "In one instance, the fix took less than an hour.",
+  "definition": "A single example of something happening."
+ },
+ {
+  "id": "2730",
+  "en": "occasion",
+  "tr": "Durum, vesile",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "On one occasion, I had to make the call alone.",
+  "definition": "A particular time when something happens."
+ },
+ {
+  "id": "2731",
+  "en": "event",
+  "tr": "Olay, etkinlik",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That event changed how we approached testing.",
+  "definition": "Something that happens, often planned and important."
+ },
+ {
+  "id": "2732",
+  "en": "incident",
+  "tr": "Olay, aksilik",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We wrote up the incident so it wouldn't repeat.",
+  "definition": "An unpleasant or unusual thing that happens."
+ },
+ {
+  "id": "2733",
+  "en": "accident",
+  "tr": "Kaza, kaza eseri",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "It was an accident, not negligence, and I said so.",
+  "definition": "Something bad that happens without anyone planning it."
+ },
+ {
+  "id": "2734",
+  "en": "judgment",
+  "tr": "Muhakeme, karar",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I trusted my own judgment when the data was thin.",
+  "definition": "The ability to make good decisions after thinking carefully."
+ },
+ {
+  "id": "2735",
+  "en": "significance",
+  "tr": "Önem, anlam",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I explained the significance in plain terms.",
+  "definition": "The importance or meaning that something carries."
+ },
+ {
+  "id": "2736",
+  "en": "aim",
+  "tr": "Amaç, hedef",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My aim was simple: fewer clicks, faster results.",
+  "definition": "The result you are trying to achieve."
+ },
+ {
+  "id": "2737",
+  "en": "mission",
+  "tr": "Misyon, görev",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The mission was clear, even when the plan wasn't.",
+  "definition": "An important purpose a group is committed to."
+ },
+ {
+  "id": "2738",
+  "en": "vision",
+  "tr": "Vizyon",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I shared the vision early so everyone could rally behind it.",
+  "definition": "A clear picture of the future you want to create."
+ },
+ {
+  "id": "2739",
+  "en": "principle",
+  "tr": "İlke, prensip",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "One principle guided every decision: simplicity first.",
+  "definition": "A basic rule that guides how you act."
+ },
+ {
+  "id": "2740",
+  "en": "guideline",
+  "tr": "Yönerge, kılavuz",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I wrote a short guideline so decisions stayed consistent.",
+  "definition": "A written rule that suggests the right way to act."
+ },
+ {
+  "id": "2741",
+  "en": "format",
+  "tr": "Biçim, format",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We changed the format once we saw it wasn't working.",
+  "definition": "The way something is arranged or presented."
+ },
+ {
+  "id": "2742",
+  "en": "style",
+  "tr": "Tarz, üslup",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My communication style is direct but respectful.",
+  "definition": "A personal way of doing, writing, or dressing."
+ },
+ {
+  "id": "2743",
+  "en": "launch",
+  "tr": "Başlatmak, piyasaya sürmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We launched with a small group before going wide.",
+  "definition": "To make a new product available to the public."
+ },
+ {
+  "id": "2744",
+  "en": "close",
+  "tr": "Kapatmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I closed the loop with everyone involved.",
+  "definition": "To shut something or bring it to a finish."
+ },
+ {
+  "id": "2745",
+  "en": "end",
+  "tr": "Bitirmek, sona erdirmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I ended the meeting five minutes early on purpose.",
+  "definition": "To make something stop or finish."
+ },
+ {
+  "id": "2746",
+  "en": "pause",
+  "tr": "Durdurmak, ara vermek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We paused the rollout to fix one small issue.",
+  "definition": "To stop something for a short time before continuing."
+ },
+ {
+  "id": "2747",
+  "en": "delay",
+  "tr": "Ertelemek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I delayed the launch by a week for the sake of quality.",
+  "definition": "To make something happen later than planned."
+ },
+ {
+  "id": "2748",
+  "en": "cancel",
+  "tr": "İptal etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I canceled the meeting once it was no longer necessary.",
+  "definition": "To decide that a planned thing will not happen."
+ },
+ {
+  "id": "2749",
+  "en": "restart",
+  "tr": "Yeniden başlatmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We restarted the process with a clearer plan.",
+  "definition": "To begin something again after it has stopped."
+ },
+ {
+  "id": "2750",
+  "en": "repeat",
+  "tr": "Tekrarlamak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I repeated the test to make sure the result held.",
+  "definition": "To do or say the same thing again."
+ },
+ {
+  "id": "2751",
+  "en": "revise",
+  "tr": "Gözden geçirip düzeltmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I revised the plan once the scope changed.",
+  "definition": "To change a text or plan to make it better."
+ },
+ {
+  "id": "2752",
+  "en": "apply",
+  "tr": "Uygulamak, başvurmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I applied the same method to a completely different problem.",
+  "definition": "To put a rule or method into real action."
+ },
+ {
+  "id": "2753",
+  "en": "attach",
+  "tr": "Eklemek, iliştirmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I attached the data so no one had to ask for it.",
+  "definition": "To join or add one thing to another."
+ },
+ {
+  "id": "2754",
+  "en": "connect",
+  "tr": "Bağlamak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I connected the two teams directly instead of relaying messages.",
+  "definition": "To join two things or people so they work together."
+ },
+ {
+  "id": "2755",
+  "en": "link",
+  "tr": "Bağlamak, ilişkilendirmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I linked the metric back to a real business outcome.",
+  "definition": "To show a clear relationship between two things."
+ },
+ {
+  "id": "2756",
+  "en": "mix",
+  "tr": "Karıştırmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We mixed both approaches and it worked better than either alone.",
+  "definition": "To combine two or more things together."
+ },
+ {
+  "id": "2757",
+  "en": "match",
+  "tr": "Eşleştirmek, uymak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I matched the task to the person's actual strength.",
+  "definition": "To put together two things that go well."
+ },
+ {
+  "id": "2758",
+  "en": "fit",
+  "tr": "Uymak, oturmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The solution had to fit within a tight budget.",
+  "definition": "To be the right size or shape for something."
+ },
+ {
+  "id": "2759",
+  "en": "suit",
+  "tr": "Uygun olmak, uymak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That role suited my strengths better than the last one.",
+  "definition": "To be right or convenient for someone."
+ },
+ {
+  "id": "2760",
+  "en": "cover",
+  "tr": "Kapsamak, ele almak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I covered the risk in the first slide, not the last.",
+  "definition": "To include or deal with a subject."
+ },
+ {
+  "id": "2761",
+  "en": "contain",
+  "tr": "İçermek, barındırmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The report contained everything leadership needed.",
+  "definition": "To hold something inside as part of it."
+ },
+ {
+  "id": "2762",
+  "en": "carry",
+  "tr": "Taşımak, yürütmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I carried that project from idea to launch.",
+  "definition": "To hold something and take it somewhere."
+ },
+ {
+  "id": "2763",
+  "en": "back",
+  "tr": "Desteklemek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I backed my recommendation with real numbers.",
+  "definition": "To give support to a person, plan, or idea."
+ },
+ {
+  "id": "2764",
+  "en": "push",
+  "tr": "İtmek, zorlamak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I pushed for a more realistic timeline.",
+  "definition": "To move something away from you using force."
+ },
+ {
+  "id": "2765",
+  "en": "pull",
+  "tr": "Çekmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We pulled the data straight from the source, not a summary.",
+  "definition": "To move something toward you using force."
+ },
+ {
+  "id": "2766",
+  "en": "drive",
+  "tr": "Yönlendirmek, sürmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I drove the project without waiting for permission.",
+  "definition": "To lead an effort forward and make it progress."
+ },
+ {
+  "id": "2767",
+  "en": "force",
+  "tr": "Zorlamak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I never force a decision before it's ready.",
+  "definition": "To make someone do something they do not want."
+ },
+ {
+  "id": "2768",
+  "en": "press",
+  "tr": "Baskı yapmak, ısrar etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I pressed for clarity before agreeing to the deadline.",
+  "definition": "To push firmly, or to demand something strongly."
+ },
+ {
+  "id": "2769",
+  "en": "urge",
+  "tr": "Israrla tavsiye etmek, teşvik etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I urged the team to test before assuming.",
+  "definition": "To strongly advise someone to do something."
+ },
+ {
+  "id": "2770",
+  "en": "insist",
+  "tr": "Israr etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I insisted on a smaller pilot first.",
+  "definition": "To say firmly that something must happen."
+ },
+ {
+  "id": "2771",
+  "en": "refuse",
+  "tr": "Reddetmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I refused to cut corners on testing.",
+  "definition": "To say no to doing or accepting something."
+ },
+ {
+  "id": "2772",
+  "en": "deny",
+  "tr": "İnkar etmek, reddetmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I never deny a mistake, I just fix it fast.",
+  "definition": "To say that something is not true."
+ },
+ {
+  "id": "2773",
+  "en": "admit",
+  "tr": "Kabul etmek, itiraf etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I admitted the estimate was wrong as soon as I knew.",
+  "definition": "To agree that something bad is true."
+ },
+ {
+  "id": "2774",
+  "en": "confess",
+  "tr": "İtiraf etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I'll confess, my first plan for that project was too ambitious.",
+  "definition": "To tell someone about a mistake or secret you kept."
+ },
+ {
+  "id": "2775",
+  "en": "claim",
+  "tr": "İddia etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I never claim credit I haven't earned.",
+  "definition": "To say something is true without proving it."
+ },
+ {
+  "id": "2776",
+  "en": "state",
+  "tr": "Belirtmek, ifade etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I stated the risk clearly before we committed.",
+  "definition": "To say something clearly and definitely."
+ },
+ {
+  "id": "2777",
+  "en": "declare",
+  "tr": "Beyan etmek, ilan etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We declared the project complete once every check passed.",
+  "definition": "To announce something officially and formally."
+ },
+ {
+  "id": "2778",
+  "en": "announce",
+  "tr": "Duyurmak, açıklamak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We announced the change once every team was ready.",
+  "definition": "To tell people about something officially for the first time."
+ },
+ {
+  "id": "2779",
+  "en": "hide",
+  "tr": "Saklamak, gizlemek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I never hide bad news, I just deliver it early.",
+  "definition": "To put something where nobody can see it."
+ },
+ {
+  "id": "2780",
+  "en": "expose",
+  "tr": "Ortaya çıkarmak, açığa çıkarmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The test exposed a flaw we hadn't caught in review.",
+  "definition": "To make something secret become visible to everyone."
+ },
+ {
+  "id": "2781",
+  "en": "defend",
+  "tr": "Savunmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I defended the decision with data, not just opinion.",
+  "definition": "To protect something or argue in its support."
+ },
+ {
+  "id": "2782",
+  "en": "attack",
+  "tr": "Saldırmak, eleştirmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I try to attack the problem, not the person.",
+  "definition": "To try to hurt or strongly criticize someone."
+ },
+ {
+  "id": "2783",
+  "en": "threaten",
+  "tr": "Tehdit etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The delay threatened to push the whole roadmap back.",
+  "definition": "To warn of harm, or be likely to cause it."
+ },
+ {
+  "id": "2784",
+  "en": "gamble",
+  "tr": "Kumar oynamak, riske girmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We gambled on a small experiment, and it paid off.",
+  "definition": "To take a risk hoping for a good result."
+ },
+ {
+  "id": "2785",
+  "en": "bet",
+  "tr": "Bahse girmek, iddiaya girmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I'd bet on the team over the plan any day.",
+  "definition": "To risk money on a result, or feel very sure."
+ },
+ {
+  "id": "2786",
+  "en": "also",
+  "tr": "Ayrıca, de/da",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I also checked with legal before finalizing it.",
+  "definition": "In addition to what has been said."
+ },
+ {
+  "id": "2787",
+  "en": "too",
+  "tr": "Ayrıca, de/da",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I was worried too, so I asked more questions.",
+  "definition": "As well, in addition to something else."
+ },
+ {
+  "id": "2788",
+  "en": "either",
+  "tr": "Ya da, de/da (olumsuz)",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I didn't have the answer either, so I asked.",
+  "definition": "Also, but in a negative sentence."
+ },
+ {
+  "id": "2789",
+  "en": "still",
+  "tr": "Hâlâ",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We're still refining the process, even a year later.",
+  "definition": "Continuing now, even after a long time."
+ },
+ {
+  "id": "2790",
+  "en": "yet",
+  "tr": "Henüz",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We haven't launched yet, but we're close.",
+  "definition": "Up to now, in questions and negative sentences."
+ },
+ {
+  "id": "2791",
+  "en": "already",
+  "tr": "Zaten, çoktan",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We had already tested that exact idea, actually.",
+  "definition": "Before now, or sooner than expected."
+ },
+ {
+  "id": "2792",
+  "en": "again",
+  "tr": "Tekrar, yeniden",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I ran the test again just to be sure.",
+  "definition": "One more time, after doing it before."
+ },
+ {
+  "id": "2793",
+  "en": "once",
+  "tr": "Bir kez, bir zamanlar",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Once we saw the data, the decision was easy.",
+  "definition": "One time only, or as soon as something happens."
+ },
+ {
+  "id": "2794",
+  "en": "never",
+  "tr": "Asla, hiç",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I never launch without at least a small test.",
+  "definition": "At no time, not on any occasion."
+ },
+ {
+  "id": "2795",
+  "en": "always",
+  "tr": "Her zaman",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I always ask why before asking how.",
+  "definition": "Every time, without any exception."
+ },
+ {
+  "id": "2796",
+  "en": "sometimes",
+  "tr": "Bazen",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Sometimes the simplest fix is also the hardest to see.",
+  "definition": "Now and then, but not regularly."
+ },
+ {
+  "id": "2797",
+  "en": "often",
+  "tr": "Sık sık",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I often start with a rough prototype, not a spec.",
+  "definition": "Many times, happening again and again."
+ },
+ {
+  "id": "2798",
+  "en": "seldom",
+  "tr": "Nadiren",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We seldom miss a deadline anymore since adding a buffer.",
+  "definition": "Almost never, only on rare occasions."
+ },
+ {
+  "id": "2799",
+  "en": "perhaps",
+  "tr": "Belki",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Perhaps the timeline was too ambitious from the start.",
+  "definition": "Possibly true, though nobody knows for certain."
+ },
+ {
+  "id": "2800",
+  "en": "maybe",
+  "tr": "Belki",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Maybe the simpler version was the right call all along.",
+  "definition": "Possibly, though it might not happen."
+ },
+ {
+  "id": "2801",
+  "en": "probably",
+  "tr": "Muhtemelen",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We'll probably need one more round of testing.",
+  "definition": "Very likely, almost certain to be true."
+ },
+ {
+  "id": "2802",
+  "en": "certainly",
+  "tr": "Kesinlikle",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That was certainly the harder path, but the right one.",
+  "definition": "Without any doubt at all."
+ },
+ {
+  "id": "2803",
+  "en": "definitely",
+  "tr": "Kesinlikle",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I'll definitely follow up before the end of the week.",
+  "definition": "For sure, with no room for doubt."
+ },
+ {
+  "id": "2804",
+  "en": "absolutely",
+  "tr": "Kesinlikle, tamamen",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I absolutely stand by that decision.",
+  "definition": "Completely and totally, in every way."
+ },
+ {
+  "id": "2805",
+  "en": "exactly",
+  "tr": "Tam olarak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That's exactly the risk I was worried about.",
+  "definition": "In a precise way, with nothing different."
+ },
+ {
+  "id": "2806",
+  "en": "almost",
+  "tr": "Neredeyse",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We almost missed it, but caught it in time.",
+  "definition": "Very nearly but not completely."
+ },
+ {
+  "id": "2807",
+  "en": "quite",
+  "tr": "Oldukça",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "It was quite a shift from my previous role.",
+  "definition": "To a fairly large degree."
+ },
+ {
+  "id": "2808",
+  "en": "rather",
+  "tr": "Oldukça, aksine",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I'd rather ship something small than wait for perfect.",
+  "definition": "Showing that you prefer one thing to another."
+ },
+ {
+  "id": "2809",
+  "en": "fairly",
+  "tr": "Oldukça, adil bir şekilde",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "It was a fairly simple fix once we found the cause.",
+  "definition": "To a moderate degree, more than a little."
+ },
+ {
+  "id": "2810",
+  "en": "pretty",
+  "tr": "Oldukça (gündelik)",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The results were pretty encouraging early on.",
+  "definition": "Quite or reasonably, in casual speech."
+ },
+ {
+  "id": "2811",
+  "en": "extremely",
+  "tr": "Son derece",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I was extremely careful with that migration.",
+  "definition": "To a very great degree."
+ },
+ {
+  "id": "2812",
+  "en": "incredibly",
+  "tr": "İnanılmaz derecede",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "She was incredibly helpful during my first month.",
+  "definition": "Surprisingly, to an amazing degree."
+ },
+ {
+  "id": "2813",
+  "en": "especially",
+  "tr": "Özellikle",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Especially early on, small wins matter a lot.",
+  "definition": "More than usual, above all others."
+ },
+ {
+  "id": "2814",
+  "en": "otherwise",
+  "tr": "Aksi takdirde",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Otherwise, we'd have missed the deadline entirely.",
+  "definition": "If the situation were different, this would happen."
+ },
+ {
+  "id": "2815",
+  "en": "instead",
+  "tr": "Onun yerine",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Instead of guessing, I just asked the user directly.",
+  "definition": "In place of something or someone else."
+ },
+ {
+  "id": "2816",
+  "en": "together",
+  "tr": "Birlikte",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We solved it together, faster than either of us alone.",
+  "definition": "With each other, as a group."
+ },
+ {
+  "id": "2817",
+  "en": "apart",
+  "tr": "Ayrı, ayrı ayrı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We worked apart but stayed in constant sync.",
+  "definition": "Separated by distance, not close to each other."
+ },
+ {
+  "id": "2818",
+  "en": "alone",
+  "tr": "Yalnız, tek başına",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I made that call alone, and I stand by it.",
+  "definition": "Without anyone else present or helping."
+ },
+ {
+  "id": "2819",
+  "en": "truly",
+  "tr": "Gerçekten",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I'm truly proud of how the team handled that setback.",
+  "definition": "In a real and honest way."
+ },
+ {
+  "id": "2820",
+  "en": "really",
+  "tr": "Gerçekten",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That feedback really changed how I approached the redesign.",
+  "definition": "In fact, or to a great degree."
+ },
+ {
+  "id": "2821",
+  "en": "actually",
+  "tr": "Aslında",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Actually, the simpler option turned out to be the better one.",
+  "definition": "In fact, contrary to what people believe."
+ },
+ {
+  "id": "2822",
+  "en": "simply",
+  "tr": "Basitçe",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Simply asking the right question saved us a week.",
+  "definition": "In an easy and uncomplicated way."
+ },
+ {
+  "id": "2823",
+  "en": "merely",
+  "tr": "Sadece, yalnızca",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "It wasn't merely a bug, it was a design flaw.",
+  "definition": "Nothing more than, and nothing else."
+ },
+ {
+  "id": "2824",
+  "en": "just",
+  "tr": "Sadece, tam da",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I just needed one more data point to decide.",
+  "definition": "Only, or exactly at that point."
+ },
+ {
+  "id": "2825",
+  "en": "only",
+  "tr": "Sadece",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "It only took one conversation to align the team.",
+  "definition": "Nothing or nobody more than this."
+ },
+ {
+  "id": "2826",
+  "en": "even",
+  "tr": "Hatta, bile",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Even the small wins mattered to team morale.",
+  "definition": "Showing that something is surprising or unexpected."
+ },
+ {
+  "id": "2827",
+  "en": "today",
+  "tr": "Bugün",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I want this resolved today, not next week.",
+  "definition": "On the present date, at this time."
+ },
+ {
+  "id": "2828",
+  "en": "tomorrow",
+  "tr": "Yarın",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I'll have the draft ready by tomorrow morning.",
+  "definition": "The day after the present one."
+ },
+ {
+  "id": "2829",
+  "en": "yesterday",
+  "tr": "Dün",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We fixed the bug yesterday, before it affected more users.",
+  "definition": "The day before the present one."
+ },
+ {
+  "id": "2830",
+  "en": "week",
+  "tr": "Hafta",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We review priorities at the start of every week.",
+  "definition": "A period of seven days."
+ },
+ {
+  "id": "2831",
+  "en": "month",
+  "tr": "Ay",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We hit the target with a full month to spare.",
+  "definition": "One of the twelve parts of a year."
+ },
+ {
+  "id": "2832",
+  "en": "year",
+  "tr": "Yıl",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "This was the busiest year of my career so far.",
+  "definition": "A period of twelve months."
+ },
+ {
+  "id": "2833",
+  "en": "hour",
+  "tr": "Saat",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I block the first hour of my day for focused work.",
+  "definition": "A period of sixty minutes."
+ },
+ {
+  "id": "2834",
+  "en": "minute",
+  "tr": "Dakika",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I kept the update to under five minutes.",
+  "definition": "A period of sixty seconds."
+ },
+ {
+  "id": "2835",
+  "en": "moment",
+  "tr": "An, süre",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "There was a moment when the whole plan felt shaky.",
+  "definition": "A very short piece of time."
+ },
+ {
+  "id": "2836",
+  "en": "period",
+  "tr": "Dönem, süre",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We had a slow period before things picked up again.",
+  "definition": "A length of time with a clear beginning and finish."
+ },
+ {
+  "id": "2837",
+  "en": "term",
+  "tr": "Dönem, süre, terim",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "In the short term, we lost speed; in the long term, we gained trust.",
+  "definition": "A fixed length of time, short or long."
+ },
+ {
+  "id": "2838",
+  "en": "season",
+  "tr": "Sezon, dönem",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We planned around the busy season, not against it.",
+  "definition": "A part of the year with its own weather or activity."
+ },
+ {
+  "id": "2839",
+  "en": "deadline",
+  "tr": "Son tarih",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I never miss a deadline without flagging it early.",
+  "definition": "The latest time by which work must be finished."
+ },
+ {
+  "id": "2840",
+  "en": "timeline",
+  "tr": "Zaman çizelgesi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I built the timeline backward from the launch date.",
+  "definition": "A plan showing when each step should happen."
+ },
+ {
+  "id": "2841",
+  "en": "calendar",
+  "tr": "Takvim",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I keep my calendar realistic, not aspirational.",
+  "definition": "A chart showing days and months for planning."
+ },
+ {
+  "id": "2842",
+  "en": "date",
+  "tr": "Tarih",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We picked a date and worked backward from it.",
+  "definition": "The particular day, month, and year of something."
+ },
+ {
+  "id": "2843",
+  "en": "office",
+  "tr": "Ofis",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I spend two days a week in the office, by choice.",
+  "definition": "A place where people do their business work."
+ },
+ {
+  "id": "2844",
+  "en": "desk",
+  "tr": "Masa",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I keep my desk simple so I can focus.",
+  "definition": "A table where you sit to work or write."
+ },
+ {
+  "id": "2845",
+  "en": "building",
+  "tr": "Bina",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Our building didn't have great meeting rooms, so we improvised.",
+  "definition": "A structure with walls and a roof for people."
+ },
+ {
+  "id": "2846",
+  "en": "room",
+  "tr": "Oda",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We booked a bigger room once the team grew.",
+  "definition": "A separate space inside a house or workplace."
+ },
+ {
+  "id": "2847",
+  "en": "floor",
+  "tr": "Kat",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Our whole floor moved to a new open layout.",
+  "definition": "One level of a tall structure."
+ },
+ {
+  "id": "2848",
+  "en": "device",
+  "tr": "Cihaz",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We tested on the oldest device we could find.",
+  "definition": "A small machine made for a particular job."
+ },
+ {
+  "id": "2849",
+  "en": "screen",
+  "tr": "Ekran",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I designed the flow around a single screen, not five.",
+  "definition": "The flat surface where a computer shows images."
+ },
+ {
+  "id": "2850",
+  "en": "phone",
+  "tr": "Telefon",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Most of our users are on a phone, not a desktop.",
+  "definition": "A small device you carry to call or message people."
+ },
+ {
+  "id": "2851",
+  "en": "computer",
+  "tr": "Bilgisayar",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I do most of my deep work away from my computer.",
+  "definition": "A machine that stores data and runs programs."
+ },
+ {
+  "id": "2852",
+  "en": "internet",
+  "tr": "İnternet",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Half our users have unreliable internet, so we built for that.",
+  "definition": "The worldwide system that links computers and people."
+ },
+ {
+  "id": "2853",
+  "en": "website",
+  "tr": "Web sitesi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We redesigned the website around one clear action.",
+  "definition": "A set of pages a company publishes online."
+ },
+ {
+  "id": "2854",
+  "en": "program",
+  "tr": "Program",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I wrote a small program to automate the report.",
+  "definition": "A set of instructions that makes a computer work."
+ },
+ {
+  "id": "2855",
+  "en": "account",
+  "tr": "Hesap",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Every user gets a working account within a minute.",
+  "definition": "A personal record that lets you sign in somewhere."
+ },
+ {
+  "id": "2856",
+  "en": "password",
+  "tr": "Şifre",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We simplified password recovery and support tickets dropped.",
+  "definition": "A secret code you type to prove who you are."
+ },
+ {
+  "id": "2857",
+  "en": "network",
+  "tr": "Ağ",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I built a strong network long before I needed it.",
+  "definition": "A group of people or computers connected to each other."
+ },
+ {
+  "id": "2858",
+  "en": "platform",
+  "tr": "Platform",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We chose a platform that could scale with us.",
+  "definition": "A system that others build products or services on."
+ },
+ {
+  "id": "2859",
+  "en": "software",
+  "tr": "Yazılım",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The software was solid, but the onboarding wasn't.",
+  "definition": "The programs that tell a computer what to do."
+ },
+ {
+  "id": "2860",
+  "en": "hardware",
+  "tr": "Donanım",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We were limited by hardware, not by ambition.",
+  "definition": "The physical parts of a computer or machine."
+ },
+ {
+  "id": "2861",
+  "en": "institution",
+  "tr": "Kurum",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We partnered with a respected institution early on.",
+  "definition": "A large organization such as a bank or university."
+ },
+ {
+  "id": "2862",
+  "en": "agency",
+  "tr": "Ajans, kurum",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We worked with an outside agency for the launch campaign.",
+  "definition": "A business that provides a service for other companies."
+ },
+ {
+  "id": "2863",
+  "en": "firm",
+  "tr": "Şirket, firma",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I joined a small firm right out of school.",
+  "definition": "A company, especially one selling professional services."
+ },
+ {
+  "id": "2864",
+  "en": "branch",
+  "tr": "Şube, dal",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Our branch handled everything locally, without much oversight.",
+  "definition": "A local office of a larger company."
+ },
+ {
+  "id": "2865",
+  "en": "headquarters",
+  "tr": "Merkez ofis",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Headquarters gave us a lot of freedom to experiment.",
+  "definition": "The main office from which a company is run."
+ },
+ {
+  "id": "2866",
+  "en": "staff",
+  "tr": "Personel, kadro",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We kept the staff small on purpose.",
+  "definition": "All the people who work for an organization."
+ },
+ {
+  "id": "2867",
+  "en": "personnel",
+  "tr": "Personel",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We reorganized personnel around the new priorities.",
+  "definition": "The employees of a company, seen as a group."
+ },
+ {
+  "id": "2868",
+  "en": "workforce",
+  "tr": "İş gücü",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Half the workforce was fully remote by then.",
+  "definition": "All the people available for jobs in a country."
+ },
+ {
+  "id": "2869",
+  "en": "candidate",
+  "tr": "Aday",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I was the only internal candidate for that role.",
+  "definition": "A person being considered for a job or position."
+ },
+ {
+  "id": "2870",
+  "en": "applicant",
+  "tr": "Başvuru sahibi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We had far more applicants than we expected.",
+  "definition": "Someone who has formally asked for a job."
+ },
+ {
+  "id": "2871",
+  "en": "interview",
+  "tr": "Mülakat",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I treat every interview as a two-way conversation.",
+  "definition": "A meeting where someone is asked questions for a job."
+ },
+ {
+  "id": "2872",
+  "en": "resume",
+  "tr": "Özgeçmiş",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My resume didn't show half of what I actually did.",
+  "definition": "A short document listing your education and past jobs."
+ },
+ {
+  "id": "2873",
+  "en": "reference",
+  "tr": "Referans",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I asked for a reference from someone who'd seen me under pressure.",
+  "definition": "A person who can speak about your past performance."
+ },
+ {
+  "id": "2874",
+  "en": "promotion",
+  "tr": "Terfi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That promotion came from consistent results, not luck.",
+  "definition": "A move to a higher position at work."
+ },
+ {
+  "id": "2875",
+  "en": "bonus",
+  "tr": "Prim, ikramiye",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The bonus was nice, but the recognition mattered more.",
+  "definition": "Extra money paid for good results."
+ },
+ {
+  "id": "2876",
+  "en": "vacation",
+  "tr": "Tatil, izin",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I take vacation seriously so I come back sharper.",
+  "definition": "Time away from your job for rest."
+ },
+ {
+  "id": "2877",
+  "en": "holiday",
+  "tr": "Tatil günü",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We planned the launch around the holiday, not against it.",
+  "definition": "A special day when most people do not work."
+ },
+ {
+  "id": "2878",
+  "en": "weekend",
+  "tr": "Hafta sonu",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I try to protect my weekend, even during a crunch.",
+  "definition": "Saturday and Sunday, when most people rest."
+ },
+ {
+  "id": "2879",
+  "en": "routine",
+  "tr": "Rutin",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My morning routine hasn't changed in three years.",
+  "definition": "The set of things you regularly do in order."
+ },
+ {
+  "id": "2880",
+  "en": "practice",
+  "tr": "Uygulama, pratik",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Best practice isn't always the right practice for a small team.",
+  "definition": "The usual way of doing something in real situations."
+ }
+]

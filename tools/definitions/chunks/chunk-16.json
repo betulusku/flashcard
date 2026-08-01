@@ -1,0 +1,1721 @@
+[
+ {
+  "id": "2881",
+  "en": "procedure",
+  "tr": "Prosedür, işlem",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We simplified the procedure from six steps to two.",
+  "definition": "An official set of steps for doing something correctly."
+ },
+ {
+  "id": "2882",
+  "en": "technique",
+  "tr": "Teknik, yöntem",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I used a simple technique to prioritize the backlog.",
+  "definition": "A particular way of doing something skillfully."
+ },
+ {
+  "id": "2883",
+  "en": "skillset",
+  "tr": "Beceri seti",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My skillset grew a lot in that first year.",
+  "definition": "The group of abilities a person has for work."
+ },
+ {
+  "id": "2884",
+  "en": "expertise",
+  "tr": "Uzmanlık",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I brought expertise in data, not just design.",
+  "definition": "Deep knowledge or ability in one particular area."
+ },
+ {
+  "id": "2885",
+  "en": "specialty",
+  "tr": "Uzmanlık alanı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Turning messy data into a clear story is my specialty.",
+  "definition": "The subject or activity someone knows best."
+ },
+ {
+  "id": "2886",
+  "en": "credential",
+  "tr": "Referans belgesi, yeterlilik",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I let my results speak louder than my credentials.",
+  "definition": "An official paper proving your training or qualification."
+ },
+ {
+  "id": "2887",
+  "en": "degree",
+  "tr": "Derece, diploma",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My degree helped less than my first internship did.",
+  "definition": "A qualification given by a university after study."
+ },
+ {
+  "id": "2888",
+  "en": "certificate",
+  "tr": "Sertifika",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I earned that certificate on my own time, at night.",
+  "definition": "An official document showing you completed a course."
+ },
+ {
+  "id": "2889",
+  "en": "criteria",
+  "tr": "Kriterler, ölçütler",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We agreed on clear criteria before evaluating any option.",
+  "definition": "The standards used to judge or choose something."
+ },
+ {
+  "id": "2890",
+  "en": "index",
+  "tr": "Endeks, gösterge",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We tracked a simple index instead of ten scattered metrics.",
+  "definition": "A single number that shows how something changes."
+ },
+ {
+  "id": "2891",
+  "en": "rate",
+  "tr": "Oran, hız",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Our conversion rate improved once we simplified the form.",
+  "definition": "A measure of how much or how fast something happens."
+ },
+ {
+  "id": "2892",
+  "en": "ratio",
+  "tr": "Oran",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We kept a healthy ratio of senior to junior staff.",
+  "definition": "The relationship in size between two amounts."
+ },
+ {
+  "id": "2893",
+  "en": "percentage",
+  "tr": "Yüzde",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "A small percentage of users caused most of the support load.",
+  "definition": "A part of a whole expressed out of one hundred."
+ },
+ {
+  "id": "2894",
+  "en": "average",
+  "tr": "Ortalama",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The average masked a few really unhappy users.",
+  "definition": "The middle value found by adding numbers and dividing."
+ },
+ {
+  "id": "2895",
+  "en": "total",
+  "tr": "Toplam",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The total cost was lower than the original estimate.",
+  "definition": "The full amount after everything is added together."
+ },
+ {
+  "id": "2896",
+  "en": "sum",
+  "tr": "Toplam, meblağ",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The sum of small fixes added up to a big improvement.",
+  "definition": "The result of adding several amounts together."
+ },
+ {
+  "id": "2897",
+  "en": "surplus",
+  "tr": "Fazlalık, artı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We had a small surplus in the budget, so we invested it in testing.",
+  "definition": "An extra amount left over after needs are met."
+ },
+ {
+  "id": "2898",
+  "en": "shortage",
+  "tr": "Kıtlık, eksiklik",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We faced a shortage of engineering time that quarter.",
+  "definition": "A situation where there is not enough of something."
+ },
+ {
+  "id": "2899",
+  "en": "stock",
+  "tr": "Stok, envanter",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We ran low on stock faster than we forecasted.",
+  "definition": "The goods a shop or company has ready to sell."
+ },
+ {
+  "id": "2900",
+  "en": "inventory",
+  "tr": "Envanter, stok",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We simplified inventory tracking with one shared sheet.",
+  "definition": "The full record of goods a company currently holds."
+ },
+ {
+  "id": "2901",
+  "en": "warehouse",
+  "tr": "Depo",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The delay traced back to a single warehouse, not the whole chain.",
+  "definition": "A large building where goods are kept before selling."
+ },
+ {
+  "id": "2902",
+  "en": "delivery",
+  "tr": "Teslimat",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We shortened delivery time by fixing one bottleneck.",
+  "definition": "The act of bringing goods to a customer."
+ },
+ {
+  "id": "2903",
+  "en": "shipment",
+  "tr": "Sevkiyat, gönderi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The shipment was delayed, so I updated the client early.",
+  "definition": "A load of goods sent together to one place."
+ },
+ {
+  "id": "2904",
+  "en": "transport",
+  "tr": "Ulaşım, nakliye",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Transport costs were higher than expected that quarter.",
+  "definition": "The moving of people or goods from place to place."
+ },
+ {
+  "id": "2905",
+  "en": "feature",
+  "tr": "Özellik",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We shipped one feature well instead of three features poorly.",
+  "definition": "A specific function or part of a product."
+ },
+ {
+  "id": "2906",
+  "en": "interface",
+  "tr": "Arayüz",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We simplified the interface based on real user confusion.",
+  "definition": "The screen and controls that users see and touch."
+ },
+ {
+  "id": "2907",
+  "en": "database",
+  "tr": "Veritabanı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We moved to a faster database once traffic grew.",
+  "definition": "An organized store of information kept on a computer."
+ },
+ {
+  "id": "2908",
+  "en": "server",
+  "tr": "Sunucu",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The server handled peak traffic without any issues.",
+  "definition": "A powerful computer that sends information to other machines."
+ },
+ {
+  "id": "2909",
+  "en": "browser",
+  "tr": "Tarayıcı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We tested across every major browser before launch.",
+  "definition": "A program you use to open and read websites."
+ },
+ {
+  "id": "2910",
+  "en": "code",
+  "tr": "Kod",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I read the code myself before trusting the estimate.",
+  "definition": "The written instructions that make a program work."
+ },
+ {
+  "id": "2911",
+  "en": "bug",
+  "tr": "Hata, yazılım hatası",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We caught the bug before it reached any real users.",
+  "definition": "A mistake in software that makes it behave wrongly."
+ },
+ {
+  "id": "2912",
+  "en": "backup",
+  "tr": "Yedek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We kept a backup, just in case the migration failed.",
+  "definition": "An extra copy of files kept for safety."
+ },
+ {
+  "id": "2913",
+  "en": "login",
+  "tr": "Giriş (oturum açma)",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We simplified login and support tickets dropped instantly.",
+  "definition": "The act of entering your name and password."
+ },
+ {
+  "id": "2914",
+  "en": "signup",
+  "tr": "Kayıt olma",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Signup used to take five minutes; now it takes one.",
+  "definition": "The process of creating a new account."
+ },
+ {
+  "id": "2915",
+  "en": "subscription",
+  "tr": "Abonelik",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We simplified the subscription flow and revenue went up.",
+  "definition": "A regular payment that lets you keep using a service."
+ },
+ {
+  "id": "2916",
+  "en": "license",
+  "tr": "Lisans",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We reviewed the license terms before signing anything.",
+  "definition": "Official permission to use or sell something."
+ },
+ {
+  "id": "2917",
+  "en": "template",
+  "tr": "Şablon",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I built a template so no one had to start from zero.",
+  "definition": "A ready-made pattern you fill in each time."
+ },
+ {
+  "id": "2918",
+  "en": "layout",
+  "tr": "Düzen, yerleşim",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We tested two layouts before choosing the simpler one.",
+  "definition": "The way parts are arranged on a page."
+ },
+ {
+  "id": "2919",
+  "en": "icon",
+  "tr": "Simge, ikon",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "One confusing icon caused more support tickets than we expected.",
+  "definition": "A small picture that stands for a function."
+ },
+ {
+  "id": "2920",
+  "en": "button",
+  "tr": "Buton, düğme",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Moving one button improved conversion noticeably.",
+  "definition": "A small area you press to make something happen."
+ },
+ {
+  "id": "2921",
+  "en": "menu",
+  "tr": "Menü",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We cut the menu down to five clear options.",
+  "definition": "A list of choices shown on a screen."
+ },
+ {
+  "id": "2922",
+  "en": "setting",
+  "tr": "Ayar",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We hid advanced settings so new users wouldn't get lost.",
+  "definition": "An option you change to control how something works."
+ },
+ {
+  "id": "2923",
+  "en": "filter",
+  "tr": "Filtre",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Adding one filter made the whole list usable again.",
+  "definition": "A tool that shows only the items you want."
+ },
+ {
+  "id": "2924",
+  "en": "search",
+  "tr": "Arama",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Search was the single most requested feature that quarter.",
+  "definition": "A tool for finding things by typing words."
+ },
+ {
+  "id": "2925",
+  "en": "page",
+  "tr": "Sayfa",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We combined two pages into one and confusion dropped.",
+  "definition": "One single screen of a website or document."
+ },
+ {
+  "id": "2926",
+  "en": "section",
+  "tr": "Bölüm",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I moved the pricing section higher, and conversions rose.",
+  "definition": "One separate part of a longer document."
+ },
+ {
+  "id": "2927",
+  "en": "tab",
+  "tr": "Sekme",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We removed a tab that added complexity without real value.",
+  "definition": "A small named area you click to switch views."
+ },
+ {
+  "id": "2928",
+  "en": "label",
+  "tr": "Etiket",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Renaming one label solved half the confusion.",
+  "definition": "The short text that names a field or button."
+ },
+ {
+  "id": "2929",
+  "en": "tag",
+  "tr": "Etiket",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We tagged every ticket so patterns became easy to see.",
+  "definition": "A keyword added to an item for easy sorting."
+ },
+ {
+  "id": "2930",
+  "en": "list",
+  "tr": "Liste",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I kept the list short on purpose, five items max.",
+  "definition": "A series of items written one under another."
+ },
+ {
+  "id": "2931",
+  "en": "chart",
+  "tr": "Grafik",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "One simple chart said more than three paragraphs could.",
+  "definition": "A drawing that shows numbers in a visual way."
+ },
+ {
+  "id": "2932",
+  "en": "graph",
+  "tr": "Grafik",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The graph made the trend obvious in seconds.",
+  "definition": "A picture with lines showing how numbers change."
+ },
+ {
+  "id": "2933",
+  "en": "table",
+  "tr": "Tablo",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I put the raw numbers in a table, then summarized them.",
+  "definition": "Information arranged in rows and columns."
+ },
+ {
+  "id": "2934",
+  "en": "spreadsheet",
+  "tr": "Elektronik tablo",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We tracked everything in one shared spreadsheet at first.",
+  "definition": "A computer file with rows and columns for numbers."
+ },
+ {
+  "id": "2935",
+  "en": "dashboard",
+  "tr": "Gösterge paneli",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I built a simple dashboard so no one had to ask me for numbers.",
+  "definition": "One screen showing the most important numbers together."
+ },
+ {
+  "id": "2936",
+  "en": "city",
+  "tr": "Şehir",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We tested the idea in one city before expanding further.",
+  "definition": "A large place where many people live and work."
+ },
+ {
+  "id": "2937",
+  "en": "country",
+  "tr": "Ülke",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We launched in one country before going global.",
+  "definition": "A nation with its own government and borders."
+ },
+ {
+  "id": "2938",
+  "en": "region",
+  "tr": "Bölge",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Each region had slightly different needs, so we adapted.",
+  "definition": "A large area of land or part of a market."
+ },
+ {
+  "id": "2939",
+  "en": "language",
+  "tr": "Dil",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We supported one language well before adding a second.",
+  "definition": "The words and grammar a group of people speak."
+ },
+ {
+  "id": "2940",
+  "en": "culture",
+  "tr": "Kültür",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We adapted the tone for each culture, not just the language.",
+  "definition": "The shared habits and beliefs of a group."
+ },
+ {
+  "id": "2941",
+  "en": "audience",
+  "tr": "Kitle, izleyici",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I know exactly who our audience is and what they need.",
+  "definition": "The group of people you are speaking to."
+ },
+ {
+  "id": "2942",
+  "en": "generation",
+  "tr": "Nesil, kuşak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Younger generations expected a completely different experience.",
+  "definition": "All the people born around the same time."
+ },
+ {
+  "id": "2943",
+  "en": "income",
+  "tr": "Gelir",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We priced it based on income level, not just usage.",
+  "definition": "The money a person regularly receives."
+ },
+ {
+  "id": "2944",
+  "en": "volunteer",
+  "tr": "Gönüllü",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "She volunteered to take on the hardest part of the migration.",
+  "definition": "To offer to do a job without being forced."
+ },
+ {
+  "id": "2945",
+  "en": "partner",
+  "tr": "Ortak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We found a partner who shared our exact values.",
+  "definition": "A company or person you work closely with."
+ },
+ {
+  "id": "2946",
+  "en": "vendor",
+  "tr": "Tedarikçi, satıcı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We switched vendors once reliability became an issue.",
+  "definition": "A company that sells goods or services to you."
+ },
+ {
+  "id": "2947",
+  "en": "supplier",
+  "tr": "Tedarikçi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We diversified suppliers after that one delay.",
+  "definition": "A company that provides materials your business needs."
+ },
+ {
+  "id": "2948",
+  "en": "competitor",
+  "tr": "Rakip",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We studied our competitor closely, but didn't copy them.",
+  "definition": "Another company trying to win the same customers."
+ },
+ {
+  "id": "2949",
+  "en": "rival",
+  "tr": "Rakip",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Our biggest rival moved faster, so we had to as well.",
+  "definition": "A person or company you are fighting to beat."
+ },
+ {
+  "id": "2950",
+  "en": "ally",
+  "tr": "Müttefik, destekçi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I found an unexpected ally in the finance team.",
+  "definition": "Someone who supports you in a shared goal."
+ },
+ {
+  "id": "2951",
+  "en": "trainee",
+  "tr": "Stajyer, çırak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I started as a trainee and stayed for the growth.",
+  "definition": "A new worker who is still learning the job."
+ },
+ {
+  "id": "2952",
+  "en": "intern",
+  "tr": "Stajyer",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The intern's fresh perspective caught something we'd all missed.",
+  "definition": "A student working briefly to gain real experience."
+ },
+ {
+  "id": "2953",
+  "en": "freelancer",
+  "tr": "Serbest çalışan",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I brought in a freelancer for that one specialized task.",
+  "definition": "Someone who works for many clients, not one employer."
+ },
+ {
+  "id": "2954",
+  "en": "contractor",
+  "tr": "Yüklenici, taşeron",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We hired a contractor to move faster on a tight deadline.",
+  "definition": "A worker hired for a fixed job or period."
+ },
+ {
+  "id": "2955",
+  "en": "founder",
+  "tr": "Kurucu",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The founder trusted me with the whole launch.",
+  "definition": "The person who started a company."
+ },
+ {
+  "id": "2956",
+  "en": "investor",
+  "tr": "Yatırımcı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We kept investors updated with a short monthly note.",
+  "definition": "Someone who puts money into a business for profit."
+ },
+ {
+  "id": "2957",
+  "en": "shareholder",
+  "tr": "Hissedar",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Shareholders cared more about retention than raw growth.",
+  "definition": "A person who owns part of a company."
+ },
+ {
+  "id": "2958",
+  "en": "board",
+  "tr": "Yönetim kurulu",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I presented to the board for the first time that year.",
+  "definition": "The group of people who govern a company."
+ },
+ {
+  "id": "2959",
+  "en": "executive",
+  "tr": "Üst düzey yönetici",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I learned to summarize for executives in thirty seconds.",
+  "definition": "A senior manager who makes big company decisions."
+ },
+ {
+  "id": "2960",
+  "en": "director",
+  "tr": "Direktör, müdür",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My director gave me real ownership from day one.",
+  "definition": "A senior leader in charge of a department."
+ },
+ {
+  "id": "2961",
+  "en": "supervisor",
+  "tr": "Amir, yönetici",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My supervisor trusted my judgment on the small decisions.",
+  "definition": "The person who checks and guides your daily work."
+ },
+ {
+  "id": "2962",
+  "en": "assistant",
+  "tr": "Asistan, yardımcı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "An assistant helped coordinate across three time zones.",
+  "definition": "A person whose job is to help someone else."
+ },
+ {
+  "id": "2963",
+  "en": "recruiter",
+  "tr": "İşe alım uzmanı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The recruiter was upfront about the role's real challenges.",
+  "definition": "Someone whose job is finding and hiring staff."
+ },
+ {
+  "id": "2964",
+  "en": "committee",
+  "tr": "Komite",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "A small committee reviewed every major proposal.",
+  "definition": "A small group chosen to review or decide things."
+ },
+ {
+  "id": "2965",
+  "en": "council",
+  "tr": "Konsey, kurul",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We formed a council to review cross-team decisions.",
+  "definition": "An official group that meets to advise or govern."
+ },
+ {
+  "id": "2966",
+  "en": "panel",
+  "tr": "Panel, jüri",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I sat on the panel that decided the final direction.",
+  "definition": "A few experts who judge entries or answer questions."
+ },
+ {
+  "id": "2967",
+  "en": "jury",
+  "tr": "Jüri",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Think of feedback like a jury — listen, then decide.",
+  "definition": "The group of citizens who decide a court case."
+ },
+ {
+  "id": "2968",
+  "en": "witness",
+  "tr": "Tanık",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I was a direct witness to how badly the old process failed.",
+  "definition": "A person who saw an event happen."
+ },
+ {
+  "id": "2969",
+  "en": "crowd",
+  "tr": "Kalabalık",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We tested the demo in front of a small crowd first.",
+  "definition": "A large number of people gathered in one place."
+ },
+ {
+  "id": "2970",
+  "en": "visitor",
+  "tr": "Ziyaretçi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Most visitors left within the first ten seconds, so we fixed that.",
+  "definition": "Someone who comes to a place or website."
+ },
+ {
+  "id": "2971",
+  "en": "guest",
+  "tr": "Misafir",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We treated every beta tester like a guest, not a subject.",
+  "definition": "A person you invite and treat with care."
+ },
+ {
+  "id": "2972",
+  "en": "host",
+  "tr": "Ev sahibi, sunucu (etkinlik)",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I hosted the first user panel myself.",
+  "definition": "To organize an event and welcome the people attending."
+ },
+ {
+  "id": "2973",
+  "en": "behaviour",
+  "tr": "Davranış",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I try to observe user behaviour before assuming what they want.",
+  "definition": "The way someone acts in a certain situation."
+ },
+ {
+  "id": "2974",
+  "en": "reverse",
+  "tr": "Tersine çevirmek, geri almak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I reversed the decision the moment new data came in.",
+  "definition": "To change a decision back to the opposite."
+ },
+ {
+  "id": "2975",
+  "en": "prospect",
+  "tr": "Olasılık, ihtimal; potansiyel müşteri",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The prospect of failure never stopped me from trying.",
+  "definition": "The possibility that something will happen later."
+ },
+ {
+  "id": "2976",
+  "en": "assert",
+  "tr": "İddia etmek, ısrarla belirtmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I asserted my position calmly, without being aggressive.",
+  "definition": "To state something firmly and with confidence."
+ },
+ {
+  "id": "2977",
+  "en": "attain",
+  "tr": "Elde etmek, ulaşmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We attained the target a full month ahead of schedule.",
+  "definition": "To reach a goal after real effort."
+ },
+ {
+  "id": "2978",
+  "en": "aid",
+  "tr": "Yardım etmek; yardım",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Clear documentation aided the whole onboarding process.",
+  "definition": "To help someone or make something easier."
+ },
+ {
+  "id": "2979",
+  "en": "ambiguous",
+  "tr": "Belirsiz, çift anlamlı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The requirement was ambiguous, so I asked for clarification first.",
+  "definition": "Unclear because it could mean two different things."
+ },
+ {
+  "id": "2980",
+  "en": "capture",
+  "tr": "Yakalamak, ele geçirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We captured the feedback in a single shared document.",
+  "definition": "To catch and record something so it is not lost."
+ },
+ {
+  "id": "2981",
+  "en": "restrictive",
+  "tr": "Kısıtlayıcı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The old policy was too restrictive, so we relaxed it carefully.",
+  "definition": "Allowing very little freedom to act."
+ },
+ {
+  "id": "2982",
+  "en": "restrain",
+  "tr": "Kısıtlamak, tutmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I restrained myself from jumping to a solution too early.",
+  "definition": "To hold yourself or someone back from acting."
+ },
+ {
+  "id": "2983",
+  "en": "advanced",
+  "tr": "İleri düzey, gelişmiş",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I moved to more advanced tasks within the first few months.",
+  "definition": "At a higher or more difficult level."
+ },
+ {
+  "id": "2984",
+  "en": "ban",
+  "tr": "Yasaklamak; yasak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We banned that shortcut after it caused a data issue.",
+  "definition": "To officially forbid something from being used."
+ },
+ {
+  "id": "2985",
+  "en": "advance",
+  "tr": "İlerlemek; ilerleme",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I advanced the project without waiting for perfect conditions.",
+  "definition": "To move something forward toward completion."
+ },
+ {
+  "id": "2986",
+  "en": "astonishing",
+  "tr": "Şaşırtıcı, hayret verici",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The results were astonishing given how little time we had.",
+  "definition": "So surprising that it is hard to believe."
+ },
+ {
+  "id": "2987",
+  "en": "barrier",
+  "tr": "Engel, bariyer",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Cost was the biggest barrier for most of our users.",
+  "definition": "Something that stops progress or blocks the way."
+ },
+ {
+  "id": "2988",
+  "en": "beneficial",
+  "tr": "Faydalı, yararlı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That change was beneficial for both teams, not just one.",
+  "definition": "Having a good or helpful effect."
+ },
+ {
+  "id": "2989",
+  "en": "boost",
+  "tr": "Artırmak, güçlendirmek; artış",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We boosted retention just by fixing one screen.",
+  "definition": "To increase or improve something quickly."
+ },
+ {
+  "id": "2990",
+  "en": "bound",
+  "tr": "Bağlı, mecbur; sınır",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We were bound by a tight budget, so we got creative.",
+  "definition": "Forced to obey a rule or a limit."
+ },
+ {
+  "id": "2991",
+  "en": "constant",
+  "tr": "Sürekli, sabit",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I kept constant communication going during the outage.",
+  "definition": "Happening all the time without stopping."
+ },
+ {
+  "id": "2992",
+  "en": "hypothesis",
+  "tr": "Hipotez, varsayım",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We tested the hypothesis before building anything.",
+  "definition": "An idea you test to see if it is true."
+ },
+ {
+  "id": "2993",
+  "en": "installation",
+  "tr": "Kurulum",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The installation took longer than the actual fix.",
+  "definition": "The process of setting up new software before use."
+ },
+ {
+  "id": "2994",
+  "en": "resist",
+  "tr": "Direnmek, karşı koymak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I resisted the urge to add more scope at the last minute.",
+  "definition": "To fight against something or refuse to accept it."
+ },
+ {
+  "id": "2995",
+  "en": "attribute",
+  "tr": "Atfetmek; özellik",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I attribute most of our success to early user feedback.",
+  "definition": "To say that something was caused by a person or thing."
+ },
+ {
+  "id": "2996",
+  "en": "availability",
+  "tr": "Uygunluk, müsaitlik",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I checked availability before scheduling the whole team.",
+  "definition": "Whether someone is free or something can be used."
+ },
+ {
+  "id": "2997",
+  "en": "boundary",
+  "tr": "Sınır",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I set a clear boundary around scope changes mid-sprint.",
+  "definition": "A clear line that separates or limits something."
+ },
+ {
+  "id": "2998",
+  "en": "intimate",
+  "tr": "Yakın, samimi",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We had an intimate understanding of that specific user group.",
+  "definition": "Very close, warm, and deeply personal."
+ },
+ {
+  "id": "2999",
+  "en": "proclaim",
+  "tr": "İlan etmek, duyurmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We didn't proclaim success until the numbers held for a month.",
+  "definition": "To announce something publicly and clearly."
+ },
+ {
+  "id": "3000",
+  "en": "prospective",
+  "tr": "Potansiyel, olası",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We interviewed a few prospective users before finalizing the design.",
+  "definition": "Likely to become something in the future."
+ },
+ {
+  "id": "3001",
+  "en": "adequately",
+  "tr": "Yeterince",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We weren't adequately prepared for that level of traffic.",
+  "definition": "In a way that is good or enough."
+ },
+ {
+  "id": "3002",
+  "en": "constantly",
+  "tr": "Sürekli olarak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Priorities shift constantly in this kind of role.",
+  "definition": "In a way that never stops or pauses."
+ },
+ {
+  "id": "3003",
+  "en": "aware",
+  "tr": "Farkında",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I was aware of the risk going in, and planned around it.",
+  "definition": "Knowing that something exists or is happening."
+ },
+ {
+  "id": "3004",
+  "en": "abundance",
+  "tr": "Bolluk, çokluk",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We had an abundance of ideas but too little time to test them.",
+  "definition": "A very large amount of something."
+ },
+ {
+  "id": "3005",
+  "en": "admission",
+  "tr": "Kabul, itiraf",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My admission that I was wrong actually built more trust.",
+  "definition": "The act of accepting that something is true."
+ },
+ {
+  "id": "3006",
+  "en": "prediction",
+  "tr": "Tahmin, öngörü",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My prediction was close, but not exact.",
+  "definition": "A guess about what will happen later."
+ },
+ {
+  "id": "3007",
+  "en": "restored",
+  "tr": "Geri yüklendi, onarıldı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Service was restored within twenty minutes of the outage.",
+  "definition": "Brought back to its normal working condition."
+ },
+ {
+  "id": "3008",
+  "en": "refrain",
+  "tr": "Kaçınmak, sakınmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I refrained from commenting until I had the full picture.",
+  "definition": "To stop yourself from doing something on purpose."
+ },
+ {
+  "id": "3009",
+  "en": "incessantly",
+  "tr": "Durmaksızın, sürekli",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Users complained incessantly about that one broken flow.",
+  "definition": "Again and again, without any break at all."
+ },
+ {
+  "id": "3010",
+  "en": "restricted",
+  "tr": "Kısıtlı, sınırlı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Access was restricted to a small test group at first.",
+  "definition": "Limited to certain people or a small amount."
+ },
+ {
+  "id": "3011",
+  "en": "resistant",
+  "tr": "Dirençli, direngen",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The team was resistant to change until they saw the early results.",
+  "definition": "Unwilling to accept a new idea or change."
+ },
+ {
+  "id": "3012",
+  "en": "intimidating",
+  "tr": "Gözdağı verici, ürkütücü",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The first big presentation felt intimidating, so I over-prepared.",
+  "definition": "Making you feel nervous or slightly afraid."
+ },
+ {
+  "id": "3013",
+  "en": "restricting",
+  "tr": "Kısıtlayan",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We ended up restricting access more than we'd planned.",
+  "definition": "Putting limits on what people can do or use."
+ },
+ {
+  "id": "3014",
+  "en": "profit",
+  "tr": "Kâr, kazanç",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We focused on profit per user, not just total signups.",
+  "definition": "The money left after all costs are paid."
+ },
+ {
+  "id": "3015",
+  "en": "blame",
+  "tr": "Suçlamak; suç",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I don't assign blame, I focus on what we can fix.",
+  "definition": "To say someone is responsible for a mistake."
+ },
+ {
+  "id": "3016",
+  "en": "asset",
+  "tr": "Varlık, kaynak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Our biggest asset was a team that trusted each other.",
+  "definition": "Something valuable that a company owns or has."
+ },
+ {
+  "id": "3017",
+  "en": "spread",
+  "tr": "Yaymak, yayılmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Word spread quickly once early users loved it.",
+  "definition": "To reach more and more people or places."
+ },
+ {
+  "id": "3018",
+  "en": "acceptable",
+  "tr": "Kabul edilebilir",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The result was acceptable, but I still asked for one more pass.",
+  "definition": "Satisfactory, even if not perfect."
+ },
+ {
+  "id": "3019",
+  "en": "associated",
+  "tr": "İlişkili, bağlantılı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The costs associated with that change were higher than expected.",
+  "definition": "Connected with or coming from something else."
+ },
+ {
+  "id": "3020",
+  "en": "attractive",
+  "tr": "Çekici, cazip",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The offer was attractive enough that most users converted fast.",
+  "definition": "Pleasing enough to make people want it."
+ },
+ {
+  "id": "3021",
+  "en": "attraction",
+  "tr": "Çekicilik, cazibe",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The main attraction was speed, not extra features.",
+  "definition": "The quality that makes people interested in something."
+ },
+ {
+  "id": "3022",
+  "en": "profession",
+  "tr": "Meslek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I've stayed in the same profession, but my role keeps evolving.",
+  "definition": "A job that needs long training and real skill."
+ },
+ {
+  "id": "3023",
+  "en": "advertise",
+  "tr": "Reklamını yapmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We advertised the feature inside the app, not just outside it.",
+  "definition": "To tell the public about a product to sell it."
+ },
+ {
+  "id": "3024",
+  "en": "powerful",
+  "tr": "Güçlü, etkili",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "A powerful example convinced them faster than any slide deck.",
+  "definition": "Having a strong effect on people."
+ },
+ {
+  "id": "3025",
+  "en": "ambition",
+  "tr": "Hırs, tutku, emel",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My ambition was always to own a product end to end.",
+  "definition": "A strong wish to achieve something big."
+ },
+ {
+  "id": "3026",
+  "en": "confuse",
+  "tr": "Kafa karıştırmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "One unclear label confused more users than we expected.",
+  "definition": "To make someone unable to understand clearly."
+ },
+ {
+  "id": "3027",
+  "en": "install",
+  "tr": "Kurmak, yüklemek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We simplified how users install the app for the first time.",
+  "definition": "To put a program onto a computer so it runs."
+ },
+ {
+  "id": "3028",
+  "en": "examine",
+  "tr": "İncelemek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I examined the data closely before drawing any conclusion.",
+  "definition": "To look at something very carefully."
+ },
+ {
+  "id": "3029",
+  "en": "anxiety",
+  "tr": "Kaygı, endişe",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I managed my own anxiety by preparing more than felt necessary.",
+  "definition": "A worried feeling about what might happen."
+ },
+ {
+  "id": "3030",
+  "en": "advertisement",
+  "tr": "Reklam",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "One honest advertisement outperformed three polished ones.",
+  "definition": "A short public message made to sell something."
+ },
+ {
+  "id": "3031",
+  "en": "advertising",
+  "tr": "Reklamcılık",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We shifted advertising spend once we saw better organic growth.",
+  "definition": "The business of creating public messages to sell things."
+ },
+ {
+  "id": "3032",
+  "en": "against",
+  "tr": "Karşı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I argued against the rushed timeline, and I was right to.",
+  "definition": "In opposition to a person, idea, or plan."
+ },
+ {
+  "id": "3033",
+  "en": "climb",
+  "tr": "Tırmanmak, yükselmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Engagement started to climb within the first week.",
+  "definition": "To rise or go up steadily."
+ },
+ {
+  "id": "3034",
+  "en": "giant",
+  "tr": "Dev, büyük",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We were a small team competing against a giant.",
+  "definition": "Extremely large, or a very big company."
+ },
+ {
+  "id": "3035",
+  "en": "latest",
+  "tr": "En son, en yeni",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I always test with the latest version before assuming it's fixed.",
+  "definition": "The newest one, made most recently."
+ },
+ {
+  "id": "3036",
+  "en": "theory",
+  "tr": "Teori, kuram",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My theory was wrong, so I adjusted the plan quickly.",
+  "definition": "An explanation you believe but have not proven."
+ },
+ {
+  "id": "3037",
+  "en": "throughout",
+  "tr": "Boyunca",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I stayed in close contact with the client throughout the project.",
+  "definition": "From the beginning to the end of something."
+ },
+ {
+  "id": "3038",
+  "en": "administration",
+  "tr": "Yönetim, idare",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Administration of the process improved once we simplified it.",
+  "definition": "The work of managing an organization or process."
+ },
+ {
+  "id": "3039",
+  "en": "associate",
+  "tr": "İlişkilendirmek; ortak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I associate that success with one specific decision we made early.",
+  "definition": "To connect one thing with another in your mind."
+ },
+ {
+  "id": "3040",
+  "en": "assumption",
+  "tr": "Varsayım",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I tested the assumption instead of building on top of it.",
+  "definition": "Something you believe is true without checking it."
+ },
+ {
+  "id": "3041",
+  "en": "interaction",
+  "tr": "Etkileşim",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Every interaction with support taught us something about the product.",
+  "definition": "An occasion when two people or things affect each other."
+ },
+ {
+  "id": "3042",
+  "en": "observation",
+  "tr": "Gözlem",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That one observation changed the direction of the whole project.",
+  "definition": "Something you notice by watching carefully."
+ },
+ {
+  "id": "3043",
+  "en": "observer",
+  "tr": "Gözlemci",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I sat in as a quiet observer before making any suggestions.",
+  "definition": "A person who watches without taking part."
+ },
+ {
+  "id": "3044",
+  "en": "predictable",
+  "tr": "Tahmin edilebilir",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I like predictable processes for anything that isn't creative work.",
+  "definition": "Easy to guess in advance because it rarely changes."
+ },
+ {
+  "id": "3045",
+  "en": "abuse",
+  "tr": "Kötüye kullanmak; kötüye kullanım",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We fixed the flow once we saw signs of abuse.",
+  "definition": "The wrong or harmful use of something."
+ },
+ {
+  "id": "3046",
+  "en": "adaptation",
+  "tr": "Uyarlama, uyum",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That adaptation to remote work taught us a lot about trust.",
+  "definition": "A change made to fit a new situation."
+ },
+ {
+  "id": "3047",
+  "en": "administer",
+  "tr": "Yönetmek, uygulamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I administered the survey myself to keep response rates high.",
+  "definition": "To manage or carry out an official task."
+ },
+ {
+  "id": "3048",
+  "en": "administrator",
+  "tr": "Yönetici, idareci",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "As the administrator, I made sure access stayed simple and safe.",
+  "definition": "The person who manages a system and its access."
+ },
+ {
+  "id": "3049",
+  "en": "confession",
+  "tr": "İtiraf",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "My honest confession about the missed step built more trust, not less.",
+  "definition": "An open statement admitting you did something wrong."
+ },
+ {
+  "id": "3050",
+  "en": "reliance",
+  "tr": "Bağımlılık, güven",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We reduced our reliance on a single vendor.",
+  "definition": "The state of depending on someone or something."
+ },
+ {
+  "id": "3051",
+  "en": "additionally",
+  "tr": "Ayrıca, ek olarak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Additionally, I flagged a smaller risk nobody had raised yet.",
+  "definition": "Also, as one more point."
+ },
+ {
+  "id": "3052",
+  "en": "accountant",
+  "tr": "Muhasebeci",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Our accountant caught an error that would've cost us later.",
+  "definition": "A person whose job is checking financial records."
+ },
+ {
+  "id": "3053",
+  "en": "accused",
+  "tr": "Suçlanan; suçlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I was accused of moving too fast, so I explained the reasoning.",
+  "definition": "Blamed for doing something wrong."
+ },
+ {
+  "id": "3054",
+  "en": "interactive",
+  "tr": "Etkileşimli",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We built an interactive demo instead of a static slide deck.",
+  "definition": "Letting the user click and change what happens."
+ },
+ {
+  "id": "3055",
+  "en": "admiration",
+  "tr": "Hayranlık, takdir",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I have real admiration for how she handled that crisis.",
+  "definition": "A feeling of great respect for someone."
+ },
+ {
+  "id": "3056",
+  "en": "absolute",
+  "tr": "Mutlak, kesin",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Transparency was an absolute priority for me, not a nice-to-have.",
+  "definition": "Complete and not limited in any way."
+ },
+ {
+  "id": "3057",
+  "en": "admire",
+  "tr": "Hayran olmak, takdir etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I admire people who admit mistakes quickly and move on.",
+  "definition": "To respect someone greatly for what they do."
+ },
+ {
+  "id": "3058",
+  "en": "absorb",
+  "tr": "Emmek, özümsemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "It took a week to absorb everything about the new team.",
+  "definition": "To take in and fully understand new information."
+ },
+ {
+  "id": "3059",
+  "en": "abstract",
+  "tr": "Soyut",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The idea was too abstract until we built a real prototype.",
+  "definition": "Existing only as an idea, not something real."
+ },
+ {
+  "id": "3060",
+  "en": "accent",
+  "tr": "Aksan, vurgu",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "My accent never held me back once I focused on clarity.",
+  "definition": "The way your speech sounds because of where you grew up."
+ },
+ {
+  "id": "3061",
+  "en": "awareness",
+  "tr": "Farkındalık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We raised awareness of the issue before it became urgent.",
+  "definition": "Knowledge that a problem or subject exists."
+ },
+ {
+  "id": "3062",
+  "en": "excuse",
+  "tr": "Bahane; mazur görmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I don't make excuses, I explain and then fix it.",
+  "definition": "A reason you give to avoid blame."
+ },
+ {
+  "id": "3063",
+  "en": "interact",
+  "tr": "Etkileşimde bulunmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I interact with users directly at least once a week.",
+  "definition": "To talk with and respond to other people."
+ },
+ {
+  "id": "3064",
+  "en": "dimension",
+  "tr": "Boyut",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "There was a dimension to the problem we hadn't considered.",
+  "definition": "One particular side or aspect of a problem."
+ },
+ {
+  "id": "3065",
+  "en": "prosecute",
+  "tr": "Kovuşturmak, dava açmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Legal decided not to prosecute, given the circumstances.",
+  "definition": "To take someone to court for a crime."
+ },
+ {
+  "id": "3066",
+  "en": "escape",
+  "tr": "Kaçmak, kurtulmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We couldn't escape the deadline, so we cut scope instead.",
+  "definition": "To get free from something difficult or unwanted."
+ },
+ {
+  "id": "3067",
+  "en": "declining",
+  "tr": "Azalan, gerileyen",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We caught the declining engagement before it became a bigger issue.",
+  "definition": "Getting smaller or weaker over time."
+ },
+ {
+  "id": "3068",
+  "en": "previous",
+  "tr": "Önceki",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My previous role prepared me well for this kind of ambiguity.",
+  "definition": "Coming before the current one."
+ },
+ {
+  "id": "3069",
+  "en": "analysis",
+  "tr": "Analiz",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My analysis showed the problem was upstream, not in the feature itself.",
+  "definition": "A careful study of facts to understand them."
+ },
+ {
+  "id": "3070",
+  "en": "damage",
+  "tr": "Zarar, hasar",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We caught the issue before it caused any real damage.",
+  "definition": "Harm that makes something worse or broken."
+ },
+ {
+  "id": "3071",
+  "en": "worth",
+  "tr": "Değer; değerinde",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That extra week of testing was absolutely worth it.",
+  "definition": "Good enough to justify the time or money."
+ }
+]

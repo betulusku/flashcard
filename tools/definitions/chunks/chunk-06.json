@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "961",
+  "en": "business objective",
+  "tr": "ticari hedef",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Product roadmaps align technical delivery with overarching business objectives.",
+  "definition": "A goal a company wants to reach, like growth or profit."
+ },
+ {
+  "id": "962",
+  "en": "buyer persona",
+  "tr": "alıcı personası",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Marketing strategies target specific buyer personas to optimize ad spend.",
+  "definition": "A made-up profile of a typical customer used in marketing."
+ },
+ {
+  "id": "963",
+  "en": "cache hit ratio",
+  "tr": "önbellek isabet oranı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Increasing cache hit ratio speeds up dynamic web content delivery times.",
+  "definition": "The share of data requests served from fast temporary storage."
+ },
+ {
+  "id": "964",
+  "en": "cadence",
+  "tr": "çalışma ritmi / temposu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Maintaining a steady bi-weekly sprint cadence keeps engineering output stable.",
+  "definition": "A regular rhythm or pace at which work is repeated."
+ },
+ {
+  "id": "965",
+  "en": "call outcome",
+  "tr": "görüşme sonucu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Sales teams track call outcomes to evaluate lead conversion potential.",
+  "definition": "The result recorded after speaking with a customer by phone."
+ },
+ {
+  "id": "966",
+  "en": "campaign performance",
+  "tr": "kampanya performansı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Analytics dashboards track real-time campaign performance across channels.",
+  "definition": "How well an advertising effort works, measured with data."
+ },
+ {
+  "id": "967",
+  "en": "candid feedback",
+  "tr": "samimi / açık geri bildirim",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Conducting anonymous surveys encourages candid feedback from employees.",
+  "definition": "Honest and direct comments about someone's work."
+ },
+ {
+  "id": "968",
+  "en": "cannibalization risk",
+  "tr": "kendi satışını kesme riski",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Launching a low-tier product introduces a minor cannibalization risk.",
+  "definition": "The danger that a new product steals sales from your older one."
+ },
+ {
+  "id": "969",
+  "en": "canonical tag",
+  "tr": "kanonik etiket",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Adding canonical tags prevents duplicate search engine indexing issues.",
+  "definition": "A code marker telling search engines which page version is main."
+ },
+ {
+  "id": "970",
+  "en": "capability maturity",
+  "tr": "yetenek olgunluğu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Assessing team capability maturity helps improve agile execution over time.",
+  "definition": "How developed and skilled a team is at doing something well."
+ },
+ {
+  "id": "971",
+  "en": "capital allocation",
+  "tr": "sermaye tahsisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Strategic capital allocation fuels research and development for core products.",
+  "definition": "Deciding how a company spends its money across different areas."
+ },
+ {
+  "id": "972",
+  "en": "captivate audience",
+  "tr": "kitleyi etkilemek / cezbetmek",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Engaging onboarding screens captivate audience interest during first use.",
+  "definition": "To strongly attract and hold the attention of many people."
+ },
+ {
+  "id": "973",
+  "en": "carousels",
+  "tr": "dönen içerik kartları",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Interactive UI carousels highlight key features on mobile home screens.",
+  "definition": "Sliding panels on a screen that show one item at a time."
+ },
+ {
+  "id": "974",
+  "en": "cascading failure",
+  "tr": "zincirleme arıza",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A circuit breaker pattern prevents cascading failures across microservices.",
+  "definition": "One broken part causing other connected parts to break too."
+ },
+ {
+  "id": "975",
+  "en": "cash burn rate",
+  "tr": "nakit tüketim oranı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Managing cash burn rate extends runway for early-stage tech startups.",
+  "definition": "The speed at which a young company spends its money."
+ },
+ {
+  "id": "976",
+  "en": "categorization",
+  "tr": "kategorizasyon",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Clear menu categorization helps users locate configuration options fast.",
+  "definition": "The act of sorting things into groups by type."
+ },
+ {
+  "id": "977",
+  "en": "centralized logging",
+  "tr": "merkezi loglama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Centralized logging aggregating system logs simplifies server debugging.",
+  "definition": "Collecting records from all systems into one single place."
+ },
+ {
+  "id": "978",
+  "en": "churn analysis",
+  "tr": "kullanıcı kaybı analizi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Churn analysis reveals key drop-off points in user engagement cycles.",
+  "definition": "A study of why customers stop using a product."
+ },
+ {
+  "id": "979",
+  "en": "circuit breaker pattern",
+  "tr": "devre kesici deseni",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Circuit breaker patterns isolate failing third-party APIs from crashing apps.",
+  "definition": "A design that stops calls to a failing service automatically."
+ },
+ {
+  "id": "980",
+  "en": "click path",
+  "tr": "tıklama yolu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Analyzing click paths identifies unnecessary navigation steps in checkout.",
+  "definition": "The sequence of pages a user visits while moving through a site."
+ },
+ {
+  "id": "981",
+  "en": "click map",
+  "tr": "tıklama haritası",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Click maps show where users interact most frequently on web pages.",
+  "definition": "A picture showing where users press most often on a page."
+ },
+ {
+  "id": "982",
+  "en": "client side rendering",
+  "tr": "istemci tarafı işleme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Client side rendering moves UI rendering workload to user web browsers.",
+  "definition": "Building the page visuals inside the browser instead of the server."
+ },
+ {
+  "id": "983",
+  "en": "client retention",
+  "tr": "müşteri elde tutma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Exceptional support service boosts client retention across corporate accounts.",
+  "definition": "Keeping paying customers with a company over a long time."
+ },
+ {
+  "id": "984",
+  "en": "closed beta",
+  "tr": "kapalı beta",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Closed beta testing limits access to selected power users for feedback.",
+  "definition": "An early test open only to a small invited group."
+ },
+ {
+  "id": "985",
+  "en": "cloud deployment",
+  "tr": "bulut dağıtımı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Automating cloud deployment reduces downtime during major software releases.",
+  "definition": "Putting software onto remote internet servers for people to use."
+ },
+ {
+  "id": "986",
+  "en": "cloud migration",
+  "tr": "bulut taşıma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Cloud migration improved infrastructure elasticity and hardware fault tolerance.",
+  "definition": "Moving systems and data from local machines to remote servers."
+ },
+ {
+  "id": "987",
+  "en": "cluster analysis",
+  "tr": "kümeleme analizi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Cluster analysis groups users by behavioral similarities for targeting.",
+  "definition": "A method that groups similar users or items together statistically."
+ },
+ {
+  "id": "988",
+  "en": "clustering algorithm",
+  "tr": "kümeleme algoritması",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Machine learning clustering algorithms classify target customer types.",
+  "definition": "A set of computer rules that sorts data into similar groups."
+ },
+ {
+  "id": "989",
+  "en": "co-design",
+  "tr": "birlikte tasarım",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Co-design workshops bring users and product teams together for ideation.",
+  "definition": "Creating something together with the people who will use it."
+ },
+ {
+  "id": "990",
+  "en": "code base",
+  "tr": "kod tabanı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Refactoring legacy code base improves developer speed and software stability.",
+  "definition": "All the written instructions that make up a software product."
+ },
+ {
+  "id": "991",
+  "en": "code coverage",
+  "tr": "kod kapsama oranı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Maintaining high unit test code coverage prevents unexpected regression bugs.",
+  "definition": "The percentage of program lines checked by automatic tests."
+ },
+ {
+  "id": "992",
+  "en": "cognitive walkthrough",
+  "tr": "zihinsel değerlendirme gezintisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Usability experts conduct cognitive walkthroughs to evaluate task ease.",
+  "definition": "A review where experts imagine each step a user takes."
+ },
+ {
+  "id": "993",
+  "en": "cold start problem",
+  "tr": "soğuk başlangıç sorunu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Recommendation engines suffer from a cold start problem without user history.",
+  "definition": "The difficulty a system has when it lacks early data."
+ },
+ {
+  "id": "994",
+  "en": "collaborative filtering",
+  "tr": "ortaklaşa filtreleme",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Collaborative filtering predicts items users will enjoy based on peers.",
+  "definition": "Suggesting items to someone based on what similar people liked."
+ },
+ {
+  "id": "995",
+  "en": "colored highlight",
+  "tr": "renkli vurgu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Using colored highlights directs user focus to critical warning messages.",
+  "definition": "A bright background used to make text stand out."
+ },
+ {
+  "id": "996",
+  "en": "combobox",
+  "tr": "açılır kombo kutusu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A search-enabled combobox lets users filter long dropdown lists easily.",
+  "definition": "An input field with a list of choices you can also type into."
+ },
+ {
+  "id": "997",
+  "en": "command-line interface",
+  "tr": "komut satırı arayüzü",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Developers use command-line interface tools to manage cloud deployments.",
+  "definition": "A text-only way to control a computer by typing instructions."
+ },
+ {
+  "id": "998",
+  "en": "commercial viability",
+  "tr": "ticari uygulanabilirlik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Market validation proves commercial viability before full product investment.",
+  "definition": "Whether a product can realistically make money in the market."
+ },
+ {
+  "id": "999",
+  "en": "communication protocol",
+  "tr": "iletişim protokolü",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "WebSocket provides a real-time bi-directional communication protocol.",
+  "definition": "An agreed set of rules that lets two machines exchange data."
+ },
+ {
+  "id": "1000",
+  "en": "competitive analysis",
+  "tr": "rekabet analizi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Competitive analysis reveals feature gaps and pricing strategy opportunities.",
+  "definition": "A study of rival companies and their products."
+ },
+ {
+  "id": "1001",
+  "en": "avoid",
+  "tr": "Kaçınmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I avoid making promises I'm not confident I can keep.",
+  "definition": "To stay away from something or keep it from happening."
+ },
+ {
+  "id": "1002",
+  "en": "address",
+  "tr": "Ele almak, çözmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I addressed the concern directly instead of letting it linger.",
+  "definition": "To deal with a problem or question directly."
+ },
+ {
+  "id": "1003",
+  "en": "tackle",
+  "tr": "Üstesinden gelmek, çözmeye girişmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I tackled the backlog by breaking it into smaller weekly goals.",
+  "definition": "To start dealing with a difficult job with real effort."
+ },
+ {
+  "id": "1004",
+  "en": "ensure",
+  "tr": "Sağlamak, garanti etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I always ensure the whole team understands the goal before we start.",
+  "definition": "To make certain that something definitely happens."
+ },
+ {
+  "id": "1005",
+  "en": "execute",
+  "tr": "Uygulamaya koymak, yürütmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I executed the plan in phases to reduce risk.",
+  "definition": "To put a plan into action from beginning to end."
+ },
+ {
+  "id": "1006",
+  "en": "conduct",
+  "tr": "Yürütmek, gerçekleştirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I conducted the user interviews myself to stay close to the data.",
+  "definition": "To organize and run an activity such as research."
+ },
+ {
+  "id": "1007",
+  "en": "carry out",
+  "tr": "Yürütmek, gerçekleştirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I carried out the entire rollout with only two engineers.",
+  "definition": "To perform and complete a task that was planned."
+ },
+ {
+  "id": "1008",
+  "en": "maintain",
+  "tr": "Sürdürmek, korumak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I maintained close communication with stakeholders throughout the project.",
+  "definition": "To keep something going at the same level."
+ },
+ {
+  "id": "1009",
+  "en": "cultivate",
+  "tr": "Geliştirmek, yetiştirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I've cultivated strong relationships with every team I've worked with.",
+  "definition": "To slowly build and develop something like a relationship."
+ },
+ {
+  "id": "1010",
+  "en": "encourage",
+  "tr": "Teşvik etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I encourage my team to challenge my decisions when they disagree.",
+  "definition": "To give someone support or hope to do something."
+ },
+ {
+  "id": "1011",
+  "en": "promote",
+  "tr": "Teşvik etmek, yaymak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I promote a culture of ownership rather than micromanagement.",
+  "definition": "To actively support and spread an idea or practice."
+ },
+ {
+  "id": "1012",
+  "en": "maximize",
+  "tr": "En üst düzeye çıkarmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I focus on maximizing impact, not just staying busy.",
+  "definition": "To make something as large or effective as possible."
+ },
+ {
+  "id": "1013",
+  "en": "alleviate",
+  "tr": "Hafifletmek, gidermek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I alleviated the team's concerns by walking them through the data.",
+  "definition": "To make pain, worry, or a problem less severe."
+ },
+ {
+  "id": "1014",
+  "en": "handle",
+  "tr": "Ele almak, idare etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I handle conflict by staying calm and sticking to the facts.",
+  "definition": "To deal with a situation calmly and successfully."
+ },
+ {
+  "id": "1015",
+  "en": "manage",
+  "tr": "Yönetmek, idare etmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I managed three projects at once without missing a deadline.",
+  "definition": "To be in charge of people, work, or resources."
+ },
+ {
+  "id": "1016",
+  "en": "cope with",
+  "tr": "Başa çıkmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I cope with tight deadlines by prioritizing ruthlessly.",
+  "definition": "To keep going despite stress or a hard situation."
+ },
+ {
+  "id": "1017",
+  "en": "deal with",
+  "tr": "İlgilenmek, başa çıkmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I dealt with the escalation myself instead of passing it up.",
+  "definition": "To take care of a task, problem, or person."
+ },
+ {
+  "id": "1018",
+  "en": "pursue",
+  "tr": "Peşinden gitmek, sürdürmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I pursued the idea even after the first version failed.",
+  "definition": "To keep following a goal or idea over time."
+ },
+ {
+  "id": "1019",
+  "en": "resolve",
+  "tr": "Çözmek, karara bağlamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I resolved the disagreement by proposing a compromise both sides accepted.",
+  "definition": "To settle a problem or argument for good."
+ },
+ {
+  "id": "1020",
+  "en": "overcome",
+  "tr": "Üstesinden gelmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I overcame my hesitation and pitched the idea directly to leadership.",
+  "definition": "To defeat a difficulty and get past it."
+ },
+ {
+  "id": "1021",
+  "en": "achieve",
+  "tr": "Başarmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I achieved my target two weeks ahead of schedule.",
+  "definition": "To reach a goal or result after real effort."
+ },
+ {
+  "id": "1022",
+  "en": "accomplish",
+  "tr": "Başarmak, tamamlamak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I accomplished more in that quarter than in the previous two combined.",
+  "definition": "To complete a task or goal successfully."
+ },
+ {
+  "id": "1023",
+  "en": "adjust",
+  "tr": "Ayarlamak, uyarlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I adjusted my approach once I saw the first results weren't working.",
+  "definition": "To make small changes so something fits better."
+ },
+ {
+  "id": "1024",
+  "en": "identify",
+  "tr": "Belirlemek, tespit etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I identified the root cause within the first day.",
+  "definition": "To find and name exactly what something is."
+ },
+ {
+  "id": "1025",
+  "en": "assess",
+  "tr": "Değerlendirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I assess risk before committing engineering time to anything.",
+  "definition": "To judge the value, size, or quality of something."
+ },
+ {
+  "id": "1026",
+  "en": "improve",
+  "tr": "Geliştirmek, iyileştirmek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I improved the process enough that we cut review time in half.",
+  "definition": "To make something better than it was before."
+ },
+ {
+  "id": "1027",
+  "en": "reduce",
+  "tr": "Azaltmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I reduced onboarding time from ten minutes to under three.",
+  "definition": "To make an amount smaller or lower."
+ },
+ {
+  "id": "1028",
+  "en": "convince",
+  "tr": "İkna etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I convinced leadership by showing the numbers, not just my opinion.",
+  "definition": "To make someone believe or agree with you."
+ },
+ {
+  "id": "1029",
+  "en": "negotiate",
+  "tr": "Müzakere etmek, pazarlık yapmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I negotiated a more realistic deadline once I explained the risks.",
+  "definition": "To discuss terms with someone to reach an agreement."
+ },
+ {
+  "id": "1030",
+  "en": "articulate",
+  "tr": "Net bir şekilde ifade etmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I articulated the trade-off clearly so no one felt blindsided.",
+  "definition": "To express an idea clearly in words."
+ },
+ {
+  "id": "1031",
+  "en": "communicate",
+  "tr": "İletişim kurmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I communicate progress weekly, even when there's nothing exciting to report.",
+  "definition": "To pass information to others so they understand."
+ },
+ {
+  "id": "1032",
+  "en": "clarify",
+  "tr": "Açıklığa kavuşturmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I clarified the scope before anyone started building.",
+  "definition": "To explain something so it is no longer confusing."
+ },
+ {
+  "id": "1033",
+  "en": "elaborate on",
+  "tr": "Detaylandırmak, açmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I elaborated on the reasoning so the decision felt less arbitrary.",
+  "definition": "To give more detail about something you said."
+ },
+ {
+  "id": "1034",
+  "en": "highlight",
+  "tr": "Vurgulamak, öne çıkarmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I highlighted the risk early so it wouldn't surprise anyone later.",
+  "definition": "To draw attention to an important point."
+ },
+ {
+  "id": "1035",
+  "en": "respond to",
+  "tr": "Yanıt vermek, karşılık vermek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I respond to feedback within a day, even if it's just to acknowledge it.",
+  "definition": "To reply or react to something someone said."
+ },
+ {
+  "id": "1036",
+  "en": "argue",
+  "tr": "Savunmak, iddia etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I argued for the simpler solution and it turned out to be the right call.",
+  "definition": "To give reasons for a position you believe in."
+ },
+ {
+  "id": "1037",
+  "en": "suggest",
+  "tr": "Önermek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I suggested we test with five users before building the full version.",
+  "definition": "To offer an idea for others to consider."
+ },
+ {
+  "id": "1038",
+  "en": "recommend",
+  "tr": "Tavsiye etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I recommended we delay the launch by one week, and it paid off.",
+  "definition": "To advise someone that a choice is good."
+ },
+ {
+  "id": "1039",
+  "en": "endorse",
+  "tr": "Desteklemek, onaylamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I endorsed the plan once I saw the supporting data.",
+  "definition": "To publicly approve and support something."
+ },
+ {
+  "id": "1040",
+  "en": "acknowledge",
+  "tr": "Kabul etmek, teslim etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I acknowledged the mistake immediately instead of deflecting.",
+  "definition": "To admit that something is true or exists."
+ },
+ {
+  "id": "1041",
+  "en": "reassure",
+  "tr": "Güven vermek, rahatlatmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I reassured the team that the setback wouldn't affect the timeline.",
+  "definition": "To calm someone by removing their worry."
+ },
+ {
+  "id": "1042",
+  "en": "update",
+  "tr": "Bilgilendirmek, güncellemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I update stakeholders before they have to ask.",
+  "definition": "To give someone the newest information about something."
+ },
+ {
+  "id": "1043",
+  "en": "brief",
+  "tr": "Bilgilendirmek, özet vermek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I briefed the new hire on the project history in one short session.",
+  "definition": "To give someone the key facts before they act."
+ },
+ {
+  "id": "1044",
+  "en": "outline",
+  "tr": "Ana hatlarıyla belirtmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I outlined three options and let the team choose.",
+  "definition": "To describe the main points without full detail."
+ },
+ {
+  "id": "1045",
+  "en": "summarize",
+  "tr": "Özetlemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I summarized the meeting in three bullet points right after it ended.",
+  "definition": "To give a short version containing only key ideas."
+ },
+ {
+  "id": "1046",
+  "en": "raise a concern",
+  "tr": "Bir endişeyi dile getirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I raised the concern early, before it became a bigger problem.",
+  "definition": "To speak up about a worry so others know."
+ },
+ {
+  "id": "1047",
+  "en": "inclined",
+  "tr": "Eğilimli, meyilli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm inclined to trust the data over my first instinct.",
+  "definition": "Slightly likely or ready to think a certain way."
+ },
+ {
+  "id": "1048",
+  "en": "keen",
+  "tr": "İstekli, hevesli",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm keen to take on more responsibility this year.",
+  "definition": "Very interested and wanting to do something."
+ },
+ {
+  "id": "1049",
+  "en": "reluctant",
+  "tr": "İsteksiz, çekingen",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I was reluctant at first, but the results changed my mind.",
+  "definition": "Not wanting to do something, and slow to agree."
+ },
+ {
+  "id": "1050",
+  "en": "willing",
+  "tr": "İstekli, gönüllü",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I'm willing to be wrong as long as we test and learn from it.",
+  "definition": "Ready and happy to do something when asked."
+ },
+ {
+  "id": "1051",
+  "en": "hesitant",
+  "tr": "Tereddütlü, çekingen",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I was hesitant to launch without more testing, and I said so.",
+  "definition": "Unsure and pausing before acting or deciding."
+ },
+ {
+  "id": "1052",
+  "en": "eager",
+  "tr": "İstekli, hevesli",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I'm eager to take ownership of a bigger part of the product.",
+  "definition": "Full of excited desire to do something soon."
+ },
+ {
+  "id": "1053",
+  "en": "motivated",
+  "tr": "Motive, güdülenmiş",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm motivated by seeing real impact, not just shipping features.",
+  "definition": "Having a strong reason that drives you to act."
+ },
+ {
+  "id": "1054",
+  "en": "determined",
+  "tr": "Kararlı, azimli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I was determined to fix it before the weekend, and I did.",
+  "definition": "Firmly set on doing something and not giving up."
+ },
+ {
+  "id": "1055",
+  "en": "committed",
+  "tr": "Kendini adamış, bağlı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm committed to the goal even when the path changes.",
+  "definition": "Fully loyal to a goal and staying with it."
+ },
+ {
+  "id": "1056",
+  "en": "dedicated",
+  "tr": "Adanmış, özverili",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm dedicated to getting this right, not just getting it done.",
+  "definition": "Giving all your time and care to something."
+ },
+ {
+  "id": "1057",
+  "en": "enthusiastic",
+  "tr": "Hevesli, coşkulu",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm genuinely enthusiastic about products that solve real problems.",
+  "definition": "Showing strong excitement and interest in something."
+ },
+ {
+  "id": "1058",
+  "en": "confident",
+  "tr": "Kendinden emin",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I'm confident in the decision because it's backed by real data.",
+  "definition": "Certain about your own ability or decision."
+ },
+ {
+  "id": "1059",
+  "en": "capable",
+  "tr": "Yetenekli, kabiliyetli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm capable of leading a project end to end without close supervision.",
+  "definition": "Having the ability to do something successfully."
+ },
+ {
+  "id": "1060",
+  "en": "competent",
+  "tr": "Yetkin, ehliyetli",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I trust the team because every person on it is genuinely competent.",
+  "definition": "Well trained and good enough at a particular job."
+ },
+ {
+  "id": "1061",
+  "en": "adaptable",
+  "tr": "Uyum sağlayabilen",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm adaptable — priorities shift constantly in this kind of role.",
+  "definition": "Able to change easily when the situation changes."
+ },
+ {
+  "id": "1062",
+  "en": "versatile",
+  "tr": "Çok yönlü",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm versatile enough to move between design, data, and strategy.",
+  "definition": "Able to do many different things well."
+ },
+ {
+  "id": "1063",
+  "en": "resourceful",
+  "tr": "Becerikli, çözüm odaklı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm resourceful when the budget or timeline is tight.",
+  "definition": "Good at finding clever solutions with little help."
+ },
+ {
+  "id": "1064",
+  "en": "proactive",
+  "tr": "Proaktif, öngörülü",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm proactive about flagging risks before they become real problems.",
+  "definition": "Acting early to prevent problems instead of waiting."
+ },
+ {
+  "id": "1065",
+  "en": "meticulous",
+  "tr": "Titiz, kusursuz",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm meticulous about the data behind any decision I make.",
+  "definition": "Very careful about small details."
+ },
+ {
+  "id": "1066",
+  "en": "thorough",
+  "tr": "Kapsamlı, eksiksiz",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm thorough, especially when the stakes are high.",
+  "definition": "Complete and careful, leaving nothing out."
+ },
+ {
+  "id": "1067",
+  "en": "diligent",
+  "tr": "Çalışkan, özenli",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm diligent about following up on every commitment I make.",
+  "definition": "Working hard and steadily with real care."
+ },
+ {
+  "id": "1068",
+  "en": "accountable",
+  "tr": "Hesap verebilir, sorumlu",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I hold myself accountable for outcomes, not just effort.",
+  "definition": "Expected to answer for your own results."
+ },
+ {
+  "id": "1069",
+  "en": "dependable",
+  "tr": "Güvenilir, sözünün eri",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "People know me as dependable, especially under a tight deadline.",
+  "definition": "Always doing what you promised, so people trust you."
+ },
+ {
+  "id": "1070",
+  "en": "reliable",
+  "tr": "Güvenilir",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm reliable — if I say I'll deliver it Friday, I deliver it Friday.",
+  "definition": "Working or behaving the same good way every time."
+ },
+ {
+  "id": "1071",
+  "en": "consistent",
+  "tr": "Tutarlı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm consistent in how I prioritize, even when priorities themselves shift.",
+  "definition": "Always the same and not changing without reason."
+ },
+ {
+  "id": "1072",
+  "en": "flexible",
+  "tr": "Esnek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm flexible about the how, as long as we agree on the why.",
+  "definition": "Open to bending rules or plans when needed."
+ },
+ {
+  "id": "1073",
+  "en": "assertive",
+  "tr": "Kararlı, iddialı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm assertive when I believe in a direction, even an unpopular one.",
+  "definition": "Saying what you want firmly but politely."
+ },
+ {
+  "id": "1074",
+  "en": "patient",
+  "tr": "Sabırlı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm patient with people who need more context to get on board.",
+  "definition": "Able to wait calmly without getting annoyed."
+ },
+ {
+  "id": "1075",
+  "en": "impartial",
+  "tr": "Tarafsız",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I try to stay impartial when two teams disagree.",
+  "definition": "Treating both sides equally without favoring either."
+ },
+ {
+  "id": "1076",
+  "en": "candid",
+  "tr": "Açık sözlü, dürüst",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm candid with feedback, even when it's uncomfortable to give.",
+  "definition": "Honest and open, even when it is awkward."
+ },
+ {
+  "id": "1077",
+  "en": "approachable",
+  "tr": "Yaklaşılabilir, samimi",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm approachable, so people raise issues to me early, not late.",
+  "definition": "Friendly and easy to talk to."
+ },
+ {
+  "id": "1078",
+  "en": "acquisition",
+  "tr": "Satın alma, edinim",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Leading the acquisition integration was one of my biggest challenges.",
+  "definition": "The purchase of one company by another."
+ },
+ {
+  "id": "1079",
+  "en": "initiative",
+  "tr": "Girişim, inisiyatif",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I took the initiative when no one else owned the problem.",
+  "definition": "A new effort started by someone without being told."
+ },
+ {
+  "id": "1080",
+  "en": "objective",
+  "tr": "Hedef, amaç",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My main objective was to reduce churn, not just grow signups.",
+  "definition": "A clear aim you are trying to reach."
+ },
+ {
+  "id": "1081",
+  "en": "obstacle",
+  "tr": "Engel",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The biggest obstacle wasn't technical, it was alignment.",
+  "definition": "Something that blocks your progress toward a goal."
+ },
+ {
+  "id": "1082",
+  "en": "constraint",
+  "tr": "Kısıt, sınırlama",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We worked within a tight budget constraint and still delivered.",
+  "definition": "A limit that restricts what you can do."
+ },
+ {
+  "id": "1083",
+  "en": "drawback",
+  "tr": "Dezavantaj, sakınca",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The main drawback was the extra engineering time it required.",
+  "definition": "A negative feature of an otherwise good plan."
+ },
+ {
+  "id": "1084",
+  "en": "advantage",
+  "tr": "Avantaj",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Our biggest advantage was moving faster than the competition.",
+  "definition": "Something that puts you in a better position."
+ },
+ {
+  "id": "1085",
+  "en": "disadvantage",
+  "tr": "Dezavantaj",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The disadvantage was a slightly steeper learning curve for new users.",
+  "definition": "A weak point that makes things harder for you."
+ },
+ {
+  "id": "1086",
+  "en": "implication",
+  "tr": "Sonuç, çıkarım, etki",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I always think through the implications before committing resources.",
+  "definition": "A likely effect that is not stated directly."
+ },
+ {
+  "id": "1087",
+  "en": "consequence",
+  "tr": "Sonuç",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I explained the consequences of delaying the decision any further.",
+  "definition": "A result that follows from an action or choice."
+ },
+ {
+  "id": "1088",
+  "en": "outcome",
+  "tr": "Sonuç, çıktı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I care about outcomes, not just activity.",
+  "definition": "The final result of a process or effort."
+ },
+ {
+  "id": "1089",
+  "en": "aspect",
+  "tr": "Yön, boyut",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The most difficult aspect was managing expectations across teams.",
+  "definition": "One particular part or side of a situation."
+ },
+ {
+  "id": "1090",
+  "en": "factor",
+  "tr": "Etken, faktör",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Timing was the deciding factor in that decision.",
+  "definition": "One thing that helps cause a result."
+ },
+ {
+  "id": "1091",
+  "en": "criterion",
+  "tr": "Ölçüt, kriter",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Our main criterion was long-term retention, not short-term growth.",
+  "definition": "A standard used for judging or deciding something."
+ },
+ {
+  "id": "1092",
+  "en": "prerequisite",
+  "tr": "Ön koşul",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Trust was a prerequisite before I could get buy-in for the change.",
+  "definition": "Something needed first before anything else can happen."
+ },
+ {
+  "id": "1093",
+  "en": "precedent",
+  "tr": "Emsal, örnek teşkil eden durum",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I was careful not to set a precedent we couldn't sustain.",
+  "definition": "An earlier case that others will follow later."
+ },
+ {
+  "id": "1094",
+  "en": "approach",
+  "tr": "Yaklaşım",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My approach was to start small and expand once we saw traction.",
+  "definition": "The particular way you choose to handle something."
+ },
+ {
+  "id": "1095",
+  "en": "strategy",
+  "tr": "Strateji",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Our strategy shifted once we saw the early data.",
+  "definition": "A long-term plan for reaching an important goal."
+ },
+ {
+  "id": "1096",
+  "en": "priority",
+  "tr": "Öncelik",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My top priority was always the user experience.",
+  "definition": "The thing that matters most and comes first."
+ },
+ {
+  "id": "1097",
+  "en": "dilemma",
+  "tr": "İkilem",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I faced a real dilemma between speed and quality.",
+  "definition": "A hard choice between two difficult options."
+ },
+ {
+  "id": "1098",
+  "en": "setback",
+  "tr": "Aksilik, gerileme",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We hit a setback, but we recovered within a week.",
+  "definition": "A problem that delays progress you already made."
+ },
+ {
+  "id": "1099",
+  "en": "challenge",
+  "tr": "Zorluk, meydan okuma",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The biggest challenge was doing more with a smaller team.",
+  "definition": "A difficult task that tests your ability."
+ },
+ {
+  "id": "1100",
+  "en": "achievement",
+  "tr": "Başarı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My proudest achievement was turning around a failing project.",
+  "definition": "Something impressive you succeeded in doing."
+ },
+ {
+  "id": "1101",
+  "en": "contribution",
+  "tr": "Katkı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "My contribution was mostly in aligning the teams, not writing code.",
+  "definition": "The part you personally add to a shared effort."
+ },
+ {
+  "id": "1102",
+  "en": "responsibility",
+  "tr": "Sorumluluk",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I took full responsibility, even for the parts I didn't control.",
+  "definition": "The duty to take care of something."
+ },
+ {
+  "id": "1103",
+  "en": "opportunity",
+  "tr": "Fırsat",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I saw an opportunity where most people just saw a complaint.",
+  "definition": "A good chance to do something useful."
+ },
+ {
+  "id": "1104",
+  "en": "regarding",
+  "tr": "İlgili olarak, hakkında",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Regarding the delay, I take full responsibility for it.",
+  "definition": "About or connected with a particular subject."
+ },
+ {
+  "id": "1105",
+  "en": "concerning",
+  "tr": "İlgili, dair",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Concerning the budget, we stayed under it by about ten percent.",
+  "definition": "On the topic of something, in fairly formal writing."
+ },
+ {
+  "id": "1106",
+  "en": "with respect to",
+  "tr": "İlişkin olarak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "With respect to timing, I'd rather be a week late than ship something broken.",
+  "definition": "A formal way of saying about one specific thing."
+ },
+ {
+  "id": "1107",
+  "en": "in light of",
+  "tr": "Göz önünde bulundurarak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "In light of the new data, I changed my recommendation.",
+  "definition": "Taking new information into account before deciding."
+ },
+ {
+  "id": "1108",
+  "en": "given that",
+  "tr": "Göz önüne alındığında, mademki",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Given that resources were limited, we focused on the highest-impact item.",
+  "definition": "Because a certain fact is already true."
+ },
+ {
+  "id": "1109",
+  "en": "provided that",
+  "tr": "Şartıyla, koşuluyla",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I was willing to take the risk, provided that we had a fallback plan.",
+  "definition": "Only if a certain condition is met first."
+ },
+ {
+  "id": "1110",
+  "en": "as opposed to",
+  "tr": "Aksine, -e karşın",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I chose depth as opposed to breadth for that quarter.",
+  "definition": "Used to set one thing against a clear alternative."
+ },
+ {
+  "id": "1111",
+  "en": "rather than",
+  "tr": "-mek yerine",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I asked for forgiveness rather than permission on that one.",
+  "definition": "Showing a preference for one option over another."
+ },
+ {
+  "id": "1112",
+  "en": "in addition to",
+  "tr": "-e ek olarak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "In addition to the redesign, I also ran the user research.",
+  "definition": "As well as, beyond what was already mentioned."
+ },
+ {
+  "id": "1113",
+  "en": "apart from",
+  "tr": "Dışında, hariç",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Apart from one missed deadline, the project went smoothly.",
+  "definition": "Except for the one thing just mentioned."
+ },
+ {
+  "id": "1114",
+  "en": "aside from",
+  "tr": "Dışında, hariç",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Aside from the budget, everything was within our control.",
+  "definition": "Not counting one particular thing you exclude."
+ },
+ {
+  "id": "1115",
+  "en": "despite",
+  "tr": "-e rağmen",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Despite the setback, we still hit the quarterly goal.",
+  "definition": "Even though something might have stopped it."
+ },
+ {
+  "id": "1116",
+  "en": "notwithstanding",
+  "tr": "-e rağmen (resmi)",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Notwithstanding the risks, I decided to move forward.",
+  "definition": "A formal word meaning even though something exists."
+ },
+ {
+  "id": "1117",
+  "en": "nonetheless",
+  "tr": "Yine de, bununla birlikte",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The launch was delayed; nonetheless, the reception was strong.",
+  "definition": "Even so, and in spite of that fact."
+ },
+ {
+  "id": "1118",
+  "en": "nevertheless",
+  "tr": "Yine de, buna rağmen",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "It was a small team; nevertheless, we shipped on time.",
+  "definition": "Still true, although the opposite might be expected."
+ },
+ {
+  "id": "1119",
+  "en": "although",
+  "tr": "Her ne kadar, -e rağmen",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Although I disagreed at first, I committed once the decision was made.",
+  "definition": "Used to admit a fact that seems opposite."
+ },
+ {
+  "id": "1120",
+  "en": "whereas",
+  "tr": "Oysa, -e karşın",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Our old approach was reactive, whereas the new one is proactive.",
+  "definition": "Used to compare two facts that differ."
+ },
+ {
+  "id": "1121",
+  "en": "whereby",
+  "tr": "Bu sayede, ki bu şekilde",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We built a process whereby every release gets reviewed twice.",
+  "definition": "By means of which something is done."
+ },
+ {
+  "id": "1122",
+  "en": "in terms of",
+  "tr": "Açısından, bakımından",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "In terms of impact, this was our biggest project last year.",
+  "definition": "When measured by one particular thing."
+ },
+ {
+  "id": "1123",
+  "en": "for the sake of",
+  "tr": "-in hatırına, uğruna",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I simplified the plan for the sake of getting everyone aligned.",
+  "definition": "In order to help or benefit someone or something."
+ },
+ {
+  "id": "1124",
+  "en": "due to",
+  "tr": "-den dolayı, nedeniyle",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We delayed the launch due to a late-stage bug.",
+  "definition": "Happening because of a particular cause."
+ },
+ {
+  "id": "1125",
+  "en": "owing to",
+  "tr": "-den dolayı, nedeniyle",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Owing to time constraints, we cut scope instead of quality.",
+  "definition": "Caused by something, used in formal writing."
+ },
+ {
+  "id": "1126",
+  "en": "as a result of",
+  "tr": "-in sonucu olarak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "As a result of the feedback, we redesigned onboarding entirely.",
+  "definition": "Following directly from an earlier event or action."
+ },
+ {
+  "id": "1127",
+  "en": "in order to",
+  "tr": "-mek amacıyla, için",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I restructured the team in order to move faster.",
+  "definition": "With the aim of achieving something."
+ },
+ {
+  "id": "1128",
+  "en": "so as to",
+  "tr": "-mek amacıyla",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I broke the project into phases so as to reduce risk.",
+  "definition": "For the purpose of making something happen."
+ },
+ {
+  "id": "1129",
+  "en": "instead of",
+  "tr": "-mek yerine",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I asked questions instead of assuming I knew the answer.",
+  "definition": "In the place of something else you rejected."
+ },
+ {
+  "id": "1130",
+  "en": "in case",
+  "tr": "İhtimaline karşı, durumunda",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I built in a buffer in case something went wrong.",
+  "definition": "Because something might possibly happen later."
+ },
+ {
+  "id": "1131",
+  "en": "unless",
+  "tr": "-medikçe, aksi takdirde",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I don't commit to a date unless engineering has confirmed it.",
+  "definition": "Except if a certain thing is true."
+ },
+ {
+  "id": "1132",
+  "en": "as long as",
+  "tr": "-dığı sürece",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm comfortable taking risks, as long as we can measure the outcome.",
+  "definition": "On the condition that something remains true."
+ },
+ {
+  "id": "1133",
+  "en": "to the extent that",
+  "tr": "-dığı ölçüde",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We automated the process to the extent that it saved us a day a week.",
+  "definition": "Showing how far or how much something went."
+ },
+ {
+  "id": "1134",
+  "en": "Think outside the box",
+  "tr": "Kutunun dışında düşünmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We had to think outside the box to solve the retention problem.",
+  "definition": "To find creative ideas beyond the usual ways."
+ },
+ {
+  "id": "1135",
+  "en": "Hit the ground running",
+  "tr": "Hemen işe koyulmak, hızlı başlamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I hit the ground running on my first day.",
+  "definition": "To begin a new job quickly and effectively."
+ },
+ {
+  "id": "1136",
+  "en": "Move the goalposts",
+  "tr": "Hedefi değiştirmek, kuralları değiştirmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Leadership kept moving the goalposts mid-project.",
+  "definition": "To change the rules or targets unfairly midway."
+ },
+ {
+  "id": "1137",
+  "en": "On the same page",
+  "tr": "Aynı fikirde, uyum içinde",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We're finally on the same page about the roadmap.",
+  "definition": "In full agreement with each other about something."
+ },
+ {
+  "id": "1138",
+  "en": "Piece of cake",
+  "tr": "Çok kolay",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Compared to the last launch, this one was a piece of cake.",
+  "definition": "Something extremely easy to do."
+ },
+ {
+  "id": "1139",
+  "en": "Back to the drawing board",
+  "tr": "Yeniden başlamak, sıfırdan başlamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The test failed, so it was back to the drawing board.",
+  "definition": "Forced to start planning again from zero."
+ },
+ {
+  "id": "1140",
+  "en": "Cut corners",
+  "tr": "Kestirmeden gitmek, kalite feda etmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We refused to cut corners even under a tight deadline.",
+  "definition": "To save time or money by lowering quality."
+ },
+ {
+  "id": "1141",
+  "en": "Low-hanging fruit",
+  "tr": "Kolay kazanım, kolay elde edilebilir fırsat",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We started with the low-hanging fruit before tackling bigger issues.",
+  "definition": "An easy win that needs very little effort."
+ },
+ {
+  "id": "1142",
+  "en": "Get the ball rolling",
+  "tr": "İşi başlatmak, harekete geçirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Let's get the ball rolling on the new onboarding project.",
+  "definition": "To make a process start moving at last."
+ },
+ {
+  "id": "1143",
+  "en": "Read between the lines",
+  "tr": "Satır aralarını okumak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I read between the lines and realized the client wasn't happy.",
+  "definition": "To understand a hidden meaning that was not said."
+ },
+ {
+  "id": "1144",
+  "en": "In the same boat",
+  "tr": "Aynı durumda olmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Every team was in the same boat with the tight deadline.",
+  "definition": "Dealing with the identical hard situation that others face."
+ },
+ {
+  "id": "1145",
+  "en": "Learning curve",
+  "tr": "Öğrenme eğrisi",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "There was a steep learning curve when I switched to product.",
+  "definition": "How much time and effort a new skill needs."
+ },
+ {
+  "id": "1146",
+  "en": "On thin ice",
+  "tr": "Riskli bir durumda olmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "The project was on thin ice after two missed deadlines.",
+  "definition": "In a risky position where trouble could follow."
+ },
+ {
+  "id": "1147",
+  "en": "Weigh in",
+  "tr": "Görüş bildirmek, fikir sunmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I asked engineering to weigh in before finalizing the plan.",
+  "definition": "To give your opinion during a discussion."
+ },
+ {
+  "id": "1148",
+  "en": "Give it a shot",
+  "tr": "Bir deneme yapmak, denemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We decided to give the new format a shot.",
+  "definition": "To try something once and see what happens."
+ },
+ {
+  "id": "1149",
+  "en": "Rock the boat",
+  "tr": "Ortamı karıştırmak, huzuru bozmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I didn't want to rock the boat right before the launch.",
+  "definition": "To disturb a calm situation and upset people."
+ },
+ {
+  "id": "1150",
+  "en": "Keep an eye on",
+  "tr": "Göz kulak olmak, takip etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I keep an eye on churn every single week.",
+  "definition": "To watch something closely over time."
+ },
+ {
+  "id": "1151",
+  "en": "Get off the ground",
+  "tr": "Başlamak, yürürlüğe girmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The project finally got off the ground last month.",
+  "definition": "To finally begin and start making progress."
+ },
+ {
+  "id": "1152",
+  "en": "Nip it in the bud",
+  "tr": "Erken müdahale etmek, daha başlamadan önlemek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We nipped the issue in the bud before it affected users.",
+  "definition": "To stop a problem while it is still small."
+ }
+]

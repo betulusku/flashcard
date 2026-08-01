@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "769",
+  "en": "pull request",
+  "tr": "kod çekme / birleştirme talebi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Developers create a pull request for peer code review before merging.",
+  "definition": "A formal proposal asking a team to review and merge code changes."
+ },
+ {
+  "id": "770",
+  "en": "push notification",
+  "tr": "anlık bildirim",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Personalized push notifications remind users to complete abandoned orders.",
+  "definition": "A short message an app sends to your phone screen."
+ },
+ {
+  "id": "771",
+  "en": "qualitative data",
+  "tr": "nitel veri",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "User interview transcripts provide qualitative data on user sentiment.",
+  "definition": "Information from words and opinions rather than numbers."
+ },
+ {
+  "id": "772",
+  "en": "quantitative data",
+  "tr": "nicel veri",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Click tracking logs produce quantitative data for statistical verification.",
+  "definition": "Numerical facts and measurements you can count and compare."
+ },
+ {
+  "id": "773",
+  "en": "query optimization",
+  "tr": "sorgu optimizasyonu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Database query optimization reduced feed loading speed from two seconds to 200ms.",
+  "definition": "Making database searches run faster and use fewer resources."
+ },
+ {
+  "id": "774",
+  "en": "queue management",
+  "tr": "kuyruk yönetimi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Asynchronous message queue management handles high volume transaction logs.",
+  "definition": "Controlling the order in which waiting tasks get processed."
+ },
+ {
+  "id": "775",
+  "en": "rapid prototyping",
+  "tr": "hızlı prototipleme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Rapid prototyping tests multiple layout ideas with target users quickly.",
+  "definition": "Quickly building rough versions of a design to test ideas."
+ },
+ {
+  "id": "776",
+  "en": "raw data",
+  "tr": "ham veri",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Data analysts query raw data tables to calculate custom conversion funnels.",
+  "definition": "Original numbers collected but not yet cleaned or processed."
+ },
+ {
+  "id": "777",
+  "en": "reactive programming",
+  "tr": "reaktif programlama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Reactive programming updates UI components instantly when state changes.",
+  "definition": "A coding style where results update automatically when values change."
+ },
+ {
+  "id": "778",
+  "en": "real-time processing",
+  "tr": "gerçek zamanlı veri işleme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Real-time processing updates live dashboard metrics without page refreshes.",
+  "definition": "Handling information the instant it arrives, with no delay."
+ },
+ {
+  "id": "779",
+  "en": "reconnaissance",
+  "tr": "ön keşif / araştırma",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Competitor reconnaissance identified gaps in rival mobile applications.",
+  "definition": "Careful scouting done early to gather useful information."
+ },
+ {
+  "id": "780",
+  "en": "refinement session",
+  "tr": "sprint detaylandırma oturumu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "During the refinement session, engineers estimate story points for tasks.",
+  "definition": "A meeting where the team clarifies and sizes upcoming tasks."
+ },
+ {
+  "id": "781",
+  "en": "regression bug",
+  "tr": "gerileme hatası",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Automated test suites catch regression bugs before builds deploy live.",
+  "definition": "A fault that breaks something which worked before."
+ },
+ {
+  "id": "782",
+  "en": "release candidate",
+  "tr": "yayın adayı sürüm",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The QA team tested release candidate version 2.4 for deployment approval.",
+  "definition": "A build believed ready to ship if final checks pass."
+ },
+ {
+  "id": "783",
+  "en": "reliability",
+  "tr": "güvenilirlik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "System reliability is measured by maintaining 99.99% infrastructure uptime.",
+  "definition": "The quality of working correctly and without failure every time."
+ },
+ {
+  "id": "784",
+  "en": "remote usability testing",
+  "tr": "uzaktan kullanılabilirlik testi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Remote usability testing records participants using software in home settings.",
+  "definition": "Studying people trying a product from their own homes."
+ },
+ {
+  "id": "785",
+  "en": "repeat purchase rate",
+  "tr": "tekrarlanan satın alma oranı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Improving subscription perks boosts our repeat purchase rate dramatically.",
+  "definition": "The share of customers who buy from you again."
+ },
+ {
+  "id": "786",
+  "en": "repository",
+  "tr": "kod deposu / repo",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "GitHub hosts our main application software code repository.",
+  "definition": "A central storage place for a project and its history."
+ },
+ {
+  "id": "787",
+  "en": "replatforming",
+  "tr": "platform / altyapı değiştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Replatforming from legacy servers to cloud architecture cut hosting fees.",
+  "definition": "Moving a product onto completely new underlying technology."
+ },
+ {
+  "id": "788",
+  "en": "request for proposal",
+  "tr": "teklif talebi (RFP)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Issuing a request for proposal helped evaluate enterprise vendor pricing.",
+  "definition": "A document inviting suppliers to bid for a job."
+ },
+ {
+  "id": "789",
+  "en": "research repository",
+  "tr": "araştırma deposu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Storing video clips in a central research repository keeps user insights shared.",
+  "definition": "A shared archive of study findings and interview recordings."
+ },
+ {
+  "id": "790",
+  "en": "response time",
+  "tr": "yanıt süresi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Low API response time is critical for delivering smooth mobile user experience.",
+  "definition": "How long a system takes to answer a request."
+ },
+ {
+  "id": "791",
+  "en": "responsive web design",
+  "tr": "duyarlı web tasarımı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Responsive web design adapts layout fluidly across mobile, tablet, and desktop.",
+  "definition": "Building pages that adjust smoothly to any screen size."
+ },
+ {
+  "id": "792",
+  "en": "return on ad spend",
+  "tr": "reklam harcaması getirisi",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Achieving a positive return on ad spend guarantees profitable user acquisition.",
+  "definition": "Revenue earned for every dollar put into marketing."
+ },
+ {
+  "id": "793",
+  "en": "return on investment",
+  "tr": "yatırım getirisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Calculating return on investment justifies funding new engineering projects.",
+  "definition": "The profit gained compared with the money originally put in."
+ },
+ {
+  "id": "794",
+  "en": "revenue model",
+  "tr": "gelir modeli",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Adopting a SaaS subscription revenue model ensures predictable cash flow.",
+  "definition": "The plan describing how a business earns its money."
+ },
+ {
+  "id": "795",
+  "en": "risk assessment",
+  "tr": "risk değerlendirmesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Performing a risk assessment identifies security vulnerabilities prior to launch.",
+  "definition": "A study of what could go wrong and how badly."
+ },
+ {
+  "id": "796",
+  "en": "roadblock",
+  "tr": "engel / tıkayıcı unsur",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Daily standups help team members surface technical roadblocks early.",
+  "definition": "A problem that stops progress until someone solves it."
+ },
+ {
+  "id": "797",
+  "en": "salience",
+  "tr": "belirginlik / dikkat çekicilik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Visual salience guides user eye movement directly to call to action buttons.",
+  "definition": "The quality of standing out and catching attention immediately."
+ },
+ {
+  "id": "798",
+  "en": "scenarios",
+  "tr": "senaryolar",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "User scenarios describe specific tasks participants complete during testing.",
+  "definition": "Realistic stories describing tasks a person tries to finish."
+ },
+ {
+  "id": "799",
+  "en": "schema migration",
+  "tr": "şema taşıma / güncelleme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Database schema migration must execute zero-downtime scripts during updates.",
+  "definition": "Changing a database structure safely without losing stored records."
+ },
+ {
+  "id": "800",
+  "en": "seamless experience",
+  "tr": "kesintisiz / pürüzsüz deneyim",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Single sign-on provides a seamless experience across corporate platforms.",
+  "definition": "Moving between parts of a product with no friction."
+ },
+ {
+  "id": "801",
+  "en": "search engine optimization",
+  "tr": "arama motoru optimizasyonu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Search engine optimization drives organic web traffic to landing pages.",
+  "definition": "Improving a website so it ranks higher in Google."
+ },
+ {
+  "id": "802",
+  "en": "secondary research",
+  "tr": "ikincil araştırma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Secondary research analyzes existing market reports to understand trends.",
+  "definition": "Studying reports and information that others already collected."
+ },
+ {
+  "id": "803",
+  "en": "security vulnerability",
+  "tr": "güvenlik açığı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Penetration audits catch security vulnerabilities before production releases.",
+  "definition": "A weak point attackers could exploit to break in."
+ },
+ {
+  "id": "804",
+  "en": "self-service analytics",
+  "tr": "öz hizmet analitiği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Self-service analytics lets product managers generate reports without SQL.",
+  "definition": "Tools letting anyone build reports without help from engineers."
+ },
+ {
+  "id": "805",
+  "en": "semantic HTML",
+  "tr": "anlamsal HTML",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Using semantic HTML improves web accessibility for screen reader tools.",
+  "definition": "Writing page tags that describe meaning, not just appearance."
+ },
+ {
+  "id": "806",
+  "en": "sentiment analysis",
+  "tr": "duygu analizi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "NLP algorithms run sentiment analysis on customer support ticket transcripts.",
+  "definition": "Software judging whether written opinions sound positive or negative."
+ },
+ {
+  "id": "807",
+  "en": "service level agreement",
+  "tr": "hizmet seviyesi sözleşmesi (SLA)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Enterprise service level agreements promise 99.9% server uptime reliability.",
+  "definition": "A contract promising a supplier will meet certain performance standards."
+ },
+ {
+  "id": "808",
+  "en": "session duration",
+  "tr": "oturum süresi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Redesigning the home feed increased average app session duration by 20%.",
+  "definition": "How long a person stays in an app at once."
+ },
+ {
+  "id": "809",
+  "en": "session replay",
+  "tr": "oturum tekrar oynatma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Session replay tools reveal visual glitches users experience in real time.",
+  "definition": "A recorded video of what a visitor did onscreen."
+ },
+ {
+  "id": "810",
+  "en": "shadowing",
+  "tr": "gözlemleme / takip çalışması",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Shadowing customer support agents revealed common user onboarding errors.",
+  "definition": "Watching someone work closely to learn what they do."
+ },
+ {
+  "id": "811",
+  "en": "shared component library",
+  "tr": "ortak bileşen kütüphanesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A shared component library accelerates front-end software development.",
+  "definition": "A common collection of ready-made interface elements for all teams."
+ },
+ {
+  "id": "812",
+  "en": "shortcut keys",
+  "tr": "kısayol tuşları",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Adding keyboard shortcut keys improves workflow speed for power users.",
+  "definition": "Pressing two buttons together to run a command instantly."
+ },
+ {
+  "id": "813",
+  "en": "side project",
+  "tr": "yan proje",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Developing a side project allows testing new mobile app development frameworks.",
+  "definition": "Extra work done beyond your main job for fun."
+ },
+ {
+  "id": "814",
+  "en": "signal-to-noise ratio",
+  "tr": "sinyal-gürültü oranı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Cleaning tracking dashboards improves the signal-to-noise ratio of user metrics.",
+  "definition": "How much useful information there is versus useless clutter."
+ },
+ {
+  "id": "815",
+  "en": "silent deployment",
+  "tr": "sessiz canlıya alma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Executing a silent deployment allows testing code in production via feature flags.",
+  "definition": "Shipping code to live servers hidden behind a switch."
+ },
+ {
+  "id": "816",
+  "en": "single page application",
+  "tr": "tek sayfadan oluşan uygulama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Single page applications load dynamic content fast without full page reloads.",
+  "definition": "A website that loads once and then updates content dynamically."
+ },
+ {
+  "id": "817",
+  "en": "single sign-on",
+  "tr": "tekli oturum açma (SSO)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Enterprise single sign-on allows logging in with corporate credentials.",
+  "definition": "One login that opens many connected company systems."
+ },
+ {
+  "id": "818",
+  "en": "skeleton loader",
+  "tr": "iskelet yükleme ekranı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Skeleton loaders reduce perceived loading time during slow network calls.",
+  "definition": "Grey placeholder shapes shown while content is still arriving."
+ },
+ {
+  "id": "819",
+  "en": "smoke test",
+  "tr": "duman / temel işlev testi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Running a quick smoke test verifies build deployment stability in staging.",
+  "definition": "A quick check that basic features still work after building."
+ },
+ {
+  "id": "820",
+  "en": "social proof",
+  "tr": "sosyal kanıt",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Adding customer logos provides strong social proof on sales landing pages.",
+  "definition": "Evidence that other people already trust and buy something."
+ },
+ {
+  "id": "821",
+  "en": "software architecture",
+  "tr": "yazılım mimarisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Scalable software architecture prevents backend bottlenecks under heavy load.",
+  "definition": "The overall structure describing how program parts fit together."
+ },
+ {
+  "id": "822",
+  "en": "solution space",
+  "tr": "çözüm alanı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Discovery focuses on the problem space before jumping into the solution space.",
+  "definition": "The range of possible ways to fix a known problem."
+ },
+ {
+  "id": "823",
+  "en": "source code",
+  "tr": "kaynak kodu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Open source software allows developers to inspect and modify source code.",
+  "definition": "The human-readable instructions programmers write to build a program."
+ },
+ {
+  "id": "824",
+  "en": "spike story",
+  "tr": "araştırma / keşif hikayesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Creating a spike story reserves developer time to research API feasibility.",
+  "definition": "Time set aside to research an unknown technical question."
+ },
+ {
+  "id": "825",
+  "en": "sprint goal",
+  "tr": "sprint hedefi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The team aligned on a clear sprint goal to launch payment checkout integration.",
+  "definition": "The single outcome a team aims for in two weeks."
+ },
+ {
+  "id": "826",
+  "en": "staging environment",
+  "tr": "test / hazırlık ortamı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Features are thoroughly tested in a staging environment prior to production.",
+  "definition": "A copy of the live setup used for final checks."
+ },
+ {
+  "id": "827",
+  "en": "standard operating procedure",
+  "tr": "standart faaliyet prosedürü",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Following standard operating procedures ensures consistent deployment steps.",
+  "definition": "Written steps everyone follows to do a task the same way."
+ },
+ {
+  "id": "828",
+  "en": "state management",
+  "tr": "durum yönetimi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Redux handles global state management in complex web app user interfaces.",
+  "definition": "Keeping track of changing values shared across an interface."
+ },
+ {
+  "id": "829",
+  "en": "sticky feature",
+  "tr": "bağlayıcı / elde tutan özelliği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Real-time chat acts as a sticky feature that drives daily active user retention.",
+  "definition": "A function that keeps people coming back every day."
+ },
+ {
+  "id": "830",
+  "en": "strategic goal",
+  "tr": "stratejik hedef",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Expanding to European markets represents our primary strategic goal for 2027.",
+  "definition": "A major long-term aim guiding a company direction."
+ },
+ {
+  "id": "831",
+  "en": "sub-domain",
+  "tr": "alt alan adı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Documentation pages are hosted on a dedicated help sub-domain.",
+  "definition": "A smaller named section placed before a main website address."
+ },
+ {
+  "id": "832",
+  "en": "subscription model",
+  "tr": "abonelik modeli",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "SaaS subscription models generate predictable monthly recurring revenue.",
+  "definition": "Charging customers a regular fee for continued access."
+ },
+ {
+  "id": "833",
+  "en": "success metric",
+  "tr": "başarı metriği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Increasing registration conversion rate by five percent is our core success metric.",
+  "definition": "The number a team watches to judge if something worked."
+ },
+ {
+  "id": "834",
+  "en": "survey bias",
+  "tr": "anket yanılması",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Asking open-ended neutral questions minimizes survey bias during research.",
+  "definition": "Question wording that pushes people toward a certain answer."
+ },
+ {
+  "id": "835",
+  "en": "swipe gesture",
+  "tr": "kaydırma hareketi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Mobile apps leverage swipe gestures for intuitive card navigation.",
+  "definition": "Moving a finger sideways across a screen to navigate."
+ },
+ {
+  "id": "836",
+  "en": "system architecture",
+  "tr": "sistem mimarisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "System architecture diagrams help new software engineers understand backend flows.",
+  "definition": "The high-level design showing how technical parts connect together."
+ },
+ {
+  "id": "837",
+  "en": "system integration",
+  "tr": "sistem entegrasyonu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "System integration connects our cloud portal with legacy enterprise databases.",
+  "definition": "Connecting separate software so they work as one whole."
+ },
+ {
+  "id": "838",
+  "en": "tacit knowledge",
+  "tr": "örtük / deneyimsel bilgi",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Pair programming helps transfer tacit knowledge between senior and junior devs.",
+  "definition": "Practical understanding gained from experience and hard to explain."
+ },
+ {
+  "id": "839",
+  "en": "tactical roadmap",
+  "tr": "taktiksel yol haritası",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A tactical roadmap outlines specific deliverable milestones for upcoming sprints.",
+  "definition": "A short-term plan listing concrete deliverables and dates."
+ },
+ {
+  "id": "840",
+  "en": "target audience",
+  "tr": "hedef kitle",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Defining your target audience ensures marketing ad copy resonates effectively.",
+  "definition": "The specific group of people a product is made for."
+ },
+ {
+  "id": "841",
+  "en": "task analysis",
+  "tr": "görev analizi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Task analysis maps out operational steps users perform to complete goals.",
+  "definition": "Breaking a job into the exact steps someone performs."
+ },
+ {
+  "id": "842",
+  "en": "technical constraint",
+  "tr": "teknik kısıt",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Legacy database limits represent a key technical constraint for new features.",
+  "definition": "A limit created by existing code or hardware."
+ },
+ {
+  "id": "843",
+  "en": "telemetry data",
+  "tr": "telemetri / uzaktan ölçüm verisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Telemetry data captures app crash logs and system performance metrics.",
+  "definition": "Measurements sent automatically from software back to its makers."
+ },
+ {
+  "id": "844",
+  "en": "tertiary metric",
+  "tr": "üçüncül metrik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Page scroll depth served as a secondary or tertiary metric during testing.",
+  "definition": "A third-priority measurement, watched only for extra background."
+ },
+ {
+  "id": "845",
+  "en": "throughput",
+  "tr": "işlem hacmi / veri akış hızı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Optimizing database queries increases system transaction throughput.",
+  "definition": "The amount of work a system handles in a period."
+ },
+ {
+  "id": "846",
+  "en": "time to market",
+  "tr": "pazara çıkış süresi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Automating testing pipelines reduces overall time to market for new releases.",
+  "definition": "How long it takes to get a product selling publicly."
+ },
+ {
+  "id": "847",
+  "en": "time to value",
+  "tr": "değere ulaşma süresi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Shortening time to value helps users experience product utility immediately.",
+  "definition": "How quickly a new customer gets real benefit from a product."
+ },
+ {
+  "id": "848",
+  "en": "top-of-funnel",
+  "tr": "huni üstü (farkındalık aşaması)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Content marketing drives top-of-funnel awareness for potential buyers.",
+  "definition": "The earliest awareness stage where people first discover you."
+ },
+ {
+  "id": "849",
+  "en": "total addressable market",
+  "tr": "toplam adreslenebilir pazar (TAM)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Calculating total addressable market helps estimate maximum potential revenue.",
+  "definition": "The full revenue possible if every interested buyer purchased."
+ },
+ {
+  "id": "850",
+  "en": "touchpoint analysis",
+  "tr": "temas noktası analizi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Touchpoint analysis evaluates user satisfaction at every brand interaction.",
+  "definition": "Studying every moment a customer interacts with a brand."
+ },
+ {
+  "id": "851",
+  "en": "transactional email",
+  "tr": "işlemsel e-posta",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Password reset links are sent via reliable transactional email servers.",
+  "definition": "An automatic message triggered by a specific customer action."
+ },
+ {
+  "id": "852",
+  "en": "triage process",
+  "tr": "hata önceliklendirme süreci",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The daily triage process assigns reported bugs to relevant engineering squads.",
+  "definition": "Sorting reported problems by urgency and assigning them out."
+ },
+ {
+  "id": "853",
+  "en": "trust signal",
+  "tr": "güven sinyali",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Security badges and verified customer reviews act as effective trust signals.",
+  "definition": "A visible cue showing a website is safe and credible."
+ },
+ {
+  "id": "854",
+  "en": "two-factor authentication",
+  "tr": "iki faktörlü doğrulama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Enabling two-factor authentication protects accounts from unauthorized logins.",
+  "definition": "Logging in with a password plus a second code."
+ },
+ {
+  "id": "855",
+  "en": "type safety",
+  "tr": "tip güvenliği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "TypeScript provides compile-time type safety for complex frontend applications.",
+  "definition": "A guarantee that values match their declared kinds before running."
+ },
+ {
+  "id": "856",
+  "en": "unambiguous requirements",
+  "tr": "belirsiz olmayan / net gereksinimler",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Writing unambiguous requirements prevents engineering misinterpretations.",
+  "definition": "Specifications so clear that nobody can misunderstand them."
+ },
+ {
+  "id": "857",
+  "en": "unified experience",
+  "tr": "bütünleşik deneyim",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Delivering a unified experience across web and mobile builds user loyalty.",
+  "definition": "A consistent feel across every device a customer uses."
+ },
+ {
+  "id": "858",
+  "en": "unintrusive notification",
+  "tr": "rahatsız etmeyen bildirim",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Toast messages serve as unintrusive notifications for success alerts.",
+  "definition": "A gentle alert that does not interrupt your work."
+ },
+ {
+  "id": "859",
+  "en": "unique value proposition",
+  "tr": "benzersiz değer önermesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A clear unique value proposition sets your product apart from competitors.",
+  "definition": "The clear reason customers choose you over every competitor."
+ },
+ {
+  "id": "860",
+  "en": "unit testing",
+  "tr": "birim testi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Engineers write unit testing scripts to verify isolated function logic.",
+  "definition": "Checking one small piece of code works in isolation."
+ },
+ {
+  "id": "861",
+  "en": "unmoderated testing",
+  "tr": "yönlendirmesiz kullanılabilirlik testi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Unmoderated testing collects remote video recordings of user sessions.",
+  "definition": "A study where participants work alone with nobody guiding them."
+ },
+ {
+  "id": "862",
+  "en": "unplanned work",
+  "tr": "planlanmamış iş",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Production outages introduce unplanned work that interrupts sprint progress.",
+  "definition": "Urgent tasks that appear suddenly and disrupt the schedule."
+ },
+ {
+  "id": "863",
+  "en": "up-selling",
+  "tr": "üst model satışı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "In-app popups prompt free accounts with up-selling prompts for Pro features.",
+  "definition": "Persuading a customer to buy a more expensive version."
+ },
+ {
+  "id": "864",
+  "en": "uptime guarantee",
+  "tr": "çalışma süresi garantisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Enterprise SLAs provide a 99.9% uptime guarantee backed by refunds.",
+  "definition": "A promise that servers will stay available almost always."
+ },
+ {
+  "id": "865",
+  "en": "usable security",
+  "tr": "kullanılabilir güvenlik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Biometric authentication offers usable security without frustrating users.",
+  "definition": "Protection designed to be easy enough that people accept it."
+ },
+ {
+  "id": "866",
+  "en": "usage analytics",
+  "tr": "kullanım analitiği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Usage analytics highlights which dashboard widgets are accessed most.",
+  "definition": "Statistics showing which product features people actually open."
+ },
+ {
+  "id": "867",
+  "en": "user journey",
+  "tr": "kullanıcı yolculuğu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Mapping the user journey highlights drop-off points in registration flows.",
+  "definition": "The whole path a customer takes toward a goal."
+ },
+ {
+  "id": "868",
+  "en": "user persona",
+  "tr": "kullanıcı personası",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "User personas ground design decisions in realistic target audience profiles.",
+  "definition": "A fictional profile representing one typical customer type."
+ },
+ {
+  "id": "869",
+  "en": "user research",
+  "tr": "kullanıcı araştırması",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "User research validates feature concepts before development commitments.",
+  "definition": "Studying real customers to learn their needs and problems."
+ },
+ {
+  "id": "870",
+  "en": "user story",
+  "tr": "kullanıcı hikayesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "User stories express desired software features from the end-user perspective.",
+  "definition": "A short feature description written from the customer viewpoint."
+ },
+ {
+  "id": "871",
+  "en": "user story mapping",
+  "tr": "kullanıcı hikayesi haritalama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "User story mapping organizes backlog items visually along workflow steps.",
+  "definition": "Arranging planned features visually along the steps of a workflow."
+ },
+ {
+  "id": "872",
+  "en": "utility",
+  "tr": "fayda / kullanışlılık",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Product utility measures how effectively software solves actual user problems.",
+  "definition": "How well something serves a practical purpose."
+ },
+ {
+  "id": "873",
+  "en": "validation experiment",
+  "tr": "doğrulama deneyi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A validation experiment confirms market demand before building full features.",
+  "definition": "A small trial proving that demand really exists."
+ },
+ {
+  "id": "874",
+  "en": "value driver",
+  "tr": "değer sürücüsü / etkeni",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Product speed and reliability serve as core enterprise value drivers.",
+  "definition": "A factor that most increases what customers gain."
+ },
+ {
+  "id": "875",
+  "en": "value stream mapping",
+  "tr": "değer akış haritalama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Value stream mapping identifies inefficient delays in release delivery.",
+  "definition": "Charting each step of delivery to find wasted effort."
+ },
+ {
+  "id": "876",
+  "en": "vanity metric",
+  "tr": "gösteriş metriği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Total registered app downloads can be a vanity metric if active usage is low.",
+  "definition": "A flattering number that looks good but means little."
+ },
+ {
+  "id": "877",
+  "en": "vendor lock-in",
+  "tr": "tedarikçiye bağımlılık",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Using open standards avoids vendor lock-in with proprietary cloud services.",
+  "definition": "Being stuck with one supplier because switching costs too much."
+ },
+ {
+  "id": "878",
+  "en": "version control",
+  "tr": "sürüm kontrolü",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Git provides version control to track code changes and handle merges.",
+  "definition": "A tool that records every code change over time."
+ },
+ {
+  "id": "879",
+  "en": "vertical SaaS",
+  "tr": "dikey SaaS",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Vertical SaaS applications tailor features specifically for niche industries.",
+  "definition": "Cloud software built for one specific industry only."
+ },
+ {
+  "id": "880",
+  "en": "viral loop",
+  "tr": "viral döngü",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A referral reward system creates a self-sustaining viral loop for app growth.",
+  "definition": "A cycle where existing members keep inviting new ones."
+ },
+ {
+  "id": "881",
+  "en": "voice of customer",
+  "tr": "müşterinin sesi (VoC)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Voice of customer feedback drives continuous backlog item prioritization.",
+  "definition": "Direct feedback gathered from the people who buy something."
+ },
+ {
+  "id": "882",
+  "en": "workflow automation",
+  "tr": "iş akışı otomasyonu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Workflow automation handles repetitive customer support ticket routing.",
+  "definition": "Letting software handle repetitive steps without human effort."
+ },
+ {
+  "id": "883",
+  "en": "workload balancing",
+  "tr": "iş yükü dengeleme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Workload balancing prevents engineering burnout across two-week sprints.",
+  "definition": "Sharing tasks fairly so nobody on the team burns out."
+ },
+ {
+  "id": "884",
+  "en": "zero downtime deployment",
+  "tr": "kesintisiz canlıya alma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Zero downtime deployment updates cloud servers without interrupting users.",
+  "definition": "Updating live servers while customers keep using them normally."
+ },
+ {
+  "id": "885",
+  "en": "zero-state design",
+  "tr": "boş durum tasarımı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Zero-state design guides new users when dashboard data is not yet available.",
+  "definition": "Screens shown when there is nothing yet to display."
+ },
+ {
+  "id": "886",
+  "en": "acceptability testing",
+  "tr": "kabul edilebilirlik testi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Acceptability testing ensures the release meets enterprise security requirements.",
+  "definition": "Checking whether a product meets agreed standards before launch."
+ },
+ {
+  "id": "887",
+  "en": "account retention",
+  "tr": "hesap elde tutma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Account retention strategies focus on reducing contract churn in key accounts.",
+  "definition": "Keeping existing business customers from cancelling their contracts."
+ },
+ {
+  "id": "888",
+  "en": "action plan",
+  "tr": "eylem planı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The post-mortem meeting produced a concrete action plan to prevent future outages.",
+  "definition": "A clear list of steps to fix something soon."
+ },
+ {
+  "id": "889",
+  "en": "active engagement",
+  "tr": "aktif etkileşim",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Daily interactive notifications boost active engagement among dormant users.",
+  "definition": "Frequent, meaningful involvement between people and a product."
+ },
+ {
+  "id": "890",
+  "en": "adaptive layout",
+  "tr": "uyarlanabilir düzen",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "An adaptive layout adjusts component positioning based on screen orientation.",
+  "definition": "An arrangement that changes to fit different screen shapes."
+ },
+ {
+  "id": "891",
+  "en": "admin panel",
+  "tr": "yönetici paneli",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The admin panel allows support agents to reset user permissions securely.",
+  "definition": "A private screen where staff control settings and accounts."
+ },
+ {
+  "id": "892",
+  "en": "adverse effect",
+  "tr": "olumsuz etki",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Removing legacy payment endpoints had no adverse effect on enterprise users.",
+  "definition": "A harmful result caused by some change."
+ },
+ {
+  "id": "893",
+  "en": "affiliate marketing",
+  "tr": "ortaklık pazarlaması",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Affiliate marketing rewards partners for driving converting sales leads.",
+  "definition": "Paying partners a commission for each sale they bring."
+ },
+ {
+  "id": "894",
+  "en": "aggregate metric",
+  "tr": "toplam / birleşik metrik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Revenue per user is an aggregate metric evaluated across all customer tiers.",
+  "definition": "A single number combining figures from many groups together."
+ },
+ {
+  "id": "895",
+  "en": "agile mindset",
+  "tr": "çevik zihniyet",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Fostering an agile mindset enables squads to respond swiftly to customer feedback.",
+  "definition": "A flexible attitude that welcomes change and fast feedback."
+ },
+ {
+  "id": "896",
+  "en": "alerting threshold",
+  "tr": "uyarı eşiği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Setting an alerting threshold notifies engineers when error rates exceed one percent.",
+  "definition": "The limit that triggers a warning to engineers."
+ },
+ {
+  "id": "897",
+  "en": "algorithm efficiency",
+  "tr": "algoritma verimliliği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Improving algorithm efficiency reduced server load during peak hours.",
+  "definition": "How few resources a calculation method needs to finish."
+ },
+ {
+  "id": "898",
+  "en": "allocation of resources",
+  "tr": "kaynak tahsisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Strategic allocation of resources prioritized core infrastructure stability.",
+  "definition": "Deciding how money and people are shared between projects."
+ },
+ {
+  "id": "899",
+  "en": "alpha version",
+  "tr": "alfa sürümü",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The internal team tested the alpha version to identify initial stability issues.",
+  "definition": "The earliest rough build tested only inside the company."
+ },
+ {
+  "id": "900",
+  "en": "ambient design",
+  "tr": "ortamsal tasarım",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Ambient design provides quiet notifications that do not interrupt user focus.",
+  "definition": "Quiet background cues that inform without grabbing attention."
+ },
+ {
+  "id": "901",
+  "en": "anchor text",
+  "tr": "çapa / bağlantı metni",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Descriptive anchor text improves web accessibility and search engine indexing.",
+  "definition": "The clickable words that carry a link on a webpage."
+ },
+ {
+  "id": "902",
+  "en": "anomaly analysis",
+  "tr": "anomali analizi",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Anomaly analysis caught a sudden drop in daily active user check-ins.",
+  "definition": "Examining odd numbers that break the usual pattern."
+ },
+ {
+  "id": "903",
+  "en": "anonymous feedback",
+  "tr": "anonim geri bildirim",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Collecting anonymous feedback encourages honest team evaluation during retros.",
+  "definition": "Comments given without revealing who wrote them."
+ },
+ {
+  "id": "904",
+  "en": "anti-pattern",
+  "tr": "zayıf / yanlış kullanım kalıbı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Hardcoding API URLs into front-end components is a well-known anti-pattern.",
+  "definition": "A common coding habit that seems helpful but causes problems."
+ },
+ {
+  "id": "905",
+  "en": "API gateway",
+  "tr": "API geçidi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The API gateway handles routing, rate limiting, and authentication for requests.",
+  "definition": "A single entry server that routes and controls incoming requests."
+ },
+ {
+  "id": "906",
+  "en": "app telemetry",
+  "tr": "uygulama telemetrisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "App telemetry logs user crashes and system memory allocation in production.",
+  "definition": "Automatic measurements sent from mobile software about crashes and speed."
+ },
+ {
+  "id": "907",
+  "en": "architectural blueprint",
+  "tr": "mimari plan / şema",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The lead engineer drafted an architectural blueprint before database migration.",
+  "definition": "A detailed technical drawing of how a system will be built."
+ },
+ {
+  "id": "908",
+  "en": "asset library",
+  "tr": "materyal / varlık kütüphanesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Designers maintain a centralized Figma asset library for visual components.",
+  "definition": "A shared store of logos, icons, and design files."
+ },
+ {
+  "id": "909",
+  "en": "asynchronous processing",
+  "tr": "eşzamansız veri işleme",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Background workers handle asynchronous processing of heavy video exports.",
+  "definition": "Handling heavy jobs in the background while other things continue."
+ },
+ {
+  "id": "910",
+  "en": "atomic design",
+  "tr": "atomik tasarım",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Atomic design builds complex UI components out of basic atomic elements.",
+  "definition": "Building large interfaces from the smallest reusable elements upward."
+ },
+ {
+  "id": "911",
+  "en": "attribute tracking",
+  "tr": "öznitelik takibi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Attribute tracking captures metadata like device type and browser version.",
+  "definition": "Recording extra details about each visitor, like device or browser."
+ },
+ {
+  "id": "912",
+  "en": "audit log",
+  "tr": "denetim kaydı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Security compliance mandates maintaining an immutable audit log of admin edits.",
+  "definition": "A permanent record of who changed what and when."
+ },
+ {
+  "id": "913",
+  "en": "authentication flow",
+  "tr": "doğrulama akışı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Simplifying the authentication flow reduced user signup drop-off rates.",
+  "definition": "The steps someone follows to prove identity and enter."
+ },
+ {
+  "id": "914",
+  "en": "authorization header",
+  "tr": "yetkilendirme üstbilgisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "HTTP authorization headers transport bearer tokens securely across APIs.",
+  "definition": "A part of a request that carries the permission token."
+ },
+ {
+  "id": "915",
+  "en": "auto-scaling",
+  "tr": "otomatik ölçekleme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Cloud auto-scaling provisions additional servers during traffic spikes.",
+  "definition": "Adding or removing servers by itself as traffic changes."
+ },
+ {
+  "id": "916",
+  "en": "automated deployment",
+  "tr": "otomatik canlıya alma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Automated deployment pipelines push vetted code builds directly to production.",
+  "definition": "Pushing new code to live servers without manual steps."
+ },
+ {
+  "id": "917",
+  "en": "back-end development",
+  "tr": "arka yüz geliştirme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Back-end development focuses on database queries and API endpoint logic.",
+  "definition": "Server-side programming that handles databases and hidden logic."
+ },
+ {
+  "id": "918",
+  "en": "backlog item",
+  "tr": "iş listesi maddesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Each backlog item must have clear acceptance criteria before refinement.",
+  "definition": "A single piece of pending work waiting to be built."
+ },
+ {
+  "id": "919",
+  "en": "backlog refinement",
+  "tr": "iş listesi detaylandırma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "During backlog refinement, the squad estimates story points for upcoming tasks.",
+  "definition": "Grooming the pending task list so items are ready."
+ },
+ {
+  "id": "920",
+  "en": "backoff strategy",
+  "tr": "geri çekilme / bekleme stratejisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Exponential backoff strategy prevents server overload when retrying failed requests.",
+  "definition": "Waiting longer between each retry after a failed call."
+ },
+ {
+  "id": "921",
+  "en": "backpressure",
+  "tr": "geri basınç / akış dengeleme",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Implementing backpressure stops consumer pipelines from overflowing under high data load.",
+  "definition": "A signal telling a fast sender to slow down."
+ },
+ {
+  "id": "922",
+  "en": "badge notification",
+  "tr": "rozet bildirimi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "App icons display a badge notification indicating unread user messages.",
+  "definition": "The small red counter shown on an app icon."
+ },
+ {
+  "id": "923",
+  "en": "balanced scorecard",
+  "tr": "dengeli başarı göstergesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Executives use a balanced scorecard to evaluate operational and financial health.",
+  "definition": "A management tool tracking financial and operational health together."
+ },
+ {
+  "id": "924",
+  "en": "bandwidth usage",
+  "tr": "bant genişliği kullanımı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Compressing image payloads decreased overall application bandwidth usage.",
+  "definition": "How much network capacity an application consumes."
+ },
+ {
+  "id": "925",
+  "en": "banner ad",
+  "tr": "banner reklam",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Replacing static banner ads with native content improved click-through rates.",
+  "definition": "A rectangular promotional image placed across a webpage."
+ },
+ {
+  "id": "926",
+  "en": "barrier to entry",
+  "tr": "giriş engeli",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "High initial infrastructure costs present a significant barrier to entry.",
+  "definition": "An obstacle making it hard for newcomers to compete."
+ },
+ {
+  "id": "927",
+  "en": "base model",
+  "tr": "temel model",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The base model offers essential functionality, while add-ons unlock analytics.",
+  "definition": "The cheapest version with only essential features included."
+ },
+ {
+  "id": "928",
+  "en": "behavioral pattern",
+  "tr": "davranışsal kalıp",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Analyzing user behavioral patterns helps optimize navigation menu structure.",
+  "definition": "A repeated way people act while browsing a product."
+ },
+ {
+  "id": "929",
+  "en": "benchmarking test",
+  "tr": "kıyaslama testi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Running a benchmarking test evaluated our system performance against competitors.",
+  "definition": "Measuring your performance against rivals using identical conditions."
+ },
+ {
+  "id": "930",
+  "en": "best practice",
+  "tr": "en iyi uygulama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Following industry best practice ensures high code readability and maintainability.",
+  "definition": "A method widely agreed to give the finest results."
+ },
+ {
+  "id": "931",
+  "en": "beta launch",
+  "tr": "beta lansmanı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Our beta launch collected early user feedback before nationwide release.",
+  "definition": "Opening an unfinished product to a limited outside group."
+ },
+ {
+  "id": "932",
+  "en": "bias mitigation",
+  "tr": "yanlılığı / önyargıyı azaltma",
+  "pos": "Teknik / PM",
+  "level": "C1",
+  "example": "Standardizing interview templates assists in bias mitigation during research.",
+  "definition": "Steps taken to reduce unfair influence on research results."
+ },
+ {
+  "id": "933",
+  "en": "binary search",
+  "tr": "ikili arama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Binary search algorithms reduce query lookup time across sorted datasets.",
+  "definition": "Finding an item by repeatedly halving a sorted list."
+ },
+ {
+  "id": "934",
+  "en": "bind parameter",
+  "tr": "parametre bağlama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Using bind parameters prevents SQL injection vulnerabilities in database queries.",
+  "definition": "A safe placeholder for values inserted into database commands."
+ },
+ {
+  "id": "935",
+  "en": "biometric login",
+  "tr": "biyometrik giriş",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Enabling biometric login speeds up app authentication for mobile users.",
+  "definition": "Unlocking an account with your fingerprint or face."
+ },
+ {
+  "id": "936",
+  "en": "bitrate optimization",
+  "tr": "bit hızı optimizasyonu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Bitrate optimization preserves streaming video quality while conserving data.",
+  "definition": "Tuning how much information a video stream carries each second."
+ },
+ {
+  "id": "937",
+  "en": "black-box testing",
+  "tr": "kara kutu testi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "QA performs black-box testing without knowledge of internal backend code.",
+  "definition": "Checking a product from outside without seeing internal code."
+ },
+ {
+  "id": "938",
+  "en": "blocker bug",
+  "tr": "engelleyici hata",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "A blocker bug forced us to delay the production deployment by one day.",
+  "definition": "An error so severe that nothing can continue."
+ },
+ {
+  "id": "939",
+  "en": "blueprint",
+  "tr": "taslak / yol haritası",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The product manager created a strategic blueprint for scaling multi-tenant software.",
+  "definition": "A guiding plan that shows how to build something."
+ },
+ {
+  "id": "940",
+  "en": "body copy",
+  "tr": "gövde metni",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Clear body copy ensures users understand product functionality easily.",
+  "definition": "The main paragraphs of writing on a page."
+ },
+ {
+  "id": "941",
+  "en": "boilerplate code",
+  "tr": "şablon / kalıp kod",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Using boilerplate code accelerates setup times for new microservices.",
+  "definition": "Standard starting text repeated in every new project."
+ },
+ {
+  "id": "942",
+  "en": "bookmarking feature",
+  "tr": "yer imlerine ekleme özelliği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Adding a bookmarking feature lets users save favorite articles for offline reading.",
+  "definition": "A tool letting people save items for later reading."
+ },
+ {
+  "id": "943",
+  "en": "bottleneck analysis",
+  "tr": "darboğaz analizi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Bottleneck analysis highlighted database read latency as the primary issue.",
+  "definition": "Finding the slowest step that limits overall speed."
+ },
+ {
+  "id": "944",
+  "en": "brainstorming session",
+  "tr": "beyin fırtınası oturumu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The design team held a brainstorming session to generate novel feature concepts.",
+  "definition": "A group meeting for generating many fresh ideas quickly."
+ },
+ {
+  "id": "945",
+  "en": "branch strategy",
+  "tr": "dal / branş stratejisi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Adopting a clean Git branch strategy prevents code collision during releases.",
+  "definition": "Agreed rules for splitting and merging separate code lines."
+ },
+ {
+  "id": "946",
+  "en": "brand perception",
+  "tr": "marka algısı",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Customer survey metrics reflect overall positive brand perception in Europe.",
+  "definition": "How customers see and feel about a company overall."
+ },
+ {
+  "id": "947",
+  "en": "breadth-first search",
+  "tr": "genişlik öncelikli arama",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Breadth-first search algorithms help traverse tree structures level by level.",
+  "definition": "Exploring a tree level by level before going deeper."
+ },
+ {
+  "id": "948",
+  "en": "breaking change",
+  "tr": "kırıcı / uyumsuz değişiklik",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Releasing a breaking change requires updating version numbers in documentation.",
+  "definition": "An update that stops older code from working."
+ },
+ {
+  "id": "949",
+  "en": "breakpoint",
+  "tr": "kırılma noktası (responsive)",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "CSS breakpoints re-layout web grids seamlessly across varying screen sizes.",
+  "definition": "A screen width where the design switches arrangement."
+ },
+ {
+  "id": "950",
+  "en": "broad audience",
+  "tr": "geniş kitle",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Mass consumer platforms target a broad audience across multiple demographics.",
+  "definition": "A very wide range of many different people."
+ },
+ {
+  "id": "951",
+  "en": "browser compatibility",
+  "tr": "tarayıcı uyumluluğu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Cross-browser testing verifies web application layout browser compatibility.",
+  "definition": "Whether a website works properly in Chrome, Safari, and Firefox."
+ },
+ {
+  "id": "952",
+  "en": "buffer capacity",
+  "tr": "tampon kapasite",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Maintaining buffer capacity absorbs unexpected spikes in API request volume.",
+  "definition": "Spare room kept ready for sudden extra demand."
+ },
+ {
+  "id": "953",
+  "en": "bug backlog",
+  "tr": "hata iş listesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Squads dedicate twenty percent of sprint time to resolving the bug backlog.",
+  "definition": "The waiting list of known faults still unfixed."
+ },
+ {
+  "id": "954",
+  "en": "bug tracking system",
+  "tr": "hata takip sistemi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Jira serves as our central bug tracking system for engineering teams.",
+  "definition": "Software where teams record and follow reported faults."
+ },
+ {
+  "id": "955",
+  "en": "build automation",
+  "tr": "derleme otomasyonu",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Build automation compiles code assets and runs tests on every commit.",
+  "definition": "Tools that compile code and run checks after every commit."
+ },
+ {
+  "id": "956",
+  "en": "built-in integration",
+  "tr": "yerleşik entegrasyon",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "The software features built-in integration with popular CRM platforms.",
+  "definition": "A connection to other tools included by default."
+ },
+ {
+  "id": "957",
+  "en": "bulk export",
+  "tr": "toplu dışa aktarma",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Adding bulk export capabilities allows users to download large CSV reports.",
+  "definition": "Downloading many records at once as one file."
+ },
+ {
+  "id": "958",
+  "en": "burst capacity",
+  "tr": "ani yük kapasitesi",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Server infrastructure scales up burst capacity during flash sale events.",
+  "definition": "Extra power available briefly during a sudden traffic spike."
+ },
+ {
+  "id": "959",
+  "en": "business continuity",
+  "tr": "iş sürekliliği",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Disaster recovery planning ensures business continuity during data center failure.",
+  "definition": "Keeping a company running during a major disaster."
+ },
+ {
+  "id": "960",
+  "en": "business domain",
+  "tr": "iş alanı / sektörü",
+  "pos": "Teknik / PM",
+  "level": "B2",
+  "example": "Engineers need deep understanding of the business domain to write clean logic.",
+  "definition": "The particular industry area a product serves."
+ }
+]

@@ -1,4 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {dateKey} from './dates';
 import {emptyLearningState, LearningState} from './learningEngine';
 
 const key = 'fluent:learning-state';
@@ -11,7 +12,7 @@ export async function saveLearningState(state: LearningState) {
 }
 export function recordPractice(state: LearningState, wordId: string, known: boolean): LearningState {
   const current = state.progress[wordId] ?? {known: 0, unknown: 0, favorite: false};
-  const today = new Date().toISOString().slice(0, 10);
+  const today = dateKey();
   const activity = state.activity ?? {};
   const todayActivity = activity[today] ?? {reviewed: 0, learned: 0};
   return {

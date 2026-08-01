@@ -1,6 +1,8 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {Pressable, ScrollView, StyleSheet, Text, View} from 'react-native';
+import {AppBar, AppBarButton} from '../../components/AppBar';
+import {Icon} from '../../components/Icon';
 import {OccupationPicker} from '../../components/survey/OccupationPicker';
 import {getSurveySteps, isStepValid, needsOccupation, SurveyStepKey} from '../../logic/surveyFlow';
 import {OnboardingStackParamList} from '../../navigation/OnboardingNavigator';
@@ -25,7 +27,63 @@ export function SurveyScreen({navigation, answers, onChange}: Props) {
   const next = () => index === steps.length - 1 ? navigation.navigate('Notifications') : setIndex(index + 1);
   const back = () => index === 0 ? navigation.goBack() : setIndex(index - 1);
   const valid = isStepValid(step, answers);
-  return <ScreenShell><View style={styles.top}><Pressable hitSlop={12} onPress={back}><Text style={styles.back}>‹</Text></Pressable><View style={styles.progress}>{steps.map((item, itemIndex) => <View key={item} style={[styles.segment, itemIndex <= index && styles.filled]} />)}</View></View><Text style={styles.eyebrow}>STEP {index + 1} OF {steps.length}</Text><Text style={styles.title}>{content[step].title}</Text><Text style={styles.subtext}>{content[step].subtext}</Text><View style={styles.body}>{step === 'level' && <Options options={levels} selected={answers.level} onPress={key => set({level: key as Level})} />}{step === 'goals' && <Options options={goals} selected={answers.goals} onPress={key => toggleGoal(key as Goal)} />}{step === 'occupation' && <OccupationPicker value={answers.occupationText} onSelect={(occupation, occupationText) => set({occupation, occupationText})} onType={(occupation, occupationText) => set({occupation, occupationText: occupationText || null})} />}{step === 'daily' && <Options options={daily} selected={answers.daily} onPress={key => set({daily: key as DailyCommitment})} />}{step === 'weekly' && <Options options={weekly} selected={answers.weekly} onPress={key => set({weekly: key as WeeklyGoal})} />}</View><Pressable disabled={!valid} style={[styles.continue, !valid && styles.continueDisabled]} onPress={next}><Text style={styles.continueText}>Continue</Text></Pressable></ScreenShell>;
+  return <ScreenShell>
+    <AppBar
+      title={`Step ${index + 1} of ${steps.length}`}
+      left={
+        <AppBarButton onPress={back} accessibilityLabel="Back">
+          <Icon.ChevronLeft />
+        </AppBarButton>
+      }
+    />
+    <View style={styles.progress}>{steps.map((item, itemIndex) => <View key={item} style={[styles.segment, itemIndex <= index && styles.filled]} />)}</View>
+    <Text style={styles.eyebrow}>STEP {index + 1} OF {steps.length}</Text>
+    <Text style={styles.title}>{content[step].title}</Text>
+    <Text style={styles.subtext}>{content[step].subtext}</Text>
+    <View style={styles.body}>
+      {step === 'level' && <Options options={levels} selected={answers.level} onPress={key => set({level: key as Level})} />}
+      {step === 'goals' && <Options options={goals} selected={answers.goals} onPress={key => toggleGoal(key as Goal)} />}
+      {step === 'occupation' && <OccupationPicker value={answers.occupationText} onSelect={(occupation, occupationText) => set({occupation, occupationText})} onClear={() => set({occupation: null, occupationText: null})} />}
+      {step === 'daily' && <Options options={daily} selected={answers.daily} onPress={key => set({daily: key as DailyCommitment})} />}
+      {step === 'weekly' && <Options options={weekly} selected={answers.weekly} onPress={key => set({weekly: key as WeeklyGoal})} />}
+    </View>
+    <Pressable disabled={!valid} style={[styles.continue, !valid && styles.continueDisabled]} onPress={next}>
+      <Text style={styles.continueText}>Continue</Text>
+    </Pressable>
+  </ScreenShell>;
 }
-function Options({options, selected, onPress}: {options: {key: string; label: string; description?: string}[]; selected: string | string[] | null; onPress: (key: string) => void}) { const chosen = (key: string) => Array.isArray(selected) ? selected.includes(key) : selected === key; return <ScrollView showsVerticalScrollIndicator={false}>{options.map(option => <Pressable key={option.key} style={[styles.option, chosen(option.key) && styles.selected]} onPress={() => onPress(option.key)}><View><Text style={[styles.optionTitle, chosen(option.key) && styles.selectedText]}>{option.label}</Text>{option.description ? <Text style={[styles.optionDescription, chosen(option.key) && styles.selectedDescription]}>{option.description}</Text> : null}</View><Text style={[styles.indicator, chosen(option.key) && styles.indicatorSelected]}>{chosen(option.key) ? '✓' : '○'}</Text></Pressable>)}</ScrollView>; }
-const styles = StyleSheet.create({top: {flexDirection: 'row', alignItems: 'center', gap: spacing.md, marginTop: spacing.sm}, back: {fontSize: 40, lineHeight: 35, color: colors.text}, progress: {flex: 1, flexDirection: 'row', gap: 5}, segment: {height: 4, flex: 1, borderRadius: 9, backgroundColor: '#2A303A'}, filled: {backgroundColor: colors.mint}, eyebrow: {marginTop: spacing.lg, color: colors.muted, fontWeight: '700', fontSize: typography.caption, letterSpacing: 2.2}, title: {fontSize: 42, lineHeight: 45, letterSpacing: -2.1, color: colors.text, fontWeight: '700', marginTop: spacing.md}, subtext: {marginTop: spacing.sm, color: colors.muted, fontSize: 18, lineHeight: 25}, body: {flex: 1, marginTop: spacing.xl, marginBottom: spacing.md}, option: {minHeight: 82, borderWidth: 0, borderRadius: radius.md, padding: spacing.md, marginBottom: spacing.sm, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', backgroundColor: '#171B21'}, selected: {backgroundColor: colors.mint}, optionTitle: {fontWeight: '500', color: colors.text, fontSize: 18}, optionDescription: {color: colors.muted, marginTop: 5, fontSize: 14}, selectedText: {color: '#101820', fontWeight: '600'}, selectedDescription: {color: 'rgba(9,36,126,.72)'}, indicator: {fontSize: 22, color: colors.muted}, indicatorSelected: {color: colors.primaryText}, continue: {borderRadius: radius.md, backgroundColor: colors.mint, paddingVertical: 18, alignItems: 'center', marginBottom: spacing.sm}, continueDisabled: {opacity: .34}, continueText: {color: colors.primaryText, fontWeight: '700', fontSize: 18}});
+
+function Options({options, selected, onPress}: {options: {key: string; label: string; description?: string}[]; selected: string | string[] | null; onPress: (key: string) => void}) {
+  const chosen = (key: string) => Array.isArray(selected) ? selected.includes(key) : selected === key;
+  return <ScrollView showsVerticalScrollIndicator={false}>{options.map(option => {
+    const active = chosen(option.key);
+    return <Pressable key={option.key} style={[styles.option, active && styles.selected]} onPress={() => onPress(option.key)}>
+      <View style={styles.optionCopy}>
+        <Text style={[styles.optionTitle, active && styles.selectedText]}>{option.label}</Text>
+        {option.description ? <Text style={[styles.optionDescription, active && styles.selectedDescription]}>{option.description}</Text> : null}
+      </View>
+      {active ? <Icon.Check size={22} color={colors.primaryText} /> : <View style={styles.indicatorEmpty} />}
+    </Pressable>;
+  })}</ScrollView>;
+}
+
+const styles = StyleSheet.create({
+  progress: {flexDirection: 'row', gap: 5, marginTop: spacing.sm},
+  segment: {height: 4, flex: 1, borderRadius: 9, backgroundColor: '#2A303A'},
+  filled: {backgroundColor: colors.mint},
+  eyebrow: {marginTop: spacing.lg, color: colors.muted, fontWeight: '700', fontSize: typography.caption, letterSpacing: 2.2},
+  title: {fontSize: 42, lineHeight: 45, letterSpacing: -2.1, color: colors.text, fontWeight: '700', marginTop: spacing.md},
+  subtext: {marginTop: spacing.sm, color: colors.muted, fontSize: 18, lineHeight: 25},
+  body: {flex: 1, marginTop: spacing.xl, marginBottom: spacing.md},
+  option: {minHeight: 82, borderWidth: 0, borderRadius: radius.md, padding: spacing.md, marginBottom: spacing.sm, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', backgroundColor: '#171B21', gap: spacing.sm},
+  optionCopy: {flex: 1},
+  selected: {backgroundColor: colors.mint},
+  optionTitle: {fontWeight: '500', color: colors.text, fontSize: 18},
+  optionDescription: {color: colors.muted, marginTop: 5, fontSize: 14},
+  selectedText: {color: '#101820', fontWeight: '600'},
+  selectedDescription: {color: 'rgba(9,36,126,.72)'},
+  indicatorEmpty: {width: 22, height: 22, borderRadius: 11, borderWidth: 1.5, borderColor: colors.muted},
+  continue: {borderRadius: radius.md, backgroundColor: colors.mint, paddingVertical: 18, alignItems: 'center', marginBottom: spacing.sm},
+  continueDisabled: {opacity: .34},
+  continueText: {color: colors.primaryText, fontWeight: '700', fontSize: 18},
+});

@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "2305",
+  "en": "excluding",
+  "tr": "Hariç tutarak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Excluding that one setback, it was our best quarter yet.",
+  "definition": "Leaving one thing out of a group or total."
+ },
+ {
+  "id": "2306",
+  "en": "barring",
+  "tr": "Hariç, olmadıkça",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Barring any last-minute issues, we'll ship on Friday.",
+  "definition": "If nothing unexpected happens or gets in the way."
+ },
+ {
+  "id": "2307",
+  "en": "not counting",
+  "tr": "Saymazsak, hariç",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Not counting the delay, the launch went exactly as planned.",
+  "definition": "Without adding a certain thing to the final total."
+ },
+ {
+  "id": "2308",
+  "en": "let alone",
+  "tr": "Şöyle dursun, bırakın",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We didn't have time to test thoroughly, let alone polish the UI.",
+  "definition": "Used to add something even more unlikely than what was said."
+ },
+ {
+  "id": "2309",
+  "en": "lack",
+  "tr": "Eksiklik, yokluk",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The real issue was a lack of clear ownership, not a lack of effort.",
+  "definition": "The state of not having enough of something."
+ },
+ {
+  "id": "2310",
+  "en": "deficiency",
+  "tr": "Eksiklik, yetersizlik",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We identified a deficiency in our testing process and fixed it.",
+  "definition": "A fault or shortage that makes something less than complete."
+ },
+ {
+  "id": "2311",
+  "en": "failure",
+  "tr": "Başarısızlık",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That failure taught me more than any of my early wins did.",
+  "definition": "An attempt or effort that does not succeed."
+ },
+ {
+  "id": "2312",
+  "en": "shortfall",
+  "tr": "Eksiklik, açık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We had a shortfall in resources, so I adjusted the scope.",
+  "definition": "The amount by which something is less than you need."
+ },
+ {
+  "id": "2313",
+  "en": "shortcoming",
+  "tr": "Eksiklik, kusur",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm upfront about my shortcomings, especially in interviews.",
+  "definition": "A personal weakness or fault that someone admits."
+ },
+ {
+  "id": "2314",
+  "en": "flaw",
+  "tr": "Kusur, hata",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We caught the flaw in the design before it reached users.",
+  "definition": "A small mistake or weak point that spoils something."
+ },
+ {
+  "id": "2315",
+  "en": "pitfall",
+  "tr": "Tuzak, tehlike",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I flagged that pitfall early because I'd hit it once before.",
+  "definition": "A hidden danger or common mistake that is easy to make."
+ },
+ {
+  "id": "2316",
+  "en": "downside",
+  "tr": "Olumsuz yön, dezavantaj",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The downside was slower performance on older devices.",
+  "definition": "The bad or negative side of an otherwise good choice."
+ },
+ {
+  "id": "2317",
+  "en": "limitation",
+  "tr": "Sınırlama, kısıtlılık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I was upfront about the limitation instead of overselling the fix.",
+  "definition": "Something that a product or person cannot do."
+ },
+ {
+  "id": "2318",
+  "en": "deficit",
+  "tr": "Açık, eksiklik",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We had a real skills deficit on the team, so I hired for it.",
+  "definition": "A shortage, especially of money or of needed skills."
+ },
+ {
+  "id": "2319",
+  "en": "gap",
+  "tr": "Boşluk, açık",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "There was a clear gap between what we promised and what we shipped.",
+  "definition": "An empty space or difference between two things."
+ },
+ {
+  "id": "2320",
+  "en": "oversight",
+  "tr": "Gözden kaçırma, ihmal",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "It was an honest oversight, and I owned it immediately.",
+  "definition": "A small mistake made because someone did not notice something."
+ },
+ {
+  "id": "2321",
+  "en": "blind spot",
+  "tr": "Kör nokta",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Delegation was a real blind spot for me early in my career.",
+  "definition": "An area where a person cannot see their own weakness."
+ },
+ {
+  "id": "2322",
+  "en": "miscalculation",
+  "tr": "Yanlış hesaplama",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "That was a miscalculation on my part, and I corrected it fast.",
+  "definition": "A wrong judgement about numbers, timing, or a situation."
+ },
+ {
+  "id": "2323",
+  "en": "mishap",
+  "tr": "Aksilik, talihsizlik",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "A small mishap during the demo actually made the room laugh and relax.",
+  "definition": "A small piece of bad luck, usually not serious."
+ },
+ {
+  "id": "2324",
+  "en": "glitch",
+  "tr": "Aksaklık, ufak hata",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We caught the glitch in QA, before it ever reached production.",
+  "definition": "A small, temporary fault in a machine or program."
+ },
+ {
+  "id": "2325",
+  "en": "malfunction",
+  "tr": "Arıza, bozulma",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The malfunction was minor, but I still wrote up a full postmortem.",
+  "definition": "A fault that stops a machine from working properly."
+ },
+ {
+  "id": "2326",
+  "en": "breakdown",
+  "tr": "Bozulma, çöküş",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "There was a breakdown in communication, not in the plan itself.",
+  "definition": "A sudden failure of a machine, system, or communication."
+ },
+ {
+  "id": "2327",
+  "en": "downturn",
+  "tr": "Gerileme, düşüş",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We adjusted our roadmap during the downturn instead of freezing it.",
+  "definition": "A period when business or the economy gets worse."
+ },
+ {
+  "id": "2328",
+  "en": "regression",
+  "tr": "Gerileme, kötüleşme",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We caught the regression within a day thanks to better monitoring.",
+  "definition": "A return to a worse state after things had improved."
+ },
+ {
+  "id": "2329",
+  "en": "stagnation",
+  "tr": "Durgunluk, gerileme",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Stagnation, not failure, was the real risk after the early success.",
+  "definition": "A long period with no growth, movement, or improvement."
+ },
+ {
+  "id": "2330",
+  "en": "misstep",
+  "tr": "Yanlış adım, hata",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "It was a misstep, but a recoverable one.",
+  "definition": "A wrong move or small error in judgement."
+ },
+ {
+  "id": "2331",
+  "en": "blunder",
+  "tr": "Büyük hata, gaf",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I made a blunder early on and learned to double-check assumptions since.",
+  "definition": "A big, careless mistake that is embarrassing."
+ },
+ {
+  "id": "2332",
+  "en": "lapse",
+  "tr": "Aksama, kusur",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "There was a brief lapse in communication during the handover.",
+  "definition": "A short break or failure in something that was steady."
+ },
+ {
+  "id": "2333",
+  "en": "omission",
+  "tr": "İhmal, eksiklik",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The omission wasn't intentional, but I still apologized for it.",
+  "definition": "Something left out by mistake or on purpose."
+ },
+ {
+  "id": "2334",
+  "en": "negligence",
+  "tr": "İhmal, dikkatsizlik",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We tightened the process to rule out negligence as a cause.",
+  "definition": "A failure to take proper care, causing harm or risk."
+ },
+ {
+  "id": "2335",
+  "en": "hurdle",
+  "tr": "Engel, zorluk",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We cleared that hurdle faster than I expected.",
+  "definition": "A difficulty you must get past to move forward."
+ },
+ {
+  "id": "2336",
+  "en": "complication",
+  "tr": "Komplikasyon, sorun",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "An unexpected complication pushed the timeline back by a few days.",
+  "definition": "An extra problem that makes a situation harder."
+ },
+ {
+  "id": "2337",
+  "en": "imperfection",
+  "tr": "Kusur, eksiklik",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I've made peace with shipping something with small imperfections.",
+  "definition": "A small fault that stops something from being ideal."
+ },
+ {
+  "id": "2338",
+  "en": "inadequacy",
+  "tr": "Yetersizlik",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I addressed the inadequacy in our onboarding before it cost us more users.",
+  "definition": "The state of not being good enough for a purpose."
+ },
+ {
+  "id": "2339",
+  "en": "fail",
+  "tr": "Başarısız olmak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I failed to account for a busy season, and I learned from it.",
+  "definition": "To not succeed at something you tried to do."
+ },
+ {
+  "id": "2340",
+  "en": "miss",
+  "tr": "Kaçırmak, ıskalamak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I missed that detail the first time and caught it in review.",
+  "definition": "To not notice or not catch something at the time."
+ },
+ {
+  "id": "2341",
+  "en": "overlook",
+  "tr": "Gözden kaçırmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I overlooked one edge case, and a user found it within a day.",
+  "definition": "To fail to notice something important by accident."
+ },
+ {
+  "id": "2342",
+  "en": "neglect",
+  "tr": "İhmal etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I neglected documentation early on, and it cost the team later.",
+  "definition": "To not give enough attention or care to something."
+ },
+ {
+  "id": "2343",
+  "en": "omit",
+  "tr": "Atlamak, dahil etmemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I omitted a step by mistake, not on purpose.",
+  "definition": "To leave something out of a list or process."
+ },
+ {
+  "id": "2344",
+  "en": "misjudge",
+  "tr": "Yanlış değerlendirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I misjudged how long the migration would actually take.",
+  "definition": "To form a wrong opinion about a person or situation."
+ },
+ {
+  "id": "2345",
+  "en": "underestimate",
+  "tr": "Küçümsemek, hafife almak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I underestimated the complexity of that integration.",
+  "definition": "To think something is smaller or easier than it really is."
+ },
+ {
+  "id": "2346",
+  "en": "overestimate",
+  "tr": "Abartmak, fazla tahmin etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I overestimated how ready the team was for that change.",
+  "definition": "To think something is bigger or better than it really is."
+ },
+ {
+  "id": "2347",
+  "en": "mishandle",
+  "tr": "Kötü yönetmek, yanlış ele almak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I mishandled that conflict at first, then course-corrected.",
+  "definition": "To deal with a task or situation badly."
+ },
+ {
+  "id": "2348",
+  "en": "mismanage",
+  "tr": "Kötü yönetmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Looking back, I mismanaged my time more than the project itself.",
+  "definition": "To run something badly, wasting time or resources."
+ },
+ {
+  "id": "2349",
+  "en": "fall behind",
+  "tr": "Geride kalmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We fell behind for a week, then caught up by cutting scope.",
+  "definition": "To make slower progress than planned and end up late."
+ },
+ {
+  "id": "2350",
+  "en": "regress",
+  "tr": "Gerilemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Performance regressed slightly after that release, so we rolled it back.",
+  "definition": "To go back to a worse level than before."
+ },
+ {
+  "id": "2351",
+  "en": "deficient",
+  "tr": "Eksik, yetersiz",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Our testing process was deficient, so we invested in fixing it.",
+  "definition": "Not having enough of something needed to work well."
+ },
+ {
+  "id": "2352",
+  "en": "inadequate",
+  "tr": "Yetersiz",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The original plan was inadequate for how fast we needed to move.",
+  "definition": "Not good enough in amount or quality for the situation."
+ },
+ {
+  "id": "2353",
+  "en": "insufficient",
+  "tr": "Yetersiz",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We had insufficient data at first, so we delayed the decision.",
+  "definition": "Too little in amount for what is needed."
+ },
+ {
+  "id": "2354",
+  "en": "flawed",
+  "tr": "Kusurlu, hatalı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The original design was flawed, and I said so early.",
+  "definition": "Having a serious weak point in its design or logic."
+ },
+ {
+  "id": "2355",
+  "en": "faulty",
+  "tr": "Arızalı, hatalı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We replaced the faulty logic before it caused bigger issues.",
+  "definition": "Not working correctly because something inside is wrong."
+ },
+ {
+  "id": "2356",
+  "en": "defective",
+  "tr": "Kusurlu, arızalı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We caught the defective batch before it shipped to customers.",
+  "definition": "Made badly, so it does not work as it should."
+ },
+ {
+  "id": "2357",
+  "en": "unreliable",
+  "tr": "Güvenilmez",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The old process was unreliable, which is exactly why we replaced it.",
+  "definition": "Not able to be trusted to work every time."
+ },
+ {
+  "id": "2358",
+  "en": "ineffective",
+  "tr": "Etkisiz",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That approach was ineffective, so I proposed a different one.",
+  "definition": "Not producing the result you wanted."
+ },
+ {
+  "id": "2359",
+  "en": "inefficient",
+  "tr": "Verimsiz",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The manual process was slow and inefficient, so we automated it.",
+  "definition": "Wasting time, money, or energy while doing something."
+ },
+ {
+  "id": "2360",
+  "en": "unsuccessful",
+  "tr": "Başarısız",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That first attempt was unsuccessful, but it taught us what to avoid.",
+  "definition": "Not achieving the goal that was aimed for."
+ },
+ {
+  "id": "2361",
+  "en": "unsatisfactory",
+  "tr": "Tatmin edici olmayan",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The results were unsatisfactory, so we went back to the drawing board.",
+  "definition": "Not reaching the quality people were willing to accept."
+ },
+ {
+  "id": "2362",
+  "en": "subpar",
+  "tr": "Standardın altında",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I flagged the subpar quality before it went any further.",
+  "definition": "Below the normal or expected level of quality."
+ },
+ {
+  "id": "2363",
+  "en": "mediocre",
+  "tr": "Vasat, orta düzey",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I refuse to settle for mediocre when I know we can do better.",
+  "definition": "Just average, and not impressive at all."
+ },
+ {
+  "id": "2364",
+  "en": "imperfect",
+  "tr": "Kusurlu, mükemmel olmayan",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'd rather ship imperfect and iterate than wait for perfect.",
+  "definition": "Having small faults but still good enough to use."
+ },
+ {
+  "id": "2365",
+  "en": "incomplete",
+  "tr": "Eksik, tamamlanmamış",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The data was incomplete, so I flagged it before presenting.",
+  "definition": "Missing some parts, so it is not finished."
+ },
+ {
+  "id": "2366",
+  "en": "inconsistent",
+  "tr": "Tutarsız",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The results were inconsistent, which is what led us to investigate.",
+  "definition": "Changing in a way that does not match each time."
+ },
+ {
+  "id": "2367",
+  "en": "incorrect",
+  "tr": "Yanlış",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The estimate was incorrect, and I corrected it as soon as I noticed.",
+  "definition": "Wrong, not matching the true facts or numbers."
+ },
+ {
+  "id": "2368",
+  "en": "erroneous",
+  "tr": "Hatalı, yanlış",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The erroneous assumption was caught before it reached production.",
+  "definition": "Based on wrong information and therefore false."
+ },
+ {
+  "id": "2369",
+  "en": "problem",
+  "tr": "Sorun, problem",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I noticed the problem early and flagged it right away.",
+  "definition": "A situation that causes difficulty and needs solving."
+ },
+ {
+  "id": "2370",
+  "en": "issue",
+  "tr": "Sorun, mesele",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We had a small issue with the last release, nothing major.",
+  "definition": "A small difficulty or fault that needs attention."
+ },
+ {
+  "id": "2371",
+  "en": "matter",
+  "tr": "Mesele, konu",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "It's a small matter, but I wanted to mention it.",
+  "definition": "A subject or affair that people need to deal with."
+ },
+ {
+  "id": "2372",
+  "en": "situation",
+  "tr": "Durum",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I handled the situation calmly, even though it was stressful.",
+  "definition": "The set of conditions you are dealing with now."
+ },
+ {
+  "id": "2373",
+  "en": "example",
+  "tr": "Örnek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Let me give you a specific example from my last role.",
+  "definition": "A single case used to show what you mean."
+ },
+ {
+  "id": "2374",
+  "en": "point",
+  "tr": "Nokta, konu",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That's a fair point, and I hadn't considered it.",
+  "definition": "An idea or argument someone makes in a discussion."
+ },
+ {
+  "id": "2375",
+  "en": "idea",
+  "tr": "Fikir",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "It started as a small idea in a hallway conversation.",
+  "definition": "A thought or plan that forms in your mind."
+ },
+ {
+  "id": "2376",
+  "en": "opinion",
+  "tr": "Görüş, fikir",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "In my opinion, we should test before committing more time.",
+  "definition": "What a person thinks or believes about something."
+ },
+ {
+  "id": "2377",
+  "en": "view",
+  "tr": "Görüş, bakış açısı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My view changed once I saw the actual data.",
+  "definition": "A personal way of thinking about a topic."
+ },
+ {
+  "id": "2378",
+  "en": "perspective",
+  "tr": "Bakış açısı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I tried to see it from the customer's perspective.",
+  "definition": "The way something looks from one particular point of view."
+ },
+ {
+  "id": "2379",
+  "en": "goal",
+  "tr": "Hedef",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My goal was simple: fewer clicks to get started.",
+  "definition": "Something you aim to achieve."
+ },
+ {
+  "id": "2380",
+  "en": "target",
+  "tr": "Hedef",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We hit our target two weeks early.",
+  "definition": "A number or result you plan to reach."
+ },
+ {
+  "id": "2381",
+  "en": "purpose",
+  "tr": "Amaç",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The purpose of the meeting was to align, not to decide.",
+  "definition": "The reason why something is done or made."
+ },
+ {
+  "id": "2382",
+  "en": "reason",
+  "tr": "Sebep, neden",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The reason I raised it was to avoid a bigger issue later.",
+  "definition": "The cause or explanation behind an action."
+ },
+ {
+  "id": "2383",
+  "en": "cause",
+  "tr": "Sebep, neden",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We found the cause within a few hours.",
+  "definition": "The thing that makes something else happen."
+ },
+ {
+  "id": "2384",
+  "en": "effect",
+  "tr": "Etki, sonuç",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The effect was bigger than we expected.",
+  "definition": "The change produced by an action or event."
+ },
+ {
+  "id": "2385",
+  "en": "result",
+  "tr": "Sonuç",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The result spoke for itself.",
+  "definition": "The outcome you get at the end of something."
+ },
+ {
+  "id": "2386",
+  "en": "process",
+  "tr": "Süreç",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I simplified the process from five steps to two.",
+  "definition": "A series of steps followed to finish something."
+ },
+ {
+  "id": "2387",
+  "en": "method",
+  "tr": "Yöntem",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I used a simple method to test the idea quickly.",
+  "definition": "A particular way of doing or testing something."
+ },
+ {
+  "id": "2388",
+  "en": "system",
+  "tr": "Sistem",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We built a system that anyone on the team could maintain.",
+  "definition": "A set of parts working together for one purpose."
+ },
+ {
+  "id": "2389",
+  "en": "structure",
+  "tr": "Yapı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I gave the presentation a clear structure.",
+  "definition": "The way parts of something are arranged together."
+ },
+ {
+  "id": "2390",
+  "en": "level",
+  "tr": "Seviye, düzey",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We raised the quality level without slowing down.",
+  "definition": "A measured height, amount, or standard of quality."
+ },
+ {
+  "id": "2391",
+  "en": "stage",
+  "tr": "Aşama, evre",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We were still in the early stage when the problem appeared.",
+  "definition": "One period or phase within a longer process."
+ },
+ {
+  "id": "2392",
+  "en": "step",
+  "tr": "Adım",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The first step was just talking to users.",
+  "definition": "One single action in a series of actions."
+ },
+ {
+  "id": "2393",
+  "en": "part",
+  "tr": "Parça, bölüm",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That was only a small part of the project.",
+  "definition": "A piece or section of something larger."
+ },
+ {
+  "id": "2394",
+  "en": "amount",
+  "tr": "Miktar",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We saved a surprising amount of time.",
+  "definition": "How much of something there is."
+ },
+ {
+  "id": "2395",
+  "en": "number",
+  "tr": "Sayı, rakam",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The number confirmed what we already suspected.",
+  "definition": "A figure that shows how many or how much."
+ },
+ {
+  "id": "2396",
+  "en": "quality",
+  "tr": "Kalite",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I never compromised on quality, even under pressure.",
+  "definition": "How good or bad something is."
+ },
+ {
+  "id": "2397",
+  "en": "type",
+  "tr": "Tür, tip",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We tested several types of onboarding flows.",
+  "definition": "A group of things that share the same features."
+ },
+ {
+  "id": "2398",
+  "en": "kind",
+  "tr": "Tür, çeşit",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That's the kind of problem I actually enjoy solving.",
+  "definition": "A sort of thing with similar qualities."
+ },
+ {
+  "id": "2399",
+  "en": "category",
+  "tr": "Kategori",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We grouped the feedback into three categories.",
+  "definition": "A group that similar things are sorted into."
+ },
+ {
+  "id": "2400",
+  "en": "group",
+  "tr": "Grup",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I split the work into two smaller groups.",
+  "definition": "A number of people or things together."
+ },
+ {
+  "id": "2401",
+  "en": "member",
+  "tr": "Üye",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Every member of the team had a clear role.",
+  "definition": "A person who belongs to a team or club."
+ },
+ {
+  "id": "2402",
+  "en": "leader",
+  "tr": "Lider",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I became the leader almost by accident.",
+  "definition": "The person who guides a team and makes decisions."
+ },
+ {
+  "id": "2403",
+  "en": "manager",
+  "tr": "Yönetici",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My manager gave me room to make my own mistakes.",
+  "definition": "The person in charge of a team at work."
+ },
+ {
+  "id": "2404",
+  "en": "employee",
+  "tr": "Çalışan",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We treat every employee's feedback seriously.",
+  "definition": "A person who works for a company for pay."
+ },
+ {
+  "id": "2405",
+  "en": "employer",
+  "tr": "İşveren",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "A good employer gives clear feedback, not just praise.",
+  "definition": "A company or person that gives people jobs."
+ },
+ {
+  "id": "2406",
+  "en": "colleague",
+  "tr": "Meslektaş, iş arkadaşı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "A colleague pointed out something I'd completely missed.",
+  "definition": "A person you work with at the same place."
+ },
+ {
+  "id": "2407",
+  "en": "client",
+  "tr": "Müşteri (kurumsal)",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I met with the client every week during that project.",
+  "definition": "A company or person who pays for professional services."
+ },
+ {
+  "id": "2408",
+  "en": "customer",
+  "tr": "Müşteri",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We built the whole roadmap around customer feedback.",
+  "definition": "A person who buys goods from a shop or company."
+ },
+ {
+  "id": "2409",
+  "en": "user",
+  "tr": "Kullanıcı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I talk to users every single week.",
+  "definition": "A person who works with an app or product."
+ },
+ {
+  "id": "2410",
+  "en": "product",
+  "tr": "Ürün",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The product wasn't perfect, but it solved a real problem.",
+  "definition": "Something a company makes and sells to people."
+ },
+ {
+  "id": "2411",
+  "en": "service",
+  "tr": "Hizmet",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We improved the service without adding more staff.",
+  "definition": "Work that a company does for its customers."
+ },
+ {
+  "id": "2412",
+  "en": "company",
+  "tr": "Şirket",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I've worked at three very different companies.",
+  "definition": "A business organization that sells goods or services."
+ },
+ {
+  "id": "2413",
+  "en": "business",
+  "tr": "İş, işletme",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I understand the business side, not just the product side.",
+  "definition": "The work of trading goods or services for money."
+ },
+ {
+  "id": "2414",
+  "en": "department",
+  "tr": "Departman, bölüm",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I worked closely with the finance department.",
+  "definition": "One section of a large company with its own job."
+ },
+ {
+  "id": "2415",
+  "en": "role",
+  "tr": "Rol, görev",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My role changed a lot over those two years.",
+  "definition": "The job or part a person plays in a team."
+ },
+ {
+  "id": "2416",
+  "en": "position",
+  "tr": "Pozisyon",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I applied for a position I wasn't fully qualified for yet.",
+  "definition": "A job or post inside an organization."
+ },
+ {
+  "id": "2417",
+  "en": "title",
+  "tr": "Ünvan",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The title mattered less to me than the actual responsibility.",
+  "definition": "The official name given to a job position."
+ },
+ {
+  "id": "2418",
+  "en": "salary",
+  "tr": "Maaş",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We discussed salary openly in the final round.",
+  "definition": "The fixed money someone is paid for their job."
+ },
+ {
+  "id": "2419",
+  "en": "cost",
+  "tr": "Maliyet",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We cut cost without cutting quality.",
+  "definition": "The money you must pay to make or buy something."
+ },
+ {
+  "id": "2420",
+  "en": "price",
+  "tr": "Fiyat",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We tested three different prices before choosing one.",
+  "definition": "The money a buyer pays for one item."
+ },
+ {
+  "id": "2421",
+  "en": "value",
+  "tr": "Değer",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I focus on value delivered, not hours worked.",
+  "definition": "How useful or important something is to someone."
+ },
+ {
+  "id": "2422",
+  "en": "tool",
+  "tr": "Araç",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I built a simple tool to save the team time.",
+  "definition": "An object or program that helps you do work."
+ },
+ {
+  "id": "2423",
+  "en": "fact",
+  "tr": "Gerçek, olgu",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The fact is, we were behind schedule.",
+  "definition": "Something that is true and can be proven."
+ },
+ {
+  "id": "2424",
+  "en": "evidence",
+  "tr": "Kanıt",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I based the decision on evidence, not assumptions.",
+  "definition": "Information that shows whether something is true."
+ },
+ {
+  "id": "2425",
+  "en": "source",
+  "tr": "Kaynak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I double-checked the source before sharing the number.",
+  "definition": "The place where information or material comes from."
+ },
+ {
+  "id": "2426",
+  "en": "rule",
+  "tr": "Kural",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I follow one rule: no surprises for stakeholders.",
+  "definition": "A statement of what you must or must not do."
+ },
+ {
+  "id": "2427",
+  "en": "policy",
+  "tr": "Politika, kural",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We updated the policy after that incident.",
+  "definition": "An official plan of action agreed by an organization."
+ },
+ {
+  "id": "2428",
+  "en": "requirement",
+  "tr": "Gereksinim, şart",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I clarified the requirement before development started.",
+  "definition": "A condition that must be met before work starts."
+ },
+ {
+  "id": "2429",
+  "en": "agreement",
+  "tr": "Anlaşma",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We reached an agreement within a single conversation.",
+  "definition": "A decision that two sides accept together."
+ },
+ {
+  "id": "2430",
+  "en": "contract",
+  "tr": "Sözleşme",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I reviewed the contract line by line before signing.",
+  "definition": "A legal written deal between two sides."
+ },
+ {
+  "id": "2431",
+  "en": "offer",
+  "tr": "Teklif",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I negotiated the offer respectfully but firmly.",
+  "definition": "A proposal of a job, price, or deal."
+ },
+ {
+  "id": "2432",
+  "en": "request",
+  "tr": "Talep, istek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I got the request approved within a day.",
+  "definition": "A polite act of asking for something."
+ },
+ {
+  "id": "2433",
+  "en": "demand",
+  "tr": "Talep",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Demand grew faster than we expected.",
+  "definition": "The wish of many buyers for a product."
+ },
+ {
+  "id": "2434",
+  "en": "trouble",
+  "tr": "Sorun, dert",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We avoided a lot of trouble by testing early.",
+  "definition": "Difficulty or worry that causes problems for you."
+ },
+ {
+  "id": "2435",
+  "en": "chance",
+  "tr": "Şans, fırsat",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I took a chance on an idea nobody else believed in.",
+  "definition": "An opportunity that may or may not work out."
+ },
+ {
+  "id": "2436",
+  "en": "choice",
+  "tr": "Seçim, tercih",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "It was a hard choice, but the right one.",
+  "definition": "A decision between two or more options."
+ },
+ {
+  "id": "2437",
+  "en": "answer",
+  "tr": "Cevap",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I didn't have the answer, so I said so honestly.",
+  "definition": "A reply that gives the information asked for."
+ },
+ {
+  "id": "2438",
+  "en": "comment",
+  "tr": "Yorum",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "One comment from a user changed our whole approach.",
+  "definition": "A short remark giving your view on something."
+ },
+ {
+  "id": "2439",
+  "en": "instruction",
+  "tr": "Talimat",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I gave clear instructions so there was no confusion.",
+  "definition": "A clear order telling someone how to do something."
+ },
+ {
+  "id": "2440",
+  "en": "support",
+  "tr": "Destek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I had the full support of my manager on that call.",
+  "definition": "Help and encouragement given to a person."
+ },
+ {
+  "id": "2441",
+  "en": "habit",
+  "tr": "Alışkanlık",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Checking metrics every morning became a habit.",
+  "definition": "Something you do regularly, almost without thinking."
+ },
+ {
+  "id": "2442",
+  "en": "duration",
+  "tr": "Süre",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The duration of the project was longer than planned.",
+  "definition": "The length of time something continues."
+ },
+ {
+  "id": "2443",
+  "en": "mistake",
+  "tr": "Hata",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I made a mistake and owned it immediately.",
+  "definition": "Something done wrongly by accident."
+ },
+ {
+  "id": "2444",
+  "en": "error",
+  "tr": "Hata",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We caught the error before it reached users.",
+  "definition": "A wrong result or action, often in data or code."
+ },
+ {
+  "id": "2445",
+  "en": "condition",
+  "tr": "Durum, koşul",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We worked under a tough time condition.",
+  "definition": "The state something is in, or a rule that applies."
+ },
+ {
+  "id": "2446",
+  "en": "circumstance",
+  "tr": "Koşul, durum",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Under the circumstances, we made the right call.",
+  "definition": "A fact or event that affects a situation."
+ },
+ {
+  "id": "2447",
+  "en": "context",
+  "tr": "Bağlam",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I gave context before diving into the details.",
+  "definition": "The background information that helps something make sense."
+ },
+ {
+  "id": "2448",
+  "en": "detail",
+  "tr": "Detay, ayrıntı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I paid attention to a detail everyone else missed.",
+  "definition": "A small fact or feature that is part of something."
+ },
+ {
+  "id": "2449",
+  "en": "knowledge",
+  "tr": "Bilgi, bilgi birikimi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My knowledge of the industry helped me spot the risk.",
+  "definition": "The facts and understanding a person has learned."
+ },
+ {
+  "id": "2450",
+  "en": "experience",
+  "tr": "Deneyim",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My experience taught me to test before assuming.",
+  "definition": "Skill and understanding gained from doing something over time."
+ },
+ {
+  "id": "2451",
+  "en": "skill",
+  "tr": "Beceri",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That role sharpened my skill at giving feedback.",
+  "definition": "The ability to do something well after practice."
+ },
+ {
+  "id": "2452",
+  "en": "ability",
+  "tr": "Yetenek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My ability to stay calm helped during the outage.",
+  "definition": "The power or means to do something."
+ },
+ {
+  "id": "2453",
+  "en": "talent",
+  "tr": "Yetenek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I hired for talent, then taught the process.",
+  "definition": "A natural gift for doing something well."
+ },
+ {
+  "id": "2454",
+  "en": "effort",
+  "tr": "Çaba, gayret",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "It took real effort, but it paid off.",
+  "definition": "The hard work you put into a task."
+ },
+ {
+  "id": "2455",
+  "en": "energy",
+  "tr": "Enerji, çaba",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I put a lot of energy into that first month.",
+  "definition": "The strength and enthusiasm you put into work."
+ },
+ {
+  "id": "2456",
+  "en": "risk",
+  "tr": "Risk",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I took a calculated risk and it paid off.",
+  "definition": "The chance that something bad might happen."
+ },
+ {
+  "id": "2457",
+  "en": "danger",
+  "tr": "Tehlike",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "There was a real danger of losing our best users.",
+  "definition": "The possibility of harm or serious loss."
+ },
+ {
+  "id": "2458",
+  "en": "safety",
+  "tr": "Güvenlik, emniyet",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Safety of the data was our top priority.",
+  "definition": "The state of being free from harm or injury."
+ },
+ {
+  "id": "2459",
+  "en": "security",
+  "tr": "Güvenlik",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We invested in security before we had to.",
+  "definition": "Protection against theft, attack, or unwanted access."
+ },
+ {
+  "id": "2460",
+  "en": "freedom",
+  "tr": "Özgürlük",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I gave the team freedom to choose how, not just what.",
+  "definition": "The right to act or choose without control."
+ },
+ {
+  "id": "2461",
+  "en": "control",
+  "tr": "Kontrol",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I gave up some control to let the team move faster.",
+  "definition": "The power to direct how something happens."
+ },
+ {
+  "id": "2462",
+  "en": "power",
+  "tr": "Güç, yetki",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I didn't have formal power, so I built influence instead.",
+  "definition": "The strength or right to influence what happens."
+ },
+ {
+  "id": "2463",
+  "en": "authority",
+  "tr": "Yetki",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I earned authority by delivering, not by asking for it.",
+  "definition": "The official right to give orders and decide."
+ },
+ {
+  "id": "2464",
+  "en": "standard",
+  "tr": "Standart",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We held the release to a high standard.",
+  "definition": "A level of quality that people must meet."
+ },
+ {
+  "id": "2465",
+  "en": "summary",
+  "tr": "Özet",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I always end a long thread with a short summary.",
+  "definition": "A short version giving only the main points."
+ },
+ {
+  "id": "2466",
+  "en": "note",
+  "tr": "Not",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I took a note so I wouldn't forget the detail.",
+  "definition": "A short written record to help you remember."
+ },
+ {
+  "id": "2467",
+  "en": "message",
+  "tr": "Mesaj",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I sent a short message instead of scheduling a call.",
+  "definition": "A short piece of information sent to someone."
+ },
+ {
+  "id": "2468",
+  "en": "email",
+  "tr": "E-posta",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I answer email within a day, even a short one.",
+  "definition": "A letter sent from one computer to another."
+ },
+ {
+  "id": "2469",
+  "en": "call",
+  "tr": "Görüşme, arama",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We hopped on a call to sort it out quickly.",
+  "definition": "A conversation held over the phone or internet."
+ },
+ {
+  "id": "2470",
+  "en": "meeting",
+  "tr": "Toplantı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I kept the meeting to fifteen minutes.",
+  "definition": "A planned gathering where people discuss work."
+ },
+ {
+  "id": "2471",
+  "en": "conversation",
+  "tr": "Konuşma, sohbet",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That one conversation changed the whole plan.",
+  "definition": "A talk between two or more people."
+ },
+ {
+  "id": "2472",
+  "en": "task",
+  "tr": "Görev",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I broke the task into smaller pieces.",
+  "definition": "A single piece of work to be done."
+ },
+ {
+  "id": "2473",
+  "en": "job",
+  "tr": "İş, görev",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "It wasn't part of my job, but I did it anyway.",
+  "definition": "The paid work a person does regularly."
+ },
+ {
+  "id": "2474",
+  "en": "work",
+  "tr": "İş, çalışma",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I did the work myself so I'd understand it fully.",
+  "definition": "Effort you make to produce or achieve something."
+ },
+ {
+  "id": "2475",
+  "en": "project",
+  "tr": "Proje",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That project taught me more than any course could.",
+  "definition": "A planned piece of work with a clear end."
+ },
+ {
+  "id": "2476",
+  "en": "team",
+  "tr": "Ekip",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I built the team from just two people.",
+  "definition": "A group of people working towards one goal."
+ },
+ {
+  "id": "2477",
+  "en": "resource",
+  "tr": "Kaynak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We didn't have many resources, so we got creative.",
+  "definition": "Money, people, or materials you can use."
+ },
+ {
+  "id": "2478",
+  "en": "data",
+  "tr": "Veri",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I trust data over gut feeling for big decisions.",
+  "definition": "Facts and numbers collected for study or decisions."
+ },
+ {
+  "id": "2479",
+  "en": "technology",
+  "tr": "Teknoloji",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The technology changed, but the problem stayed the same.",
+  "definition": "Machines and software created from scientific knowledge."
+ },
+ {
+  "id": "2480",
+  "en": "industry",
+  "tr": "Sektör",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I've worked in this industry for six years.",
+  "definition": "All the companies working in one field of business."
+ },
+ {
+  "id": "2481",
+  "en": "market",
+  "tr": "Pazar",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We entered a market nobody else was watching.",
+  "definition": "The buyers and sellers for a type of product."
+ },
+ {
+  "id": "2482",
+  "en": "competition",
+  "tr": "Rekabet",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The competition pushed us to move faster.",
+  "definition": "The struggle between rival companies for the same customers."
+ },
+ {
+  "id": "2483",
+  "en": "future",
+  "tr": "Gelecek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I planned for the future, not just the current quarter.",
+  "definition": "The time that has not happened yet."
+ },
+ {
+  "id": "2484",
+  "en": "past",
+  "tr": "Geçmiş",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "In the past, we would have just added more meetings.",
+  "definition": "The time before now, already finished."
+ },
+ {
+  "id": "2485",
+  "en": "history",
+  "tr": "Geçmiş, tarihçe",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I looked at the history before repeating an old mistake.",
+  "definition": "The record of what happened before now."
+ },
+ {
+  "id": "2486",
+  "en": "change",
+  "tr": "Değişim, değişiklik",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I welcomed the change instead of resisting it.",
+  "definition": "Something becoming different from how it was."
+ },
+ {
+  "id": "2487",
+  "en": "growth",
+  "tr": "Büyüme",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Growth slowed, so we shifted focus to retention.",
+  "definition": "An increase in size, number, or business."
+ },
+ {
+  "id": "2488",
+  "en": "success",
+  "tr": "Başarı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Success came from consistency, not one big win.",
+  "definition": "The achievement of what you were aiming for."
+ },
+ {
+  "id": "2489",
+  "en": "progress",
+  "tr": "İlerleme",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We tracked progress weekly, not just at the end.",
+  "definition": "Forward movement towards finishing or improving something."
+ },
+ {
+  "id": "2490",
+  "en": "action",
+  "tr": "Eylem",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I took action before the problem got bigger.",
+  "definition": "A deed done in order to achieve a result."
+ },
+ {
+  "id": "2491",
+  "en": "activity",
+  "tr": "Faaliyet, etkinlik",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Most of my daily activity involves talking to people.",
+  "definition": "Something people spend their time doing."
+ },
+ {
+  "id": "2492",
+  "en": "behavior",
+  "tr": "Davranış",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "User behavior told us more than the survey did.",
+  "definition": "The way someone acts in a given situation."
+ },
+ {
+  "id": "2493",
+  "en": "attitude",
+  "tr": "Tutum",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "A calm attitude helped the whole team stay focused.",
+  "definition": "The way you think and feel about something."
+ },
+ {
+  "id": "2494",
+  "en": "feeling",
+  "tr": "Duygu, his",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My gut feeling was right, but I still checked the data.",
+  "definition": "An emotion or sense you have inside."
+ },
+ {
+  "id": "2495",
+  "en": "emotion",
+  "tr": "Duygu",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I try not to let emotion drive a big decision alone.",
+  "definition": "A strong inner reaction such as anger or joy."
+ },
+ {
+  "id": "2496",
+  "en": "mood",
+  "tr": "Ruh hali",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The team's mood improved once we had a clear plan.",
+  "definition": "The way someone feels at a particular time."
+ }
+]

@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "1537",
+  "en": "Recover from a setback",
+  "tr": "Bir aksilikten toparlanmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We recovered from the setback within a single sprint.",
+  "definition": "To get back to normal after something goes wrong."
+ },
+ {
+  "id": "1538",
+  "en": "Stay motivated",
+  "tr": "Motivasyonunu korumak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I stay motivated by focusing on the user impact, not just metrics.",
+  "definition": "To keep your energy and desire to work strong."
+ },
+ {
+  "id": "1539",
+  "en": "Keep perspective",
+  "tr": "Perspektifi korumak, büyük resmi görmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I try to keep perspective, even when one metric dips.",
+  "definition": "To remember the big picture instead of panicking over details."
+ },
+ {
+  "id": "1540",
+  "en": "Take criticism well",
+  "tr": "Eleştiriyi olgunlukla karşılamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I take criticism well when it's specific and fair.",
+  "definition": "To accept negative comments calmly and learn from them."
+ },
+ {
+  "id": "1541",
+  "en": "Show resilience",
+  "tr": "Dirençli olmak, dayanıklılık göstermek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I showed resilience by relaunching the feature after it initially failed.",
+  "definition": "To prove you can handle hard times without breaking."
+ },
+ {
+  "id": "1542",
+  "en": "Learn quickly",
+  "tr": "Hızlı öğrenmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I learn quickly, especially in unfamiliar domains.",
+  "definition": "To understand new things in a short time."
+ },
+ {
+  "id": "1543",
+  "en": "Adapt to change",
+  "tr": "Değişime uyum sağlamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I adapt to change easily, since priorities shift often in this role.",
+  "definition": "To adjust yourself when things around you become different."
+ },
+ {
+  "id": "1544",
+  "en": "Stay calm",
+  "tr": "Sakin kalmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I stay calm, even when a launch doesn't go as planned.",
+  "definition": "To remain relaxed and in control during stress."
+ },
+ {
+  "id": "1545",
+  "en": "Turn a weakness into a strength",
+  "tr": "Zayıflığı güce çevirmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I turned my early weakness in delegation into a real strength.",
+  "definition": "To make a personal flaw become an advantage."
+ },
+ {
+  "id": "1546",
+  "en": "Keep improving",
+  "tr": "Gelişmeye devam etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I keep improving by asking for feedback after every project.",
+  "definition": "To get better all the time, without stopping."
+ },
+ {
+  "id": "1547",
+  "en": "Reflect on",
+  "tr": "Üzerine düşünmek, değerlendirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I reflect on every launch, good or bad, within a week.",
+  "definition": "To think carefully about something that already happened."
+ },
+ {
+  "id": "1548",
+  "en": "Stakeholder",
+  "tr": "Paydaş",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I aligned with stakeholders before finalizing the roadmap.",
+  "definition": "A person with an interest in a project's outcome."
+ },
+ {
+  "id": "1549",
+  "en": "Cross-functional",
+  "tr": "Fonksiyonlar arası, çapraz fonksiyonlu",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I work closely with a cross-functional team of engineers and designers.",
+  "definition": "Involving people from several different departments or skills."
+ },
+ {
+  "id": "1550",
+  "en": "Alignment",
+  "tr": "Uyum, hizalanma",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Getting alignment from leadership took a few meetings.",
+  "definition": "Agreement between people about a goal or plan."
+ },
+ {
+  "id": "1551",
+  "en": "Buy-in",
+  "tr": "Onay, destek almak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I secured buy-in from the sales team before the launch.",
+  "definition": "The agreement and support of others for an idea."
+ },
+ {
+  "id": "1552",
+  "en": "Delegate",
+  "tr": "Devretmek, yetki vermek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I delegate tasks based on each person's strengths.",
+  "definition": "To give a task to someone else on your team."
+ },
+ {
+  "id": "1553",
+  "en": "Mentor",
+  "tr": "Danışman, mentorluk yapmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I mentor two junior designers on my team.",
+  "definition": "An experienced person who advises and guides a beginner."
+ },
+ {
+  "id": "1554",
+  "en": "Influence without authority",
+  "tr": "Yetki olmadan etkilemek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "As a PM, I often need to influence without authority.",
+  "definition": "To persuade people when you are not their boss."
+ },
+ {
+  "id": "1555",
+  "en": "Empower",
+  "tr": "Güçlendirmek, yetkilendirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I try to empower my team to make decisions independently.",
+  "definition": "To give people the freedom and confidence to act."
+ },
+ {
+  "id": "1556",
+  "en": "Lead a team",
+  "tr": "Bir ekibe liderlik etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I lead a team of six across design and engineering.",
+  "definition": "To guide a group of people toward a goal."
+ },
+ {
+  "id": "1557",
+  "en": "Manage up",
+  "tr": "Üst yönetimi yönetmek, yöneticiyi bilgilendirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I manage up by giving my manager regular updates.",
+  "definition": "To keep your boss informed and get what you need."
+ },
+ {
+  "id": "1558",
+  "en": "Motivate",
+  "tr": "Motive etmek, teşvik etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I motivate my team by celebrating small wins.",
+  "definition": "To give someone energy and desire to work harder."
+ },
+ {
+  "id": "1559",
+  "en": "Set expectations",
+  "tr": "Beklentileri belirlemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I set clear expectations at the start of every project.",
+  "definition": "To make clear in advance what people should aim for."
+ },
+ {
+  "id": "1560",
+  "en": "Give direction",
+  "tr": "Yön vermek, yönlendirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I give clear direction, then step back and trust my team.",
+  "definition": "To tell your team where to go and what matters."
+ },
+ {
+  "id": "1561",
+  "en": "Lead by example",
+  "tr": "Örnek olarak liderlik etmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I lead by example, especially during high-pressure launches.",
+  "definition": "To show the right behaviour through your own actions."
+ },
+ {
+  "id": "1562",
+  "en": "Build trust",
+  "tr": "Güven inşa etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I build trust by being transparent about trade-offs.",
+  "definition": "To make others feel they can rely on you."
+ },
+ {
+  "id": "1563",
+  "en": "Coach",
+  "tr": "Koçluk yapmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I coach junior PMs on how to prioritize.",
+  "definition": "To help someone improve their skills through advice and practice."
+ },
+ {
+  "id": "1564",
+  "en": "Take ownership",
+  "tr": "Sahiplenmek, sorumluluk almak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I take ownership even when things don't go as planned.",
+  "definition": "To accept full responsibility for a piece of work."
+ },
+ {
+  "id": "1565",
+  "en": "Command the room",
+  "tr": "Odayı yönetmek, hakim olmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "She really commands the room during executive reviews.",
+  "definition": "To hold everyone's attention with a strong presence."
+ },
+ {
+  "id": "1566",
+  "en": "Guide the team",
+  "tr": "Ekibe rehberlik etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I guide the team through ambiguous problems.",
+  "definition": "To help a group find its way through hard problems."
+ },
+ {
+  "id": "1567",
+  "en": "Hold accountable",
+  "tr": "Hesap sormak, sorumlu tutmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I hold my team accountable for the commitments we make.",
+  "definition": "To make someone answer for what they promised."
+ },
+ {
+  "id": "1568",
+  "en": "Inspire",
+  "tr": "İlham vermek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I try to inspire my team with a clear vision.",
+  "definition": "To make people excited about a goal or idea."
+ },
+ {
+  "id": "1569",
+  "en": "Foster collaboration",
+  "tr": "İşbirliğini teşvik etmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I foster collaboration between design and engineering.",
+  "definition": "To encourage different people to work well together."
+ },
+ {
+  "id": "1570",
+  "en": "Set the tone",
+  "tr": "Havayı belirlemek, tonu belirlemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I set the tone for how the team handles setbacks.",
+  "definition": "To create the mood that others will follow."
+ },
+ {
+  "id": "1571",
+  "en": "Step up",
+  "tr": "Öne çıkmak, sorumluluk almak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I stepped up to lead the project when our lead left.",
+  "definition": "To accept more responsibility when it is needed."
+ },
+ {
+  "id": "1572",
+  "en": "Build a culture",
+  "tr": "Bir kültür inşa etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I helped build a culture of experimentation on my team.",
+  "definition": "To create shared habits and values inside a group."
+ },
+ {
+  "id": "1573",
+  "en": "Earn credibility",
+  "tr": "Güvenilirlik kazanmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I earned credibility by delivering small wins early.",
+  "definition": "To make people believe your judgement is reliable."
+ },
+ {
+  "id": "1574",
+  "en": "Support the team",
+  "tr": "Ekibi desteklemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I support the team by clearing blockers quickly.",
+  "definition": "To remove obstacles so your colleagues can work faster."
+ },
+ {
+  "id": "1575",
+  "en": "Drive results",
+  "tr": "Sonuç odaklı çalışmak, sonuç getirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I drive results by focusing the team on one goal.",
+  "definition": "To make real progress happen, not just activity."
+ },
+ {
+  "id": "1576",
+  "en": "Trust the team",
+  "tr": "Ekibe güvenmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I trust the team to make the right call.",
+  "definition": "To believe your colleagues will make good decisions themselves."
+ },
+ {
+  "id": "1577",
+  "en": "Lead with empathy",
+  "tr": "Empatiyle liderlik etmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I lead with empathy, especially during stressful launches.",
+  "definition": "To manage people while caring about their feelings."
+ },
+ {
+  "id": "1578",
+  "en": "Take initiative",
+  "tr": "İnisiyatif almak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I take initiative when I see a gap no one owns.",
+  "definition": "To start something useful without being asked."
+ },
+ {
+  "id": "1579",
+  "en": "Build consensus",
+  "tr": "Fikir birliği oluşturmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I build consensus by listening to every stakeholder first.",
+  "definition": "To bring a group to shared agreement on something."
+ },
+ {
+  "id": "1580",
+  "en": "Delegate effectively",
+  "tr": "Etkili bir şekilde yetki devretmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I delegate effectively by matching tasks to strengths.",
+  "definition": "To hand out tasks well, matching each person's strengths."
+ },
+ {
+  "id": "1581",
+  "en": "Team spirit",
+  "tr": "Ekip ruhu",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I try to keep team spirit high during crunch time.",
+  "definition": "The friendly, shared energy of a group working together."
+ },
+ {
+  "id": "1582",
+  "en": "Set a vision",
+  "tr": "Vizyon belirlemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I set a vision the whole team could rally behind.",
+  "definition": "To describe a clear future goal for everyone."
+ },
+ {
+  "id": "1583",
+  "en": "Give credit",
+  "tr": "Takdir etmek, pay vermek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I always give credit to the team, not just myself.",
+  "definition": "To say publicly who deserves praise for the work."
+ },
+ {
+  "id": "1584",
+  "en": "Lead through ambiguity",
+  "tr": "Belirsizlik içinde liderlik etmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I lead through ambiguity by focusing on the next clear step.",
+  "definition": "To guide others when nothing is clear yet."
+ },
+ {
+  "id": "1585",
+  "en": "Recognize effort",
+  "tr": "Emeği takdir etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I make sure to recognize effort, not just outcomes.",
+  "definition": "To notice and thank people for their hard work."
+ },
+ {
+  "id": "1586",
+  "en": "Check in",
+  "tr": "Görüşmek, kontrol etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I check in with my team every morning.",
+  "definition": "To contact someone briefly to see how things are going."
+ },
+ {
+  "id": "1587",
+  "en": "Hit the nail on the head",
+  "tr": "Tam üstüne basmak, doğru teşhis koymak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Her feedback really hit the nail on the head.",
+  "definition": "To say exactly the right thing about a problem."
+ },
+ {
+  "id": "1588",
+  "en": "Hold the line",
+  "tr": "Kararlılığını korumak, taviz vermemek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I held the line on quality even under a tight deadline.",
+  "definition": "To refuse to lower a standard under pressure."
+ },
+ {
+  "id": "1589",
+  "en": "Root cause",
+  "tr": "Kök neden, temel sebep",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We identified the root cause of the drop in conversions.",
+  "definition": "The real reason behind a problem, not the symptom."
+ },
+ {
+  "id": "1590",
+  "en": "Escalate",
+  "tr": "Üst mercie taşımak, yükseltmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I escalated the issue when we couldn't reach an agreement.",
+  "definition": "To pass a problem to someone at a higher level."
+ },
+ {
+  "id": "1591",
+  "en": "Constructive feedback",
+  "tr": "Yapıcı geri bildirim",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I gave constructive feedback to help improve the design.",
+  "definition": "Helpful comments that show someone how to do better."
+ },
+ {
+  "id": "1592",
+  "en": "Compromise",
+  "tr": "Uzlaşmak, uzlaşma",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We reached a compromise between the two teams.",
+  "definition": "An agreement where each side gives up something."
+ },
+ {
+  "id": "1593",
+  "en": "Navigate ambiguity",
+  "tr": "Belirsizlikle başa çıkmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I had to navigate ambiguity when requirements kept changing.",
+  "definition": "To keep working sensibly when the situation is unclear."
+ },
+ {
+  "id": "1594",
+  "en": "Push back",
+  "tr": "Karşı çıkmak, itiraz etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I pushed back on the deadline because it wasn't realistic.",
+  "definition": "To disagree openly with a request or plan."
+ },
+ {
+  "id": "1595",
+  "en": "Under pressure",
+  "tr": "Baskı altında",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I stayed calm under pressure during the outage.",
+  "definition": "In a stressful situation with heavy demands and little time."
+ },
+ {
+  "id": "1596",
+  "en": "Difficult conversation",
+  "tr": "Zor bir konuşma",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I had a difficult conversation with a stakeholder about scope.",
+  "definition": "An uncomfortable talk about a sensitive problem with someone."
+ },
+ {
+  "id": "1597",
+  "en": "Disagree and commit",
+  "tr": "Katılmasan da desteklemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I disagreed and committed once the decision was made.",
+  "definition": "To support a group decision you personally opposed."
+ },
+ {
+  "id": "1598",
+  "en": "Handle conflict",
+  "tr": "Çatışmayı yönetmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I handle conflict by focusing on facts, not emotions.",
+  "definition": "To deal calmly with disagreements between people."
+ },
+ {
+  "id": "1599",
+  "en": "Defuse tension",
+  "tr": "Gerginliği yatıştırmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I defused the tension by refocusing on the shared goal.",
+  "definition": "To make an angry situation calm again."
+ },
+ {
+  "id": "1600",
+  "en": "Reach an agreement",
+  "tr": "Anlaşmaya varmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We reached an agreement after a long discussion.",
+  "definition": "To finish a discussion with a decision both sides accept."
+ },
+ {
+  "id": "1601",
+  "en": "Address the issue directly",
+  "tr": "Konuyu doğrudan ele almak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I addressed the issue directly instead of avoiding it.",
+  "definition": "To talk about a problem openly instead of avoiding it."
+ },
+ {
+  "id": "1602",
+  "en": "Calm down",
+  "tr": "Sakinleşmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I took a breath and calmed down before responding.",
+  "definition": "To become less angry or upset."
+ },
+ {
+  "id": "1603",
+  "en": "Deescalate a situation",
+  "tr": "Bir durumu yatıştırmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I deescalated the situation by acknowledging their concern first.",
+  "definition": "To reduce anger and bring things back under control."
+ },
+ {
+  "id": "1604",
+  "en": "Find common ground",
+  "tr": "Ortak zemin bulmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We found common ground on the core problem, if not the solution.",
+  "definition": "To discover ideas that both sides already share."
+ },
+ {
+  "id": "1605",
+  "en": "Stand my ground",
+  "tr": "Görüşümde kararlı durmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I stood my ground on the quality bar, even under pressure.",
+  "definition": "To keep defending your view when others disagree."
+ },
+ {
+  "id": "1606",
+  "en": "Take feedback well",
+  "tr": "Geri bildirimi olgunlukla karşılamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I try to take feedback well, even when it stings.",
+  "definition": "To listen to criticism calmly and use it."
+ },
+ {
+  "id": "1607",
+  "en": "Depersonalize the conflict",
+  "tr": "Çatışmayı kişiselleştirmemek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I depersonalize the conflict and focus on the problem itself.",
+  "definition": "To treat a disagreement as an issue, not an attack."
+ },
+ {
+  "id": "1608",
+  "en": "Apologize",
+  "tr": "Özür dilemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I apologized for missing the deadline and explained why.",
+  "definition": "To say you are sorry for a mistake."
+ },
+ {
+  "id": "1609",
+  "en": "Own the mistake",
+  "tr": "Hatayı sahiplenmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I owned the mistake instead of blaming the team.",
+  "definition": "To admit that an error was yours."
+ },
+ {
+  "id": "1610",
+  "en": "Give in",
+  "tr": "Taviz vermek, boyun eğmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I gave in on the deadline but held firm on quality.",
+  "definition": "To stop resisting and accept what others want."
+ },
+ {
+  "id": "1611",
+  "en": "Manage a heated discussion",
+  "tr": "Gergin bir tartışmayı yönetmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I managed a heated discussion by slowing the conversation down.",
+  "definition": "To keep an angry argument under control."
+ },
+ {
+  "id": "1612",
+  "en": "Miscommunication",
+  "tr": "Yanlış anlaşılma, iletişim kopukluğu",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The conflict came from a miscommunication about scope.",
+  "definition": "A misunderstanding caused by unclear or missing information."
+ },
+ {
+  "id": "1613",
+  "en": "Get on the same page",
+  "tr": "Aynı fikirde buluşmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We finally got on the same page after the workshop.",
+  "definition": "To reach a shared understanding with other people."
+ },
+ {
+  "id": "1614",
+  "en": "Voice a concern",
+  "tr": "Bir endişeyi dile getirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I voiced my concern before the decision was finalized.",
+  "definition": "To say openly that something worries you."
+ },
+ {
+  "id": "1615",
+  "en": "Hold a difficult line",
+  "tr": "Zor bir kararda ısrarcı olmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I held a difficult line on not cutting the QA phase.",
+  "definition": "To stay firm on an unpopular but necessary decision."
+ },
+ {
+  "id": "1616",
+  "en": "Resolve the issue",
+  "tr": "Sorunu çözmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We resolved the issue within the same week.",
+  "definition": "To fix a problem so it stops causing trouble."
+ },
+ {
+  "id": "1617",
+  "en": "Listen actively",
+  "tr": "Aktif dinlemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I listen actively before responding in a conflict.",
+  "definition": "To pay full attention and show you understand."
+ },
+ {
+  "id": "1618",
+  "en": "Point of disagreement",
+  "tr": "Anlaşmazlık noktası",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The main point of disagreement was the timeline.",
+  "definition": "The exact subject on which two sides differ."
+ },
+ {
+  "id": "1619",
+  "en": "Reframe the problem",
+  "tr": "Sorunu yeniden çerçevelemek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I reframed the problem so both sides could agree on the goal.",
+  "definition": "To describe an issue in a new, more useful way."
+ },
+ {
+  "id": "1620",
+  "en": "Avoid blame",
+  "tr": "Suçlamaktan kaçınmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I avoid blame and focus on what we can fix.",
+  "definition": "To stop looking for someone at fault."
+ },
+ {
+  "id": "1621",
+  "en": "Cool off",
+  "tr": "Sakinleşmek, gerginliği azaltmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We took a short break to cool off before continuing.",
+  "definition": "To let anger fade before continuing a talk."
+ },
+ {
+  "id": "1622",
+  "en": "Mediate",
+  "tr": "Arabuluculuk yapmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I mediated between the two engineers over the technical approach.",
+  "definition": "To help two arguing sides find a solution."
+ },
+ {
+  "id": "1623",
+  "en": "Address underlying concerns",
+  "tr": "Altta yatan endişeleri ele almak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I addressed the underlying concerns, not just the surface complaint.",
+  "definition": "To deal with the hidden worries behind a complaint."
+ },
+ {
+  "id": "1624",
+  "en": "Raise an objection",
+  "tr": "İtirazda bulunmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I raised an objection before the plan was finalized.",
+  "definition": "To state formally that you disagree with a plan."
+ },
+ {
+  "id": "1625",
+  "en": "Keep emotions in check",
+  "tr": "Duygularını kontrol altında tutmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I keep my emotions in check during tense meetings.",
+  "definition": "To control your feelings instead of showing them."
+ },
+ {
+  "id": "1626",
+  "en": "Move past it",
+  "tr": "Üzerinden gelmek, geride bırakmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We moved past it and focused on the next sprint.",
+  "definition": "To stop worrying about something and continue forward."
+ },
+ {
+  "id": "1627",
+  "en": "Turn conflict into progress",
+  "tr": "Çatışmayı ilerlemeye çevirmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I try to turn conflict into progress instead of tension.",
+  "definition": "To use a disagreement to make things better."
+ },
+ {
+  "id": "1628",
+  "en": "Set boundaries",
+  "tr": "Sınır koymak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I set boundaries around scope changes mid-sprint.",
+  "definition": "To make clear limits that others should not cross."
+ },
+ {
+  "id": "1629",
+  "en": "Give the benefit of the doubt",
+  "tr": "İyi niyetle yaklaşmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I gave the engineer the benefit of the doubt at first.",
+  "definition": "To assume someone had good intentions without proof."
+ },
+ {
+  "id": "1630",
+  "en": "Work closely with",
+  "tr": "Yakın çalışmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I work closely with engineering on every release.",
+  "definition": "To cooperate with someone almost every day."
+ },
+ {
+  "id": "1631",
+  "en": "Collaborate",
+  "tr": "İşbirliği yapmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I collaborate with design from the very first sketch.",
+  "definition": "To work together with others on a shared task."
+ },
+ {
+  "id": "1632",
+  "en": "Team player",
+  "tr": "Takım oyuncusu",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I've always been described as a strong team player.",
+  "definition": "Someone who cooperates well inside a group."
+ },
+ {
+  "id": "1633",
+  "en": "Contribute",
+  "tr": "Katkı sağlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Everyone contributes ideas during our planning session.",
+  "definition": "To add your own part to a shared effort."
+ },
+ {
+  "id": "1634",
+  "en": "Pull together",
+  "tr": "Bir araya gelmek, birlikte çalışmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The team pulled together to hit the launch date.",
+  "definition": "To join efforts and finish something as a group."
+ },
+ {
+  "id": "1635",
+  "en": "Support each other",
+  "tr": "Birbirini desteklemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We support each other, especially during crunch time.",
+  "definition": "To help your colleagues when they need it."
+ },
+ {
+  "id": "1636",
+  "en": "Synergy",
+  "tr": "Sinerji, ortak güç",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "There was real synergy between design and engineering on this one.",
+  "definition": "The extra value created when groups combine their strengths."
+ },
+ {
+  "id": "1637",
+  "en": "Share knowledge",
+  "tr": "Bilgi paylaşmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I share knowledge through weekly team demos.",
+  "definition": "To pass what you have learned to colleagues."
+ },
+ {
+  "id": "1638",
+  "en": "Cross-team collaboration",
+  "tr": "Takımlar arası işbirliği",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Cross-team collaboration was key to the launch success.",
+  "definition": "Cooperation between separate groups inside one company."
+ },
+ {
+  "id": "1639",
+  "en": "Help out",
+  "tr": "Yardım etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I helped out with QA when the team was short-staffed.",
+  "definition": "To give someone extra assistance with their work."
+ },
+ {
+  "id": "1640",
+  "en": "Team dynamic",
+  "tr": "Takım dinamiği",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Our team dynamic improved once we set clear roles.",
+  "definition": "The way members of a group interact together."
+ },
+ {
+  "id": "1641",
+  "en": "Rally the team",
+  "tr": "Ekibi bir araya toplamak, motive etmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I rallied the team around a single, clear goal.",
+  "definition": "To gather and excite a group around one purpose."
+ },
+ {
+  "id": "1642",
+  "en": "Work as a team",
+  "tr": "Takım olarak çalışmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We work as a team, not in silos.",
+  "definition": "To act as one unit rather than separate individuals."
+ },
+ {
+  "id": "1643",
+  "en": "Break down silos",
+  "tr": "Silolari ortadan kaldırmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We broke down silos between growth and product.",
+  "definition": "To remove walls between departments so they cooperate."
+ },
+ {
+  "id": "1644",
+  "en": "Get everyone involved",
+  "tr": "Herkesi dahil etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I get everyone involved early, even junior team members.",
+  "definition": "To bring all members into the discussion or work."
+ },
+ {
+  "id": "1645",
+  "en": "Foster a sense of ownership",
+  "tr": "Sahiplenme duygusu oluşturmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I foster a sense of ownership by involving the team in decisions.",
+  "definition": "To help people feel personally responsible for the result."
+ },
+ {
+  "id": "1646",
+  "en": "Team effort",
+  "tr": "Takım çabası",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The launch was really a team effort.",
+  "definition": "Work done by a whole group, not one person."
+ },
+ {
+  "id": "1647",
+  "en": "Bring people together",
+  "tr": "İnsanları bir araya getirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I bring people together around a shared problem.",
+  "definition": "To unite different individuals around a shared aim."
+ },
+ {
+  "id": "1648",
+  "en": "Divide tasks",
+  "tr": "Görevleri paylaştırmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We divided tasks based on everyone's strengths.",
+  "definition": "To split the work among several people."
+ },
+ {
+  "id": "1649",
+  "en": "Cultivate trust",
+  "tr": "Güven oluşturmak, güveni geliştirmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I cultivate trust by being transparent about challenges.",
+  "definition": "To slowly build confidence between people over time."
+ },
+ {
+  "id": "1650",
+  "en": "Group effort",
+  "tr": "Grup çabası, ortak çaba",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "It was a group effort across three departments.",
+  "definition": "Something achieved by many people working as one."
+ },
+ {
+  "id": "1651",
+  "en": "Team huddle",
+  "tr": "Kısa takım toplantısı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We start each day with a short team huddle.",
+  "definition": "A short, quick meeting to align a group."
+ },
+ {
+  "id": "1652",
+  "en": "Rely on each other",
+  "tr": "Birbirine güvenmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We rely on each other, especially during launches.",
+  "definition": "To depend on colleagues for help and support."
+ },
+ {
+  "id": "1653",
+  "en": "Camaraderie",
+  "tr": "Dostluk, ekip ruhu",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "There's a real sense of camaraderie on this team.",
+  "definition": "A warm feeling of friendship among people working together."
+ },
+ {
+  "id": "1654",
+  "en": "Pitch in",
+  "tr": "Elini taşın altına koymak, katkıda bulunmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Everyone pitched in when we hit a tight deadline.",
+  "definition": "To join others and do your part of the work."
+ },
+ {
+  "id": "1655",
+  "en": "Peer feedback",
+  "tr": "Akran geri bildirimi",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We do peer feedback sessions once a month.",
+  "definition": "Comments from colleagues at your own level."
+ },
+ {
+  "id": "1656",
+  "en": "Get along",
+  "tr": "İyi geçinmek, anlaşmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I get along well with both engineers and designers.",
+  "definition": "To have a friendly relationship with someone."
+ },
+ {
+  "id": "1657",
+  "en": "Team goal",
+  "tr": "Takım hedefi",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Our team goal this quarter is to improve activation.",
+  "definition": "A shared target that a whole group works toward."
+ },
+ {
+  "id": "1658",
+  "en": "Coordinate with",
+  "tr": "Koordinasyon içinde olmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I coordinate closely with the marketing team before launches.",
+  "definition": "To organize your plans so they fit another group's."
+ },
+ {
+  "id": "1659",
+  "en": "Bounce ideas off",
+  "tr": "Fikir alışverişinde bulunmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I like to bounce ideas off my design lead first.",
+  "definition": "To test your thoughts by talking with someone."
+ },
+ {
+  "id": "1660",
+  "en": "Collective ownership",
+  "tr": "Kolektif sahiplenme",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We built a sense of collective ownership over the roadmap.",
+  "definition": "Shared responsibility for something by a whole group."
+ },
+ {
+  "id": "1661",
+  "en": "Show up for the team",
+  "tr": "Ekip için orada olmak, desteklemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I always show up for the team during a tough sprint.",
+  "definition": "To be present and reliable when colleagues need you."
+ },
+ {
+  "id": "1662",
+  "en": "Complement each other's skills",
+  "tr": "Birbirini tamamlayan beceriler",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Our team complements each other's skills really well.",
+  "definition": "Having strengths that cover another person's weaknesses."
+ },
+ {
+  "id": "1663",
+  "en": "Underlying issue",
+  "tr": "Altta yatan sorun",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We identified the underlying issue before deciding on a fix.",
+  "definition": "A hidden problem that creates visible trouble."
+ },
+ {
+  "id": "1664",
+  "en": "Make a decision",
+  "tr": "Karar vermek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I make decisions quickly when the data is clear.",
+  "definition": "To choose one option and end the discussion."
+ },
+ {
+  "id": "1665",
+  "en": "Weigh options",
+  "tr": "Seçenekleri tartmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I weighed the options before committing to the redesign.",
+  "definition": "To compare possible choices before deciding."
+ },
+ {
+  "id": "1666",
+  "en": "Take a risk",
+  "tr": "Risk almak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I took a risk by launching without a big marketing push.",
+  "definition": "To do something that might fail."
+ },
+ {
+  "id": "1667",
+  "en": "Calculated risk",
+  "tr": "Hesaplı risk",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "It was a calculated risk based on strong early signals.",
+  "definition": "A danger you accept after thinking carefully about it."
+ },
+ {
+  "id": "1668",
+  "en": "Decision-making",
+  "tr": "Karar alma",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Decision-making under uncertainty is a big part of the role.",
+  "definition": "The process of choosing between different options."
+ },
+ {
+  "id": "1669",
+  "en": "Worst-case scenario",
+  "tr": "En kötü senaryo",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We planned for the worst-case scenario before launching.",
+  "definition": "The most negative result that could possibly happen."
+ },
+ {
+  "id": "1670",
+  "en": "Make a call",
+  "tr": "Karar vermek, tercih yapmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I made the call to delay the launch by one week.",
+  "definition": "To decide something when others are waiting."
+ },
+ {
+  "id": "1671",
+  "en": "Informed decision",
+  "tr": "Bilinçli karar",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I made an informed decision based on the pilot results.",
+  "definition": "A choice made after studying the facts."
+ },
+ {
+  "id": "1672",
+  "en": "Gut feeling",
+  "tr": "İçgüdü, sezgi",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Sometimes I trust my gut feeling when data is limited.",
+  "definition": "An inner sense that something is right, without proof."
+ },
+ {
+  "id": "1673",
+  "en": "Consider options",
+  "tr": "Seçenekleri değerlendirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I considered three options before choosing the simplest one.",
+  "definition": "To look at several possible paths before choosing."
+ },
+ {
+  "id": "1674",
+  "en": "Weigh the pros and cons",
+  "tr": "Artılarını ve eksilerini tartmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I weighed the pros and cons with the whole team.",
+  "definition": "To compare the good and bad sides of something."
+ },
+ {
+  "id": "1675",
+  "en": "Judgment call",
+  "tr": "Takdir yetkisiyle verilen karar",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "It was a judgment call, since we didn't have enough data.",
+  "definition": "A choice based on experience when facts are missing."
+ },
+ {
+  "id": "1676",
+  "en": "Commit to a plan",
+  "tr": "Bir plana bağlı kalmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Once we commit to a plan, we don't change it mid-sprint.",
+  "definition": "To promise to follow one course and not switch."
+ },
+ {
+  "id": "1677",
+  "en": "Consequences",
+  "tr": "Sonuçlar",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I always think through the consequences before deciding.",
+  "definition": "The results that follow from an action or choice."
+ },
+ {
+  "id": "1678",
+  "en": "Weigh risk vs. reward",
+  "tr": "Risk ve ödülü kıyaslamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We weighed risk vs. reward before entering the new market.",
+  "definition": "To compare possible loss against possible gain."
+ },
+ {
+  "id": "1679",
+  "en": "Data-informed decision",
+  "tr": "Veriyle desteklenen karar",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I make data-informed decisions, not just data-driven ones.",
+  "definition": "A choice guided by numbers plus human judgement."
+ },
+ {
+  "id": "1680",
+  "en": "Second-guess",
+  "tr": "Kararından şüphe duymak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I try not to second-guess a decision once it's made.",
+  "definition": "To doubt a choice after it is already made."
+ },
+ {
+  "id": "1681",
+  "en": "Take responsibility",
+  "tr": "Sorumluluk almak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I take responsibility for every decision I make.",
+  "definition": "To accept that something is your duty or fault."
+ },
+ {
+  "id": "1682",
+  "en": "Assess the impact",
+  "tr": "Etkiyi değerlendirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We assessed the impact before rolling the change out fully.",
+  "definition": "To measure how much effect a change had."
+ },
+ {
+  "id": "1683",
+  "en": "Err on the side of caution",
+  "tr": "İhtiyatlı davranmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I err on the side of caution with irreversible decisions.",
+  "definition": "To choose the safer option when unsure."
+ },
+ {
+  "id": "1684",
+  "en": "Go with your gut",
+  "tr": "İçgüdüne güvenmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Sometimes you have to go with your gut and move fast.",
+  "definition": "To follow your instinct instead of analysis."
+ },
+ {
+  "id": "1685",
+  "en": "Weigh short-term vs. long-term",
+  "tr": "Kısa ve uzun vadeyi kıyaslamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We weighed short-term wins against long-term product health.",
+  "definition": "To compare quick gains with future health."
+ },
+ {
+  "id": "1686",
+  "en": "Reversible vs. irreversible decision",
+  "tr": "Geri alınabilir ve alınamaz karar",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I move fast on reversible decisions, slower on irreversible ones.",
+  "definition": "A choice you can undo versus one you cannot."
+ },
+ {
+  "id": "1687",
+  "en": "Change course",
+  "tr": "Yön değiştirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We changed course once the data proved us wrong.",
+  "definition": "To pick a new direction after already starting."
+ },
+ {
+  "id": "1688",
+  "en": "Sound decision",
+  "tr": "Sağlam karar",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "It was a sound decision based on solid user research.",
+  "definition": "A wise choice supported by solid reasoning."
+ },
+ {
+  "id": "1689",
+  "en": "Decision paralysis",
+  "tr": "Karar felci, karar verememe",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We avoid decision paralysis by setting a clear deadline.",
+  "definition": "Being unable to choose because there are too many options."
+ },
+ {
+  "id": "1690",
+  "en": "Stick to the plan",
+  "tr": "Plana sadık kalmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We stuck to the plan even when a shiny new idea appeared.",
+  "definition": "To follow the original agreement without changing it."
+ },
+ {
+  "id": "1691",
+  "en": "Trade-off analysis",
+  "tr": "Ödünleşim analizi",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I do a quick trade-off analysis before any major decision.",
+  "definition": "Comparing what you gain and lose from each option."
+ },
+ {
+  "id": "1692",
+  "en": "Bold call",
+  "tr": "Cesur karar",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I made a bold call to delay the launch for the sake of quality.",
+  "definition": "A brave choice that others might fear making."
+ },
+ {
+  "id": "1693",
+  "en": "Think it through",
+  "tr": "İyice düşünmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I always think it through before committing engineering time.",
+  "definition": "To consider all the details before acting."
+ },
+ {
+  "id": "1694",
+  "en": "Default to action",
+  "tr": "Eyleme yönelmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "When in doubt, I default to action over more analysis.",
+  "definition": "To prefer doing something quickly over endless study."
+ },
+ {
+  "id": "1695",
+  "en": "Deliver",
+  "tr": "Teslim etmek, sunmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We delivered the feature two weeks ahead of schedule.",
+  "definition": "To finish and hand over promised work."
+ },
+ {
+  "id": "1696",
+  "en": "Impact",
+  "tr": "Etki",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My work had a direct impact on user retention.",
+  "definition": "The real effect something has on people or numbers."
+ },
+ {
+  "id": "1697",
+  "en": "Measurable",
+  "tr": "Ölçülebilir",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I set measurable goals for every project I lead.",
+  "definition": "Able to be counted or checked with numbers."
+ },
+ {
+  "id": "1698",
+  "en": "Personal achievement",
+  "tr": "Kişisel başarı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "This project stands out as a personal achievement for me.",
+  "definition": "Something good you did yourself and feel proud of."
+ },
+ {
+  "id": "1699",
+  "en": "Ownership",
+  "tr": "Sahiplenme, sorumluluk alma",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I take full ownership of my product area.",
+  "definition": "Full responsibility for one area of work."
+ },
+ {
+  "id": "1700",
+  "en": "Iterate",
+  "tr": "Yinelemek, geliştirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We iterated on the design based on user feedback.",
+  "definition": "To improve something in small, repeated rounds."
+ },
+ {
+  "id": "1701",
+  "en": "Bias for action",
+  "tr": "Eyleme yönelik önyargı, hızlı hareket etme",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I have a strong bias for action and prefer to test quickly.",
+  "definition": "A strong preference for trying things quickly."
+ },
+ {
+  "id": "1702",
+  "en": "Result in",
+  "tr": "Sonucunda ...olmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The change resulted in a 12% increase in retention.",
+  "definition": "To cause a particular outcome to happen."
+ },
+ {
+  "id": "1703",
+  "en": "Tangible result",
+  "tr": "Somut sonuç",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I focus on tangible results, not just activity.",
+  "definition": "A concrete outcome you can actually see."
+ },
+ {
+  "id": "1704",
+  "en": "Achieve a goal",
+  "tr": "Bir hedefe ulaşmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We achieved our activation goal one month early.",
+  "definition": "To reach a target you were aiming for."
+ },
+ {
+  "id": "1705",
+  "en": "Quantify impact",
+  "tr": "Etkiyi sayısallaştırmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I always try to quantify impact in my updates.",
+  "definition": "To express an effect in exact numbers."
+ },
+ {
+  "id": "1706",
+  "en": "Outcome over output",
+  "tr": "Çıktı yerine sonuç odaklı olmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I care about outcome over output on every project.",
+  "definition": "Caring about real value created, not work produced."
+ },
+ {
+  "id": "1707",
+  "en": "Success story",
+  "tr": "Başarı hikayesi",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The onboarding redesign is a good success story.",
+  "definition": "An example of something that worked very well."
+ },
+ {
+  "id": "1708",
+  "en": "Exceed expectations",
+  "tr": "Beklentileri aşmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The campaign exceeded expectations by a wide margin.",
+  "definition": "To do better than anyone hoped or predicted."
+ },
+ {
+  "id": "1709",
+  "en": "Fall short",
+  "tr": "Beklentiyi karşılamamak, yetersiz kalmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The first version fell short of our activation goal.",
+  "definition": "To fail to reach a target."
+ },
+ {
+  "id": "1710",
+  "en": "Learnings",
+  "tr": "Çıkarımlar, dersler",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "The biggest learnings came from the failed experiment.",
+  "definition": "The useful lessons taken from an experience."
+ },
+ {
+  "id": "1711",
+  "en": "Proud of",
+  "tr": "Gurur duymak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm really proud of the retention improvement we drove.",
+  "definition": "Feeling happy satisfaction about something you did."
+ },
+ {
+  "id": "1712",
+  "en": "Key achievement",
+  "tr": "Önemli başarı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "My key achievement last year was the onboarding redesign.",
+  "definition": "The most important thing you accomplished."
+ },
+ {
+  "id": "1713",
+  "en": "Move the needle",
+  "tr": "Fark yaratmak, önemli etki yaratmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "The change really moved the needle on retention.",
+  "definition": "To create a noticeable change in a metric."
+ },
+ {
+  "id": "1714",
+  "en": "End result",
+  "tr": "Nihai sonuç",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The end result was a 20% increase in engagement.",
+  "definition": "The final outcome after everything is finished."
+ },
+ {
+  "id": "1715",
+  "en": "Contribute to success",
+  "tr": "Başarıya katkı sağlamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I contributed to the success by owning the onboarding flow.",
+  "definition": "To help a project reach a good outcome."
+ },
+ {
+  "id": "1716",
+  "en": "Grow",
+  "tr": "Büyütmek, büyümek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I grew weekly active users by 30% in six months.",
+  "definition": "To make numbers or a business become larger."
+ },
+ {
+  "id": "1717",
+  "en": "Fail fast",
+  "tr": "Hızlı başarısız olup öğrenmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We fail fast and move on to the next idea.",
+  "definition": "To test quickly, accept a bad result, and continue."
+ },
+ {
+  "id": "1718",
+  "en": "Case study",
+  "tr": "Örnek olay, vaka analizi",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I can walk you through a case study from my last role.",
+  "definition": "A detailed example used to explain how something worked."
+ },
+ {
+  "id": "1719",
+  "en": "Solve a problem",
+  "tr": "Bir sorunu çözmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I solved a recurring drop-off problem in onboarding.",
+  "definition": "To find an answer to a difficult situation."
+ },
+ {
+  "id": "1720",
+  "en": "Turn around",
+  "tr": "Toparlamak, düzeltmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I turned around a failing feature within one quarter.",
+  "definition": "To fix something failing and make it succeed."
+ },
+ {
+  "id": "1721",
+  "en": "Demonstrable impact",
+  "tr": "Kanıtlanabilir etki",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I look for demonstrable impact in everything I ship.",
+  "definition": "An effect you can clearly prove with evidence."
+ },
+ {
+  "id": "1722",
+  "en": "Set a record",
+  "tr": "Rekor kırmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We set a record for weekly signups after the campaign.",
+  "definition": "To reach the highest number ever achieved."
+ },
+ {
+  "id": "1723",
+  "en": "Show results",
+  "tr": "Sonuç göstermek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I show results with numbers, not just a story.",
+  "definition": "To prove your work produced real numbers."
+ },
+ {
+  "id": "1724",
+  "en": "Data to back it up",
+  "tr": "Destekleyici veri",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Every claim I make has data to back it up.",
+  "definition": "Evidence and numbers that support a claim."
+ },
+ {
+  "id": "1725",
+  "en": "Consistent results",
+  "tr": "Tutarlı sonuçlar",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I've delivered consistent results across three different roles.",
+  "definition": "Good outcomes repeated again and again over time."
+ },
+ {
+  "id": "1726",
+  "en": "Biggest win",
+  "tr": "En büyük başarı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My biggest win was reducing churn by 15%.",
+  "definition": "Your most impressive success so far."
+ },
+ {
+  "id": "1727",
+  "en": "Long-lasting impact",
+  "tr": "Kalıcı etki",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We aimed for a long-lasting impact, not a quick fix.",
+  "definition": "An effect that continues for many years."
+ },
+ {
+  "id": "1728",
+  "en": "Above and beyond",
+  "tr": "Beklenenin ötesine geçmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I went above and beyond to make the launch succeed.",
+  "definition": "Doing more than your job actually requires."
+ }
+]

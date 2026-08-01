@@ -1,4 +1,14 @@
-export type VocabularyWord = {id: string; en: string; tr: string; example: string; pos: string; level: string};
+export type VocabularyWord = {
+  id: string;
+  en: string;
+  tr: string;
+  example: string;
+  pos: string;
+  level: string;
+  definition: string;
+  definitionTr: string;
+  exampleTr: string;
+};
 // Keep this module's basename distinct from the JSON asset: Metro otherwise
 // resolves `vocabulary` to the JSON file before this typed wrapper.
 const vocabulary = require('./vocabulary.json') as VocabularyWord[];

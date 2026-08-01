@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "2113",
+  "en": "accessible",
+  "tr": "Erişilebilir",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I keep myself accessible, even as a manager with a full calendar.",
+  "definition": "Easy to reach or talk to when someone needs you."
+ },
+ {
+  "id": "2114",
+  "en": "viable",
+  "tr": "Uygulanabilir, geçerli",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We tested three ideas and only one was truly viable.",
+  "definition": "Able to work in practice and worth trying."
+ },
+ {
+  "id": "2115",
+  "en": "scalable",
+  "tr": "Ölçeklenebilir",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I designed the process to be scalable from day one.",
+  "definition": "Able to grow much larger without breaking down."
+ },
+ {
+  "id": "2116",
+  "en": "rigid",
+  "tr": "Katı, esnek olmayan",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The old process was too rigid for how fast we needed to move.",
+  "definition": "Too firm to bend or change easily."
+ },
+ {
+  "id": "2117",
+  "en": "strict",
+  "tr": "Katı, sıkı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I'm strict about deadlines but flexible about method.",
+  "definition": "Demanding that rules be followed exactly."
+ },
+ {
+  "id": "2118",
+  "en": "loose",
+  "tr": "Gevşek, esnek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We kept the plan loose enough to adapt as we learned.",
+  "definition": "Not tight or fixed, leaving room to change."
+ },
+ {
+  "id": "2119",
+  "en": "tight",
+  "tr": "Sıkı, dar",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We were on a tight budget, so every choice mattered.",
+  "definition": "Limited and leaving very little extra room."
+ },
+ {
+  "id": "2120",
+  "en": "significantly",
+  "tr": "Önemli ölçüde",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We significantly reduced onboarding time within a month.",
+  "definition": "By a large enough amount to matter."
+ },
+ {
+  "id": "2121",
+  "en": "considerably",
+  "tr": "Hatırı sayılır ölçüde",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Engagement improved considerably after the redesign.",
+  "definition": "By quite a lot, in a way people notice."
+ },
+ {
+  "id": "2122",
+  "en": "substantially",
+  "tr": "Büyük ölçüde",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We substantially cut the number of support tickets.",
+  "definition": "To a large degree, in real measurable amounts."
+ },
+ {
+  "id": "2123",
+  "en": "gradually",
+  "tr": "Kademeli olarak, yavaş yavaş",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We gradually rolled the change out to all users.",
+  "definition": "Slowly, in small steps over time."
+ },
+ {
+  "id": "2124",
+  "en": "dramatically",
+  "tr": "Çarpıcı biçimde",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Retention improved dramatically after we fixed onboarding.",
+  "definition": "In a very sudden and striking way."
+ },
+ {
+  "id": "2125",
+  "en": "consistently",
+  "tr": "Tutarlı bir şekilde",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I consistently hit my deadlines, even under pressure.",
+  "definition": "Always in the same reliable way."
+ },
+ {
+  "id": "2126",
+  "en": "occasionally",
+  "tr": "Ara sıra",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I occasionally work weekends, but I try to protect my time.",
+  "definition": "From time to time, but not often."
+ },
+ {
+  "id": "2127",
+  "en": "frequently",
+  "tr": "Sık sık",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I frequently check in with the team, even informally.",
+  "definition": "Very often, again and again."
+ },
+ {
+  "id": "2128",
+  "en": "rarely",
+  "tr": "Nadiren",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I rarely escalate — I try to solve it at my level first.",
+  "definition": "Almost never, only once in a while."
+ },
+ {
+  "id": "2129",
+  "en": "hardly",
+  "tr": "Neredeyse hiç",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We hardly ever miss a deadline anymore since we added buffer time.",
+  "definition": "Almost not at all, only to a tiny degree."
+ },
+ {
+  "id": "2130",
+  "en": "barely",
+  "tr": "Zar zor, ancak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We barely made the deadline, but we made it.",
+  "definition": "Only just, with almost nothing to spare."
+ },
+ {
+  "id": "2131",
+  "en": "nearly",
+  "tr": "Neredeyse",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We nearly missed the launch window, but caught it in time.",
+  "definition": "Almost, but not quite reaching a point or amount."
+ },
+ {
+  "id": "2132",
+  "en": "roughly",
+  "tr": "Yaklaşık olarak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "It took roughly two weeks longer than planned.",
+  "definition": "About that much, without exact numbers."
+ },
+ {
+  "id": "2133",
+  "en": "approximately",
+  "tr": "Yaklaşık olarak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We saved approximately ten hours a week with that change.",
+  "definition": "Close to a number, but not exact."
+ },
+ {
+  "id": "2134",
+  "en": "essentially",
+  "tr": "Esasen, temelde",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Essentially, we chose speed over completeness.",
+  "definition": "In the most basic sense, when you simplify."
+ },
+ {
+  "id": "2135",
+  "en": "basically",
+  "tr": "Temelde, esasında",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Basically, we rebuilt the whole flow from scratch.",
+  "definition": "Said simply, without the small details."
+ },
+ {
+  "id": "2136",
+  "en": "ultimately",
+  "tr": "Nihayetinde",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Ultimately, the decision came down to user trust.",
+  "definition": "In the end, when everything is weighed up."
+ },
+ {
+  "id": "2137",
+  "en": "eventually",
+  "tr": "Sonunda",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We eventually found the root cause after two days of digging.",
+  "definition": "After a long time and some waiting."
+ },
+ {
+  "id": "2138",
+  "en": "immediately",
+  "tr": "Hemen, derhal",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I flagged the risk immediately, not after the fact.",
+  "definition": "Right away, with no delay at all."
+ },
+ {
+  "id": "2139",
+  "en": "promptly",
+  "tr": "Vakit kaybetmeden",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I responded promptly so the client didn't have to wait.",
+  "definition": "Quickly and without keeping anyone waiting."
+ },
+ {
+  "id": "2140",
+  "en": "thoroughly",
+  "tr": "Kapsamlı bir şekilde",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I thoroughly tested the feature before it shipped.",
+  "definition": "Completely and carefully, leaving nothing out."
+ },
+ {
+  "id": "2141",
+  "en": "efficiently",
+  "tr": "Verimli bir şekilde",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We solved it efficiently with a small, focused team.",
+  "definition": "Getting good results without wasting time or money."
+ },
+ {
+  "id": "2142",
+  "en": "effectively",
+  "tr": "Etkili bir şekilde",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "She communicated the change effectively to a skeptical team.",
+  "definition": "In a way that really works and gets results."
+ },
+ {
+  "id": "2143",
+  "en": "accurately",
+  "tr": "Doğru bir şekilde",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I described the risk accurately, without downplaying it.",
+  "definition": "Correctly, with no mistakes in the details."
+ },
+ {
+  "id": "2144",
+  "en": "precisely",
+  "tr": "Kesin bir şekilde, tam olarak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I explained precisely why the estimate had changed.",
+  "definition": "Exactly, with no room for doubt."
+ },
+ {
+  "id": "2145",
+  "en": "clearly",
+  "tr": "Açıkça",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I clearly stated the trade-off before asking for a decision.",
+  "definition": "In a way that is easy to understand."
+ },
+ {
+  "id": "2146",
+  "en": "obviously",
+  "tr": "Açıkça, bariz şekilde",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Obviously the timeline needed to change once scope grew.",
+  "definition": "In a way anyone can plainly see."
+ },
+ {
+  "id": "2147",
+  "en": "apparently",
+  "tr": "Görünüşe göre",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Apparently the issue had existed for months before we caught it.",
+  "definition": "From what people say, though not fully confirmed."
+ },
+ {
+  "id": "2148",
+  "en": "presumably",
+  "tr": "Muhtemelen, tahminen",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Presumably the client will want a demo before signing off.",
+  "definition": "Probably true, judging from what we already know."
+ },
+ {
+  "id": "2149",
+  "en": "arguably",
+  "tr": "Tartışmaya açık olarak, iddia edilebilir ki",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "This was arguably our most important release of the year.",
+  "definition": "Possibly true, though others might disagree."
+ },
+ {
+  "id": "2150",
+  "en": "ideally",
+  "tr": "İdeal olarak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Ideally, we'd test with more users, but time was limited.",
+  "definition": "In the best situation, if nothing limits us."
+ },
+ {
+  "id": "2151",
+  "en": "hopefully",
+  "tr": "Umarım",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Hopefully the fix holds through the next release.",
+  "definition": "With luck, if things go the way we want."
+ },
+ {
+  "id": "2152",
+  "en": "unfortunately",
+  "tr": "Ne yazık ki",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Unfortunately, the vendor delayed us by a week.",
+  "definition": "Sadly, in a way nobody wanted."
+ },
+ {
+  "id": "2153",
+  "en": "surprisingly",
+  "tr": "Şaşırtıcı bir şekilde",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Surprisingly, the simpler version performed better.",
+  "definition": "In a way nobody expected."
+ },
+ {
+  "id": "2154",
+  "en": "interestingly",
+  "tr": "İlginç bir şekilde",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Interestingly, most churn happened in week one, not week four.",
+  "definition": "In a curious way that catches your attention."
+ },
+ {
+  "id": "2155",
+  "en": "importantly",
+  "tr": "Önemlisi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "More importantly, the team learned something for next time.",
+  "definition": "In a way that really matters most."
+ },
+ {
+  "id": "2156",
+  "en": "notably",
+  "tr": "Özellikle, dikkat çekici biçimde",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Notably, engagement rose fastest among new users.",
+  "definition": "Especially, in a way that stands out."
+ },
+ {
+  "id": "2157",
+  "en": "particularly",
+  "tr": "Özellikle",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I was particularly proud of how the team handled the setback.",
+  "definition": "Especially, more than in other cases."
+ },
+ {
+  "id": "2158",
+  "en": "specifically",
+  "tr": "Özellikle, spesifik olarak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I specifically asked for examples, not just opinions.",
+  "definition": "Exactly this thing and nothing else."
+ },
+ {
+  "id": "2159",
+  "en": "generally",
+  "tr": "Genel olarak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Generally, I prefer async updates over meetings.",
+  "definition": "In most cases, though not always."
+ },
+ {
+  "id": "2160",
+  "en": "typically",
+  "tr": "Tipik olarak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I typically block Monday mornings for planning.",
+  "definition": "As a normal habit or usual pattern."
+ },
+ {
+  "id": "2161",
+  "en": "usually",
+  "tr": "Genellikle",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I usually know within a day whether an idea is worth pursuing.",
+  "definition": "Most of the time, as a regular habit."
+ },
+ {
+  "id": "2162",
+  "en": "normally",
+  "tr": "Normalde",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Normally we'd test longer, but the window was tight.",
+  "definition": "Under ordinary conditions, when nothing unusual happens."
+ },
+ {
+  "id": "2163",
+  "en": "primarily",
+  "tr": "Öncelikle, esas olarak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I focused primarily on retention, not acquisition.",
+  "definition": "Mostly, as the first and biggest focus."
+ },
+ {
+  "id": "2164",
+  "en": "mainly",
+  "tr": "Esas olarak, çoğunlukla",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The delay was mainly due to a dependency outside our control.",
+  "definition": "For the most part, more than anything else."
+ },
+ {
+  "id": "2165",
+  "en": "largely",
+  "tr": "Büyük ölçüde",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The success was largely due to early, honest feedback.",
+  "definition": "To a great extent, though not completely."
+ },
+ {
+  "id": "2166",
+  "en": "partly",
+  "tr": "Kısmen",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The miss was partly my fault for not flagging it sooner.",
+  "definition": "To some degree, but not in full."
+ },
+ {
+  "id": "2167",
+  "en": "partially",
+  "tr": "Kısmen",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We partially automated the process to start, then finished it later.",
+  "definition": "Only in some ways, not the whole thing."
+ },
+ {
+  "id": "2168",
+  "en": "entirely",
+  "tr": "Tamamen",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That wasn't entirely my decision, but I owned the outcome anyway.",
+  "definition": "Fully and with nothing left out."
+ },
+ {
+  "id": "2169",
+  "en": "completely",
+  "tr": "Tamamen",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I completely rebuilt the onboarding flow from user feedback.",
+  "definition": "Totally, in every possible way."
+ },
+ {
+  "id": "2170",
+  "en": "fully",
+  "tr": "Tamamen, tam olarak",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I fully support the direction, even the parts I didn't propose.",
+  "definition": "To the greatest degree, holding nothing back."
+ },
+ {
+  "id": "2171",
+  "en": "scarcely",
+  "tr": "Neredeyse hiç, güçlükle",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We scarcely had time to test before the deadline hit.",
+  "definition": "Almost none at all, and with great difficulty."
+ },
+ {
+  "id": "2172",
+  "en": "increasingly",
+  "tr": "Giderek artan biçimde",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Users became increasingly vocal about that missing feature.",
+  "definition": "More and more as time goes on."
+ },
+ {
+  "id": "2173",
+  "en": "initially",
+  "tr": "Başlangıçta",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Initially I disagreed, but the data changed my mind.",
+  "definition": "At the very beginning, before things changed."
+ },
+ {
+  "id": "2174",
+  "en": "currently",
+  "tr": "Şu anda",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I'm currently focused on reducing time to first value.",
+  "definition": "Right now, at this point in time."
+ },
+ {
+  "id": "2175",
+  "en": "recently",
+  "tr": "Son zamanlarda",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We recently shipped a redesign of the entire flow.",
+  "definition": "A short time ago, not long past."
+ },
+ {
+  "id": "2176",
+  "en": "previously",
+  "tr": "Daha önce",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Previously, this process took a full day; now it takes an hour.",
+  "definition": "Before now, at an earlier time."
+ },
+ {
+  "id": "2177",
+  "en": "finally",
+  "tr": "Sonunda",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "We finally cracked it after three failed attempts.",
+  "definition": "At last, after a long wait."
+ },
+ {
+  "id": "2178",
+  "en": "simultaneously",
+  "tr": "Aynı anda",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We ran two experiments simultaneously to save time.",
+  "definition": "At the same moment, all together."
+ },
+ {
+  "id": "2179",
+  "en": "subsequently",
+  "tr": "Sonrasında, ardından",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We subsequently fixed the root cause, not just the symptom.",
+  "definition": "Afterwards, as the next thing that happened."
+ },
+ {
+  "id": "2180",
+  "en": "accordingly",
+  "tr": "Buna göre",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We adjusted the roadmap accordingly once priorities shifted.",
+  "definition": "In a way that fits the new situation."
+ },
+ {
+  "id": "2181",
+  "en": "henceforth",
+  "tr": "Bundan böyle",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Henceforth, every release includes a rollback plan.",
+  "definition": "From this moment on, as a new rule."
+ },
+ {
+  "id": "2182",
+  "en": "accomplishment",
+  "tr": "Başarı, başarma",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That project was my proudest accomplishment last year.",
+  "definition": "Something difficult you finished and feel proud of."
+ },
+ {
+  "id": "2183",
+  "en": "decision",
+  "tr": "Karar",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I made that decision alone and stood by it.",
+  "definition": "A choice you make after weighing the options."
+ },
+ {
+  "id": "2184",
+  "en": "communication",
+  "tr": "İletişim",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Clear communication saved us from a lot of wasted work.",
+  "definition": "The sharing of information between people."
+ },
+ {
+  "id": "2185",
+  "en": "improvement",
+  "tr": "İyileştirme, gelişme",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We saw steady improvement every single sprint.",
+  "definition": "A change that makes something better than before."
+ },
+ {
+  "id": "2186",
+  "en": "development",
+  "tr": "Gelişim, geliştirme",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My development as a leader really started with that failure.",
+  "definition": "The process of growing and getting better over time."
+ },
+ {
+  "id": "2187",
+  "en": "solution",
+  "tr": "Çözüm",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I proposed a solution that neither team had considered.",
+  "definition": "An answer that fixes a problem."
+ },
+ {
+  "id": "2188",
+  "en": "collaboration",
+  "tr": "İşbirliği",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That launch was a real collaboration between three teams.",
+  "definition": "Two or more people working together on something."
+ },
+ {
+  "id": "2189",
+  "en": "organization",
+  "tr": "Düzenleme, organizasyon",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Better organization alone cut our review time in half.",
+  "definition": "The act of arranging things in a clear order."
+ },
+ {
+  "id": "2190",
+  "en": "preparation",
+  "tr": "Hazırlık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My preparation for that meeting made all the difference.",
+  "definition": "The work you do in advance to get ready."
+ },
+ {
+  "id": "2191",
+  "en": "implementation",
+  "tr": "Uygulama, hayata geçirme",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The implementation took longer than the design phase did.",
+  "definition": "The act of putting a plan into real practice."
+ },
+ {
+  "id": "2192",
+  "en": "presentation",
+  "tr": "Sunum",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I rebuilt the presentation the night before, and it was worth it.",
+  "definition": "A talk with slides given to an audience."
+ },
+ {
+  "id": "2193",
+  "en": "explanation",
+  "tr": "Açıklama",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I gave a simple explanation instead of a technical one.",
+  "definition": "A clear account that helps someone understand something."
+ },
+ {
+  "id": "2194",
+  "en": "recommendation",
+  "tr": "Tavsiye, öneri",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My recommendation was to delay the launch by a week.",
+  "definition": "A suggestion of the best option to choose."
+ },
+ {
+  "id": "2195",
+  "en": "participation",
+  "tr": "Katılım",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Participation in the retro is optional, but almost everyone joins.",
+  "definition": "The act of taking part in an activity."
+ },
+ {
+  "id": "2196",
+  "en": "distribution",
+  "tr": "Dağıtım",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We changed the distribution of work once we saw the imbalance.",
+  "definition": "The way something is shared out among people."
+ },
+ {
+  "id": "2197",
+  "en": "allocation",
+  "tr": "Tahsis, dağıtım",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Resource allocation was the hardest part of that quarter.",
+  "definition": "The act of giving money or people to a task."
+ },
+ {
+  "id": "2198",
+  "en": "evaluation",
+  "tr": "Değerlendirme",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My evaluation of the options took less time than expected.",
+  "definition": "A careful judgement of how good something is."
+ },
+ {
+  "id": "2199",
+  "en": "assessment",
+  "tr": "Değerlendirme",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Our risk assessment flagged that issue two weeks early.",
+  "definition": "A study that measures risk, value, or quality."
+ },
+ {
+  "id": "2200",
+  "en": "consideration",
+  "tr": "Değerlendirme, göz önünde bulundurma",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We gave that option serious consideration before ruling it out.",
+  "definition": "Careful thought given to something before deciding."
+ },
+ {
+  "id": "2201",
+  "en": "application",
+  "tr": "Başvuru, uygulama",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I submitted my application a full week before the deadline.",
+  "definition": "A formal written request for a job or place."
+ },
+ {
+  "id": "2202",
+  "en": "qualification",
+  "tr": "Nitelik, yeterlilik",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My qualifications matched the role almost exactly.",
+  "definition": "A skill or degree that makes you suitable."
+ },
+ {
+  "id": "2203",
+  "en": "certification",
+  "tr": "Sertifika, belgelendirme",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I completed that certification on my own time.",
+  "definition": "Official proof that you passed a training course."
+ },
+ {
+  "id": "2204",
+  "en": "notification",
+  "tr": "Bildirim",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I turned off notifications so I could focus on deep work.",
+  "definition": "A small alert from an app telling you something."
+ },
+ {
+  "id": "2205",
+  "en": "verification",
+  "tr": "Doğrulama",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Verification of the data took longer than the analysis itself.",
+  "definition": "The act of checking that something is true."
+ },
+ {
+  "id": "2206",
+  "en": "confirmation",
+  "tr": "Onay, teyit",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I got written confirmation before we moved forward.",
+  "definition": "A clear message saying yes, this is agreed."
+ },
+ {
+  "id": "2207",
+  "en": "registration",
+  "tr": "Kayıt",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Registration for the beta filled up within a day.",
+  "definition": "Signing up officially for an event or service."
+ },
+ {
+  "id": "2208",
+  "en": "submission",
+  "tr": "Sunum, gönderme",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My submission was late, but the quality made up for it.",
+  "definition": "A piece of work you send in for review."
+ },
+ {
+  "id": "2209",
+  "en": "revision",
+  "tr": "Revizyon, düzeltme",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The final revision addressed every piece of feedback we'd gotten.",
+  "definition": "A changed version made after feedback."
+ },
+ {
+  "id": "2210",
+  "en": "discussion",
+  "tr": "Tartışma, görüşme",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That discussion changed the direction of the entire project.",
+  "definition": "A talk where people share ideas about something."
+ },
+ {
+  "id": "2211",
+  "en": "description",
+  "tr": "Tanım, tasvir",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I wrote a short description so anyone could understand it quickly.",
+  "definition": "Words that tell you what something is like."
+ },
+ {
+  "id": "2212",
+  "en": "demonstration",
+  "tr": "Gösterim, demo",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The live demonstration convinced them faster than any slide could.",
+  "definition": "A live show of how a product works."
+ },
+ {
+  "id": "2213",
+  "en": "illustration",
+  "tr": "Örnekleme, gösterme",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I used a simple illustration to explain a fairly complex idea.",
+  "definition": "A simple example or picture that makes an idea clear."
+ },
+ {
+  "id": "2214",
+  "en": "indication",
+  "tr": "Belirti, işaret",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "There was a clear indication the feature wasn't being used.",
+  "definition": "A sign that shows something is probably true."
+ },
+ {
+  "id": "2215",
+  "en": "conclusion",
+  "tr": "Sonuç",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "My conclusion was that we'd solved the wrong problem.",
+  "definition": "The final opinion you reach after thinking."
+ },
+ {
+  "id": "2216",
+  "en": "resolution",
+  "tr": "Çözüm, karar",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We reached a resolution that both sides were comfortable with.",
+  "definition": "An agreement that ends a disagreement or problem."
+ },
+ {
+  "id": "2217",
+  "en": "distinction",
+  "tr": "Ayrım, fark",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I made a clear distinction between urgent and important work.",
+  "definition": "A clear difference drawn between two things."
+ },
+ {
+  "id": "2218",
+  "en": "comparison",
+  "tr": "Karşılaştırma",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The comparison made it obvious which option was stronger.",
+  "definition": "Looking at two things side by side."
+ },
+ {
+  "id": "2219",
+  "en": "combination",
+  "tr": "Kombinasyon, birleşim",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "It was a combination of luck and preparation, honestly.",
+  "definition": "A mix of two or more things together."
+ },
+ {
+  "id": "2220",
+  "en": "expansion",
+  "tr": "Genişleme, büyüme",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That expansion into a new market taught me a lot fast.",
+  "definition": "Growth into new markets or a larger size."
+ },
+ {
+  "id": "2221",
+  "en": "extension",
+  "tr": "Uzatma, genişletme",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I asked for a short extension instead of cutting corners.",
+  "definition": "Extra time added to a deadline."
+ },
+ {
+  "id": "2222",
+  "en": "restriction",
+  "tr": "Kısıtlama",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We worked within a strict budget restriction that quarter.",
+  "definition": "A rule that limits what you can do."
+ },
+ {
+  "id": "2223",
+  "en": "exception",
+  "tr": "İstisna",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I made an exception because the circumstances were unusual.",
+  "definition": "A case where the usual rule does not apply."
+ },
+ {
+  "id": "2224",
+  "en": "exclusion",
+  "tr": "Dışlama, hariç tutma",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The exclusion of that feature was intentional, not an oversight.",
+  "definition": "Deliberately leaving someone or something out."
+ },
+ {
+  "id": "2225",
+  "en": "inclusion",
+  "tr": "Dahil etme, kapsama",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The inclusion of support early on prevented a lot of confusion later.",
+  "definition": "The act of bringing someone or something in."
+ },
+ {
+  "id": "2226",
+  "en": "involvement",
+  "tr": "Katılım, dahil olma",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My involvement started small and grew as the project matured.",
+  "definition": "The part you play in a project."
+ },
+ {
+  "id": "2227",
+  "en": "engagement",
+  "tr": "Katılım, bağlılık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "User engagement doubled after we simplified the onboarding.",
+  "definition": "How actively people use and interact with a product."
+ },
+ {
+  "id": "2228",
+  "en": "cooperation",
+  "tr": "İşbirliği",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We got full cooperation once we explained the reasoning.",
+  "definition": "Willing help and support given to another group."
+ },
+ {
+  "id": "2229",
+  "en": "reconciliation",
+  "tr": "Uzlaşma, bağdaştırma",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "The reconciliation between the two reports took an afternoon.",
+  "definition": "Making two sets of figures or two sides agree."
+ },
+ {
+  "id": "2230",
+  "en": "inspiration",
+  "tr": "İlham",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "That conversation was the inspiration for the whole redesign.",
+  "definition": "Something that gives you a new creative idea."
+ },
+ {
+  "id": "2231",
+  "en": "transformation",
+  "tr": "Dönüşüm",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That was a genuine transformation, not just a redesign.",
+  "definition": "A complete change into something very different."
+ },
+ {
+  "id": "2232",
+  "en": "conversion",
+  "tr": "Dönüşüm",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Our conversion rate improved once we simplified checkout.",
+  "definition": "Turning a visitor into a paying customer."
+ },
+ {
+  "id": "2233",
+  "en": "customization",
+  "tr": "Özelleştirme",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "That level of customization wasn't sustainable, so we simplified it.",
+  "definition": "Changing a product to fit one user's needs."
+ },
+ {
+  "id": "2234",
+  "en": "standardization",
+  "tr": "Standartlaştırma",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Standardization across teams made onboarding new hires much faster.",
+  "definition": "Making every team follow the same agreed method."
+ },
+ {
+  "id": "2235",
+  "en": "automation",
+  "tr": "Otomasyon",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That automation alone freed up a full day a week.",
+  "definition": "Using software or machines to do work by themselves."
+ },
+ {
+  "id": "2236",
+  "en": "supervision",
+  "tr": "Denetim, gözetim",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I worked well without constant supervision.",
+  "definition": "Watching over someone while they do their work."
+ },
+ {
+  "id": "2237",
+  "en": "inspection",
+  "tr": "İnceleme, denetim",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "A quick inspection caught the issue before it reached users.",
+  "definition": "A close look to find faults or problems."
+ },
+ {
+  "id": "2238",
+  "en": "validation",
+  "tr": "Doğrulama, onay",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We got validation from real users before writing a single line of code.",
+  "definition": "Proof from real users that an idea is right."
+ },
+ {
+  "id": "2239",
+  "en": "permission",
+  "tr": "İzin",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I asked for permission once, then trusted my own judgment after that.",
+  "definition": "Official agreement letting you do something."
+ },
+ {
+  "id": "2240",
+  "en": "prohibition",
+  "tr": "Yasak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "There was a strict prohibition on sharing that data externally.",
+  "definition": "An official ban on doing something."
+ },
+ {
+  "id": "2241",
+  "en": "assignment",
+  "tr": "Görev, atama",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That assignment ended up being the biggest opportunity of the year.",
+  "definition": "A task given to you by someone else."
+ },
+ {
+  "id": "2242",
+  "en": "appointment",
+  "tr": "Randevu, atama",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I had back-to-back appointments, so I blocked focus time carefully.",
+  "definition": "A fixed time arranged to meet someone."
+ },
+ {
+  "id": "2243",
+  "en": "nomination",
+  "tr": "Aday gösterme",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Her nomination for the award was well deserved.",
+  "definition": "Officially naming someone as a choice for an award."
+ },
+ {
+  "id": "2244",
+  "en": "selection",
+  "tr": "Seçim, seçme",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The selection process took longer than we expected.",
+  "definition": "The act of choosing from several options."
+ },
+ {
+  "id": "2245",
+  "en": "preference",
+  "tr": "Tercih",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My preference was the simpler option, but I stayed open to the data.",
+  "definition": "The option you like more than the others."
+ },
+ {
+  "id": "2246",
+  "en": "advice",
+  "tr": "Tavsiye",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The best advice I got was to ask more questions, not fewer.",
+  "definition": "An opinion about what someone should do."
+ },
+ {
+  "id": "2247",
+  "en": "warning",
+  "tr": "Uyarı",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I gave an early warning so nobody was caught off guard.",
+  "definition": "A message telling you about possible danger ahead."
+ },
+ {
+  "id": "2248",
+  "en": "documentation",
+  "tr": "Dokümantasyon, belgeleme",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Good documentation saved the next person hours of confusion.",
+  "definition": "Written notes explaining how a system works."
+ },
+ {
+  "id": "2249",
+  "en": "retrieval",
+  "tr": "Geri alma, erişim",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Data retrieval used to take minutes; now it's instant.",
+  "definition": "Getting stored data back out of a system."
+ },
+ {
+  "id": "2250",
+  "en": "settlement",
+  "tr": "Anlaşma, uzlaşma",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We reached a settlement both teams could live with.",
+  "definition": "An agreement that ends a dispute between two sides."
+ },
+ {
+  "id": "2251",
+  "en": "dedication",
+  "tr": "Adanmışlık, özveri",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Her dedication showed in every small detail of the launch.",
+  "definition": "Giving great time and effort to your work."
+ },
+ {
+  "id": "2252",
+  "en": "devotion",
+  "tr": "Bağlılık, adanmışlık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "His devotion to quality never slipped, even under pressure.",
+  "definition": "Deep loyalty to a person or a cause."
+ },
+ {
+  "id": "2253",
+  "en": "investment",
+  "tr": "Yatırım",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That training was the best investment I made that year.",
+  "definition": "Money or effort put in for later benefit."
+ },
+ {
+  "id": "2254",
+  "en": "expenditure",
+  "tr": "Harcama",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We kept a close eye on expenditure throughout the project.",
+  "definition": "The total money spent on something."
+ },
+ {
+  "id": "2255",
+  "en": "compensation",
+  "tr": "Tazminat, telafi, ücret",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We discussed compensation openly in the final interview round.",
+  "definition": "The pay and benefits you get for working."
+ },
+ {
+  "id": "2256",
+  "en": "reimbursement",
+  "tr": "Geri ödeme",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Reimbursement for the course took less than a week.",
+  "definition": "Money paid back for costs you covered yourself."
+ },
+ {
+  "id": "2257",
+  "en": "addition",
+  "tr": "Ekleme, ilave",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "That was a small addition, but it solved a real problem.",
+  "definition": "Something extra that is put in."
+ },
+ {
+  "id": "2258",
+  "en": "computation",
+  "tr": "Hesaplama",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "The computation itself was simple; explaining it clearly wasn't.",
+  "definition": "A calculation done with numbers."
+ },
+ {
+  "id": "2259",
+  "en": "approximation",
+  "tr": "Yaklaşık tahmin",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That number was an approximation, and I said so clearly.",
+  "definition": "A rough figure that is close to the truth."
+ },
+ {
+  "id": "2260",
+  "en": "quantification",
+  "tr": "Sayısallaştırma",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Quantification of the impact made the case for us instantly.",
+  "definition": "Putting a number on something to show its size."
+ },
+ {
+  "id": "2261",
+  "en": "information",
+  "tr": "Bilgi",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I asked for more information before making the call.",
+  "definition": "Facts and details you learn about something."
+ },
+ {
+  "id": "2262",
+  "en": "assurance",
+  "tr": "Güvence",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I gave assurance the fix would hold through the next release.",
+  "definition": "A firm promise that makes someone feel safe."
+ },
+ {
+  "id": "2263",
+  "en": "tolerance",
+  "tr": "Tolerans, hoşgörü",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We built more tolerance into the timeline after that experience.",
+  "definition": "The amount of delay or error something can accept."
+ },
+ {
+  "id": "2264",
+  "en": "persistence",
+  "tr": "Azim, sebat",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Persistence mattered more than talent on that particular project.",
+  "definition": "Refusing to give up when things get difficult."
+ },
+ {
+  "id": "2265",
+  "en": "resistance",
+  "tr": "Direniş, karşı koyma",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "There was some resistance to the change at first.",
+  "definition": "Opposition from people who do not want change."
+ },
+ {
+  "id": "2266",
+  "en": "acceptance",
+  "tr": "Kabul",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Acceptance of the new process took about a month.",
+  "definition": "Agreeing to take or live with something new."
+ },
+ {
+  "id": "2267",
+  "en": "performance",
+  "tr": "Performans",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My performance improved once I had clearer priorities.",
+  "definition": "How well someone or something does their job."
+ },
+ {
+  "id": "2268",
+  "en": "dependence",
+  "tr": "Bağımlılık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We reduced our dependence on a single vendor.",
+  "definition": "The state of needing someone or something else."
+ },
+ {
+  "id": "2269",
+  "en": "independence",
+  "tr": "Bağımsızlık",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I earned more independence by proving I could deliver.",
+  "definition": "Freedom to work and decide without help from others."
+ },
+ {
+  "id": "2270",
+  "en": "confidence",
+  "tr": "Güven, özgüven",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My confidence in the plan grew once we saw the first results.",
+  "definition": "A strong belief that things will go well."
+ },
+ {
+  "id": "2271",
+  "en": "difference",
+  "tr": "Fark",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That one change made a real difference within a week.",
+  "definition": "The way two things are not the same."
+ },
+ {
+  "id": "2272",
+  "en": "efficiency",
+  "tr": "Verimlilik",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We improved efficiency without adding a single extra person.",
+  "definition": "Getting more done with less time or money."
+ },
+ {
+  "id": "2273",
+  "en": "importance",
+  "tr": "Önem",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "I explained the importance of the fix in plain terms.",
+  "definition": "How much something matters to people."
+ },
+ {
+  "id": "2274",
+  "en": "relevance",
+  "tr": "İlgi, alaka",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I questioned the relevance of that metric before we tracked it.",
+  "definition": "How closely something connects to the matter at hand."
+ },
+ {
+  "id": "2275",
+  "en": "reality",
+  "tr": "Gerçeklik, gerçek",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "The reality was harder than the plan suggested, so we adjusted.",
+  "definition": "The way things actually are, not as imagined."
+ },
+ {
+  "id": "2276",
+  "en": "possibility",
+  "tr": "Olasılık, imkan",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I explored every possibility before ruling that one out.",
+  "definition": "Something that might happen or could be done."
+ },
+ {
+  "id": "2277",
+  "en": "capability",
+  "tr": "Yetenek, kapasite",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We built that capability in-house instead of outsourcing it.",
+  "definition": "The skill or power to do something."
+ },
+ {
+  "id": "2278",
+  "en": "adaptability",
+  "tr": "Uyum yeteneği",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Adaptability mattered more than experience in that first month.",
+  "definition": "The skill of changing easily to fit new conditions."
+ },
+ {
+  "id": "2279",
+  "en": "credibility",
+  "tr": "İnandırıcılık, güvenilirlik",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I built credibility early by delivering small wins first.",
+  "definition": "The quality of being believed and trusted by others."
+ },
+ {
+  "id": "2280",
+  "en": "creativity",
+  "tr": "Yaratıcılık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Creativity thrives when people aren't afraid to fail small.",
+  "definition": "The ability to think of new and original ideas."
+ },
+ {
+  "id": "2281",
+  "en": "productivity",
+  "tr": "Verimlilik",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Productivity went up once we cut unnecessary meetings.",
+  "definition": "The amount of useful work done in a given time."
+ },
+ {
+  "id": "2282",
+  "en": "sustainability",
+  "tr": "Sürdürülebilirlik",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Sustainability of the pace mattered as much as the results themselves.",
+  "definition": "The ability to keep going for a long time."
+ },
+ {
+  "id": "2283",
+  "en": "stability",
+  "tr": "İstikrar, kararlılık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Stability of the system came before adding new features.",
+  "definition": "The state of staying steady without sudden problems."
+ },
+ {
+  "id": "2284",
+  "en": "complexity",
+  "tr": "Karmaşıklık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We reduced complexity instead of hiding it behind documentation.",
+  "definition": "Having many parts that are hard to follow."
+ },
+ {
+  "id": "2285",
+  "en": "simplicity",
+  "tr": "Sadelik",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Simplicity was the whole point of the redesign.",
+  "definition": "The quality of being easy to understand and use."
+ },
+ {
+  "id": "2286",
+  "en": "clarity",
+  "tr": "Netlik, açıklık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Clarity mattered more than being comprehensive.",
+  "definition": "How easy something is to understand at first reading."
+ },
+ {
+  "id": "2287",
+  "en": "consistency",
+  "tr": "Tutarlılık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Consistency, not intensity, is what actually builds trust over time.",
+  "definition": "Doing things the same reliable way every time."
+ },
+ {
+  "id": "2288",
+  "en": "integrity",
+  "tr": "Dürüstlük, bütünlük",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I never compromised on integrity, even when it would've been easier.",
+  "definition": "Strong moral principles you never break under pressure."
+ },
+ {
+  "id": "2289",
+  "en": "honesty",
+  "tr": "Dürüstlük",
+  "pos": "Genel",
+  "level": "A2",
+  "example": "Honesty about the risk earned more trust than false optimism would have.",
+  "definition": "The habit of telling the truth, even when difficult."
+ },
+ {
+  "id": "2290",
+  "en": "fairness",
+  "tr": "Adalet, adillik",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Fairness mattered to me more than being liked in that decision.",
+  "definition": "Treating everyone equally and without favouritism."
+ },
+ {
+  "id": "2291",
+  "en": "communicative",
+  "tr": "İletişimi güçlü, açık sözlü",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm communicative by nature, so remote work never felt isolating.",
+  "definition": "Happy to talk openly and share news with others."
+ },
+ {
+  "id": "2292",
+  "en": "informative",
+  "tr": "Bilgilendirici",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I kept the update short but informative.",
+  "definition": "Giving useful facts and details to the reader."
+ },
+ {
+  "id": "2293",
+  "en": "organizational",
+  "tr": "Örgütsel, kurumsal",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "That was more of an organizational problem than a technical one.",
+  "definition": "Relating to how a company or group is structured."
+ },
+ {
+  "id": "2294",
+  "en": "preparatory",
+  "tr": "Hazırlık niteliğinde",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We spent a preparatory week just aligning on scope.",
+  "definition": "Done in advance to get ready for something."
+ },
+ {
+  "id": "2295",
+  "en": "explanatory",
+  "tr": "Açıklayıcı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I added a short explanatory note so nobody misread the chart.",
+  "definition": "Written or said in order to make something clear."
+ },
+ {
+  "id": "2296",
+  "en": "persuasive",
+  "tr": "İkna edici",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I made the case as persuasive as I could, with real numbers.",
+  "definition": "Good at convincing people to agree with you."
+ },
+ {
+  "id": "2297",
+  "en": "responsive",
+  "tr": "Duyarlı, hızlı yanıt veren",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I stayed responsive throughout the incident, even at midnight.",
+  "definition": "Quick to reply and act when people need you."
+ },
+ {
+  "id": "2298",
+  "en": "reactive",
+  "tr": "Tepkisel, geriden gelen",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Our old process was reactive; the new one catches issues earlier.",
+  "definition": "Dealing with problems only after they appear."
+ },
+ {
+  "id": "2299",
+  "en": "indecisive",
+  "tr": "Kararsız",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I try never to be indecisive when the team is waiting on me.",
+  "definition": "Unable to make up your mind quickly."
+ },
+ {
+  "id": "2300",
+  "en": "incompetent",
+  "tr": "Yetersiz, ehliyetsiz",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I've had to manage around incompetent processes, not incompetent people.",
+  "definition": "Not skilled enough to do a job properly."
+ },
+ {
+  "id": "2301",
+  "en": "except for",
+  "tr": "Dışında, hariç",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Except for one missed deadline, the whole project went smoothly.",
+  "definition": "Apart from, when naming the one thing left out."
+ },
+ {
+  "id": "2302",
+  "en": "other than",
+  "tr": "Dışında, -den başka",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Other than the budget, everything was within our control.",
+  "definition": "Aside from one thing, with everything else included."
+ },
+ {
+  "id": "2303",
+  "en": "save for",
+  "tr": "Dışında, hariç (resmi)",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Save for one bug, the release was clean.",
+  "definition": "A formal way of saying apart from one thing."
+ },
+ {
+  "id": "2304",
+  "en": "with the exception of",
+  "tr": "İstisnası hariç",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "With the exception of one team, everyone hit the target.",
+  "definition": "Not counting one case that differs from the rest."
+ }
+]

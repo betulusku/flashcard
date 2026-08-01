@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "1345",
+  "en": "Step out of comfort zone",
+  "tr": "Konfor alanından çıkmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I stepped out of my comfort zone by leading the redesign.",
+  "definition": "To try something new that feels risky or unfamiliar."
+ },
+ {
+  "id": "1346",
+  "en": "Motivation",
+  "tr": "Motivasyon",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My motivation comes from seeing real impact on users.",
+  "definition": "The inner drive that makes someone want to work hard."
+ },
+ {
+  "id": "1347",
+  "en": "Aspire to",
+  "tr": "Özlemini çekmek, hedeflemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I aspire to lead a larger, more strategic product team.",
+  "definition": "To strongly hope and aim for something in the future."
+ },
+ {
+  "id": "1348",
+  "en": "Career trajectory",
+  "tr": "Kariyer seyri, kariyer eğrisi",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "My career trajectory has moved from design toward strategy.",
+  "definition": "The path your professional life follows over many years."
+ },
+ {
+  "id": "1349",
+  "en": "Personal growth",
+  "tr": "Kişisel gelişim",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "This role has driven a lot of personal growth for me.",
+  "definition": "Improving yourself as a human being over time."
+ },
+ {
+  "id": "1350",
+  "en": "Seek feedback",
+  "tr": "Geri bildirim aramak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I actively seek feedback to keep improving.",
+  "definition": "To ask others for their honest opinion about your work."
+ },
+ {
+  "id": "1351",
+  "en": "Set a goal",
+  "tr": "Hedef koymak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I set a goal to lead my first product launch that year.",
+  "definition": "To decide on a clear target you want to reach."
+ },
+ {
+  "id": "1352",
+  "en": "Build expertise",
+  "tr": "Uzmanlık geliştirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I built expertise in ASO over the last two years.",
+  "definition": "To slowly gain deep knowledge in one area."
+ },
+ {
+  "id": "1353",
+  "en": "Long-term commitment",
+  "tr": "Uzun vadeli bağlılık",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I'm looking for a long-term commitment, not a short stint.",
+  "definition": "A promise to stay with something for many years."
+ },
+ {
+  "id": "1354",
+  "en": "Excited about",
+  "tr": "Heyecanlı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm excited about the opportunity to grow into this role.",
+  "definition": "Feeling happy and eager because something good is coming."
+ },
+ {
+  "id": "1355",
+  "en": "Room to grow",
+  "tr": "Gelişim alanı, büyüme imkanı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm looking for a role with real room to grow.",
+  "definition": "Space in a job to develop new skills and rise."
+ },
+ {
+  "id": "1356",
+  "en": "Learn from mistakes",
+  "tr": "Hatalardan öğrenmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I learn from mistakes instead of dwelling on them.",
+  "definition": "To gain wisdom from the errors you have made."
+ },
+ {
+  "id": "1357",
+  "en": "Take ownership of growth",
+  "tr": "Kendi gelişimini sahiplenmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I take ownership of my own professional growth.",
+  "definition": "To be responsible for developing yourself professionally."
+ },
+ {
+  "id": "1358",
+  "en": "Fulfilling work",
+  "tr": "Tatmin edici, anlamlı iş",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I want work that feels fulfilling, not just busy.",
+  "definition": "A job that gives you real satisfaction and purpose."
+ },
+ {
+  "id": "1359",
+  "en": "Open to feedback",
+  "tr": "Geri bildirime açık",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm open to feedback, even when it's hard to hear.",
+  "definition": "Willing to hear honest comments about your performance."
+ },
+ {
+  "id": "1360",
+  "en": "Career move",
+  "tr": "Kariyer hamlesi",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Joining a smaller team felt like the right career move.",
+  "definition": "A job change that shapes your professional path."
+ },
+ {
+  "id": "1361",
+  "en": "Grow within a company",
+  "tr": "Bir şirket içinde gelişmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'd love to grow within a company for the long term.",
+  "definition": "To advance to bigger roles at the same employer."
+ },
+ {
+  "id": "1362",
+  "en": "Meaningful impact",
+  "tr": "Anlamlı etki",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I want to make a meaningful impact, not just ship features.",
+  "definition": "A real difference that truly matters to people."
+ },
+ {
+  "id": "1363",
+  "en": "Career change",
+  "tr": "Kariyer değişikliği",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I made a career change from design to product two years ago.",
+  "definition": "Moving into a completely different kind of profession."
+ },
+ {
+  "id": "1364",
+  "en": "Level up",
+  "tr": "Kendini geliştirmek, üst seviyeye çıkmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I want a role where I can really level up as a PM.",
+  "definition": "To reach a higher stage of skill and ability."
+ },
+ {
+  "id": "1365",
+  "en": "Work-life balance",
+  "tr": "İş-yaşam dengesi",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Work-life balance matters to me as much as growth.",
+  "definition": "A healthy split between your job and private hours."
+ },
+ {
+  "id": "1366",
+  "en": "Take on a leadership role",
+  "tr": "Bir liderlik rolü üstlenmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm ready to take on a leadership role within a product team.",
+  "definition": "To accept responsibility for guiding a team."
+ },
+ {
+  "id": "1367",
+  "en": "Career pivot",
+  "tr": "Kariyer dönüşü, yön değişikliği",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "This role would be a natural career pivot toward strategy.",
+  "definition": "A deliberate turn toward a different professional direction."
+ },
+ {
+  "id": "1368",
+  "en": "Grow into a role",
+  "tr": "Bir role zamanla uyum sağlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I grew into the role by taking on small projects first.",
+  "definition": "To slowly become good enough for a bigger job."
+ },
+ {
+  "id": "1369",
+  "en": "Long-term fit",
+  "tr": "Uzun vadeli uyum",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I'm looking for a long-term fit, not just my next job.",
+  "definition": "A match that will work well for many years."
+ },
+ {
+  "id": "1370",
+  "en": "Career milestone",
+  "tr": "Kariyer dönüm noktası",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Leading my first launch was a real career milestone.",
+  "definition": "An important achievement in your professional path."
+ },
+ {
+  "id": "1371",
+  "en": "Values alignment",
+  "tr": "Değer uyumu",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Values alignment matters a lot to me when choosing a company.",
+  "definition": "When your beliefs match those of your employer."
+ },
+ {
+  "id": "1372",
+  "en": "Intrinsic motivation",
+  "tr": "İçsel motivasyon",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "My intrinsic motivation comes from solving real user problems.",
+  "definition": "Inner drive that comes from enjoying the work itself."
+ },
+ {
+  "id": "1373",
+  "en": "Follow my curiosity",
+  "tr": "Merakımı takip etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I followed my curiosity from design into data and growth.",
+  "definition": "To choose work based on what interests you most."
+ },
+ {
+  "id": "1374",
+  "en": "Present",
+  "tr": "Sunum yapmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I present our roadmap to leadership every quarter.",
+  "definition": "To show and explain your work to an audience."
+ },
+ {
+  "id": "1375",
+  "en": "Explain clearly",
+  "tr": "Net bir şekilde açıklamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I explain trade-offs clearly so everyone understands the decision.",
+  "definition": "To make something easy for others to understand."
+ },
+ {
+  "id": "1376",
+  "en": "Get the point across",
+  "tr": "Fikri net şekilde iletmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I use simple visuals to get the point across quickly.",
+  "definition": "To make people fully understand your idea."
+ },
+ {
+  "id": "1377",
+  "en": "Public speaking",
+  "tr": "Topluluk önünde konuşma",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Public speaking used to make me nervous, but I've improved a lot.",
+  "definition": "Giving a talk in front of many listeners."
+ },
+ {
+  "id": "1378",
+  "en": "Concise",
+  "tr": "Öz, kısa ve net",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I try to keep my updates concise and to the point.",
+  "definition": "Short and clear, with no extra words."
+ },
+ {
+  "id": "1379",
+  "en": "Body language",
+  "tr": "Beden dili",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I pay attention to body language during stakeholder meetings.",
+  "definition": "Posture and gestures that show how someone feels."
+ },
+ {
+  "id": "1380",
+  "en": "Listen carefully",
+  "tr": "Dikkatle dinlemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I listen carefully before responding to concerns.",
+  "definition": "To pay full attention to what someone says."
+ },
+ {
+  "id": "1381",
+  "en": "Get feedback across",
+  "tr": "Geri bildirimi net şekilde iletmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I get feedback across without making it feel personal.",
+  "definition": "To share honest comments so the other person understands."
+ },
+ {
+  "id": "1382",
+  "en": "Command attention",
+  "tr": "Dikkat çekmek, ilgiyi toplamak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "A clear opening slide really commands attention.",
+  "definition": "To make a whole audience focus on you."
+ },
+ {
+  "id": "1383",
+  "en": "Ask questions",
+  "tr": "Soru sormak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I ask questions until I fully understand the problem.",
+  "definition": "To request information when something is unclear."
+ },
+ {
+  "id": "1384",
+  "en": "Structure a presentation",
+  "tr": "Bir sunumu yapılandırmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I structure a presentation around one clear message.",
+  "definition": "To organize a talk into a clear logical order."
+ },
+ {
+  "id": "1385",
+  "en": "Speak confidently",
+  "tr": "Kendinden emin konuşmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I speak confidently once I know the data supports me.",
+  "definition": "To talk in a calm and self-assured way."
+ },
+ {
+  "id": "1386",
+  "en": "Simplify complex ideas",
+  "tr": "Karmaşık fikirleri basitleştirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I simplify complex ideas for non-technical stakeholders.",
+  "definition": "To make difficult topics easy to understand."
+ },
+ {
+  "id": "1387",
+  "en": "Adapt your tone",
+  "tr": "Tonunu uyarlamak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I adapt my tone depending on whether I'm talking to engineers or executives.",
+  "definition": "To change how you sound for different listeners."
+ },
+ {
+  "id": "1388",
+  "en": "Get to the point",
+  "tr": "Konuya girmek, asıl noktaya gelmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I try to get to the point quickly in every update.",
+  "definition": "To say the main thing without wasting time."
+ },
+ {
+  "id": "1389",
+  "en": "Convey a message",
+  "tr": "Bir mesajı iletmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I convey the message with data, not just opinion.",
+  "definition": "To pass an idea clearly to another person."
+ },
+ {
+  "id": "1390",
+  "en": "Read the audience",
+  "tr": "Dinleyiciyi okumak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I read the audience and adjust my pace accordingly.",
+  "definition": "To sense how listeners feel and react."
+ },
+ {
+  "id": "1391",
+  "en": "Nonverbal cues",
+  "tr": "Sözsüz iletişim işaretleri",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I pay attention to nonverbal cues during tough conversations.",
+  "definition": "Signals people send without using words."
+ },
+ {
+  "id": "1392",
+  "en": "Get buy-in",
+  "tr": "Onay almak, destek kazanmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I get buy-in by explaining the why, not just the what.",
+  "definition": "To win support and agreement from others."
+ },
+ {
+  "id": "1393",
+  "en": "Handle Q&A",
+  "tr": "Soru-cevap kısmını yönetmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I handle Q&A by staying calm and admitting what I don't know.",
+  "definition": "To calmly manage audience questions after a talk."
+ },
+ {
+  "id": "1394",
+  "en": "Storytelling",
+  "tr": "Hikaye anlatıcılığı",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Storytelling helps me make data memorable for stakeholders.",
+  "definition": "Sharing ideas through a narrative people remember."
+ },
+ {
+  "id": "1395",
+  "en": "Send a clear message",
+  "tr": "Net bir mesaj vermek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I send a clear message about priorities at the start of the quarter.",
+  "definition": "To communicate something so nobody can misunderstand it."
+ },
+ {
+  "id": "1396",
+  "en": "Keep it simple",
+  "tr": "Basit tutmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I keep it simple, especially when explaining to executives.",
+  "definition": "To avoid extra detail so others understand easily."
+ },
+ {
+  "id": "1397",
+  "en": "Follow the conversation",
+  "tr": "Konuşmayı takip etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I follow the conversation closely, even in a language that's not my first.",
+  "definition": "To understand what people are saying as they speak."
+ },
+ {
+  "id": "1398",
+  "en": "Build rapport",
+  "tr": "Yakınlık kurmak, bağ kurmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I build rapport with stakeholders before asking for anything big.",
+  "definition": "To create a warm, trusting relationship with someone."
+ },
+ {
+  "id": "1399",
+  "en": "Command the narrative",
+  "tr": "Anlatıyı yönlendirmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I try to command the narrative around a difficult decision.",
+  "definition": "To control how a story is understood by others."
+ },
+ {
+  "id": "1400",
+  "en": "Get comfortable speaking",
+  "tr": "Konuşmakta rahatlamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I got more comfortable speaking English through daily practice.",
+  "definition": "To feel relaxed while talking in front of others."
+ },
+ {
+  "id": "1401",
+  "en": "Speak with clarity",
+  "tr": "Net bir şekilde konuşmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I speak with clarity, even under pressure.",
+  "definition": "To express ideas in a way nobody misunderstands."
+ },
+ {
+  "id": "1402",
+  "en": "Two-way conversation",
+  "tr": "Karşılıklı konuşma",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I want interviews to feel like a two-way conversation.",
+  "definition": "A talk where both sides share and listen equally."
+ },
+ {
+  "id": "1403",
+  "en": "Pause for questions",
+  "tr": "Sorulara ara vermek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I pause for questions after every major point.",
+  "definition": "To stop briefly so listeners can ask things."
+ },
+ {
+  "id": "1404",
+  "en": "Land the message",
+  "tr": "Mesajı etkili şekilde iletmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "A short story helped the message land with the exec team.",
+  "definition": "To make an idea truly reach and convince people."
+ },
+ {
+  "id": "1405",
+  "en": "Explain the why",
+  "tr": "Nedenini açıklamak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I always explain the why behind a prioritization decision.",
+  "definition": "To give the reasons behind a decision."
+ },
+ {
+  "id": "1406",
+  "en": "Keep the audience engaged",
+  "tr": "Dinleyiciyi ilgili tutmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I keep the audience engaged with real examples.",
+  "definition": "To hold the interest of your listeners throughout."
+ },
+ {
+  "id": "1407",
+  "en": "Get straight to it",
+  "tr": "Direkt konuya girmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I get straight to it when time is limited.",
+  "definition": "To begin the main subject immediately."
+ },
+ {
+  "id": "1408",
+  "en": "Speak off the cuff",
+  "tr": "Hazırlıksız konuşmak, doğaçlama",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I can speak off the cuff when a question catches me off guard.",
+  "definition": "To talk without any preparation at all."
+ },
+ {
+  "id": "1409",
+  "en": "Remote team",
+  "tr": "Uzaktan çalışan ekip",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I've managed a remote team across three time zones.",
+  "definition": "A group of colleagues who work in different places."
+ },
+ {
+  "id": "1410",
+  "en": "Async communication",
+  "tr": "Eşzamansız iletişim",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We rely on async communication for most updates.",
+  "definition": "Messages people read and answer at different times."
+ },
+ {
+  "id": "1411",
+  "en": "Time zone difference",
+  "tr": "Saat dilimi farkı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Time zone differences make daily standups tricky.",
+  "definition": "The gap in local clocks between two countries."
+ },
+ {
+  "id": "1412",
+  "en": "Work from home",
+  "tr": "Evden çalışmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I work from home three days a week.",
+  "definition": "To do your job at your own house."
+ },
+ {
+  "id": "1413",
+  "en": "Virtual meeting",
+  "tr": "Sanal toplantı, çevrimiçi toplantı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We hold a virtual meeting every Monday to align.",
+  "definition": "A group discussion held online instead of in person."
+ },
+ {
+  "id": "1414",
+  "en": "Overcommunicate",
+  "tr": "Fazladan iletişim kurmak, aşırı bilgilendirmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "When working remotely, I overcommunicate to avoid confusion.",
+  "definition": "To repeat information often so nobody is confused."
+ },
+ {
+  "id": "1415",
+  "en": "Stay connected",
+  "tr": "Bağlantıda kalmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I stay connected with my team through daily check-ins.",
+  "definition": "To keep in regular contact with your colleagues."
+ },
+ {
+  "id": "1416",
+  "en": "Distributed team",
+  "tr": "Dağınık ekip, farklı yerlerde çalışan ekip",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I've worked with a distributed team across four countries.",
+  "definition": "A group of workers spread across many locations."
+ },
+ {
+  "id": "1417",
+  "en": "Set clear expectations",
+  "tr": "Net beklentiler belirlemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Working remotely, I set clear expectations upfront.",
+  "definition": "To state exactly what you want from someone."
+ },
+ {
+  "id": "1418",
+  "en": "Collaboration tool",
+  "tr": "İşbirliği aracı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We rely heavily on a shared collaboration tool.",
+  "definition": "Software that helps a team work together online."
+ },
+ {
+  "id": "1419",
+  "en": "Documentation culture",
+  "tr": "Dokümantasyon kültürü",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We built a strong documentation culture for our remote team.",
+  "definition": "A habit of writing everything down as a team."
+ },
+ {
+  "id": "1420",
+  "en": "Home office",
+  "tr": "Ev ofisi",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My home office is set up for both calls and deep work.",
+  "definition": "The room in your house where you work."
+ },
+ {
+  "id": "1421",
+  "en": "Work independently",
+  "tr": "Bağımsız çalışmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I work independently but check in regularly.",
+  "definition": "To do your job without constant supervision."
+ },
+ {
+  "id": "1422",
+  "en": "Video call",
+  "tr": "Görüntülü görüşme",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We do a quick video call instead of a long email thread.",
+  "definition": "A talk where people see each other on screen."
+ },
+ {
+  "id": "1423",
+  "en": "Async update",
+  "tr": "Eşzamansız güncelleme",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I send an async update instead of scheduling another meeting.",
+  "definition": "A written progress note colleagues read whenever they can."
+ },
+ {
+  "id": "1424",
+  "en": "Bridge the time zone gap",
+  "tr": "Saat dilimi farkını kapatmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We rotate meeting times to bridge the time zone gap.",
+  "definition": "To find meeting hours that suit distant countries."
+ },
+ {
+  "id": "1425",
+  "en": "Flexible hours",
+  "tr": "Esnek çalışma saatleri",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Flexible hours help me balance deep work and meetings.",
+  "definition": "Freedom to choose when you start and stop working."
+ },
+ {
+  "id": "1426",
+  "en": "Onsite",
+  "tr": "Ofiste, işyerinde",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We go onsite once a month for planning sessions.",
+  "definition": "Physically at the workplace rather than at home."
+ },
+ {
+  "id": "1427",
+  "en": "Shared calendar",
+  "tr": "Ortak takvim",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We use a shared calendar to avoid meeting overlaps.",
+  "definition": "A schedule everyone on the team can see."
+ },
+ {
+  "id": "1428",
+  "en": "Water cooler chat",
+  "tr": "Sohbet arası muhabbet, gündelik sohbet",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We lost some water cooler chat, so we added informal virtual coffees.",
+  "definition": "Casual small talk between colleagues during breaks."
+ },
+ {
+  "id": "1429",
+  "en": "Remote-first culture",
+  "tr": "Uzaktan öncelikli kültür",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Our team has a remote-first culture by design.",
+  "definition": "A company built mainly for people working from home."
+ },
+ {
+  "id": "1430",
+  "en": "Log off",
+  "tr": "Çıkış yapmak, işi bırakmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I try to log off at a reasonable time every day.",
+  "definition": "To finish for the day and close your computer."
+ },
+ {
+  "id": "1431",
+  "en": "Stay in sync",
+  "tr": "Senkronize kalmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We stay in sync through a shared weekly doc.",
+  "definition": "To keep everyone equally informed and aligned."
+ },
+ {
+  "id": "1432",
+  "en": "Slack message",
+  "tr": "Slack mesajı",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I sent a quick Slack message instead of a long email.",
+  "definition": "A short note sent through a workplace chat app."
+ },
+ {
+  "id": "1433",
+  "en": "Meeting fatigue",
+  "tr": "Toplantı yorgunluğu",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We cut down on meetings to avoid meeting fatigue.",
+  "definition": "Exhaustion caused by too many calls each day."
+ },
+ {
+  "id": "1434",
+  "en": "Deep work block",
+  "tr": "Derin çalışma bloğu",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I protect a deep work block every morning.",
+  "definition": "A protected period for focused, uninterrupted tasks."
+ },
+ {
+  "id": "1435",
+  "en": "Screen share",
+  "tr": "Ekran paylaşımı yapmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I screen share the dashboard during every review.",
+  "definition": "To let others see what is on your monitor."
+ },
+ {
+  "id": "1436",
+  "en": "Onboard remotely",
+  "tr": "Uzaktan işe alım yapmak, uzaktan oryantasyon",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We onboard new hires remotely with a structured first week.",
+  "definition": "To welcome and train a new hire online."
+ },
+ {
+  "id": "1437",
+  "en": "Reach out",
+  "tr": "İletişime geçmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Feel free to reach out anytime with questions.",
+  "definition": "To contact someone to ask or offer something."
+ },
+ {
+  "id": "1438",
+  "en": "Asynchronous-first",
+  "tr": "Eşzamansız öncelikli",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We're asynchronous-first, so meetings are the exception.",
+  "definition": "Working mainly through written notes instead of live calls."
+ },
+ {
+  "id": "1439",
+  "en": "Onboarding call",
+  "tr": "Karşılama görüşmesi",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We start every new hire with a short onboarding call.",
+  "definition": "A meeting that welcomes someone to the company."
+ },
+ {
+  "id": "1440",
+  "en": "Shared document",
+  "tr": "Paylaşılan doküman",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We track decisions in a shared document, not in chat.",
+  "definition": "A file several people can open and edit together."
+ },
+ {
+  "id": "1441",
+  "en": "Check emails",
+  "tr": "E-postaları kontrol etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I check emails twice a day to stay focused on deep work.",
+  "definition": "To look at new messages in your inbox."
+ },
+ {
+  "id": "1442",
+  "en": "Recorded meeting",
+  "tr": "Kayıtlı toplantı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I share a recorded meeting for anyone in a different time zone.",
+  "definition": "A saved video of a discussion others watch later."
+ },
+ {
+  "id": "1443",
+  "en": "Remote onboarding experience",
+  "tr": "Uzaktan işe alım deneyimi",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We redesigned the remote onboarding experience for new hires.",
+  "definition": "How a new hire is welcomed while working online."
+ },
+ {
+  "id": "1444",
+  "en": "Team offsite",
+  "tr": "Ekip buluşması, ofis dışı etkinlik",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We had a team offsite once a year to plan strategy.",
+  "definition": "A group trip away from the usual workplace."
+ },
+ {
+  "id": "1445",
+  "en": "Counteroffer",
+  "tr": "Karşı teklif",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I made a counteroffer based on my research on market rates.",
+  "definition": "A different number you suggest in reply to theirs."
+ },
+ {
+  "id": "1446",
+  "en": "Salary expectations",
+  "tr": "Maaş beklentisi",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "My salary expectations are based on my experience and the market.",
+  "definition": "The pay range you hope to receive."
+ },
+ {
+  "id": "1447",
+  "en": "Meet in the middle",
+  "tr": "Ortada buluşmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We met in the middle on the timeline.",
+  "definition": "To agree on something between two different positions."
+ },
+ {
+  "id": "1448",
+  "en": "Walk away from the table",
+  "tr": "Masadan kalkmak, anlaşmayı reddetmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I was ready to walk away from the table if the terms weren't fair.",
+  "definition": "To end talks and refuse the deal completely."
+ },
+ {
+  "id": "1449",
+  "en": "Fair offer",
+  "tr": "Adil teklif",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I think this is a fair offer given my experience.",
+  "definition": "A reasonable proposal that treats both sides equally."
+ },
+ {
+  "id": "1450",
+  "en": "Come to terms",
+  "tr": "Anlaşmaya varmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We came to terms after a short back-and-forth.",
+  "definition": "To finally reach an agreement with someone."
+ },
+ {
+  "id": "1451",
+  "en": "Bottom line (in negotiation)",
+  "tr": "En düşük kabul edilebilir seviye",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "My bottom line was a role with real ownership, not just title.",
+  "definition": "The lowest deal you would still accept."
+ },
+ {
+  "id": "1452",
+  "en": "Win-win outcome",
+  "tr": "Kazan-kazan sonucu",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We found a win-win outcome on both salary and start date.",
+  "definition": "A result where both sides get what they need."
+ },
+ {
+  "id": "1453",
+  "en": "Ask for more time",
+  "tr": "Daha fazla süre istemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I asked for more time to consider the offer.",
+  "definition": "To request extra days before giving your answer."
+ },
+ {
+  "id": "1454",
+  "en": "Non-negotiable",
+  "tr": "Pazarlığa kapalı, taviz verilmez",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Flexible working hours were non-negotiable for me.",
+  "definition": "Something you absolutely refuse to change or trade."
+ },
+ {
+  "id": "1455",
+  "en": "Reasonable request",
+  "tr": "Makul talep",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I think a signing bonus is a reasonable request.",
+  "definition": "A fair thing to ask for politely."
+ },
+ {
+  "id": "1456",
+  "en": "Room to negotiate",
+  "tr": "Pazarlık payı",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "There's usually some room to negotiate on start date.",
+  "definition": "Space to discuss and improve the offered terms."
+ },
+ {
+  "id": "1457",
+  "en": "Anchor the negotiation",
+  "tr": "Müzakereyi belirli bir noktaya sabitlemek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I anchored the negotiation with market data on similar roles.",
+  "definition": "To set the first number that shapes the discussion."
+ },
+ {
+  "id": "1458",
+  "en": "Accept an offer",
+  "tr": "Bir teklifi kabul etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I accepted the offer after negotiating the start date.",
+  "definition": "To say yes to a job proposal."
+ },
+ {
+  "id": "1459",
+  "en": "Terms and conditions",
+  "tr": "Şartlar ve koşullar",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I read the terms and conditions carefully before signing.",
+  "definition": "The written rules of an agreement you sign."
+ },
+ {
+  "id": "1460",
+  "en": "Discuss compensation",
+  "tr": "Ücret konusunu görüşmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We discussed compensation openly in the final round.",
+  "definition": "To talk openly about pay and benefits."
+ },
+ {
+  "id": "1461",
+  "en": "Firm on",
+  "tr": "Bir konuda kararlı, taviz vermeyen",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I was firm on the remote work policy.",
+  "definition": "Refusing to move your position on something."
+ },
+ {
+  "id": "1462",
+  "en": "Concede a point",
+  "tr": "Bir noktada taviz vermek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I conceded on start date but held firm on salary.",
+  "definition": "To give way on one part of a disagreement."
+ },
+ {
+  "id": "1463",
+  "en": "Ask the right questions",
+  "tr": "Doğru soruları sormak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I ask the right questions before accepting any offer.",
+  "definition": "To seek exactly the information that matters most."
+ },
+ {
+  "id": "1464",
+  "en": "Negotiate in good faith",
+  "tr": "İyi niyetle müzakere etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "Both sides negotiated in good faith throughout.",
+  "definition": "To bargain honestly and with real intention to agree."
+ },
+ {
+  "id": "1465",
+  "en": "Signing bonus",
+  "tr": "İmza bonusu",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I asked about a signing bonus during the final call.",
+  "definition": "Extra money paid when you join a company."
+ },
+ {
+  "id": "1466",
+  "en": "Weigh the offer",
+  "tr": "Teklifi değerlendirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I took a few days to weigh the offer carefully.",
+  "definition": "To consider a job proposal carefully before deciding."
+ },
+ {
+  "id": "1467",
+  "en": "Negotiation leverage",
+  "tr": "Müzakere avantajı",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "A competing offer gave me some negotiation leverage.",
+  "definition": "An advantage that gives you power while bargaining."
+ },
+ {
+  "id": "1468",
+  "en": "Final offer",
+  "tr": "Son teklif",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "They came back with their final offer the next day.",
+  "definition": "The last proposal, with no more changes possible."
+ },
+ {
+  "id": "1469",
+  "en": "Push for",
+  "tr": "Israrla istemek, talep etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I pushed for a clearer growth path in the negotiation.",
+  "definition": "To ask insistently until you get something."
+ },
+ {
+  "id": "1470",
+  "en": "Negotiate the terms",
+  "tr": "Şartları görüşmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We negotiated the terms before signing the offer.",
+  "definition": "To discuss the details of an agreement before signing."
+ },
+ {
+  "id": "1471",
+  "en": "Hold firm",
+  "tr": "Kararlılığını korumak, taviz vermemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I held firm on remote work during the negotiation.",
+  "definition": "To refuse to change your position under pressure."
+ },
+ {
+  "id": "1472",
+  "en": "Split the difference",
+  "tr": "Ortada buluşmak, farkı paylaşmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We split the difference on the start date.",
+  "definition": "To settle halfway between two proposed numbers."
+ },
+ {
+  "id": "1473",
+  "en": "Ask for clarification",
+  "tr": "Açıklama istemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I asked for clarification on the bonus structure.",
+  "definition": "To request a better explanation of something confusing."
+ },
+ {
+  "id": "1474",
+  "en": "Get everything in writing",
+  "tr": "Her şeyi yazılı hale getirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I always get everything in writing before accepting an offer.",
+  "definition": "To have all promises recorded in a signed document."
+ },
+ {
+  "id": "1475",
+  "en": "Negotiate from a position of strength",
+  "tr": "Güçlü bir konumdan pazarlık yapmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "A competing offer let me negotiate from a position of strength.",
+  "definition": "To bargain while holding a clear advantage."
+ },
+ {
+  "id": "1476",
+  "en": "Take time to decide",
+  "tr": "Karar vermek için süre almak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I took a few days to decide before responding.",
+  "definition": "To think for several days before answering."
+ },
+ {
+  "id": "1477",
+  "en": "Clarify the scope of the role",
+  "tr": "Rolün kapsamını netleştirmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I clarified the scope of the role before discussing salary.",
+  "definition": "To confirm exactly which duties a job includes."
+ },
+ {
+  "id": "1478",
+  "en": "Innovative",
+  "tr": "Yenilikçi",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I'm proud of the innovative onboarding flow we built.",
+  "definition": "Bringing fresh, original ideas that improve things."
+ },
+ {
+  "id": "1479",
+  "en": "Experiment",
+  "tr": "Deney, deneme",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We ran a small experiment before committing to the idea.",
+  "definition": "A small trial run to check whether something works."
+ },
+ {
+  "id": "1480",
+  "en": "Creative solution",
+  "tr": "Yaratıcı çözüm",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We found a creative solution within a limited budget.",
+  "definition": "An original idea that fixes a difficult problem."
+ },
+ {
+  "id": "1481",
+  "en": "Out-of-the-box thinking",
+  "tr": "Kalıp dışı düşünme",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "Out-of-the-box thinking helped us solve a stubborn retention problem.",
+  "definition": "Coming up with unusual ideas beyond normal patterns."
+ },
+ {
+  "id": "1482",
+  "en": "New idea",
+  "tr": "Yeni fikir",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "Every planning session starts with new ideas from the team.",
+  "definition": "A fresh thought nobody has tried before."
+ },
+ {
+  "id": "1483",
+  "en": "Rethink",
+  "tr": "Yeniden düşünmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We rethought the entire onboarding experience from scratch.",
+  "definition": "To consider something again from the beginning."
+ },
+ {
+  "id": "1484",
+  "en": "Try something new",
+  "tr": "Yeni bir şey denemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We tried something new instead of copying competitors.",
+  "definition": "To attempt an approach you have never used."
+ },
+ {
+  "id": "1485",
+  "en": "Fresh approach",
+  "tr": "Taze yaklaşım",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We took a fresh approach instead of the usual playbook.",
+  "definition": "A different method instead of the usual one."
+ },
+ {
+  "id": "1486",
+  "en": "Challenge assumptions",
+  "tr": "Varsayımları sorgulamak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I challenge assumptions before committing engineering resources.",
+  "definition": "To question beliefs that people accept without proof."
+ },
+ {
+  "id": "1487",
+  "en": "Brainstorm",
+  "tr": "Beyin fırtınası yapmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We brainstormed ten ideas before picking the best one.",
+  "definition": "To quickly produce many ideas as a group."
+ },
+ {
+  "id": "1488",
+  "en": "Reimagine",
+  "tr": "Yeniden hayal etmek, yeniden tasarlamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We reimagined the whole checkout experience.",
+  "definition": "To rethink something and design it completely differently."
+ },
+ {
+  "id": "1489",
+  "en": "Push boundaries",
+  "tr": "Sınırları zorlamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We pushed boundaries with a completely new pricing model.",
+  "definition": "To go beyond the usual accepted limits."
+ },
+ {
+  "id": "1490",
+  "en": "Break new ground",
+  "tr": "Öncü olmak, yeni bir alan açmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We broke new ground with our offline-first approach.",
+  "definition": "To do something nobody has ever done before."
+ },
+ {
+  "id": "1491",
+  "en": "Test a new idea",
+  "tr": "Yeni bir fikri denemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We tested a new idea with a small group of users.",
+  "definition": "To check whether a fresh concept actually works."
+ },
+ {
+  "id": "1492",
+  "en": "Novel approach",
+  "tr": "Özgün yaklaşım",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We took a novel approach to solving the churn problem.",
+  "definition": "An original method never used here before."
+ },
+ {
+  "id": "1493",
+  "en": "Improve on",
+  "tr": "Geliştirmek, iyileştirmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We improved on the original design after user feedback.",
+  "definition": "To make an existing version better than before."
+ },
+ {
+  "id": "1494",
+  "en": "Reinvent",
+  "tr": "Yeniden icat etmek, baştan tasarlamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We reinvented onboarding around a single guided task.",
+  "definition": "To create something familiar again in a totally new form."
+ },
+ {
+  "id": "1495",
+  "en": "Question the status quo",
+  "tr": "Mevcut durumu sorgulamak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I always question the status quo before accepting it.",
+  "definition": "To doubt whether the current way is best."
+ },
+ {
+  "id": "1496",
+  "en": "Come up with new ways",
+  "tr": "Yeni yollar bulmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We came up with new ways to re-engage inactive users.",
+  "definition": "To invent fresh methods for doing something."
+ },
+ {
+  "id": "1497",
+  "en": "Encourage experimentation",
+  "tr": "Denemeciliği teşvik etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I encourage experimentation, even when it might fail.",
+  "definition": "To support your team in trying risky tests."
+ },
+ {
+  "id": "1498",
+  "en": "Spark an idea",
+  "tr": "Bir fikri tetiklemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "A user complaint sparked the idea for our new feature.",
+  "definition": "To suddenly cause a new thought in someone."
+ },
+ {
+  "id": "1499",
+  "en": "Prototype quickly",
+  "tr": "Hızlıca prototip oluşturmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We prototype quickly to test ideas before building them fully.",
+  "definition": "To build a rough early version fast."
+ },
+ {
+  "id": "1500",
+  "en": "Embrace failure",
+  "tr": "Başarısızlığı kabullenmek, ondan ders çıkarmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We embrace failure as long as we learn something from it.",
+  "definition": "To accept losing sometimes and grow from it."
+ },
+ {
+  "id": "1501",
+  "en": "Explore alternatives",
+  "tr": "Alternatifleri keşfetmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We explored alternatives before settling on this design.",
+  "definition": "To look at other possible options first."
+ },
+ {
+  "id": "1502",
+  "en": "Unconventional idea",
+  "tr": "Alışılmadık fikir",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "It was an unconventional idea, but the data supported it.",
+  "definition": "A strange suggestion that breaks the normal rules."
+ },
+ {
+  "id": "1503",
+  "en": "Generate ideas",
+  "tr": "Fikir üretmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We generate ideas as a team every two weeks.",
+  "definition": "To produce many new thoughts and suggestions."
+ },
+ {
+  "id": "1504",
+  "en": "Cultivate creativity",
+  "tr": "Yaratıcılığı geliştirmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I try to cultivate creativity by giving the team room to experiment.",
+  "definition": "To help original thinking grow in a team."
+ },
+ {
+  "id": "1505",
+  "en": "A/B test an idea",
+  "tr": "Bir fikri A/B testiyle denemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We A/B tested the idea before rolling it out fully.",
+  "definition": "To compare two versions with real users."
+ },
+ {
+  "id": "1506",
+  "en": "Validate an idea cheaply",
+  "tr": "Bir fikri düşük maliyetle doğrulamak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We validated the idea cheaply with a simple landing page.",
+  "definition": "To confirm a concept works using very little money."
+ },
+ {
+  "id": "1507",
+  "en": "First-principles thinking",
+  "tr": "Temel ilkelerden yola çıkarak düşünme",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I used first-principles thinking instead of copying competitors.",
+  "definition": "Reasoning from basic truths rather than copying others."
+ },
+ {
+  "id": "1508",
+  "en": "Small experiment",
+  "tr": "Küçük deney",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We started with a small experiment before a full redesign.",
+  "definition": "A little test done before a big change."
+ },
+ {
+  "id": "1509",
+  "en": "Iterate fast",
+  "tr": "Hızlı yinelemek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We iterate fast, shipping small changes every week.",
+  "definition": "To improve something in quick repeated steps."
+ },
+ {
+  "id": "1510",
+  "en": "Minimum lovable product",
+  "tr": "Asgari sevilebilir ürün",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We aimed for a minimum lovable product, not just viable.",
+  "definition": "The smallest release users already enjoy, not merely tolerate."
+ },
+ {
+  "id": "1511",
+  "en": "Struggle with",
+  "tr": "Zorlanmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I struggled with delegation early in my career.",
+  "definition": "To find something difficult and need extra effort."
+ },
+ {
+  "id": "1512",
+  "en": "Overcome a challenge",
+  "tr": "Bir zorluğun üstesinden gelmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I overcame the challenge by breaking it into smaller steps.",
+  "definition": "To succeed despite a serious difficulty."
+ },
+ {
+  "id": "1513",
+  "en": "Balance",
+  "tr": "Dengelemek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I balance speed with quality on every release.",
+  "definition": "To give two competing needs the right attention."
+ },
+ {
+  "id": "1514",
+  "en": "Juggle multiple projects",
+  "tr": "Birden fazla projeyi dengede yürütmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I juggle multiple projects without losing focus on any one.",
+  "definition": "To handle several tasks at the same time."
+ },
+ {
+  "id": "1515",
+  "en": "Get stuck",
+  "tr": "Takılıp kalmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We got stuck on the pricing decision for two weeks.",
+  "definition": "To be unable to move forward on something."
+ },
+ {
+  "id": "1516",
+  "en": "Move quickly",
+  "tr": "Hızlı hareket etmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I move quickly on decisions that are easy to reverse.",
+  "definition": "To act fast without long delays."
+ },
+ {
+  "id": "1517",
+  "en": "Face a setback",
+  "tr": "Bir aksilikle karşılaşmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We faced a setback when the vendor delayed the integration.",
+  "definition": "To meet a problem that delays your progress."
+ },
+ {
+  "id": "1518",
+  "en": "Persevere",
+  "tr": "Azimle devam etmek, sebat etmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I persevered even after the first version failed.",
+  "definition": "To continue trying despite repeated difficulty."
+ },
+ {
+  "id": "1519",
+  "en": "Realize",
+  "tr": "Fark etmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I realized halfway through that our assumption was wrong.",
+  "definition": "To suddenly understand something you missed before."
+ },
+ {
+  "id": "1520",
+  "en": "Manage stress",
+  "tr": "Stresle başa çıkmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I manage stress by focusing on what I can control.",
+  "definition": "To stay calm when work feels overwhelming."
+ },
+ {
+  "id": "1521",
+  "en": "Get comfortable with uncertainty",
+  "tr": "Belirsizlikle rahat olmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I've gotten more comfortable with uncertainty over the years.",
+  "definition": "To feel relaxed when the future is unclear."
+ },
+ {
+  "id": "1522",
+  "en": "Thrive under pressure",
+  "tr": "Baskı altında başarılı olmak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I thrive under pressure, especially during a launch week.",
+  "definition": "To perform your best in stressful situations."
+ },
+ {
+  "id": "1523",
+  "en": "Make progress",
+  "tr": "İlerleme kaydetmek",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "We made real progress on retention this quarter.",
+  "definition": "To advance step by step toward a goal."
+ },
+ {
+  "id": "1524",
+  "en": "Struggle to keep up",
+  "tr": "Yetişmekte zorlanmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "We struggled to keep up with demand after the feature went viral.",
+  "definition": "To have difficulty matching a very fast pace."
+ },
+ {
+  "id": "1525",
+  "en": "Get it right",
+  "tr": "Doğru yapmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I took extra time to get the pricing right.",
+  "definition": "To do something correctly, without errors."
+ },
+ {
+  "id": "1526",
+  "en": "Come to a realization",
+  "tr": "Bir farkındalığa ulaşmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I came to the realization that we were solving the wrong problem.",
+  "definition": "To suddenly understand an important truth."
+ },
+ {
+  "id": "1527",
+  "en": "Grapple with",
+  "tr": "Boğuşmak, mücadele etmek",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "We grappled with a tough trade-off between speed and scale.",
+  "definition": "To wrestle mentally with a hard problem."
+ },
+ {
+  "id": "1528",
+  "en": "Handle rejection",
+  "tr": "Reddedilmeyle başa çıkmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I handle rejection by asking for specific feedback.",
+  "definition": "To cope well when someone says no."
+ },
+ {
+  "id": "1529",
+  "en": "Bounce back",
+  "tr": "Toparlanmak, ayağa kalkmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I bounced back quickly after the first launch flopped.",
+  "definition": "To recover quickly after a failure."
+ },
+ {
+  "id": "1530",
+  "en": "Take a step back",
+  "tr": "Bir adım geri atmak, uzaktan bakmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I took a step back to see the bigger picture.",
+  "definition": "To pause and look at the wider picture."
+ },
+ {
+  "id": "1531",
+  "en": "Get up to speed quickly",
+  "tr": "Hızlıca duruma hakim olmak",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I got up to speed quickly on the new codebase.",
+  "definition": "To learn a new area fast enough to contribute."
+ },
+ {
+  "id": "1532",
+  "en": "Navigate uncertainty",
+  "tr": "Belirsizlikte yol almak",
+  "pos": "Genel",
+  "level": "C1",
+  "example": "I navigate uncertainty by focusing on the next testable step.",
+  "definition": "To move forward when nothing is clear yet."
+ },
+ {
+  "id": "1533",
+  "en": "Handle criticism",
+  "tr": "Eleştiriyle başa çıkmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I handle criticism by separating the feedback from my ego.",
+  "definition": "To respond calmly when people judge your work."
+ },
+ {
+  "id": "1534",
+  "en": "Learn on the fly",
+  "tr": "Anında öğrenmek, iş başında öğrenmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I learned a lot of this on the fly during my first launch.",
+  "definition": "To pick up skills while already doing the job."
+ },
+ {
+  "id": "1535",
+  "en": "Make a mistake",
+  "tr": "Hata yapmak",
+  "pos": "Genel",
+  "level": "B1",
+  "example": "I made a mistake early on by skipping user testing.",
+  "definition": "To do something wrong by accident."
+ },
+ {
+  "id": "1536",
+  "en": "Own up to a mistake",
+  "tr": "Hatayı kabullenmek",
+  "pos": "Genel",
+  "level": "B2",
+  "example": "I owned up to the mistake immediately in front of the team.",
+  "definition": "To admit honestly that you did something wrong."
+ }
+]
