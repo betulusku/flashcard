@@ -3,6 +3,7 @@ import {Image, StyleSheet, View} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 import {bootstrapApp, type BootstrapState} from '../logic/bootstrap';
+import {initMixpanel, sendTestEvent} from '../services/mixpanel';
 import {useAppDispatch} from '../store/hooks';
 import {initPurchases} from '../store/purchasesSlice';
 import {createLogger} from '../utils/logger';
@@ -33,8 +34,24 @@ export function AppSplash({children}: Props) {
       await new Promise<void>(resolve => setTimeout(resolve, REQUEST_DELAY_MS));
       if (cancelled) return;
 
-      log.info('Starting Firebase bootstrap + RevenueCat init');
+      log.info('Starting Firebase bootstrap + RevenueCat + Mixpanel init');
       const state = await bootstrapApp();
+      if (cancelled) return;
+
+      // Mixpanel distinct_id = Firebase Auth UID (deviceId).
+      await initMixpanel(state.deviceId)
+        .then(async mixpanel => {
+          if (!mixpanel) return;
+          log.success('Mixpanel identified with Firebase UID', {
+            distinctId: state.deviceId,
+          });
+          await sendTestEvent();
+        })
+        .catch(error => {
+          log.warn('Mixpanel init failed on splash (continuing)', {
+            message: error instanceof Error ? error.message : String(error),
+          });
+        });
       if (cancelled) return;
 
       // RevenueCat configure + offerings → Redux (don't block splash on RC failure).
@@ -70,6 +87,19 @@ export function AppSplash({children}: Props) {
         loadUserId(),
         loadOnboardingComplete(),
       ]);
+      await initMixpanel(deviceId)
+        .then(async mixpanel => {
+          if (!mixpanel) return;
+          log.success('Mixpanel identified with Firebase UID (fallback)', {
+            distinctId: deviceId,
+          });
+          await sendTestEvent();
+        })
+        .catch(mpError => {
+          log.warn('Mixpanel init failed on fallback splash', {
+            message: mpError instanceof Error ? mpError.message : String(mpError),
+          });
+        });
       await dispatch(initPurchases(deviceId))
         .unwrap()
         .catch(rcError => {

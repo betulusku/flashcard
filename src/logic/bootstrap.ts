@@ -16,8 +16,8 @@ import {hydrateOnboardingComplete} from './onboarding';
 import {hydrateProfile} from './profile';
 import {hydrateSavedWords} from './savedWords';
 import {hydrateSurvey, surveyFromUser} from './survey';
-import {loadUserId} from './userId';
 import {createLogger} from '../utils/logger';
+import {loadUserId} from './userId';
 
 const log = createLogger('Bootstrap');
 
