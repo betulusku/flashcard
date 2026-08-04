@@ -1,7 +1,7 @@
-import {wordBank} from '../src/data/vocabularyBank';
+import {getWordBank} from '../src/data/vocabularyBank';
 import {collectWords} from '../src/logic/wordCollections';
 
-const [first, second, third] = wordBank;
+const [first, second, third] = getWordBank();
 
 describe('word collections', () => {
   it('keeps the saved list to words the learner added by hand', () => {
@@ -37,12 +37,12 @@ describe('word collections', () => {
 
 describe('vocabulary data', () => {
   it('gives every word a real definition', () => {
-    const missing = wordBank.filter(word => !word.definition || word.definition.length < 12);
+    const missing = getWordBank().filter(word => !word.definition || word.definition.length < 12);
     expect(missing.map(word => word.en)).toEqual([]);
   });
 
   it('has no placeholder definitions left', () => {
-    const placeholders = wordBank.filter(word => /shown through the example|see the example for how/i.test(word.definition));
+    const placeholders = getWordBank().filter(word => /shown through the example|see the example for how/i.test(word.definition));
     expect(placeholders.map(word => word.en)).toEqual([]);
   });
 });

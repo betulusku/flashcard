@@ -1,6 +1,6 @@
 import React, {useMemo, useState} from 'react';
 import {Pressable, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
-import {OCC_CATS, OCCUPATIONS} from '../../data/occupations';
+import {getOccCats, getOccupationsList} from '../../data/contentStore';
 import {classifyOccupation} from '../../logic/occupationClassifier';
 import {OccupationCategory} from '../../types/onboarding';
 import {colors, radius, spacing} from '../../theme';
@@ -15,8 +15,24 @@ type Props = {onSelect: (category: OccupationCategory, title: string) => void; o
 export function OccupationPicker({onSelect, onClear, value}: Props) {
   const [search, setSearch] = useState('');
   const query = search.trim();
-  const filtered = useMemo(() => OCCUPATIONS.filter(item => item.title.toLowerCase().includes(query.toLowerCase())), [query]);
-  const grouped = useMemo(() => (Object.keys(OCC_CATS) as OccupationCategory[]).map(category => ({category, items: filtered.filter(item => item.category === category)})).filter(group => group.items.length), [filtered]);
+  const occCats = getOccCats();
+  const filtered = useMemo(
+    () =>
+      getOccupationsList().filter(item =>
+        item.title.toLowerCase().includes(query.toLowerCase()),
+      ),
+    [query],
+  );
+  const grouped = useMemo(
+    () =>
+      (Object.keys(occCats) as OccupationCategory[])
+        .map(category => ({
+          category,
+          items: filtered.filter(item => item.category === category),
+        }))
+        .filter(group => group.items.length),
+    [filtered, occCats],
+  );
   const exactMatch = filtered.some(item => item.title.toLowerCase() === query.toLowerCase());
   const clear = () => {setSearch(''); onClear();};
   const choose = (category: OccupationCategory, title: string) => {setSearch(''); onSelect(category, title);};
@@ -26,7 +42,7 @@ export function OccupationPicker({onSelect, onClear, value}: Props) {
       <TextInput value={search} onChangeText={setSearch} placeholder="Search or type your role" placeholderTextColor={colors.muted} style={styles.input} />
     </View>
     {value ? <View style={styles.selectedRole}>
-      <View style={styles.selectedCopy}><Text style={styles.selectedTitle}>{value}</Text><Text style={styles.selectedSub}>Personalized for {OCC_CATS[classifyOccupation(value) ?? 'other'].label}</Text></View>
+      <View style={styles.selectedCopy}><Text style={styles.selectedTitle}>{value}</Text><Text style={styles.selectedSub}>Personalized for {occCats[classifyOccupation(value) ?? 'other'].label}</Text></View>
       <Pressable accessibilityRole="button" accessibilityLabel="Clear selected role" hitSlop={12} onPress={clear}><Icon.Close size={20} color={colors.primaryText} /></Pressable>
     </View> : <Text style={styles.helper}>Choose the role that best fits what you do.</Text>}
     <ScrollView style={styles.list} keyboardShouldPersistTaps="always" showsVerticalScrollIndicator={false}>
@@ -34,7 +50,7 @@ export function OccupationPicker({onSelect, onClear, value}: Props) {
         <Text style={styles.customText}>Use “{query}” as my role</Text><Icon.ChevronRight size={20} />
       </Pressable> : null}
       {grouped.map(group => <View key={group.category}>
-        <Text style={styles.header}>{OCC_CATS[group.category].label}</Text>
+        <Text style={styles.header}>{occCats[group.category].label}</Text>
         {group.items.map(item => <Pressable key={item.title} accessibilityRole="button" style={styles.item} onPress={() => choose(item.category, item.title)}>
           <Text style={[styles.itemText, value === item.title && styles.itemSelected]}>{item.title}</Text>
           {value === item.title ? <Icon.Check size={20} /> : <Icon.ChevronRight size={20} />}

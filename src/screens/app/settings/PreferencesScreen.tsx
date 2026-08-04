@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {Pressable, ScrollView, StyleSheet, Text, View} from 'react-native';
 
 import type {OnboardingStackParamList} from '../../../navigation/OnboardingNavigator';
 import type {SurveyAnswers} from '../../../types/onboarding';
+import {emptySurvey, loadSurvey, saveSurvey} from '../../../logic/survey';
 import {haptic} from '../../../services/feedback';
 import {colors, radius, spacing} from '../../../theme';
 import {SettingsScreen} from './SettingsChrome';
@@ -33,30 +33,19 @@ const weekly = [
   {id: 'ambitious', label: '100 / week'},
 ] as const;
 
-const empty: SurveyAnswers = {
-  level: null,
-  goals: [],
-  occupation: null,
-  occupationText: null,
-  daily: null,
-  weekly: null,
-};
-
 export function PreferencesScreen({navigation}: Props) {
-  const [answers, setAnswers] = useState<SurveyAnswers>(empty);
+  const [answers, setAnswers] = useState<SurveyAnswers>(emptySurvey);
 
   useEffect(() => {
-    AsyncStorage.getItem('fluent:survey')
-      .then(value => {
-        if (value) setAnswers(JSON.parse(value) as SurveyAnswers);
-      })
+    loadSurvey()
+      .then(setAnswers)
       .catch(() => undefined);
   }, []);
 
   const patch = async (next: SurveyAnswers) => {
     setAnswers(next);
     haptic('selection');
-    await AsyncStorage.setItem('fluent:survey', JSON.stringify(next)).catch(() => undefined);
+    await saveSurvey(next);
   };
 
   return (

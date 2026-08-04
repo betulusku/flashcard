@@ -1,12 +1,12 @@
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Pressable, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 
 import type {OnboardingStackParamList} from '../../navigation/OnboardingNavigator';
 import type {VocabularyWord} from '../../data/vocabularyBank';
 import {loadLearningState} from '../../logic/learningStorage';
-import {collectionMeta, collectWords, savedWordsKey} from '../../logic/wordCollections';
+import {loadSavedWordTokens} from '../../logic/savedWords';
+import {collectionMeta, collectWords} from '../../logic/wordCollections';
 import {colors, radius, spacing} from '../../theme';
 import {AppBar, AppBarButton} from '../../components/AppBar';
 import {Icon} from '../../components/Icon';
@@ -29,10 +29,10 @@ export function WordCollectionScreen({navigation, route}: Props) {
 
   const load = useCallback(async () => {
     const [saved, state] = await Promise.all([
-      AsyncStorage.getItem(savedWordsKey),
+      loadSavedWordTokens(),
       loadLearningState(),
     ]);
-    setWords(collectWords(collection, saved ? JSON.parse(saved) : [], state.progress));
+    setWords(collectWords(collection, saved, state.progress));
   }, [collection]);
 
   useEffect(() => {

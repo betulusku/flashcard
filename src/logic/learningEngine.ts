@@ -1,4 +1,5 @@
-import {VocabularyWord, wordBank} from '../data/vocabularyBank';
+import {getWordBank, type VocabularyWord} from '../data/vocabularyBank';
+import {dateKey} from './dates';
 
 export type WordProgress = {known: number; unknown: number; favorite: boolean; addedAt?: number};
 export type DailyActivity = {reviewed: number; learned: number};
@@ -23,7 +24,16 @@ function shuffle<T>(items: T[]): T[] {
 }
 
 export function dailyPool(level: string | null, target: number, state: LearningState): VocabularyWord[] {
-  const eligible = wordBank.filter(word => !level || word.level.toLowerCase() === level.toLowerCase());
+  const today = dateKey();
+  if (state.dailyDate === today && state.dailyIds.length) {
+    const byId = new Map(getWordBank().map(word => [word.id, word]));
+    const cached = state.dailyIds
+      .map(id => byId.get(id))
+      .filter((word): word is VocabularyWord => Boolean(word));
+    if (cached.length) return cached;
+  }
+
+  const eligible = getWordBank().filter(word => !level || word.level.toLowerCase() === level.toLowerCase());
   const progressFor = (word: VocabularyWord) => state.progress[word.id] ?? state.progress[word.en];
   const fresh = eligible.filter(word => {
     const progress = progressFor(word);

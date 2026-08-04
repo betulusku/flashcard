@@ -1,5 +1,4 @@
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import type {CompositeScreenProps} from '@react-navigation/native';
 import type {NativeBottomTabScreenProps} from '@react-navigation/bottom-tabs/unstable';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
@@ -10,7 +9,8 @@ import type {OnboardingStackParamList} from '../../navigation/OnboardingNavigato
 import type {VocabularyWord} from '../../data/vocabularyBank';
 import {loadLearningState, saveLearningState} from '../../logic/learningStorage';
 import type {LearningState} from '../../logic/learningEngine';
-import {findWordsByTokens, progressFor, savedWordsKey} from '../../logic/wordCollections';
+import {loadSavedWordTokens, removeSavedWordToken} from '../../logic/savedWords';
+import {findWordsByTokens, progressFor} from '../../logic/wordCollections';
 import {AppBar, AppBarButton} from '../../components/AppBar';
 import {Icon} from '../../components/Icon';
 import {haptic, speak} from '../../services/feedback';
@@ -44,8 +44,10 @@ export function MyWordListScreen({navigation}: Props) {
   const [expanded, setExpanded] = useState<string | null>(null);
 
   const load = useCallback(async () => {
-    const [saved, state] = await Promise.all([AsyncStorage.getItem(savedWordsKey), loadLearningState()]);
-    const nextTokens: string[] = saved ? JSON.parse(saved) : [];
+    const [nextTokens, state] = await Promise.all([
+      loadSavedWordTokens(),
+      loadLearningState(),
+    ]);
     // Older saved lists had no timestamp. Give them a stable, persisted order
     // once so the date sort stays correct after relaunching the app.
     let migrated = state;
@@ -70,12 +72,11 @@ export function MyWordListScreen({navigation}: Props) {
     return navigation.addListener('focus', () => load().catch(() => undefined));
   }, [load, navigation]);
 
-  const remove = (word: VocabularyWord) => {
-    const next = tokens.filter(token => token !== word.en && token !== word.id);
+  const remove = async (word: VocabularyWord) => {
+    const next = await removeSavedWordToken(word);
     setTokens(next);
     setExpanded(null);
     haptic('selection');
-    AsyncStorage.setItem(savedWordsKey, JSON.stringify(next)).catch(() => undefined);
   };
 
   const rows = useMemo(() => {

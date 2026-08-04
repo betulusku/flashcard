@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import {DarkTheme, NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {emptySurvey, loadSurvey, saveSurvey} from '../logic/survey';
 import {colors} from '../theme';
 
 /** Force dark so iOS 26 Liquid Glass doesn’t flash light on tab switches. */
@@ -33,13 +33,21 @@ import {InboxScreen} from '../screens/app/InboxScreen';
 import {WordCollectionScreen} from '../screens/app/WordCollectionScreen';
 import type {CollectionId} from '../logic/wordCollections';
 import {SurveyAnswers} from '../types/onboarding';
+import {STACK_FADE_MS} from './navTransitions';
 
 type PracticeParams = {pool?: 'myWords'; ids?: string[]} | undefined;
+
+const ONBOARDING_ROUTES = new Set<keyof OnboardingStackParamList>([
+  'Welcome',
+  'Survey',
+  'Notifications',
+  'Paywall',
+]);
 export type OnboardingStackParamList = {
   Welcome: undefined;
   Survey: undefined;
   Notifications: undefined;
-  Paywall: {source?: 'profile'} | undefined;
+  Paywall: {source?: 'profile' | 'gate'} | undefined;
   Home: undefined;
   Study: PracticeParams;
   StudyComplete: {
@@ -68,49 +76,112 @@ export type OnboardingStackParamList = {
   Grammar: {lesson: 'gerund' | 'prepositions'};
 };
 const Stack = createNativeStackNavigator<OnboardingStackParamList>();
-const emptyAnswers: SurveyAnswers = {level: null, goals: [], occupation: null, occupationText: null, daily: null, weekly: null};
 
-export function OnboardingNavigator() {
-  const [answers, setAnswers] = useState<SurveyAnswers>(emptyAnswers);
-  useEffect(() => { AsyncStorage.getItem('fluent:survey').then(value => { if (value) setAnswers(JSON.parse(value) as SurveyAnswers); }).catch(() => undefined); }, []);
-  useEffect(() => { AsyncStorage.setItem('fluent:survey', JSON.stringify(answers)).catch(() => undefined); }, [answers]);
+type Props = {
+  initialRouteName?: keyof OnboardingStackParamList;
+  /** Used when cold-start opens Paywall for non-premium returning users. */
+  paywallSource?: 'profile' | 'gate';
+};
+
+export function OnboardingNavigator({
+  initialRouteName = 'Welcome',
+  paywallSource,
+}: Props) {
+  const [answers, setAnswers] = useState<SurveyAnswers>(emptySurvey);
+  const [surveyReady, setSurveyReady] = useState(false);
+
+  useEffect(() => {
+    loadSurvey()
+      .then(value => {
+        setAnswers(value);
+        setSurveyReady(true);
+      })
+      .catch(() => setSurveyReady(true));
+  }, []);
+
+  useEffect(() => {
+    if (!surveyReady) return;
+    saveSurvey(answers).catch(() => undefined);
+  }, [answers, surveyReady]);
   return (
     <NavigationContainer theme={fluentTheme}>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Navigator
+        initialRouteName={initialRouteName}
+        screenOptions={{
+          headerShown: false,
+          animation: 'fade',
+          animationDuration: STACK_FADE_MS,
+          animationTypeForReplace: 'push',
+          contentStyle: {backgroundColor: colors.background},
+        }}
+      >
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
         <Stack.Screen name="Survey">{props => <SurveyScreen {...props} answers={answers} onChange={setAnswers} />}</Stack.Screen>
         <Stack.Screen name="Notifications" component={NotificationPermissionScreen} />
-        <Stack.Screen name="Paywall">{props => <PaywallScreen {...props} answers={answers} />}</Stack.Screen>
+        <Stack.Screen
+          name="Paywall"
+          initialParams={paywallSource ? {source: paywallSource} : undefined}
+        >
+          {props => <PaywallScreen {...props} answers={answers} />}
+        </Stack.Screen>
         <Stack.Screen
           name="Home"
-          options={{gestureEnabled: false, fullScreenGestureEnabled: false}}
-          listeners={({navigation}) => ({
-            beforeRemove: e => {
-              // Home is the app root — never pop back into onboarding.
-              if (e.data.action.type === 'GO_BACK' || e.data.action.type === 'POP') {
-                e.preventDefault();
-              }
-            },
-            focus: () => {
-              const state = navigation.getState();
-              if (state.index > 0 && state.routes[state.index]?.name === 'Home') {
-                navigation.reset({index: 0, routes: [{name: 'Home'}]});
-              }
-            },
-          })}
+          options={{
+            gestureEnabled: false,
+            fullScreenGestureEnabled: false,
+            animation: 'fade',
+            animationDuration: STACK_FADE_MS,
+          }}
+          listeners={({navigation}) => {
+            let pruneTimer: ReturnType<typeof setTimeout> | undefined;
+            return {
+              beforeRemove: e => {
+                // Home is the app root — never pop back into onboarding.
+                if (e.data.action.type === 'GO_BACK' || e.data.action.type === 'POP') {
+                  e.preventDefault();
+                }
+              },
+              focus: () => {
+                const state = navigation.getState();
+                if (state.routes[state.index]?.name !== 'Home') return;
+                const hasOnboardingUnder = state.routes.some(route =>
+                  ONBOARDING_ROUTES.has(route.name as keyof OnboardingStackParamList),
+                );
+                if (!hasOnboardingUnder && state.index === 0) return;
+                // Let the fade into Home finish, then prune the stack (reset has no animation).
+                if (pruneTimer) clearTimeout(pruneTimer);
+                pruneTimer = setTimeout(() => {
+                  navigation.reset({index: 0, routes: [{name: 'Home'}]});
+                }, STACK_FADE_MS + 40);
+              },
+              blur: () => {
+                if (pruneTimer) clearTimeout(pruneTimer);
+              },
+            };
+          }}
         >
           {() => <AppTabs answers={answers} />}
         </Stack.Screen>
         <Stack.Screen
           name="Study"
           component={StudyScreen}
-          options={{gestureEnabled: false, fullScreenGestureEnabled: false}}
+          options={{
+            gestureEnabled: false,
+            fullScreenGestureEnabled: false,
+            animation: 'fade',
+            animationDuration: STACK_FADE_MS,
+          }}
         />
         <Stack.Screen name="StudyComplete" component={StudyCompleteScreen} />
         <Stack.Screen
           name="Test"
           component={TestScreen}
-          options={{gestureEnabled: false, fullScreenGestureEnabled: false}}
+          options={{
+            gestureEnabled: false,
+            fullScreenGestureEnabled: false,
+            animation: 'fade',
+            animationDuration: STACK_FADE_MS,
+          }}
         />
         <Stack.Screen name="TestComplete" component={TestCompleteScreen} />
         <Stack.Screen name="Search" component={SearchScreen} />

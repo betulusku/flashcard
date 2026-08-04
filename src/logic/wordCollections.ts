@@ -1,4 +1,4 @@
-import {VocabularyWord, wordBank} from '../data/vocabularyBank';
+import {getWordBank, type VocabularyWord} from '../data/vocabularyBank';
 import type {FeatherIconName} from '../components/Icon';
 import type {WordProgress} from './learningEngine';
 
@@ -11,28 +11,55 @@ export type CollectionId = 'saved' | 'learning' | 'memorized' | 'favorites';
 
 export const savedWordsKey = 'fluent:my-words';
 
-export const collectionMeta: Record<CollectionId, {title: string; subtitle: string; icon: FeatherIconName; empty: string}> = {
-  saved: {title: 'My words', subtitle: 'Words you added yourself', icon: 'Bookmark', empty: 'Find a word in Search and tap Add.'},
-  learning: {title: 'Learning', subtitle: 'Words to practise again', icon: 'RefreshCw', empty: 'Words you miss in practice collect here.'},
-  memorized: {title: 'Memorized', subtitle: 'Words you know well', icon: 'CheckCircle', empty: 'Answer a word correctly to move it here.'},
-  favorites: {title: 'Favorites', subtitle: 'Words you starred', icon: 'Star', empty: 'Tap the star on a card to save it here.'},
+export const collectionMeta: Record<
+  CollectionId,
+  {title: string; subtitle: string; icon: FeatherIconName; empty: string}
+> = {
+  saved: {
+    title: 'My words',
+    subtitle: 'Words you added yourself',
+    icon: 'Bookmark',
+    empty: 'Find a word in Search and tap Add.',
+  },
+  learning: {
+    title: 'Learning',
+    subtitle: 'Words to practise again',
+    icon: 'RefreshCw',
+    empty: 'Words you miss in practice collect here.',
+  },
+  memorized: {
+    title: 'Memorized',
+    subtitle: 'Words you know well',
+    icon: 'CheckCircle',
+    empty: 'Answer a word correctly to move it here.',
+  },
+  favorites: {
+    title: 'Favorites',
+    subtitle: 'Words you starred',
+    icon: 'Star',
+    empty: 'Tap the star on a card to save it here.',
+  },
 };
 
-const byToken = new Map<string, VocabularyWord>();
-wordBank.forEach(word => {
-  byToken.set(word.id, word);
-  byToken.set(word.en, word);
-});
+function tokenIndex() {
+  const byToken = new Map<string, VocabularyWord>();
+  getWordBank().forEach(word => {
+    byToken.set(word.id, word);
+    byToken.set(word.en, word);
+  });
+  return byToken;
+}
 
 export function findWordByToken(token: string) {
-  return byToken.get(token);
+  return tokenIndex().get(token);
 }
 
 export function findWordsByTokens(tokens: string[]) {
+  const byToken = tokenIndex();
   const seen = new Set<string>();
   const words: VocabularyWord[] = [];
   tokens.forEach(token => {
-    const word = findWordByToken(token);
+    const word = byToken.get(token);
     if (!word || seen.has(word.id)) return;
     seen.add(word.id);
     words.push(word);
@@ -44,7 +71,10 @@ export function findWordsByTokens(tokens: string[]) {
  * Saved words are stored by their English spelling while practice is recorded
  * by id, so a word can carry progress under either key.
  */
-export function progressFor(word: VocabularyWord, progress: Record<string, WordProgress>): WordProgress {
+export function progressFor(
+  word: VocabularyWord,
+  progress: Record<string, WordProgress>,
+): WordProgress {
   const byId = progress[word.id];
   const byName = progress[word.en];
   if (!byId && !byName) return {known: 0, unknown: 0, favorite: false};

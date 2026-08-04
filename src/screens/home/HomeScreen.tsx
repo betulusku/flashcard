@@ -5,7 +5,7 @@ import {BlurView} from '@react-native-community/blur';
 import LinearGradient from 'react-native-linear-gradient';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
-import {OCC_CATS} from '../../data/occupations';
+import {getOccCats} from '../../data/contentStore';
 import type {OnboardingStackParamList} from '../../navigation/OnboardingNavigator';
 import type {SurveyAnswers} from '../../types/onboarding';
 import {colors, spacing} from '../../theme';
@@ -33,7 +33,7 @@ export function HomeScreen({answers, navigation}: Props) {
   // clock instead of freezing at whatever they were when the app launched.
   const [now, setNow] = useState(() => new Date());
   const week = recentWeek(now);
-  const occupation = answers.occupation ? OCC_CATS[answers.occupation] : null;
+  const occupation = answers.occupation ? getOccCats()[answers.occupation] : null;
   const dailyTarget = answers.daily ? dailyWords[answers.daily] : 10;
   const weeklyTarget = answers.weekly ? weeklyWords[answers.weekly] : 40;
   const level = answers.level ? levelLabels[answers.level] : 'Your level';

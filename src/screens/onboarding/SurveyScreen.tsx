@@ -4,11 +4,17 @@ import {Pressable, ScrollView, StyleSheet, Text, View} from 'react-native';
 import {AppBar, AppBarButton} from '../../components/AppBar';
 import {Icon} from '../../components/Icon';
 import {OccupationPicker} from '../../components/survey/OccupationPicker';
+import {markOnboardingComplete} from '../../logic/onboarding';
 import {getSurveySteps, isStepValid, needsOccupation, SurveyStepKey} from '../../logic/surveyFlow';
 import {OnboardingStackParamList} from '../../navigation/OnboardingNavigator';
+import {goHomeFaded} from '../../navigation/navTransitions';
+import {useAppSelector} from '../../store/hooks';
 import {DailyCommitment, Goal, Level, SurveyAnswers, WeeklyGoal} from '../../types/onboarding';
 import {colors, radius, spacing, typography} from '../../theme';
+import {createLogger} from '../../utils/logger';
 import {ScreenShell} from './ScreenShell';
+
+const log = createLogger('Survey');
 
 type Props = NativeStackScreenProps<OnboardingStackParamList, 'Survey'> & {answers: SurveyAnswers; onChange: React.Dispatch<React.SetStateAction<SurveyAnswers>>};
 const levels: {key: Level; label: string}[] = [{key: 'a1', label: 'A1 Beginner'}, {key: 'a2', label: 'A2 Elementary'}, {key: 'b1', label: 'B1 Intermediate'}, {key: 'b2', label: 'B2 Upper-Intermediate'}, {key: 'c1', label: 'C1 Advanced'}, {key: 'unsure', label: 'Not sure yet'}];
@@ -18,13 +24,29 @@ const weekly: {key: WeeklyGoal; label: string}[] = [{key: 'easy', label: '20 wor
 const content: Record<SurveyStepKey, {title: string; subtext: string}> = {level: {title: 'What is your English level?', subtext: 'Choose the closest answer.'}, goals: {title: 'What are you learning for?', subtext: 'Choose one or more goals.'}, occupation: {title: 'What do you do?', subtext: 'We will personalize your work vocabulary.'}, daily: {title: 'How much time can you give daily?', subtext: 'You can change this later.'}, weekly: {title: 'Set your weekly word goal.', subtext: 'Keep it realistic and consistent.'}};
 
 export function SurveyScreen({navigation, answers, onChange}: Props) {
+  const inReview = useAppSelector(s => s.purchases.inReview);
   const steps = useMemo(() => getSurveySteps(answers), [answers]);
   const [index, setIndex] = useState(0);
   const step = steps[index];
   useEffect(() => { if (index >= steps.length) setIndex(steps.length - 1); }, [index, steps.length]);
   const set = (update: Partial<SurveyAnswers>) => onChange(current => ({...current, ...update}));
   const toggleGoal = (goal: Goal) => onChange(current => { const next = current.goals.includes(goal) ? current.goals.filter(item => item !== goal) : [...current.goals, goal]; return {...current, goals: next, ...(needsOccupation(next) ? {} : {occupation: null, occupationText: null})}; });
-  const next = () => index === steps.length - 1 ? navigation.navigate('Notifications') : setIndex(index + 1);
+  const finishOnboardingHome = () => {
+    log.info('Survey complete — skipping paywall (inReview)', {inReview});
+    markOnboardingComplete().catch(() => undefined);
+    goHomeFaded(navigation);
+  };
+  const next = () => {
+    if (index !== steps.length - 1) {
+      setIndex(index + 1);
+      return;
+    }
+    if (inReview) {
+      finishOnboardingHome();
+      return;
+    }
+    navigation.navigate('Notifications');
+  };
   const back = () => index === 0 ? navigation.goBack() : setIndex(index - 1);
   const valid = isStepValid(step, answers);
   return <ScreenShell>

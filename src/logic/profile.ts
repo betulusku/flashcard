@@ -1,5 +1,8 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+import {updateProfile as updateProfileRemote} from '../services/api';
+import {loadUserId} from './userId';
+
 export const profileKey = 'fluent:profile';
 
 export type UserProfile = {
@@ -23,6 +26,26 @@ export async function loadProfile(): Promise<UserProfile> {
   }
 }
 
+export async function hydrateProfile(remote: {
+  name?: string;
+  profilePicture?: string;
+} | null | undefined) {
+  if (!remote) return loadProfile();
+  const next: UserProfile = {
+    name: typeof remote.name === 'string' ? remote.name.trim() : '',
+    photoUri:
+      typeof remote.profilePicture === 'string' && remote.profilePicture
+        ? remote.profilePicture
+        : null,
+  };
+  try {
+    await AsyncStorage.setItem(profileKey, JSON.stringify(next));
+  } catch {
+    // ignore
+  }
+  return next;
+}
+
 export async function saveProfile(profile: UserProfile) {
   const next: UserProfile = {
     name: profile.name.trim(),
@@ -33,6 +56,11 @@ export async function saveProfile(profile: UserProfile) {
   } catch {
     // Local preference only.
   }
+  const deviceId = await loadUserId();
+  updateProfileRemote(deviceId, {
+    name: next.name,
+    profilePicture: next.photoUri ?? '',
+  }).catch(() => undefined);
   return next;
 }
 

@@ -10,13 +10,20 @@ require_relative '../node_modules/react-native-permissions/scripts/setup'
 platform :ios, min_ios_version_supported
 prepare_react_native_project!
 
+# Explicit project — avoids ambiguity when multiple .xcodeproj exist.
+project 'FluentFlashcard.xcodeproj'
+
+# Required by firebase-ios-sdk / @react-native-firebase
+use_frameworks! :linkage => :static
+$RNFirebaseAsStaticFramework = true
+
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'Fluent' do
+target 'FluentFlashcard' do
   config = use_native_modules!
 
   setup_permissions([

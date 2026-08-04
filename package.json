@@ -1,5 +1,5 @@
 {
-  "name": "Fluent",
+  "name": "FluentFlashcard",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -13,10 +13,13 @@
   "dependencies": {
     "@react-native-async-storage/async-storage": "^3.1.1",
     "@react-native-community/blur": "^4.4.1",
+    "@react-native-firebase/app": "^26.0.0",
+    "@react-native-firebase/auth": "^26.0.0",
     "@react-native/new-app-screen": "0.86.2",
     "@react-navigation/bottom-tabs": "^7.18.14",
     "@react-navigation/native": "^7.3.14",
     "@react-navigation/native-stack": "^7.18.6",
+    "@reduxjs/toolkit": "^2.12.0",
     "react": "19.2.3",
     "react-native": "0.86.2",
     "react-native-feather": "^2.0.0",
@@ -24,11 +27,13 @@
     "react-native-image-picker": "^8.2.1",
     "react-native-linear-gradient": "^2.8.3",
     "react-native-permissions": "^5.6.1",
+    "react-native-purchases": "^10.6.0",
     "react-native-safe-area-context": "^5.5.2",
     "react-native-screens": "^4.26.2",
     "react-native-sound-player": "^0.14.5",
     "react-native-svg": "^15.15.5",
-    "react-native-tts": "^4.1.1"
+    "react-native-tts": "^4.1.1",
+    "react-redux": "^9.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

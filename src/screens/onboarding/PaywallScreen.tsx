@@ -1,40 +1,204 @@
-import React, {useState} from 'react';
+import React, {useEffect, useMemo, useRef, useState} from 'react';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {Alert, Pressable, StyleSheet, Text, View} from 'react-native';
+import {
+  ActivityIndicator,
+  Alert,
+  Animated,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 
 import {Icon} from '../../components/Icon';
-import {AppBar, AppBarButton} from '../../components/AppBar';
+import {AppBarButton} from '../../components/AppBar';
+import {markOnboardingComplete} from '../../logic/onboarding';
 import type {OnboardingStackParamList} from '../../navigation/OnboardingNavigator';
+import {goHomeFaded} from '../../navigation/navTransitions';
+import {useAppDispatch, useAppSelector} from '../../store/hooks';
+import {
+  purchaseSelectedPlan,
+  restorePurchases,
+  setSelectedPlan,
+} from '../../store/purchasesSlice';
+import type {PlanId, PlanProduct} from '../../services/revenueCat';
 import type {SurveyAnswers} from '../../types/onboarding';
 import {colors, radius, spacing} from '../../theme';
+import {createLogger} from '../../utils/logger';
 import {ScreenShell} from './ScreenShell';
+
+const log = createLogger('Paywall');
+const CLOSE_DELAY_MS = 5000;
 
 type Props = NativeStackScreenProps<OnboardingStackParamList, 'Paywall'> & {
   answers: SurveyAnswers;
 };
-type Plan = 'yearly' | 'weekly';
+
+const FALLBACK: Record<PlanId, {priceString: string; detail: string; trialLabel: string | null}> = {
+  yearly: {
+    priceString: '$39.99',
+    detail: '$3.33/month · Cancel anytime',
+    trialLabel: '7 DAYS FREE',
+  },
+  weekly: {
+    priceString: '$9.99',
+    detail: 'Full access · Cancel anytime',
+    trialLabel: null,
+  },
+};
+
+function yearlyDetail(product?: PlanProduct) {
+  if (!product) return FALLBACK.yearly.detail;
+  if (product.pricePerMonthString) {
+    return `${product.pricePerMonthString}/month · Cancel anytime`;
+  }
+  return 'Cancel anytime';
+}
 
 export function PaywallScreen({navigation, route}: Props) {
-  const [plan, setPlan] = useState<Plan>('yearly');
-  // Don't use canGoBack() — onboarding still has Welcome/Survey under Paywall.
+  const dispatch = useAppDispatch();
+  const selectedPlan = useAppSelector(s => s.purchases.selectedPlan);
+  const plans = useAppSelector(s => s.purchases.plans);
+  const flowStatus = useAppSelector(s => s.purchases.flowStatus);
+  const isPremium = useAppSelector(s => s.purchases.isPremium);
+  const inReview = useAppSelector(s => s.purchases.inReview);
+  const busy = flowStatus !== 'idle';
+
+  const yearly = useMemo(() => plans.find(p => p.plan === 'yearly'), [plans]);
+  const weekly = useMemo(() => plans.find(p => p.plan === 'weekly'), [plans]);
+  const selected = selectedPlan === 'yearly' ? yearly : weekly;
+
   const fromProfile = route.params?.source === 'profile';
+  const closeOpacity = useRef(new Animated.Value(inReview ? 1 : 0)).current;
+  const [closeVisible, setCloseVisible] = useState(inReview);
+
+  useEffect(() => {
+    if (inReview) {
+      setCloseVisible(true);
+      closeOpacity.setValue(1);
+      log.info('Close button shown immediately (inReview)');
+      return;
+    }
+
+    setCloseVisible(false);
+    closeOpacity.setValue(0);
+    log.info(`Close button delayed ${CLOSE_DELAY_MS}ms`);
+    const timer = setTimeout(() => {
+      setCloseVisible(true);
+      Animated.timing(closeOpacity, {
+        toValue: 1,
+        duration: 320,
+        useNativeDriver: true,
+      }).start();
+      log.info('Close button revealed');
+    }, CLOSE_DELAY_MS);
+
+    return () => clearTimeout(timer);
+  }, [closeOpacity, inReview]);
 
   const finish = () => {
-    navigation.reset({index: 0, routes: [{name: 'Home'}]});
+    if (!fromProfile) {
+      markOnboardingComplete().catch(() => undefined);
+    }
+    goHomeFaded(navigation);
   };
+
+  const onClose = () => {
+    log.info('Close pressed', {fromProfile, inReview});
+    if (fromProfile) {
+      navigation.goBack();
+      return;
+    }
+    finish();
+  };
+
+  const onPurchase = async () => {
+    log.info('CTA pressed', {
+      selectedPlan,
+      isPremium,
+      productId: selected?.productId,
+      packageIdentifier: selected?.packageIdentifier,
+      planCount: plans.length,
+    });
+    if (isPremium) {
+      log.info('Already premium — finishing');
+      finish();
+      return;
+    }
+    if (!selected) {
+      log.warn('No RC package for selected plan');
+      Alert.alert(
+        'Products unavailable',
+        'Subscription options could not be loaded. You can continue and try again later.',
+        [
+          {text: 'Try again', style: 'cancel'},
+          {text: 'Continue', onPress: finish},
+        ],
+      );
+      return;
+    }
+
+    const result = await dispatch(purchaseSelectedPlan(selected.packageIdentifier));
+    if (purchaseSelectedPlan.fulfilled.match(result)) {
+      if (result.payload.isPremium) {
+        log.success('Purchase unlocked Pro');
+        finish();
+        return;
+      }
+      log.warn('Purchase succeeded but entitlement inactive');
+      Alert.alert('Almost there', 'Purchase completed but Pro access is not active yet.');
+      return;
+    }
+
+    const payload = result.payload as {cancelled?: boolean; message?: string} | undefined;
+    if (payload?.cancelled) {
+      log.warn('User cancelled purchase sheet');
+      return;
+    }
+    log.error('Purchase UI failed', payload);
+    Alert.alert('Purchase failed', payload?.message ?? 'Please try again.');
+  };
+
+  const onRestore = async () => {
+    log.info('Restore pressed');
+    const result = await dispatch(restorePurchases());
+    if (restorePurchases.fulfilled.match(result)) {
+      if (result.payload.isPremium) {
+        log.success('Restore unlocked Pro');
+        Alert.alert('Restored', 'Your Fluent Pro access has been restored.', [
+          {text: 'OK', onPress: finish},
+        ]);
+        return;
+      }
+      log.warn('Restore found no active entitlement');
+      Alert.alert('No purchases found', 'We could not find an active subscription for this Apple ID.');
+      return;
+    }
+    log.error('Restore UI failed', result.payload);
+    Alert.alert('Restore failed', (result.payload as string) ?? 'Please try again.');
+  };
+
+  const yearlyEyebrow = yearly?.trialLabel
+    ? `YEARLY · ${yearly.trialLabel}`
+    : yearly
+      ? 'YEARLY'
+      : `YEARLY · ${FALLBACK.yearly.trialLabel}`;
 
   return (
     <ScreenShell>
-      {fromProfile ? (
-        <AppBar
-          title="Fluent Pro"
-          left={
-            <AppBarButton onPress={() => navigation.goBack()} accessibilityLabel="Back">
-              <Icon.ChevronLeft />
-            </AppBarButton>
-          }
-        />
-      ) : null}
+      <View style={styles.topBar}>
+        <Animated.View
+          style={[styles.closeWrap, {opacity: closeOpacity}]}
+          pointerEvents={closeVisible ? 'auto' : 'none'}
+        >
+          <AppBarButton onPress={onClose} accessibilityLabel="Close">
+            <Icon.Close />
+          </AppBarButton>
+        </Animated.View>
+        {fromProfile ? <Text style={styles.topTitle}>Fluent Pro</Text> : <View style={styles.topSpacer} />}
+        <View style={styles.topSpacer} />
+      </View>
+
       <View style={styles.container}>
         <View>
           <Text style={styles.eyebrow}>YOUR PATH IS READY</Text>
@@ -49,65 +213,72 @@ export function PaywallScreen({navigation, route}: Props) {
         <View style={styles.plans}>
           <Pressable
             accessibilityRole="radio"
-            accessibilityState={{selected: plan === 'yearly'}}
-            onPress={() => setPlan('yearly')}
-            style={[styles.yearlyCard, plan === 'yearly' && styles.planSelected]}
+            accessibilityState={{selected: selectedPlan === 'yearly'}}
+            disabled={busy}
+            onPress={() => dispatch(setSelectedPlan('yearly'))}
+            style={[styles.yearlyCard, selectedPlan === 'yearly' && styles.planSelected]}
           >
             <View style={styles.planHeader}>
-              <Text style={styles.planEyebrow}>YEARLY · 7 DAYS FREE</Text>
-              {plan === 'yearly' && <Icon.Check size={18} />}
+              <Text style={styles.planEyebrow}>{yearlyEyebrow}</Text>
+              {selectedPlan === 'yearly' && <Icon.Check size={18} />}
             </View>
-            <Text style={styles.yearlyPrice}>$39.99</Text>
-            <Text style={styles.planDetail}>$3.33/month · Cancel anytime</Text>
+            <Text style={styles.yearlyPrice}>
+              {yearly?.priceString ?? FALLBACK.yearly.priceString}
+            </Text>
+            <Text style={styles.planDetail}>{yearlyDetail(yearly)}</Text>
           </Pressable>
 
           <Pressable
             accessibilityRole="radio"
-            accessibilityState={{selected: plan === 'weekly'}}
-            onPress={() => setPlan('weekly')}
-            style={[styles.weeklyCard, plan === 'weekly' && styles.planSelected]}
+            accessibilityState={{selected: selectedPlan === 'weekly'}}
+            disabled={busy}
+            onPress={() => dispatch(setSelectedPlan('weekly'))}
+            style={[styles.weeklyCard, selectedPlan === 'weekly' && styles.planSelected]}
           >
             <View>
               <Text style={styles.weeklyTitle}>Weekly</Text>
               <Text style={styles.weeklyDetail}>Full access · Cancel anytime</Text>
             </View>
             <View style={styles.weeklyPriceWrap}>
-              <Text style={styles.weeklyPrice}>$9.99</Text>
+              <Text style={styles.weeklyPrice}>
+                {weekly?.priceString ?? FALLBACK.weekly.priceString}
+              </Text>
               <Text style={styles.weeklyUnit}> / week</Text>
             </View>
           </Pressable>
         </View>
 
         <View style={styles.footer}>
-          <Pressable style={styles.cta} onPress={finish}>
-            <Text style={styles.ctaText}>
-              {plan === 'yearly' ? 'Start free trial' : 'Continue with weekly'}
-            </Text>
+          <Pressable
+            style={[styles.cta, busy && styles.ctaDisabled]}
+            disabled={busy}
+            onPress={onPurchase}
+          >
+            {busy && flowStatus === 'purchasing' ? (
+              <ActivityIndicator color={colors.primaryText} />
+            ) : (
+              <Text style={styles.ctaText}>
+                {selectedPlan === 'yearly'
+                  ? (yearly?.hasFreeTrial ?? !yearly)
+                    ? 'Start free trial'
+                    : 'Continue with yearly'
+                  : 'Continue with weekly'}
+              </Text>
+            )}
           </Pressable>
           <Text style={styles.reassurance}>
-            {plan === 'yearly' ? 'No payment now · Cancel anytime' : 'Cancel anytime'}
+            {selectedPlan === 'yearly' && (yearly?.hasFreeTrial ?? !yearly)
+              ? 'No payment now · Cancel anytime'
+              : 'Cancel anytime'}
           </Text>
           <View style={styles.links}>
-            <Text
-              style={styles.link}
-              onPress={() =>
-                Alert.alert(
-                  'Restore purchases',
-                  'Purchase restoration will be connected with the billing service in a later phase.',
-                )
-              }
-            >
-              Restore
+            <Text style={styles.link} onPress={busy ? undefined : onRestore}>
+              {flowStatus === 'restoring' ? 'Restoring…' : 'Restore'}
             </Text>
             <Text style={styles.dot}>·</Text>
             <Text
               style={styles.link}
-              onPress={() =>
-                Alert.alert(
-                  'Terms',
-                  'Terms link will be added with billing integration.',
-                )
-              }
+              onPress={() => navigation.navigate('Legal', {doc: 'terms'})}
             >
               Terms
             </Text>
@@ -119,9 +290,27 @@ export function PaywallScreen({navigation, route}: Props) {
 }
 
 const styles = StyleSheet.create({
+  topBar: {
+    minHeight: 48,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  closeWrap: {
+    width: 48,
+    alignItems: 'flex-start',
+  },
+  topTitle: {
+    flex: 1,
+    textAlign: 'center',
+    color: colors.text,
+    fontSize: 17,
+    fontWeight: '700',
+  },
+  topSpacer: {width: 48},
   container: {
     flex: 1,
-    paddingTop: spacing.xl,
+    paddingTop: spacing.md,
     paddingBottom: spacing.sm,
     justifyContent: 'space-between',
   },
@@ -199,6 +388,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: colors.mint,
   },
+  ctaDisabled: {opacity: 0.7},
   ctaText: {fontSize: 18, fontWeight: '700', color: colors.primaryText},
   reassurance: {fontSize: 13, textAlign: 'center', color: colors.muted},
   links: {flexDirection: 'row', justifyContent: 'center', gap: 10, marginTop: 2},

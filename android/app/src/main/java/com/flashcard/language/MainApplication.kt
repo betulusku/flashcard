@@ -1,4 +1,4 @@
-package com.fluent
+package com.flashcard.language
 
 import android.app.Application
 import com.facebook.react.PackageList

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "901589993924",
+    "project_id": "flashcar-3900c",
+    "storage_bucket": "flashcar-3900c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901589993924:android:2a396f41fb08486f21bc91",
+        "android_client_info": {
+          "package_name": "com.fluent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADekrthdpQAknmdDpCF3vobIVg8JOxbds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,4 @@
 import React, {useCallback, useState} from 'react';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import type {CompositeScreenProps} from '@react-navigation/native';
 import {useFocusEffect} from '@react-navigation/native';
 import type {NativeBottomTabScreenProps} from '@react-navigation/bottom-tabs/unstable';
@@ -34,14 +33,19 @@ import {
   saveProfile,
   type UserProfile,
 } from '../../logic/profile';
+import {loadSurvey} from '../../logic/survey';
 import {loadUserId} from '../../logic/userId';
-import type {SurveyAnswers} from '../../types/onboarding';
 import {haptic} from '../../services/feedback';
 import {Icon} from '../../components/Icon';
 import {AppBar, AppBarButton} from '../../components/AppBar';
+import {useAppDispatch} from '../../store/hooks';
+import {restorePurchases} from '../../store/purchasesSlice';
 import {colors, radius, spacing, tabBarSpace} from '../../theme';
+import {createLogger} from '../../utils/logger';
 import {ScreenShell} from '../onboarding/ScreenShell';
 import {SettingsAction, SettingsGroup, SettingsRow} from './settings/SettingsChrome';
+
+const log = createLogger('Profile');
 
 type Props = CompositeScreenProps<
   NativeBottomTabScreenProps<AppTabParamList, 'ProfileTab'>,
@@ -59,6 +63,7 @@ const levelLabels: Record<string, string> = {
 
 export function ProfileScreen({navigation}: Props) {
   const insets = useSafeAreaInsets();
+  const dispatch = useAppDispatch();
   const [profile, setProfile] = useState<UserProfile>(emptyProfile);
   const [userId, setUserId] = useState('');
   const [language, setLanguage] = useState('English');
@@ -69,14 +74,21 @@ export function ProfileScreen({navigation}: Props) {
 
   const refresh = useCallback(() => {
     loadProfile().then(setProfile).catch(() => undefined);
-    loadUserId().then(setUserId).catch(() => undefined);
+    loadUserId()
+      .then(id => {
+        log.debug('Profile loaded deviceId', {deviceId: id});
+        setUserId(id);
+      })
+      .catch(error => {
+        log.warn('loadUserId failed on profile', {
+          message: error instanceof Error ? error.message : String(error),
+        });
+      });
     loadAppLanguage()
       .then(code => setLanguage(languageLabels[code]))
       .catch(() => undefined);
-    AsyncStorage.getItem('fluent:survey')
-      .then(value => {
-        if (!value) return;
-        const answers = JSON.parse(value) as SurveyAnswers;
+    loadSurvey()
+      .then(answers => {
         setLevel(
           answers.level ? levelLabels[answers.level] ?? 'Your level' : 'Your level',
         );
@@ -151,17 +163,24 @@ export function ProfileScreen({navigation}: Props) {
     setTimeout(() => setCopied(false), 1600);
   };
 
-  const restorePurchases = () => {
-    Alert.alert('Restore purchase', 'Looking for subscriptions on this Apple ID…', [
-      {
-        text: 'OK',
-        onPress: () =>
-          Alert.alert(
-            'Nothing to restore',
-            'No active Fluent purchase was found. If you think this is wrong, contact us with your User ID.',
-          ),
-      },
-    ]);
+  const onRestorePurchases = async () => {
+    log.info('Restore pressed from profile');
+    const result = await dispatch(restorePurchases());
+    if (restorePurchases.fulfilled.match(result)) {
+      if (result.payload.isPremium) {
+        log.success('Profile restore unlocked Pro');
+        Alert.alert('Restored', 'Your Fluent Pro access has been restored.');
+        return;
+      }
+      log.warn('Profile restore found no entitlement');
+      Alert.alert(
+        'Nothing to restore',
+        'No active Fluent purchase was found. If you think this is wrong, contact us with your User ID.',
+      );
+      return;
+    }
+    log.error('Profile restore failed', result.payload);
+    Alert.alert('Restore failed', (result.payload as string) ?? 'Please try again.');
   };
 
   const rateUs = () => {
@@ -283,7 +302,7 @@ export function ProfileScreen({navigation}: Props) {
           <SettingsRow
             icon="RefreshCw"
             label="Restore Purchase"
-            onPress={restorePurchases}
+            onPress={onRestorePurchases}
           />
           <SettingsRow
             icon="FileText"

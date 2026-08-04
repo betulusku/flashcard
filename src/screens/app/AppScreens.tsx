@@ -13,7 +13,6 @@ import {
   View,
   type TextProps,
 } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useFocusEffect} from '@react-navigation/native';
 import type {
   NativeStackNavigationProp,
@@ -28,20 +27,27 @@ import { loadProfile, saveProfile } from '../../logic/profile';
 import { useAutoSpeak } from '../../hooks/useAutoSpeak';
 import { AppBar, AppBarButton } from '../../components/AppBar';
 import { Icon } from '../../components/Icon';
-import { gerundAndInfinitive, prepositions } from '../../data/grammarLessons';
-import { wordBank } from '../../data/vocabularyBank';
+import { getGrammarLesson } from '../../data/contentStore';
+import { getWordBank, type VocabularyWord } from '../../data/vocabularyBank';
 import {
   loadLearningState,
-  recordPractice,
-  saveLearningState,
-  toggleFavorite,
+  syncDailyPool,
+  syncPractice,
+  syncToggleFavorite,
 } from '../../logic/learningStorage';
 import {
   applyAnswer,
   dailyPool,
   dailyTarget,
 } from '../../logic/learningEngine';
-import {findWordsByTokens, savedWordsKey} from '../../logic/wordCollections';
+import {dateKey} from '../../logic/dates';
+import {loadSurvey} from '../../logic/survey';
+import {
+  addSavedWordToken,
+  loadSavedWordTokens,
+  removeSavedWordToken,
+} from '../../logic/savedWords';
+import {findWordsByTokens} from '../../logic/wordCollections';
 
 const words = [
   {
@@ -100,13 +106,20 @@ const words = [
     exampleTr: 'Lütfen planı açıkça anlat.',
   },
 ];
-const library = wordBank.map(word => ({...word, track: 'Core'}));
-type LibraryWord = (typeof library)[number];
-const libraryById = new Map(library.map(word => [word.id, word]));
+type LibraryWord = VocabularyWord & {track: 'Core'};
+
+function getLibrary(): LibraryWord[] {
+  return getWordBank().map(word => ({...word, track: 'Core' as const}));
+}
+
+function libraryByIdMap() {
+  return new Map(getLibrary().map(word => [word.id, word]));
+}
 
 function poolFromTokens(tokens: string[]): LibraryWord[] {
+  const byId = libraryByIdMap();
   return findWordsByTokens(tokens)
-    .map(word => libraryById.get(word.id))
+    .map(word => byId.get(word.id))
     .filter((word): word is LibraryWord => Boolean(word));
 }
 
@@ -308,18 +321,22 @@ export function StudyScreen({ navigation, route }: Props) {
       return;
     }
     if (route.params?.pool === 'myWords')
-      AsyncStorage.getItem(savedWordsKey)
-        .then(value => start(poolFromTokens(value ? JSON.parse(value) : []).map(toCard)))
+      loadSavedWordTokens()
+        .then(tokens => start(poolFromTokens(tokens).map(toCard)))
         .catch(() => setReady(true));
     else
-      Promise.all([AsyncStorage.getItem('fluent:survey'), loadLearningState()])
-        .then(([survey, learning]) => {
-          const answers = survey
-            ? (JSON.parse(survey) as { level?: string; daily?: string })
-            : {};
+      Promise.all([loadSurvey(), loadLearningState()])
+        .then(async ([answers, learning]) => {
+          const pool = dailyPool(
+            answers.level ?? null,
+            dailyTarget(answers.daily),
+            learning,
+          );
+          const ids = pool.map(item => item.id);
+          await syncDailyPool(ids, dateKey());
           start(
-            dailyPool(answers.level ?? null, dailyTarget(answers.daily), learning).map(item =>
-              toCard(libraryById.get(item.id) ?? {...item, track: 'Core'}),
+            pool.map(item =>
+              toCard(libraryByIdMap().get(item.id) ?? {...item, track: 'Core'}),
             ),
           );
         })
@@ -356,8 +373,7 @@ export function StudyScreen({ navigation, route }: Props) {
     setRevealed(value => !value);
   };
   const next = async (isKnown: boolean) => {
-    const learning = await loadLearningState();
-    await saveLearningState(recordPractice(learning, word.id, isKnown));
+    await syncPractice(word.id, isKnown);
     const nextQueue = applyAnswer(queue);
     if (isKnown) {
       knownIdsRef.current = [...knownIdsRef.current, word.id];
@@ -382,9 +398,7 @@ export function StudyScreen({ navigation, route }: Props) {
     }
   };
   const favorite = async () => {
-    const learning = await loadLearningState();
-    const nextState = toggleFavorite(learning, word.id);
-    await saveLearningState(nextState);
+    const nextState = await syncToggleFavorite(word.id);
     setIsFavorite(nextState.progress[word.id].favorite);
     haptic('selection');
   };
@@ -684,7 +698,7 @@ export function TestScreen({
       ? poolFromTokens(requestedIds)
       : requestedPool === 'myWords'
       ? null
-      : shuffleTest(library),
+      : shuffleTest(getLibrary()),
   );
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -713,12 +727,12 @@ export function TestScreen({
   useEffect(() => () => clearTimers(), []);
   useEffect(() => {
     if (requestedIds?.length || requestedPool !== 'myWords') return;
-    AsyncStorage.getItem(savedWordsKey)
-      .then(value => {
-        const saved = poolFromTokens(value ? JSON.parse(value) : []);
-        setPool(saved.length ? saved : shuffleTest(library));
+    loadSavedWordTokens()
+      .then(tokens => {
+        const saved = poolFromTokens(tokens);
+        setPool(saved.length ? saved : shuffleTest(getLibrary()));
       })
-      .catch(() => setPool(shuffleTest(library)));
+      .catch(() => setPool(shuffleTest(getLibrary())));
   }, [requestedIds, requestedPool]);
 
   const testWords = useMemo(
@@ -726,7 +740,7 @@ export function TestScreen({
     [pool],
   );
   const questions = useMemo(
-    () => createTestQuestions(testWords, library),
+    () => createTestQuestions(testWords, getLibrary()),
     [testWords],
   );
   const currentQuestion = questions[Math.min(index, questions.length - 1)];
@@ -783,8 +797,7 @@ export function TestScreen({
     playSound(correct ? 'correct' : 'wrong');
     haptic(correct ? 'success' : 'impact');
     if (!correct) wrongIdsRef.current = [...wrongIdsRef.current, current.id];
-    const learning = await loadLearningState();
-    await saveLearningState(recordPractice(learning, current.id, correct));
+    await syncPractice(current.id, correct);
     const nextScore = score + (correct ? 1 : 0);
     pendingScoreRef.current = nextScore;
     if (correct) setScore(nextScore);
@@ -1150,13 +1163,13 @@ export function SearchScreen() {
   );
 
   useEffect(() => {
-    AsyncStorage.getItem(savedWordsKey)
-      .then(value => setSaved(value ? JSON.parse(value) : []))
+    loadSavedWordTokens()
+      .then(setSaved)
       .catch(() => undefined);
   }, []);
 
   const normalizedQuery = query.trim().toLocaleLowerCase('tr');
-  const list = library
+  const list = getLibrary()
     .filter(
       word =>
         !normalizedQuery ||
@@ -1165,14 +1178,13 @@ export function SearchScreen() {
         word.pos.toLocaleLowerCase('tr').includes(normalizedQuery),
     )
     .slice(0, 50);
-  const toggleSaved = (word: LibraryWord) => {
-    const next = saved.includes(word.en)
-      ? saved.filter(item => item !== word.en)
-      : [word.en, ...saved];
+  const wordIsSaved = (word: LibraryWord) =>
+    saved.includes(word.id) || saved.includes(word.en);
+  const toggleSaved = async (word: LibraryWord) => {
+    const next = wordIsSaved(word)
+      ? await removeSavedWordToken(word)
+      : await addSavedWordToken(word);
     setSaved(next);
-    AsyncStorage.setItem(savedWordsKey, JSON.stringify(next)).catch(
-      () => undefined,
-    );
     haptic('selection');
   };
   return (
@@ -1211,7 +1223,7 @@ export function SearchScreen() {
           contentContainerStyle={styles.searchList}
         >
           {list.map(word => {
-            const isSaved = saved.includes(word.en);
+            const savedWord = wordIsSaved(word);
             return (
               <Pressable
                 key={word.id}
@@ -1227,10 +1239,10 @@ export function SearchScreen() {
                     </Text>
                   )}
                 </View>
-                <View style={[styles.addPill, isSaved && styles.addPillSaved]}>
-                  {isSaved ? <Icon.Check size={14} color={colors.mint} /> : null}
-                  <Text style={[styles.addPillText, isSaved && styles.addPillTextSaved]}>
-                    {isSaved ? 'Added' : 'Add'}
+                <View style={[styles.addPill, savedWord && styles.addPillSaved]}>
+                  {savedWord ? <Icon.Check size={14} color={colors.mint} /> : null}
+                  <Text style={[styles.addPillText, savedWord && styles.addPillTextSaved]}>
+                    {savedWord ? 'Added' : 'Add'}
                   </Text>
                 </View>
               </Pressable>
@@ -1288,8 +1300,7 @@ export function GrammarScreen({
   navigation,
   route,
 }: NativeStackScreenProps<OnboardingStackParamList, 'Grammar'>) {
-  const lesson =
-    route.params.lesson === 'gerund' ? gerundAndInfinitive : prepositions;
+  const lesson = getGrammarLesson(route.params.lesson);
   return (
     <ScreenShell>
       <AppBar

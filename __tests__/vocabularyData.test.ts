@@ -1,8 +1,8 @@
-import {wordBank} from '../src/data/vocabularyBank';
+import {getWordBank, type VocabularyWord} from '../src/data/vocabularyBank';
 
-function duplicates(pick: (word: (typeof wordBank)[number]) => string) {
+function duplicates(pick: (word: VocabularyWord) => string) {
   const seen = new Map<string, string[]>();
-  wordBank.forEach(word => {
+  getWordBank().forEach(word => {
     const key = pick(word).toLocaleLowerCase('en');
     seen.set(key, [...(seen.get(key) ?? []), word.en]);
   });
@@ -11,22 +11,22 @@ function duplicates(pick: (word: (typeof wordBank)[number]) => string) {
 
 describe('vocabulary data', () => {
   it('keeps definitions short enough for the quiz card', () => {
-    const tooLong = wordBank.filter(word => word.definition.length > 110);
+    const tooLong = getWordBank().filter(word => word.definition.length > 110);
     expect(tooLong.map(word => word.en)).toEqual([]);
   });
 
   it('writes definitions as a single finished sentence', () => {
-    const malformed = wordBank.filter(word => !/^[A-Z0-9].*\.$/.test(word.definition) || /["“”]/.test(word.definition));
+    const malformed = getWordBank().filter(word => !/^[A-Z0-9].*\.$/.test(word.definition) || /["“”]/.test(word.definition));
     expect(malformed.map(word => word.en)).toEqual([]);
   });
 
   it('translates every definition and example for the Turkish card', () => {
-    const untranslated = wordBank.filter(word => !word.definitionTr?.trim() || !word.exampleTr?.trim());
+    const untranslated = getWordBank().filter(word => !word.definitionTr?.trim() || !word.exampleTr?.trim());
     expect(untranslated.map(word => word.en)).toEqual([]);
   });
 
   it('writes Turkish translations as finished sentences, not copies of the English', () => {
-    const malformed = wordBank.filter(word =>
+    const malformed = getWordBank().filter(word =>
       !/\.$/.test(word.definitionTr) ||
       /["“”]/.test(word.definitionTr) ||
       /["“”]/.test(word.exampleTr) ||
@@ -37,7 +37,7 @@ describe('vocabulary data', () => {
   });
 
   it('keeps Turkish definitions short enough for the flashcard', () => {
-    const tooLong = wordBank.filter(word => word.definitionTr.length > 130);
+    const tooLong = getWordBank().filter(word => word.definitionTr.length > 130);
     expect(tooLong.map(word => word.en)).toEqual([]);
   });
 

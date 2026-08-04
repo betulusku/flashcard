@@ -1,3 +1,5 @@
+import {getWordBank} from './contentStore';
+
 export type VocabularyWord = {
   id: string;
   en: string;
@@ -9,12 +11,16 @@ export type VocabularyWord = {
   definitionTr: string;
   exampleTr: string;
 };
-// Keep this module's basename distinct from the JSON asset: Metro otherwise
-// resolves `vocabulary` to the JSON file before this typed wrapper.
-const vocabulary = require('./vocabulary.json') as VocabularyWord[];
-export const wordBank = vocabulary;
+
+export {getWordBank};
 
 export function findWords(query: string, level?: string) {
   const normalized = query.trim().toLocaleLowerCase('en');
-  return wordBank.filter(word => (!level || word.level === level) && (!normalized || word.en.toLocaleLowerCase('en').includes(normalized) || word.tr.toLocaleLowerCase('tr').includes(normalized)));
+  return getWordBank().filter(
+    word =>
+      (!level || word.level === level) &&
+      (!normalized ||
+        word.en.toLocaleLowerCase('en').includes(normalized) ||
+        word.tr.toLocaleLowerCase('tr').includes(normalized)),
+  );
 }

@@ -2,69 +2,15 @@ import React, {useMemo, useState} from 'react';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {Pressable, ScrollView, StyleSheet, Text, View} from 'react-native';
 
+import {getInboxSeed} from '../../data/contentStore';
 import type {OnboardingStackParamList} from '../../navigation/OnboardingNavigator';
 import {AppBar, AppBarButton} from '../../components/AppBar';
-import {Icon, type FeatherIconName} from '../../components/Icon';
+import {Icon} from '../../components/Icon';
 import {colors, radius, spacing} from '../../theme';
 import {ScreenShell} from '../onboarding/ScreenShell';
 import {haptic} from '../../services/feedback';
 
 type Props = NativeStackScreenProps<OnboardingStackParamList, 'Inbox'>;
-
-type Note = {
-  id: string;
-  icon: FeatherIconName;
-  title: string;
-  body: string;
-  time: string;
-  unread?: boolean;
-  tone?: 'mint' | 'warm' | 'soft';
-};
-
-const seed: Note[] = [
-  {
-    id: '1',
-    icon: 'Award',
-    title: 'Streak on deck',
-    body: 'You’re one short practice away from keeping today’s streak alive.',
-    time: 'Just now',
-    unread: true,
-    tone: 'mint',
-  },
-  {
-    id: '2',
-    icon: 'BookOpen',
-    title: 'Words waiting for you',
-    body: '15 learning words are ready for a quick flashcard pass.',
-    time: '2h ago',
-    unread: true,
-    tone: 'soft',
-  },
-  {
-    id: '3',
-    icon: 'Star',
-    title: 'Nice run yesterday',
-    body: 'You hit your daily target. Keep the same pace this week.',
-    time: 'Yesterday',
-    tone: 'warm',
-  },
-  {
-    id: '4',
-    icon: 'Bell',
-    title: 'Evening reminder',
-    body: 'A 5-minute review before bed sticks better than a long cram.',
-    time: 'Yesterday',
-    tone: 'soft',
-  },
-  {
-    id: '5',
-    icon: 'CheckCircle',
-    title: 'Test unlocked',
-    body: 'You’ve practised enough words to take a reinforce test.',
-    time: 'Mon',
-    tone: 'mint',
-  },
-];
 
 const toneFill = {
   mint: 'rgba(200,255,251,.16)',
@@ -73,7 +19,7 @@ const toneFill = {
 } as const;
 
 export function InboxScreen({navigation}: Props) {
-  const [notes, setNotes] = useState(seed);
+  const [notes, setNotes] = useState(() => getInboxSeed());
   const unread = useMemo(() => notes.filter(n => n.unread).length, [notes]);
 
   const markAll = () => {
