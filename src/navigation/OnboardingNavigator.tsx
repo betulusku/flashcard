@@ -154,33 +154,25 @@ export function OnboardingNavigator({
             animation: 'fade',
             animationDuration: STACK_FADE_MS,
           }}
-          listeners={({navigation}) => {
-            let pruneTimer: ReturnType<typeof setTimeout> | undefined;
-            return {
-              beforeRemove: e => {
-                // Home is the app root — never pop back into onboarding.
-                if (e.data.action.type === 'GO_BACK' || e.data.action.type === 'POP') {
-                  e.preventDefault();
-                }
-              },
-              focus: () => {
-                const state = navigation.getState();
-                if (state.routes[state.index]?.name !== 'Home') return;
-                const hasOnboardingUnder = state.routes.some(route =>
-                  ONBOARDING_ROUTES.has(route.name as keyof OnboardingStackParamList),
-                );
-                if (!hasOnboardingUnder && state.index === 0) return;
-                // Let the fade into Home finish, then prune the stack (reset has no animation).
-                if (pruneTimer) clearTimeout(pruneTimer);
-                pruneTimer = setTimeout(() => {
-                  navigation.reset({index: 0, routes: [{name: 'Home'}]});
-                }, STACK_FADE_MS + 40);
-              },
-              blur: () => {
-                if (pruneTimer) clearTimeout(pruneTimer);
-              },
-            };
-          }}
+          listeners={({navigation}) => ({
+            beforeRemove: e => {
+              // Home is the app root — never pop back into onboarding.
+              if (e.data.action.type === 'GO_BACK' || e.data.action.type === 'POP') {
+                e.preventDefault();
+              }
+            },
+            // Safety net for navigate('Home') that left onboarding under the stack.
+            transitionEnd: e => {
+              if (e.data.closing) return;
+              const state = navigation.getState();
+              if (state.routes[state.index]?.name !== 'Home') return;
+              const hasOnboardingUnder = state.routes.some(route =>
+                ONBOARDING_ROUTES.has(route.name as keyof OnboardingStackParamList),
+              );
+              if (!hasOnboardingUnder && state.index === 0) return;
+              navigation.reset({index: 0, routes: [{name: 'Home'}]});
+            },
+          })}
         >
           {() => <AppTabs answers={answers} />}
         </Stack.Screen>

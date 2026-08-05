@@ -10,29 +10,42 @@ import {
   OnboardingNavigator,
   type OnboardingStackParamList,
 } from './src/navigation/OnboardingNavigator';
+import {prefetchReviewEnabled} from './src/services/remoteConfig';
 import {store} from './src/store';
-import {useAppSelector} from './src/store/hooks';
+import {useAppDispatch, useAppSelector} from './src/store/hooks';
+import {setInReview} from './src/store/purchasesSlice';
 import {createLogger} from './src/utils/logger';
 
 const log = createLogger('App');
 
+// Start Remote Config as early as the JS bundle loads.
+prefetchReviewEnabled();
+
 function resolveInitialRoute(
   bootstrap: BootstrapState,
   isPremium: boolean,
-  inReview: boolean,
 ): keyof OnboardingStackParamList {
+  // Prefer bootstrap.inReview (set atomically on splash reveal) over Redux timing.
   if (!bootstrap.onboardingComplete) return 'Welcome';
-  if (!isPremium && !inReview) return 'TrialIntro';
+  if (!isPremium && !bootstrap.inReview) return 'TrialIntro';
   return 'Home';
 }
 
 function RootApp({bootstrap}: {bootstrap: BootstrapState}) {
+  const dispatch = useAppDispatch();
   const isPremium = useAppSelector(s => s.purchases.isPremium);
-  const inReview = useAppSelector(s => s.purchases.inReview);
+  const reduxInReview = useAppSelector(s => s.purchases.inReview);
+
+  // Keep Redux aligned with the bootstrap snapshot used for routing.
+  useEffect(() => {
+    if (reduxInReview !== bootstrap.inReview) {
+      dispatch(setInReview(bootstrap.inReview));
+    }
+  }, [bootstrap.inReview, dispatch, reduxInReview]);
 
   const initialRouteName = useMemo(
-    () => resolveInitialRoute(bootstrap, isPremium, inReview),
-    [bootstrap, isPremium, inReview],
+    () => resolveInitialRoute(bootstrap, isPremium),
+    [bootstrap, isPremium],
   );
 
   useEffect(() => {
@@ -40,9 +53,16 @@ function RootApp({bootstrap}: {bootstrap: BootstrapState}) {
       initialRouteName,
       onboardingComplete: bootstrap.onboardingComplete,
       isPremium,
-      inReview,
+      bootstrapInReview: bootstrap.inReview,
+      reduxInReview,
     });
-  }, [bootstrap.onboardingComplete, inReview, initialRouteName, isPremium]);
+  }, [
+    bootstrap.inReview,
+    bootstrap.onboardingComplete,
+    initialRouteName,
+    isPremium,
+    reduxInReview,
+  ]);
 
   return (
     <SessionProvider value={bootstrap}>

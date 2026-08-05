@@ -33,13 +33,15 @@ import {
   saveProfile,
   type UserProfile,
 } from '../../logic/profile';
+import {openLegalDoc} from '../../logic/legalLinks';
 import {loadSurvey} from '../../logic/survey';
 import {loadUserId} from '../../logic/userId';
 import {haptic} from '../../services/feedback';
 import {logEvent} from '../../services/mixpanel';
 import {Icon} from '../../components/Icon';
+import {preloadTrialIntroAssets} from '../onboarding/trialIntroAssets';
 import {AppBar, AppBarButton} from '../../components/AppBar';
-import {useAppDispatch} from '../../store/hooks';
+import {useAppDispatch, useAppSelector} from '../../store/hooks';
 import {restorePurchases} from '../../store/purchasesSlice';
 import {colors, radius, spacing, tabBarSpace} from '../../theme';
 import {createLogger} from '../../utils/logger';
@@ -65,6 +67,7 @@ const levelLabels: Record<string, string> = {
 export function ProfileScreen({navigation}: Props) {
   const insets = useSafeAreaInsets();
   const dispatch = useAppDispatch();
+  const inReview = useAppSelector(s => s.purchases.inReview);
   const [profile, setProfile] = useState<UserProfile>(emptyProfile);
   const [userId, setUserId] = useState('');
   const [language, setLanguage] = useState('English');
@@ -266,6 +269,11 @@ export function ProfileScreen({navigation}: Props) {
         <Pressable
           style={styles.paywallCard}
           onPress={() => {
+            if (inReview) {
+              open('Paywall', {source: 'profile'});
+              return;
+            }
+            preloadTrialIntroAssets();
             open('TrialIntro', {source: 'profile'});
           }}
           accessibilityRole="button"
@@ -321,7 +329,7 @@ export function ProfileScreen({navigation}: Props) {
             label="Privacy Policy"
             onPress={() => {
               void logEvent('profile_settings_click', {item: 'privacy'});
-              open('Legal', {doc: 'privacy'});
+              void openLegalDoc('privacy');
             }}
           />
           <SettingsRow
@@ -335,7 +343,7 @@ export function ProfileScreen({navigation}: Props) {
             last
             onPress={() => {
               void logEvent('profile_settings_click', {item: 'terms'});
-              open('Legal', {doc: 'terms'});
+              void openLegalDoc('terms');
             }}
           />
         </SettingsGroup>

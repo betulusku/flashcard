@@ -3,18 +3,33 @@ import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
 
 import type {OnboardingStackParamList} from '../../navigation/OnboardingNavigator';
+import {goHomeFaded} from '../../navigation/navTransitions';
 import {logEvent} from '../../services/mixpanel';
+import {useAppSelector} from '../../store/hooks';
 import {colors, radius, spacing} from '../../theme';
 import {FluentLockup, PrimaryButtonBackground} from './OnboardingPrimitives';
 import {ScreenShell} from './ScreenShell';
+import {preloadTrialIntroAssets} from './trialIntroAssets';
 
 type Props = NativeStackScreenProps<OnboardingStackParamList, 'HelpUsGrow'>;
 export function HelpUsGrowScreen({navigation}: Props) {
+  const inReview = useAppSelector(s => s.purchases.inReview);
+
   useEffect(() => {
+    if (inReview) {
+      goHomeFaded(navigation);
+      return;
+    }
     void logEvent('onb_helpus_view');
-  }, []);
+    preloadTrialIntroAssets();
+  }, [inReview, navigation]);
+
   const continueToTrial = () => {
     void logEvent('onb_helpus_click');
+    if (inReview) {
+      goHomeFaded(navigation);
+      return;
+    }
     navigation.replace('TrialIntro', {destination: 'OnboardingPaywall'});
   };
 

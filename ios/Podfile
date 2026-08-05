@@ -16,6 +16,8 @@ project 'FluentFlashcard.xcodeproj'
 # Required by firebase-ios-sdk / @react-native-firebase
 use_frameworks! :linkage => :static
 $RNFirebaseAsStaticFramework = true
+# SPM Firebase products are dynamic-only; keep CocoaPods static resolution.
+$RNFirebaseDisableSPM = true
 
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil

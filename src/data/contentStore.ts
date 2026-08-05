@@ -100,7 +100,7 @@ const localLegal: LegalContent = {
       },
       {
         heading: 'Contact',
-        body: 'Questions about these terms: hello@fluent.app.',
+        body: 'Questions about these terms: helloflashvocab@gmail.com',
       },
     ],
   },

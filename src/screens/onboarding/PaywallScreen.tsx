@@ -1,5 +1,5 @@
-import React, {useEffect, useMemo, useRef, useState} from 'react';
-import type {NativeStackScreenProps} from '@react-navigation/native-stack';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import {
   ActivityIndicator,
   AccessibilityInfo,
@@ -11,26 +11,28 @@ import {
   StyleSheet,
   Text,
   View,
+  Dimensions,
 } from 'react-native';
-import Svg, {Defs, G, LinearGradient, Path, Stop} from 'react-native-svg';
+import Svg, { Defs, G, LinearGradient, Path, Stop } from 'react-native-svg';
 
-import {Icon} from '../../components/Icon';
-import {AppBarButton} from '../../components/AppBar';
-import {markOnboardingComplete} from '../../logic/onboarding';
-import type {OnboardingStackParamList} from '../../navigation/OnboardingNavigator';
-import {goHomeFaded} from '../../navigation/navTransitions';
-import {useAppDispatch, useAppSelector} from '../../store/hooks';
+import { Icon } from '../../components/Icon';
+import { AppBarButton } from '../../components/AppBar';
+import { openLegalDoc } from '../../logic/legalLinks';
+import { markOnboardingComplete } from '../../logic/onboarding';
+import type { OnboardingStackParamList } from '../../navigation/OnboardingNavigator';
+import { goHomeFaded } from '../../navigation/navTransitions';
+import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import {
   purchaseSelectedPlan,
   restorePurchases,
   setSelectedPlan,
 } from '../../store/purchasesSlice';
-import type {SurveyAnswers} from '../../types/onboarding';
-import {logEvent} from '../../services/mixpanel';
-import {colors, radius, spacing} from '../../theme';
-import {createLogger} from '../../utils/logger';
-import {ScreenShell} from './ScreenShell';
-import {PrimaryButtonBackground} from './OnboardingPrimitives';
+import type { SurveyAnswers } from '../../types/onboarding';
+import { logEvent } from '../../services/mixpanel';
+import { colors, radius, spacing } from '../../theme';
+import { createLogger } from '../../utils/logger';
+import { ScreenShell } from './ScreenShell';
+import { PrimaryButtonBackground } from './OnboardingPrimitives';
 
 const log = createLogger('Paywall');
 const CLOSE_DELAY_MS = 5000;
@@ -39,7 +41,7 @@ type Props = NativeStackScreenProps<OnboardingStackParamList, 'Paywall' | 'Onboa
   answers: SurveyAnswers;
 };
 
-export function PaywallScreen({navigation, route}: Props) {
+export function PaywallScreen({ navigation, route }: Props) {
   const dispatch = useAppDispatch();
   const selectedPlan = useAppSelector(s => s.purchases.selectedPlan);
   const plans = useAppSelector(s => s.purchases.plans);
@@ -49,9 +51,16 @@ export function PaywallScreen({navigation, route}: Props) {
   const busy = flowStatus !== 'idle';
 
   const yearly = useMemo(() => plans.find(p => p.plan === 'yearly'), [plans]);
+  const weekly = useMemo(() => plans.find(p => p.plan === 'weekly'), [plans]);
   const isOnboardingPaywall = route.name === 'OnboardingPaywall';
   const activePlan = isOnboardingPaywall ? 'weekly' : selectedPlan;
   const selected = plans.find(p => p.plan === activePlan);
+  const weeklyPrice = weekly?.priceString ?? '$9.99';
+  const ctaLabel = inReview ? 'Continue' : 'Start 7-Day Trial';
+  const weeklyPlanTitle = inReview ? '1 WEEK ACCESS' : '1-WEEK TRIAL';
+  const weeklyPlanDetail = inReview
+    ? `Start with ${weeklyPrice}`
+    : 'Try all Premium features';
 
   const fromProfile = route.params?.source === 'profile';
   const location = fromProfile ? 'profile' : route.params?.source === 'gate' ? 'splash' : 'onboarding';
@@ -66,7 +75,7 @@ export function PaywallScreen({navigation, route}: Props) {
   }, [dispatch, isOnboardingPaywall]);
 
   useEffect(() => {
-    void logEvent('paywall_view', {type, location});
+    void logEvent('paywall_view', { type, location });
   }, []);
 
   useEffect(() => {
@@ -126,8 +135,8 @@ export function PaywallScreen({navigation, route}: Props) {
   };
 
   const onClose = () => {
-    log.info('Close pressed', {fromProfile, inReview});
-    void logEvent('paywall_close_click', {location, in_review: inReview});
+    log.info('Close pressed', { fromProfile, inReview });
+    void logEvent('paywall_close_click', { location, in_review: inReview });
     if (fromProfile) {
       navigation.goBack();
       return;
@@ -161,8 +170,8 @@ export function PaywallScreen({navigation, route}: Props) {
         'Products unavailable',
         'Subscription options could not be loaded. You can continue and try again later.',
         [
-          {text: 'Try again', style: 'cancel'},
-          {text: 'Continue', onPress: finish},
+          { text: 'Try again', style: 'cancel' },
+          { text: 'Continue', onPress: finish },
         ],
       );
       return;
@@ -185,10 +194,10 @@ export function PaywallScreen({navigation, route}: Props) {
       return;
     }
 
-    const payload = result.payload as {cancelled?: boolean; message?: string} | undefined;
+    const payload = result.payload as { cancelled?: boolean; message?: string } | undefined;
     if (payload?.cancelled) {
       log.warn('User cancelled purchase sheet');
-      void logEvent('paywall_purchase_cancel', {plan: activePlan, location});
+      void logEvent('paywall_purchase_cancel', { plan: activePlan, location });
       return;
     }
     log.error('Purchase UI failed', payload);
@@ -201,25 +210,25 @@ export function PaywallScreen({navigation, route}: Props) {
   };
 
   const onRestore = async () => {
-    void logEvent('paywall_restore_click', {location});
+    void logEvent('paywall_restore_click', { location });
     log.info('Restore pressed');
     const result = await dispatch(restorePurchases());
     if (restorePurchases.fulfilled.match(result)) {
       if (result.payload.isPremium) {
         log.success('Restore unlocked Pro');
-        void logEvent('paywall_restore_result', {result: 'success', location});
+        void logEvent('paywall_restore_result', { result: 'success', location });
         Alert.alert('Restored', 'Your FlashVocab Pro access has been restored.', [
-          {text: 'OK', onPress: finish},
+          { text: 'OK', onPress: finish },
         ]);
         return;
       }
       log.warn('Restore found no active entitlement');
-      void logEvent('paywall_restore_result', {result: 'no_entitlement', location});
+      void logEvent('paywall_restore_result', { result: 'no_entitlement', location });
       Alert.alert('No purchases found', 'We could not find an active subscription for this Apple ID.');
       return;
     }
     log.error('Restore UI failed', result.payload);
-    void logEvent('paywall_restore_result', {result: 'error', location});
+    void logEvent('paywall_restore_result', { result: 'error', location });
     Alert.alert('Restore failed', (result.payload as string) ?? 'Please try again.');
   };
 
@@ -229,7 +238,7 @@ export function PaywallScreen({navigation, route}: Props) {
       {isOnboardingPaywall && <Image source={require('../../../assets/onboarding-paywall-composite.png')} style={styles.onboardingBackground} resizeMode="cover" accessibilityElementsHidden />}
       <View style={[styles.container, isOnboardingPaywall ? styles.onboardingContainer : styles.commonContainer]}>
         <View style={styles.topBar}>
-          <Animated.View style={{opacity: closeOpacity}} pointerEvents={closeVisible ? 'auto' : 'none'}>
+          <Animated.View style={{ opacity: closeOpacity }} pointerEvents={closeVisible ? 'auto' : 'none'}>
             <AppBarButton onPress={onClose} accessibilityLabel="Close"><Icon.Close color={colors.muted} /></AppBarButton>
           </Animated.View>
           <AppBarButton onPress={() => { void logEvent('paywall_help_click'); setInfoVisible(true); }} accessibilityLabel="Subscription information"><InfoIcon /></AppBarButton>
@@ -255,11 +264,15 @@ export function PaywallScreen({navigation, route}: Props) {
               <FeatureRow icon="cloud" title="Learn anywhere" detail="Offline access on all devices" />
             </View>
             <View style={[styles.footer, styles.onboardingFooter]}>
-              <Text style={styles.onboardingPrice}>Start 1-week trial, then $9,99/week. Cancel anytime.</Text>
-              <Animated.View style={[styles.ctaWrap, {transform: [{scale: ctaScale}]}]}>
+              <Text style={styles.onboardingPrice}>
+                {inReview
+                  ? `${weeklyPrice}/week. Cancel anytime.`
+                  : 'Start 1-week trial, then $9,99/week. Cancel anytime.'}
+              </Text>
+              <Animated.View style={[styles.ctaWrap, { transform: [{ scale: ctaScale }] }]}>
                 <Pressable style={[styles.cta, busy && styles.ctaDisabled]} disabled={busy} onPress={onPurchase}>
                   <PrimaryButtonBackground />
-                  {busy && flowStatus === 'purchasing' ? <ActivityIndicator color={colors.primaryText} /> : <Text style={styles.ctaText}>Start 7-Day Trial</Text>}
+                  {busy && flowStatus === 'purchasing' ? <ActivityIndicator color={colors.primaryText} /> : <Text style={styles.ctaText}>{ctaLabel}</Text>}
                 </Pressable>
               </Animated.View>
             </View>
@@ -271,7 +284,7 @@ export function PaywallScreen({navigation, route}: Props) {
                 <Text style={styles.title}>Unlock{`\n`}<Text style={styles.titleAccent}>Premium</Text></Text>
                 <Text style={styles.body}>Unlock your full vocabulary potential.</Text>
               </View>
-              <LaurelSocialProof />
+              {!inReview ? <LaurelSocialProof /> : null}
             </View>
             <View style={styles.commonFeatures}>
               <CommonFeatureRow icon="book" title="Unlimited vocabulary & lessons" detail="All words, examples and grammar" />
@@ -280,20 +293,20 @@ export function PaywallScreen({navigation, route}: Props) {
               <CommonFeatureRow icon="cloud" title="Learn anywhere" detail="Offline access on all devices" />
             </View>
             <View style={styles.planOptions}>
-              <Pressable style={[styles.planOption, activePlan === 'weekly' && styles.planOptionSelected]} onPress={() => { void logEvent('paywall_plan_click', {plan: 'weekly', price_string: plans.find(p => p.plan === 'weekly')?.priceString ?? null}); dispatch(setSelectedPlan('weekly')); }}>
-                <View><Text style={[styles.planTitle, activePlan === 'weekly' && styles.planTitleSelected]}>1-WEEK TRIAL</Text><Text style={styles.planDetail}>Try all Premium features</Text></View>
-                <View style={styles.planPriceWrap}><Text style={styles.planPrice}>Then $9.99{`\n`}per week</Text><View style={[styles.radio, activePlan === 'weekly' && styles.radioSelected]}>{activePlan === 'weekly' && <Icon.Check size={18} color={colors.primaryText} />}</View></View>
+              <Pressable style={[styles.planOption, activePlan === 'weekly' && styles.planOptionSelected]} onPress={() => { void logEvent('paywall_plan_click', { plan: 'weekly', price_string: weekly?.priceString ?? null }); dispatch(setSelectedPlan('weekly')); }}>
+                <View><Text style={[styles.planTitle, activePlan === 'weekly' && styles.planTitleSelected]}>{weeklyPlanTitle}</Text><Text style={styles.planDetail}>{weeklyPlanDetail}</Text></View>
+                <View style={styles.planPriceWrap}><Text style={styles.planPrice}>{inReview ? `${weeklyPrice}\nper week` : 'Then $9.99\nper week'}</Text><View style={[styles.radio, activePlan === 'weekly' && styles.radioSelected]}>{activePlan === 'weekly' && <Icon.Check size={18} color={colors.primaryText} />}</View></View>
               </Pressable>
-              <Pressable style={[styles.planOption, activePlan === 'yearly' && styles.planOptionSelected]} onPress={() => { void logEvent('paywall_plan_click', {plan: 'yearly', price_string: yearly?.priceString ?? null}); dispatch(setSelectedPlan('yearly')); }}>
+              <Pressable style={[styles.planOption, activePlan === 'yearly' && styles.planOptionSelected]} onPress={() => { void logEvent('paywall_plan_click', { plan: 'yearly', price_string: yearly?.priceString ?? null }); dispatch(setSelectedPlan('yearly')); }}>
                 <View><View style={styles.planTitleRow}><Text style={[styles.planTitle, activePlan === 'yearly' && styles.planTitleSelected]}>YEARLY ACCESS</Text><Text style={styles.bestValue}>BEST VALUE</Text></View><Text style={styles.planDetail}>{yearly?.priceString ?? '$39.99'} per year</Text></View>
-                <View style={styles.planPriceWrap}><Text style={styles.planPrice}>$0.77{`\n`}per week</Text><View style={[styles.radio, activePlan === 'yearly' && styles.radioSelected]}>{activePlan === 'yearly' && <Icon.Check size={18} color={colors.primaryText} />}</View></View>
+                <View style={styles.planPriceWrap}>{!inReview ? <Text style={styles.planPrice}>$0.77{`\n`}per week</Text> : null}<View style={[styles.radio, activePlan === 'yearly' && styles.radioSelected]}>{activePlan === 'yearly' && <Icon.Check size={18} color={colors.primaryText} />}</View></View>
               </Pressable>
             </View>
             <View style={styles.commonFooter}>
-              <Animated.View style={[styles.ctaWrap, styles.commonCtaWrap, {transform: [{scale: ctaScale}]}]}>
+              <Animated.View style={[styles.ctaWrap, styles.commonCtaWrap, inReview === true ? null : { transform: [{ scale: ctaScale }] }]}>
                 <Pressable style={[styles.cta, busy && styles.ctaDisabled]} disabled={busy} onPress={onPurchase}>
                   <PrimaryButtonBackground />
-                  {busy && flowStatus === 'purchasing' ? <ActivityIndicator color={colors.primaryText} /> : <Text style={styles.ctaText}>Start 7-Day Trial</Text>}
+                  {busy && flowStatus === 'purchasing' ? <ActivityIndicator color={colors.primaryText} /> : <Text style={styles.ctaText}>{ctaLabel}</Text>}
                 </Pressable>
               </Animated.View>
               <Text style={styles.cancelLine}>You can cancel anytime. No commitment.</Text>
@@ -306,8 +319,8 @@ export function PaywallScreen({navigation, route}: Props) {
           <Pressable style={styles.infoPanel} onPress={() => undefined}>
             <View style={styles.infoPanelHeader}><Text style={styles.infoPanelTitle}>Subscription information</Text><Pressable onPress={() => setInfoVisible(false)} hitSlop={12}><Icon.Close color={colors.text} /></Pressable></View>
             <Pressable style={styles.infoAction} disabled={busy} onPress={() => { setInfoVisible(false); onRestore(); }}><Text style={styles.infoActionText}>{flowStatus === 'restoring' ? 'Restoring…' : 'Restore Purchases'}</Text></Pressable>
-            <Pressable style={styles.infoAction} onPress={() => { void logEvent('paywall_legal_click', {doc: 'terms'}); setInfoVisible(false); navigation.navigate('Legal', {doc: 'terms'}); }}><Text style={styles.infoActionText}>Terms of Use</Text></Pressable>
-            <Pressable style={styles.infoAction} onPress={() => { void logEvent('paywall_legal_click', {doc: 'privacy'}); setInfoVisible(false); navigation.navigate('Legal', {doc: 'privacy'}); }}><Text style={styles.infoActionText}>Privacy Policy</Text></Pressable>
+            <Pressable style={styles.infoAction} onPress={() => { void logEvent('paywall_legal_click', { doc: 'terms' }); setInfoVisible(false); void openLegalDoc('terms'); }}><Text style={styles.infoActionText}>Terms of Use</Text></Pressable>
+            <Pressable style={styles.infoAction} onPress={() => { void logEvent('paywall_legal_click', { doc: 'privacy' }); setInfoVisible(false); void openLegalDoc('privacy'); }}><Text style={styles.infoActionText}>Privacy Policy</Text></Pressable>
           </Pressable>
         </Pressable>
       </Modal>
@@ -338,7 +351,7 @@ function LaurelSocialProof() {
   );
 }
 
-function LaurelSide({flip}: {flip?: boolean}) {
+function LaurelSide({ flip }: { flip?: boolean }) {
   return (
     <Svg width={36} height={52} viewBox="0 0 80 120" style={flip ? styles.laurelFlip : undefined}>
       <Defs>
@@ -365,7 +378,7 @@ function LaurelSide({flip}: {flip?: boolean}) {
   );
 }
 
-function CommonFeatureRow({icon, title, detail}: {icon: 'book' | 'brain' | 'chart' | 'cloud'; title: string; detail: string}) {
+function CommonFeatureRow({ icon, title, detail }: { icon: 'book' | 'brain' | 'chart' | 'cloud'; title: string; detail: string }) {
   const FeatureIcon = icon === 'book' ? Icon.BookOpen : icon === 'brain' ? Icon.Award : icon === 'chart' ? Icon.BarChart : Icon.CloudRain;
   return <View style={styles.commonFeatureRow} accessible accessibilityLabel={`${title}. ${detail}`}>
     <View style={styles.commonFeatureIcon}><FeatureIcon size={22} color={colors.mint} strokeWidth={2} /></View>
@@ -373,7 +386,7 @@ function CommonFeatureRow({icon, title, detail}: {icon: 'book' | 'brain' | 'char
   </View>;
 }
 
-function FeatureRow({icon, title, detail}: {icon: 'book' | 'brain' | 'chart' | 'cloud'; title: string; detail: string}) {
+function FeatureRow({ icon, title, detail }: { icon: 'book' | 'brain' | 'chart' | 'cloud'; title: string; detail: string }) {
   const FeatureIcon = icon === 'book' ? Icon.BookOpen : icon === 'brain' ? Icon.Award : icon === 'chart' ? Icon.BarChart : Icon.CloudRain;
   return <View style={styles.featureRow} accessible accessibilityLabel={`${title}. ${detail}`}>
     <View style={styles.featureIcon}><FeatureIcon size={22} color={colors.mint} strokeWidth={2} /></View>
@@ -382,23 +395,23 @@ function FeatureRow({icon, title, detail}: {icon: 'book' | 'brain' | 'chart' | '
 }
 
 const styles = StyleSheet.create({
-  container: {flex: 1, paddingHorizontal: spacing.lg, paddingTop: spacing.sm, paddingBottom: spacing.sm},
-  onboardingContainer: {paddingTop: spacing.md, paddingBottom: spacing.md},
-  commonContainer: {flex: 1, paddingTop: 16, paddingBottom: 10},
+  container: { flex: 1, paddingHorizontal: spacing.lg, paddingTop: spacing.sm, paddingBottom: spacing.sm },
+  onboardingContainer: { paddingTop: spacing.md, paddingBottom: spacing.md },
+  commonContainer: { flex: 1, paddingTop: 16, paddingBottom: 10 },
   // Tall phones: spread blocks so gaps sit between sections, not as dead space under CTA.
-  commonStack: {flex: 1, justifyContent: 'space-between', paddingBottom: 8},
-  commonTop: {gap: 12},
-  onboardingBackground: {position: 'absolute', top: 0, right: 0, bottom: 0, left: 0, width: 'auto', height: 'auto'},
-  commonBackground: {position: 'absolute', top: 0, right: 0, bottom: 0, left: 0, width: 'auto', height: 'auto'},
-  topBar: {minHeight: 44, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'},
-  hero: {marginTop: 4},
-  title: {fontSize: 42, lineHeight: 45, fontWeight: '700', letterSpacing: -1.4, color: colors.text},
-  onboardingHero: {minHeight: 235, marginTop: spacing.md, flexDirection: 'row', alignItems: 'flex-start'},
-  onboardingHeroCopy: {width: 280, paddingTop: spacing.sm, zIndex: 1},
-  onboardingTitle: {fontFamily: 'Georgia', fontSize: 42, lineHeight: 44, letterSpacing: -1.7, color: colors.text},
-  titleAccent: {color: colors.mint},
-  body: {fontSize: 17, lineHeight: 23, color: colors.muted, marginTop: spacing.sm, maxWidth: 300},
-  onboardingBody: {fontSize: 18, lineHeight: 25, maxWidth: 210, color: colors.muted, marginTop: spacing.sm},
+  commonStack: { flex: 1, justifyContent: 'space-between', paddingBottom: 8 },
+  commonTop: { gap: 12 },
+  onboardingBackground: { position: 'absolute', top: 0, right: 0, bottom: 0, left: 0, width: 'auto', height: 'auto' },
+  commonBackground: { position: 'absolute', top: 0, right: 0, bottom: 0, left: 0, width: 'auto', height: 'auto' },
+  topBar: { minHeight: 44, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
+  hero: { marginTop: 4 },
+  title: { fontSize: 42, lineHeight: 45, fontWeight: '700', letterSpacing: -1.4, color: colors.text },
+  onboardingHero: { minHeight: 235, marginTop: spacing.md, flexDirection: 'row', alignItems: 'flex-start' },
+  onboardingHeroCopy: { width: 280, paddingTop: spacing.sm, zIndex: 1 },
+  onboardingTitle: { fontFamily: 'Georgia', fontSize: 42, lineHeight: 44, letterSpacing: -1.7, color: colors.text },
+  titleAccent: { color: colors.mint },
+  body: { fontSize: 17, lineHeight: 23, color: colors.muted, marginTop: spacing.sm, maxWidth: 250 },
+  onboardingBody: { fontSize: 18, lineHeight: 25, maxWidth: 210, color: colors.muted, marginTop: spacing.sm },
   ratingCard: {
     alignSelf: 'flex-start',
     minHeight: 64,
@@ -412,40 +425,40 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 10,
   },
-  laurelFlip: {transform: [{scaleX: -1}]},
-  ratingCenter: {alignItems: 'center', justifyContent: 'center', gap: 2, paddingHorizontal: 4},
-  ratingStars: {fontSize: 15, lineHeight: 18, letterSpacing: 3.2, color: colors.mint},
-  ratingText: {fontSize: 13, lineHeight: 16, color: colors.text},
-  ratingStrong: {fontWeight: '800', color: colors.text},
-  commonFeatures: {borderRadius: radius.md, overflow: 'hidden', backgroundColor: 'rgba(12,26,39,.68)'},
-  commonFeatureRow: {minHeight: 54, paddingHorizontal: spacing.md, flexDirection: 'row', alignItems: 'center', borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: 'rgba(255,255,255,.055)'},
-  commonFeatureIcon: {width: 40, height: 40, borderRadius: 11, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(66,224,216,.075)'},
-  commonFeatureTitle: {fontSize: 15, lineHeight: 19, fontWeight: '700', color: colors.text}, commonFeatureDetail: {fontSize: 13, lineHeight: 17, color: colors.muted, marginTop: 2},
-  planOptions: {gap: 10},
-  planOption: {minHeight: 68, paddingHorizontal: spacing.md, borderRadius: radius.sm, borderWidth: 1, borderColor: colors.border, backgroundColor: 'rgba(12,26,39,.88)', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'},
-  planOptionSelected: {borderWidth: 2, borderColor: colors.mint}, planTitle: {fontSize: 15, fontWeight: '800', letterSpacing: .5, color: colors.text}, planTitleSelected: {color: colors.mint}, planDetail: {fontSize: 13, color: colors.muted, marginTop: 4},
-  planTitleRow: {flexDirection: 'row', alignItems: 'center', gap: 7}, bestValue: {fontSize: 10, fontWeight: '800', color: colors.primaryText, backgroundColor: colors.mint, paddingHorizontal: 7, paddingVertical: 3, borderRadius: 8},
-  planPriceWrap: {flexDirection: 'row', alignItems: 'center', gap: spacing.sm}, planPrice: {fontSize: 13, lineHeight: 17, textAlign: 'right', color: colors.muted}, radio: {width: 27, height: 27, borderRadius: 14, borderWidth: 2, borderColor: colors.muted, alignItems: 'center', justifyContent: 'center'}, radioSelected: {borderColor: colors.mint, backgroundColor: colors.mint},
-  featureRows: {gap: 8, marginTop: 14},
-  featureRow: {minHeight: 72, borderRadius: radius.sm, paddingHorizontal: spacing.md, flexDirection: 'row', alignItems: 'center', backgroundColor: '#111824'},
-  featureIcon: {width: 48, height: 48, borderRadius: 13, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(200,255,251,.09)'},
-  featureCopy: {flex: 1, marginLeft: spacing.sm},
-  featureTitle: {fontSize: 17, lineHeight: 22, fontWeight: '700', color: colors.text},
-  featureDetail: {fontSize: 14, lineHeight: 19, color: colors.muted, marginTop: 3},
-  footer: {marginTop: 'auto', alignItems: 'stretch'},
-  onboardingFooter: {marginTop: 'auto'},
-  commonFooter: {alignItems: 'stretch', gap: 10, paddingBottom: 4},
-  onboardingPrice: {fontSize: 16, lineHeight: 22, textAlign: 'center', color: colors.text, marginBottom: spacing.md},
-  ctaWrap: {marginTop: spacing.sm, marginBottom: 56},
-  commonCtaWrap: {marginTop: 0, marginBottom: 0},
-  cta: {minHeight: 58, borderRadius: radius.md, overflow: 'hidden', alignItems: 'center', justifyContent: 'center'},
-  ctaDisabled: {opacity: 0.7},
-  ctaText: {fontSize: 20, fontWeight: '700', color: colors.primaryText},
-  cancelLine: {fontSize: 13, textAlign: 'center', color: colors.muted, marginTop: 0},
-  modalBackdrop: {flex: 1, justifyContent: 'flex-end', padding: spacing.md, backgroundColor: 'rgba(0,0,0,.68)'},
-  infoPanel: {padding: spacing.lg, paddingBottom: spacing.xl, borderRadius: radius.lg, backgroundColor: '#111824', borderWidth: StyleSheet.hairlineWidth, borderColor: colors.border},
-  infoPanelHeader: {flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: spacing.md},
-  infoPanelTitle: {fontSize: 20, fontWeight: '700', color: colors.text},
-  infoAction: {minHeight: 56, justifyContent: 'center', borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: colors.border},
-  infoActionText: {fontSize: 17, fontWeight: '600', color: colors.mint},
+  laurelFlip: { transform: [{ scaleX: -1 }] },
+  ratingCenter: { alignItems: 'center', justifyContent: 'center', gap: 2, paddingHorizontal: 4 },
+  ratingStars: { fontSize: 15, lineHeight: 18, letterSpacing: 3.2, color: colors.mint },
+  ratingText: { fontSize: 13, lineHeight: 16, color: colors.text },
+  ratingStrong: { fontWeight: '800', color: colors.text },
+  commonFeatures: { borderRadius: radius.md, overflow: 'hidden', backgroundColor: 'rgba(12,26,39,.68)' },
+  commonFeatureRow: { minHeight: 54, paddingHorizontal: spacing.md, flexDirection: 'row', alignItems: 'center', borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: 'rgba(255,255,255,.055)' },
+  commonFeatureIcon: { width: 40, height: 40, borderRadius: 11, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(66,224,216,.075)' },
+  commonFeatureTitle: { fontSize: 15, lineHeight: 19, fontWeight: '700', color: colors.text }, commonFeatureDetail: { fontSize: 13, lineHeight: 17, color: colors.muted, marginTop: 2 },
+  planOptions: { gap: 10 },
+  planOption: { minHeight: 68, paddingHorizontal: spacing.md, borderRadius: radius.sm, borderWidth: 1, borderColor: colors.border, backgroundColor: 'rgba(12,26,39,.88)', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
+  planOptionSelected: { borderWidth: 2, borderColor: colors.mint }, planTitle: { fontSize: 15, fontWeight: '800', letterSpacing: .5, color: colors.text }, planTitleSelected: { color: colors.mint }, planDetail: { fontSize: 13, color: colors.muted, marginTop: 4 },
+  planTitleRow: { flexDirection: 'row', alignItems: 'center', gap: 7 }, bestValue: { fontSize: 10, fontWeight: '800', color: colors.primaryText, backgroundColor: colors.mint, paddingHorizontal: 7, paddingVertical: 3, borderRadius: 8 },
+  planPriceWrap: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm }, planPrice: { fontSize: 13, lineHeight: 17, textAlign: 'right', color: colors.muted }, radio: { width: 27, height: 27, borderRadius: 14, borderWidth: 2, borderColor: colors.muted, alignItems: 'center', justifyContent: 'center' }, radioSelected: { borderColor: colors.mint, backgroundColor: colors.mint },
+  featureRows: { gap: 8, marginTop: 14 },
+  featureRow: { minHeight: 72, borderRadius: radius.sm, paddingHorizontal: spacing.md, flexDirection: 'row', alignItems: 'center', backgroundColor: '#111824' },
+  featureIcon: { width: 48, height: 48, borderRadius: 13, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(200,255,251,.09)' },
+  featureCopy: { flex: 1, marginLeft: spacing.sm },
+  featureTitle: { fontSize: 17, lineHeight: 22, fontWeight: '700', color: colors.text },
+  featureDetail: { fontSize: 14, lineHeight: 19, color: colors.muted, marginTop: 3 },
+  footer: { marginTop: 'auto', alignItems: 'stretch' },
+  onboardingFooter: { marginTop: 'auto' },
+  commonFooter: { alignItems: 'stretch', gap: 10, paddingBottom: 4 },
+  onboardingPrice: { fontSize: 16, lineHeight: 22, textAlign: 'center', color: colors.text, marginBottom: spacing.md },
+  ctaWrap: { marginTop: spacing.sm, marginBottom: 56 },
+  commonCtaWrap: { marginTop: 0, marginBottom: 0 },
+  cta: { minHeight: 58, borderRadius: radius.md, overflow: 'hidden', alignItems: 'center', justifyContent: 'center' },
+  ctaDisabled: { opacity: 0.7 },
+  ctaText: { fontSize: 20, fontWeight: '700', color: colors.primaryText },
+  cancelLine: { fontSize: 13, textAlign: 'center', color: colors.muted, marginTop: 0 },
+  modalBackdrop: { flex: 1, justifyContent: 'flex-end', padding: spacing.md, backgroundColor: 'rgba(0,0,0,.68)' },
+  infoPanel: { padding: spacing.lg, paddingBottom: spacing.xl, borderRadius: radius.lg, backgroundColor: '#111824', borderWidth: StyleSheet.hairlineWidth, borderColor: colors.border },
+  infoPanelHeader: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: spacing.md },
+  infoPanelTitle: { fontSize: 20, fontWeight: '700', color: colors.text },
+  infoAction: { minHeight: 56, justifyContent: 'center', borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: colors.border },
+  infoActionText: { fontSize: 17, fontWeight: '600', color: colors.mint },
 });
