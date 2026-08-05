@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {Alert, Linking, Pressable, StyleSheet, Text, TextInput} from 'react-native';
 
 import type {OnboardingStackParamList} from '../../../navigation/OnboardingNavigator';
 import {loadUserId} from '../../../logic/userId';
+import {logEvent} from '../../../services/mixpanel';
 import {colors, radius, spacing} from '../../../theme';
 import {SettingsScreen} from './SettingsChrome';
 
@@ -13,9 +14,14 @@ export function ContactScreen({navigation}: Props) {
   const [message, setMessage] = useState('');
   const [sending, setSending] = useState(false);
 
+  useEffect(() => {
+    void logEvent('contact_view');
+  }, []);
+
   const send = async () => {
     const body = message.trim();
     if (body.length < 8) {
+      void logEvent('contact_sent', {outcome: 'blocked_short', message_length: body.length});
       Alert.alert('Almost there', 'Tell us a little more so we can help.');
       return;
     }
@@ -28,11 +34,14 @@ export function ContactScreen({navigation}: Props) {
         `&body=${encodeURIComponent(`${body}\n\n—\nUser ID: ${userId}`)}`;
       const can = await Linking.canOpenURL(url);
       if (!can) {
+        void logEvent('contact_sent', {outcome: 'no_mail_app', message_length: body.length});
         Alert.alert('No mail app', 'Email us at hello@fluent.app');
         return;
       }
       await Linking.openURL(url);
+      void logEvent('contact_sent', {outcome: 'sent', message_length: body.length});
     } catch {
+      void logEvent('contact_sent', {outcome: 'error', message_length: body.length});
       Alert.alert('Couldn’t open mail', 'Email us at hello@fluent.app');
     } finally {
       setSending(false);

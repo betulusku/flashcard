@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {Alert, Image, Pressable, StyleSheet, Text, View} from 'react-native';
 import {requestNotifications, RESULTS} from 'react-native-permissions';
@@ -10,6 +10,7 @@ import {markOnboardingComplete} from '../../logic/onboarding';
 import type {OnboardingStackParamList} from '../../navigation/OnboardingNavigator';
 import {goHomeFaded} from '../../navigation/navTransitions';
 import {useAppSelector} from '../../store/hooks';
+import {logEvent} from '../../services/mixpanel';
 import {colors, radius, spacing} from '../../theme';
 import {createLogger} from '../../utils/logger';
 import {FluentLockup, PrimaryButtonBackground} from './OnboardingPrimitives';
@@ -22,12 +23,16 @@ export function NotificationPermissionScreen({navigation}: Props) {
   const inReview = useAppSelector(s => s.purchases.inReview);
   const [requesting, setRequesting] = useState(false);
   const openingReview = useRef(false);
+  useEffect(() => {
+    void logEvent('onb_notification_view');
+  }, []);
   const next = async () => {
     if (inReview) { markOnboardingComplete().catch(() => undefined); goHomeFaded(navigation); return; }
     if (openingReview.current) return;
     openingReview.current = true;
     try {
       if (InAppReview.isAvailable()) {
+        void logEvent('onb_review_prompt_view');
         await InAppReview.RequestInAppReview();
       }
     } catch {
@@ -40,9 +45,18 @@ export function NotificationPermissionScreen({navigation}: Props) {
     setRequesting(true);
     try {
       const {status} = await requestNotifications(['alert', 'badge', 'sound']);
+      void logEvent('onb_notification_click', {
+        result: status === RESULTS.GRANTED ? 'granted' : status === RESULTS.BLOCKED ? 'blocked' : 'unavailable',
+      });
       if (status === RESULTS.BLOCKED) Alert.alert('Reminders are off', 'You can enable them later in Settings.');
-    } catch { Alert.alert('Permission unavailable', 'You can enable reminders later in Settings.'); }
-    finally { setRequesting(false); log.info('Notification step complete'); await next(); }
+    } catch {
+      void logEvent('onb_notification_click', {result: 'unavailable'});
+      Alert.alert('Permission unavailable', 'You can enable reminders later in Settings.');
+    } finally {
+      setRequesting(false);
+      log.info('Notification step complete');
+      await next();
+    }
   };
   return <ScreenShell padded={false}>
     <View style={styles.container}>
@@ -69,7 +83,7 @@ export function NotificationPermissionScreen({navigation}: Props) {
         <InfoRow icon="chart" title="Your progress" detail="Build a habit that lasts." />
       </View>
       <View style={styles.actions}>
-        <Pressable style={styles.secondary} onPress={next}><Text style={styles.secondaryText}>Not Now</Text></Pressable>
+        <Pressable style={styles.secondary} onPress={() => { void logEvent('onb_notification_skip'); void next(); }}><Text style={styles.secondaryText}>Not Now</Text></Pressable>
         <Pressable disabled={requesting} style={[styles.primary, requesting && styles.disabled]} onPress={requestPermission}><PrimaryButtonBackground /><Text style={styles.primaryText}>{requesting ? 'Opening permission…' : 'Enable Reminders'}</Text></Pressable>
       </View>
     </View>

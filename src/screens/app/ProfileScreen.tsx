@@ -36,6 +36,7 @@ import {
 import {loadSurvey} from '../../logic/survey';
 import {loadUserId} from '../../logic/userId';
 import {haptic} from '../../services/feedback';
+import {logEvent} from '../../services/mixpanel';
 import {Icon} from '../../components/Icon';
 import {AppBar, AppBarButton} from '../../components/AppBar';
 import {useAppDispatch} from '../../store/hooks';
@@ -73,6 +74,7 @@ export function ProfileScreen({navigation}: Props) {
   const [draftName, setDraftName] = useState('');
 
   const refresh = useCallback(() => {
+    void logEvent('profile_view');
     loadProfile().then(setProfile).catch(() => undefined);
     loadUserId()
       .then(id => {
@@ -123,6 +125,7 @@ export function ProfileScreen({navigation}: Props) {
   };
 
   const saveName = async () => {
+    void logEvent('profile_name_click');
     Keyboard.dismiss();
     await persist({...profile, name: draftName});
     setEditingName(false);
@@ -133,6 +136,7 @@ export function ProfileScreen({navigation}: Props) {
       {
         text: 'Choose from library',
         onPress: () => {
+          void logEvent('profile_photo_click', {action: 'choose'});
           launchImageLibrary(
             {mediaType: 'photo', quality: 0.8, selectionLimit: 1},
             async response => {
@@ -148,7 +152,10 @@ export function ProfileScreen({navigation}: Props) {
         ? {
             text: 'Remove photo',
             style: 'destructive',
-            onPress: () => persist({...profile, photoUri: null}),
+            onPress: () => {
+              void logEvent('profile_photo_click', {action: 'remove'});
+              persist({...profile, photoUri: null});
+            },
           }
         : undefined,
       {text: 'Cancel', style: 'cancel'},
@@ -157,6 +164,7 @@ export function ProfileScreen({navigation}: Props) {
 
   const copyId = () => {
     if (!userId) return;
+    void logEvent('profile_copyid_click');
     Clipboard.setString(userId);
     haptic('success');
     setCopied(true);
@@ -164,6 +172,7 @@ export function ProfileScreen({navigation}: Props) {
   };
 
   const onRestorePurchases = async () => {
+    void logEvent('profile_restore_click');
     log.info('Restore pressed from profile');
     const result = await dispatch(restorePurchases());
     if (restorePurchases.fulfilled.match(result)) {
@@ -184,6 +193,7 @@ export function ProfileScreen({navigation}: Props) {
   };
 
   const rateUs = () => {
+    void logEvent('rate_us_click');
     Alert.alert(
       'Rate FlashVocab',
       'Thanks for learning with us. Rating opens after App Store listing is live.',
@@ -191,6 +201,7 @@ export function ProfileScreen({navigation}: Props) {
   };
 
   const shareApp = async () => {
+    void logEvent('share_app_clicked');
     try {
       await Share.share({
         message:
@@ -254,7 +265,9 @@ export function ProfileScreen({navigation}: Props) {
 
         <Pressable
           style={styles.paywallCard}
-          onPress={() => open('TrialIntro', {source: 'profile'})}
+          onPress={() => {
+            open('TrialIntro', {source: 'profile'});
+          }}
           accessibilityRole="button"
         >
           <LinearGradient
@@ -281,23 +294,35 @@ export function ProfileScreen({navigation}: Props) {
           <SettingsRow
             icon="Users"
             label="Preferences"
-            onPress={() => open('Preferences')}
+            onPress={() => {
+              void logEvent('profile_settings_click', {item: 'preferences'});
+              open('Preferences');
+            }}
           />
           <SettingsRow
             icon="Globe"
             label="Language"
             value={language}
-            onPress={() => open('Language')}
+            onPress={() => {
+              void logEvent('profile_settings_click', {item: 'language'});
+              open('Language');
+            }}
           />
           <SettingsRow
             icon="Mail"
             label="Contact Us"
-            onPress={() => open('Contact')}
+            onPress={() => {
+              void logEvent('profile_settings_click', {item: 'contact'});
+              open('Contact');
+            }}
           />
           <SettingsRow
             icon="Shield"
             label="Privacy Policy"
-            onPress={() => open('Legal', {doc: 'privacy'})}
+            onPress={() => {
+              void logEvent('profile_settings_click', {item: 'privacy'});
+              open('Legal', {doc: 'privacy'});
+            }}
           />
           <SettingsRow
             icon="RefreshCw"
@@ -308,7 +333,10 @@ export function ProfileScreen({navigation}: Props) {
             icon="FileText"
             label="Terms of Use"
             last
-            onPress={() => open('Legal', {doc: 'terms'})}
+            onPress={() => {
+              void logEvent('profile_settings_click', {item: 'terms'});
+              open('Legal', {doc: 'terms'});
+            }}
           />
         </SettingsGroup>
 

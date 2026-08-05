@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {ScrollView, StyleSheet, Text} from 'react-native';
 
 import {getLegalContent} from '../../../data/contentStore';
 import type {OnboardingStackParamList} from '../../../navigation/OnboardingNavigator';
+import {logEvent} from '../../../services/mixpanel';
 import {colors, spacing} from '../../../theme';
 import {SettingsScreen} from './SettingsChrome';
 
@@ -15,6 +16,10 @@ export function LegalScreen({navigation, route}: Props) {
   const updated = legal.updatedAt
     ? `Last updated · ${legal.updatedAt}`
     : 'Last updated · August 2026';
+
+  useEffect(() => {
+    void logEvent('legal_view', {doc: route.params.doc});
+  }, [route.params.doc]);
 
   return (
     <SettingsScreen title={doc.title} onBack={() => navigation.goBack()}>

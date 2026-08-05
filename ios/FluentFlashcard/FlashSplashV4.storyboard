@@ -18,10 +18,6 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="SplashMark" translatesAutoresizingMaskIntoConstraints="NO" id="Flt-Logo">
                                 <rect key="frame" x="144.5" y="338" width="104" height="104"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius" value="24"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="104" id="Flt-Logo-W"/>
                                     <constraint firstAttribute="height" constant="104" id="Flt-Logo-H"/>
@@ -56,10 +52,6 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.18" green="0.18" blue="0.18" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius" value="2"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="Flt-Track-H"/>
                                     <constraint firstAttribute="width" constant="200" id="Flt-Track-W"/>

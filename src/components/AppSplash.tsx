@@ -3,7 +3,8 @@ import {Animated, Easing, Image, StyleSheet, Text, View} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 import {bootstrapApp, type BootstrapState} from '../logic/bootstrap';
-import {initMixpanel, sendTestEvent} from '../services/mixpanel';
+import {requestTrackingPermission} from '../logic/trackingPermission';
+import {initMixpanel, logEvent, sendTestEvent} from '../services/mixpanel';
 import {useAppDispatch} from '../store/hooks';
 import {initPurchases} from '../store/purchasesSlice';
 import {createLogger} from '../utils/logger';
@@ -28,6 +29,11 @@ export function AppSplash({children}: Props) {
   const dispatch = useAppDispatch();
   const [bootstrap, setBootstrap] = useState<BootstrapState | null>(null);
   const loader = useRef(new Animated.Value(0)).current;
+  const splashStartedAt = useRef(Date.now()).current;
+
+  useEffect(() => {
+    void logEvent('splash_view');
+  }, []);
 
   useEffect(() => {
     const anim = Animated.loop(
@@ -46,25 +52,48 @@ export function AppSplash({children}: Props) {
     let cancelled = false;
 
     (async () => {
+      // ATT before analytics so Mixpanel can attach IDFA when the user allows it.
+      // Brief delay so the splash UI is on screen (Apple rejects pre-UI prompts).
+      await new Promise<void>(resolve => setTimeout(resolve, 400));
+      if (cancelled) return;
+      const tracking = await requestTrackingPermission();
+      log.info('ATT complete', {tracking});
+      if (cancelled) return;
+
+      // Mixpanel next — don't wait on Firebase or the splash delay, otherwise
+      // "Verify Connection" stays empty when bootstrap is slow / stuck.
+      try {
+        log.info('Mixpanel early init');
+        const early = await initMixpanel();
+        if (early && !cancelled) {
+          await sendTestEvent();
+          log.success('Mixpanel early smoke event sent');
+        }
+      } catch (error) {
+        log.warn('Mixpanel early init failed (continuing)', {
+          message: error instanceof Error ? error.message : String(error),
+        });
+      }
+      if (cancelled) return;
+
       log.info(`Waiting ${REQUEST_DELAY_MS}ms before bootstrap…`);
       await new Promise<void>(resolve => setTimeout(resolve, REQUEST_DELAY_MS));
       if (cancelled) return;
 
-      log.info('Starting Firebase bootstrap + RevenueCat + Mixpanel init');
+      log.info('Starting Firebase bootstrap + RevenueCat + Mixpanel identify');
       const state = await bootstrapApp();
       if (cancelled) return;
 
-      // Mixpanel distinct_id = Firebase Auth UID (deviceId).
+      // Attach Firebase UID once we have it; smoke event already fired above.
       await initMixpanel(state.deviceId)
         .then(async mixpanel => {
           if (!mixpanel) return;
           log.success('Mixpanel identified with Firebase UID', {
             distinctId: state.deviceId,
           });
-          await sendTestEvent();
         })
         .catch(error => {
-          log.warn('Mixpanel init failed on splash (continuing)', {
+          log.warn('Mixpanel identify failed on splash (continuing)', {
             message: error instanceof Error ? error.message : String(error),
           });
         });
@@ -89,6 +118,13 @@ export function AppSplash({children}: Props) {
         log.success('Splash complete — revealing app', {
           deviceId: state.deviceId,
           onboardingComplete: state.onboardingComplete,
+        });
+        void logEvent('splash_complete', {
+          content_source: state.contentSource,
+          onboarding_complete: state.onboardingComplete,
+          is_new_user: state.isNewUser,
+          fallback_used: false,
+          duration_ms: Date.now() - splashStartedAt,
         });
         setBootstrap(state);
       }
@@ -124,6 +160,13 @@ export function AppSplash({children}: Props) {
           });
         });
       if (!cancelled) {
+        void logEvent('splash_complete', {
+          content_source: 'local',
+          onboarding_complete: onboardingComplete,
+          is_new_user: false,
+          fallback_used: true,
+          duration_ms: Date.now() - splashStartedAt,
+        });
         setBootstrap({
           deviceId,
           user: null,

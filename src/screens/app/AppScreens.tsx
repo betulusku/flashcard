@@ -49,6 +49,7 @@ import {
   removeSavedWordToken,
 } from '../../logic/savedWords';
 import {findWordsByTokens} from '../../logic/wordCollections';
+import {logEvent} from '../../services/mixpanel';
 
 const words = [
   {
@@ -169,6 +170,7 @@ type Props = NativeStackScreenProps<OnboardingStackParamList, 'Study'>;
 function useConfirmLeave(
   navigation: NativeStackNavigationProp<OnboardingStackParamList>,
   message: string,
+  onLeave?: () => void,
 ) {
   const allowLeave = useRef(false);
   useEffect(() => {
@@ -183,6 +185,7 @@ function useConfirmLeave(
           text: 'Çık',
           style: 'destructive',
           onPress: () => {
+            onLeave?.();
             allowLeave.current = true;
             navigation.dispatch(e.data.action);
           },
@@ -190,7 +193,7 @@ function useConfirmLeave(
       ]);
     });
     return sub;
-  }, [message, navigation]);
+  }, [message, navigation, onLeave]);
   const leaveNow = () => {
     allowLeave.current = true;
     navigation.goBack();
@@ -302,19 +305,36 @@ export function StudyScreen({ navigation, route }: Props) {
   const transition = useRef(new Animated.Value(0)).current;
   const knownIdsRef = useRef<string[]>([]);
   const unknownIdsRef = useRef<string[]>([]);
+  const studyStartLoggedRef = useRef(false);
   const autoSpeak = useAutoSpeak();
   useConfirmLeave(
     navigation,
     'Bu pratikten çıkmak istediğine emin misin? İlerlemen kaydedildi.',
+    () =>
+      void logEvent('study_exit_click', {
+        reviewed_count: reviewed,
+        remaining_count: queue.length,
+      }),
   );
   const word = activeWords.find(item => item.en === queue[0]) ?? activeWords[0];
   const requestedIds = route.params?.ids;
   useEffect(() => {
+    const logStudyStart = (poolSize: number) => {
+      if (studyStartLoggedRef.current) return;
+      studyStartLoggedRef.current = true;
+      const source = requestedIds?.length
+        ? 'wordIds'
+        : route.params?.pool === 'myWords'
+          ? 'myWords'
+          : 'daily';
+      void logEvent('study_start', {source, pool_size: poolSize});
+    };
     const start = (next: ReturnType<typeof toCard>[]) => {
       if (next.length) {
         setActiveWords(next);
         setQueue(next.map(item => item.en));
       }
+      logStudyStart(next.length);
       setReady(true);
     };
     if (requestedIds?.length) {
@@ -324,7 +344,10 @@ export function StudyScreen({ navigation, route }: Props) {
     if (route.params?.pool === 'myWords')
       loadSavedWordTokens()
         .then(tokens => start(poolFromTokens(tokens).map(toCard)))
-        .catch(() => setReady(true));
+        .catch(() => {
+          logStudyStart(0);
+          setReady(true);
+        });
     else
       Promise.all([loadSurvey(), loadLearningState()])
         .then(async ([answers, learning]) => {
@@ -341,7 +364,10 @@ export function StudyScreen({ navigation, route }: Props) {
             ),
           );
         })
-        .catch(() => setReady(true));
+        .catch(() => {
+          logStudyStart(0);
+          setReady(true);
+        });
   }, [requestedIds, route.params?.pool]);
   // Each card that arrives is pronounced once, so the learner hears the word
   // before deciding whether they know it.
@@ -356,6 +382,7 @@ export function StudyScreen({ navigation, route }: Props) {
       .catch(() => undefined);
   }, [word.en, word.id]);
   const flip = () => {
+    void logEvent('study_card_click', {word_id: word.id});
     haptic('impact');
     Animated.sequence([
       Animated.timing(transition, {
@@ -374,6 +401,11 @@ export function StudyScreen({ navigation, route }: Props) {
     setRevealed(value => !value);
   };
   const next = async (isKnown: boolean) => {
+    void logEvent('study_word_click', {
+      word_id: word.id,
+      known: isKnown,
+      reviewed_count: reviewed,
+    });
     await syncPractice(word.id, isKnown);
     const nextQueue = applyAnswer(queue);
     if (isKnown) {
@@ -389,9 +421,17 @@ export function StudyScreen({ navigation, route }: Props) {
     if (!nextQueue.length) {
       const knownIds = knownIdsRef.current;
       const unknownIds = unknownIdsRef.current;
+      const finalKnown = isKnown ? known + 1 : known;
+      const finalTotal = reviewed + 1;
+      void logEvent('study_complete', {
+        known: finalKnown,
+        total: finalTotal,
+        known_ids_count: knownIds.length,
+        unknown_ids_count: unknownIds.length,
+      });
       navigation.replace('StudyComplete', {
-        known: isKnown ? known + 1 : known,
-        total: reviewed + 1,
+        known: finalKnown,
+        total: finalTotal,
         knownIds,
         unknownIds,
         sessionIds: [...knownIds, ...unknownIds],
@@ -400,7 +440,9 @@ export function StudyScreen({ navigation, route }: Props) {
   };
   const favorite = async () => {
     const nextState = await syncToggleFavorite(word.id);
-    setIsFavorite(nextState.progress[word.id].favorite);
+    const favorite = nextState.progress[word.id].favorite;
+    void logEvent('study_favorite_click', {word_id: word.id, favorite});
+    setIsFavorite(favorite);
     haptic('selection');
   };
   return (
@@ -424,8 +466,22 @@ export function StudyScreen({ navigation, route }: Props) {
                 fill={isFavorite ? '#FFD66B' : 'none'}
               />
             </AppBarButton>
-            <SpeakButton onPress={() => speak(word.en)} />
-            <AutoSpeakToggle on={autoSpeak.on} onPress={autoSpeak.toggle} />
+            <SpeakButton
+              onPress={() => {
+                void logEvent('speak_click', {screen: 'study', type: 'word'});
+                speak(word.en);
+              }}
+            />
+            <AutoSpeakToggle
+              on={autoSpeak.on}
+              onPress={() => {
+                void logEvent('autospeak_toggle_click', {
+                  screen: 'study',
+                  state: autoSpeak.on ? 'off' : 'on',
+                });
+                autoSpeak.toggle();
+              }}
+            />
           </>
         }
       />
@@ -471,7 +527,10 @@ export function StudyScreen({ navigation, route }: Props) {
               </CopyableText>
               <ExampleLine
                 text={word.exampleTr ?? word.example}
-                onSpeak={() => speak(word.example)}
+                onSpeak={() => {
+                  void logEvent('speak_click', {screen: 'study', type: 'sentence'});
+                  speak(word.example);
+                }}
               />
               <Pressable onPress={flip}>
                 <Text style={styles.tapHint}>
@@ -495,7 +554,13 @@ export function StudyScreen({ navigation, route }: Props) {
                   SAY IT LIKE THIS IN AN INTERVIEW
                 </Text>
               )}
-              <ExampleLine text={word.example} onSpeak={() => speak(word.example)} />
+              <ExampleLine
+                text={word.example}
+                onSpeak={() => {
+                  void logEvent('speak_click', {screen: 'study', type: 'sentence'});
+                  speak(word.example);
+                }}
+              />
               <Pressable onPress={flip}>
                 <Text style={styles.tapHint}>Tap here to reveal Turkish</Text>
               </Pressable>
@@ -538,12 +603,14 @@ export function StudyCompleteScreen({
   }, []);
 
   const goHome = () => {
+    void logEvent('study_test_prompt_click', {accepted: false});
     stopSound();
     setAskTest(false);
     navigation.navigate('Home');
   };
 
   const goTest = () => {
+    void logEvent('study_test_prompt_click', {accepted: true});
     stopSound();
     setAskTest(false);
     navigation.replace('Test', sessionIds.length ? {ids: sessionIds} : undefined);
@@ -714,6 +781,7 @@ export function TestScreen({
   const timers = useRef<ReturnType<typeof setTimeout>[]>([]);
   const wrongIdsRef = useRef<string[]>([]);
   const pendingScoreRef = useRef(0);
+  const testStartLoggedRef = useRef(false);
   const autoSpeak = useAutoSpeak();
   const {leaveNow} = useConfirmLeave(
     navigation,
@@ -736,6 +804,25 @@ export function TestScreen({
       .catch(() => setPool(shuffleTest(getLibrary())));
   }, [requestedIds, requestedPool]);
 
+  useEffect(() => {
+    if (!pool || testStartLoggedRef.current) return;
+    testStartLoggedRef.current = true;
+    const source = requestedIds?.length
+      ? 'wordIds'
+      : requestedPool === 'myWords'
+        ? 'myWords'
+        : 'fullLibrary';
+    void logEvent('test_start', {source, pool_size: pool.length});
+  }, [pool, requestedIds, requestedPool]);
+
+  useEffect(() => {
+    if (!checkpoint) return;
+    void logEvent('test_checkpoint_view', {
+      score_so_far: score,
+      total_so_far: index,
+    });
+  }, [checkpoint, score, index]);
+
   const testWords = useMemo(
     () => (pool ? shuffleTest(pool).slice(0, testLength) : []),
     [pool],
@@ -754,13 +841,19 @@ export function TestScreen({
     if (autoSpeak.enabled && promptWord) speak(promptWord);
   }, [autoSpeak.enabled, promptWord, index]);
 
-  const finish = (finalScore: number) =>
+  const finish = (finalScore: number) => {
+    void logEvent('test_complete', {
+      score: finalScore,
+      total: testWords.length,
+      wrong_count: wrongIdsRef.current.length,
+    });
     navigation.replace('TestComplete', {
       score: finalScore,
       total: testWords.length,
       wrongIds: wrongIdsRef.current,
       sessionIds: testWords.map(item => item.id),
     });
+  };
 
   const after = (run: () => void, delay: number) => {
     timers.current.push(setTimeout(run, delay));
@@ -794,6 +887,12 @@ export function TestScreen({
     if (!currentQuestion || selected || checkpoint) return;
     const {word: current} = currentQuestion;
     const correct = answer.id === current.id;
+    void logEvent('test_answer_click', {
+      word_id: current.id,
+      kind: currentQuestion.kind,
+      correct,
+      score_so_far: score + (correct ? 1 : 0),
+    });
     setSelected(answer.id);
     playSound(correct ? 'correct' : 'wrong');
     haptic(correct ? 'success' : 'impact');
@@ -834,8 +933,14 @@ export function TestScreen({
   };
 
   const continueAfterCheckpoint = () => {
+    void logEvent('test_checkpoint_click', {continued: true});
     setCheckpoint(false);
     if (index >= testWords.length) finish(score);
+  };
+
+  const exitAfterCheckpoint = () => {
+    void logEvent('test_checkpoint_click', {continued: false});
+    leaveNow();
   };
 
   if (!currentQuestion)
@@ -874,8 +979,22 @@ export function TestScreen({
         }
         right={
           <>
-            <SpeakButton onPress={() => speak(word.en)} />
-            <AutoSpeakToggle on={autoSpeak.on} onPress={autoSpeak.toggle} />
+            <SpeakButton
+              onPress={() => {
+                void logEvent('speak_click', {screen: 'test', type: 'word'});
+                speak(word.en);
+              }}
+            />
+            <AutoSpeakToggle
+              on={autoSpeak.on}
+              onPress={() => {
+                void logEvent('autospeak_toggle_click', {
+                  screen: 'test',
+                  state: autoSpeak.on ? 'off' : 'on',
+                });
+                autoSpeak.toggle();
+              }}
+            />
           </>
         }
       />
@@ -889,7 +1008,11 @@ export function TestScreen({
           <Pressable
             onPress={() => {
               pauseAutoAdvance();
-              setShowExample(value => !value);
+              setShowExample(value => {
+                const next = !value;
+                void logEvent('test_example_toggle_click');
+                return next;
+              });
             }}
             accessibilityRole="button"
             accessibilityLabel="Show example sentence"
@@ -921,7 +1044,12 @@ export function TestScreen({
               >
                 “{word.example}”
               </CopyableText>
-              <SentenceSpeakButton onPress={() => speak(word.example)} />
+              <SentenceSpeakButton
+                onPress={() => {
+                  void logEvent('speak_click', {screen: 'test', type: 'sentence'});
+                  speak(word.example);
+                }}
+              />
             </View>
           )}
         </View>
@@ -1015,7 +1143,10 @@ export function TestScreen({
           <View style={styles.listActions}>
             <Button
               title="Devam"
-              onPress={() => advance(pendingScoreRef.current)}
+              onPress={() => {
+                void logEvent('test_resume_click');
+                advance(pendingScoreRef.current);
+              }}
             />
           </View>
         )}
@@ -1037,7 +1168,7 @@ export function TestScreen({
             questions.
           </Text>
           <View style={styles.listActions}>
-            <Button title="Exit test" quiet onPress={leaveNow} />
+            <Button title="Exit test" quiet onPress={exitAfterCheckpoint} />
             <Button title="Keep going" onPress={continueAfterCheckpoint} />
           </View>
         </View>
@@ -1060,7 +1191,13 @@ export function TestScreen({
               Tap the question whenever you want to see the word used in a
               sentence.
             </Text>
-            <Button title="Start test" onPress={() => setShowGuide(false)} />
+            <Button
+              title="Start test"
+              onPress={() => {
+                void logEvent('test_guide_start_click');
+                setShowGuide(false);
+              }}
+            />
           </View>
         </View>
       </Modal>
@@ -1081,18 +1218,36 @@ export function TestCompleteScreen({
   }, [cheered]);
 
   const goHome = () => {
+    void logEvent('test_complete_click', {
+      action: 'go_home',
+      score,
+      total,
+      wrong_count: wrongIds.length,
+    });
     stopSound();
     setAskNext(false);
     navigation.navigate('Home');
   };
 
   const retake = () => {
+    void logEvent('test_complete_click', {
+      action: 'retake',
+      score,
+      total,
+      wrong_count: wrongIds.length,
+    });
     stopSound();
     setAskNext(false);
     navigation.replace('Test', sessionIds.length ? {ids: sessionIds} : undefined);
   };
 
   const learnMissed = () => {
+    void logEvent('test_complete_click', {
+      action: 'learn_missed',
+      score,
+      total,
+      wrong_count: wrongIds.length,
+    });
     stopSound();
     setAskNext(false);
     navigation.replace('Study', {ids: wrongIds});
@@ -1164,6 +1319,7 @@ export function SearchScreen() {
 
   useFocusEffect(
     React.useCallback(() => {
+      void logEvent('search_view');
       const timer = setTimeout(() => inputRef.current?.focus(), 220);
       return () => {
         clearTimeout(timer);
@@ -1188,12 +1344,27 @@ export function SearchScreen() {
         word.pos.toLocaleLowerCase('tr').includes(normalizedQuery),
     )
     .slice(0, 50);
+
+  useEffect(() => {
+    const trimmed = query.trim();
+    if (!trimmed) return;
+    const timer = setTimeout(() => {
+      void logEvent('search_started', {
+        query_text: trimmed,
+        result_count: list.length,
+      });
+    }, 400);
+    return () => clearTimeout(timer);
+  }, [query, list.length]);
+
   const wordIsSaved = (word: LibraryWord) =>
     saved.includes(word.id) || saved.includes(word.en);
   const toggleSaved = async (word: LibraryWord) => {
-    const next = wordIsSaved(word)
-      ? await removeSavedWordToken(word)
-      : await addSavedWordToken(word);
+    const willSave = !wordIsSaved(word);
+    void logEvent('search_save_click', {word_id: word.id, saved: willSave});
+    const next = willSave
+      ? await addSavedWordToken(word)
+      : await removeSavedWordToken(word);
     setSaved(next);
     haptic('selection');
   };
@@ -1328,6 +1499,9 @@ export function GrammarScreen({
   route,
 }: NativeStackScreenProps<OnboardingStackParamList, 'Grammar'>) {
   const lesson = getGrammarLesson(route.params.lesson);
+  useEffect(() => {
+    void logEvent('grammar_view', {lesson: route.params.lesson});
+  }, [route.params.lesson]);
   return (
     <ScreenShell>
       <AppBar

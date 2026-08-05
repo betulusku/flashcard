@@ -14,6 +14,7 @@ import LottieView from 'lottie-react-native';
 
 import {Icon} from '../../components/Icon';
 import type {OnboardingStackParamList} from '../../navigation/OnboardingNavigator';
+import {logEvent} from '../../services/mixpanel';
 
 type Props = NativeStackScreenProps<OnboardingStackParamList, 'TrialIntro'>;
 
@@ -31,6 +32,12 @@ export function TrialIntroScreen({navigation, route}: Props) {
       .then(setReduceMotion)
       .catch(() => undefined);
   }, []);
+
+  useEffect(() => {
+    void logEvent('onb_trial_view', {
+      destination: route.params?.destination === 'OnboardingPaywall' ? 'OnboardingPaywall' : 'Paywall',
+    });
+  }, [route.params?.destination]);
 
   useEffect(() => {
     if (reduceMotion) {

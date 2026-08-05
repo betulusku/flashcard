@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {Image, Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {OnboardingStackParamList} from '../../navigation/OnboardingNavigator';
+import {logEvent} from '../../services/mixpanel';
 import {colors, radius, spacing, typography} from '../../theme';
 import {ScreenShell} from './ScreenShell';
 
@@ -11,6 +12,9 @@ const wanderArtwork = require('../../assets/welcome-wander.png');
 
 export function WelcomeScreen({navigation}: Props) {
   const {width} = useWindowDimensions();
+  useEffect(() => {
+    void logEvent('onb_welcome_view');
+  }, []);
   return <ScreenShell tone="welcome" padded={false}><ScrollView style={styles.container} contentContainerStyle={styles.content} bounces={false} showsVerticalScrollIndicator={false}>
     <View style={styles.artStage}>
       <Image accessibilityIgnoresInvertColors source={wanderArtwork} resizeMode="contain" style={[styles.artwork, {width, height: width * 861 / 688}]} />
@@ -21,7 +25,7 @@ export function WelcomeScreen({navigation}: Props) {
       <Text style={styles.title}>Find a way{`\n`}of saying it.</Text>
       <Text style={styles.body}>Language that moves at your pace and sounds like you when it matters.</Text>
     </View>
-    <Pressable style={styles.button} onPress={() => navigation.navigate('Survey')}><Text style={styles.buttonText}>Get started</Text></Pressable>
+    <Pressable style={styles.button} onPress={() => { void logEvent('onb_welcome_click'); navigation.navigate('Survey'); }}><Text style={styles.buttonText}>Get started</Text></Pressable>
   </ScrollView></ScreenShell>;
 }
 

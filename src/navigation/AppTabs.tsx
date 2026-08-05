@@ -7,6 +7,7 @@ import {SearchScreen} from '../screens/app/AppScreens';
 import {MyWordListScreen} from '../screens/app/MyWordListScreen';
 import {ProfileScreen} from '../screens/app/ProfileScreen';
 import {colors} from '../theme';
+import {logEvent} from '../services/mixpanel';
 
 export type AppTabParamList = {
   HomeTab: undefined;
@@ -38,23 +39,27 @@ export function AppTabs({answers}: {answers: SurveyAnswers}) {
     }}>
     <Tab.Screen
       name="HomeTab"
-      options={{title: 'Home', tabBarIcon: sfIcon('house', 'house.fill')}}>
+      options={{title: 'Home', tabBarIcon: sfIcon('house', 'house.fill')}}
+      listeners={{tabPress: () => void logEvent('tab_click', {tab: 'home'})}}>
       {props => <HomeScreen {...(props as any)} answers={answers} />}
     </Tab.Screen>
     <Tab.Screen
       name="SearchTab"
       component={SearchScreen as any}
       options={{title: 'Search', tabBarIcon: sfIcon('magnifyingglass', 'magnifyingglass')}}
+      listeners={{tabPress: () => void logEvent('tab_click', {tab: 'search'})}}
     />
     <Tab.Screen
       name="WordsTab"
       component={MyWordListScreen as any}
       options={{title: 'My words', tabBarIcon: sfIcon('bookmark', 'bookmark.fill')}}
+      listeners={{tabPress: () => void logEvent('tab_click', {tab: 'words'})}}
     />
     <Tab.Screen
       name="ProfileTab"
       component={ProfileScreen as any}
       options={{title: 'Profile', tabBarIcon: sfIcon('person', 'person.fill')}}
+      listeners={{tabPress: () => void logEvent('tab_click', {tab: 'profile'})}}
     />
   </Tab.Navigator>;
 }

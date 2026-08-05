@@ -27,6 +27,7 @@ target 'FluentFlashcard' do
   config = use_native_modules!
 
   setup_permissions([
+    'AppTrackingTransparency',
     'Notifications',
   ])
 
@@ -43,5 +44,24 @@ target 'FluentFlashcard' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+
+    # use_frameworks! :static breaks RNPermissions' `#if __has_include("Handler.h")`
+    # unless the permission subfolders are on the header search path.
+    %w[debug release].each do |config_name|
+      xcconfig_path = File.join(
+        __dir__,
+        'Pods/Target Support Files/RNPermissions',
+        "RNPermissions.#{config_name}.xcconfig",
+      )
+      next unless File.exist?(xcconfig_path)
+      contents = File.read(xcconfig_path)
+      addition = ' "${PODS_TARGET_SRCROOT}/ios" "${PODS_TARGET_SRCROOT}/ios/AppTrackingTransparency" "${PODS_TARGET_SRCROOT}/ios/Notifications"'
+      next if contents.include?('ios/AppTrackingTransparency')
+      unless contents.sub!(/^(HEADER_SEARCH_PATHS = .*)$/, "\\1#{addition}")
+        contents << "\nHEADER_SEARCH_PATHS = $(inherited)#{addition}\n"
+      end
+      File.write(xcconfig_path, contents)
+      Pod::UI.puts "RNPermissions: patched HEADER_SEARCH_PATHS (#{config_name})".green
+    end
   end
 end

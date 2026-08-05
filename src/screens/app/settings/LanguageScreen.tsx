@@ -10,6 +10,7 @@ import {
   saveAppLanguage,
 } from '../../../logic/settings';
 import {haptic} from '../../../services/feedback';
+import {logEvent} from '../../../services/mixpanel';
 import {Icon} from '../../../components/Icon';
 import {colors, radius, spacing} from '../../../theme';
 import {SettingsScreen} from './SettingsChrome';
@@ -22,10 +23,12 @@ export function LanguageScreen({navigation}: Props) {
   const [language, setLanguage] = useState<AppLanguage>('en');
 
   useEffect(() => {
+    void logEvent('language_view');
     loadAppLanguage().then(setLanguage).catch(() => undefined);
   }, []);
 
   const select = async (next: AppLanguage) => {
+    void logEvent('language_click', {language: next});
     setLanguage(next);
     haptic('selection');
     await saveAppLanguage(next);

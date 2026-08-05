@@ -1,15 +1,22 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
 
 import type {OnboardingStackParamList} from '../../navigation/OnboardingNavigator';
+import {logEvent} from '../../services/mixpanel';
 import {colors, radius, spacing} from '../../theme';
 import {FluentLockup, PrimaryButtonBackground} from './OnboardingPrimitives';
 import {ScreenShell} from './ScreenShell';
 
 type Props = NativeStackScreenProps<OnboardingStackParamList, 'HelpUsGrow'>;
 export function HelpUsGrowScreen({navigation}: Props) {
-  const continueToTrial = () => navigation.replace('TrialIntro', {destination: 'OnboardingPaywall'});
+  useEffect(() => {
+    void logEvent('onb_helpus_view');
+  }, []);
+  const continueToTrial = () => {
+    void logEvent('onb_helpus_click');
+    navigation.replace('TrialIntro', {destination: 'OnboardingPaywall'});
+  };
 
   return <ScreenShell padded={false}>
     <View style={styles.container}>

@@ -26,6 +26,7 @@ import {
   setSelectedPlan,
 } from '../../store/purchasesSlice';
 import type {SurveyAnswers} from '../../types/onboarding';
+import {logEvent} from '../../services/mixpanel';
 import {colors, radius, spacing} from '../../theme';
 import {createLogger} from '../../utils/logger';
 import {ScreenShell} from './ScreenShell';
@@ -53,6 +54,8 @@ export function PaywallScreen({navigation, route}: Props) {
   const selected = plans.find(p => p.plan === activePlan);
 
   const fromProfile = route.params?.source === 'profile';
+  const location = fromProfile ? 'profile' : route.params?.source === 'gate' ? 'splash' : 'onboarding';
+  const type = isOnboardingPaywall ? 'onboarding' : 'common';
   const closeOpacity = useRef(new Animated.Value(inReview ? 1 : 0)).current;
   const [closeVisible, setCloseVisible] = useState(inReview);
   const ctaScale = useRef(new Animated.Value(1)).current;
@@ -61,6 +64,10 @@ export function PaywallScreen({navigation, route}: Props) {
   useEffect(() => {
     dispatch(setSelectedPlan('weekly'));
   }, [dispatch, isOnboardingPaywall]);
+
+  useEffect(() => {
+    void logEvent('paywall_view', {type, location});
+  }, []);
 
   useEffect(() => {
     if (inReview) {
@@ -120,6 +127,7 @@ export function PaywallScreen({navigation, route}: Props) {
 
   const onClose = () => {
     log.info('Close pressed', {fromProfile, inReview});
+    void logEvent('paywall_close_click', {location, in_review: inReview});
     if (fromProfile) {
       navigation.goBack();
       return;
@@ -128,6 +136,13 @@ export function PaywallScreen({navigation, route}: Props) {
   };
 
   const onPurchase = async () => {
+    void logEvent('paywall_purchase_click', {
+      plan: activePlan,
+      product_id: selected?.productId ?? null,
+      package_identifier: selected?.packageIdentifier ?? null,
+      location,
+      already_premium: isPremium,
+    });
     log.info('CTA pressed', {
       selectedPlan: activePlan,
       isPremium,
@@ -157,6 +172,11 @@ export function PaywallScreen({navigation, route}: Props) {
     if (purchaseSelectedPlan.fulfilled.match(result)) {
       if (result.payload.isPremium) {
         log.success('Purchase unlocked Pro');
+        void logEvent('paywall_purchase_success', {
+          plan: activePlan,
+          product_id: selected.productId ?? null,
+          location,
+        });
         finish();
         return;
       }
@@ -168,28 +188,38 @@ export function PaywallScreen({navigation, route}: Props) {
     const payload = result.payload as {cancelled?: boolean; message?: string} | undefined;
     if (payload?.cancelled) {
       log.warn('User cancelled purchase sheet');
+      void logEvent('paywall_purchase_cancel', {plan: activePlan, location});
       return;
     }
     log.error('Purchase UI failed', payload);
+    void logEvent('paywall_purchase_fail', {
+      error_message: payload?.message ?? 'unknown',
+      plan: activePlan,
+      location,
+    });
     Alert.alert('Purchase failed', payload?.message ?? 'Please try again.');
   };
 
   const onRestore = async () => {
+    void logEvent('paywall_restore_click', {location});
     log.info('Restore pressed');
     const result = await dispatch(restorePurchases());
     if (restorePurchases.fulfilled.match(result)) {
       if (result.payload.isPremium) {
         log.success('Restore unlocked Pro');
+        void logEvent('paywall_restore_result', {result: 'success', location});
         Alert.alert('Restored', 'Your FlashVocab Pro access has been restored.', [
           {text: 'OK', onPress: finish},
         ]);
         return;
       }
       log.warn('Restore found no active entitlement');
+      void logEvent('paywall_restore_result', {result: 'no_entitlement', location});
       Alert.alert('No purchases found', 'We could not find an active subscription for this Apple ID.');
       return;
     }
     log.error('Restore UI failed', result.payload);
+    void logEvent('paywall_restore_result', {result: 'error', location});
     Alert.alert('Restore failed', (result.payload as string) ?? 'Please try again.');
   };
 
@@ -202,7 +232,7 @@ export function PaywallScreen({navigation, route}: Props) {
           <Animated.View style={{opacity: closeOpacity}} pointerEvents={closeVisible ? 'auto' : 'none'}>
             <AppBarButton onPress={onClose} accessibilityLabel="Close"><Icon.Close color={colors.muted} /></AppBarButton>
           </Animated.View>
-          <AppBarButton onPress={() => setInfoVisible(true)} accessibilityLabel="Subscription information"><InfoIcon /></AppBarButton>
+          <AppBarButton onPress={() => { void logEvent('paywall_help_click'); setInfoVisible(true); }} accessibilityLabel="Subscription information"><InfoIcon /></AppBarButton>
         </View>
 
         {isOnboardingPaywall ? (
@@ -250,11 +280,11 @@ export function PaywallScreen({navigation, route}: Props) {
               <CommonFeatureRow icon="cloud" title="Learn anywhere" detail="Offline access on all devices" />
             </View>
             <View style={styles.planOptions}>
-              <Pressable style={[styles.planOption, activePlan === 'weekly' && styles.planOptionSelected]} onPress={() => dispatch(setSelectedPlan('weekly'))}>
+              <Pressable style={[styles.planOption, activePlan === 'weekly' && styles.planOptionSelected]} onPress={() => { void logEvent('paywall_plan_click', {plan: 'weekly', price_string: plans.find(p => p.plan === 'weekly')?.priceString ?? null}); dispatch(setSelectedPlan('weekly')); }}>
                 <View><Text style={[styles.planTitle, activePlan === 'weekly' && styles.planTitleSelected]}>1-WEEK TRIAL</Text><Text style={styles.planDetail}>Try all Premium features</Text></View>
                 <View style={styles.planPriceWrap}><Text style={styles.planPrice}>Then $9.99{`\n`}per week</Text><View style={[styles.radio, activePlan === 'weekly' && styles.radioSelected]}>{activePlan === 'weekly' && <Icon.Check size={18} color={colors.primaryText} />}</View></View>
               </Pressable>
-              <Pressable style={[styles.planOption, activePlan === 'yearly' && styles.planOptionSelected]} onPress={() => dispatch(setSelectedPlan('yearly'))}>
+              <Pressable style={[styles.planOption, activePlan === 'yearly' && styles.planOptionSelected]} onPress={() => { void logEvent('paywall_plan_click', {plan: 'yearly', price_string: yearly?.priceString ?? null}); dispatch(setSelectedPlan('yearly')); }}>
                 <View><View style={styles.planTitleRow}><Text style={[styles.planTitle, activePlan === 'yearly' && styles.planTitleSelected]}>YEARLY ACCESS</Text><Text style={styles.bestValue}>BEST VALUE</Text></View><Text style={styles.planDetail}>{yearly?.priceString ?? '$39.99'} per year</Text></View>
                 <View style={styles.planPriceWrap}><Text style={styles.planPrice}>$0.77{`\n`}per week</Text><View style={[styles.radio, activePlan === 'yearly' && styles.radioSelected]}>{activePlan === 'yearly' && <Icon.Check size={18} color={colors.primaryText} />}</View></View>
               </Pressable>
@@ -276,8 +306,8 @@ export function PaywallScreen({navigation, route}: Props) {
           <Pressable style={styles.infoPanel} onPress={() => undefined}>
             <View style={styles.infoPanelHeader}><Text style={styles.infoPanelTitle}>Subscription information</Text><Pressable onPress={() => setInfoVisible(false)} hitSlop={12}><Icon.Close color={colors.text} /></Pressable></View>
             <Pressable style={styles.infoAction} disabled={busy} onPress={() => { setInfoVisible(false); onRestore(); }}><Text style={styles.infoActionText}>{flowStatus === 'restoring' ? 'Restoring…' : 'Restore Purchases'}</Text></Pressable>
-            <Pressable style={styles.infoAction} onPress={() => { setInfoVisible(false); navigation.navigate('Legal', {doc: 'terms'}); }}><Text style={styles.infoActionText}>Terms of Use</Text></Pressable>
-            <Pressable style={styles.infoAction} onPress={() => { setInfoVisible(false); navigation.navigate('Legal', {doc: 'privacy'}); }}><Text style={styles.infoActionText}>Privacy Policy</Text></Pressable>
+            <Pressable style={styles.infoAction} onPress={() => { void logEvent('paywall_legal_click', {doc: 'terms'}); setInfoVisible(false); navigation.navigate('Legal', {doc: 'terms'}); }}><Text style={styles.infoActionText}>Terms of Use</Text></Pressable>
+            <Pressable style={styles.infoAction} onPress={() => { void logEvent('paywall_legal_click', {doc: 'privacy'}); setInfoVisible(false); navigation.navigate('Legal', {doc: 'privacy'}); }}><Text style={styles.infoActionText}>Privacy Policy</Text></Pressable>
           </Pressable>
         </Pressable>
       </Modal>

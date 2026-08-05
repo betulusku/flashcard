@@ -16,6 +16,7 @@ import {AppBarButton} from '../../components/AppBar';
 import {Icon} from '../../components/Icon';
 import {dateKey, greeting, recentWeek} from '../../logic/dates';
 import {collectionMeta, collectWords, type CollectionId} from '../../logic/wordCollections';
+import {logEvent} from '../../services/mixpanel';
 
 type Props = NativeStackScreenProps<OnboardingStackParamList, 'Home'> & {answers: SurveyAnswers};
 type HomeStats = {today: number; week: number; learning: number; memorized: number; favorites: number; practiceDays: string[]};
@@ -66,10 +67,17 @@ export function HomeScreen({answers, navigation}: Props) {
 
   useEffect(() => {
     refresh();
-    return navigation.addListener('focus', refresh);
+    void logEvent('home_view');
+    return navigation.addListener('focus', () => {
+      refresh();
+      void logEvent('home_view');
+    });
   }, [navigation]);
 
-  const openCollection = (collection: CollectionId) => navigation.navigate('Collection', {collection});
+  const openCollection = (collection: CollectionId) => {
+    void logEvent('home_collection_click', {collection});
+    navigation.navigate('Collection', {collection});
+  };
 
   return <ScreenShell tone="blue" padded={false}>
     <View style={styles.screen}>
@@ -87,7 +95,10 @@ export function HomeScreen({answers, navigation}: Props) {
         </Text>
         <AppBarButton
           glass
-          onPress={() => navigation.navigate('Inbox')}
+          onPress={() => {
+            void logEvent('home_bell_click');
+            navigation.navigate('Inbox');
+          }}
           accessibilityLabel="Notifications"
         >
           <Icon.Bell color="#F8FCFF" />
@@ -120,7 +131,10 @@ export function HomeScreen({answers, navigation}: Props) {
         })}</View>
       </View>
 
-      <Pressable style={styles.practiceButton} onPress={() => navigation.navigate('Study')}><LinearGradient pointerEvents="none" colors={['#C8FFFB', '#AEEEFF']} start={{x: 0, y: 0}} end={{x: 1, y: 1}} style={StyleSheet.absoluteFill} /><Text style={styles.practiceText}>Start today’s practice</Text></Pressable>
+      <Pressable style={styles.practiceButton} onPress={() => {
+        void logEvent('home_practice_click');
+        navigation.navigate('Study');
+      }}><LinearGradient pointerEvents="none" colors={['#C8FFFB', '#AEEEFF']} start={{x: 0, y: 0}} end={{x: 1, y: 1}} style={StyleSheet.absoluteFill} /><Text style={styles.practiceText}>Start today’s practice</Text></Pressable>
 
       <SectionHeading title="Keep going" />
       <ScrollView
@@ -129,9 +143,18 @@ export function HomeScreen({answers, navigation}: Props) {
         contentInsetAdjustmentBehavior="never"
         style={styles.lessonScroller}
         contentContainerStyle={styles.lessonRail}>
-        <LessonCard title={occupation?.lessonLabel ?? 'Tech vocabulary'} progress={`${Math.min(stats.today, dailyTarget)} of ${dailyTarget} words`} fill={dailyTarget ? stats.today / dailyTarget : 0} onPress={() => navigation.navigate('Study')} />
-        <LessonCard title="Gerund & infinitive" progress="Grammar lesson" fill={.4} onPress={() => navigation.navigate('Grammar', {lesson: 'gerund'})} />
-        <LessonCard title="Prepositions" progress="Grammar lesson" fill={.25} onPress={() => navigation.navigate('Grammar', {lesson: 'prepositions'})} />
+        <LessonCard title={occupation?.lessonLabel ?? 'Tech vocabulary'} progress={`${Math.min(stats.today, dailyTarget)} of ${dailyTarget} words`} fill={dailyTarget ? stats.today / dailyTarget : 0} onPress={() => {
+          void logEvent('home_lesson_click', {lesson: 'vocab'});
+          navigation.navigate('Study');
+        }} />
+        <LessonCard title="Gerund & infinitive" progress="Grammar lesson" fill={.4} onPress={() => {
+          void logEvent('home_lesson_click', {lesson: 'gerund'});
+          navigation.navigate('Grammar', {lesson: 'gerund'});
+        }} />
+        <LessonCard title="Prepositions" progress="Grammar lesson" fill={.25} onPress={() => {
+          void logEvent('home_lesson_click', {lesson: 'prepositions'});
+          navigation.navigate('Grammar', {lesson: 'prepositions'});
+        }} />
       </ScrollView>
 
       {/* The saved list is deliberately absent: it belongs to the My words tab. */}

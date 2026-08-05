@@ -14,6 +14,7 @@ import {findWordsByTokens, progressFor} from '../../logic/wordCollections';
 import {AppBar, AppBarButton} from '../../components/AppBar';
 import {Icon} from '../../components/Icon';
 import {haptic, speak} from '../../services/feedback';
+import {logEvent} from '../../services/mixpanel';
 import {colors, radius, spacing, tabBarSpace} from '../../theme';
 import {ScreenShell} from '../onboarding/ScreenShell';
 
@@ -65,6 +66,7 @@ export function MyWordListScreen({navigation}: Props) {
     if (changed) await saveLearningState(migrated);
     setTokens(nextTokens);
     setLearning(migrated);
+    void logEvent('mywords_view', {word_count: nextTokens.length});
   }, []);
 
   useEffect(() => {
@@ -73,6 +75,7 @@ export function MyWordListScreen({navigation}: Props) {
   }, [load, navigation]);
 
   const remove = async (word: VocabularyWord) => {
+    void logEvent('mywords_remove_click', {word_id: word.id});
     const next = await removeSavedWordToken(word);
     setTokens(next);
     setExpanded(null);
@@ -103,7 +106,10 @@ export function MyWordListScreen({navigation}: Props) {
           <AppBarButton onPress={() => setShowSort(value => !value)} accessibilityLabel="Sort words" active={showSort}>
             <Icon.Filter />
           </AppBarButton>
-          <AppBarButton onPress={() => navigation.navigate('SearchTab')} accessibilityLabel="Add words">
+          <AppBarButton onPress={() => {
+            void logEvent('mywords_add_click', {source: 'header'});
+            navigation.navigate('SearchTab');
+          }} accessibilityLabel="Add words">
             <Icon.Plus />
           </AppBarButton>
         </>
@@ -119,7 +125,7 @@ export function MyWordListScreen({navigation}: Props) {
       </View>
 
       {showSort && <View style={styles.sortMenu}>
-        {(Object.keys(sortLabels) as Sort[]).map(item => <Pressable key={item} onPress={() => {setSort(item); setShowSort(false);}} style={styles.sortOption}><Text style={[styles.sortOptionText, sort === item && styles.sortOptionTextActive]}>{sortLabels[item]}</Text>{sort === item && <Icon.Check size={16} />}</Pressable>)}
+        {(Object.keys(sortLabels) as Sort[]).map(item => <Pressable key={item} onPress={() => {void logEvent('mywords_sort_click', {sort: item}); setSort(item); setShowSort(false);}} style={styles.sortOption}><Text style={[styles.sortOptionText, sort === item && styles.sortOptionTextActive]}>{sortLabels[item]}</Text>{sort === item && <Icon.Check size={16} />}</Pressable>)}
       </View>}
 
       <ScrollView
@@ -145,9 +151,9 @@ export function MyWordListScreen({navigation}: Props) {
             {isOpen && <>
               <Text style={styles.example}>“{word.example}”</Text>
               <View style={styles.rowActions}>
-                <Pressable style={styles.rowActionBtn} onPress={() => speak(word.en)} accessibilityLabel="Read aloud"><Icon.Volume2 size={18} /><Text style={styles.rowAction}>Listen</Text></Pressable>
-                <Pressable style={styles.rowActionBtn} onPress={() => speak(word.example)} accessibilityLabel="Read example sentence"><Icon.Type size={18} /><Text style={styles.rowAction}>Sentence</Text></Pressable>
-                <Pressable onPress={() => navigation.navigate('Study', {ids: [word.id]})}><Text style={styles.rowAction}>Practise</Text></Pressable>
+                <Pressable style={styles.rowActionBtn} onPress={() => {void logEvent('word_row_click', {screen: 'mywords', word_id: word.id, action: 'listen'}); speak(word.en);}} accessibilityLabel="Read aloud"><Icon.Volume2 size={18} /><Text style={styles.rowAction}>Listen</Text></Pressable>
+                <Pressable style={styles.rowActionBtn} onPress={() => {void logEvent('word_row_click', {screen: 'mywords', word_id: word.id, action: 'sentence'}); speak(word.example);}} accessibilityLabel="Read example sentence"><Icon.Type size={18} /><Text style={styles.rowAction}>Sentence</Text></Pressable>
+                <Pressable onPress={() => {void logEvent('word_row_click', {screen: 'mywords', word_id: word.id, action: 'practice'}); navigation.navigate('Study', {ids: [word.id]});}}><Text style={styles.rowAction}>Practise</Text></Pressable>
                 <Pressable onPress={() => remove(word)}><Text style={styles.rowRemove}>Remove</Text></Pressable>
               </View>
             </>}
@@ -156,13 +162,13 @@ export function MyWordListScreen({navigation}: Props) {
         {!rows.length && <View style={styles.empty}>
           <Text style={styles.emptyTitle}>{hasWords ? 'Nothing matches.' : 'Your list is empty.'}</Text>
           <Text style={styles.emptyCopy}>{hasWords ? 'Try another spelling or clear the search.' : 'Look up any word in Search and tap Add. It waits for you here.'}</Text>
-          {!hasWords && <Pressable style={styles.emptyAction} onPress={() => navigation.navigate('SearchTab')}><Text style={styles.emptyActionText}>Browse words</Text></Pressable>}
+          {!hasWords && <Pressable style={styles.emptyAction} onPress={() => {void logEvent('mywords_add_click', {source: 'empty'}); navigation.navigate('SearchTab');}}><Text style={styles.emptyActionText}>Browse words</Text></Pressable>}
         </View>}
       </ScrollView>
 
       {rows.length > 0 && <View style={styles.actions}>
-        <Pressable style={[styles.action, styles.actionQuiet]} onPress={() => navigation.navigate('Test', {ids})}><Text style={styles.actionQuietText}>Take test</Text></Pressable>
-        <Pressable style={styles.action} onPress={() => navigation.navigate('Study', {ids})}><Text style={styles.actionText}>Flashcards</Text></Pressable>
+        <Pressable style={[styles.action, styles.actionQuiet]} onPress={() => {void logEvent('mywords_action_click', {action: 'test', word_count: ids.length}); navigation.navigate('Test', {ids});}}><Text style={styles.actionQuietText}>Take test</Text></Pressable>
+        <Pressable style={styles.action} onPress={() => {void logEvent('mywords_action_click', {action: 'flashcards', word_count: ids.length}); navigation.navigate('Study', {ids});}}><Text style={styles.actionText}>Flashcards</Text></Pressable>
       </View>}
     </View>
   </ScreenShell>;
@@ -253,6 +259,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: spacing.sm,
     paddingTop: spacing.sm,
+    // Sit fully above the floating native tab bar (not under it).
     paddingBottom: tabBarSpace,
   },
   action: {

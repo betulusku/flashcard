@@ -6,6 +6,7 @@ import type {OnboardingStackParamList} from '../../../navigation/OnboardingNavig
 import type {SurveyAnswers} from '../../../types/onboarding';
 import {emptySurvey, loadSurvey, saveSurvey} from '../../../logic/survey';
 import {haptic} from '../../../services/feedback';
+import {logEvent} from '../../../services/mixpanel';
 import {colors, radius, spacing} from '../../../theme';
 import {SettingsScreen} from './SettingsChrome';
 
@@ -37,12 +38,23 @@ export function PreferencesScreen({navigation}: Props) {
   const [answers, setAnswers] = useState<SurveyAnswers>(emptySurvey);
 
   useEffect(() => {
+    void logEvent('prefs_view');
     loadSurvey()
       .then(setAnswers)
       .catch(() => undefined);
   }, []);
 
   const patch = async (next: SurveyAnswers) => {
+    for (const field of ['level', 'daily', 'weekly'] as const) {
+      if (answers[field] !== next[field]) {
+        void logEvent('prefs_survey_update', {
+          field,
+          old_value: answers[field] ?? '',
+          new_value: next[field] ?? '',
+        });
+        break;
+      }
+    }
     setAnswers(next);
     haptic('selection');
     await saveSurvey(next);

@@ -1,12 +1,14 @@
 import {Platform} from 'react-native';
 import {Mixpanel} from 'mixpanel-react-native';
 
-import {MIXPANEL_TOKEN} from '../config/mixpanel';
+import {MIXPANEL_SERVER_URL, MIXPANEL_TOKEN} from '../config/mixpanel';
 import {createLogger} from '../utils/logger';
 
 const log = createLogger('Mixpanel');
 
 export type MixpanelProperties = Record<string, string | number | boolean | null>;
+
+const INGEST_URL = `${MIXPANEL_SERVER_URL.replace(/\/$/, '')}/track`;
 
 let client: Mixpanel | null = null;
 let initPromise: Promise<Mixpanel | null> | null = null;
@@ -19,6 +21,60 @@ async function getClient(): Promise<Mixpanel | null> {
   if (client) return client;
   if (initPromise) return initPromise;
   return initMixpanel();
+}
+
+/**
+ * Direct HTTP ingest — bypasses native queue so Mixpanel "Verify Connection"
+ * can light up even when the RN bridge is flaky. Tries US then EU.
+ */
+async function trackViaHttp(
+  eventName: string,
+  distinctId: string,
+  properties?: MixpanelProperties,
+): Promise<boolean> {
+  if (!hasToken()) return false;
+
+  const payload = [
+    {
+      event: eventName,
+      properties: {
+        ...(properties ?? {}),
+        token: MIXPANEL_TOKEN,
+        distinct_id: distinctId,
+        time: Math.floor(Date.now() / 1000),
+        app: 'FlashVocab',
+        platform: Platform.OS,
+        mp_lib: 'react-native-http-fallback',
+      },
+    },
+  ];
+
+  try {
+    const response = await fetch(INGEST_URL, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json', Accept: 'text/plain'},
+      body: JSON.stringify(payload),
+    });
+    const body = await response.text();
+    // Mixpanel returns `1` / `0` (or JSON) — treat 2xx + truthy as success.
+    if (response.ok && body.trim() !== '0') {
+      log.success('HTTP track ok', {eventName, url: INGEST_URL, body: body.slice(0, 40)});
+      return true;
+    }
+    log.warn('HTTP track rejected', {
+      eventName,
+      url: INGEST_URL,
+      status: response.status,
+      body,
+    });
+  } catch (error) {
+    log.warn('HTTP track failed', {
+      eventName,
+      url: INGEST_URL,
+      message: error instanceof Error ? error.message : String(error),
+    });
+  }
+  return false;
 }
 
 /**
@@ -53,11 +109,14 @@ export async function initMixpanel(distinctId?: string): Promise<Mixpanel | null
       if (__DEV__) {
         mixpanel.setLoggingEnabled(true);
       }
-      await mixpanel.init();
-      mixpanel.registerSuperProperties({
-        app: 'FlashVocab',
-        platform: Platform.OS,
-      });
+      await mixpanel.init(
+        false,
+        {app: 'FlashVocab', platform: Platform.OS},
+        MIXPANEL_SERVER_URL,
+      );
+      mixpanel.setServerURL(MIXPANEL_SERVER_URL);
+      // Ship each event immediately during setup / Live View checks.
+      mixpanel.setFlushBatchSize(1);
       client = mixpanel;
 
       if (distinctId) {
@@ -89,10 +148,10 @@ export async function identifyUser(distinctId: string): Promise<void> {
   if (!mixpanel) return;
 
   try {
-    log.info('identify', { distinctId });
+    log.info('identify', {distinctId});
     await mixpanel.identify(distinctId);
     await flushEvents();
-    log.success('identify complete', { distinctId });
+    log.success('identify complete', {distinctId});
   } catch (error) {
     log.error('identify failed', {
       distinctId,
@@ -107,19 +166,26 @@ export async function logEvent(
   properties?: MixpanelProperties,
 ): Promise<void> {
   const mixpanel = await getClient();
-  if (!mixpanel) return;
+  let distinctId = 'anonymous';
 
   try {
-    log.info('track', { eventName, properties });
-    mixpanel.track(eventName, properties);
-    await flushEvents();
-    log.success('track + flush', { eventName });
+    if (mixpanel) {
+      distinctId = await mixpanel.getDistinctId();
+      log.info('track', {eventName, properties});
+      mixpanel.track(eventName, properties);
+      await flushEvents();
+      log.success('track + flush', {eventName});
+    }
   } catch (error) {
     log.error('track failed', {
       eventName,
       message: error instanceof Error ? error.message : String(error),
     });
   }
+
+  // Always also hit ingest HTTP so Verify Connection / Live View get traffic
+  // even if the native SDK queues or the project is EU-hosted.
+  await trackViaHttp(eventName, distinctId, properties);
 }
 
 export async function flushEvents(): Promise<void> {
@@ -174,7 +240,7 @@ export function setUserProperties(properties: MixpanelProperties): void {
   client.getPeople().set(properties);
 }
 
-/** One-shot smoke test after init. Safe to remove once Live View confirms delivery. */
+/** Smoke test after init — fires as soon as possible for Mixpanel setup guide. */
 export async function sendTestEvent(): Promise<void> {
   await logEvent('mixpanel_test', {
     source: 'bootstrap',

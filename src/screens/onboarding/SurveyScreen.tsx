@@ -10,6 +10,7 @@ import {OnboardingStackParamList} from '../../navigation/OnboardingNavigator';
 import {goHomeFaded} from '../../navigation/navTransitions';
 import {useAppSelector} from '../../store/hooks';
 import {DailyCommitment, Goal, Level, SurveyAnswers, WeeklyGoal} from '../../types/onboarding';
+import {logEvent} from '../../services/mixpanel';
 import {colors, radius, spacing, typography} from '../../theme';
 import {createLogger} from '../../utils/logger';
 import {ScreenShell} from './ScreenShell';
@@ -29,6 +30,9 @@ export function SurveyScreen({navigation, answers, onChange}: Props) {
   const [index, setIndex] = useState(0);
   const step = steps[index];
   useEffect(() => { if (index >= steps.length) setIndex(steps.length - 1); }, [index, steps.length]);
+  useEffect(() => {
+    void logEvent('onb_survey_view', {step, step_index: index, step_count: steps.length});
+  }, [step, index, steps.length]);
   const set = (update: Partial<SurveyAnswers>) => onChange(current => ({...current, ...update}));
   const toggleGoal = (goal: Goal) => onChange(current => { const next = current.goals.includes(goal) ? current.goals.filter(item => item !== goal) : [...current.goals, goal]; return {...current, goals: next, ...(needsOccupation(next) ? {} : {occupation: null, occupationText: null})}; });
   const finishOnboardingHome = () => {
@@ -37,7 +41,19 @@ export function SurveyScreen({navigation, answers, onChange}: Props) {
     goHomeFaded(navigation);
   };
   const next = () => {
-    if (index !== steps.length - 1) {
+    const isLast = index === steps.length - 1;
+    void logEvent('onb_survey_click', {step, step_index: index, is_last_step: isLast});
+    if (isLast) {
+      void logEvent('onb_survey_complete', {
+        level: answers.level,
+        goals: answers.goals.join(','),
+        occupation: answers.occupation,
+        occupationText: answers.occupationText,
+        daily: answers.daily,
+        weekly: answers.weekly,
+      });
+    }
+    if (!isLast) {
       setIndex(index + 1);
       return;
     }
@@ -63,11 +79,11 @@ export function SurveyScreen({navigation, answers, onChange}: Props) {
     <Text style={styles.title}>{content[step].title}</Text>
     <Text style={styles.subtext}>{content[step].subtext}</Text>
     <View style={styles.body}>
-      {step === 'level' && <Options options={levels} selected={answers.level} onPress={key => set({level: key as Level})} />}
-      {step === 'goals' && <Options options={goals} selected={answers.goals} onPress={key => toggleGoal(key as Goal)} />}
-      {step === 'occupation' && <OccupationPicker value={answers.occupationText} onSelect={(occupation, occupationText) => set({occupation, occupationText})} onClear={() => set({occupation: null, occupationText: null})} />}
-      {step === 'daily' && <Options options={daily} selected={answers.daily} onPress={key => set({daily: key as DailyCommitment})} />}
-      {step === 'weekly' && <Options options={weekly} selected={answers.weekly} onPress={key => set({weekly: key as WeeklyGoal})} />}
+      {step === 'level' && <Options options={levels} selected={answers.level} onPress={key => { void logEvent('onb_survey_selected', {step: 'level', value: key}); set({level: key as Level}); }} />}
+      {step === 'goals' && <Options options={goals} selected={answers.goals} onPress={key => { void logEvent('onb_survey_selected', {step: 'goals', value: key}); toggleGoal(key as Goal); }} />}
+      {step === 'occupation' && <OccupationPicker value={answers.occupationText} onSelect={(occupation, occupationText) => { void logEvent('onb_survey_selected', {step: 'occupation', value: occupationText ?? occupation ?? ''}); set({occupation, occupationText}); }} onClear={() => set({occupation: null, occupationText: null})} />}
+      {step === 'daily' && <Options options={daily} selected={answers.daily} onPress={key => { void logEvent('onb_survey_selected', {step: 'daily', value: key}); set({daily: key as DailyCommitment}); }} />}
+      {step === 'weekly' && <Options options={weekly} selected={answers.weekly} onPress={key => { void logEvent('onb_survey_selected', {step: 'weekly', value: key}); set({weekly: key as WeeklyGoal}); }} />}
     </View>
     <Pressable disabled={!valid} style={[styles.continue, !valid && styles.continueDisabled]} onPress={next}>
       <Text style={styles.continueText}>Continue</Text>
