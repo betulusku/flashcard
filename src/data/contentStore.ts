@@ -67,11 +67,11 @@ const localLegal: LegalContent = {
     sections: [
       {
         heading: 'What we store on your device',
-        body: 'Fluent keeps your practice history, saved words, survey answers, and settings in local storage on this phone. That data stays with you unless you choose to share it.',
+        body: 'FlashVocab keeps your practice history, saved words, survey answers, and settings in local storage on this phone. That data stays with you unless you choose to share it.',
       },
       {
         heading: 'Speech',
-        body: 'Pronunciation uses the device speech engine. Utterances are not uploaded by Fluent for advertising or profiling.',
+        body: 'Pronunciation uses the device speech engine. Utterances are not uploaded by FlashVocab for advertising or profiling.',
       },
       {
         heading: 'Support',
@@ -79,7 +79,7 @@ const localLegal: LegalContent = {
       },
       {
         heading: 'Changes',
-        body: 'We’ll update this page when our practices change. Continued use of Fluent after an update means you accept the revised policy.',
+        body: 'We’ll update this page when our practices change. Continued use of FlashVocab after an update means you accept the revised policy.',
       },
     ],
   },
@@ -88,7 +88,7 @@ const localLegal: LegalContent = {
     sections: [
       {
         heading: 'The product',
-        body: 'Fluent is a vocabulary practice app. Content is for learning; it’s not professional advice, and results vary with how often you practise.',
+        body: 'FlashVocab is a vocabulary practice app. Content is for learning; it’s not professional advice, and results vary with how often you practise.',
       },
       {
         heading: 'Your account & purchases',
@@ -100,7 +100,7 @@ const localLegal: LegalContent = {
       },
       {
         heading: 'Contact',
-        body: 'Questions about these terms: hello@fluent.app.',
+        body: 'Questions about these terms: helloflashvocab@gmail.com',
       },
     ],
   },

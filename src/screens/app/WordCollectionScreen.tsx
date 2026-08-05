@@ -11,6 +11,7 @@ import {colors, radius, spacing} from '../../theme';
 import {AppBar, AppBarButton} from '../../components/AppBar';
 import {Icon} from '../../components/Icon';
 import {speak} from '../../services/feedback';
+import {logEvent} from '../../services/mixpanel';
 import {ScreenShell} from '../onboarding/ScreenShell';
 
 type Props = NativeStackScreenProps<OnboardingStackParamList, 'Collection'>;
@@ -32,7 +33,9 @@ export function WordCollectionScreen({navigation, route}: Props) {
       loadSavedWordTokens(),
       loadLearningState(),
     ]);
-    setWords(collectWords(collection, saved, state.progress));
+    const next = collectWords(collection, saved, state.progress);
+    setWords(next);
+    void logEvent('collection_view', {collection, count: next.length});
   }, [collection]);
 
   useEffect(() => {
@@ -97,9 +100,9 @@ export function WordCollectionScreen({navigation, route}: Props) {
             {isOpen && <>
               <Text style={styles.example}>“{word.example}”</Text>
               <View style={styles.rowActions}>
-                <Pressable style={styles.rowActionBtn} onPress={() => speak(word.en)} accessibilityLabel="Read aloud"><Icon.Volume2 size={18} /><Text style={styles.rowAction}>Listen</Text></Pressable>
-                <Pressable style={styles.rowActionBtn} onPress={() => speak(word.example)} accessibilityLabel="Read example sentence"><Icon.Type size={18} /><Text style={styles.rowAction}>Sentence</Text></Pressable>
-                <Pressable onPress={() => navigation.navigate('Study', {ids: [word.id]})}><Text style={styles.rowAction}>Practise this word</Text></Pressable>
+                <Pressable style={styles.rowActionBtn} onPress={() => {void logEvent('word_row_click', {screen: 'collection', word_id: word.id, action: 'listen'}); speak(word.en);}} accessibilityLabel="Read aloud"><Icon.Volume2 size={18} /><Text style={styles.rowAction}>Listen</Text></Pressable>
+                <Pressable style={styles.rowActionBtn} onPress={() => {void logEvent('word_row_click', {screen: 'collection', word_id: word.id, action: 'sentence'}); speak(word.example);}} accessibilityLabel="Read example sentence"><Icon.Type size={18} /><Text style={styles.rowAction}>Sentence</Text></Pressable>
+                <Pressable onPress={() => {void logEvent('word_row_click', {screen: 'collection', word_id: word.id, action: 'practice'}); navigation.navigate('Study', {ids: [word.id]});}}><Text style={styles.rowAction}>Practise this word</Text></Pressable>
               </View>
             </>}
           </Pressable>;
@@ -111,10 +114,10 @@ export function WordCollectionScreen({navigation, route}: Props) {
       </ScrollView>
 
       {rows.length > 0 && <View style={styles.actions}>
-        <Pressable style={[styles.action, styles.actionQuiet]} onPress={() => navigation.navigate('Test', {ids})}>
+        <Pressable style={[styles.action, styles.actionQuiet]} onPress={() => {void logEvent('collection_action_click', {collection, action: 'test', word_count: ids.length}); navigation.navigate('Test', {ids});}}>
           <Text style={styles.actionQuietText}>Start test</Text>
         </Pressable>
-        <Pressable style={styles.action} onPress={() => navigation.navigate('Study', {ids})}>
+        <Pressable style={styles.action} onPress={() => {void logEvent('collection_action_click', {collection, action: 'flashcards', word_count: ids.length}); navigation.navigate('Study', {ids});}}>
           <Text style={styles.actionText}>Flashcards</Text>
         </Pressable>
       </View>}

@@ -9,6 +9,9 @@ import {
   ChevronLeft,
   ChevronRight,
   Camera,
+  BarChart2,
+  Calendar,
+  Clock,
   CloudRain,
   Copy,
   Edit2,
@@ -23,6 +26,7 @@ import {
   Share2,
   Shield,
   Star,
+  Target,
   Type,
   User,
   Users,
@@ -69,6 +73,10 @@ export const Icon = {
   Share2: (props: IconPropsLite) => <Share2 {...defaults} {...props} />,
   Edit2: (props: IconPropsLite) => <Edit2 {...defaults} {...props} />,
   Camera: (props: IconPropsLite) => <Camera {...defaults} {...props} />,
+  BarChart: (props: IconPropsLite) => <BarChart2 {...defaults} {...props} />,
+  Calendar: (props: IconPropsLite) => <Calendar {...defaults} {...props} />,
+  Clock: (props: IconPropsLite) => <Clock {...defaults} {...props} />,
+  Target: (props: IconPropsLite) => <Target {...defaults} {...props} />,
 };
 
 export type FeatherIconName = keyof typeof Icon;

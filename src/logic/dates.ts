@@ -22,17 +22,25 @@ export function greeting(now = new Date()) {
   return 'Good night';
 }
 
-/** The last seven days ending today, so the strip follows the real weekday. */
+/**
+ * Current calendar week in US order (Sunday → Saturday).
+ * Today stays in its fixed slot — it does not slide to the end.
+ */
 export function recentWeek(now = new Date()) {
+  const today = new Date(now);
+  today.setHours(12, 0, 0, 0);
+  const sunday = new Date(today);
+  sunday.setDate(today.getDate() - today.getDay());
+
   return Array.from({length: 7}, (_, index) => {
-    const daysAgo = 6 - index;
-    const date = new Date(now);
-    date.setDate(date.getDate() - daysAgo);
+    const date = new Date(sunday);
+    date.setDate(sunday.getDate() + index);
+    const key = `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
     return {
-      key: dateKey(daysAgo, now),
-      label: weekdayInitials[date.getDay()],
-      name: weekdayNames[date.getDay()],
-      isToday: daysAgo === 0,
+      key,
+      label: weekdayInitials[index],
+      name: weekdayNames[index],
+      isToday: key === dateKey(0, now),
     };
   });
 }

@@ -33,12 +33,15 @@ import {
   saveProfile,
   type UserProfile,
 } from '../../logic/profile';
+import {openLegalDoc} from '../../logic/legalLinks';
 import {loadSurvey} from '../../logic/survey';
 import {loadUserId} from '../../logic/userId';
 import {haptic} from '../../services/feedback';
+import {logEvent} from '../../services/mixpanel';
 import {Icon} from '../../components/Icon';
+import {preloadTrialIntroAssets} from '../onboarding/trialIntroAssets';
 import {AppBar, AppBarButton} from '../../components/AppBar';
-import {useAppDispatch} from '../../store/hooks';
+import {useAppDispatch, useAppSelector} from '../../store/hooks';
 import {restorePurchases} from '../../store/purchasesSlice';
 import {colors, radius, spacing, tabBarSpace} from '../../theme';
 import {createLogger} from '../../utils/logger';
@@ -64,6 +67,7 @@ const levelLabels: Record<string, string> = {
 export function ProfileScreen({navigation}: Props) {
   const insets = useSafeAreaInsets();
   const dispatch = useAppDispatch();
+  const inReview = useAppSelector(s => s.purchases.inReview);
   const [profile, setProfile] = useState<UserProfile>(emptyProfile);
   const [userId, setUserId] = useState('');
   const [language, setLanguage] = useState('English');
@@ -73,6 +77,7 @@ export function ProfileScreen({navigation}: Props) {
   const [draftName, setDraftName] = useState('');
 
   const refresh = useCallback(() => {
+    void logEvent('profile_view');
     loadProfile().then(setProfile).catch(() => undefined);
     loadUserId()
       .then(id => {
@@ -123,6 +128,7 @@ export function ProfileScreen({navigation}: Props) {
   };
 
   const saveName = async () => {
+    void logEvent('profile_name_click');
     Keyboard.dismiss();
     await persist({...profile, name: draftName});
     setEditingName(false);
@@ -133,6 +139,7 @@ export function ProfileScreen({navigation}: Props) {
       {
         text: 'Choose from library',
         onPress: () => {
+          void logEvent('profile_photo_click', {action: 'choose'});
           launchImageLibrary(
             {mediaType: 'photo', quality: 0.8, selectionLimit: 1},
             async response => {
@@ -148,7 +155,10 @@ export function ProfileScreen({navigation}: Props) {
         ? {
             text: 'Remove photo',
             style: 'destructive',
-            onPress: () => persist({...profile, photoUri: null}),
+            onPress: () => {
+              void logEvent('profile_photo_click', {action: 'remove'});
+              persist({...profile, photoUri: null});
+            },
           }
         : undefined,
       {text: 'Cancel', style: 'cancel'},
@@ -157,6 +167,7 @@ export function ProfileScreen({navigation}: Props) {
 
   const copyId = () => {
     if (!userId) return;
+    void logEvent('profile_copyid_click');
     Clipboard.setString(userId);
     haptic('success');
     setCopied(true);
@@ -164,18 +175,19 @@ export function ProfileScreen({navigation}: Props) {
   };
 
   const onRestorePurchases = async () => {
+    void logEvent('profile_restore_click');
     log.info('Restore pressed from profile');
     const result = await dispatch(restorePurchases());
     if (restorePurchases.fulfilled.match(result)) {
       if (result.payload.isPremium) {
         log.success('Profile restore unlocked Pro');
-        Alert.alert('Restored', 'Your Fluent Pro access has been restored.');
+        Alert.alert('Restored', 'Your FlashVocab Pro access has been restored.');
         return;
       }
       log.warn('Profile restore found no entitlement');
       Alert.alert(
         'Nothing to restore',
-        'No active Fluent purchase was found. If you think this is wrong, contact us with your User ID.',
+        'No active FlashVocab purchase was found. If you think this is wrong, contact us with your User ID.',
       );
       return;
     }
@@ -184,17 +196,19 @@ export function ProfileScreen({navigation}: Props) {
   };
 
   const rateUs = () => {
+    void logEvent('rate_us_click');
     Alert.alert(
-      'Rate Fluent',
+      'Rate FlashVocab',
       'Thanks for learning with us. Rating opens after App Store listing is live.',
     );
   };
 
   const shareApp = async () => {
+    void logEvent('share_app_clicked');
     try {
       await Share.share({
         message:
-          'I’m practising English with Fluent — short daily words that stick.',
+          'I’m practising English with FlashVocab — short daily words that stick.',
       });
     } catch {
       // dismissed
@@ -254,7 +268,14 @@ export function ProfileScreen({navigation}: Props) {
 
         <Pressable
           style={styles.paywallCard}
-          onPress={() => open('Paywall', {source: 'profile'})}
+          onPress={() => {
+            if (inReview) {
+              open('Paywall', {source: 'profile'});
+              return;
+            }
+            preloadTrialIntroAssets();
+            open('TrialIntro', {source: 'profile'});
+          }}
           accessibilityRole="button"
         >
           <LinearGradient
@@ -268,7 +289,7 @@ export function ProfileScreen({navigation}: Props) {
             <Icon.Award size={22} color={colors.primaryText} />
           </View>
           <View style={styles.paywallCopy}>
-            <Text style={styles.paywallEyebrow}>FLUENT PRO</Text>
+            <Text style={styles.paywallEyebrow}>FLASHVOCAB PRO</Text>
             <Text style={styles.paywallTitle}>Unlock your full path</Text>
             <Text style={styles.paywallSub}>
               Personal vocabulary, rhythm, and unlimited practice.
@@ -281,23 +302,35 @@ export function ProfileScreen({navigation}: Props) {
           <SettingsRow
             icon="Users"
             label="Preferences"
-            onPress={() => open('Preferences')}
+            onPress={() => {
+              void logEvent('profile_settings_click', {item: 'preferences'});
+              open('Preferences');
+            }}
           />
           <SettingsRow
             icon="Globe"
             label="Language"
             value={language}
-            onPress={() => open('Language')}
+            onPress={() => {
+              void logEvent('profile_settings_click', {item: 'language'});
+              open('Language');
+            }}
           />
           <SettingsRow
             icon="Mail"
             label="Contact Us"
-            onPress={() => open('Contact')}
+            onPress={() => {
+              void logEvent('profile_settings_click', {item: 'contact'});
+              open('Contact');
+            }}
           />
           <SettingsRow
             icon="Shield"
             label="Privacy Policy"
-            onPress={() => open('Legal', {doc: 'privacy'})}
+            onPress={() => {
+              void logEvent('profile_settings_click', {item: 'privacy'});
+              void openLegalDoc('privacy');
+            }}
           />
           <SettingsRow
             icon="RefreshCw"
@@ -308,7 +341,10 @@ export function ProfileScreen({navigation}: Props) {
             icon="FileText"
             label="Terms of Use"
             last
-            onPress={() => open('Legal', {doc: 'terms'})}
+            onPress={() => {
+              void logEvent('profile_settings_click', {item: 'terms'});
+              void openLegalDoc('terms');
+            }}
           />
         </SettingsGroup>
 
@@ -361,7 +397,7 @@ export function ProfileScreen({navigation}: Props) {
             <View style={styles.modalHandle} />
             <Text style={styles.modalTitle}>Your name</Text>
             <Text style={styles.modalCopy}>
-              How Fluent greets you on Home.
+              How FlashVocab greets you on Home.
             </Text>
             <TextInput
               value={draftName}
@@ -524,7 +560,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,.55)',
   },
   modalDismiss: {
-    ...StyleSheet.absoluteFillObject,
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
   },
   modalCard: {
     borderTopLeftRadius: radius.lg,

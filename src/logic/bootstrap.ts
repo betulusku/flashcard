@@ -27,6 +27,8 @@ export type BootstrapState = {
   isNewUser: boolean;
   onboardingComplete: boolean;
   contentSource: ContentSource;
+  /** From Remote Config `reviewEnabled` — set on splash before reveal. */
+  inReview: boolean;
 };
 
 function deviceDetails() {
@@ -87,7 +89,7 @@ export async function bootstrapApp(): Promise<BootstrapState> {
           return null;
         })
       : Promise.resolve(null),
-    hydrateOnboardingComplete(user?.onboardingComplete),
+    hydrateOnboardingComplete(user?.onboardingComplete, user),
   ]);
 
   if (contentResult?.success && contentResult.data) {
@@ -129,6 +131,8 @@ export async function bootstrapApp(): Promise<BootstrapState> {
     isNewUser: Boolean(user?.isNew),
     onboardingComplete,
     contentSource: getContentSource(),
+    // Overwritten on splash after Remote Config prefetch lands.
+    inReview: false,
   };
   log.success('Bootstrap done', {
     deviceId: state.deviceId,

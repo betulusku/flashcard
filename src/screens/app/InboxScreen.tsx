@@ -1,4 +1,4 @@
-import React, {useMemo, useState} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {Pressable, ScrollView, StyleSheet, Text, View} from 'react-native';
 
@@ -9,6 +9,7 @@ import {Icon} from '../../components/Icon';
 import {colors, radius, spacing} from '../../theme';
 import {ScreenShell} from '../onboarding/ScreenShell';
 import {haptic} from '../../services/feedback';
+import {logEvent} from '../../services/mixpanel';
 
 type Props = NativeStackScreenProps<OnboardingStackParamList, 'Inbox'>;
 
@@ -22,12 +23,18 @@ export function InboxScreen({navigation}: Props) {
   const [notes, setNotes] = useState(() => getInboxSeed());
   const unread = useMemo(() => notes.filter(n => n.unread).length, [notes]);
 
+  useEffect(() => {
+    void logEvent('inbox_view', {unread_count: unread});
+  }, []);
+
   const markAll = () => {
+    void logEvent('inbox_mark_click');
     setNotes(list => list.map(n => ({...n, unread: false})));
     haptic('selection');
   };
 
   const openNote = (id: string) => {
+    void logEvent('inbox_note_click', {note_id: id});
     setNotes(list =>
       list.map(n => (n.id === id ? {...n, unread: false} : n)),
     );

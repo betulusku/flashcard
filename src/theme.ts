@@ -19,9 +19,9 @@ export const colors = {
 
 export const spacing = {xxs: 4, xs: 8, sm: 12, md: 16, lg: 24, xl: 32, xxl: 40};
 
-// The iOS tab bar is a native overlay, so screens inside the tab navigator get
-// no automatic inset and have to reserve this much room above the safe area.
-export const tabBarSpace = 68;
+// Native Liquid Glass tab bar floats over content (iOS 26+). Screens inside
+// the tab navigator must reserve this much bottom room so CTAs aren't covered.
+export const tabBarSpace = 110;
 
 export const typography = {display: 46, title: 32, heading: 22, body: 16, caption: 13, micro: 11};
 

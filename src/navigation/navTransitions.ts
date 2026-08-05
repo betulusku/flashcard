@@ -2,13 +2,14 @@
 export const STACK_FADE_MS = 360;
 
 type HomeNav = {
-  navigate: (screen: 'Home') => void;
+  reset: (state: {index: number; routes: Array<{name: 'Home'}>}) => void;
 };
 
 /**
- * Fade into Home. Stack pruning happens in the Home screen focus listener
- * after the fade completes (`reset` itself has no animation).
+ * Jump to Home as the sole root route.
+ * Avoid navigate→delayed-reset: recreating Home mid-stack briefly flashes the
+ * paywall/onboarding screen underneath.
  */
 export function goHomeFaded(navigation: HomeNav) {
-  navigation.navigate('Home');
+  navigation.reset({index: 0, routes: [{name: 'Home'}]});
 }

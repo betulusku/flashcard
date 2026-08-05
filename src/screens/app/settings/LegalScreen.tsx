@@ -1,44 +1,37 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {ScrollView, StyleSheet, Text} from 'react-native';
+import {ActivityIndicator, StyleSheet, View} from 'react-native';
 
-import {getLegalContent} from '../../../data/contentStore';
+import {openLegalDoc} from '../../../logic/legalLinks';
 import type {OnboardingStackParamList} from '../../../navigation/OnboardingNavigator';
-import {colors, spacing} from '../../../theme';
-import {SettingsScreen} from './SettingsChrome';
+import {logEvent} from '../../../services/mixpanel';
+import {colors} from '../../../theme';
 
 type Props = NativeStackScreenProps<OnboardingStackParamList, 'Legal'>;
 
+/** Legacy in-app route — opens the hosted legal page and returns. */
 export function LegalScreen({navigation, route}: Props) {
-  const legal = getLegalContent();
-  const doc = legal[route.params.doc];
-  const updated = legal.updatedAt
-    ? `Last updated · ${legal.updatedAt}`
-    : 'Last updated · August 2026';
+  useEffect(() => {
+    void logEvent('legal_view', {doc: route.params.doc});
+    void openLegalDoc(route.params.doc).finally(() => {
+      if (navigation.canGoBack()) {
+        navigation.goBack();
+      }
+    });
+  }, [navigation, route.params.doc]);
 
   return (
-    <SettingsScreen title={doc.title} onBack={() => navigation.goBack()}>
-      <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.page}>
-        <Text style={styles.updated}>{updated}</Text>
-        {doc.sections.map(section => (
-          <React.Fragment key={section.heading}>
-            <Text style={styles.heading}>{section.heading}</Text>
-            <Text style={styles.body}>{section.body}</Text>
-          </React.Fragment>
-        ))}
-      </ScrollView>
-    </SettingsScreen>
+    <View style={styles.root}>
+      <ActivityIndicator color={colors.mint} />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  page: {paddingBottom: spacing.xl, gap: spacing.sm},
-  updated: {color: colors.muted, fontSize: 13, marginBottom: spacing.sm},
-  heading: {
-    marginTop: spacing.md,
-    fontSize: 17,
-    fontWeight: '700',
-    color: colors.text,
+  root: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: colors.background,
   },
-  body: {fontSize: 15, lineHeight: 23, color: colors.muted},
 });

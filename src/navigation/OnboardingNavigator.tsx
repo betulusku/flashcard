@@ -20,6 +20,8 @@ const fluentTheme = {
 
 import {NotificationPermissionScreen} from '../screens/onboarding/NotificationPermissionScreen';
 import {PaywallScreen} from '../screens/onboarding/PaywallScreen';
+import {HelpUsGrowScreen} from '../screens/onboarding/HelpUsGrowScreen';
+import {TrialIntroScreen} from '../screens/onboarding/TrialIntroScreen';
 import {SurveyScreen} from '../screens/onboarding/SurveyScreen';
 import {WelcomeScreen} from '../screens/onboarding/WelcomeScreen';
 import {AppTabs} from './AppTabs';
@@ -41,12 +43,21 @@ const ONBOARDING_ROUTES = new Set<keyof OnboardingStackParamList>([
   'Welcome',
   'Survey',
   'Notifications',
+  'HelpUsGrow',
+  'TrialIntro',
+  'OnboardingPaywall',
   'Paywall',
 ]);
 export type OnboardingStackParamList = {
   Welcome: undefined;
   Survey: undefined;
   Notifications: undefined;
+  HelpUsGrow: undefined;
+  TrialIntro: {
+    source?: 'profile' | 'gate';
+    destination?: 'Paywall' | 'OnboardingPaywall';
+  } | undefined;
+  OnboardingPaywall: undefined;
   Paywall: {source?: 'profile' | 'gate'} | undefined;
   Home: undefined;
   Study: PracticeParams;
@@ -118,8 +129,19 @@ export function OnboardingNavigator({
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
         <Stack.Screen name="Survey">{props => <SurveyScreen {...props} answers={answers} onChange={setAnswers} />}</Stack.Screen>
         <Stack.Screen name="Notifications" component={NotificationPermissionScreen} />
+        <Stack.Screen name="HelpUsGrow" component={HelpUsGrowScreen} />
+        <Stack.Screen
+          name="TrialIntro"
+          component={TrialIntroScreen}
+          options={{animation: 'none'}}
+          initialParams={paywallSource ? {source: paywallSource} : undefined}
+        />
+        <Stack.Screen name="OnboardingPaywall" options={{animation: 'none'}}>
+          {props => <PaywallScreen {...(props as any)} answers={answers} />}
+        </Stack.Screen>
         <Stack.Screen
           name="Paywall"
+          options={{animation: 'none'}}
           initialParams={paywallSource ? {source: paywallSource} : undefined}
         >
           {props => <PaywallScreen {...props} answers={answers} />}
@@ -132,33 +154,25 @@ export function OnboardingNavigator({
             animation: 'fade',
             animationDuration: STACK_FADE_MS,
           }}
-          listeners={({navigation}) => {
-            let pruneTimer: ReturnType<typeof setTimeout> | undefined;
-            return {
-              beforeRemove: e => {
-                // Home is the app root — never pop back into onboarding.
-                if (e.data.action.type === 'GO_BACK' || e.data.action.type === 'POP') {
-                  e.preventDefault();
-                }
-              },
-              focus: () => {
-                const state = navigation.getState();
-                if (state.routes[state.index]?.name !== 'Home') return;
-                const hasOnboardingUnder = state.routes.some(route =>
-                  ONBOARDING_ROUTES.has(route.name as keyof OnboardingStackParamList),
-                );
-                if (!hasOnboardingUnder && state.index === 0) return;
-                // Let the fade into Home finish, then prune the stack (reset has no animation).
-                if (pruneTimer) clearTimeout(pruneTimer);
-                pruneTimer = setTimeout(() => {
-                  navigation.reset({index: 0, routes: [{name: 'Home'}]});
-                }, STACK_FADE_MS + 40);
-              },
-              blur: () => {
-                if (pruneTimer) clearTimeout(pruneTimer);
-              },
-            };
-          }}
+          listeners={({navigation}) => ({
+            beforeRemove: e => {
+              // Home is the app root — never pop back into onboarding.
+              if (e.data.action.type === 'GO_BACK' || e.data.action.type === 'POP') {
+                e.preventDefault();
+              }
+            },
+            // Safety net for navigate('Home') that left onboarding under the stack.
+            transitionEnd: e => {
+              if (e.data.closing) return;
+              const state = navigation.getState();
+              if (state.routes[state.index]?.name !== 'Home') return;
+              const hasOnboardingUnder = state.routes.some(route =>
+                ONBOARDING_ROUTES.has(route.name as keyof OnboardingStackParamList),
+              );
+              if (!hasOnboardingUnder && state.index === 0) return;
+              navigation.reset({index: 0, routes: [{name: 'Home'}]});
+            },
+          })}
         >
           {() => <AppTabs answers={answers} />}
         </Stack.Screen>

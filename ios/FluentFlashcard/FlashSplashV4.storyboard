@@ -16,13 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="SplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Flt-Logo">
-                                <rect key="frame" x="116.5" y="326" width="160" height="160"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="SplashMark" translatesAutoresizingMaskIntoConstraints="NO" id="Flt-Logo">
+                                <rect key="frame" x="144.5" y="338" width="104" height="104"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="Flt-Logo-W"/>
-                                    <constraint firstAttribute="height" constant="160" id="Flt-Logo-H"/>
+                                    <constraint firstAttribute="width" constant="104" id="Flt-Logo-W"/>
+                                    <constraint firstAttribute="height" constant="104" id="Flt-Logo-H"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="FlashVocab" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Flt-Name">
+                                <rect key="frame" x="126.5" y="456" width="140" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="IELTS &amp; Interview Vocabulary" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Flt-Tagline">
+                                <rect key="frame" x="126.5" y="490" width="140" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.72" green="0.76" blue="0.85" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="SplashBadge" translatesAutoresizingMaskIntoConstraints="NO" id="Flt-Badge">
                                 <rect key="frame" x="96.5" y="700" width="200" height="56"/>
                                 <constraints>
@@ -56,6 +66,10 @@
                         <constraints>
                             <constraint firstItem="Flt-Logo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Flt-Logo-X"/>
                             <constraint firstItem="Flt-Logo" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-36" id="Flt-Logo-Y"/>
+                            <constraint firstItem="Flt-Name" firstAttribute="top" secondItem="Flt-Logo" secondAttribute="bottom" constant="14" id="Flt-Name-Top"/>
+                            <constraint firstItem="Flt-Name" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Flt-Name-X"/>
+                            <constraint firstItem="Flt-Tagline" firstAttribute="top" secondItem="Flt-Name" secondAttribute="bottom" constant="5" id="Flt-Tagline-Top"/>
+                            <constraint firstItem="Flt-Tagline" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Flt-Tagline-X"/>
                             <constraint firstItem="Flt-Badge" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Flt-Badge-X"/>
                             <constraint firstItem="Flt-Track" firstAttribute="top" secondItem="Flt-Badge" secondAttribute="bottom" constant="16" id="Flt-Track-Top"/>
                             <constraint firstItem="Flt-Track" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Flt-Track-X"/>
@@ -69,7 +83,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SplashLogo" width="200" height="200"/>
-        <image name="SplashBadge" width="600" height="168"/>
+        <image name="SplashMark" width="1024" height="1024"/>
+        <image name="SplashBadge" width="600" height="173"/>
     </resources>
 </document>

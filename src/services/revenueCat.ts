@@ -30,7 +30,7 @@ export type PlanProduct = {
   priceString: string;
   pricePerMonthString: string | null;
   currencyCode: string;
-  hasFreeTrial: boolean;
+  hasTrial: boolean;
   trialLabel: string | null;
 };
 
@@ -65,10 +65,10 @@ function trialLabelFor(pkg: PurchasesPackage): string | null {
   if (!intro || intro.price !== 0) return null;
   const unit = intro.periodUnit.toLowerCase();
   const n = intro.periodNumberOfUnits;
-  if (unit.includes('day')) return `${n} DAY${n === 1 ? '' : 'S'} FREE`;
-  if (unit.includes('week')) return `${n} WEEK${n === 1 ? '' : 'S'} FREE`;
-  if (unit.includes('month')) return `${n} MONTH${n === 1 ? '' : 'S'} FREE`;
-  return 'FREE TRIAL';
+  if (unit.includes('day')) return `${n} DAY TRIAL`;
+  if (unit.includes('week')) return `${n} WEEK TRIAL`;
+  if (unit.includes('month')) return `${n} MONTH TRIAL`;
+  return 'TRIAL';
 }
 
 function resolvePlan(pkg: PurchasesPackage): PlanId | null {
@@ -97,7 +97,7 @@ function toPlanProduct(plan: PlanId, pkg: PurchasesPackage): PlanProduct {
     priceString: pkg.product.priceString,
     pricePerMonthString: pkg.product.pricePerMonthString,
     currencyCode: pkg.product.currencyCode,
-    hasFreeTrial: Boolean(trial),
+    hasTrial: Boolean(trial),
     trialLabel: trial,
   };
 }

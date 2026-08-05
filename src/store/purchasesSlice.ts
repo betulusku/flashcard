@@ -37,6 +37,7 @@ const initialState: PurchasesState = {
   selectedPlan: 'yearly',
   isPremium: false,
   appUserId: null,
+  // Set from Firebase Remote Config `reviewEnabled` on splash.
   inReview: false,
 };
 

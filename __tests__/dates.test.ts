@@ -23,18 +23,22 @@ describe('greeting', () => {
 });
 
 describe('recentWeek', () => {
-  const saturday = new Date(2026, 7, 1, 13, 0);
+  // Wednesday 5 Aug 2026 — mid-week so today is not at either end.
+  const wednesday = new Date(2026, 7, 5, 13, 0);
 
-  it('ends on today with the real weekday initial', () => {
-    const week = recentWeek(saturday);
-    expect(week).toHaveLength(7);
-    expect(week[6]).toMatchObject({label: 'S', name: 'Saturday', isToday: true, key: '2026-08-01'});
-    expect(week.filter(day => day.isToday)).toHaveLength(1);
-  });
-
-  it('lists the six days before today in order', () => {
-    expect(recentWeek(saturday).map(day => day.name)).toEqual([
+  it('always lists Sunday through Saturday', () => {
+    expect(recentWeek(wednesday).map(day => day.name)).toEqual([
       'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',
     ]);
+    expect(recentWeek(wednesday).map(day => day.label)).toEqual(['S', 'M', 'T', 'W', 'T', 'F', 'S']);
+  });
+
+  it('marks today in its US weekday slot', () => {
+    const week = recentWeek(wednesday);
+    expect(week).toHaveLength(7);
+    expect(week[3]).toMatchObject({label: 'W', name: 'Wednesday', isToday: true, key: '2026-08-05'});
+    expect(week.filter(day => day.isToday)).toHaveLength(1);
+    expect(week[0].key).toBe('2026-08-02');
+    expect(week[6].key).toBe('2026-08-08');
   });
 });
