@@ -24,7 +24,7 @@ export function ContactScreen({navigation}: Props) {
       const userId = await loadUserId();
       const url =
         `mailto:hello@fluent.app` +
-        `?subject=${encodeURIComponent('Fluent support')}` +
+        `?subject=${encodeURIComponent('FlashVocab support')}` +
         `&body=${encodeURIComponent(`${body}\n\n—\nUser ID: ${userId}`)}`;
       const can = await Linking.canOpenURL(url);
       if (!can) {

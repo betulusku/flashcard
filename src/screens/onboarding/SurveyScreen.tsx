@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
   selectedText: {color: '#101820', fontWeight: '600'},
   selectedDescription: {color: 'rgba(9,36,126,.72)'},
   indicatorEmpty: {width: 22, height: 22, borderRadius: 11, borderWidth: 1.5, borderColor: colors.muted},
-  continue: {borderRadius: radius.md, backgroundColor: colors.mint, paddingVertical: 18, alignItems: 'center', marginBottom: spacing.sm},
+  continue: {borderRadius: radius.md, backgroundColor: colors.mint, paddingVertical: 18, alignItems: 'center', marginHorizontal: spacing.sm, marginBottom: 64},
   continueDisabled: {opacity: .34},
   continueText: {color: colors.primaryText, fontWeight: '700', fontSize: 18},
 });

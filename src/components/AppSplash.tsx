@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {Image, StyleSheet, View} from 'react-native';
+import React, {useEffect, useRef, useState} from 'react';
+import {Animated, Easing, Image, StyleSheet, Text, View} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 import {bootstrapApp, type BootstrapState} from '../logic/bootstrap';
@@ -12,8 +12,10 @@ const log = createLogger('Splash');
 
 /** Show splash first; fire auth/bootstrap requests after this delay. */
 const REQUEST_DELAY_MS = 3000;
-/** User-provided Flashcard logo (icon + title + tagline). */
-const splashLogo = require('../../assets/SplashScreen.png');
+const LOADER_TRACK_W = 200;
+const LOADER_FILL_W = 72;
+/** The exact same mark used by the native launch screen and app lockups. */
+const splashLogo = require('../../assets/SplashMark.png');
 const splashBadge = require('../../assets/SplashBadge.png');
 
 type Props = {
@@ -25,6 +27,20 @@ export function AppSplash({children}: Props) {
   const insets = useSafeAreaInsets();
   const dispatch = useAppDispatch();
   const [bootstrap, setBootstrap] = useState<BootstrapState | null>(null);
+  const loader = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    const anim = Animated.loop(
+      Animated.timing(loader, {
+        toValue: 1,
+        duration: 1100,
+        easing: Easing.inOut(Easing.quad),
+        useNativeDriver: true,
+      }),
+    );
+    anim.start();
+    return () => anim.stop();
+  }, [loader]);
 
   useEffect(() => {
     let cancelled = false;
@@ -125,15 +141,24 @@ export function AppSplash({children}: Props) {
 
   if (bootstrap) return <>{children(bootstrap)}</>;
 
+  const loaderX = loader.interpolate({
+    inputRange: [0, 1],
+    outputRange: [-LOADER_FILL_W, LOADER_TRACK_W],
+  });
+
   return (
-    <View style={styles.root} accessibilityLabel="Flashcard splash">
+    <View style={styles.root} accessibilityLabel="FlashVocab splash">
       <View style={styles.center}>
         <Image source={splashLogo} style={styles.logo} resizeMode="contain" />
+        <Text style={styles.name}>FlashVocab</Text>
+        <Text style={styles.tagline}>IELTS &amp; Interview Vocabulary</Text>
       </View>
       <View style={[styles.footer, {paddingBottom: Math.max(insets.bottom, 8) + 12}]}>
         <Image source={splashBadge} style={styles.badge} resizeMode="contain" />
         <View style={styles.track}>
-          <View style={styles.fill} />
+          <Animated.View
+            style={[styles.fill, {transform: [{translateX: loaderX}]}]}
+          />
         </View>
       </View>
     </View>
@@ -152,9 +177,12 @@ const styles = StyleSheet.create({
     marginTop: -24,
   },
   logo: {
-    width: 160,
-    height: 160,
+    width: 104,
+    height: 104,
+    borderRadius: 24,
   },
+  name: {marginTop: 14, color: '#FFFFFF', fontSize: 24, fontWeight: '800'},
+  tagline: {marginTop: 5, color: '#B8C2D8', fontSize: 13, fontWeight: '600'},
   footer: {
     alignItems: 'center',
     gap: 16,
@@ -164,15 +192,20 @@ const styles = StyleSheet.create({
     height: 56,
   },
   track: {
-    width: 200,
+    width: LOADER_TRACK_W,
     height: 3,
     borderRadius: 2,
     overflow: 'hidden',
     backgroundColor: '#2E2E2E',
   },
   fill: {
-    width: '30%',
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    width: LOADER_FILL_W,
     height: '100%',
+    borderRadius: 2,
     backgroundColor: '#FFFFFF',
   },
 });
+

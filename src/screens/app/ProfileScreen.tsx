@@ -169,13 +169,13 @@ export function ProfileScreen({navigation}: Props) {
     if (restorePurchases.fulfilled.match(result)) {
       if (result.payload.isPremium) {
         log.success('Profile restore unlocked Pro');
-        Alert.alert('Restored', 'Your Fluent Pro access has been restored.');
+        Alert.alert('Restored', 'Your FlashVocab Pro access has been restored.');
         return;
       }
       log.warn('Profile restore found no entitlement');
       Alert.alert(
         'Nothing to restore',
-        'No active Fluent purchase was found. If you think this is wrong, contact us with your User ID.',
+        'No active FlashVocab purchase was found. If you think this is wrong, contact us with your User ID.',
       );
       return;
     }
@@ -185,7 +185,7 @@ export function ProfileScreen({navigation}: Props) {
 
   const rateUs = () => {
     Alert.alert(
-      'Rate Fluent',
+      'Rate FlashVocab',
       'Thanks for learning with us. Rating opens after App Store listing is live.',
     );
   };
@@ -194,7 +194,7 @@ export function ProfileScreen({navigation}: Props) {
     try {
       await Share.share({
         message:
-          'I’m practising English with Fluent — short daily words that stick.',
+          'I’m practising English with FlashVocab — short daily words that stick.',
       });
     } catch {
       // dismissed
@@ -254,7 +254,7 @@ export function ProfileScreen({navigation}: Props) {
 
         <Pressable
           style={styles.paywallCard}
-          onPress={() => open('Paywall', {source: 'profile'})}
+          onPress={() => open('TrialIntro', {source: 'profile'})}
           accessibilityRole="button"
         >
           <LinearGradient
@@ -268,7 +268,7 @@ export function ProfileScreen({navigation}: Props) {
             <Icon.Award size={22} color={colors.primaryText} />
           </View>
           <View style={styles.paywallCopy}>
-            <Text style={styles.paywallEyebrow}>FLUENT PRO</Text>
+            <Text style={styles.paywallEyebrow}>FLASHVOCAB PRO</Text>
             <Text style={styles.paywallTitle}>Unlock your full path</Text>
             <Text style={styles.paywallSub}>
               Personal vocabulary, rhythm, and unlimited practice.
@@ -361,7 +361,7 @@ export function ProfileScreen({navigation}: Props) {
             <View style={styles.modalHandle} />
             <Text style={styles.modalTitle}>Your name</Text>
             <Text style={styles.modalCopy}>
-              How Fluent greets you on Home.
+              How FlashVocab greets you on Home.
             </Text>
             <TextInput
               value={draftName}
@@ -524,7 +524,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,.55)',
   },
   modalDismiss: {
-    ...StyleSheet.absoluteFillObject,
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
   },
   modalCard: {
     borderTopLeftRadius: radius.lg,

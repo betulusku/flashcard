@@ -51,7 +51,7 @@ export function PreferencesScreen({navigation}: Props) {
   return (
     <SettingsScreen title="Preferences" onBack={() => navigation.goBack()}>
       <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.page}>
-        <Text style={styles.lead}>Tune how Fluent paces your practice.</Text>
+        <Text style={styles.lead}>Tune how FlashVocab paces your practice.</Text>
 
         <Text style={styles.section}>Level</Text>
         <View style={styles.chips}>

@@ -22,7 +22,7 @@ function resolveInitialRoute(
   inReview: boolean,
 ): keyof OnboardingStackParamList {
   if (!bootstrap.onboardingComplete) return 'Welcome';
-  if (!isPremium && !inReview) return 'Paywall';
+  if (!isPremium && !inReview) return 'TrialIntro';
   return 'Home';
 }
 
@@ -48,7 +48,7 @@ function RootApp({bootstrap}: {bootstrap: BootstrapState}) {
     <SessionProvider value={bootstrap}>
       <OnboardingNavigator
         initialRouteName={initialRouteName}
-        paywallSource={initialRouteName === 'Paywall' ? 'gate' : undefined}
+        paywallSource={initialRouteName === 'TrialIntro' ? 'gate' : undefined}
       />
     </SessionProvider>
   );
@@ -58,7 +58,7 @@ function App() {
   return (
     <Provider store={store}>
       <SafeAreaProvider>
-        <StatusBar barStyle="light-content" />
+        <StatusBar barStyle="light-content" translucent backgroundColor="transparent" />
         <AppSplash>{bootstrap => <RootApp bootstrap={bootstrap} />}</AppSplash>
       </SafeAreaProvider>
     </Provider>

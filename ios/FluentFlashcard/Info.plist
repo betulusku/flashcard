@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Fluent - Flashcard</string>
+	<string>FlashVocab</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -38,7 +38,7 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string/>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Fluent uses your photo library so you can set a profile picture.</string>
+	<string>FlashVocab uses your photo library so you can set a profile picture.</string>
 	<key>RCTNewArchEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

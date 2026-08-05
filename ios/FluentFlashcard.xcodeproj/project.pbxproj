@@ -293,7 +293,7 @@
 				DEVELOPMENT_TEAM = 4K2RVTNVZ7;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FluentFlashcard/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Fluent - Flashcard";
+				INFOPLIST_KEY_CFBundleDisplayName = FlashVocab;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +325,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4K2RVTNVZ7;
 				INFOPLIST_FILE = FluentFlashcard/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Fluent - Flashcard";
+				INFOPLIST_KEY_CFBundleDisplayName = FlashVocab;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (

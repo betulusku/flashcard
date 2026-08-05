@@ -22,7 +22,7 @@ export async function loadUserId() {
     log.success('Using Firebase Auth UID as deviceId', {deviceId: user.uid});
     return user.uid;
   } catch (error) {
-    log.warn('Firebase auth unavailable — falling back to local deviceId', {
+    log.info('Firebase auth unavailable — falling back to local deviceId', {
       message: error instanceof Error ? error.message : String(error),
     });
     try {

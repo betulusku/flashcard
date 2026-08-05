@@ -47,12 +47,12 @@ export function HomeScreen({answers, navigation}: Props) {
         const activity = learning.activity ?? {};
         setNow(new Date());
         setNameLine(greetingName(profile));
-        const recentDays = Array.from({length: 7}, (_, index) => dateKey(index));
+        const weekKeys = recentWeek().map(day => day.key);
         const size = (collection: CollectionId) =>
           collectWords(collection, [], learning.progress).length;
         setStats({
           today: activity[dateKey()]?.learned ?? 0,
-          week: recentDays.reduce(
+          week: weekKeys.reduce(
             (total, day) => total + (activity[day]?.learned ?? 0),
             0,
           ),

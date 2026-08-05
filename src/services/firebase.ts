@@ -42,10 +42,15 @@ export async function ensureAnonymousUser(): Promise<User> {
     });
     return credential.user;
   } catch (error) {
-    log.error('Anonymous auth failed', {
-      message: error instanceof Error ? error.message : String(error),
-      error,
-    });
+    const message = error instanceof Error ? error.message : String(error);
+    const code = typeof error === 'object' && error !== null && 'code' in error
+      ? String(error.code)
+      : '';
+    if (code === 'auth/keychain-error' || message.includes('auth/keychain-error')) {
+      log.info('Anonymous auth unavailable in the current simulator keychain — using local deviceId');
+    } else {
+      log.warn('Anonymous auth unavailable', {code, message});
+    }
     throw error;
   }
 }

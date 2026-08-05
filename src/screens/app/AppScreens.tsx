@@ -4,6 +4,7 @@ import {
   Animated,
   Clipboard,
   Easing,
+  Keyboard,
   Modal,
   Pressable,
   ScrollView,
@@ -1153,12 +1154,21 @@ export function TestCompleteScreen({
 export function SearchScreen() {
   const [query, setQuery] = useState('');
   const [saved, setSaved] = useState<string[]>([]);
+  const [inputFocused, setInputFocused] = useState(false);
   const inputRef = useRef<TextInput>(null);
+
+  const dismissKeyboard = () => {
+    inputRef.current?.blur();
+    Keyboard.dismiss();
+  };
 
   useFocusEffect(
     React.useCallback(() => {
       const timer = setTimeout(() => inputRef.current?.focus(), 220);
-      return () => clearTimeout(timer);
+      return () => {
+        clearTimeout(timer);
+        Keyboard.dismiss();
+      };
     }, []),
   );
 
@@ -1200,7 +1210,11 @@ export function SearchScreen() {
             placeholderTextColor={colors.muted}
             style={styles.searchInput}
             autoFocus
-            returnKeyType="search"
+            returnKeyType="done"
+            blurOnSubmit
+            onSubmitEditing={dismissKeyboard}
+            onFocus={() => setInputFocused(true)}
+            onBlur={() => setInputFocused(false)}
             clearButtonMode="never"
           />
           {query.length > 0 ? (
@@ -1212,14 +1226,27 @@ export function SearchScreen() {
               <Icon.Close size={18} color={colors.muted} />
             </Pressable>
           ) : null}
+          {inputFocused ? (
+            <Pressable
+              onPress={dismissKeyboard}
+              hitSlop={10}
+              accessibilityRole="button"
+              accessibilityLabel="Dismiss keyboard"
+            >
+              <Text style={styles.searchDone}>Done</Text>
+            </Pressable>
+          ) : null}
         </View>
-        <Text style={styles.searchHint}>
-          Anything you add here lands in your My words tab.
-        </Text>
+        <Pressable onPress={dismissKeyboard} accessibilityRole="text">
+          <Text style={styles.searchHint}>
+            Anything you add here lands in your My words tab.
+          </Text>
+        </Pressable>
         <ScrollView
           showsVerticalScrollIndicator={false}
           keyboardShouldPersistTaps="handled"
-          keyboardDismissMode="on-drag"
+          keyboardDismissMode="interactive"
+          onScrollBeginDrag={dismissKeyboard}
           contentContainerStyle={styles.searchList}
         >
           {list.map(word => {
@@ -1274,7 +1301,7 @@ export function AccountScreen({
       <View style={styles.page}>
         <Text style={styles.display}>Your name.</Text>
         <Text style={styles.completeCopy}>
-          This is how Fluent will greet you every day. Sign-in sync comes later —
+          This is how FlashVocab will greet you every day. Sign-in sync comes later —
           for now your progress stays on this device.
         </Text>
         <TextInput
@@ -1648,6 +1675,7 @@ const styles = StyleSheet.create({
     paddingVertical: 0,
   },
   searchHint: {color: colors.muted, fontSize: 12, marginBottom: 2},
+  searchDone: {color: colors.mint, fontSize: 16, fontWeight: '700'},
   searchList: {paddingBottom: tabBarSpace + spacing.md, gap: 8},
   searchCopy: {flex: 1, paddingRight: spacing.sm},
   searchDefinition: {color: colors.muted, fontSize: 13, lineHeight: 19, marginTop: 5},
