@@ -1,7 +1,8 @@
-import { Mixpanel } from 'mixpanel-react-native';
+import {Platform} from 'react-native';
+import {Mixpanel} from 'mixpanel-react-native';
 
-import { MIXPANEL_TOKEN } from '../config/mixpanel';
-import { createLogger } from '../utils/logger';
+import {MIXPANEL_TOKEN} from '../config/mixpanel';
+import {createLogger} from '../utils/logger';
 
 const log = createLogger('Mixpanel');
 
@@ -21,7 +22,7 @@ async function getClient(): Promise<Mixpanel | null> {
 }
 
 /**
- * Initializes Mixpanel once. No-ops when MIXPANEL_TOKEN is empty.
+ * Initializes Mixpanel once with the project token. No-ops when empty.
  */
 export async function initMixpanel(distinctId?: string): Promise<Mixpanel | null> {
   if (!hasToken()) {
@@ -47,15 +48,24 @@ export async function initMixpanel(distinctId?: string): Promise<Mixpanel | null
         distinctId: distinctId ?? null,
       });
 
+      // trackAutomaticEvents=false — we send explicit product events only.
       const mixpanel = new Mixpanel(MIXPANEL_TOKEN, false);
       if (__DEV__) {
         mixpanel.setLoggingEnabled(true);
       }
       await mixpanel.init();
+      mixpanel.registerSuperProperties({
+        app: 'FlashVocab',
+        platform: Platform.OS,
+      });
       client = mixpanel;
 
       if (distinctId) {
         await mixpanel.identify(distinctId);
+        mixpanel.getPeople().set({
+          $platform: Platform.OS,
+          app: 'FlashVocab',
+        });
       }
 
       log.success('SDK ready', {
